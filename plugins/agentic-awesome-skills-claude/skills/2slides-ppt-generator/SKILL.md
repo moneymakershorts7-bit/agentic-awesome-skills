@@ -10,6 +10,8 @@ date_added: "2026-06-05"
 author: 2slides
 tags: [presentations, slides, powerpoint, ai, api-integration, pdf, narration, document-summarization]
 tools: [claude, cursor, gemini, codex, antigravity]
+allowed-tools: Bash(python3:*)
+allowed-domains: [2slides.com]
 plugin:
   setup:
     type: manual
