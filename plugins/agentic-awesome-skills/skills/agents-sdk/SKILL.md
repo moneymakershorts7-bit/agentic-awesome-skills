@@ -10,7 +10,6 @@ date_added: "2026-10-03"
 
 
 ## When to Use
-
 Use this skill when building, debugging, or reviewing Cloudflare Agents SDK applications, stateful agents, workflows, or MCP servers on Workers.
 
 # Cloudflare Agents SDK
@@ -210,3 +209,8 @@ Read [client-sdk.md](references/client-sdk.md) for client selection and current 
 - **[references/voice.md](references/voice.md)** — `@cloudflare/voice` STT/TTS
 - **[references/codemode.md](references/codemode.md)** — Code Mode for tool orchestration
 - **[references/browse-the-web.md](references/browse-the-web.md)** — CDP browser tools
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

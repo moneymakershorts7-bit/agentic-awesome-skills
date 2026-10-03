@@ -10,7 +10,6 @@ metadata:
 ---
 
 ## When to Use
-
 Use this skill when designing, configuring, troubleshooting, or reviewing Cloudflare One Zero Trust, Access, Gateway, Tunnels, or WARP deployments.
 
 # Cloudflare One
@@ -186,3 +185,8 @@ Use these to avoid jumping straight to configuration. Ask only the prompts relev
 - Use fully qualified MCP tool names when MCP tools are available.
 - Never guess category IDs, application IDs, wirefilter fields, or API request bodies. Retrieve the current schema/docs and existing account objects.
 - Do not enable broad production policies without explicit approval.
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

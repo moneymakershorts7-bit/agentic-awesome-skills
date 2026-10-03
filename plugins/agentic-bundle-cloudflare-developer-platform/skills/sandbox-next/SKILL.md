@@ -10,7 +10,6 @@ metadata:
 ---
 
 ## When to Use
-
 Use this skill when building, maintaining, or configuring new Cloudflare Sandbox applications using @cloudflare/sandbox@next.
 
 # Sandbox SDK — `@next` (1.0 preview)
@@ -99,4 +98,9 @@ Fetch the page before implementing. Installed `@next` types win over guesses.
 - Lockfile and Dockerfile on the **same** `@next` line  
 - Typecheck against installed `@next` types  
 - No live secrets in sandbox env  
-- Production preview hostnames need wildcard DNS on a custom domain when using those URL patterns  
+- Production preview hostnames need wildcard DNS on a custom domain when using those URL patterns
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

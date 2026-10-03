@@ -10,7 +10,6 @@ date_added: "2026-10-03"
 
 
 ## When to Use
-
 Use this skill when setting up, producing to, or consuming from Cloudflare K2 durable event streams and subscription pipelines.
 
 # Cloudflare K2
@@ -31,3 +30,8 @@ K2 is a durable log for decoupling event producers and consumers. Start with the
 Retrieve the matching pages above for each task and use their current examples. For capacity or cost questions, check current limits and any published pricing before quoting values. State when a requested pricing or availability detail is not yet published.
 
 For SQL transformation and delivery to R2 Iceberg tables, use the `basin` skill. For task processing, consult [Queues](https://developers.cloudflare.com/queues/index.md).
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

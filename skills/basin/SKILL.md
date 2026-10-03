@@ -10,7 +10,6 @@ date_added: "2026-10-03"
 
 
 ## When to Use
-
 Use this skill when building, querying, or troubleshooting Cloudflare Basin analytics pipelines, Iceberg tables in R2, or Basin SQL workflows.
 
 # Cloudflare Basin
@@ -32,3 +31,8 @@ Cloudflare Data Platform is now **Basin**. Cloudflare Pipelines, R2 Data Catalog
 Typical flow: Basin Pipelines → Basin Catalog tables in R2 → Basin SQL or a compatible external engine. Begin with the [Basin getting started guide](https://developers.cloudflare.com/basin/get-started/guide/index.md) for an end-to-end setup.
 
 The proposed Wrangler command families are `wrangler basin pipelines`, `wrangler basin catalog`, and `wrangler basin sql`. Basin SQL uses `WRANGLER_BASIN_SQL_AUTH_TOKEN`; its REST query path is `/basin-sql/query/{BUCKET}`. Check the installed Wrangler version and current reference pages before running commands because the migration is ongoing.
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

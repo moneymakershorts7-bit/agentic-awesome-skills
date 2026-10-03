@@ -10,7 +10,6 @@ date_added: "2026-10-03"
 
 
 ## When to Use
-
 Use this skill when planning and assessing migrations from Zscaler, Palo Alto, or legacy VPN/SWG platforms to Cloudflare One.
 
 # Cloudflare One Migrations
@@ -118,3 +117,8 @@ Pilot plan:
 Validation:
 Rollback:
 ```
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

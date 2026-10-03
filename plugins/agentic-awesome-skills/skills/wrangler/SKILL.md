@@ -10,7 +10,6 @@ date_added: "2026-10-03"
 
 
 ## When to Use
-
 Use this skill when running Wrangler CLI commands, setting up wrangler.jsonc / wrangler.toml, or managing Workers resources.
 
 # Wrangler CLI
@@ -79,3 +78,8 @@ For deployment changes, use the project's build workflow and `wrangler deploy --
 For Previews, a returned URL does not validate behavior that depends on bindings Wrangler reports as missing. Validate the behavior the user requested, using Preview-specific logs and configuration when needed. Writes to production resources, destructive testing, and deletion of named Previews must match the user's explicit intent.
 
 Report what changed, the target environment, checks performed, and any unresolved validation gaps. Link the documentation used when the result depends on current command or configuration behavior.
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

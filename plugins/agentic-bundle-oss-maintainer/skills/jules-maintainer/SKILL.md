@@ -14,7 +14,6 @@ metadata:
 Orchestrate Google's autonomous coding agent **Jules** (`jules`) to handle asynchronous repository maintenance, long-running refactors, issue resolution, and batch testing when interactive agents are offline or busy.
 
 ## When to Use
-
 Use this skill when:
 - Delegating long-running maintenance, test expansion, or dependency upgrades to run asynchronously in Google's cloud.
 - The interactive agent needs to hand off tasks before ending a session or when offline.
@@ -118,3 +117,8 @@ npm test
 # 3. Check for security vulnerabilities or unintended changes
 repo-audit
 ```
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

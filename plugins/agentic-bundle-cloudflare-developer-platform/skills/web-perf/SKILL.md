@@ -10,7 +10,6 @@ metadata:
 ---
 
 ## When to Use
-
 Use this skill when auditing, diagnosing, or optimizing web loading performance, Core Web Vitals (LCP, CLS, INP, FCP), and page speed.
 
 # Web Performance Audit
@@ -209,3 +208,8 @@ Present findings as:
 2. **Top Issues** - Prioritized list of problems with estimated impact (high/medium/low)
 3. **Recommendations** - Specific, actionable fixes with code snippets or config changes
 4. **Codebase Findings** - Framework/bundler detected, optimization opportunities (omit if no codebase access)
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

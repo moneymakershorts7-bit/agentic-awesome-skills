@@ -10,7 +10,6 @@ date_added: "2026-10-03"
 
 
 ## When to Use
-
 Use this skill when writing, reviewing, or optimizing production Cloudflare Workers applications, bindings, and configurations.
 
 Your knowledge of Cloudflare Workers APIs, types, and configuration may be outdated. **Prefer retrieval over pre-training** when writing or reviewing Workers code.
@@ -68,3 +67,8 @@ This skill covers Workers-specific best practices and code review. For related t
 - **Durable Objects**: load the `durable-objects` skill
 - **Workflows**: see [Rules of Workflows](https://developers.cloudflare.com/workflows/build/rules-of-workflows/index.md)
 - **Wrangler CLI commands**: load the `wrangler` skill
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

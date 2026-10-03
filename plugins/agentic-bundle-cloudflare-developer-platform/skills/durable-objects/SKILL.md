@@ -28,7 +28,6 @@ Your knowledge of Durable Objects APIs and configuration may be outdated. **Pref
 Fetch the relevant doc page when implementing features.
 
 ## When to Use
-
 - Creating new Durable Object classes for stateful coordination
 - Implementing RPC methods, alarms, or WebSocket handlers
 - Reviewing existing DO code for best practices
@@ -184,3 +183,8 @@ await this.ctx.storage.deleteAlarm();
 ## Testing
 
 Read the [testing reference](./references/testing.md) before configuring a suite or writing Durable Object tests. It routes to current setup, APIs, and examples and identifies the behavior to cover.
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

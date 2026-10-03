@@ -10,7 +10,6 @@ date_added: "2026-10-03"
 
 
 ## When to Use
-
 Use this skill when choosing Cloudflare products, planning architecture, or identifying the right Cloudflare documentation and APIs for a project.
 
 # Discover and build with Cloudflare
@@ -156,3 +155,8 @@ Prefer [Workers Cache](https://developers.cloudflare.com/workers/cache/index.md)
 
 Cloudflare documentation: <https://developers.cloudflare.com/llms.txt>
 Cloudflare changelog: <https://developers.cloudflare.com/changelog/index.md>
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

@@ -10,7 +10,6 @@ date_added: "2026-10-03"
 
 
 ## When to Use
-
 Use this skill when maintaining or deploying Cloudflare Sandbox applications using the current stable @cloudflare/sandbox package.
 
 # Sandbox SDK — stable package
@@ -117,4 +116,9 @@ This path does **not** switch you to `@next`.
 - Typecheck against installed stable types  
 - No live secrets in sandbox env  
 - If using deprecated transports/helpers, finish or track [2026 deprecation](https://developers.cloudflare.com/sandbox/sdk/migrate/index.md) cleanup  
-- When the team is ready for 1.0, use **`sandbox-migrate-to-next`**—do not force cutover unprompted  
+- When the team is ready for 1.0, use **`sandbox-migrate-to-next`**—do not force cutover unprompted
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

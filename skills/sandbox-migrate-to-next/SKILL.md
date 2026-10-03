@@ -89,7 +89,6 @@ FROM cloudflare/sandbox:next
 
 
 ## When to Use
-
 Use this skill when upgrading or migrating existing Cloudflare Sandbox applications from @cloudflare/sandbox to @cloudflare/sandbox@next.
 
 Same prerelease tag on Worker and image when not on floating `next`.
@@ -192,4 +191,9 @@ Then day-to-day work uses **`sandbox-next`**.
 - Inventing `gitCheckout`, process stdin, or undocumented APIs  
 - Keeping pre-cutover process/terminal IDs after deploy  
 - Forcing production cutover without user agreement  
-- Putting live secrets in `setEnvVars` / launch `env`  
+- Putting live secrets in `setEnvVars` / launch `env`
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.
