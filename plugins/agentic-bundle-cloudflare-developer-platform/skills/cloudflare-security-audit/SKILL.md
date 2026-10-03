@@ -57,8 +57,9 @@ In full audit mode, resolve these values before reconnaissance:
 
 - **Skill directory**: the absolute directory containing this `SKILL.md`.
 - **Target**: the absolute repository root under review.
+- **Target identity**: the canonical physical repository path plus its normalized `origin` owner/repository URL. Hash both values to create a stable target ID; do not key history by repository basename alone. Do not search or reuse prior runs from a basename-only directory.
 - **Repo name**: a stable repository identifier from the directory or local Git remote.
-- **Output directory**: a new writable directory outside the target, defaulting to `~/security-audit-skill/<repo-name>/run-<N>`, where `<N>` is the next unused integer. Use a directory inside the target only when the user explicitly selects it and the parent verifies that version control ignores the whole directory. Otherwise stop and request an external path.
+- **Output directory**: a new writable directory outside the target, defaulting to `~/security-audit-skill/<target-id>/run-<N>`, where `<N>` is the next unused integer. Use a directory inside the target only when the user explicitly selects it and the parent verifies that version control ignores the whole directory. Otherwise stop and request an external path.
 - **Source ref**: the reviewed commit and whether the worktree is dirty. Do not treat unreviewed generated or modified files as another revision.
 
 ### Write isolation

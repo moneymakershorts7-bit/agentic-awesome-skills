@@ -23,9 +23,7 @@ jobs:
         uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
 
       - name: Run actionlint
-        run: |
-          bash <(curl -sL https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
-          ./actionlint -color
+        run: npm run lint:workflows
 
   python-lint:
     name: Python Linting (Ruff)
