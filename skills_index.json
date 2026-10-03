@@ -388,6 +388,29 @@
     "license_source": "https://github.com/coreyhaines31/marketingskills/blob/main/LICENSE"
   },
   {
+    "id": "academy-guide",
+    "path": "skills/academy-guide",
+    "category": "uncategorized",
+    "name": "academy-guide",
+    "description": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product \u2014 it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropic's learning hub. Trigger on: \"how do I\"...\n",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "Complete terms in LICENSE.txt"
+  },
+  {
     "id": "acceptance-orchestrator",
     "path": "skills/acceptance-orchestrator",
     "category": "workflow",
@@ -909,6 +932,94 @@
       "sql",
       "protect"
     ]
+  },
+  {
+    "id": "ads-audit",
+    "path": "skills/ads-audit",
+    "category": "uncategorized",
+    "name": "ads-audit",
+    "description": "Run a source-grounded paid-advertising audit for one or more of Google, Meta, YouTube, LinkedIn, TikTok, Microsoft, Apple, Amazon, Reddit, Pinterest, Snapchat, and X. Use for full ad checks, account health reviews, paid-media diagnostics, partial audits after authentica...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "ads-budget",
+    "path": "skills/ads-budget",
+    "category": "uncategorized",
+    "name": "ads-budget",
+    "description": "Plan and review paid-media budgets, bidding, pacing, marginal return, forecasts, CPA, ROAS, MER, LTV:CAC, constraints, and allocation across supported platforms. Use for ad budget allocation, media budget, bidding strategy, scaling, spend pacing, budget forecast, ROAS t...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "ads-google",
+    "path": "skills/ads-google",
+    "category": "uncategorized",
+    "name": "ads-google",
+    "description": "Audit Google Ads measurement, Search, Shopping, Performance Max, Demand Gen, YouTube-linked inventory, keywords and search terms, negative-keyword generation or review, creative assets, bidding, budgets, settings, and policy. Use for Google Ads, AdWords, Search campaign...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "ads-meta",
+    "path": "skills/ads-meta",
+    "category": "uncategorized",
+    "name": "ads-meta",
+    "description": "Audit Meta Ads measurement, Pixel and Conversions API, attribution, Facebook and Instagram creative, audiences, placements, automation, budgets, account structure, and policy. Use for Meta Ads, Facebook Ads, Instagram Ads, Advantage+, Pixel, CAPI, Events Manager, creati...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
   },
   {
     "id": "advanced-analytics-dashboard",
@@ -2965,6 +3076,29 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "alphafold2",
+    "path": "skills/alphafold2",
+    "category": "biomodels",
+    "name": "alphafold2",
+    "description": "Predict protein structure for monomers and multimers with AlphaFold2 via the ColabFold runner (Mirdita et al. 2022, github.com/sokrypton/ColabFold; AlphaFold2 Jumper et al. 2021). Reach for this skill to fold a sequence or complex with the AF2/AF2-Multimer evoformer, to valida...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "Apache-2.0"
   },
   {
     "id": "alternatives-pages",
@@ -5256,6 +5390,29 @@
     "license_source": "https://github.com/yylo-dev/yylo-skills/blob/main/LICENSE"
   },
   {
+    "id": "artifacts-builder",
+    "path": "skills/artifacts-builder",
+    "category": "web-development",
+    "name": "artifacts-builder",
+    "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file H...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "Complete terms in LICENSE.txt"
+  },
+  {
     "id": "asana-automation",
     "path": "skills/asana-automation",
     "category": "project-management",
@@ -6028,6 +6185,28 @@
     "risk": "critical",
     "source": "vibeship-spawner-skills (Apache 2.0)",
     "date_added": "2026-02-27",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "autoresearch",
+    "path": "skills/autoresearch",
+    "category": "uncategorized",
+    "name": "autoresearch",
+    "description": "Run a bounded, source-grounded research loop, draft a cited dossier, and propose vault updates.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -10818,6 +10997,29 @@
     ]
   },
   {
+    "id": "boltz",
+    "path": "skills/boltz",
+    "category": "biomodels",
+    "name": "boltz",
+    "description": "Structure prediction for protein, nucleic-acid, and small-molecule complexes with Boltz-2 (Passaro & Wohlwend et al. 2025, github.com/jwohlwend/boltz). Reach for this skill to validate designed binders against a target, to co-fold a protein with a SMILES or CCD ligand, or to g...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "Apache-2.0"
+  },
+  {
     "id": "boost-asio-pro",
     "path": "skills/boost-asio-pro",
     "category": "development",
@@ -10871,6 +11073,30 @@
         "docs": null
       },
       "reasons": []
+    }
+  },
+  {
+    "id": "brag",
+    "path": "skills/brag",
+    "category": "uncategorized",
+    "name": "brag",
+    "description": "Turn the current project website into a short, polished, shareable launch video using Hyperframes. Use when someone says \"/brag\", \"let's brag about this\", \"make a launch video\", \"turn this into a video\", or wants to share what they built. Reads the project code directly...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
     }
   },
   {
@@ -11088,6 +11314,28 @@
     "risk": "safe",
     "source": "community",
     "date_added": "2026-04-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "brandkit",
+    "path": "skills/brandkit",
+    "category": "uncategorized",
+    "name": "brandkit",
+    "description": "Premium brand-kit image generation skill for creating high-end brand-guidelines boards, logo systems, identity decks, and visual-world presentations. Trained for minimalist, cinematic, editorial, dark-tech, luxury, cultural, security, gaming, developer-tool, and consume...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -11614,6 +11862,28 @@
       "reasons": []
     },
     "source_type": "self"
+  },
+  {
+    "id": "brutalist-skill",
+    "path": "skills/brutalist-skill",
+    "category": "uncategorized",
+    "name": "brutalist-skill",
+    "description": "Raw mechanical interfaces fusing Swiss typographic print with military terminal aesthetics. Rigid grids, extreme type scale contrast, utilitarian color, analog degradation effects. For data-heavy dashboards, portfolios, or editorial sites that need to feel like declassi...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
   },
   {
     "id": "brutalist-typography",
@@ -12275,6 +12545,28 @@
     "risk": "critical",
     "source": "community",
     "date_added": "2026-02-27",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "c4-architecture",
+    "path": "skills/c4-architecture",
+    "category": "architecture",
+    "name": "c4-architecture",
+    "description": "Generate architecture documentation using C4 model Mermaid diagrams. Use when asked to create architecture diagrams, document system architecture, visualize software structure, create C4 diagrams, or generate context/container/component/deployment diagrams. Triggers inc...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -12973,6 +13265,28 @@
       "developer-workflow",
       "documentation"
     ]
+  },
+  {
+    "id": "changelog-generator",
+    "path": "skills/changelog-generator",
+    "category": "uncategorized",
+    "name": "changelog-generator",
+    "description": "Automatically creates user-facing changelogs from git commits by analyzing commit history, categorizing changes, and transforming technical commits into clear, customer-friendly release notes. Turns hours of manual changelog writing into minutes of automated generation.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
   },
   {
     "id": "changelog-updates",
@@ -17080,6 +17394,28 @@
     }
   },
   {
+    "id": "crafting-effective-readmes",
+    "path": "skills/crafting-effective-readmes",
+    "category": "uncategorized",
+    "name": "crafting-effective-readmes",
+    "description": "Use when writing or improving README files. Not all READMEs are the same \u2014 provides templates and guidance matched to your audience and project type.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "create-branch",
     "path": "skills/create-branch",
     "category": "workflow",
@@ -20757,6 +21093,29 @@
     ]
   },
   {
+    "id": "diagram-design",
+    "path": "skills/diagram-design",
+    "category": "uncategorized",
+    "name": "diagram-design",
+    "description": "Create branded architecture, architecture delta, IT current-state, flowchart, sequence, state machine, ER/data model, timeline, swimlane, quadrant, radar/spider, polar chart (polar/radial lollipop), loop/flywheel, nested, tree, org chart, layer stack, Venn, pyramid/funn...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
+  },
+  {
     "id": "diagram-generator",
     "path": "skills/diagram-generator",
     "category": "design",
@@ -20807,6 +21166,29 @@
     }
   },
   {
+    "id": "diffdock",
+    "path": "skills/diffdock",
+    "category": "biomodels",
+    "name": "diffdock",
+    "description": "Predict small-molecule binding poses with DiffDock-L (Corso et al. 2023/2024, github.com/gcorso/DiffDock) \u2014 blind diffusion docking that places a ligand into a protein pocket without a predefined search box and ranks the samples with a learned confidence model. Reach for this ...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "Apache-2.0"
+  },
+  {
     "id": "differential-review",
     "path": "skills/differential-review",
     "category": "security",
@@ -20815,6 +21197,28 @@
     "risk": "critical",
     "source": "community",
     "date_added": "2026-09-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "difyctl",
+    "path": "skills/difyctl",
+    "category": "uncategorized",
+    "name": "difyctl",
+    "description": "Base skill for the difyctl CLI: find any command or Dify operation through help and run it as a command. Use when the task involves difyctl or a Dify server from the command line.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -20879,6 +21283,29 @@
     "source_repo": "BagelHole/DevOps-Security-Agent-Skills",
     "license": "MIT",
     "license_source": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/main/LICENSE"
+  },
+  {
+    "id": "discernment-nudge",
+    "path": "skills/discernment-nudge",
+    "category": "uncategorized",
+    "name": "discernment-nudge",
+    "description": "After you give a substantive answer or draft that the user may act on \u2014 advice or recommendations, drafted artifacts such as goals, plans, pitches, proposals, or emails, estimates or projections, analysis or interpretation of data, factual claims they may rely...\n",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "Complete terms in LICENSE.txt"
   },
   {
     "id": "disciplinary-pip-tracker",
@@ -21838,6 +22265,29 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "drawio-skill",
+    "path": "skills/drawio-skill",
+    "category": "database",
+    "name": "drawio-skill",
+    "description": "Create and edit draw.io/diagrams.net diagrams as editable `.drawio` files. Covers architecture, UML/ERD/sequence, BPMN, network, and swimlane views authored from a description or converted from code, IaC, SQL, and API schemas, plus sync, query, test, review, export, and...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
   },
   {
     "id": "drizzle-migration-conflict",
@@ -28351,6 +28801,37 @@
     "license_source": "https://github.com/addyosmani/agent-skills/blob/main/LICENSE"
   },
   {
+    "id": "gitea",
+    "path": "skills/gitea",
+    "category": "uncategorized",
+    "name": "gitea",
+    "description": "Interface with Gitea instances via the tea CLI. Manage repositories, issues, PRs, releases, labels, milestones, CI/CD actions, webhooks, and organizations.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT",
+    "tags": [
+      "gitea",
+      "git",
+      "devops",
+      "ci-cd",
+      "code-hosting",
+      "self-hosted"
+    ]
+  },
+  {
     "id": "github",
     "path": "skills/github",
     "category": "developer-tools",
@@ -29001,6 +29482,121 @@
     }
   },
   {
+    "id": "golang-benchmark",
+    "path": "skills/golang-benchmark",
+    "category": "uncategorized",
+    "name": "golang-benchmark",
+    "description": "Golang benchmarking, profiling, and performance measurement. Use when writing, running, or comparing Go benchmarks, profiling hot paths with pprof, interpreting CPU/memory/trace profiles, analyzing results with benchstat, setting up CI benchmark regression detection, or...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "golang-cli",
+    "path": "skills/golang-cli",
+    "category": "uncategorized",
+    "name": "golang-cli",
+    "description": "Golang CLI application development. Use when building, modifying, or reviewing a Go CLI tool \u2014 especially for command structure, flag handling, configuration layering, version embedding, exit codes, I/O patterns, signal handling, shell completion, argument validation, a...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "golang-code-style",
+    "path": "skills/golang-code-style",
+    "category": "uncategorized",
+    "name": "golang-code-style",
+    "description": "Golang code style conventions \u2014 line length and breaking, variable declarations, control flow clarity, when comments help vs hurt. Use when writing or reviewing Go code, asking about style or clarity, or establishing project coding standards. Not for naming conventions ...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "golang-concurrency",
+    "path": "skills/golang-concurrency",
+    "category": "uncategorized",
+    "name": "golang-concurrency",
+    "description": "Golang concurrency design \u2014 goroutine lifecycle and leak prevention, channels and `select`, channel ownership and direction, `sync.Mutex`/`RWMutex`/`sync.Map`/`sync.Once`/atomics, `errgroup`, `singleflight`, worker pools, and fan-out/fan-in pipelines. Use when writing o...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "golang-database",
+    "path": "skills/golang-database",
+    "category": "database",
+    "name": "golang-database",
+    "description": "Comprehensive guide for Go database access \u2014 parameterized queries, struct scanning, NULLable columns, transactions, isolation levels, SELECT FOR UPDATE, connection pool, batch processing, context propagation, and migration tooling. Use when writing, reviewing, or debug...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
+  },
+  {
     "id": "golang-pro",
     "path": "skills/golang-pro",
     "category": "code",
@@ -29240,6 +29836,28 @@
     ]
   },
   {
+    "id": "gpt-tasteskill",
+    "path": "skills/gpt-tasteskill",
+    "category": "uncategorized",
+    "name": "gpt-tasteskill",
+    "description": "Elite UX/UI & Advanced GSAP Motion Engineer. Enforces Python-driven true randomization for layout variance, strict AIDA page structure, wide editorial typography (bans 6-line wraps), gapless bento grids, strict GSAP ScrollTriggers (pinning, stacking, scrubbing), inline ...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "gpu-kubernetes-operations",
     "path": "skills/gpu-kubernetes-operations",
     "category": "devops",
@@ -29359,6 +29977,28 @@
     "risk": "critical",
     "source": "community",
     "date_added": "2026-02-27",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "graphify",
+    "path": "skills/graphify",
+    "category": "uncategorized",
+    "name": "graphify",
+    "description": "Use for any question about a codebase, its architecture, file relationships, or project content \u2014 especially when graphify-out/ exists, where the question should be treated as a graphify query first. Turns any input (code, docs, papers, images, videos) into a persistent...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -29631,6 +30271,94 @@
     "risk": "safe",
     "source": "self",
     "date_added": "2026-02-27",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "gws-calendar",
+    "path": "skills/gws-calendar",
+    "category": "automation",
+    "name": "gws-calendar",
+    "description": "Google Calendar: Manage calendars and events.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "gws-chat",
+    "path": "skills/gws-chat",
+    "category": "uncategorized",
+    "name": "gws-chat",
+    "description": "Google Chat: Manage Chat spaces and messages.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "gws-docs-write",
+    "path": "skills/gws-docs-write",
+    "category": "uncategorized",
+    "name": "gws-docs-write",
+    "description": "Google Docs: Append text to a document.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "gws-gmail-send",
+    "path": "skills/gws-gmail-send",
+    "category": "uncategorized",
+    "name": "gws-gmail-send",
+    "description": "Gmail: Send an email.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -31275,6 +32003,29 @@
       "academic",
       "style-transfer"
     ]
+  },
+  {
+    "id": "humanizer",
+    "path": "skills/humanizer",
+    "category": "uncategorized",
+    "name": "humanizer",
+    "description": "Rewrite AI-sounding text so it reads like the writer without changing what it says.\nUse when editing or reviewing prose for AI tells: not-X-but-Y contrasts, one-line\nclosers, staged openers, forced triads, dashes everywhere, inflated claims, sales\nlanguage, st...\n",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
   },
   {
     "id": "hunt-api-misconfig",
@@ -33438,6 +34189,28 @@
       "ai-art",
       "photography"
     ]
+  },
+  {
+    "id": "image-to-code-skill",
+    "path": "skills/image-to-code-skill",
+    "category": "uncategorized",
+    "name": "image-to-code-skill",
+    "description": "Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then implement the website to match them as closely as possible. In Codex, it must prefer large, readable, section-spec...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
   },
   {
     "id": "imagen",
@@ -40212,6 +40985,28 @@
     ]
   },
   {
+    "id": "meeting-insights-analyzer",
+    "path": "skills/meeting-insights-analyzer",
+    "category": "uncategorized",
+    "name": "meeting-insights-analyzer",
+    "description": "Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable feedback. Identifies when you avoid conflict, use filler words, dominate conversations, or miss opportunities to listen. Perfect for professionals seeking ...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "meeting-notes",
     "path": "skills/meeting-notes",
     "category": "productivity",
@@ -40663,6 +41458,28 @@
       "reasons": []
     },
     "source_type": "self"
+  },
+  {
+    "id": "minimalist-skill",
+    "path": "skills/minimalist-skill",
+    "category": "uncategorized",
+    "name": "minimalist-skill",
+    "description": "Clean editorial-style interfaces. Warm monochrome palette, typographic contrast, flat bento grids, muted pastels. No gradients, no heavy shadows.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
   },
   {
     "id": "minimalist-ui",
@@ -41188,6 +42005,28 @@
     "risk": "safe",
     "source": "community",
     "date_added": "2026-02-27",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "modlens",
+    "path": "skills/modlens",
+    "category": "uncategorized",
+    "name": "modlens",
+    "description": "The first vision plugin for DeepSeek Harness and the vision bridge for text-only coding agents. Paste an image to get structured JSON evidence.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -42474,6 +43313,39 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "narrator-ai-cli-skill",
+    "path": "skills/narrator-ai-cli-skill",
+    "category": "uncategorized",
+    "name": "narrator-ai-cli-skill",
+    "description": "AI \u7535\u5f71/\u77ed\u5267\u89e3\u8bf4\u89c6\u9891\u81ea\u52a8\u751f\u6210\uff08AI \u89e3\u8bf4\u5927\u5e08 CLI Skill\uff09\u3002\u5f53\u7528\u6237\u9700\u8981\u521b\u5efa\u7535\u5f71\u89e3\u8bf4\u89c6\u9891\u3001\u77ed\u5267\u89e3\u8bf4\u3001\u5f71\u89c6\u4e8c\u521b\u3001AI \u914d\u97f3\u65c1\u767d\u89c6\u9891\u3001film commentary\u3001video narration\u3001drama dubbing\u3001movie narration \u65f6\u89e6\u53d1\u3002\u5185\u7f6e\u7535\u5f71\u7d20\u6750\u5e93\u3001BGM\u3001\u591a\u8bed\u79cd\u914d\u97f3\u3001\u89e3\u8bf4\u6a21\u677f\u3002\u901a\u8fc7 narrator-ai-cli \u547d\u4ee4\u884c\u5b9e\u73b0\uff1a\u641c\u7247\u2192\u9009\u6a21\u677f\u2192\u9009 BGM\u2192\u9009\u914d\u97f3\u2192\u751f\u6210\u6587\u6848\u2192\u5408\u6210\u89c6\u9891\u7684\u5168\u6d41\u7a0b\u81ea\u52a8\u5316\u3002CLI client for Narrator AI video narration API.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT",
+    "tags": [
+      "video-narration",
+      "film-commentary",
+      "ai-video",
+      "short-drama",
+      "content-creation",
+      "dubbing",
+      "tts",
+      "video-production"
+    ]
   },
   {
     "id": "native-data-fetching",
@@ -44982,6 +45854,29 @@
     ]
   },
   {
+    "id": "open-code-review",
+    "path": "skills/open-code-review",
+    "category": "uncategorized",
+    "name": "open-code-review",
+    "description": "Performs AI-powered code review on Git changes using the `ocr` CLI from alibaba/open-code-review. Use when the user asks to review code, review a pull request, review staged/unstaged changes, review a commit, or compare branches for code quality issues. Produc...\n",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "Apache-2.0"
+  },
+  {
     "id": "open-dynamic-workflows",
     "path": "skills/open-dynamic-workflows",
     "category": "ai-agents",
@@ -45229,6 +46124,28 @@
     "license_source": "https://github.com/amElnagdy/delegate-skills/blob/master/LICENSE"
   },
   {
+    "id": "opencreator-runtime",
+    "path": "skills/opencreator-runtime",
+    "category": "uncategorized",
+    "name": "opencreator-runtime",
+    "description": "OpenCreator \u5185\u90e8 Creator Agent \u7684\u7a33\u5b9a\u8fd0\u884c\u89c4\u5219\uff0c\u4ec5\u7531\u5e94\u7528\u81ea\u52a8\u5b89\u88c5\u548c\u6fc0\u6d3b\u3002",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "openshift",
     "path": "skills/openshift",
     "category": "devops",
@@ -45253,6 +46170,28 @@
     "source_repo": "BagelHole/DevOps-Security-Agent-Skills",
     "license": "MIT",
     "license_source": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/main/LICENSE"
+  },
+  {
+    "id": "openshorts",
+    "path": "skills/openshorts",
+    "category": "backend",
+    "name": "openshorts",
+    "description": "Turn long videos (podcasts, webinars, streams) into vertical 9:16 clips with subtitles, re-cut them, and publish them to TikTok, Instagram Reels and YouTube Shorts via the OpenShorts API or MCP server. Use when the user wants to clip a video into shorts, find the best m...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
   },
   {
     "id": "opentelemetry",
@@ -47521,6 +48460,29 @@
     "source_repo": "yehudalevy-collab/polis-protocol",
     "license": "MIT",
     "license_source": "https://github.com/yehudalevy-collab/polis-protocol/blob/main/LICENSE"
+  },
+  {
+    "id": "ponytail",
+    "path": "skills/ponytail",
+    "category": "uncategorized",
+    "name": "ponytail",
+    "description": "Forces the laziest solution that actually works, simplest, shortest, most minimal. Channels a senior dev who has seen everything: question whether the task needs to exist at all (YAGNI), reach for the standard library before custom code, native platform featur...\n",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
   },
   {
     "id": "popup-cro",
@@ -52338,6 +53300,28 @@
     }
   },
   {
+    "id": "ruflo",
+    "path": "skills/ruflo",
+    "category": "ai-ml",
+    "name": "ruflo",
+    "description": "Ruflo is a multi-agent orchestration platform for AI coding agents (Claude Code, Cursor, Codex, Copilot, Gemini, Amp, +12 more). Use this skill when the user wants to (1) install/init ruflo in a project, (2) run multi-agent swarms with hierarchical coordination, (3) use...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "run-deep-swe",
     "path": "skills/run-deep-swe",
     "category": "agent-evaluation",
@@ -56187,13 +57171,13 @@
     "path": "skills/skill-scanner",
     "category": "meta",
     "name": "skill-scanner",
-    "description": "Scan agent skills for security issues before adoption. Detects prompt injection, malicious code, excessive permissions, secret exposure, and supply chain risks.",
+    "description": "Security scanner for AI Agent Skills packages. Detects prompt injection, data exfiltration, and malicious code patterns with AST, YARA-X, and CEL policies.",
     "risk": "safe",
     "source": "community",
-    "date_added": "2026-09-04",
+    "date_added": "2026-10-03",
     "plugin": {
       "targets": {
-        "codex": "blocked",
+        "codex": "supported",
         "claude": "supported"
       },
       "setup": {
@@ -56201,9 +57185,7 @@
         "summary": "",
         "docs": null
       },
-      "reasons": [
-        "target_specific_home_path"
-      ]
+      "reasons": []
     }
   },
   {
@@ -56244,10 +57226,10 @@
     "path": "skills/skill-seekers",
     "category": "meta",
     "name": "skill-seekers",
-    "description": "-Automatically convert documentation websites, GitHub repositories, and PDFs into Claude AI skills in minutes.",
+    "description": "Automatically detect source types and build AI skills from documentation websites, GitHub repositories, PDFs, or local codebases using Skill Seekers CLI and MCP.",
     "risk": "safe",
-    "source": "https://github.com/yusufkaraaslan/Skill_Seekers",
-    "date_added": "2026-02-27",
+    "source": "community",
+    "date_added": "2026-10-03",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -60726,6 +61708,28 @@
     "license_source": "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
   },
   {
+    "id": "think",
+    "path": "skills/think",
+    "category": "uncategorized",
+    "name": "think",
+    "description": "Apply the Fable-derived 10-stage OBSERVE, OBSERVE, LISTEN, THINK, CONNECT, CONNECT, FEEL, ACCEPT, CREATE, GROW loop to consequential or ambiguous reasoning and decisions. Use for think this through, deep think, architecture review, postmortem, tradeoff analysis, or chal...",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "threat-hunting",
     "path": "skills/threat-hunting",
     "category": "security",
@@ -62157,6 +63161,29 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "twitter-algorithm-optimizer",
+    "path": "skills/twitter-algorithm-optimizer",
+    "category": "uncategorized",
+    "name": "twitter-algorithm-optimizer",
+    "description": "Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit user tweets to improve engagement and visibility based on how the recommendation system ranks content.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "AGPL-3.0 (referencing Twitter's algorithm source)"
   },
   {
     "id": "twitter-automation",
