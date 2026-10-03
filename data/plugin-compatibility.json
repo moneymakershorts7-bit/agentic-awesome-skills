@@ -32917,25 +32917,6 @@
       "runtime_files": []
     },
     {
-      "id": "nanobanana-context-imagegen",
-      "path": "skills/nanobanana-context-imagegen",
-      "targets": {
-        "codex": "supported",
-        "claude": "supported"
-      },
-      "setup": {
-        "type": "none",
-        "summary": "",
-        "docs": null
-      },
-      "reasons": [],
-      "blocked_reasons": {
-        "codex": [],
-        "claude": []
-      },
-      "runtime_files": []
-    },
-    {
       "id": "nanobanana-ppt-skills",
       "path": "skills/nanobanana-ppt-skills",
       "targets": {
@@ -51786,10 +51767,10 @@
     }
   ],
   "summary": {
-    "total_skills": 2699,
+    "total_skills": 2698,
     "supported": {
-      "codex": 2611,
-      "claude": 2636
+      "codex": 2610,
+      "claude": 2635
     },
     "blocked": {
       "codex": 88,
