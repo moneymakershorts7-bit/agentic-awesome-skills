@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2700
+Total skills: 2701
 
 ## agent-behavior (5)
 
@@ -3161,7 +3161,7 @@ Total skills: 2700
 | `web-artifacts-builder` | To build powerful frontend claude.ai artifacts, follow these steps: | critical | community | web, artifacts, builder | web, artifacts, builder, powerful, frontend, claude, ai, follow, these, steps |
 | `webdriverio-skill` | Generates WebdriverIO (WDIO) automation tests in JavaScript or TypeScript. Supports local and TestMu AI cloud. Use when user mentions "WebdriverIO", "WDIO", ... | critical | LambdaTest/agent-skills | webdriverio, skill | webdriverio, skill, generates, wdio, automation, tests, javascript, typescript, supports, local, testmu, ai |
 
-## workflow (69)
+## workflow (70)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -3173,6 +3173,7 @@ Total skills: 2700
 | `ask-questions-if-underspecified` | Clarify requirements before implementing. Use when serious doubts arise. | safe | community | ask, questions, if, underspecified | ask, questions, if, underspecified, clarify, requirements, before, implementing, serious, doubts, arise |
 | `atlas-ledger` | Companion to atlas-contract. Auto-invoked by its Final Audit on caught drift; also use after Post Reviews or user requests to record a mistake. Distills drif... | critical | wede-wx/atlas | atlas, ledger | atlas, ledger, companion, contract, auto, invoked, final, audit, caught, drift, after, post |
 | `bitbucket-automation` | Automate Bitbucket repositories, pull requests, branches, issues, and workspace management via Rube MCP (Composio). Always search tools first for current sch... | critical | community | bitbucket | bitbucket, automation, automate, repositories, pull, requests, branches, issues, workspace, via, rube, mcp |
+| `book-editor-writer` | Transform research documents, manuscripts, raw notes, and PDFs into publication-grade, bestselling books with executive-level editing, rigorous fact-checking... | safe | moneymakershorts7-bit/agentic-awesome-skills | books, editorial, writing, fact-checking, authoring | books, editorial, writing, fact-checking, authoring, book, editor, writer, transform, research, documents, manuscripts |
 | `brainstorming` | Use before creative or constructive work (features, architecture, behavior). Transforms vague ideas into validated designs through disciplined reasoning and ... | critical | community | brainstorming | brainstorming, before, creative, constructive, work, features, architecture, behavior, transforms, vague, ideas, validated |
 | `build` | build | critical | community | build | build |
 | `changelog-automation` | Automate changelog generation from commits, PRs, and releases following Keep a Changelog format. Use when setting up release workflows, generating release no... | critical | community | changelog | changelog, automation, automate, generation, commits, prs, releases, following, keep, format, setting, up |

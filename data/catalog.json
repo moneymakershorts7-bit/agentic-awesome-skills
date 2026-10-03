@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2700,
+  "total": 2701,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -13154,6 +13154,41 @@
         "et"
       ],
       "path": "skills/boltz/SKILL.md"
+    },
+    {
+      "id": "book-editor-writer",
+      "canonical_id": "book-editor-writer",
+      "name": "book-editor-writer",
+      "description": "Transform research documents, manuscripts, raw notes, and PDFs into publication-grade, bestselling books with executive-level editing, rigorous fact-checking against real external sources, genre-adaptive prose, and a structured chapter-by-chapter incremental workflow.",
+      "category": "workflow",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "moneymakershorts7-bit/agentic-awesome-skills",
+      "license": "MIT",
+      "license_source": "https://github.com/moneymakershorts7-bit/agentic-awesome-skills/blob/main/LICENSE",
+      "tags": [
+        "books",
+        "editorial",
+        "writing",
+        "fact-checking",
+        "authoring"
+      ],
+      "triggers": [
+        "books",
+        "editorial",
+        "writing",
+        "fact-checking",
+        "authoring",
+        "book",
+        "editor",
+        "writer",
+        "transform",
+        "research",
+        "documents",
+        "manuscripts"
+      ],
+      "path": "skills/book-editor-writer/SKILL.md"
     },
     {
       "id": "boost-asio-pro",

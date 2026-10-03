@@ -19,8 +19,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Essentials",
-    "shortDescription": "Essentials & Core · 5 curated skills",
-    "longDescription": "For everyone. Install these first. Covers Concise Planning, Test Driven Development, and 3 more skills.",
+    "shortDescription": "Essentials & Core · 6 curated skills",
+    "longDescription": "For everyone. Install these first. Covers Concise Planning, Test Driven Development, and 4 more skills.",
     "developerName": "sickn33 and contributors",
     "category": "Essentials & Core",
     "capabilities": [
