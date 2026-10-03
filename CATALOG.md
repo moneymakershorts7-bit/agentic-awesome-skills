@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2699
+Total skills: 2700
 
 ## agent-behavior (5)
 
@@ -3161,7 +3161,7 @@ Total skills: 2699
 | `web-artifacts-builder` | To build powerful frontend claude.ai artifacts, follow these steps: | critical | community | web, artifacts, builder | web, artifacts, builder, powerful, frontend, claude, ai, follow, these, steps |
 | `webdriverio-skill` | Generates WebdriverIO (WDIO) automation tests in JavaScript or TypeScript. Supports local and TestMu AI cloud. Use when user mentions "WebdriverIO", "WDIO", ... | critical | LambdaTest/agent-skills | webdriverio, skill | webdriverio, skill, generates, wdio, automation, tests, javascript, typescript, supports, local, testmu, ai |
 
-## workflow (68)
+## workflow (69)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -3207,6 +3207,7 @@ Total skills: 2699
 | `git-workflow-and-versioning` | Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, or when you need to organize work ac... | critical | addyosmani/agent-skills | git, and, versioning | git, and, versioning, structures, making, any, code, change, committing, branching, resolving, conflicts |
 | `github-actions-templates` | Production-ready GitHub Actions workflow patterns for testing, building, and deploying applications. | critical | community | github, actions | github, actions, testing, building, deploying, applications |
 | `github-automation` | Operate GitHub issues, pull requests, branches, checks, workflows, and permissions through Rube MCP. Use when GitHub work must be queried or changed programm... | critical | community | github | github, automation, operate, issues, pull, requests, branches, checks, permissions, through, rube, mcp |
+| `github-platform-ops` | Master GitHub Wikis, Environments, Actions, and Workflows via gh CLI, Git, and GitHub REST API. Handles wiki cloning and structure, deployment environments w... | safe | internal | github, platform, ops | github, platform, ops, wikis, environments, actions, via, gh, cli, git, rest, api |
 | `github-presence` | When the user wants to optimize their GitHub profile, README, or project discoverability. Trigger phrases include "GitHub README," "README optimization," "Gi... | critical | jonathimer/devmarketing-skills | github, presence | github, presence, user, wants, optimize, profile, readme, discoverability, trigger, phrases, include, optimization |
 | `github-workflow-automation` | Patterns for automating GitHub workflows with AI assistance, inspired by [Gemini CLI](https://github.com/google-gemini/gemini-cli) and modern DevOps practices. | critical | community | github | github, automation, automating, ai, assistance, inspired, gemini, cli, https, com, google, devops |
 | `gitlab-automation` | Automate GitLab project management, issues, merge requests, pipelines, branches, and user operations via Rube MCP (Composio). Always search tools first for c... | critical | community | gitlab | gitlab, automation, automate, issues, merge, requests, pipelines, branches, user, operations, via, rube |

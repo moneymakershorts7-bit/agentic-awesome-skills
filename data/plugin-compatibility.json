@@ -22452,6 +22452,25 @@
       "runtime_files": []
     },
     {
+      "id": "github-platform-ops",
+      "path": "skills/github-platform-ops",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "github-presence",
       "path": "skills/github-presence",
       "targets": {
@@ -51786,10 +51805,10 @@
     }
   ],
   "summary": {
-    "total_skills": 2699,
+    "total_skills": 2700,
     "supported": {
-      "codex": 2611,
-      "claude": 2636
+      "codex": 2612,
+      "claude": 2637
     },
     "blocked": {
       "codex": 88,

@@ -28,6 +28,10 @@
         {
           "id": "git-pushing",
           "summary": "Save your work safely."
+        },
+        {
+          "id": "tool-first-gate",
+          "summary": "Scout and vet canonical tools for deterministic tasks."
         }
       ]
     },
@@ -2338,6 +2342,10 @@
         {
           "id": "jules-maintainer",
           "summary": "Autonomous asynchronous repository maintenance using Google Jules CLI."
+        },
+        {
+          "id": "github-platform-ops",
+          "summary": "Master GitHub Wikis, Environments, Actions, and Workflows."
         }
       ]
     },

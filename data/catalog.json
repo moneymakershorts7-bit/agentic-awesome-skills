@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2699,
+  "total": 2700,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -34795,6 +34795,36 @@
         "reports"
       ],
       "path": "skills/github-issue-creator/SKILL.md"
+    },
+    {
+      "id": "github-platform-ops",
+      "canonical_id": "github-platform-ops",
+      "name": "github-platform-ops",
+      "description": "Master GitHub Wikis, Environments, Actions, and Workflows via gh CLI, Git, and GitHub REST API. Handles wiki cloning and structure, deployment environments with protection rules and secrets/vars, workflow dispatch, matrix, concurrency, and log debugging.",
+      "category": "workflow",
+      "risk": "safe",
+      "source": "internal",
+      "license": "MIT",
+      "tags": [
+        "github",
+        "platform",
+        "ops"
+      ],
+      "triggers": [
+        "github",
+        "platform",
+        "ops",
+        "wikis",
+        "environments",
+        "actions",
+        "via",
+        "gh",
+        "cli",
+        "git",
+        "rest",
+        "api"
+      ],
+      "path": "skills/github-platform-ops/SKILL.md"
     },
     {
       "id": "github-presence",
@@ -72936,6 +72966,7 @@
       "category": "uncategorized",
       "risk": "safe",
       "source": "internal",
+      "license": "MIT",
       "tags": [
         "first",
         "gate"

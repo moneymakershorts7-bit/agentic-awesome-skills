@@ -48,6 +48,7 @@ _For everyone. Install these first._
 - [`lint-and-validate`](../../skills/lint-and-validate/): Keep your code clean automatically.
 - [`systematic-debugging`](../../skills/systematic-debugging/): Debug from evidence instead of guesses.
 - [`git-pushing`](../../skills/git-pushing/): Save your work safely.
+- [`tool-first-gate`](../../skills/tool-first-gate/): Scout and vet canonical tools for deterministic tasks.
 
 
 ---
@@ -852,6 +853,7 @@ _For shipping clean changes in public repositories._
 - [`documentation-templates`](../../skills/documentation-templates/): Standardize docs and handoffs.
 - [`finishing-a-development-branch`](../../skills/finishing-a-development-branch/): Close a branch with verified integration, merge, and cleanup options.
 - [`jules-maintainer`](../../skills/jules-maintainer/): Autonomous asynchronous repository maintenance using Google Jules CLI.
+- [`github-platform-ops`](../../skills/github-platform-ops/): Master GitHub Wikis, Environments, Actions, and Workflows.
 
 ### 🧱 The "Skill Author" Pack
 
