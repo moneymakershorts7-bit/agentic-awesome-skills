@@ -6,7 +6,6 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-OUTPUT_FILE="$PROJECT_ROOT/docs_zh-CN/link-validation-report.txt"
 
 cd "$PROJECT_ROOT"
 

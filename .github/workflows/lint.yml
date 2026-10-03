@@ -69,3 +69,15 @@ jobs:
 
       - name: Validate References
         run: npm run validate:references
+
+  shell-lint:
+    name: Shell Scripts Linting (ShellCheck)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+
+      - name: Run shellcheck
+        run: |
+          git ls-files 'tools/scripts/*.sh' 'scripts/*.sh' 'skills/gitea/scripts/*.sh' | xargs -r shellcheck --severity=warning
+

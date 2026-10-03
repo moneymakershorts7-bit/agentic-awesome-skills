@@ -1,0 +1,99 @@
+default_install_hook_types: [pre-commit]
+default_stages: [pre-commit]
+
+repos:
+  - repo: local
+    hooks:
+      # =========================================================================
+      # 1. Skill Security Scanner & Verification (Cisco AI Defense)
+      # =========================================================================
+      - id: skill-scanner
+        name: Skill Security Scanner (Cisco AI Defense)
+        entry: skill-scanner-pre-commit
+        language: system
+        files: (^|/)SKILL\.md$
+        args: [--severity, high, --lenient]
+
+      # =========================================================================
+      # 2. AAS Skill Specification & Quality Validation
+      # =========================================================================
+      - id: aas-validate-skills
+        name: AAS Skill Specification Validator
+        entry: node tools/scripts/run-python.js tools/scripts/validate_skills.py
+        language: system
+        files: (^|/)SKILL\.md$
+        pass_filenames: false
+
+      # =========================================================================
+      # 3. Python Linters
+      # =========================================================================
+      - id: ruff-lint
+        name: Ruff Linter (Python)
+        entry: ruff check --config ruff.toml
+        language: system
+        types: [python]
+        require_serial: true
+
+      # =========================================================================
+      # 4. GitHub Actions Workflows Linter
+      # =========================================================================
+      - id: actionlint
+        name: GitHub Actions Workflow Linter
+        entry: actionlint
+        language: system
+        files: ^\.github/workflows/.*\.(ya?ml)$
+
+      # =========================================================================
+      # 5. Shell Scripts Linter
+      # =========================================================================
+      - id: shellcheck
+        name: ShellCheck Linter (Bash/POSIX)
+        entry: shellcheck
+        language: system
+        types: [shell]
+        args: [--severity=warning]
+
+      # =========================================================================
+      # 6. Dockerfile Linter
+      # =========================================================================
+      - id: hadolint
+        name: Hadolint (Dockerfile)
+        entry: hadolint
+        language: system
+        types: [dockerfile]
+
+      # =========================================================================
+      # 7. SQL Linter
+      # =========================================================================
+      - id: sqlfluff
+        name: SQLFluff Linter (SQL)
+        entry: sqlfluff lint
+        language: system
+        types: [sql]
+
+      # =========================================================================
+      # 8. Go Linter
+      # =========================================================================
+      - id: golangci-lint
+        name: GolangCI-Lint (Go)
+        entry: golangci-lint run
+        language: system
+        types: [go]
+        pass_filenames: false
+
+      # =========================================================================
+      # 9. Rust Linters
+      # =========================================================================
+      - id: cargo-fmt
+        name: Cargo Fmt (Rust)
+        entry: cargo fmt -- --check
+        language: system
+        types: [rust]
+        pass_filenames: false
+
+      - id: cargo-clippy
+        name: Cargo Clippy (Rust)
+        entry: cargo clippy --all-targets -- -D warnings
+        language: system
+        types: [rust]
+        pass_filenames: false
