@@ -2,6 +2,8 @@
 
 'use strict';
 
+const fs = require('node:fs');
+const path = require('node:path');
 const { spawn, spawnSync } = require('node:child_process');
 
 const args = process.argv.slice(2);
@@ -34,8 +36,10 @@ function getPythonCandidates() {
   // Optional override for CI/local pinning without editing scripts.
   const configuredPython =
     process.env.ANTIGRAVITY_PYTHON || process.env.npm_config_python;
+  const localVenvPython = path.resolve(__dirname, '../../.venv/bin/python');
   const candidates = [
     configuredPython ? [configuredPython] : null,
+    fs.existsSync(localVenvPython) ? [localVenvPython] : null,
     // Keep this ordered list easy to update if project requirements change.
     ['python3'],
     ['python'],
