@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2699,
+  "total": 2698,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -50905,42 +50905,6 @@
       "path": "skills/n8n-workflow-patterns/SKILL.md"
     },
     {
-      "id": "nanobanana-context-imagegen",
-      "canonical_id": "nanobanana-context-imagegen",
-      "name": "nanobanana-context-imagegen",
-      "description": "Generate spectacular, context-driven images for documents, books, and creative projects using Google Gemini Nano Banana & Imagen 3 models, with a strict zero-guessing clarification gate.",
-      "category": "media",
-      "risk": "safe",
-      "source": "official",
-      "source_type": "official",
-      "source_repo": "moneymakershorts7-bit/agentic-awesome-skills",
-      "license": "MIT",
-      "license_source": "https://github.com/moneymakershorts7-bit/agentic-awesome-skills/blob/main/LICENSE",
-      "tags": [
-        "image-generation",
-        "nanobanana",
-        "gemini-media",
-        "imagen-3",
-        "context-driven",
-        "book-illustrations"
-      ],
-      "triggers": [
-        "image-generation",
-        "nanobanana",
-        "gemini-media",
-        "imagen-3",
-        "context-driven",
-        "book-illustrations",
-        "context",
-        "imagegen",
-        "generate",
-        "spectacular",
-        "driven",
-        "images"
-      ],
-      "path": "skills/nanobanana-context-imagegen/SKILL.md"
-    },
-    {
       "id": "nanobanana-ppt-skills",
       "canonical_id": "nanobanana-ppt-skills",
       "name": "nanobanana-ppt-skills",
@@ -72936,6 +72900,7 @@
       "category": "uncategorized",
       "risk": "safe",
       "source": "internal",
+      "license": "MIT",
       "tags": [
         "first",
         "gate"

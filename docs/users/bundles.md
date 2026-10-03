@@ -1080,4 +1080,4 @@ Found a skill that should be in a bundle? Or want to create a new bundle? [Open 
 
 ---
 
-_Last updated: June 2026 | Total Skills: 2,699+ | Total Bundles: 59_
+_Last updated: June 2026 | Total Skills: 2,698+ | Total Bundles: 59_

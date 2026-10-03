@@ -62383,6 +62383,29 @@
     }
   },
   {
+    "id": "tool-first-gate",
+    "path": "skills/tool-first-gate",
+    "category": "uncategorized",
+    "name": "tool-first-gate",
+    "description": "Mandatory pre-execution gate for mechanical tasks (file conversions, media transcoding, data restructuring, OCR, archiving). Discovers the best CLI tool, audits security, installs safely, and executes deterministically without wasting LLM reasoning tokens.",
+    "risk": "safe",
+    "source": "internal",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
+  },
+  {
     "id": "tool-use-guardian",
     "path": "skills/tool-use-guardian",
     "category": "reliability",
