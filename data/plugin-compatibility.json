@@ -1404,6 +1404,25 @@
       "runtime_files": []
     },
     {
+      "id": "agents-sdk",
+      "path": "skills/agents-sdk",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "agents-v2-py",
       "path": "skills/agents-v2-py",
       "targets": {
@@ -7768,6 +7787,25 @@
       "runtime_files": []
     },
     {
+      "id": "basin",
+      "path": "skills/basin",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "bats-testing-patterns",
       "path": "skills/bats-testing-patterns",
       "targets": {
@@ -10597,6 +10635,88 @@
     {
       "id": "cloud-penetration-testing",
       "path": "skills/cloud-penetration-testing",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "cloudflare",
+      "path": "skills/cloudflare",
+      "targets": {
+        "codex": "blocked",
+        "claude": "blocked"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "escaped_local_reference"
+      ],
+      "blocked_reasons": {
+        "codex": [
+          "escaped_local_reference"
+        ],
+        "claude": [
+          "escaped_local_reference"
+        ]
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "cloudflare-email-service",
+      "path": "skills/cloudflare-email-service",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "cloudflare-one",
+      "path": "skills/cloudflare-one",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "cloudflare-one-migrations",
+      "path": "skills/cloudflare-one-migrations",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -17114,6 +17234,25 @@
     {
       "id": "dsh-deepread",
       "path": "skills/dsh-deepread",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "durable-objects",
+      "path": "skills/durable-objects",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -26638,6 +26777,25 @@
       "runtime_files": []
     },
     {
+      "id": "jules-maintainer",
+      "path": "skills/jules-maintainer",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "julia-pro",
       "path": "skills/julia-pro",
       "targets": {
@@ -26678,6 +26836,25 @@
     {
       "id": "junta-leiloeiros",
       "path": "skills/junta-leiloeiros",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "k2",
+      "path": "skills/k2",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -32478,6 +32655,25 @@
     {
       "id": "nextjs-best-practices",
       "path": "skills/nextjs-best-practices",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "nextjs-on-cloudflare",
+      "path": "skills/nextjs-on-cloudflare",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -39550,6 +39746,63 @@
       "runtime_files": []
     },
     {
+      "id": "sandbox-migrate-to-next",
+      "path": "skills/sandbox-migrate-to-next",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "sandbox-next",
+      "path": "skills/sandbox-next",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "sandbox-stable",
+      "path": "skills/sandbox-stable",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "sankhya-dashboard-html-jsp-custom-best-pratices",
       "path": "skills/sankhya-dashboard-html-jsp-custom-best-pratices",
       "targets": {
@@ -46532,6 +46785,25 @@
       "runtime_files": []
     },
     {
+      "id": "turnstile-spin",
+      "path": "skills/turnstile-spin",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "tutorial-engineer",
       "path": "skills/tutorial-engineer",
       "targets": {
@@ -48904,6 +49176,25 @@
       "runtime_files": []
     },
     {
+      "id": "web-perf",
+      "path": "skills/web-perf",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "web-performance-optimization",
       "path": "skills/web-performance-optimization",
       "targets": {
@@ -49721,6 +50012,25 @@
       "runtime_files": []
     },
     {
+      "id": "workers-best-practices",
+      "path": "skills/workers-best-practices",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "workflow-automation",
       "path": "skills/workflow-automation",
       "targets": {
@@ -49837,6 +50147,25 @@
     {
       "id": "wp-site-health-auditor",
       "path": "skills/wp-site-health-auditor",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "wrangler",
+      "path": "skills/wrangler",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -50564,14 +50893,14 @@
     }
   ],
   "summary": {
-    "total_skills": 2635,
+    "total_skills": 2652,
     "supported": {
-      "codex": 2548,
-      "claude": 2573
+      "codex": 2564,
+      "claude": 2589
     },
     "blocked": {
-      "codex": 87,
-      "claude": 62
+      "codex": 88,
+      "claude": 63
     },
     "manual_setup": 20
   }

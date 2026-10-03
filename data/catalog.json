@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2635,
+  "total": 2652,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -2187,6 +2187,31 @@
         "instructions"
       ],
       "path": "skills/agents-md/SKILL.md"
+    },
+    {
+      "id": "agents-sdk",
+      "canonical_id": "agents-sdk",
+      "name": "agents-sdk",
+      "description": "Build, debug, or review Cloudflare Agents SDK applications using the agents package.",
+      "category": "ai-ml",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "agents",
+        "sdk"
+      ],
+      "triggers": [
+        "agents",
+        "sdk",
+        "debug",
+        "review",
+        "cloudflare",
+        "applications",
+        "package"
+      ],
+      "path": "skills/agents-sdk/SKILL.md"
     },
     {
       "id": "agents-v2-py",
@@ -12075,6 +12100,35 @@
       "path": "skills/bash-scripting/SKILL.md"
     },
     {
+      "id": "basin",
+      "canonical_id": "basin",
+      "name": "basin",
+      "description": "Build and troubleshoot Cloudflare Basin analytics workflows with Basin Pipelines, Basin Catalog, and Basin SQL. Use for streaming data into R2 Iceberg tables, managing catalogs, or querying tables (formerly Data Platform, Pipelines, R2 Data Catalog, or R2 SQL).",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "basin"
+      ],
+      "triggers": [
+        "basin",
+        "troubleshoot",
+        "cloudflare",
+        "analytics",
+        "pipelines",
+        "catalog",
+        "sql",
+        "streaming",
+        "data",
+        "r2",
+        "iceberg",
+        "tables"
+      ],
+      "path": "skills/basin/SKILL.md"
+    },
+    {
       "id": "bats-testing-patterns",
       "canonical_id": "bats-testing-patterns",
       "name": "bats-testing-patterns",
@@ -16508,6 +16562,124 @@
       "path": "skills/cloud-penetration-testing/SKILL.md"
     },
     {
+      "id": "cloudflare",
+      "canonical_id": "cloudflare",
+      "name": "cloudflare",
+      "description": "Discover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security. Use for architecture and product selection, including when the user describes a need without naming a product; then find the relevant skill or docs.",
+      "category": "ai-ml",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "cloudflare"
+      ],
+      "triggers": [
+        "cloudflare",
+        "discover",
+        "choose",
+        "products",
+        "apps",
+        "apis",
+        "ai",
+        "agents",
+        "storage",
+        "networking",
+        "security",
+        "architecture"
+      ],
+      "path": "skills/cloudflare/SKILL.md"
+    },
+    {
+      "id": "cloudflare-email-service",
+      "canonical_id": "cloudflare-email-service",
+      "name": "cloudflare-email-service",
+      "description": "Implement or troubleshoot Cloudflare Email Sending and Email Routing integrations and their delivery configuration.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "cloudflare",
+        "email",
+        "service"
+      ],
+      "triggers": [
+        "cloudflare",
+        "email",
+        "service",
+        "troubleshoot",
+        "sending",
+        "routing",
+        "integrations",
+        "delivery",
+        "configuration"
+      ],
+      "path": "skills/cloudflare-email-service/SKILL.md"
+    },
+    {
+      "id": "cloudflare-one",
+      "canonical_id": "cloudflare-one",
+      "name": "cloudflare-one",
+      "description": "Design, configure, troubleshoot, or review Cloudflare One Zero Trust and SASE deployments. Use cloudflare-one-migrations for migration planning from other vendors.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "cloudflare",
+        "one"
+      ],
+      "triggers": [
+        "cloudflare",
+        "one",
+        "configure",
+        "troubleshoot",
+        "review",
+        "zero",
+        "trust",
+        "sase",
+        "deployments",
+        "migrations",
+        "migration",
+        "planning"
+      ],
+      "path": "skills/cloudflare-one/SKILL.md"
+    },
+    {
+      "id": "cloudflare-one-migrations",
+      "canonical_id": "cloudflare-one-migrations",
+      "name": "cloudflare-one-migrations",
+      "description": "Assess and plan migrations from existing VPN, SWG, or SASE platforms to Cloudflare One, including policy mapping, parity gaps, and rollout.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "cloudflare",
+        "one",
+        "migrations"
+      ],
+      "triggers": [
+        "cloudflare",
+        "one",
+        "migrations",
+        "assess",
+        "plan",
+        "existing",
+        "vpn",
+        "swg",
+        "sase",
+        "platforms",
+        "including",
+        "policy"
+      ],
+      "path": "skills/cloudflare-one-migrations/SKILL.md"
+    },
+    {
       "id": "cloudflare-pages",
       "canonical_id": "cloudflare-pages",
       "name": "cloudflare-pages",
@@ -16575,11 +16747,11 @@
       "id": "cloudflare-security-audit",
       "canonical_id": "cloudflare-security-audit",
       "name": "cloudflare-security-audit",
-      "description": "Audit authorized codebases for exploitable vulnerabilities using scoped reconnaissance, adversarial review, validation, and structured reporting.",
+      "description": "Security guidance and vulnerability review for codebases, APIs, and services using Cloudflare's 6-phase adversarial discovery harness.",
       "category": "security",
-      "risk": "offensive",
-      "source": "community",
-      "source_type": "community",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
       "source_repo": "cloudflare/security-audit-skill",
       "tags": [
         "cloudflare",
@@ -16590,15 +16762,15 @@
         "cloudflare",
         "security",
         "audit",
-        "authorized",
-        "codebases",
-        "exploitable",
-        "vulnerabilities",
-        "scoped",
-        "reconnaissance",
-        "adversarial",
+        "guidance",
+        "vulnerability",
         "review",
-        "validation"
+        "codebases",
+        "apis",
+        "phase",
+        "adversarial",
+        "discovery",
+        "harness"
       ],
       "path": "skills/cloudflare-security-audit/SKILL.md"
     },
@@ -26553,6 +26725,33 @@
         "pdfs"
       ],
       "path": "skills/dsh-deepread/SKILL.md"
+    },
+    {
+      "id": "durable-objects",
+      "canonical_id": "durable-objects",
+      "name": "durable-objects",
+      "description": "Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "durable",
+        "objects"
+      ],
+      "triggers": [
+        "durable",
+        "objects",
+        "debug",
+        "review",
+        "cloudflare",
+        "code",
+        "persistent",
+        "state",
+        "coordination"
+      ],
+      "path": "skills/durable-objects/SKILL.md"
     },
     {
       "id": "dwarf-expert",
@@ -41146,6 +41345,36 @@
       "path": "skills/json-schema-manual/SKILL.md"
     },
     {
+      "id": "jules-maintainer",
+      "canonical_id": "jules-maintainer",
+      "name": "jules-maintainer",
+      "description": "Autonomous asynchronous repository maintenance, background issue triage, and patch review using Google Jules CLI.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "google/jules",
+      "tags": [
+        "jules",
+        "maintainer"
+      ],
+      "triggers": [
+        "jules",
+        "maintainer",
+        "autonomous",
+        "asynchronous",
+        "repository",
+        "maintenance",
+        "background",
+        "issue",
+        "triage",
+        "patch",
+        "review",
+        "google"
+      ],
+      "path": "skills/jules-maintainer/SKILL.md"
+    },
+    {
       "id": "julia-pro",
       "canonical_id": "julia-pro",
       "name": "julia-pro",
@@ -41230,6 +41459,35 @@
         "todas"
       ],
       "path": "skills/junta-leiloeiros/SKILL.md"
+    },
+    {
+      "id": "k2",
+      "canonical_id": "k2",
+      "name": "k2",
+      "description": "Build and troubleshoot Cloudflare K2 or K2 Streams durable logs. Use for stream setup, producing from Workers or HTTP, configuring retention and inputs, and consuming through subscriptions.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "k2"
+      ],
+      "triggers": [
+        "k2",
+        "troubleshoot",
+        "cloudflare",
+        "streams",
+        "durable",
+        "logs",
+        "stream",
+        "setup",
+        "producing",
+        "workers",
+        "http",
+        "configuring"
+      ],
+      "path": "skills/k2/SKILL.md"
     },
     {
       "id": "k6-load-testing",
@@ -50349,6 +50607,37 @@
         "fetching"
       ],
       "path": "skills/nextjs-best-practices/SKILL.md"
+    },
+    {
+      "id": "nextjs-on-cloudflare",
+      "canonical_id": "nextjs-on-cloudflare",
+      "name": "nextjs-on-cloudflare",
+      "description": "Build, migrate, and deploy Next.js apps on Cloudflare Workers with vinext. Use when starting a Next.js project on Cloudflare, moving an existing app to Workers, choosing between vinext and OpenNext, or setting up vinext for Workers.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "nextjs",
+        "on",
+        "cloudflare"
+      ],
+      "triggers": [
+        "nextjs",
+        "on",
+        "cloudflare",
+        "migrate",
+        "deploy",
+        "next",
+        "js",
+        "apps",
+        "workers",
+        "vinext",
+        "starting",
+        "moving"
+      ],
+      "path": "skills/nextjs-on-cloudflare/SKILL.md"
     },
     {
       "id": "nextjs-seo-indexing",
@@ -61450,6 +61739,93 @@
       "path": "skills/sandbase-mcp/SKILL.md"
     },
     {
+      "id": "sandbox-migrate-to-next",
+      "canonical_id": "sandbox-migrate-to-next",
+      "name": "sandbox-migrate-to-next",
+      "description": "Migrate Cloudflare Sandbox apps from stable @cloudflare/sandbox to @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-next for apps already on the preview.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "sandbox",
+        "migrate",
+        "to",
+        "next"
+      ],
+      "triggers": [
+        "sandbox",
+        "migrate",
+        "to",
+        "next",
+        "cloudflare",
+        "apps",
+        "stable",
+        "sdk",
+        "preview",
+        "already"
+      ],
+      "path": "skills/sandbox-migrate-to-next/SKILL.md"
+    },
+    {
+      "id": "sandbox-next",
+      "canonical_id": "sandbox-next",
+      "name": "sandbox-next",
+      "description": "Build or maintain Cloudflare Sandbox apps on @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-migrate-to-next when porting a stable app.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "sandbox",
+        "next"
+      ],
+      "triggers": [
+        "sandbox",
+        "next",
+        "maintain",
+        "cloudflare",
+        "apps",
+        "sdk",
+        "preview",
+        "migrate",
+        "porting",
+        "stable",
+        "app"
+      ],
+      "path": "skills/sandbox-next/SKILL.md"
+    },
+    {
+      "id": "sandbox-stable",
+      "canonical_id": "sandbox-stable",
+      "name": "sandbox-stable",
+      "description": "Build or maintain Cloudflare Sandbox apps on the stable @cloudflare/sandbox package. Use sandbox-next for preview apps and sandbox-migrate-to-next for stable-to-preview migrations.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "sandbox",
+        "stable"
+      ],
+      "triggers": [
+        "sandbox",
+        "stable",
+        "maintain",
+        "cloudflare",
+        "apps",
+        "package",
+        "next",
+        "preview",
+        "migrate",
+        "migrations"
+      ],
+      "path": "skills/sandbox-stable/SKILL.md"
+    },
+    {
       "id": "sankhya-dashboard-html-jsp-custom-best-pratices",
       "canonical_id": "sankhya-dashboard-html-jsp-custom-best-pratices",
       "name": "sankhya-dashboard-html-jsp-custom-best-pratices",
@@ -72087,6 +72463,36 @@
       "path": "skills/turborepo-caching/SKILL.md"
     },
     {
+      "id": "turnstile-spin",
+      "canonical_id": "turnstile-spin",
+      "name": "turnstile-spin",
+      "description": "Set up, repair, or migrate to Cloudflare Turnstile bot verification in an existing frontend and backend, including server-side Siteverify.",
+      "category": "backend",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "turnstile",
+        "spin"
+      ],
+      "triggers": [
+        "turnstile",
+        "spin",
+        "set",
+        "up",
+        "repair",
+        "migrate",
+        "cloudflare",
+        "bot",
+        "verification",
+        "existing",
+        "frontend",
+        "backend"
+      ],
+      "path": "skills/turnstile-spin/SKILL.md"
+    },
+    {
       "id": "tutorial-engineer",
       "canonical_id": "tutorial-engineer",
       "name": "tutorial-engineer",
@@ -75831,6 +76237,36 @@
       "path": "skills/web-media-getter/SKILL.md"
     },
     {
+      "id": "web-perf",
+      "canonical_id": "web-perf",
+      "name": "web-perf",
+      "description": "Audit, diagnose, or optimize website loading and interaction performance, Core Web Vitals, and Lighthouse performance scores.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "web",
+        "perf"
+      ],
+      "triggers": [
+        "web",
+        "perf",
+        "audit",
+        "diagnose",
+        "optimize",
+        "website",
+        "loading",
+        "interaction",
+        "performance",
+        "core",
+        "vitals",
+        "lighthouse"
+      ],
+      "path": "skills/web-perf/SKILL.md"
+    },
+    {
       "id": "web-performance-optimization",
       "canonical_id": "web-performance-optimization",
       "name": "web-performance-optimization",
@@ -77075,6 +77511,33 @@
       "path": "skills/wordpress-woocommerce-development/SKILL.md"
     },
     {
+      "id": "workers-best-practices",
+      "canonical_id": "workers-best-practices",
+      "name": "workers-best-practices",
+      "description": "Cloudflare Workers best practices for production applications. Use when writing, reviewing, or configuring Workers.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "workers",
+        "best",
+        "practices"
+      ],
+      "triggers": [
+        "workers",
+        "best",
+        "practices",
+        "cloudflare",
+        "applications",
+        "writing",
+        "reviewing",
+        "configuring"
+      ],
+      "path": "skills/workers-best-practices/SKILL.md"
+    },
+    {
       "id": "workflow-automation",
       "canonical_id": "workflow-automation",
       "name": "workflow-automation",
@@ -77276,6 +77739,35 @@
         "turns"
       ],
       "path": "skills/wp-site-health-auditor/SKILL.md"
+    },
+    {
+      "id": "wrangler",
+      "canonical_id": "wrangler",
+      "name": "wrangler",
+      "description": "Run or troubleshoot Wrangler CLI commands and configure Worker projects for local development, Previews, deployment, and Cloudflare resource management.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "cloudflare/skills",
+      "tags": [
+        "wrangler"
+      ],
+      "triggers": [
+        "wrangler",
+        "run",
+        "troubleshoot",
+        "cli",
+        "commands",
+        "configure",
+        "worker",
+        "local",
+        "development",
+        "previews",
+        "deployment",
+        "cloudflare"
+      ],
+      "path": "skills/wrangler/SKILL.md"
     },
     {
       "id": "wrike-automation",

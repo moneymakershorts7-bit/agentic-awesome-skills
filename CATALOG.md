@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2635
+Total skills: 2652
 
 ## agent-behavior (5)
 
@@ -128,7 +128,7 @@ Total skills: 2635
 | `pydantic-ai` | Build production-ready AI agents with PydanticAI — type-safe tool use, structured outputs, dependency injection, and multi-model support. | safe | community | pydantic-ai, ai-agents, llm, openai, anthropic, gemini, tool-use, structured-output, python | pydantic-ai, ai-agents, llm, openai, anthropic, gemini, tool-use, structured-output, python, pydantic, ai, agents |
 | `superpowers-lab` | Lab environment for Claude superpowers | safe | https://github.com/obra/superpowers-lab | superpowers, lab | superpowers, lab, environment, claude |
 
-## ai-ml (136)
+## ai-ml (138)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -146,6 +146,7 @@ Total skills: 2635
 | `agentic-actions-auditor` | Audits GitHub Actions workflows for security vulnerabilities in AI agent integrations  including Claude Code Action,  Gemini CLI, OpenAI Codex, and GitHub AI... | safe | community | agentic, actions, auditor | agentic, actions, auditor, audits, github, security, vulnerabilities, ai, agent, integrations, including, claude |
 | `agentmail` | Email infrastructure for AI agents. Create accounts, send/receive emails, manage webhooks, and check karma balance via the AgentMail API. | safe | community | agentmail | agentmail, email, infrastructure, ai, agents, accounts, send, receive, emails, webhooks, check, karma |
 | `agentphone` | Build AI phone agents with AgentPhone API. Use when the user wants to make phone calls, send/receive SMS, manage phone numbers, create voice agents, set up w... | critical | community | agentphone | agentphone, ai, phone, agents, api, user, wants, calls, send, receive, sms, numbers |
+| `agents-sdk` | Build, debug, or review Cloudflare Agents SDK applications using the agents package. | safe | cloudflare/skills | agents, sdk | agents, sdk, debug, review, cloudflare, applications, package |
 | `agents-v2-py` | Build container-based Foundry Agents with Azure AI Projects SDK (ImageBasedHostedAgentDefinition). Use when creating hosted agents with custom container imag... | critical | community | agents, v2, py | agents, v2, py, container, foundry, azure, ai, sdk, imagebasedhostedagentdefinition, creating, hosted, custom |
 | `ai-analyzer` | AI驱动的综合健康分析系统，整合多维度健康数据、识别异常模式、预测健康风险、提供个性化建议。支持智能问答和AI健康报告生成。 | critical | community | ai, analyzer | ai, analyzer |
 | `ai-engineer` | Build production-ready LLM applications, advanced RAG systems, and intelligent agents. Implements vector search, multimodal AI, agent orchestration, and ente... | critical | community | ai | ai, engineer, llm, applications, rag, intelligent, agents, implements, vector, search, multimodal, agent |
@@ -172,6 +173,7 @@ Total skills: 2635
 | `claude-settings-audit` | Analyze a repository to generate recommended Claude Code settings.json permissions. Use when setting up a new project, auditing existing settings, or determi... | critical | community | claude, settings, audit | claude, settings, audit, analyze, repository, generate, recommended, code, json, permissions, setting, up |
 | `claude-speed-reader` | -Speed read Claude's responses at 600+ WPM using RSVP with Spritz-style ORP highlighting | safe | https://github.com/SeanZoR/claude-speed-reader | claude, speed, reader | claude, speed, reader, read, responses, 600, wpm, rsvp, spritz, style, orp, highlighting |
 | `claude-win11-speckit-update-skill` | Windows 11 system management | safe | https://github.com/NotMyself/claude-win11-speckit-update-skill | claude, win11, speckit, update, skill | claude, win11, speckit, update, skill, windows, 11 |
+| `cloudflare` | Discover and choose Cloudflare products for apps, APIs, AI agents, storage, networking, and security. Use for architecture and product selection, including w... | safe | cloudflare/skills | cloudflare | cloudflare, discover, choose, products, apps, apis, ai, agents, storage, networking, security, architecture |
 | `computer-use-agents` | Build AI agents that interact with computers like humans do - viewing screens, moving cursors, clicking buttons, and typing text. Covers Anthropic's Computer... | critical | vibeship-spawner-skills (Apache 2.0) | computer, use, agents | computer, use, agents, ai, interact, computers, like, humans, do, viewing, screens, moving |
 | `computer-vision-expert` | SOTA Computer Vision Expert (2026). Specialized in YOLO26, Segment Anything 3 (SAM 3), Vision Language Models, and real-time spatial analysis. | critical | community | computer, vision | computer, vision, sota, 2026, specialized, yolo26, segment, anything, sam, language, models, real |
 | `context-agent` | Agente de contexto para continuidade entre sessoes. Salva resumos, decisoes, tarefas pendentes e carrega briefing automatico na sessao seguinte. | critical | community | context, session-management, continuity, memory | context, session-management, continuity, memory, agent, agente, de, contexto, para, continuidade, entre, sessoes |
@@ -460,7 +462,7 @@ Total skills: 2635
 | `zendesk-automation` | Automate Zendesk tasks via Rube MCP (Composio): tickets, users, organizations, replies. Always search tools first for current schemas. | critical | community | zendesk | zendesk, automation, automate, tasks, via, rube, mcp, composio, tickets, users, organizations, replies |
 | `zoom-automation` | Automate Zoom meeting creation, management, recordings, webinars, and participant tracking via Rube MCP (Composio). Always search tools first for current sch... | critical | community | zoom | zoom, automation, automate, meeting, creation, recordings, webinars, participant, tracking, via, rube, mcp |
 
-## backend (46)
+## backend (47)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -505,6 +507,7 @@ Total skills: 2635
 | `pubmed-database` | Direct REST API access to PubMed. Advanced Boolean/MeSH queries, E-utilities API, batch processing, citation management. For Python workflows, prefer biopyth... | critical | community | pubmed, database | pubmed, database, direct, rest, api, access, boolean, mesh, queries, utilities, batch, processing |
 | `supabase` | Use when doing ANY task involving Supabase. | critical | supabase/agent-skills | supabase | supabase, doing, any, task, involving |
 | `telegram` | Integracao completa com Telegram Bot API. Setup com BotFather, mensagens, webhooks, inline keyboards, grupos, canais. Boilerplates Node.js e Python. | critical | community | messaging, telegram, bots, webhooks | messaging, telegram, bots, webhooks, integracao, completa, com, bot, api, setup, botfather, mensagens |
+| `turnstile-spin` | Set up, repair, or migrate to Cloudflare Turnstile bot verification in an existing frontend and backend, including server-side Siteverify. | safe | cloudflare/skills | turnstile, spin | turnstile, spin, set, up, repair, migrate, cloudflare, bot, verification, existing, frontend, backend |
 | `uniprot-database` | Direct REST API access to UniProt. Protein searches, FASTA retrieval, ID mapping, Swiss-Prot/TrEMBL. For Python workflows with multiple databases, prefer bio... | safe | community | uniprot, database | uniprot, database, direct, rest, api, access, protein, searches, fasta, retrieval, id, mapping |
 | `upstash-ratelimit` | Add rate limiting to API routes, middleware, and edge functions with @upstash/ratelimit: sliding window, fixed window, and token bucket backed by Upstash Redis. | critical | self | upstash, rate-limiting, redis, serverless, edge, middleware, 429 | upstash, rate-limiting, redis, serverless, edge, middleware, 429, ratelimit, add, rate, limiting, api |
 | `upstash-redis` | Use the @upstash/redis HTTP client for caching, sessions, counters, and Redis data structures from serverless and edge runtimes without connection pooling. | critical | self | upstash, redis, cache, serverless, edge, key-value | upstash, redis, cache, serverless, edge, key-value, http, client, caching, sessions, counters, data |
@@ -2615,7 +2618,7 @@ Total skills: 2635
 | `client-secret-exposure-audit` | Audit a deployed web app for secrets exposed to the browser: hardcoded API keys/tokens in JS, secrets in HTML meta/attributes/comments, publicly reachable so... | safe | self | security, secrets, owasp, reconnaissance, web, headers | security, secrets, owasp, reconnaissance, web, headers, client, secret, exposure, audit, deployed, app |
 | `cloud-iam-deep` | Cloud IAM red-team attack chain across AWS, Azure, GCP | offensive | elementalsouls/Claude-BugHunter | cloud, iam, deep | cloud, iam, deep, red, team, attack, chain, aws, azure, gcp |
 | `cloud-k8s` | Authorized cloud, container, and Kubernetes security assessment: metadata SSRF, IAM misconfiguration, container escape paths, and cluster RBAC review. | offensive | zhaoxuya520/reverse-skill | cloud, k8s | cloud, k8s, authorized, container, kubernetes, security, assessment, metadata, ssrf, iam, misconfiguration, escape |
-| `cloudflare-security-audit` | Audit authorized codebases for exploitable vulnerabilities using scoped reconnaissance, adversarial review, validation, and structured reporting. | offensive | cloudflare/security-audit-skill | cloudflare, security, audit | cloudflare, security, audit, authorized, codebases, exploitable, vulnerabilities, scoped, reconnaissance, adversarial, review, validation |
+| `cloudflare-security-audit` | Security guidance and vulnerability review for codebases, APIs, and services using Cloudflare's 6-phase adversarial discovery harness. | safe | cloudflare/security-audit-skill | cloudflare, security, audit | cloudflare, security, audit, guidance, vulnerability, review, codebases, apis, phase, adversarial, discovery, harness |
 | `constant-time-analysis` | Analyze cryptographic code to detect operations that leak secret data through execution timing variations. | critical | community | constant, time | constant, time, analysis, analyze, cryptographic, code, detect, operations, leak, secret, data, through |
 | `container-hardening` | Secure Docker images and container runtime configurations. | critical | BagelHole/DevOps-Security-Agent-Skills | container, hardening | container, hardening, secure, docker, images, runtime, configurations |
 | `container-scanning` | Scan container images for vulnerabilities using Trivy, Grype, and cloud-native tools. | safe | BagelHole/DevOps-Security-Agent-Skills | container, scanning | container, scanning, scan, images, vulnerabilities, trivy, grype, cloud, native |
@@ -2996,11 +2999,25 @@ Total skills: 2635
 | --- | --- | --- | --- | --- | --- |
 | `travel-planner` | 旅行/行程规划需求时使用:规划去某地旅行、X天X城、带老人孩子、自驾、假期安排等。产出逐日行程表、预算估算(经济/舒适/奢华三档)、交通住宿建议、景点美食清单。必须先问预算,预算未确认只输出问题清单;事实数据带来源和查询日期。 | safe | saudademjj/luopan | travel, itinerary, planning, trip, chinese | travel, itinerary, planning, trip, chinese, planner |
 
-## uncategorized (1)
+## uncategorized (15)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
+| `basin` | Build and troubleshoot Cloudflare Basin analytics workflows with Basin Pipelines, Basin Catalog, and Basin SQL. Use for streaming data into R2 Iceberg tables... | safe | cloudflare/skills | basin | basin, troubleshoot, cloudflare, analytics, pipelines, catalog, sql, streaming, data, r2, iceberg, tables |
 | `changelog-entry` | Generate a properly formatted CHANGELOG.md entry in Keep a Changelog format from a commit range or PR. Groups changes into Added/Changed/Deprecated/Removed/F... | safe | self | git, changelog, developer-workflow, documentation | git, changelog, developer-workflow, documentation, entry, generate, properly, formatted, md, keep, format, commit |
+| `cloudflare-email-service` | Implement or troubleshoot Cloudflare Email Sending and Email Routing integrations and their delivery configuration. | safe | cloudflare/skills | cloudflare, email, service | cloudflare, email, service, troubleshoot, sending, routing, integrations, delivery, configuration |
+| `cloudflare-one` | Design, configure, troubleshoot, or review Cloudflare One Zero Trust and SASE deployments. Use cloudflare-one-migrations for migration planning from other ve... | safe | cloudflare/skills | cloudflare, one | cloudflare, one, configure, troubleshoot, review, zero, trust, sase, deployments, migrations, migration, planning |
+| `cloudflare-one-migrations` | Assess and plan migrations from existing VPN, SWG, or SASE platforms to Cloudflare One, including policy mapping, parity gaps, and rollout. | safe | cloudflare/skills | cloudflare, one, migrations | cloudflare, one, migrations, assess, plan, existing, vpn, swg, sase, platforms, including, policy |
+| `durable-objects` | Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination. | safe | cloudflare/skills | durable, objects | durable, objects, debug, review, cloudflare, code, persistent, state, coordination |
+| `jules-maintainer` | Autonomous asynchronous repository maintenance, background issue triage, and patch review using Google Jules CLI. | safe | google/jules | jules, maintainer | jules, maintainer, autonomous, asynchronous, repository, maintenance, background, issue, triage, patch, review, google |
+| `k2` | Build and troubleshoot Cloudflare K2 or K2 Streams durable logs. Use for stream setup, producing from Workers or HTTP, configuring retention and inputs, and ... | safe | cloudflare/skills | k2 | k2, troubleshoot, cloudflare, streams, durable, logs, stream, setup, producing, workers, http, configuring |
+| `nextjs-on-cloudflare` | Build, migrate, and deploy Next.js apps on Cloudflare Workers with vinext. Use when starting a Next.js project on Cloudflare, moving an existing app to Worke... | safe | cloudflare/skills | nextjs, on, cloudflare | nextjs, on, cloudflare, migrate, deploy, next, js, apps, workers, vinext, starting, moving |
+| `sandbox-migrate-to-next` | Migrate Cloudflare Sandbox apps from stable @cloudflare/sandbox to @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-next for apps already on the preview. | safe | cloudflare/skills | sandbox, migrate, to, next | sandbox, migrate, to, next, cloudflare, apps, stable, sdk, preview, already |
+| `sandbox-next` | Build or maintain Cloudflare Sandbox apps on @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-migrate-to-next when porting a stable app. | safe | cloudflare/skills | sandbox, next | sandbox, next, maintain, cloudflare, apps, sdk, preview, migrate, porting, stable, app |
+| `sandbox-stable` | Build or maintain Cloudflare Sandbox apps on the stable @cloudflare/sandbox package. Use sandbox-next for preview apps and sandbox-migrate-to-next for stable... | safe | cloudflare/skills | sandbox, stable | sandbox, stable, maintain, cloudflare, apps, package, next, preview, migrate, migrations |
+| `web-perf` | Audit, diagnose, or optimize website loading and interaction performance, Core Web Vitals, and Lighthouse performance scores. | safe | cloudflare/skills | web, perf | web, perf, audit, diagnose, optimize, website, loading, interaction, performance, core, vitals, lighthouse |
+| `workers-best-practices` | Cloudflare Workers best practices for production applications. Use when writing, reviewing, or configuring Workers. | safe | cloudflare/skills | workers, best, practices | workers, best, practices, cloudflare, applications, writing, reviewing, configuring |
+| `wrangler` | Run or troubleshoot Wrangler CLI commands and configure Worker projects for local development, Previews, deployment, and Cloudflare resource management. | safe | cloudflare/skills | wrangler | wrangler, run, troubleshoot, cli, commands, configure, worker, local, development, previews, deployment, cloudflare |
 
 ## video (1)
 

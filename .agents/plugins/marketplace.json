@@ -545,6 +545,18 @@
       "category": "Specialized Packs"
     },
     {
+      "name": "aasb-cloudflare-developer-platform",
+      "source": {
+        "source": "local",
+        "path": "./plugins/agentic-bundle-cloudflare-developer-platform"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Specialized Packs"
+    },
+    {
       "name": "aasb-expo-react-native",
       "source": {
         "source": "local",

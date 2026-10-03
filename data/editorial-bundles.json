@@ -2045,6 +2045,57 @@
       ]
     },
     {
+      "id": "cloudflare-developer-platform",
+      "name": "Cloudflare Developer Platform",
+      "group": "🔧 Specialized Packs",
+      "emoji": "🟧",
+      "tagline": "The \"Cloudflare Developer Platform\" Pack",
+      "audience": "For building, securing, and deploying applications, agents, and edge APIs on Cloudflare.",
+      "description": "For building, securing, and deploying applications, agents, and edge APIs on Cloudflare.",
+      "skills": [
+        {
+          "id": "workers-best-practices",
+          "summary": "Cloudflare Workers production best practices, bindings, and patterns."
+        },
+        {
+          "id": "wrangler",
+          "summary": "Run Wrangler CLI commands and manage Cloudflare Workers resources."
+        },
+        {
+          "id": "agents-sdk",
+          "summary": "Build stateful AI agents with scheduling, RPC, and MCP on Workers."
+        },
+        {
+          "id": "durable-objects",
+          "summary": "Manage persistent edge coordination, SQLite, WebSockets, and state."
+        },
+        {
+          "id": "nextjs-on-cloudflare",
+          "summary": "Build, migrate, and deploy Next.js apps to Workers with vinext."
+        },
+        {
+          "id": "sandbox-next",
+          "summary": "Build isolated sandbox environments on Cloudflare Containers."
+        },
+        {
+          "id": "turnstile-spin",
+          "summary": "Implement and verify Cloudflare Turnstile bot verification."
+        },
+        {
+          "id": "cloudflare-one",
+          "summary": "Design and review Zero Trust, Access, Gateway, and Tunnels."
+        },
+        {
+          "id": "cloudflare-security-audit",
+          "summary": "6-phase adversarial vulnerability discovery and security harness."
+        },
+        {
+          "id": "web-perf",
+          "summary": "Audit and optimize Core Web Vitals and edge loading performance."
+        }
+      ]
+    },
+    {
       "id": "expo-react-native",
       "name": "Expo & React Native",
       "group": "🔧 Specialized Packs",
@@ -2283,6 +2334,10 @@
         {
           "id": "finishing-a-development-branch",
           "summary": "Close a branch with verified integration, merge, and cleanup options."
+        },
+        {
+          "id": "jules-maintainer",
+          "summary": "Autonomous asynchronous repository maintenance using Google Jules CLI."
         }
       ]
     },

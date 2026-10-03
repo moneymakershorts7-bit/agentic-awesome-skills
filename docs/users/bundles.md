@@ -744,6 +744,23 @@ _For building on Azure across cloud, AI, and platform services._
 - [`azure-identity-py`](../../skills/azure-identity-py/): Handle Azure authentication flows in Python services.
 - [`azure-monitor-opentelemetry-ts`](../../skills/azure-monitor-opentelemetry-ts/): Add telemetry and tracing from TypeScript apps.
 
+### 🟧 The "Cloudflare Developer Platform" Pack
+
+_For building, securing, and deploying applications, agents, and edge APIs on Cloudflare._
+
+**Plugin status:** Codex plugin-safe · Claude plugin-safe · Agent Plugins 1.0 portable
+
+- [`workers-best-practices`](../../skills/workers-best-practices/): Cloudflare Workers production best practices, bindings, and patterns.
+- [`wrangler`](../../skills/wrangler/): Run Wrangler CLI commands and manage Cloudflare Workers resources.
+- [`agents-sdk`](../../skills/agents-sdk/): Build stateful AI agents with scheduling, RPC, and MCP on Workers.
+- [`durable-objects`](../../skills/durable-objects/): Manage persistent edge coordination, SQLite, WebSockets, and state.
+- [`nextjs-on-cloudflare`](../../skills/nextjs-on-cloudflare/): Build, migrate, and deploy Next.js apps to Workers with vinext.
+- [`sandbox-next`](../../skills/sandbox-next/): Build isolated sandbox environments on Cloudflare Containers.
+- [`turnstile-spin`](../../skills/turnstile-spin/): Implement and verify Cloudflare Turnstile bot verification.
+- [`cloudflare-one`](../../skills/cloudflare-one/): Design and review Zero Trust, Access, Gateway, and Tunnels.
+- [`cloudflare-security-audit`](../../skills/cloudflare-security-audit/): 6-phase adversarial vulnerability discovery and security harness.
+- [`web-perf`](../../skills/web-perf/): Audit and optimize Core Web Vitals and edge loading performance.
+
 ### 📲 The "Expo & React Native" Pack
 
 _For shipping mobile apps with Expo and React Native._
@@ -834,6 +851,7 @@ _For shipping clean changes in public repositories._
 - [`git-advanced-workflows`](../../skills/git-advanced-workflows/): Rebase, cherry-pick, bisect, recovery.
 - [`documentation-templates`](../../skills/documentation-templates/): Standardize docs and handoffs.
 - [`finishing-a-development-branch`](../../skills/finishing-a-development-branch/): Close a branch with verified integration, merge, and cleanup options.
+- [`jules-maintainer`](../../skills/jules-maintainer/): Autonomous asynchronous repository maintenance using Google Jules CLI.
 
 ### 🧱 The "Skill Author" Pack
 
@@ -1062,4 +1080,4 @@ Found a skill that should be in a bundle? Or want to create a new bundle? [Open 
 
 ---
 
-_Last updated: June 2026 | Total Skills: 2,635+ | Total Bundles: 58_
+_Last updated: June 2026 | Total Skills: 2,652+ | Total Bundles: 59_
