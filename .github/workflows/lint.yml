@@ -39,10 +39,10 @@ jobs:
         with:
           python-version: "3.10"
 
-      - name: Run Ruff Lint
-        uses: astral-sh/ruff-action@e763b65fa369527ecb47f44d156fcabaf410be69 # v3.3.1
-        with:
-          args: "check tools/scripts --config ruff.toml"
+      - name: Install and run Ruff
+        run: |
+          pip install ruff
+          ruff check . --config ruff.toml
 
   skills-validation:
     name: Skills Metadata & Spec Validation
