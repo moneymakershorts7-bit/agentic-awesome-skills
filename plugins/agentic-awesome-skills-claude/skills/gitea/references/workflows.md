@@ -332,7 +332,7 @@ tea api -X POST /endpoint -F data=@-            # stdin
 ```bash
 tea webhooks create https://ci.example.com/webhook \
   --events push \
-  --secret "webhook-secret-token" \
+  --secret "$WEBHOOK_SECRET" \
   --active \
   --branch-filter "main"
 ```

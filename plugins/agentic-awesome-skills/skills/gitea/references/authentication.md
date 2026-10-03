@@ -31,7 +31,7 @@ Required token scopes depend on operations:
 tea logins add \
   --name work-gitea \
   --url https://gitea.company.com \
-  --token ghp_xxxxxxxxxxxxxxxxxxxx \
+  --token "$GITEA_TOKEN" \
   --scopes "read:issue,write:issue,read:repository,write:repository"
 ```
 

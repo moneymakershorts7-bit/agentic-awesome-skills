@@ -32917,6 +32917,25 @@
       "runtime_files": []
     },
     {
+      "id": "nanobanana-context-imagegen",
+      "path": "skills/nanobanana-context-imagegen",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "nanobanana-ppt-skills",
       "path": "skills/nanobanana-ppt-skills",
       "targets": {
@@ -47140,6 +47159,25 @@
       "runtime_files": []
     },
     {
+      "id": "tool-first-gate",
+      "path": "skills/tool-first-gate",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "tool-use-guardian",
       "path": "skills/tool-use-guardian",
       "targets": {
@@ -51748,10 +51786,10 @@
     }
   ],
   "summary": {
-    "total_skills": 2697,
+    "total_skills": 2699,
     "supported": {
-      "codex": 2609,
-      "claude": 2634
+      "codex": 2611,
+      "claude": 2636
     },
     "blocked": {
       "codex": 88,

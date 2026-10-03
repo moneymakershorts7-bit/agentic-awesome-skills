@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2697
+Total skills: 2699
 
 ## agent-behavior (5)
 
@@ -2161,7 +2161,7 @@ Total skills: 2697
 | `protect-mcp-governance` | Agent governance skill for MCP tool calls — Cedar policy authoring, shadow-to-enforce rollout, and Ed25519 receipt verification. | safe | scopeblind/scopeblind-gateway | protect, mcp, governance | protect, mcp, governance, agent, skill, calls, cedar, policy, authoring, shadow, enforce, rollout |
 | `serply-search-mcp` | Search Google, Bing, Google News and Google Scholar, and read public pages, with the Serply MCP server. Use when the user chooses Serply or its connected too... | safe | self | mcp, web-search, news, scholar, research, citations | mcp, web-search, news, scholar, research, citations, serply, search, google, bing, read, public |
 
-## media (42)
+## media (43)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -2184,6 +2184,7 @@ Total skills: 2697
 | `md2video-audio` | Convert Markdown documents into narrated MP4 videos with synchronized visuals and voice narration. | safe | 70v-Yoyo/md2video-audio-skill | markdown, video, audio, text-to-speech, marp, presentation | markdown, video, audio, text-to-speech, marp, presentation, md2video, convert, documents, narrated, mp4, videos |
 | `muapi-media` | Generate images and videos with MuAPI's schema-driven asynchronous media API while protecting keys, polling, and output downloads. | critical | self | muapi, image-generation, video-generation, media-api | muapi, image-generation, video-generation, media-api, media, generate, images, videos, schema, driven, asynchronous, api |
 | `music-generation-studio` | Install and use the official AI Music Generator package, pinned by digest, for paid hosted work on the Beatra service. | critical | beatra-ai/ai-music-generator-skill | music-generation, text-to-music, mcp, paid-api, beatra | music-generation, text-to-music, mcp, paid-api, beatra, music, generation, studio, install, official, ai, generator |
+| `nanobanana-context-imagegen` | Generate spectacular, context-driven images for documents, books, and creative projects using Google Gemini Nano Banana & Imagen 3 models, with a strict zero... | safe | moneymakershorts7-bit/agentic-awesome-skills | image-generation, nanobanana, gemini-media, imagen-3, context-driven, book-illustrations | image-generation, nanobanana, gemini-media, imagen-3, context-driven, book-illustrations, context, imagegen, generate, spectacular, driven, images |
 | `nsfw-ai-spicyapi` | Generate adult (18+) images, image-to-video clips and image edits through the SpicyAPI API, with a cost quote before every paid run and adults-only / consent... | critical | Spicy-API/nsfw-ai-skill | image-generation, video-generation, image-to-video, adult-content, api | image-generation, video-generation, image-to-video, adult-content, api, nsfw, ai, spicyapi, generate, adult, 18, images |
 | `podcast-generation` | Generate real audio narratives from text content using Azure OpenAI's Realtime API. | critical | community | podcast, generation | podcast, generation, generate, real, audio, narratives, text, content, azure, openai, realtime, api |
 | `poster-design-studio` | Install and use the official AI Poster Maker package, pinned by digest, for paid hosted work on the Beatra service. | critical | beatra-ai/ai-poster-maker-skill | poster-design, text-to-image, mcp, paid-api, beatra | poster-design, text-to-image, mcp, paid-api, beatra, poster, studio, install, official, ai, maker, package |
@@ -3013,7 +3014,7 @@ Total skills: 2697
 | --- | --- | --- | --- | --- | --- |
 | `travel-planner` | 旅行/行程规划需求时使用:规划去某地旅行、X天X城、带老人孩子、自驾、假期安排等。产出逐日行程表、预算估算(经济/舒适/奢华三档)、交通住宿建议、景点美食清单。必须先问预算,预算未确认只输出问题清单;事实数据带来源和查询日期。 | safe | saudademjj/luopan | travel, itinerary, planning, trip, chinese | travel, itinerary, planning, trip, chinese, planner |
 
-## uncategorized (50)
+## uncategorized (51)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -3063,6 +3064,7 @@ Total skills: 2697
 | `sandbox-next` | Build or maintain Cloudflare Sandbox apps on @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-migrate-to-next when porting a stable app. | safe | cloudflare/skills | sandbox, next | sandbox, next, maintain, cloudflare, apps, sdk, preview, migrate, porting, stable, app |
 | `sandbox-stable` | Build or maintain Cloudflare Sandbox apps on the stable @cloudflare/sandbox package. Use sandbox-next for preview apps and sandbox-migrate-to-next for stable... | safe | cloudflare/skills | sandbox, stable | sandbox, stable, maintain, cloudflare, apps, package, next, preview, migrate, migrations |
 | `think` | Apply the Fable-derived 10-stage OBSERVE, OBSERVE, LISTEN, THINK, CONNECT, CONNECT, FEEL, ACCEPT, CREATE, GROW loop to consequential or ambiguous reasoning a... | safe | community | think | think, apply, fable, derived, 10, stage, observe, listen, connect, feel, accept, grow |
+| `tool-first-gate` | Mandatory pre-execution gate for mechanical tasks (file conversions, media transcoding, data restructuring, OCR, archiving). Discovers the best CLI tool, aud... | safe | internal | first, gate | first, gate, mandatory, pre, execution, mechanical, tasks, file, conversions, media, transcoding, data |
 | `twitter-algorithm-optimizer` | Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit user tweets to improve engagement and visibili... | safe | community | twitter, algorithm, optimizer | twitter, algorithm, optimizer, analyze, optimize, tweets, maximum, reach, open, source, insights, rewrite |
 | `web-perf` | Audit, diagnose, or optimize website loading and interaction performance, Core Web Vitals, and Lighthouse performance scores. | safe | cloudflare/skills | web, perf | web, perf, audit, diagnose, optimize, website, loading, interaction, performance, core, vitals, lighthouse |
 | `workers-best-practices` | Cloudflare Workers best practices for production applications. Use when writing, reviewing, or configuring Workers. | safe | cloudflare/skills | workers, best, practices | workers, best, practices, cloudflare, applications, writing, reviewing, configuring |

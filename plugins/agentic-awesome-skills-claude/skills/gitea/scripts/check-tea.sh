@@ -52,13 +52,14 @@ fi
 
 # 4. Check repo context
 if git rev-parse --is-inside-work-tree &>/dev/null; then
-    echo -e "${GREEN}[OK]${NC} Inside a git repository: $(basename $(git rev-parse --show-toplevel))"
+    repo_root=$(git rev-parse --show-toplevel)
+    echo -e "${GREEN}[OK]${NC} Inside a git repository: $(basename "$repo_root")"
 
     # Check for Gitea remotes
     remotes=$(git remote -v 2>/dev/null | grep -i 'fetch' || true)
     if [ -n "$remotes" ]; then
         echo -e "  Remotes:"
-        echo "$remotes" | sed 's/^/    /'
+        sed 's/^/    /' <<< "$remotes"
 
         # Try to match remotes against configured logins
         if [ "$login_count" -gt 0 ]; then
