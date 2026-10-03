@@ -4,12 +4,6 @@
   "rules": [],
   "fingerprints": [
     {
-      "hash": "sha256:d515d630baf273b707dcaace4429a1ddba3ea1e5796d76be17c7d8eaf320d92f",
-      "rule_id": "RA2",
-      "file": "SKILL.md",
-      "reason": "Accepted finding (auto-generated baseline)"
-    },
-    {
       "hash": "sha256:e918b7aed000ac452089d8f711aaa49eb4714b745e33a984552e9c87cef52e6b",
       "rule_id": "AST4",
       "file": "book_to_skill/dependencies.py",
@@ -46,25 +40,19 @@
       "reason": "Accepted finding (auto-generated baseline)"
     },
     {
-      "hash": "sha256:6f1728db65fba6ae82813e4ee356434b4b4e935829bf12bfc2a362fc723f4c89",
+      "hash": "sha256:b121077bbaf742d469607c0f49fb7d49b327f0102656f7b6395e3b4b8404d81c",
       "rule_id": "SC4",
       "file": "pyproject.toml",
       "reason": "Accepted finding (auto-generated baseline)"
     },
     {
-      "hash": "sha256:3d824c62adcffa0e816ee532aa8d75545996ab28aac52c96c0efd4e2c2941352",
+      "hash": "sha256:aaf2d8fb8a33716f49b3d5b8bc4b7d08dc30778d18c4ef8c703ef8476e5d3624",
       "rule_id": "SC4",
       "file": "pyproject.toml",
       "reason": "Accepted finding (auto-generated baseline)"
     },
     {
-      "hash": "sha256:ba8e34cfc6760ecdc85da34a362c9773651433010da574277e92e708af59ec10",
-      "rule_id": "SC4",
-      "file": "pyproject.toml",
-      "reason": "Accepted finding (auto-generated baseline)"
-    },
-    {
-      "hash": "sha256:452699ccc1b277c295a2c9ef8f8a7c82b42afafa1520d9adc9d909f39d6c90e9",
+      "hash": "sha256:6f2a6385160082e74ed648d7692093989dd165d4383e07075199ec370ef2687a",
       "rule_id": "SC4",
       "file": "pyproject.toml",
       "reason": "Accepted finding (auto-generated baseline)"

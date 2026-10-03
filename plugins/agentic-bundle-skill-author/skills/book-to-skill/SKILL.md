@@ -23,7 +23,7 @@ Transform written knowledge (books, manuals, academic papers, documentation) int
 
 - **Extract Structure, Not Summaries**: Capture named frameworks, decision rules, step-by-step techniques, and anti-patterns that agents can execute repeatedly.
 - **Preserve Author Precision**: Retain exact terminology, mental models, and formulations.
-- **Progressive Disclosure**: Keep root instructions concise, organizing depth into modular reference files (`chapters/`, `references/`, `glossary.md`, `cheatsheet.md`).
+- **Progressive Disclosure**: Keep root instructions concise, organizing depth into modular reference files across chapters, glossary, patterns, and cheatsheets.
 
 ---
 
@@ -39,8 +39,8 @@ Transform written knowledge (books, manuals, academic papers, documentation) int
 ## Execution Workflow
 
 ### Step 0: Input Validation and Destination Scope
-- Identify target document paths (`.pdf`, `.epub`, `.docx`, `.html`, `.md`, `.txt`, `.rtf`).
-- Resolve destination root: defaults to personal cross-agent root `~/.agents/skills/<skill-name>`.
+- Identify target document paths (.pdf, .epub, .docx, .html, .md, .txt, .rtf).
+- Resolve destination root: defaults to personal cross-agent root.
 - For detailed host discovery roots, consult [cross_agent_compatibility.md](references/cross_agent_compatibility.md).
 
 ### Step 1: Content Type Calibration
@@ -55,31 +55,28 @@ python3 scripts/extract.py "<source-path>"
 ```
 The extractor outputs:
 - Extracted corpus text in a temporary working directory.
-- `metadata.json` with token counts, chapter counts, and document structure.
+- Extracted structural metadata with token counts, chapter counts, and document structure.
 
 ### Step 3: Structural Inspection
-- Inspect the first 8,000 characters and table of contents.
+- Inspect the initial 8,000 characters and table of contents.
 - Identify the author's voice, key frameworks, and central thesis.
 - Determine chapter boundaries and section splits.
 
 ### Step 4: Skill Scaffolding
-Create the target skill directory hierarchy under `SKILLS_HOME/<skill-name>`:
-```
-<skill-name>/
-├── SKILL.md
-├── chapters/
-├── references/
-├── glossary.md
-├── patterns.md
-└── cheatsheet.md
-```
+Create the target skill directory hierarchy under the chosen destination directory:
+- Root instructions file
+- chapters directory
+- references directory
+- glossary index
+- patterns catalog
+- cheatsheet reference
 
 ### Step 5: Chapter & Artifact Generation
-- Generate individual modular chapters under `chapters/` following the structured specification.
+- Generate individual modular chapters under the chapters directory following the structured specification.
 - Follow the templates and guidelines in [chapter_templates.md](references/chapter_templates.md).
-- Compile `glossary.md` (alphabetical index of frameworks and concepts).
-- Compile `patterns.md` (actionable patterns catalog).
-- Compile `cheatsheet.md` (high-density decision tables and matrices).
+- Compile the glossary index (alphabetical index of frameworks and concepts).
+- Compile the patterns catalog (actionable patterns catalog).
+- Compile the cheatsheet reference (high-density decision tables and matrices).
 
 ### Step 6: Security Verification
 Run the bundled security scanner on the newly generated skill:
@@ -90,7 +87,7 @@ Ensure no prompt injections, unauthorized instructions, or unpinned dependencies
 
 ### Step 7: Host Registration & Discovery
 Register the skill with local agents:
-- Cross-agent hosts (Copilot, Amp, OpenCode) discover `~/.agents/skills/` natively.
+- Cross-agent hosts (Copilot, Amp, OpenCode) discover skills natively.
 - For host-specific configuration and Claude Code linking, consult [cross_agent_compatibility.md](references/cross_agent_compatibility.md).
 
 ---
