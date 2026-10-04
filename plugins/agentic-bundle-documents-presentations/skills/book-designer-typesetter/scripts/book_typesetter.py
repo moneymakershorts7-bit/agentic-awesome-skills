@@ -441,6 +441,19 @@ def main():
 
     # 7. Assemble Full HTML Document
     cover_path = Path(args.cover).resolve() if args.cover else None
+    if not cover_path:
+        for candidate in [
+            input_file.parent / "imagenes" / "img-000.png",
+            input_file.parent / "imagenes" / "cover.png",
+            input_file.parent / "imagenes" / "cover.jpg",
+            input_file.parent / "img-000.png",
+            input_file.parent / "cover.png",
+            input_file.parent / "cover.jpg",
+        ]:
+            if candidate.exists():
+                cover_path = candidate.resolve()
+                print(f"[*] Auto-detected cover image: {cover_path.name}")
+                break
     full_html = build_full_document(
         body_html=body_html,
         title=title,
