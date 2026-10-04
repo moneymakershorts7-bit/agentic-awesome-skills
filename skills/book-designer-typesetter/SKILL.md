@@ -6,10 +6,12 @@ allowed-tools:
   - Read
   - Write
   - Edit
+  - Grep
 permissions:
   - shell
   - file_read
   - file_write
+  - network
 category: "documents-presentations"
 risk: "safe"
 source: "official"

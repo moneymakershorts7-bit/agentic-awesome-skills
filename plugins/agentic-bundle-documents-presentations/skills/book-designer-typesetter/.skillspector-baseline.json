@@ -4,16 +4,16 @@
   "rules": [],
   "fingerprints": [
     {
-      "hash": "sha256:aa84d38f7d2ce616dd9c3ce71419021c3345666702594bdf64e57e16fe6290d7",
+      "hash": "b1d2c15ab04ab2798b2725db6220db04878b40b0390d2f0dc63407deedd4b65b",
       "rule_id": "AST4",
       "file": "scripts/book_typesetter.py",
-      "reason": "Legitimate deterministic vector PDF rendering via local Bun and Brave binaries"
+      "reason": "Legitimate deterministic vector PDF rendering via local Bun marked parser"
     },
     {
-      "hash": "sha256:91d91acef2e2b33c6df6ab5c7ff197425d53c7bad6ab8ddaba6488ae2247f118",
+      "hash": "474de214040938d1db32d00d67ccb1a56367476486c9cf888d5e0ead435ef0ef",
       "rule_id": "AST4",
       "file": "scripts/book_typesetter.py",
-      "reason": "Legitimate deterministic vector PDF rendering via local Bun and Brave binaries"
+      "reason": "Legitimate deterministic vector PDF rendering via local CDP Bun runner"
     }
   ]
 }

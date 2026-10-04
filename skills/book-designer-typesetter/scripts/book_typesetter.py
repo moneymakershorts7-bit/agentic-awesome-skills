@@ -71,7 +71,7 @@ def resolve_image_paths(md_content: str, base_dir: Path) -> str:
 
 
 def post_process_html(html: str) -> str:
-    """Enriches HTML with book classes, callouts, figures, and page break helpers."""
+    """Enriches HTML with book classes, callouts, figures, two-column editorial prose, and page break helpers."""
     # 1. Enrich blockquotes based on leading emoji
     def _enrich_bq(match):
         content = match.group(1)
@@ -87,9 +87,8 @@ def post_process_html(html: str) -> str:
 
     html = re.sub(r'<blockquote>(.*?)</blockquote>', _enrich_bq, html, flags=re.DOTALL)
 
-    # 2. Enrich standalone images followed by italic captions into proper <figure>
-    # Pattern: <p><img src="(.*?)" alt="(.*?)"><br>\s*<em>(Figura \d+:.*?)</em></p>
-    def _enrich_figure(match):
+    # 2. Enrich standalone images followed by captions into proper <figure>
+    def _enrich_figure_with_caption(match):
         src = match.group(1)
         alt = match.group(2)
         caption = match.group(3)
@@ -99,13 +98,96 @@ def post_process_html(html: str) -> str:
 </figure>'''
 
     html = re.sub(
-        r'<p>\s*<img\s+src="([^"]+)"\s+alt="([^"]*)"\s*>\s*(?:<br\s*/?>)?\s*<em>(Figura\s+\d+:.*?)</em>\s*</p>',
-        _enrich_figure,
+        r'<p>\s*<img\s+src="([^"]+)"\s+alt="([^"]*)"\s*>\s*(?:<br\s*/?>)?\s*<em>((?:Figura|Infografía|Carta)\s*.*?)</em>\s*</p>',
+        _enrich_figure_with_caption,
         html,
         flags=re.DOTALL | re.IGNORECASE
     )
 
-    # 3. Detect Bibliography section and wrap in bibliography-section div
+    # 3. Enrich bare standalone images
+    def _enrich_figure_bare(match):
+        src = match.group(1)
+        alt = match.group(2)
+        return f'''<figure class="editorial-figure">
+  <img src="{src}" alt="{alt}" class="book-illustration">
+</figure>'''
+
+    html = re.sub(
+        r'<p>\s*<img\s+src="([^"]+)"\s+alt="([^"]*)"\s*>\s*</p>',
+        _enrich_figure_bare,
+        html,
+        flags=re.DOTALL | re.IGNORECASE
+    )
+
+    # 4. Wrap Table of Contents in 2-column container
+    def _wrap_toc(match):
+        heading = match.group(1)
+        list_content = match.group(2)
+        return f'{heading}\n<div class="table-of-contents">\n{list_content}\n</div>'
+
+    html = re.sub(
+        r'(<h2[^>]*>.*?Índice General.*?</h2>)\s*(<ul[^>]*>.*?</ul>)',
+        _wrap_toc,
+        html,
+        flags=re.DOTALL | re.IGNORECASE
+    )
+
+    # 5. Group consecutive commentary paragraphs and lists into .editorial-prose (2 columns)
+    block_pattern = re.compile(
+        r"(<h[1-6][^>]*>.*?</h[1-6]>|<blockquote[^>]*>.*?</blockquote>|<figure[^>]*>.*?</figure>|<table[^>]*>.*?</table>|<div[^>]*>.*?</div>|<hr/?>|<p[^>]*>.*?</p>|<ul[^>]*>.*?</ul>|<ol[^>]*>.*?</ol>)",
+        re.DOTALL | re.IGNORECASE
+    )
+
+    parts = []
+    prose_acc = []
+    is_first_chapter_paragraph = False
+
+    def flush_prose():
+        nonlocal is_first_chapter_paragraph
+        if prose_acc:
+            joined = "\n".join(prose_acc)
+            parts.append(f'<div class="editorial-prose">\n{joined}\n</div>')
+            prose_acc.clear()
+
+    last_end = 0
+    for match in block_pattern.finditer(html):
+        start, end = match.span()
+        interstitial = html[last_end:start].strip()
+        if interstitial:
+            flush_prose()
+            parts.append(interstitial)
+
+        block = match.group(1)
+        tag_match = re.match(r"<([a-zA-Z0-9]+)", block)
+        tag_name = tag_match.group(1).lower() if tag_match else ""
+
+        if tag_name == "h1":
+            flush_prose()
+            is_first_chapter_paragraph = True
+            parts.append(block)
+        elif tag_name in ("h2", "h3", "h4", "h5", "h6", "blockquote", "figure", "table", "div", "hr"):
+            flush_prose()
+            parts.append(block)
+        elif tag_name in ("p", "ul", "ol"):
+            if "<img" in block or "<figure" in block:
+                flush_prose()
+                parts.append(block)
+            else:
+                if is_first_chapter_paragraph and tag_name == "p":
+                    block = re.sub(r"^<p([^>]*)>", r'<p\1 class="drop-cap">', block)
+                    is_first_chapter_paragraph = False
+                prose_acc.append(block)
+        last_end = end
+
+    flush_prose()
+    if last_end < len(html):
+        rem = html[last_end:].strip()
+        if rem:
+            parts.append(rem)
+
+    html = "\n\n".join(parts)
+
+    # 6. Wrap Bibliography section in bibliography-section div
     if '<h1 id="bibliografia-general">' in html or 'BIBLIOGRAFÍA HISTÓRICA' in html:
         html = re.sub(
             r'(<h1[^>]*>.*?BIBLIOGRAFÍA.*?</h1>)',
@@ -133,20 +215,8 @@ def build_full_document(
     size_css = PAGE_SIZES.get(page_size, PAGE_SIZES["A4"])
     margin_css = PAGE_MARGINS.get(page_size, PAGE_MARGINS["A4"])
 
-    # Front matter components
-    front_matter_html = ""
-
-    # Cover Page
-    if cover_image_path and cover_image_path.exists():
-        cover_abs_url = f"file://{cover_image_path.resolve()}"
-        front_matter_html += f"""
-<div class="cover-page">
-  <img src="{cover_abs_url}" alt="Portada: {title}" class="cover-image">
-</div>
-"""
-
-    # Title Page (Portada Interior)
-    front_matter_html += f"""
+    # Front matter components (Cover is rendered separately full-bleed by cdp_pdf_engine)
+    front_matter_html = f"""
 <div class="title-page">
   <div class="title-page-top">
     <div class="title-ornament">✦ ✦ ✦</div>
@@ -158,14 +228,11 @@ def build_full_document(
   </div>
   <div class="title-page-bottom">
     <div class="book-author">{author}</div>
-    <div class="book-credentials">Edición Bestseller Digital e Historiográfica</div>
+    <div class="book-credentials">Tercera Edición Editorial: Formato Clásico en Columnas</div>
     <div class="book-credentials">Verificación de Fuentes y Cánones Documentales</div>
   </div>
 </div>
-"""
 
-    # Colophon Page (Página de Créditos)
-    front_matter_html += f"""
 <div class="colophon-page">
   <h4>CRÉDITOS Y REGISTRO EDITORIAL</h4>
   <p><strong>Obra:</strong> {title}</p>
@@ -173,8 +240,8 @@ def build_full_document(
   <p><strong>Compilación e Investigación Exegética:</strong> {author}</p>
   <p><strong>Diseño Tipográfico y Maquetación:</strong> Skill <code>book-designer-typesetter</code></p>
   <p><strong>Tipografías Principales:</strong> Cinzel (Roman Imperial) y EB Garamond (Sixteenth-Century Classic)</p>
-  <p><strong>Motor de Renderizado:</strong> Chromium Print Engine (Vector PDF)</p>
-  <p><strong>Fecha de Edición:</strong> Octubre 2026</p>
+  <p><strong>Motor de Renderizado:</strong> Chromium DevTools Protocol (CDP Print Engine)</p>
+  <p><strong>Fecha de Edición:</strong> Octubre 2026 (Tercera Edición Corregida)</p>
   <hr style="width: 100%; margin: 1rem 0; border: 0; border-top: 1px solid #ccc;">
   <p style="font-size: 0.8rem; color: #777;">
     Edición académica y exegética preparada para estudio personal, pastoral, misionero e investigación histórica.
@@ -212,40 +279,82 @@ def render_pdf(
     html_path: Path,
     pdf_path: Path,
     title: str,
-    author: str
+    author: str,
+    page_size: str = "A4",
+    cover_image_path: Path = None
 ) -> None:
-    """Executes Brave Headless to produce a high-resolution vector PDF."""
-    if not BRAVE_PATH.exists():
-        raise FileNotFoundError(f"Headless browser binary not found at: {BRAVE_PATH}")
+    """Executes Bun CDP PDF Engine to produce a publication-ready vector PDF."""
+    cdp_engine_path = SCRIPT_DIR / "cdp_pdf_engine.js"
+    if not cdp_engine_path.exists():
+        raise FileNotFoundError(f"CDP PDF engine script not found at: {cdp_engine_path}")
 
-    # Chromium header/footer templates
-    header_template = f"""<div style="font-size: 7.5pt; font-family: 'Cinzel', Georgia, serif; width: 100%; text-align: center; color: #777; border-bottom: 0.5pt solid #ddd; padding-bottom: 3px; margin: 0 18mm; text-transform: uppercase; letter-spacing: 0.05em;">
-  <span>{title}</span>
-</div>"""
+    size_css = PAGE_SIZES.get(page_size, PAGE_SIZES["A4"])
 
-    footer_template = f"""<div style="font-size: 8pt; font-family: 'EB Garamond', Georgia, serif; width: 100%; text-align: center; color: #777; border-top: 0.5pt solid #ddd; padding-top: 3px; margin: 0 18mm;">
-  <span class="pageNumber"></span>
-</div>"""
+    if cover_image_path and cover_image_path.exists():
+        # Render cover page separately
+        cover_html = f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@page {{ size: {size_css}; margin: 0; }}
+html, body {{ margin: 0; padding: 0; width: 100vw; height: 100vh; overflow: hidden; background: #000; }}
+.cover-wrap {{ width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }}
+.cover-wrap img {{ width: 100%; height: 100%; object-fit: cover; }}
+</style>
+</head>
+<body>
+<div class="cover-wrap">
+  <img src="file://{cover_image_path.resolve()}">
+</div>
+</body>
+</html>"""
+        temp_cover_html = html_path.with_name(f"{html_path.stem}_cover.html")
+        temp_cover_pdf = html_path.with_name(f"{html_path.stem}_cover.pdf")
+        temp_body_pdf = html_path.with_name(f"{html_path.stem}_body.pdf")
 
-    cmd = [
-        str(BRAVE_PATH),
-        "--headless",
-        "--disable-gpu",
-        "--no-sandbox",
-        "--run-all-compositor-stages-before-draw",
-        "--virtual-time-budget=6000",
-        "--display-header-footer",
-        f"--header-template={header_template}",
-        f"--footer-template={footer_template}",
-        f"--print-to-pdf={pdf_path}",
-        str(html_path.resolve())
-    ]
+        with open(temp_cover_html, "w", encoding="utf-8") as f:
+            f.write(cover_html)
 
-    print(f"[*] Rendering vector PDF via Chromium Print Engine...")
-    proc = subprocess.run(cmd, shell=False, capture_output=True, text=True)
-    if proc.returncode != 0:
-        print(f"Error during browser execution: {proc.stderr}", file=sys.stderr)
-        sys.exit(1)
+        try:
+            print("[*] Rendering full-bleed cover page without headers/footers...")
+            cover_cmd = [
+                "bun", str(cdp_engine_path),
+                "--input", str(temp_cover_html.resolve()),
+                "--output", str(temp_cover_pdf.resolve()),
+                "--size", page_size,
+                "--is-cover"
+            ]
+            subprocess.run(cover_cmd, shell=False, check=True)
+
+            print("[*] Rendering book interior with running headers & footers (zero URL leakage)...")
+            body_cmd = [
+                "bun", str(cdp_engine_path),
+                "--input", str(html_path.resolve()),
+                "--output", str(temp_body_pdf.resolve()),
+                "--title", title,
+                "--author", author,
+                "--size", page_size
+            ]
+            subprocess.run(body_cmd, shell=False, check=True)
+
+            print("[*] Uniting cover and interior via pdfunite...")
+            subprocess.run(["/usr/bin/pdfunite", str(temp_cover_pdf), str(temp_body_pdf), str(pdf_path.resolve())], check=True)
+        finally:
+            for p in [temp_cover_html, temp_cover_pdf, temp_body_pdf]:
+                if p.exists():
+                    p.unlink()
+    else:
+        print("[*] Rendering book interior with running headers & footers (zero URL leakage)...")
+        body_cmd = [
+            "bun", str(cdp_engine_path),
+            "--input", str(html_path.resolve()),
+            "--output", str(pdf_path.resolve()),
+            "--title", title,
+            "--author", author,
+            "--size", page_size
+        ]
+        subprocess.run(body_cmd, shell=False, check=True)
 
 
 def main():
@@ -288,20 +397,35 @@ def main():
     with open(input_file, "r", encoding="utf-8") as f:
         md_text = f.read()
 
-    # 2. Extract or define Title
+    # 2. Extract Title and Subtitle (checking YAML frontmatter first)
     title = args.title
     if not title:
-        m_title = re.search(r'^#\s+(.+)$', md_text, re.MULTILINE)
-        if m_title:
-            title = m_title.group(1).replace("#", "").strip()
+        m_yaml = re.search(r'^title:\s*["\']?([^"\']+)["\']?', md_text, re.MULTILINE)
+        if m_yaml:
+            title = m_yaml.group(1).strip()
         else:
-            title = input_file.stem.replace("_", " ").title()
+            m_title = re.search(r'^#\s+(.+)$', md_text, re.MULTILINE)
+            if m_title:
+                title = m_title.group(1).replace("#", "").strip()
+            else:
+                title = input_file.stem.replace("_", " ").title()
 
-    subtitle = args.subtitle or "Comentario Versículo a Versiculo con Verificación Historiográfica"
+    subtitle = args.subtitle
+    if not subtitle:
+        m_sub = re.search(r'^subtitle:\s*["\']?([^"\']+)["\']?', md_text, re.MULTILINE)
+        if m_sub:
+            subtitle = m_sub.group(1).strip()
+        else:
+            subtitle = "Comentario Versículo a Versiculo con Verificación Historiográfica"
+
+    # Strip YAML frontmatter and redundant cover/title header from manuscript body
+    # (since build_full_document generates the elegant Title Page and Colophon)
+    md_text_clean = re.sub(r'^---\s*\n.*?\n---\s*\n', '', md_text, flags=re.DOTALL)
+    md_text_clean = re.sub(r'^\s*<div align="center">.*?</div>\s*', '', md_text_clean, flags=re.DOTALL)
 
     # 3. Resolve Images
     print("[*] Resolving image assets to absolute URLs...")
-    md_text_resolved = resolve_image_paths(md_text, input_file.parent)
+    md_text_resolved = resolve_image_paths(md_text_clean, input_file.parent)
 
     # 4. Convert Markdown to HTML via Bun + marked
     print("[*] Compiling Markdown to structured semantic HTML...")
@@ -333,7 +457,7 @@ def main():
 
     # 8. Render to PDF
     try:
-        render_pdf(temp_html, output_pdf, title, args.author)
+        render_pdf(temp_html, output_pdf, title, args.author, page_size=args.size, cover_image_path=cover_path)
         pdf_size_mb = output_pdf.stat().st_size / (1024 * 1024)
         print("=" * 60)
         print("✅ BOOK TYPESETTING COMPLETED SUCCESSFULLY!")

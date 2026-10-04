@@ -280,17 +280,106 @@ h4 {
 }
 
 /* ====================================================================
-   5. PÁRRAFOS Y MICROTIPOGRAFÍA
+   5. PÁRRAFOS, MICROTIPOGRAFÍA Y COLUMNAS
    ==================================================================== */
 
 p {
   margin-top: 0;
-  margin-bottom: 0.9em;
+  margin-bottom: 0.55em;
   text-align: justify;
+  text-justify: inter-word;
   hyphens: auto;
   -webkit-hyphens: auto;
   orphans: 3;
   widows: 3;
+  line-height: 1.62;
+}
+
+/* Sangría de libro tradicional: para párrafos consecutivos */
+p + p {
+  text-indent: 1.5em;
+  margin-top: 0;
+}
+
+/* Primer párrafo tras encabezados, figuras, tablas y citas: SIN sangría */
+h1 + p, h2 + p, h3 + p, h4 + p, h5 + p, h6 + p,
+blockquote + p, figure + p, table + p, hr + p,
+.editorial-figure + p, .callout + p, .scripture-box + p,
+.title-page + p, .colophon-page + p,
+.editorial-prose > p:first-child {
+  text-indent: 0 !important;
+}
+
+/* Letra Capitular (Drop Cap) Monumental para Inicios de Capítulo */
+.drop-cap::first-letter,
+.lead-paragraph::first-letter {
+  float: left;
+  font-family: var(--font-heading);
+  font-size: 3.5em;
+  line-height: 0.8;
+  padding: 0.05em 0.12em 0 0;
+  margin: 0;
+  color: var(--color-primary);
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(197, 160, 89, 0.4);
+}
+
+/* Formato Editorial en 2 Columnas (Estilo Revista y Biblia de Estudio) */
+.editorial-prose {
+  column-count: 2;
+  column-gap: 22pt;
+  column-rule: 0.5pt solid rgba(197, 160, 89, 0.3);
+  margin: 10pt 0 16pt;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.editorial-prose p {
+  margin-top: 0;
+  margin-bottom: 0.55em;
+  text-align: justify;
+  orphans: 3;
+  widows: 3;
+  line-height: 1.62;
+}
+
+.editorial-prose p + p {
+  text-indent: 1.5em;
+}
+
+.editorial-prose ul, .editorial-prose ol {
+  padding-left: 1.4em;
+  margin: 0.5em 0;
+}
+
+.editorial-prose li {
+  margin-bottom: 0.35em;
+  line-height: 1.55;
+  break-inside: avoid;
+}
+
+/* Índice General en 2 Columnas */
+.table-of-contents {
+  column-count: 2;
+  column-gap: 26pt;
+  column-rule: 0.5pt solid var(--color-border);
+  margin: 1.5rem 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.table-of-contents ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.table-of-contents li {
+  margin-bottom: 0.4rem;
+  line-height: 1.45;
+  break-inside: avoid;
 }
 
 strong, b {
