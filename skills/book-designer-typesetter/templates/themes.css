@@ -1,0 +1,512 @@
+/* ====================================================================
+   BOOK DESIGNER & TYPESETTER - MASTER CSS STYLESHEET
+   Format: CSS Paged Media + Screen Print Engine
+   ==================================================================== */
+
+/* --- Importación de Fuentes Web de Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap');
+
+/* ====================================================================
+   1. PALETAS Y TEMAS EDITORIALES
+   ==================================================================== */
+
+/* Tema A: Sagrada Historia y Oro Imperial (Predeterminado) */
+body.theme-sacred-history {
+  --font-heading: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+  --font-subheading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'EB Garamond', Georgia, serif;
+  --font-caption: 'EB Garamond', Georgia, serif;
+  
+  --color-primary: #6E1A24;       /* Borgoña Imperial */
+  --color-secondary: #C5A059;     /* Oro Antiguo */
+  --color-accent: #9C7A28;        /* Bronce Sacro */
+  --color-text: #222222;          /* Carbón suave */
+  --color-muted: #555555;
+  --color-bg: #FDFCF7;            /* Marfil pergamino */
+  --color-card-bg: #FBF8F1;       /* Crema dorada */
+  --color-factcheck-bg: #F5F7FA;  /* Gris perla frío */
+  --color-border: #E8DFCE;
+  --color-table-header: #6E1A24;
+  --color-table-header-text: #FFFFFF;
+  --color-table-zebra: #F9F6EE;
+}
+
+/* Tema B: Azul Oxford y Pizarra Académica */
+body.theme-academic-oxford {
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-subheading: 'Libre Baskerville', Georgia, serif;
+  --font-body: 'Source Serif 4', 'EB Garamond', Georgia, serif;
+  --font-caption: 'Source Serif 4', Georgia, serif;
+  
+  --color-primary: #0A2540;       /* Azul Oxford */
+  --color-secondary: #205493;     /* Azul Pizarra */
+  --color-accent: #9E2A2B;        /* Carmesí universitario */
+  --color-text: #1F2421;
+  --color-muted: #666666;
+  --color-bg: #FFFFFF;
+  --color-card-bg: #F5F7FA;
+  --color-factcheck-bg: #EBF1F5;
+  --color-border: #DDE2E5;
+  --color-table-header: #0A2540;
+  --color-table-header-text: #FFFFFF;
+  --color-table-zebra: #F4F7F9;
+}
+
+/* Tema C: Editorial Monocromático Cálido */
+body.theme-editorial-minimalist {
+  --font-heading: 'Cinzel', Georgia, serif;
+  --font-subheading: 'Lora', Georgia, serif;
+  --font-body: 'Lora', Georgia, serif;
+  --font-caption: 'Lora', Georgia, serif;
+  
+  --color-primary: #111111;
+  --color-secondary: #555555;
+  --color-accent: #C07D38;
+  --color-text: #222222;
+  --color-muted: #777777;
+  --color-bg: #FAFAFA;
+  --color-card-bg: #F0F0F0;
+  --color-factcheck-bg: #EAEAEA;
+  --color-border: #E0E0E0;
+  --color-table-header: #222222;
+  --color-table-header-text: #FFFFFF;
+  --color-table-zebra: #F5F5F5;
+}
+
+/* Tema D: Renacimiento y Tierra Toscana */
+body.theme-renaissance-earth {
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-subheading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'EB Garamond', Georgia, serif;
+  --font-caption: 'EB Garamond', Georgia, serif;
+  
+  --color-primary: #882D17;       /* Terracota */
+  --color-secondary: #B38F54;     /* Ocre clásico */
+  --color-accent: #2E4A3D;        /* Salvia */
+  --color-text: #26221F;
+  --color-muted: #695D56;
+  --color-bg: #FAF7F2;
+  --color-card-bg: #F3EFE8;
+  --color-factcheck-bg: #EAEFEA;
+  --color-border: #E2D9CC;
+  --color-table-header: #882D17;
+  --color-table-header-text: #FFFFFF;
+  --color-table-zebra: #F5EFE6;
+}
+
+/* ====================================================================
+   2. REGLAS GENERALES Y TIPOGRAFÍA BASE
+   ==================================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 11pt;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.62;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ====================================================================
+   3. ANATOMÍA Y SECCIONES DEL LIBRO (PAGINACIÓN)
+   ==================================================================== */
+
+/* Portada a Página Completa */
+.cover-page {
+  page-break-after: always;
+  break-after: page;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.cover-image {
+  max-width: 100%;
+  max-height: 92vh;
+  object-fit: contain;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* Portada Interior (Full Title Page) */
+.title-page {
+  page-break-before: always;
+  break-before: page;
+  page-break-after: always;
+  break-after: page;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 85vh;
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.title-page .book-main-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.title-page .book-subtitle {
+  font-family: var(--font-subheading);
+  font-size: 1.35rem;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-accent);
+  margin-bottom: 2.5rem;
+}
+
+.title-page .title-ornament {
+  font-size: 1.4rem;
+  color: var(--color-secondary);
+  margin: 2rem auto;
+}
+
+.title-page .book-author {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: auto;
+}
+
+.title-page .book-credentials {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin-top: 0.5rem;
+}
+
+/* Página de Colofón y Créditos */
+.colophon-page {
+  page-break-before: always;
+  break-before: page;
+  page-break-after: always;
+  break-after: page;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 85vh;
+  padding: 3rem 2rem;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.colophon-page h4 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ====================================================================
+   4. ENCABEZADOS Y CAPÍTULOS
+   ==================================================================== */
+
+/* Cada H1 inicia capítulo en página nueva */
+h1 {
+  page-break-before: always;
+  break-before: page;
+  page-break-after: avoid;
+  break-after: avoid;
+  font-family: var(--font-heading);
+  font-size: 2.0rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--color-secondary);
+  padding-bottom: 0.6rem;
+}
+
+h2 {
+  page-break-after: avoid;
+  break-after: avoid;
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  line-height: 1.25;
+}
+
+h3 {
+  page-break-after: avoid;
+  break-after: avoid;
+  font-family: var(--font-subheading);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  page-break-after: avoid;
+  break-after: avoid;
+  font-family: var(--font-subheading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ====================================================================
+   5. PÁRRAFOS Y MICROTIPOGRAFÍA
+   ==================================================================== */
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.9em;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  orphans: 3;
+  widows: 3;
+}
+
+strong, b {
+  font-weight: 600;
+  color: #111111;
+}
+
+em, i {
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-secondary), transparent);
+  margin: 2.2rem auto;
+  width: 70%;
+  clear: both;
+}
+
+/* ====================================================================
+   6. CAJAS DE LLAMADA Y CITAS EDITORIALES (CALLOUTS)
+   ==================================================================== */
+
+blockquote {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin: 1.4rem 0;
+  padding: 0.9rem 1.4rem;
+  background-color: var(--color-card-bg);
+  border-left: 4px solid var(--color-secondary);
+  border-radius: 3px;
+  font-size: 0.96rem;
+  line-height: 1.58;
+}
+
+blockquote p {
+  text-align: left;
+  margin-bottom: 0.4em;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* Cita Bíblica (RVR1960) */
+blockquote.callout-scripture {
+  background-color: var(--color-card-bg);
+  border-left: 4px solid var(--color-secondary);
+  border-top: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+blockquote.callout-scripture strong {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+}
+
+/* Citas de Historiadores y Espíritu de Profecía */
+blockquote.callout-historical {
+  background-color: #F8F6F0;
+  border-left: 4px solid var(--color-primary);
+  font-style: italic;
+}
+
+/* Verificación Histórica y Fact-Checking */
+blockquote.callout-factcheck {
+  background-color: var(--color-factcheck-bg);
+  border: 1px solid #D5DDE5;
+  border-left: 4px solid var(--color-primary);
+  font-size: 0.92rem;
+  padding: 1rem 1.2rem;
+}
+
+blockquote.callout-factcheck strong {
+  color: var(--color-primary);
+}
+
+blockquote.callout-factcheck ul {
+  margin-top: 0.4em;
+  margin-bottom: 0;
+  padding-left: 1.2em;
+}
+
+/* ====================================================================
+   7. FIGURAS, ILUSTRACIONES Y PIES DE FOTO
+   ==================================================================== */
+
+figure, .image-container {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+img {
+  max-width: 96%;
+  height: auto;
+  max-height: 480px;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption, .image-caption {
+  font-family: var(--font-caption);
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--color-muted);
+  margin-top: 0.6rem;
+  padding: 0 1rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+/* ====================================================================
+   8. TABLAS EDITORIALES
+   ==================================================================== */
+
+table {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.8rem 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  background-color: var(--color-bg);
+}
+
+thead {
+  display: table-header-group;
+}
+
+tr {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+th {
+  background-color: var(--color-table-header);
+  color: var(--color-table-header-text);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  padding: 0.65rem 0.8rem;
+  text-align: left;
+  border: 1px solid var(--color-primary);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+td {
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--color-table-zebra);
+}
+
+/* ====================================================================
+   9. LISTAS Y BIBLIOGRAFÍA CON SANGRÍA FRANCESA
+   ==================================================================== */
+
+ul, ol {
+  margin-top: 0.4em;
+  margin-bottom: 0.8em;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.35em;
+  line-height: 1.55;
+}
+
+/* Lista bibliográfica con sangría francesa */
+.bibliography-section ul,
+.bibliography-section ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bibliography-section li {
+  padding-left: 2em;
+  text-indent: -2em;
+  margin-bottom: 0.65em;
+  text-align: justify;
+}
+
+/* Enlaces limpios para impresión */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* ====================================================================
+   10. AJUSTES ESPECÍFICOS PARA IMPRESIÓN (@media print)
+   ==================================================================== */
+
+@media print {
+  body {
+    background-color: #FFFFFF;
+  }
+
+  /* Evitar saltos incómodos */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  blockquote, table, figure, img, pre {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
