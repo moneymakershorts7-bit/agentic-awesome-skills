@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2702
+Total skills: 2707
 
 ## agent-behavior (5)
 
@@ -300,7 +300,7 @@ Total skills: 2702
 | `10-andruia-skill-smith` | Ingeniero de Sistemas de Andru.ia. Diseña, redacta y despliega nuevas habilidades (skills) dentro del repositorio siguiendo el Estándar de Diamante. | safe | personal | 10, andruia, skill, smith | 10, andruia, skill, smith, ingeniero, de, sistemas, andru, ia, dise, redacta, despliega |
 | `20-andruia-niche-intelligence` | Estratega de Inteligencia de Dominio de Andru.ia. Analiza el nicho específico de un proyecto para inyectar conocimientos, regulaciones y estándares únicos de... | safe | personal | 20, andruia, niche, intelligence | 20, andruia, niche, intelligence, estratega, de, inteligencia, dominio, andru, ia, analiza, el |
 
-## api-integration (41)
+## api-integration (42)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -322,6 +322,7 @@ Total skills: 2702
 | `pakistan-payments-stack` | Design and implement production-grade Pakistani payment integrations (JazzCash, Easypaisa, bank/PSP rails, optional Raast) for SaaS with PKR billing, webhook... | safe | community | saas, payments, pakistan, nextjs, b2b, pkr, reconciliation | saas, payments, pakistan, nextjs, b2b, pkr, reconciliation, stack, grade, pakistani, payment, integrations |
 | `payment-integration` | Integrate Stripe, PayPal, and payment processors. Handles checkout flows, subscriptions, webhooks, and PCI compliance. Use PROACTIVELY when implementing paym... | critical | community | payment, integration | payment, integration, integrate, stripe, paypal, processors, checkout, flows, subscriptions, webhooks, pci, compliance |
 | `paypal-integration` | Master PayPal payment integration including Express Checkout, IPN handling, recurring billing, and refund workflows. | critical | community | paypal, integration | paypal, integration, payment, including, express, checkout, ipn, handling, recurring, billing, refund |
+| `placecall` | Place real outbound phone calls to US businesses through the PlaceCall API: book, ask, get quotes, then read the outcome and transcript. | critical | voygr-tech/placecall | phone, calls, voice, telephony, reservations, rest-api, paid-api | phone, calls, voice, telephony, reservations, rest-api, paid-api, placecall, place, real, outbound, us |
 | `plaid-fintech` | Expert patterns for Plaid API integration including Link token flows, transactions sync, identity verification, Auth for ACH, balance checks, webhook handlin... | critical | vibeship-spawner-skills (Apache 2.0) | plaid, fintech | plaid, fintech, api, integration, including, link, token, flows, transactions, sync, identity, verification |
 | `postman-collection-generator` | Generate complete, import-ready Postman Collection v2.1 JSON files from natural language API descriptions or cURL commands. | critical | LambdaTest/agent-skills | postman, collection, generator | postman, collection, generator, generate, complete, import, v2, json, files, natural, language, api |
 | `postman-openapi-converter` | Convert OpenAPI 3.x or Swagger 2.0 specs (YAML or JSON) into complete, import-ready Postman Collection v2.1 JSON files. | critical | LambdaTest/agent-skills | postman, openapi, converter | postman, openapi, converter, convert, swagger, specs, yaml, json, complete, import, collection, v2 |
@@ -1342,7 +1343,7 @@ Total skills: 2702
 | `skill-porter` | Preview conservative tool-name translations and copy complete local skill bundles for manual adaptation to Google Antigravity. | critical | Pranav-Nexus/antigravity-skill-porter | antigravity, claude, skills, migration, agent | antigravity, claude, skills, migration, agent, skill, porter, preview, conservative, name, translations, copy |
 | `tokenwise` | Measurement-driven model router for Claude Code. Routes Haiku/Sonnet/Opus per task class, logs every routed task with real $ numbers, and A/B tests cheaper t... | critical | CodeShuX/tokenwise | model-routing, token-optimization, cost-reduction, anthropic, haiku, sonnet, opus, claude-code, ab-testing, measurement | model-routing, token-optimization, cost-reduction, anthropic, haiku, sonnet, opus, claude-code, ab-testing, measurement, tokenwise, driven |
 
-## development (218)
+## development (219)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -1364,6 +1365,7 @@ Total skills: 2702
 | `bazel-build-optimization` | Optimize Bazel builds for large-scale monorepos. Use when configuring Bazel, implementing remote execution, or optimizing build performance for enterprise co... | critical | community | bazel, build, optimization | bazel, build, optimization, optimize, large, scale, monorepos, configuring, implementing, remote, execution, optimizing |
 | `boost-asio-pro` | Use when writing asynchronous C++ networking code with Boost.Asio or standalone Asio — TCP/UDP servers and clients, SSL/TLS, timers, strands, composed async ... | safe | alexprivalov/boost-asio-skill | cpp, boost, asio, async, networking, coroutines | cpp, boost, asio, async, networking, coroutines, pro, writing, asynchronous, code, standalone, tcp |
 | `brooks-lint` | AI code reviewer grounded in classic software engineering books for catching design smells, coupling issues, and architectural risks. | safe | hyhmrright/brooks-lint | code-review, architecture, software-design, refactoring, claude-code | code-review, architecture, software-design, refactoring, claude-code, brooks, lint, ai, code, reviewer, grounded, classic |
+| `browser-extension-launch` | Builds, tests, packages, and prepares Chrome extensions for store launch from a plain-language idea; use for new extensions, fixes, releases, and submission ... | critical | xiehuan123/browser-extension-launch | browser-extension, chrome-extension, manifest-v3, testing, publishing | browser-extension, chrome-extension, manifest-v3, testing, publishing, browser, extension, launch, tests, packages, prepares, chrome |
 | `busybox-on-windows` | How to use a Win32 build of BusyBox to run many of the standard UNIX command line tools on Windows. | safe | community | busybox, on, windows | busybox, on, windows, how, win32, run, many, standard, unix, command, line |
 | `chatexport-need-miner` | Mines offline Telegram Desktop chat exports (result.json) for unmet market needs and product opportunities using chunked streaming and verbatim quote groundi... | safe | wwewtech/chatexport-need-miner | telegram, market-research, text-mining, offline-analytics, developer-tools | telegram, market-research, text-mining, offline-analytics, developer-tools, chatexport, miner, mines, offline, desktop, chat, exports |
 | `cmux` | Control cmux workspaces, panes, surfaces, and agent sessions safely from macOS terminal workflows. | critical | davidondrej/skills | cmux, terminal, agents, macos | cmux, terminal, agents, macos, control, workspaces, panes, surfaces, agent, sessions, safely |
@@ -1576,7 +1578,7 @@ Total skills: 2702
 | `systematic-debugging` | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes | critical | community | systematic, debugging | systematic, debugging, encountering, any, bug, test, failure, unexpected, behavior, before, proposing, fixes |
 | `test-fixing` | Systematically identify and fix all failing tests using smart grouping strategies. Use when explicitly asks to fix tests ("fix these tests", "make tests pass... | safe | community | fixing | fixing, test, systematically, identify, fix, all, failing, tests, smart, grouping, explicitly, asks |
 
-## devops (165)
+## devops (166)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -1617,6 +1619,7 @@ Total skills: 2702
 | `cloudflare-workers` | Build and deploy edge functions with Cloudflare Workers and Wrangler. Use for APIs, cron jobs, and edge middleware. | critical | BagelHole/DevOps-Security-Agent-Skills | cloudflare, workers | cloudflare, workers, deploy, edge, functions, wrangler, apis, cron, jobs, middleware |
 | `cloudflare-zero-trust` | Protect internal apps with Cloudflare Access, device posture, and Zero Trust policies. | critical | BagelHole/DevOps-Security-Agent-Skills | cloudflare, zero, trust | cloudflare, zero, trust, protect, internal, apps, access, device, posture, policies |
 | `cloudformation` | Deploy AWS resources with CloudFormation templates. Create stacks, use nested stacks, and implement drift detection. Use when deploying AWS-native IaC. | critical | BagelHole/DevOps-Security-Agent-Skills | cloudformation | cloudformation, deploy, aws, resources, stacks, nested, drift, detection, deploying, native, iac |
+| `cloudish` | Deploy a Dockerfile, source folder, or existing image to Cloudish as a running container at a live URL, built server-side with no local Docker, with confirma... | critical | cloudishai/skills | deploy, docker, containers, hosting, persistent-storage | deploy, docker, containers, hosting, persistent-storage, cloudish, dockerfile, source, folder, existing, image, running |
 | `container-registries` | Manage container registries including ECR, ACR, GCR, and Docker Hub. | critical | BagelHole/DevOps-Security-Agent-Skills | container, registries | container, registries, including, ecr, acr, gcr, docker, hub |
 | `convex-backend` | Build reactive backends with Convex functions, schema validation, auth integration, and deployment workflows. Use when building real-time apps with type-safe... | critical | BagelHole/DevOps-Security-Agent-Skills | convex, backend | convex, backend, reactive, backends, functions, schema, validation, auth, integration, deployment, building, real |
 | `cron-doctor` | Diagnose and validate cron expressions before they ship. Catches the five silent death-traps: impossible dates that never fire, OR-semantics that fire too of... | safe | takeaseatventure/devops-skills | cron, crontab, scheduling, devops, debugging, kubernetes, validation | cron, crontab, scheduling, devops, debugging, kubernetes, validation, doctor, diagnose, validate, expressions, before |
@@ -1776,11 +1779,13 @@ Total skills: 2702
 | `book-designer-typesetter` | Professional book layout, typographic design, and PDF compilation engine from Markdown manuscripts. | safe | moneymakershorts7-bit/agentic-awesome-skills | books, pdf, typography, publishing | books, pdf, typography, publishing, book, designer, typesetter, professional, layout, typographic, compilation, engine |
 | `book-editor-writer` | Transform research documents, manuscripts, raw notes, and PDFs into publication-grade, bestselling books with executive-level editing, rigorous fact-checking... | safe | moneymakershorts7-bit/agentic-awesome-skills | books, editorial, writing, fact-checking, authoring | books, editorial, writing, fact-checking, authoring, book, editor, writer, transform, research, documents, manuscripts |
 
-## ecommerce (2)
+## ecommerce (4)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `buywhere-product-catalog` | Use BuyWhere's MCP and API surfaces to add product search, price comparison, and deal discovery to AI shopping agents. | safe | BuyWhere/buywhere-mcp | buywhere, ecommerce, shopping, mcp, api, product-catalog | buywhere, ecommerce, shopping, mcp, api, product-catalog, product, catalog, surfaces, add, search, price |
+| `etsy-search-listings` | Fetch live Etsy search listing rows for a keyword, market phrase, or category via Apify Actor publicrecords/etsy-search-scraper (MCP). Needs an Apify token; ... | critical | self | etsy, ecommerce, search, listings, apify, mcp | etsy, ecommerce, search, listings, apify, mcp, fetch, live, listing, rows, keyword, market |
+| `etsy-shop-sales-history` | Read Etsy shop sales counters, deltas, and breakout flags from Apify Actor publicrecords/etsy-shop-velocity (MCP panel snapshot). Needs an Apify token; Actor... | critical | self | etsy, ecommerce, shop, sales, velocity, apify, mcp | etsy, ecommerce, shop, sales, velocity, apify, mcp, history, read, counters, deltas, breakout |
 | `woo-guard` | Review generated or changed WooCommerce extensions, payment and shipping integrations, checkout customizations, and order or product logic. | critical | amElnagdy/guard-skills | woo, guard | woo, guard, review, generated, changed, woocommerce, extensions, payment, shipping, integrations, checkout, customizations |
 
 ## education (5)

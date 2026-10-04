@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2702,
+  "total": 2707,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -14064,6 +14064,41 @@
       "path": "skills/browser-extension-builder/SKILL.md"
     },
     {
+      "id": "browser-extension-launch",
+      "canonical_id": "browser-extension-launch",
+      "name": "browser-extension-launch",
+      "description": "Builds, tests, packages, and prepares Chrome extensions for store launch from a plain-language idea; use for new extensions, fixes, releases, and submission recovery.",
+      "category": "development",
+      "risk": "critical",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "xiehuan123/browser-extension-launch",
+      "license": "MIT",
+      "license_source": "https://github.com/xiehuan123/browser-extension-launch/blob/main/LICENSE",
+      "tags": [
+        "browser-extension",
+        "chrome-extension",
+        "manifest-v3",
+        "testing",
+        "publishing"
+      ],
+      "triggers": [
+        "browser-extension",
+        "chrome-extension",
+        "manifest-v3",
+        "testing",
+        "publishing",
+        "browser",
+        "extension",
+        "launch",
+        "tests",
+        "packages",
+        "prepares",
+        "chrome"
+      ],
+      "path": "skills/browser-extension-launch/SKILL.md"
+    },
+    {
       "id": "browser-extension-reverse",
       "canonical_id": "browser-extension-reverse",
       "name": "browser-extension-reverse",
@@ -17378,6 +17413,41 @@
         "cf"
       ],
       "path": "skills/cloudformation-best-practices/SKILL.md"
+    },
+    {
+      "id": "cloudish",
+      "canonical_id": "cloudish",
+      "name": "cloudish",
+      "description": "Deploy a Dockerfile, source folder, or existing image to Cloudish as a running container at a live URL, built server-side with no local Docker, with confirmation before spending credits.",
+      "category": "devops",
+      "risk": "critical",
+      "source": "https://github.com/cloudishai/skills",
+      "source_type": "official",
+      "source_repo": "cloudishai/skills",
+      "license": "MIT",
+      "license_source": "https://github.com/cloudishai/skills/blob/main/LICENSE",
+      "tags": [
+        "deploy",
+        "docker",
+        "containers",
+        "hosting",
+        "persistent-storage"
+      ],
+      "triggers": [
+        "deploy",
+        "docker",
+        "containers",
+        "hosting",
+        "persistent-storage",
+        "cloudish",
+        "dockerfile",
+        "source",
+        "folder",
+        "existing",
+        "image",
+        "running"
+      ],
+      "path": "skills/cloudish/SKILL.md"
     },
     {
       "id": "cmux",
@@ -28879,6 +28949,73 @@
         "covers"
       ],
       "path": "skills/ethical-hacking-methodology/SKILL.md"
+    },
+    {
+      "id": "etsy-search-listings",
+      "canonical_id": "etsy-search-listings",
+      "name": "etsy-search-listings",
+      "description": "Fetch live Etsy search listing rows for a keyword, market phrase, or category via Apify Actor publicrecords/etsy-search-scraper (MCP). Needs an Apify token; Actor run is billed.",
+      "category": "ecommerce",
+      "risk": "critical",
+      "source": "self",
+      "source_type": "self",
+      "tags": [
+        "etsy",
+        "ecommerce",
+        "search",
+        "listings",
+        "apify",
+        "mcp"
+      ],
+      "triggers": [
+        "etsy",
+        "ecommerce",
+        "search",
+        "listings",
+        "apify",
+        "mcp",
+        "fetch",
+        "live",
+        "listing",
+        "rows",
+        "keyword",
+        "market"
+      ],
+      "path": "skills/etsy-search-listings/SKILL.md"
+    },
+    {
+      "id": "etsy-shop-sales-history",
+      "canonical_id": "etsy-shop-sales-history",
+      "name": "etsy-shop-sales-history",
+      "description": "Read Etsy shop sales counters, deltas, and breakout flags from Apify Actor publicrecords/etsy-shop-velocity (MCP panel snapshot). Needs an Apify token; Actor run is billed.",
+      "category": "ecommerce",
+      "risk": "critical",
+      "source": "self",
+      "source_type": "self",
+      "tags": [
+        "etsy",
+        "ecommerce",
+        "shop",
+        "sales",
+        "velocity",
+        "apify",
+        "mcp"
+      ],
+      "triggers": [
+        "etsy",
+        "ecommerce",
+        "shop",
+        "sales",
+        "velocity",
+        "apify",
+        "mcp",
+        "history",
+        "read",
+        "counters",
+        "deltas",
+        "breakout"
+      ],
+      "path": "skills/etsy-shop-sales-history/SKILL.md"
     },
     {
       "id": "evaluation",
@@ -56397,6 +56534,43 @@
         "invoke"
       ],
       "path": "skills/pitch-psychologist/SKILL.md"
+    },
+    {
+      "id": "placecall",
+      "canonical_id": "placecall",
+      "name": "placecall",
+      "description": "Place real outbound phone calls to US businesses through the PlaceCall API: book, ask, get quotes, then read the outcome and transcript.",
+      "category": "api-integration",
+      "risk": "critical",
+      "source": "https://github.com/voygr-tech/placecall",
+      "source_type": "official",
+      "source_repo": "voygr-tech/placecall",
+      "license": "MIT",
+      "license_source": "https://github.com/voygr-tech/placecall/blob/main/LICENSE",
+      "tags": [
+        "phone",
+        "calls",
+        "voice",
+        "telephony",
+        "reservations",
+        "rest-api",
+        "paid-api"
+      ],
+      "triggers": [
+        "phone",
+        "calls",
+        "voice",
+        "telephony",
+        "reservations",
+        "rest-api",
+        "paid-api",
+        "placecall",
+        "place",
+        "real",
+        "outbound",
+        "us"
+      ],
+      "path": "skills/placecall/SKILL.md"
     },
     {
       "id": "plaid-fintech",
