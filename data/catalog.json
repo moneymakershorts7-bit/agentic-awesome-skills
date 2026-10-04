@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2701,
+  "total": 2702,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -13156,11 +13156,44 @@
       "path": "skills/boltz/SKILL.md"
     },
     {
+      "id": "book-designer-typesetter",
+      "canonical_id": "book-designer-typesetter",
+      "name": "book-designer-typesetter",
+      "description": "Professional book layout, typographic design, and PDF compilation engine from Markdown manuscripts.",
+      "category": "documents-presentations",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "moneymakershorts7-bit/agentic-awesome-skills",
+      "license": "MIT",
+      "tags": [
+        "books",
+        "pdf",
+        "typography",
+        "publishing"
+      ],
+      "triggers": [
+        "books",
+        "pdf",
+        "typography",
+        "publishing",
+        "book",
+        "designer",
+        "typesetter",
+        "professional",
+        "layout",
+        "typographic",
+        "compilation",
+        "engine"
+      ],
+      "path": "skills/book-designer-typesetter/SKILL.md"
+    },
+    {
       "id": "book-editor-writer",
       "canonical_id": "book-editor-writer",
       "name": "book-editor-writer",
       "description": "Transform research documents, manuscripts, raw notes, and PDFs into publication-grade, bestselling books with executive-level editing, rigorous fact-checking against real external sources, genre-adaptive prose, and a structured chapter-by-chapter incremental workflow.",
-      "category": "workflow",
+      "category": "documents-presentations",
       "risk": "safe",
       "source": "official",
       "source_type": "official",
@@ -42352,12 +42385,11 @@
       "id": "jules-maintainer",
       "canonical_id": "jules-maintainer",
       "name": "jules-maintainer",
-      "description": "Autonomous asynchronous repository maintenance, background issue triage, and patch review using Google Jules CLI.",
-      "category": "uncategorized",
+      "description": "Autonomous asynchronous repository maintenance, background issue triage, and patch review using Google Jules CLI and REST API.",
+      "category": "backend",
       "risk": "safe",
       "source": "official",
-      "source_type": "official",
-      "source_repo": "google/jules",
+      "license": "Apache-2.0",
       "tags": [
         "jules",
         "maintainer"

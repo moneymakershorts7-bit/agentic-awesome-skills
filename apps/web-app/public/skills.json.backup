@@ -11020,6 +11020,70 @@
     "license": "Apache-2.0"
   },
   {
+    "id": "book-designer-typesetter",
+    "path": "skills/book-designer-typesetter",
+    "category": "documents-presentations",
+    "name": "book-designer-typesetter",
+    "description": "Professional book layout, typographic design, and PDF compilation engine from Markdown manuscripts.",
+    "risk": "safe",
+    "source": "official",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "moneymakershorts7-bit/agentic-awesome-skills",
+    "license": "MIT",
+    "tags": [
+      "books",
+      "pdf",
+      "typography",
+      "publishing"
+    ]
+  },
+  {
+    "id": "book-editor-writer",
+    "path": "skills/book-editor-writer",
+    "category": "documents-presentations",
+    "name": "book-editor-writer",
+    "description": "Transform research documents, manuscripts, raw notes, and PDFs into publication-grade, bestselling books with executive-level editing, rigorous fact-checking against real external sources, genre-adaptive prose, and a structured chapter-by-chapter incremental workflow.",
+    "risk": "safe",
+    "source": "official",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "moneymakershorts7-bit/agentic-awesome-skills",
+    "license": "MIT",
+    "license_source": "https://github.com/moneymakershorts7-bit/agentic-awesome-skills/blob/main/LICENSE",
+    "tags": [
+      "books",
+      "editorial",
+      "writing",
+      "fact-checking",
+      "authoring"
+    ]
+  },
+  {
     "id": "boost-asio-pro",
     "path": "skills/boost-asio-pro",
     "category": "development",
@@ -28998,6 +29062,29 @@
     }
   },
   {
+    "id": "github-platform-ops",
+    "path": "skills/github-platform-ops",
+    "category": "workflow",
+    "name": "github-platform-ops",
+    "description": "Master GitHub Wikis, Environments, Actions, and Workflows via gh CLI, Git, and GitHub REST API. Handles wiki cloning and structure, deployment environments with protection rules and secrets/vars, workflow dispatch, matrix, concurrency, and log debugging.",
+    "risk": "safe",
+    "source": "internal",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
+  },
+  {
     "id": "github-presence",
     "path": "skills/github-presence",
     "category": "workflow",
@@ -35821,12 +35908,12 @@
   {
     "id": "jules-maintainer",
     "path": "skills/jules-maintainer",
-    "category": "uncategorized",
+    "category": "backend",
     "name": "jules-maintainer",
-    "description": "Autonomous asynchronous repository maintenance, background issue triage, and patch review using Google Jules CLI.",
+    "description": "Autonomous asynchronous repository maintenance, background issue triage, and patch review using Google Jules CLI and REST API.",
     "risk": "safe",
     "source": "official",
-    "date_added": "2026-10-03",
+    "date_added": "2026-10-04",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -35839,8 +35926,7 @@
       },
       "reasons": []
     },
-    "source_type": "official",
-    "source_repo": "google/jules"
+    "license": "Apache-2.0"
   },
   {
     "id": "julia-pro",
@@ -43291,6 +43377,40 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "nanobanana-context-imagegen",
+    "path": "skills/nanobanana-context-imagegen",
+    "category": "media",
+    "name": "nanobanana-context-imagegen",
+    "description": "Generate spectacular, context-driven images for documents, books, and creative projects using Google Gemini Nano Banana & Imagen 3 models, with a strict zero-guessing clarification gate.",
+    "risk": "safe",
+    "source": "official",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "moneymakershorts7-bit/agentic-awesome-skills",
+    "license": "MIT",
+    "license_source": "https://github.com/moneymakershorts7-bit/agentic-awesome-skills/blob/main/LICENSE",
+    "tags": [
+      "image-generation",
+      "nanobanana",
+      "gemini-media",
+      "imagen-3",
+      "context-driven",
+      "book-illustrations"
+    ]
   },
   {
     "id": "nanobanana-ppt-skills",
@@ -62381,6 +62501,29 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "tool-first-gate",
+    "path": "skills/tool-first-gate",
+    "category": "uncategorized",
+    "name": "tool-first-gate",
+    "description": "Mandatory pre-execution gate for mechanical tasks (file conversions, media transcoding, data restructuring, OCR, archiving). Discovers the best CLI tool, audits security, installs safely, and executes deterministically without wasting LLM reasoning tokens.",
+    "risk": "safe",
+    "source": "internal",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT"
   },
   {
     "id": "tool-use-guardian",

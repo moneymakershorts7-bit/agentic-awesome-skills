@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2701
+Total skills: 2702
 
 ## agent-behavior (5)
 
@@ -465,7 +465,7 @@ Total skills: 2701
 | `zendesk-automation` | Automate Zendesk tasks via Rube MCP (Composio): tickets, users, organizations, replies. Always search tools first for current schemas. | critical | community | zendesk | zendesk, automation, automate, tasks, via, rube, mcp, composio, tickets, users, organizations, replies |
 | `zoom-automation` | Automate Zoom meeting creation, management, recordings, webinars, and participant tracking via Rube MCP (Composio). Always search tools first for current sch... | critical | community | zoom | zoom, automation, automate, meeting, creation, recordings, webinars, participant, tracking, via, rube, mcp |
 
-## backend (48)
+## backend (49)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -501,6 +501,7 @@ Total skills: 2701
 | `graphql` | GraphQL gives clients exactly the data they need - no more, no less. One endpoint, typed schema, introspection. But the flexibility that makes it powerful al... | safe | vibeship-spawner-skills (Apache 2.0) | graphql | graphql, gives, clients, exactly, data, no, less, one, endpoint, typed, schema, introspection |
 | `graphql-schema` | GraphQL queries, mutations, and code generation patterns. Use when creating GraphQL operations, working with Apollo Client, or generating types. | critical | ChrisWiles/claude-code-showcase | graphql, schema | graphql, schema, queries, mutations, code, generation, creating, operations, working, apollo, client, generating |
 | `hono` | Build ultra-fast web APIs and full-stack apps with Hono — runs on Cloudflare Workers, Deno, Bun, Node.js, and any WinterCG-compatible runtime. | safe | community | hono, edge, cloudflare-workers, bun, deno, api, typescript, web-standards | hono, edge, cloudflare-workers, bun, deno, api, typescript, web-standards, ultra, fast, web, apis |
+| `jules-maintainer` | Autonomous asynchronous repository maintenance, background issue triage, and patch review using Google Jules CLI and REST API. | safe | official | jules, maintainer | jules, maintainer, autonomous, asynchronous, repository, maintenance, background, issue, triage, patch, review, google |
 | `junta-leiloeiros` | Coleta e consulta dados de leiloeiros oficiais de todas as 27 Juntas Comerciais do Brasil. Scraper multi-UF, banco SQLite, API FastAPI e exportacao CSV/JSON. | safe | community | scraping, brazilian-data, auctioneers, api | scraping, brazilian-data, auctioneers, api, junta, leiloeiros, coleta, consulta, dados, de, oficiais, todas |
 | `neon-functions` | Long-running, serverless Node.js HTTP functions deployed onto your Neon branch, with DATABASE_URL injected automatically and compute that runs next to your d... | critical | neondatabase/agent-skills | neon, functions | neon, functions, long, running, serverless, node, js, http, deployed, onto, branch, database |
 | `neon-postgres` | Guides and best practices for working with Neon Serverless Postgres. Covers setup, connection methods, branching, autoscaling, scale-to-zero, read replicas, ... | critical | neondatabase/agent-skills | neon, postgres | neon, postgres, guides, working, serverless, covers, setup, connection, methods, branching, autoscaling, scale |
@@ -1768,6 +1769,13 @@ Total skills: 2701
 | `verify-citations` | Verify citations and references in a document, report, or article against real sources. Use when the user asks to fact-check, verify references, check citati... | critical | Sketchjar/stipple-agent-skills | document-verification, fact-checking, stipple, authenticity | document-verification, fact-checking, stipple, authenticity, verify, citations, references, document, report, article, against, real |
 | `verify-document` | Check whether a document (PDF or image) shows signs of tampering or forgery before you rely on it. Use when the user asks to verify a payslip, invoice, bank ... | critical | Sketchjar/stipple-agent-skills | document-verification, fact-checking, stipple, authenticity | document-verification, fact-checking, stipple, authenticity, verify, document, check, whether, pdf, image, shows, signs |
 
+## documents-presentations (2)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `book-designer-typesetter` | Professional book layout, typographic design, and PDF compilation engine from Markdown manuscripts. | safe | moneymakershorts7-bit/agentic-awesome-skills | books, pdf, typography, publishing | books, pdf, typography, publishing, book, designer, typesetter, professional, layout, typographic, compilation, engine |
+| `book-editor-writer` | Transform research documents, manuscripts, raw notes, and PDFs into publication-grade, bestselling books with executive-level editing, rigorous fact-checking... | safe | moneymakershorts7-bit/agentic-awesome-skills | books, editorial, writing, fact-checking, authoring | books, editorial, writing, fact-checking, authoring, book, editor, writer, transform, research, documents, manuscripts |
+
 ## ecommerce (2)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
@@ -3014,7 +3022,7 @@ Total skills: 2701
 | --- | --- | --- | --- | --- | --- |
 | `travel-planner` | 旅行/行程规划需求时使用:规划去某地旅行、X天X城、带老人孩子、自驾、假期安排等。产出逐日行程表、预算估算(经济/舒适/奢华三档)、交通住宿建议、景点美食清单。必须先问预算,预算未确认只输出问题清单;事实数据带来源和查询日期。 | safe | saudademjj/luopan | travel, itinerary, planning, trip, chinese | travel, itinerary, planning, trip, chinese, planner |
 
-## uncategorized (51)
+## uncategorized (50)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -3050,7 +3058,6 @@ Total skills: 2701
 | `gws-gmail-send` | Gmail: Send an email. | safe | community | gws, gmail, send | gws, gmail, send, email |
 | `humanizer` | Rewrite AI-sounding text so it reads like the writer without changing what it says. Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, ... | safe | community | humanizer | humanizer, rewrite, ai, sounding, text, so, reads, like, writer, without, changing, what |
 | `image-to-code-skill` | Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then i... | safe | community | image, to, code, skill | image, to, code, skill, elite, website, codex, visually, important, web, tasks, must |
-| `jules-maintainer` | Autonomous asynchronous repository maintenance, background issue triage, and patch review using Google Jules CLI. | safe | google/jules | jules, maintainer | jules, maintainer, autonomous, asynchronous, repository, maintenance, background, issue, triage, patch, review, google |
 | `k2` | Build and troubleshoot Cloudflare K2 or K2 Streams durable logs. Use for stream setup, producing from Workers or HTTP, configuring retention and inputs, and ... | safe | cloudflare/skills | k2 | k2, troubleshoot, cloudflare, streams, durable, logs, stream, setup, producing, workers, http, configuring |
 | `meeting-insights-analyzer` | Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable feedback. Identifies when you avoid confli... | safe | community | meeting, insights, analyzer | meeting, insights, analyzer, analyzes, transcripts, recordings, uncover, behavioral, communication, actionable, feedback, identifies |
 | `minimalist-skill` | Clean editorial-style interfaces. Warm monochrome palette, typographic contrast, flat bento grids, muted pastels. No gradients, no heavy shadows. | safe | community | minimalist, skill | minimalist, skill, clean, editorial, style, interfaces, warm, monochrome, palette, typographic, contrast, flat |
@@ -3161,7 +3168,7 @@ Total skills: 2701
 | `web-artifacts-builder` | To build powerful frontend claude.ai artifacts, follow these steps: | critical | community | web, artifacts, builder | web, artifacts, builder, powerful, frontend, claude, ai, follow, these, steps |
 | `webdriverio-skill` | Generates WebdriverIO (WDIO) automation tests in JavaScript or TypeScript. Supports local and TestMu AI cloud. Use when user mentions "WebdriverIO", "WDIO", ... | critical | LambdaTest/agent-skills | webdriverio, skill | webdriverio, skill, generates, wdio, automation, tests, javascript, typescript, supports, local, testmu, ai |
 
-## workflow (70)
+## workflow (69)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -3173,7 +3180,6 @@ Total skills: 2701
 | `ask-questions-if-underspecified` | Clarify requirements before implementing. Use when serious doubts arise. | safe | community | ask, questions, if, underspecified | ask, questions, if, underspecified, clarify, requirements, before, implementing, serious, doubts, arise |
 | `atlas-ledger` | Companion to atlas-contract. Auto-invoked by its Final Audit on caught drift; also use after Post Reviews or user requests to record a mistake. Distills drif... | critical | wede-wx/atlas | atlas, ledger | atlas, ledger, companion, contract, auto, invoked, final, audit, caught, drift, after, post |
 | `bitbucket-automation` | Automate Bitbucket repositories, pull requests, branches, issues, and workspace management via Rube MCP (Composio). Always search tools first for current sch... | critical | community | bitbucket | bitbucket, automation, automate, repositories, pull, requests, branches, issues, workspace, via, rube, mcp |
-| `book-editor-writer` | Transform research documents, manuscripts, raw notes, and PDFs into publication-grade, bestselling books with executive-level editing, rigorous fact-checking... | safe | moneymakershorts7-bit/agentic-awesome-skills | books, editorial, writing, fact-checking, authoring | books, editorial, writing, fact-checking, authoring, book, editor, writer, transform, research, documents, manuscripts |
 | `brainstorming` | Use before creative or constructive work (features, architecture, behavior). Transforms vague ideas into validated designs through disciplined reasoning and ... | critical | community | brainstorming | brainstorming, before, creative, constructive, work, features, architecture, behavior, transforms, vague, ideas, validated |
 | `build` | build | critical | community | build | build |
 | `changelog-automation` | Automate changelog generation from commits, PRs, and releases following Keep a Changelog format. Use when setting up release workflows, generating release no... | critical | community | changelog | changelog, automation, automate, generation, commits, prs, releases, following, keep, format, setting, up |

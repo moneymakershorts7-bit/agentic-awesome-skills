@@ -2,21 +2,14 @@
 name: tool-first-gate
 description: Mandatory pre-execution gate for mechanical tasks (file conversions, media transcoding, data restructuring, OCR, archiving). Discovers the best CLI tool, audits security, installs safely, and executes deterministically without wasting LLM reasoning tokens.
 license: MIT
-risk: safe
-source: internal
-date_added: '2026-10-03'
-allowed-tools:
-  - bash
-  - read
-  - grep
-permissions:
-  - shell
 metadata:
   aas-category: essentials
+  aas-tags: '["tooling", "security", "conversions", "deterministic", "optimization"]'
   aas-risk: safe
   aas-source: internal
   aas-date-added: '2026-10-03'
-  aas-tags: '["tooling", "security", "conversions", "deterministic", "optimization"]'
+  aas-permissions: '["shell"]'
+allowed-tools: bash read grep
 ---
 
 # Tool-First Gate: Resolucion y Seguridad para Tareas Mecanicas

@@ -30,6 +30,15 @@ Expert system and operational workflow for transforming research documents, raw 
 
 ---
 
+## When to Use
+
+Use this skill when:
+- Authoring, restructuring, or editing full-length books, monographs, or long-form manuscripts.
+- Conducting rigorous fact-checking and external bibliographic validation for historical or academic works.
+- Adapting manuscript prose to specific genre conventions and chapter pacing.
+
+---
+
 ## Core Philosophy
 
 1. **Rigor Meets Narrative Craft:** Every claim, figure, date, and thesis is checked against authoritative real-world sources without compromising dynamic, immersive, and page-turning prose.

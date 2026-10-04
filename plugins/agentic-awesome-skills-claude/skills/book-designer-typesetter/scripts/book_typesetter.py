@@ -228,8 +228,8 @@ def build_full_document(
   </div>
   <div class="title-page-bottom">
     <div class="book-author">{author}</div>
-    <div class="book-credentials">Quinta Edición Editorial: Verificación Científica y Registro Internacional (ISBN / DOI / LCCN)</div>
-    <div class="book-credentials">Teología Historicista, Fuentes Académicas Primarias y Espíritu de Profecía</div>
+    <div class="book-credentials">Cuarta Edición Editorial: Teología Historicista y Doctrina Bíblica</div>
+    <div class="book-credentials">Verificación de Fuentes Documentales y Espíritu de Profecía</div>
   </div>
 </div>
 
@@ -240,12 +240,12 @@ def build_full_document(
   <p><strong>Compilación e Investigación Exegética:</strong> {author}</p>
   <p><strong>Composición Tipográfica y Diseño Editorial:</strong> Edición Impresa Clásica en Dos Columnas</p>
   <p><strong>Tipografías Principales:</strong> Cinzel (Roman Imperial) y EB Garamond (Sixteenth-Century Classic)</p>
-  <p><strong>Edición:</strong> Quinta Edición Revisada y Ampliada (Registro Bibliográfico Internacional ISBN / DOI / LCCN y Fuentes Académicas Primarias)</p>
+  <p><strong>Edición:</strong> Cuarta Edición Revisada y Ampliada (Doctrina Bíblica y Fuentes Históricas)</p>
   <p><strong>Fecha de Edición:</strong> Octubre 2026</p>
   <hr style="width: 100%; margin: 1rem 0; border: 0; border-top: 1px solid #ccc;">
   <p style="font-size: 0.8rem; color: #777;">
     Edición académica, pastoral y exegética preparada para estudio personal, pastoral, misionero e investigación teológica.
-    Todos los textos proféticos, cronologías y citas han sido rigurosamente cotejados con las Sagradas Escrituras, el Espíritu de Profecía, ediciones críticas estándar y fuentes historiográficas documentadas con registro internacional ISBN / DOI / LCCN.
+    Todos los textos proféticos, cronologías y citas han sido rigurosamente cotejados con las Sagradas Escrituras, el Espíritu de Profecía y fuentes historiográficas documentales estándar.
   </p>
 </div>
 """
@@ -441,19 +441,6 @@ def main():
 
     # 7. Assemble Full HTML Document
     cover_path = Path(args.cover).resolve() if args.cover else None
-    if not cover_path:
-        for candidate in [
-            input_file.parent / "imagenes" / "img-000.png",
-            input_file.parent / "imagenes" / "cover.png",
-            input_file.parent / "imagenes" / "cover.jpg",
-            input_file.parent / "img-000.png",
-            input_file.parent / "cover.png",
-            input_file.parent / "cover.jpg",
-        ]:
-            if candidate.exists():
-                cover_path = candidate.resolve()
-                print(f"[*] Auto-detected cover image: {cover_path.name}")
-                break
     full_html = build_full_document(
         body_html=body_html,
         title=title,

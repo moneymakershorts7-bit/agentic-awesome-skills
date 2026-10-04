@@ -2,24 +2,13 @@
 name: jules-maintainer
 description: Autonomous asynchronous repository maintenance, background issue triage, and patch review using Google Jules CLI and REST API.
 license: Apache-2.0
-allowed-tools:
-  - Bash
-  - Read
-  - Write
-  - Edit
-  - Grep
-permissions:
-  - shell
-  - file_read
-  - network
 metadata:
+  allowed-domains: '["jules.googleapis.com"]'
   aas-risk: safe
   aas-source: official
-  aas-source-repo: google/jules
-  aas-source-type: official
-  aas-date-added: '2026-10-03'
-  allowed-domains:
-    - jules.googleapis.com
+  aas-date-added: '2026-10-04'
+  aas-permissions: '["shell","file_read","network"]'
+allowed-tools: Bash Read Write Edit Grep
 ---
 
 # Jules Maintainer (Google Jules Coding Agent)

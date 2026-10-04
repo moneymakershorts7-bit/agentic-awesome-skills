@@ -13,9 +13,6 @@ permissions:
   - shell
 metadata:
   aas-category: essentials
-  aas-risk: safe
-  aas-source: internal
-  aas-date-added: '2026-10-03'
   aas-tags: '["tooling", "security", "conversions", "deterministic", "optimization"]'
 ---
 

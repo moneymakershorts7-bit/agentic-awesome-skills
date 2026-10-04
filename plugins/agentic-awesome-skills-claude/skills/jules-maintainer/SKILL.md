@@ -2,6 +2,9 @@
 name: jules-maintainer
 description: Autonomous asynchronous repository maintenance, background issue triage, and patch review using Google Jules CLI and REST API.
 license: Apache-2.0
+risk: safe
+source: official
+date_added: '2026-10-04'
 allowed-tools:
   - Bash
   - Read
@@ -13,11 +16,6 @@ permissions:
   - file_read
   - network
 metadata:
-  aas-risk: safe
-  aas-source: official
-  aas-source-repo: google/jules
-  aas-source-type: official
-  aas-date-added: '2026-10-03'
   allowed-domains:
     - jules.googleapis.com
 ---
