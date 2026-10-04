@@ -422,9 +422,9 @@ def cmd_list_voices(args):
     print("\n🌟 --- CURATED HIGH-QUALITY NEURAL VOICES (100% FREE) ---\n")
     langs = [args.lang] if args.lang and args.lang in RECOMMENDED_VOICES else list(RECOMMENDED_VOICES.keys())
     
-    for lang_code in langs:
-        voices = RECOMMENDED_VOICES.get(lang_code, [])
-        print(f"[{lang_code.upper()}] Recommended Voices:")
+    for lang in langs:
+        voices = RECOMMENDED_VOICES.get(lang, [])
+        print(f"[{lang.upper()}] Recommended Voices:")
         for v in voices:
             if args.gender and v["gender"].lower() != args.gender.lower():
                 continue
