@@ -54,9 +54,11 @@ Jules provides two primary orchestration interfaces:
 The official Google Jules REST API enables programmatic session orchestration from any shell or automation script.
 
 ### 1. Prerequisites & Authentication
-Generate your API key in the [Jules Web App](https://jules.google.com) under **Settings** (supports up to 3 active keys):
+Generate your API key in the [Jules Web App](https://jules.google.com) under **Settings** (supports up to 3 active keys).
+Store securely in your local environment (`~/.config/jules/env`), never committed to git:
 ```bash
-export JULES_API_KEY="your-jules-api-key"
+# Load securely from local environment (~/.config/jules/env)
+export JULES_API_KEY=${JULES_API_KEY}
 ```
 
 ### 2. Standard REST API Workflows

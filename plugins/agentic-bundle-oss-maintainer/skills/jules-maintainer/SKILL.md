@@ -2,13 +2,22 @@
 name: jules-maintainer
 description: Autonomous asynchronous repository maintenance, background issue triage, and patch review using Google Jules CLI and REST API.
 license: Apache-2.0
+risk: safe
+source: official
+date_added: '2026-10-04'
+allowed-tools:
+  - Bash
+  - Read
+  - Write
+  - Edit
+  - Grep
+permissions:
+  - shell
+  - file_read
+  - network
 metadata:
-  allowed-domains: '["jules.googleapis.com"]'
-  aas-risk: safe
-  aas-source: official
-  aas-date-added: '2026-10-04'
-  aas-permissions: '["shell","file_read","network"]'
-allowed-tools: Bash Read Write Edit Grep
+  allowed-domains:
+    - jules.googleapis.com
 ---
 
 # Jules Maintainer (Google Jules Coding Agent)
@@ -45,9 +54,11 @@ Jules provides two primary orchestration interfaces:
 The official Google Jules REST API enables programmatic session orchestration from any shell or automation script.
 
 ### 1. Prerequisites & Authentication
-Generate your API key in the [Jules Web App](https://jules.google.com) under **Settings** (supports up to 3 active keys):
+Generate your API key in the [Jules Web App](https://jules.google.com) under **Settings** (supports up to 3 active keys).
+Store securely in your local environment (`~/.config/jules/env`), never committed to git:
 ```bash
-export JULES_API_KEY="your-jules-api-key"
+# Load securely from local environment (~/.config/jules/env)
+export JULES_API_KEY=${JULES_API_KEY}
 ```
 
 ### 2. Standard REST API Workflows

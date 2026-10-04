@@ -109,3 +109,12 @@ python3 scripts/book_typesetter.py \
 - [Color Palettes Reference](references/color_palettes.md): Hex codes, contrast ratios, and callout styling.
 - [Book Anatomy & CSS Paged Media](references/book_anatomy_and_css.md): Formal structure and CSS layout rules.
 - [Master CSS Stylesheet](templates/themes.css): Complete CSS Paged Media stylesheet.
+
+---
+
+## Limitations
+
+- **Chromium / CDP Runtime Dependency**: Requires a headless Chromium or Chrome installation to execute CSS Paged Media layout and PDF generation via CDP.
+- **Complex Floating Figures**: Multi-page wrapping around non-rectangular floating elements is constrained by browser CSS print layout capabilities.
+- **Color Space**: Compiles primarily in sRGB / RGB colour profiles; prepress CMYK conversions require external tools like Ghostscript.
+

@@ -171,7 +171,11 @@ function emitTiming(record) {
 
 function runNodeCommand(args) {
   const startedAt = process.hrtime.bigint();
-  const result = spawnSync(process.execPath, args, {
+  const isBun = typeof process.versions.bun !== "undefined" || path.basename(process.execPath).includes("bun");
+  const execArgs = isBun && !args[0].endsWith(".py") && !args.some(a => String(a).includes("run-python.js"))
+    ? ["test", ...args]
+    : args;
+  const result = spawnSync(process.execPath, execArgs, {
     env: {
       ...process.env,
       PYTHONDONTWRITEBYTECODE: process.env.PYTHONDONTWRITEBYTECODE || "1",

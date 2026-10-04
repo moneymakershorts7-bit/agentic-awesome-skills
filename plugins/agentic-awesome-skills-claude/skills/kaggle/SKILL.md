@@ -217,3 +217,12 @@ Read one when the task needs it.
 - `modules/references/kaggle-knowledge.md`: platform facts the official docs
   do not state.
 - `modules/benchmarks/references/benchmarks-cli.md`: benchmark task workflow.
+
+---
+
+## Limitations
+
+- **API Rate Limits**: Kaggle enforces daily quota limits on submission uploads, kernel pushes, and dataset downloads.
+- **Compute Constraints**: Interactive GPU and TPU quotas are bounded by weekly platform allowances per user account.
+- **Credential Requirements**: Kaggle API operations require a valid `kaggle.json` credential configured locally with appropriate account permissions.
+

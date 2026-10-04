@@ -142,3 +142,12 @@ Once all chapters are approved:
 - [references/fact_checking_protocol.md](references/fact_checking_protocol.md) — Rigorous verification protocol and citation models.
 - [references/editorial_workflow_checklist.md](references/editorial_workflow_checklist.md) — Practical milestone checklist for managing a multi-chapter book project.
 - [scripts/book_inspector.py](scripts/book_inspector.py) — CLI utility to inspect word count, chapter outline, and unverified placeholders in manuscripts.
+
+---
+
+## Limitations
+
+- **Fact-Checking Scope**: Autonomous validation requires access to reputable primary sources or scholarly databases; obscure local citations may require manual researcher verification.
+- **Context Window Constraints**: Processing monolithic manuscripts exceeding 100,000 words in a single prompt can cause context rot; iterative, chapter-by-chapter workflows are mandatory.
+- **Subjective Editorial Judgment**: Authorial voice nuances and creative liberties must be aligned with the human editor through the architectural blueprint.
+
