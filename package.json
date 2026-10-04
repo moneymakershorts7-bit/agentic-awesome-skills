@@ -53,6 +53,8 @@
     "security:docs": "node tools/scripts/tests/docs_security_content.test.js",
     "security:scan": "node tools/scripts/run-python.js tools/scripts/security_scanner.py",
     "security:scan:strict": "node tools/scripts/run-python.js tools/scripts/security_scanner.py --strict",
+    "security:malware": "python3 tools/scripts/malware_scanner.py --strict .",
+    "scan:malware": "python3 tools/scripts/malware_scanner.py --strict .",
     "lint": "npm run lint:workflows && ruff check . --config ruff.toml && npm run validate",
     "lint:all": "bash tools/scripts/lint_all.sh",
     "lint:fix": "ruff check --fix . --config ruff.toml",

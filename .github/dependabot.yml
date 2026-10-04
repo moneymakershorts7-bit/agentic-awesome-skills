@@ -60,6 +60,9 @@ updates:
       web-app-dependencies:
         patterns:
           - "*"
+    ignore:
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
 
   # 4. AAS Plugin NPM Dependencies
   - package-ecosystem: "npm"

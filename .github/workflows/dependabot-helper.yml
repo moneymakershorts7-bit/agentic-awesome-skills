@@ -1,0 +1,42 @@
+name: Dependabot Automation & Auto-Merge
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+  statuses: read
+
+jobs:
+  dependabot:
+    name: Dependabot Triage and Auto-Merge
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]'
+    steps:
+      - name: Fetch Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@d0999017770857ba0a7751f7d5c5a0833a6976f9 # v2.3.0
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Auto-Approve Non-Major Version Updates
+        if: steps.metadata.outputs.update-type != 'version-update:semver-major'
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Approving safe non-major dependency bump: ${{ steps.metadata.outputs.update-type }}"
+          gh pr review --approve "$PR_URL" \
+            --body "✅ Dependabot update verified as safe non-major bump (${{ steps.metadata.outputs.update-type }}). Automatically approved for CI test verification."
+
+      - name: Enable Auto-Merge for Minor / Patch Updates
+        if: steps.metadata.outputs.update-type != 'version-update:semver-major'
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Enabling auto-merge (squash) for PR..."
+          gh pr merge --auto --squash "$PR_URL" || echo "Auto-merge flag deferred to skills-maintainer sweep."

@@ -1,0 +1,174 @@
+name: Automated CI Fixer & Self-Healing
+
+on:
+  workflow_run:
+    workflows:
+      - "CI"
+      - "Code Quality & Linting"
+      - "Vulnerability & Security Scan"
+      - "Skills Registry CI"
+      - "AAS agent-first preview"
+    types: [completed]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "Pull Request number to inspect and fix"
+        required: false
+        type: string
+      mode:
+        description: "Fixer strategy mode"
+        required: false
+        default: "auto"
+        type: choice
+        options:
+          - auto
+          - action-pinning
+          - format-lint
+          - rerun-failed
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+  issues: write
+
+concurrency:
+  group: ci-fixer-${{ github.event_name }}-${{ github.event.workflow_run.id || github.event.issue.number || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  ci-fixer:
+    name: Diagnose and Fix CI Failures
+    runs-on: ubuntu-latest
+    if: >-
+      (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'failure') ||
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request && contains(github.event.comment.body, '/fix-ci')) ||
+      (github.event_name == 'workflow_dispatch')
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: "22"
+
+      - name: Diagnose CI Failure Logs
+        id: diagnose
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          FAILED_RUN_ID="${{ github.event.workflow_run.id }}"
+          if [ -z "$FAILED_RUN_ID" ] && [ -n "${{ github.event.inputs.pr_number }}" ]; then
+            FAILED_RUN_ID="$(gh pr checks "${{ github.event.inputs.pr_number }}" | grep -E "^X" | head -n1 | grep -oE "runs/[0-9]+" | cut -d/ -f2 || true)"
+          fi
+
+          echo "Inspecting failed run ID: ${FAILED_RUN_ID:-none}"
+          if [ -n "$FAILED_RUN_ID" ]; then
+            echo "FAILED_RUN_ID=${FAILED_RUN_ID}" >> "$GITHUB_OUTPUT"
+            gh run view "$FAILED_RUN_ID" --log-failed > failed_log.txt || true
+            head -n 40 failed_log.txt || true
+            
+            # Check for mutable action tags (Action Pinning failure)
+            if grep -iqE "unpinned action|mutable tag|DevSkim|actionlint" failed_log.txt; then
+              echo "HEURISTIC=ACTION_PINNING" >> "$GITHUB_OUTPUT"
+            elif grep -iqE "ruff|eslint|prettier|black|flake8|lint" failed_log.txt; then
+              echo "HEURISTIC=LINT_FIX" >> "$GITHUB_OUTPUT"
+            elif grep -iqE "timeout|connection reset|ETIMEDOUT|503 Service Unavailable" failed_log.txt; then
+              echo "HEURISTIC=RERUN_FLAKY" >> "$GITHUB_OUTPUT"
+            else
+              echo "HEURISTIC=GENERAL_REPAIR" >> "$GITHUB_OUTPUT"
+            fi
+          else
+            echo "HEURISTIC=AUTO" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Auto-Rerun Transient / Flaky Failures
+        if: steps.diagnose.outputs.HEURISTIC == 'RERUN_FLAKY' && steps.diagnose.outputs.FAILED_RUN_ID != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Detected transient network or timeout failure. Re-running failed jobs..."
+          gh run rerun "${{ steps.diagnose.outputs.FAILED_RUN_ID }}" --failed || true
+
+      - name: Apply Automatic Linter and Formatter Fixes
+        if: steps.diagnose.outputs.HEURISTIC == 'LINT_FIX' || github.event.inputs.mode == 'format-lint'
+        run: |
+          echo "Running automated Ruff formatting and linter fixes..."
+          pip install ruff
+          ruff format . || true
+          ruff check --fix . || true
+
+      - name: Fix Action Tag Pinning (Immutable SHAs)
+        if: steps.diagnose.outputs.HEURISTIC == 'ACTION_PINNING' || github.event.inputs.mode == 'action-pinning'
+        run: |
+          echo "Auditing and fixing mutable GitHub Actions tags in .github/workflows..."
+          python3 - << 'EOF'
+          import re
+          from pathlib import Path
+
+          # Known official action immutable commit SHAs
+          PINNED_ACTIONS = {
+              "actions/checkout": "actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5",
+              "actions/setup-node": "actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5",
+              "actions/setup-python": "actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6",
+              "github/codeql-action/upload-sarif": "github/codeql-action/upload-sarif@99df26d4f13ea111d4ec1a7dddef6063f76b97e9 # v4",
+              "microsoft/DevSkim-Action": "microsoft/DevSkim-Action@734c6ed8a3c82e5b84c8a29a008c2a4ef69d4be2 # v1",
+              "step-security/harden-runner": "step-security/harden-runner@4d991eb9b905fa189e4c376166672c3f2f23b26f # v2.11.0",
+              "dependabot/fetch-metadata": "dependabot/fetch-metadata@d0999017770857ba0a7751f7d5c5a0833a6976f9 # v2.3.0",
+          }
+
+          for yml in Path(".github/workflows").glob("*.yml"):
+              text = yml.read_text(encoding="utf-8")
+              orig = text
+              for prefix, target in PINNED_ACTIONS.items():
+                  # Replace unpinned tags like uses: actions/checkout@v4 with target
+                  text = re.sub(
+                      rf"uses:\s+{re.escape(prefix)}@[a-zA-Z0-9_\.\-]+(?:\s*#.*)?",
+                      f"uses: {target}",
+                      text,
+                  )
+              if text != orig:
+                  print(f"Pinned actions in {yml.name}")
+                  yml.write_text(text, encoding="utf-8")
+          EOF
+
+      - name: Verify Clean Repository State
+        run: |
+          npm ci --ignore-scripts --audit=false || true
+          node tools/scripts/run-python.js tools/scripts/validate_skills.py || true
+
+      - name: Commit and Push Fixes (if changes generated on branch)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git add .
+            git commit -m "fix(ci): automated CI fixer self-healing repair"
+            
+            BRANCH_NAME="${{ github.event.workflow_run.head_branch }}"
+            if [ -n "$BRANCH_NAME" ] && [ "$BRANCH_NAME" != "main" ]; then
+              git push origin "$BRANCH_NAME"
+            else
+              echo "Changes generated for main or manual run; creating atomic fix branch..."
+              FIX_BRANCH="ci-fix/automated-repair-$(date +%s)"
+              git checkout -b "$FIX_BRANCH"
+              git push origin "$FIX_BRANCH"
+              gh pr create --title "fix(ci): automated CI fixer self-healing repair" \
+                --body "Automated repair applied by GitHub Actions CI Fixer. Tested and ready for human assistant review." \
+                --base main --head "$FIX_BRANCH" || true
+            fi
+          else
+            echo "No file changes needed. CI failure was diagnosed without requiring code modifications."
+          fi

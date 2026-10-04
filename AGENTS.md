@@ -103,6 +103,23 @@ When Google Jules (`https://jules.google`) runs autonomously on this repository 
      3. Run `npm run bundles:sync` and `npm run plugin-compat:sync` to eliminate bundle drift.
      4. Check warning budget with `npm run check:warning-budget`.
 
+   ### D. CI/CD Workflow & Build Auto-Fixer Agent (On-Demand / Continuous)
+   - **Branch:** `jules/ci-fix-patches`
+   - **Scope:**
+     1. Ingest failing GitHub Actions logs from CI, linting, or security workflows.
+     2. Auto-fix action pinning: ensure all GitHub Actions in `.github/workflows/*.yml` use immutable 40-character commit SHAs.
+     3. Auto-fix test and specification contract discrepancies (e.g., missing `## Limitations` sections in `SKILL.md`, broken links in `references/`, or frontmatter schema errors).
+     4. Auto-resolve Dependabot peer dependency lockfile conflicts (such as major TypeScript vs. typescript-eslint mismatches).
+     5. Apply linter/formatter fixes (`ruff check --fix`, `actionlint`).
+
+   ### E. Malware & Supply-Chain Defense Sentinel (Daily)
+   - **Branch:** `jules/malware-defense-patch`
+   - **Scope:**
+     1. Execute deep malware & backdoor detection: `npm run scan:malware` (`python3 tools/scripts/malware_scanner.py --strict .`).
+     2. Audit scripts and workflows for reverse shells (`/dev/tcp`, `nc -e`, `pty.spawn`), base64 decode-and-execute chains, LD_PRELOAD hijacking, and credential dumping sinks.
+     3. Verify absence of disguised binary payloads (ELF, PE, Mach-O magic headers) inside text files.
+     4. Propose atomic defensive patches isolating untrusted inputs on branch `jules/malware-defense-patch`.
+
 4. **Required Verification Pipeline Before PR Submission:**
    Before finalizing any plan, committing changes, or submitting a Pull Request, Jules MUST execute and pass:
    ```bash

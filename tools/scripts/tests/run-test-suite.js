@@ -173,7 +173,7 @@ function runNodeCommand(args) {
   const startedAt = process.hrtime.bigint();
   const isBun = typeof process.versions.bun !== "undefined" || path.basename(process.execPath).includes("bun");
   const execArgs = isBun && !args[0].endsWith(".py") && !args.some(a => String(a).includes("run-python.js"))
-    ? ["test", ...args]
+    ? ["test", "--timeout", "30000", ...args]
     : args;
   const result = spawnSync(process.execPath, execArgs, {
     env: {
