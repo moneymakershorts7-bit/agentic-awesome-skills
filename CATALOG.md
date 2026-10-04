@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2708
+Total skills: 2714
 
 ## agent-behavior (5)
 
@@ -128,7 +128,7 @@ Total skills: 2708
 | `pydantic-ai` | Build production-ready AI agents with PydanticAI — type-safe tool use, structured outputs, dependency injection, and multi-model support. | safe | community | pydantic-ai, ai-agents, llm, openai, anthropic, gemini, tool-use, structured-output, python | pydantic-ai, ai-agents, llm, openai, anthropic, gemini, tool-use, structured-output, python, pydantic, ai, agents |
 | `superpowers-lab` | Lab environment for Claude superpowers | safe | https://github.com/obra/superpowers-lab | superpowers, lab | superpowers, lab, environment, claude |
 
-## ai-ml (139)
+## ai-ml (140)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -140,6 +140,7 @@ Total skills: 2708
 | `agent-orchestration-improve-agent` | Systematic improvement of existing agents through performance analysis, prompt engineering, and continuous iteration. | critical | community | agent, improve | agent, improve, orchestration, systematic, improvement, existing, agents, through, performance, analysis, prompt, engineering |
 | `agent-orchestration-multi-agent-optimize` | Optimize multi-agent systems with coordinated profiling, workload distribution, and cost-aware orchestration. Use when improving agent performance, throughpu... | critical | community | agent, multi, optimize | agent, multi, optimize, orchestration, coordinated, profiling, workload, distribution, cost, aware, improving, performance |
 | `agent-orchestrator` | Meta-skill que orquestra todos os agentes do ecossistema. Scan automatico de skills, match por capacidades, coordenacao de workflows multi-skill e registry m... | safe | community | orchestration, multi-agent, workflow, automation | orchestration, multi-agent, workflow, automation, agent, orchestrator, meta, skill, que, orquestra, todos, os |
+| `agent-sort` | Build an evidence-backed ECC install plan for a specific repo by sorting skills, commands, rules, hooks, and extras into DAILY vs LIBRARY buckets using paral... | safe | affaan-m/ecc | agent, sort | agent, sort, evidence, backed, ecc, install, plan, specific, repo, sorting, skills, commands |
 | `agent-squad` | Main agent orchestrator that coordinates a specialized squad of agents | critical | community | agent, squad | agent, squad, main, orchestrator, coordinates, specialized, agents |
 | `agent-tool-builder` | Tools are how AI agents interact with the world. A well-designed tool is the difference between an agent that works and one that hallucinates, fails silently... | critical | vibeship-spawner-skills (Apache 2.0) | agent, builder | agent, builder, how, ai, agents, interact, world, well, designed, difference, between, works |
 | `agentfolio` | Skill for discovering and researching autonomous AI agents, tools, and ecosystems using the AgentFolio directory. | safe | agentfolio.io | agentfolio | agentfolio, skill, discovering, researching, autonomous, ai, agents, ecosystems, directory |
@@ -2174,7 +2175,7 @@ Total skills: 2708
 | `protect-mcp-governance` | Agent governance skill for MCP tool calls — Cedar policy authoring, shadow-to-enforce rollout, and Ed25519 receipt verification. | safe | scopeblind/scopeblind-gateway | protect, mcp, governance | protect, mcp, governance, agent, skill, calls, cedar, policy, authoring, shadow, enforce, rollout |
 | `serply-search-mcp` | Search Google, Bing, Google News and Google Scholar, and read public pages, with the Serply MCP server. Use when the user chooses Serply or its connected too... | safe | self | mcp, web-search, news, scholar, research, citations | mcp, web-search, news, scholar, research, citations, serply, search, google, bing, read, public |
 
-## media (43)
+## media (44)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -2214,6 +2215,7 @@ Total skills: 2708
 | `stability-ai` | Geracao de imagens via Stability AI (SD3.5, Ultra, Core). Text-to-image, img2img, inpainting, upscale, remove-bg, search-replace. 15 estilos artisticos. | safe | community | image-generation, stable-diffusion, ai-art, api | image-generation, stable-diffusion, ai-art, api, stability, ai, geracao, de, imagens, via, sd3, ultra |
 | `suno-lyrics-to-song` | Install and use the official Lyrics to Song package, pinned by digest, for paid hosted work on the Beatra service. | critical | beatra-ai/lyrics-to-song-skill | lyrics-to-song, music-generation, mcp, paid-api, beatra | lyrics-to-song, music-generation, mcp, paid-api, beatra, suno, lyrics, song, install, official, package, pinned |
 | `talking-avatar-video` | Install and use the official Talking Avatar Video package, pinned by digest, for paid hosted work on the Beatra service. | critical | beatra-ai/talking-avatar-video-skill | talking-avatar, talking-head, text-to-video, mcp, paid-api, beatra | talking-avatar, talking-head, text-to-video, mcp, paid-api, beatra, talking, avatar, video, install, official, package |
+| `tts-voice-studio` | Transform raw text into emotion-infused spoken scripts and synthesize lifelike audio with human cadence. Supports SSML, ChatTTS, Bark, Kokoro, and ElevenLabs... | safe | community | tts, voice, speech-synthesis, audio, ssml, emotion, edge-tts, elevenlabs, kokoro | tts, voice, speech-synthesis, audio, ssml, emotion, edge-tts, elevenlabs, kokoro, studio, transform, raw |
 | `video-router` | Route a video-production brief to generation, deterministic composition, supplied-footage editing, or an automatic cross-modal plan before production begins. | none | Orkas-AI/Orkas-VideoStudio | video, routing, editing, composition, generation | video, routing, editing, composition, generation, router, route, brief, deterministic, supplied, footage, automatic |
 | `videodb` | Video and audio perception, indexing, and editing. Ingest files/URLs/live streams, build visual/spoken indexes, search with timestamps, edit timelines, add o... | safe | community | video, editing, transcription, subtitles, search, streaming, ai-generation, media, live-streams, desktop-capture | video, editing, transcription, subtitles, search, streaming, ai-generation, media, live-streams, desktop-capture, videodb, audio |
 | `videodb-skills` | Upload, stream, search, edit, transcribe, and generate AI video and audio using the VideoDB SDK. | safe | community | video, editing, transcription, subtitles, search, streaming, ai-generation, media | video, editing, transcription, subtitles, search, streaming, ai-generation, media, videodb, skills, upload, stream |
@@ -3027,7 +3029,7 @@ Total skills: 2708
 | --- | --- | --- | --- | --- | --- |
 | `travel-planner` | 旅行/行程规划需求时使用:规划去某地旅行、X天X城、带老人孩子、自驾、假期安排等。产出逐日行程表、预算估算(经济/舒适/奢华三档)、交通住宿建议、景点美食清单。必须先问预算,预算未确认只输出问题清单;事实数据带来源和查询日期。 | safe | saudademjj/luopan | travel, itinerary, planning, trip, chinese | travel, itinerary, planning, trip, chinese, planner |
 
-## uncategorized (51)
+## uncategorized (54)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -3046,11 +3048,13 @@ Total skills: 2708
 | `cloudflare-email-service` | Implement or troubleshoot Cloudflare Email Sending and Email Routing integrations and their delivery configuration. | safe | cloudflare/skills | cloudflare, email, service | cloudflare, email, service, troubleshoot, sending, routing, integrations, delivery, configuration |
 | `cloudflare-one` | Design, configure, troubleshoot, or review Cloudflare One Zero Trust and SASE deployments. Use cloudflare-one-migrations for migration planning from other ve... | safe | cloudflare/skills | cloudflare, one | cloudflare, one, configure, troubleshoot, review, zero, trust, sase, deployments, migrations, migration, planning |
 | `cloudflare-one-migrations` | Assess and plan migrations from existing VPN, SWG, or SASE platforms to Cloudflare One, including policy mapping, parity gaps, and rollout. | safe | cloudflare/skills | cloudflare, one, migrations | cloudflare, one, migrations, assess, plan, existing, vpn, swg, sase, platforms, including, policy |
+| `configure-ecc` | Run the conversational ECC setup wizard to inventory, configure, preview, and verify ECC installation scopes and hook modes across supported agent harnesses. | safe | affaan-m/ecc | configure, ecc | configure, ecc, run, conversational, setup, wizard, inventory, preview, verify, installation, scopes, hook |
 | `crafting-effective-readmes` | Use when writing or improving README files. Not all READMEs are the same — provides templates and guidance matched to your audience and project type. | safe | community | crafting, effective, readmes | crafting, effective, readmes, writing, improving, readme, files, all, same, provides, guidance, matched |
 | `diagram-design` | Create branded architecture, architecture delta, IT current-state, flowchart, sequence, state machine, ER/data model, timeline, swimlane, quadrant, radar/spi... | safe | community | diagram | diagram, branded, architecture, delta, current, state, flowchart, sequence, machine, er, data, model |
 | `difyctl` | Base skill for the difyctl CLI: find any command or Dify operation through help and run it as a command. Use when the task involves difyctl or a Dify server ... | safe | community | difyctl | difyctl, base, skill, cli, find, any, command, dify, operation, through, run, task |
 | `discernment-nudge` | After you give a substantive answer or draft that the user may act on — advice or recommendations, drafted artifacts such as goals, plans, pitches, proposals... | safe | community | discernment, nudge | discernment, nudge, after, give, substantive, answer, draft, user, may, act, advice, recommendations |
 | `durable-objects` | Build, debug, or review Cloudflare Durable Objects code for persistent state and coordination. | safe | cloudflare/skills | durable, objects | durable, objects, debug, review, cloudflare, code, persistent, state, coordination |
+| `ecc-guide` | Answer questions about ECC by reading the live repo surface — agents, skills, commands, hooks, rules, install profiles, and docs — instead of memory. Use whe... | safe | affaan-m/ecc | ecc | ecc, answer, questions, about, reading, live, repo, surface, agents, skills, commands, hooks |
 | `gitea` | Interface with Gitea instances via the tea CLI. Manage repositories, issues, PRs, releases, labels, milestones, CI/CD actions, webhooks, and organizations. | safe | community | gitea, git, devops, ci-cd, code-hosting, self-hosted | gitea, git, devops, ci-cd, code-hosting, self-hosted, interface, instances, via, tea, cli, repositories |
 | `golang-benchmark` | Golang benchmarking, profiling, and performance measurement. Use when writing, running, or comparing Go benchmarks, profiling hot paths with pprof, interpret... | safe | community | golang, benchmark | golang, benchmark, benchmarking, profiling, performance, measurement, writing, running, comparing, go, benchmarks, hot |
 | `golang-cli` | Golang CLI application development. Use when building, modifying, or reviewing a Go CLI tool — especially for command structure, flag handling, configuration... | safe | community | golang, cli | golang, cli, application, development, building, modifying, reviewing, go, especially, command, structure, flag |
@@ -3073,6 +3077,7 @@ Total skills: 2708
 | `open-code-review` | Performs AI-powered code review on Git changes using the `ocr` CLI from alibaba/open-code-review. Use when the user asks to review code, review a pull reques... | safe | community | open, code | open, code, review, performs, ai, powered, git, changes, ocr, cli, alibaba, user |
 | `opencreator-runtime` | OpenCreator 内部 Creator Agent 的稳定运行规则，仅由应用自动安装和激活。 | safe | community | opencreator, runtime | opencreator, runtime, creator, agent |
 | `ponytail` | Forces the laziest solution that actually works, simplest, shortest, most minimal. Channels a senior dev who has seen everything: question whether the task n... | safe | community | ponytail | ponytail, forces, laziest, solution, actually, works, simplest, shortest, most, minimal, channels, senior |
+| `rules-distill` | Scan skills to extract cross-cutting principles and distill them into rules — append, revise, or create new rule files. Use when the same principle keeps rec... | safe | affaan-m/ecc | rules, distill | rules, distill, scan, skills, extract, cross, cutting, principles, them, append, revise, new |
 | `sandbox-migrate-to-next` | Migrate Cloudflare Sandbox apps from stable @cloudflare/sandbox to @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-next for apps already on the preview. | safe | cloudflare/skills | sandbox, migrate, to, next | sandbox, migrate, to, next, cloudflare, apps, stable, sdk, preview, already |
 | `sandbox-next` | Build or maintain Cloudflare Sandbox apps on @cloudflare/sandbox@next (SDK 1.0 preview). Use sandbox-migrate-to-next when porting a stable app. | safe | cloudflare/skills | sandbox, next | sandbox, next, maintain, cloudflare, apps, sdk, preview, migrate, porting, stable, app |
 | `sandbox-stable` | Build or maintain Cloudflare Sandbox apps on the stable @cloudflare/sandbox package. Use sandbox-next for preview apps and sandbox-migrate-to-next for stable... | safe | cloudflare/skills | sandbox, stable | sandbox, stable, maintain, cloudflare, apps, package, next, preview, migrate, migrations |
@@ -3099,7 +3104,7 @@ Total skills: 2708
 | `pipecat-friday-agent` | Build a low-latency, Iron Man-inspired tactical voice assistant (F.R.I.D.A.Y.) using Pipecat, Gemini, and OpenAI. | safe | community | pipecat, voice, gemini, openai, python | pipecat, voice, gemini, openai, python, friday, agent, low, latency, iron, man, inspired |
 | `voice-ai-development` | Expert in building voice AI applications - from real-time voice agents to voice-enabled apps. Covers OpenAI Realtime API, Vapi for voice agents, Deepgram for... | critical | vibeship-spawner-skills (Apache 2.0) | voice, ai | voice, ai, development, building, applications, real, time, agents, enabled, apps, covers, openai |
 
-## web-development (70)
+## web-development (71)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -3134,6 +3139,7 @@ Total skills: 2708
 | `magic-ui-generator` | Utilizes Magic by 21st.dev to generate, compare, and integrate multiple production-ready UI component variations. | safe | community | magic, ui, generator | magic, ui, generator, utilizes, 21st, dev, generate, compare, integrate, multiple, component, variations |
 | `pagespeed-enhancer` | Scan, audit, and fix web performance issues across all four Lighthouse/PageSpeed Insights pillars — Performance, Accessibility, Best Practices, and SEO — in ... | safe | personal | pagespeed, enhancer | pagespeed, enhancer, scan, audit, fix, web, performance, issues, all, four, lighthouse, insights |
 | `photopea-embedded-editor` | Embed Photopea in web apps using photopea.js. Covers embedding, file I/O, scripting, exporting, layers, text, filters, and the full Photoshop-compatible API. | safe | yikuansun/PhotopeaAPI | photopea, embedded, editor | photopea, embedded, editor, embed, web, apps, js, covers, embedding, file, scripting, exporting |
+| `plan-canvas` | Open plans and HTML artifacts in a local browser canvas where the human annotates elements, chats, and approves or requests changes without leaving the page.... | safe | affaan-m/ecc | plan, canvas | plan, canvas, open, plans, html, artifacts, local, browser, where, human, annotates, elements |
 | `radix-ui-design-system` | Build accessible design systems with Radix UI primitives. Headless component customization, theming strategies, and compound component patterns for productio... | safe | self | radix, ui | radix, ui, accessible, primitives, headless, component, customization, theming, compound, grade, libraries |
 | `react-best-practices` | Comprehensive performance optimization guide for React and Next.js applications, maintained by Vercel. Use when writing new React components or Next.js pages... | safe | community | react, best, practices | react, best, practices, performance, optimization, next, js, applications, maintained, vercel, writing, new |
 | `react-component-performance` | Diagnose slow React components and suggest targeted performance fixes. | safe | Dimillian/Skills (MIT) | react, component, performance | react, component, performance, diagnose, slow, components, suggest, targeted, fixes |

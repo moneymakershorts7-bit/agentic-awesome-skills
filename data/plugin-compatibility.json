@@ -1172,6 +1172,25 @@
       "runtime_files": []
     },
     {
+      "id": "agent-sort",
+      "path": "skills/agent-sort",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "agent-squad",
       "path": "skills/agent-squad",
       "targets": {
@@ -12464,6 +12483,25 @@
       "runtime_files": []
     },
     {
+      "id": "configure-ecc",
+      "path": "skills/configure-ecc",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "confluence-automation",
       "path": "skills/confluence-automation",
       "targets": {
@@ -17941,6 +17979,25 @@
     {
       "id": "ebpf-observability",
       "path": "skills/ebpf-observability",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "ecc-guide",
+      "path": "skills/ecc-guide",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -36534,6 +36591,29 @@
       "runtime_files": []
     },
     {
+      "id": "plan-canvas",
+      "path": "skills/plan-canvas",
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ],
+      "blocked_reasons": {
+        "codex": [
+          "target_specific_home_path"
+        ],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "plan-ledger-tasks-yylo",
       "path": "skills/plan-ledger-tasks-yylo",
       "targets": {
@@ -40372,6 +40452,29 @@
       "reasons": [],
       "blocked_reasons": {
         "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "rules-distill",
+      "path": "skills/rules-distill",
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ],
+      "blocked_reasons": {
+        "codex": [
+          "target_specific_home_path"
+        ],
         "claude": []
       },
       "runtime_files": []
@@ -47792,6 +47895,25 @@
       "runtime_files": []
     },
     {
+      "id": "tts-voice-studio",
+      "path": "skills/tts-voice-studio",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "tune-monitor",
       "path": "skills/tune-monitor",
       "targets": {
@@ -51957,13 +52079,13 @@
     }
   ],
   "summary": {
-    "total_skills": 2708,
+    "total_skills": 2714,
     "supported": {
-      "codex": 2620,
-      "claude": 2645
+      "codex": 2624,
+      "claude": 2651
     },
     "blocked": {
-      "codex": 88,
+      "codex": 90,
       "claude": 63
     },
     "manual_setup": 20
