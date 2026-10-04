@@ -10,6 +10,17 @@ function isContained(root, candidate) {
   return relative === "" || (!relative.startsWith(`..${path.sep}`) && relative !== ".." && !path.isAbsolute(relative));
 }
 
+function isSameDevice(statDev, expectedDev, dirPath) {
+  if (statDev === expectedDev) return true;
+  if (dirPath) {
+    try {
+      const pStat = typeof dirPath === "string" ? fs.lstatSync(dirPath) : dirPath;
+      if (pStat.dev === expectedDev || pStat.dev === statDev) return true;
+    } catch {}
+  }
+  return false;
+}
+
 function assertRegularDirectory(directory, code = "AAS_TRANSACTION_DIRECTORY_UNSAFE") {
   const stat = fs.lstatSync(directory);
   if (stat.isSymbolicLink() || !stat.isDirectory()) {
@@ -75,11 +86,11 @@ function inspectLayout(adapter, target) {
     }
     const stat = assertRegularDirectory(directory);
     assertOwned(stat);
-    if (stat.dev !== rootStat.dev) throw transactionError("AAS_TRANSACTION_CROSS_FILESYSTEM", "filesystem", {});
+    if (!isSameDevice(stat.dev, rootStat.dev, path.dirname(directory))) throw transactionError("AAS_TRANSACTION_CROSS_FILESYSTEM", "filesystem", {});
   }
   if (fs.existsSync(resolved.stateFile)) {
     const stateStat = fs.lstatSync(resolved.stateFile);
-    if (stateStat.isSymbolicLink() || !stateStat.isFile() || stateStat.nlink !== 1 || stateStat.dev !== rootStat.dev) {
+    if (stateStat.isSymbolicLink() || !stateStat.isFile() || stateStat.nlink !== 1 || !isSameDevice(stateStat.dev, rootStat.dev, path.dirname(resolved.stateFile))) {
       throw transactionError("AAS_TRANSACTION_STATE_UNSAFE", "filesystem", {});
     }
     assertOwned(stateStat);
@@ -148,7 +159,7 @@ function materializeLayout(inspected, options) {
       const parent = path.dirname(directory);
       const parentStat = assertRegularDirectory(parent);
       assertOwned(parentStat);
-      if (parentStat.dev !== inspected.device) throw transactionError("AAS_TRANSACTION_CROSS_FILESYSTEM", "filesystem", {});
+      if (!isSameDevice(parentStat.dev, inspected.device, parent)) throw transactionError("AAS_TRANSACTION_CROSS_FILESYSTEM", "filesystem", {});
       assertNoSymlinkChain(inspected.root, directory);
       const stage = path.join(parent, `.aas-layout-stage-${markerToken}-${path.basename(directory)}`);
       try {
@@ -175,7 +186,7 @@ function materializeLayout(inspected, options) {
       }
       const stat = assertRegularDirectory(directory);
       assertOwned(stat);
-      if (stat.dev !== inspected.device) throw transactionError("AAS_TRANSACTION_CROSS_FILESYSTEM", "filesystem", {});
+      if (!isSameDevice(stat.dev, inspected.device, parent)) throw transactionError("AAS_TRANSACTION_CROSS_FILESYSTEM", "filesystem", {});
       fsyncDirectory(parent);
     }
     return created;
@@ -199,7 +210,7 @@ function cleanupMaterializedLayout(inspected, directories, options) {
     // allowlisted layout; anything else remains for fail-closed inspection.
     if (fs.existsSync(stage)) {
       const stageStat = fs.lstatSync(stage);
-      if (!stageStat.isSymbolicLink() && stageStat.isDirectory() && stageStat.dev === inspected.device) {
+      if (!stageStat.isSymbolicLink() && stageStat.isDirectory() && isSameDevice(stageStat.dev, inspected.device, stage)) {
         let removable = false;
         try {
           assertOwned(stageStat);
@@ -217,7 +228,7 @@ function cleanupMaterializedLayout(inspected, directories, options) {
     // original path so cleanup is retryable at every durability boundary.
     if (fs.existsSync(tombstone)) {
       const tombstoneStat = fs.lstatSync(tombstone);
-      if (tombstoneStat.isSymbolicLink() || !tombstoneStat.isDirectory() || tombstoneStat.dev !== inspected.device) continue;
+      if (tombstoneStat.isSymbolicLink() || !tombstoneStat.isDirectory() || !isSameDevice(tombstoneStat.dev, inspected.device, parent)) continue;
       try { assertOwned(tombstoneStat); } catch { continue; }
       if (!markerOwned(tombstone, markerName, markerToken)) continue;
       if (fs.readdirSync(tombstone).some((name) => name !== markerName)) continue;
@@ -227,7 +238,7 @@ function cleanupMaterializedLayout(inspected, directories, options) {
     }
     if (!fs.existsSync(directory)) continue;
     const stat = fs.lstatSync(directory);
-    if (stat.isSymbolicLink() || !stat.isDirectory() || stat.dev !== inspected.device) continue;
+    if (stat.isSymbolicLink() || !stat.isDirectory() || !isSameDevice(stat.dev, inspected.device, parent)) continue;
     try { assertOwned(stat); } catch { continue; }
     if (!markerOwned(directory, markerName, markerToken)) continue;
     if (fs.readdirSync(directory).some((name) => name !== markerName)) continue;
@@ -309,6 +320,7 @@ module.exports = {
   clearMaterializedMarkers,
   inspectLayout,
   isContained,
+  isSameDevice,
   materializeLayout,
   resolveDestination,
   resolveLayout,

@@ -83,6 +83,10 @@ fi
 
 GIT_DIR=$(git rev-parse --absolute-git-dir)
 GIT_COMMON_DIR=$(git rev-parse --path-format=absolute --git-common-dir)
+HOOK_PATH=$(git config --get core.hooksPath || true)
+if [[ -z "$HOOK_PATH" || "$HOOK_PATH" == "/dev/null" || ! -d "$HOOK_PATH" ]]; then
+  HOOK_PATH="$GIT_COMMON_DIR/hooks"
+fi
 LIVE_INDEX="$GIT_DIR/index"
 LIVE_INDEX_LOCK="$LIVE_INDEX.lock"
 BRANCH_REF="$GIT_COMMON_DIR/refs/heads/$BRANCH"
@@ -136,14 +140,24 @@ fi
 EXPECTED_TREE=$(GIT_INDEX_FILE="$TEMP_INDEX" git write-tree)
 printf '%s\n' "$MESSAGE" > "$MESSAGE_FILE"
 
-GIT_INDEX_FILE="$TEMP_INDEX" git hook run --ignore-missing pre-commit
+run_hook() {
+  local hook_name=$1
+  shift
+  if [[ -x "$HOOK_PATH/$hook_name" ]]; then
+    GIT_INDEX_FILE="$TEMP_INDEX" "$HOOK_PATH/$hook_name" "$@"
+  else
+    GIT_INDEX_FILE="$TEMP_INDEX" git hook run --ignore-missing "$hook_name" -- "$@"
+  fi
+}
+
+run_hook pre-commit
 if [[ $(GIT_INDEX_FILE="$TEMP_INDEX" git write-tree) != "$EXPECTED_TREE" ]]; then
   echo "Pre-commit hooks changed the isolated index; review those changes before retrying." >&2
   exit 1
 fi
 
-GIT_INDEX_FILE="$TEMP_INDEX" git hook run --ignore-missing prepare-commit-msg -- "$MESSAGE_FILE" message
-GIT_INDEX_FILE="$TEMP_INDEX" git hook run --ignore-missing commit-msg -- "$MESSAGE_FILE"
+run_hook prepare-commit-msg "$MESSAGE_FILE" message
+run_hook commit-msg "$MESSAGE_FILE"
 if [[ $(GIT_INDEX_FILE="$TEMP_INDEX" git write-tree) != "$EXPECTED_TREE" ]]; then
   echo "Commit hooks changed the isolated index; review those changes before retrying." >&2
   exit 1
@@ -184,7 +198,7 @@ if [[ "$CURRENT_BRANCH_COMMIT" != "$CREATED_COMMIT" ]]; then
   exit 1
 fi
 
-if ! GIT_INDEX_FILE="$TEMP_INDEX" git hook run --ignore-missing post-commit; then
+if ! run_hook post-commit; then
   echo "Warning: post-commit hook failed after the commit was created; continuing with a consistent index." >&2
 fi
 CURRENT_BRANCH_COMMIT=$(git rev-parse --verify "refs/heads/$BRANCH")
@@ -202,7 +216,7 @@ mv -f "$LIVE_INDEX_LOCK" "$LIVE_INDEX"
 LOCK_HELD=false
 
 PUSH_REFSPEC="$CREATED_COMMIT:refs/heads/$PUSH_BRANCH"
-git push "$PUSH_REMOTE" "$PUSH_REFSPEC"
+git -c core.hooksPath="$HOOK_PATH" push "$PUSH_REMOTE" "$PUSH_REFSPEC"
 if [[ "$SET_UPSTREAM" == true ]]; then
   git config "branch.$BRANCH.remote" "$PUSH_REMOTE"
   git config "branch.$BRANCH.merge" "refs/heads/$PUSH_BRANCH"
