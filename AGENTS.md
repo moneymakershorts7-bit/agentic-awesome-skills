@@ -59,6 +59,38 @@ bind a complete previously reviewed skill tree and still require exact-current-h
 attestation, all required checks and strict protection; no general script allowlist
 or PR-controlled ledger is authorized.
 
+## Google Jules Autonomous Agent Directives
+
+When Google Jules (`https://jules.google`) runs autonomously on this repository (via scheduled tasks, suggested tasks, or remote sessions):
+
+1. **Role & Operating Boundary:**
+   - Jules acts as an automated quality, security, and maintenance sentinel for the skills catalog (`skills/`, `plugins/`, and documentation).
+   - Jules must always create a focused pull request targeting `main`. Jules must never attempt direct pushes to `main`.
+   - Keep pull requests small, self-contained, and atomic (< 150 lines changed when possible).
+
+2. **Environment & Initial Setup:**
+   - Execute `npm ci` to install project dependencies.
+   - Standard runtimes (Node 22, Bun, Python 3.12, Go 1.24, Rust 1.87) are preinstalled in the Jules Ubuntu VM.
+
+3. **Required Verification Pipeline:**
+   Before finalizing any plan, committing changes, or submitting a Pull Request, Jules MUST execute and pass:
+   ```bash
+   # 1. Validate skill frontmatter, schemas, and required sections:
+   npm run validate
+
+   # 2. Check for security guidelines, credentials, and network declarations:
+   npm run security:docs
+
+   # 3. Run repository test suites:
+   npm run test
+   ```
+
+4. **Task Types & Maintenance Guidelines:**
+   - **Skill Quality Audits:** Verify that `SKILL.md` files have proper YAML frontmatter (`name`, `description`, `allowed-tools`), and that all relative links to `references/` or `scripts/` exist.
+   - **Security Remediation (Sentinel):** Run `npm audit` or inspect scripts for undeclared external network calls. Never commit secrets, tokens, or credentials.
+   - **Suggested Tasks (`#TODO`):** Locate `#TODO` comments in code or skills documentation, implement the required logic or test coverage, and cleanly remove the `#TODO` tag.
+   - **Commit Hygiene:** Follow Conventional Commits: `feat(<skill>):`, `fix(<skill>):`, `docs(<skill>):`, `test(<skill>):`.
+
 ## Learned User Preferences
 
 - For maintainer sweeps, PR merges, issue closure, and releases, follow the canonical `antigravity-maintainer-batch-release` skill together with `.github/MAINTENANCE.md`; do not substitute a generic Git or GitHub workflow.
