@@ -195,3 +195,10 @@ Needs approval before apply: <yes/no>
 - `/skill-health`: skill quality review
 - `/skill-create`: generate a new skill from local git history
 - `/security-scan`: inspect Claude/OpenCode configuration security
+
+## Limitations
+
+- **Curated Subset**: Reflects the curated Everything Claude Code catalog; does not index third-party unvetted plugins.
+- **Static Knowledge Boundary**: Tool manifests and versions reflect the currently installed ECC version.
+- **Execution Delegation**: Provides guidance and routing; does not execute target skill workflows directly without user invocation.
+

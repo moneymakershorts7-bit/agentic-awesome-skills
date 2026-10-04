@@ -202,3 +202,10 @@ ecc-plan-canvas await <file> --reply "Reworked the risk table."
   `await`.
 
 Design notes and origin: [affaan-m/ecc plan-canvas design](https://github.com/affaan-m/ecc/blob/main/docs/design/plan-canvas.md).
+
+## Limitations
+
+- **Plan Format Dependency**: Best suited for structured markdown checklists; unformatted text may require manual node alignment.
+- **Browser/Viewer Required**: Visual inspection requires an HTML5 canvas browser or Obsidian Canvas viewer.
+- **Local File Scope**: Renders plans within the current workspace; does not fetch plans from external remote issue trackers.
+

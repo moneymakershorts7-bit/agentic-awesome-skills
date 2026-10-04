@@ -270,3 +270,10 @@ Results saved to results.json
 - **Link back**: Draft text should include `See skill: [name]` references so readers can find the detailed How.
 - **Deterministic collection, LLM judgment**: Scripts guarantee exhaustiveness; the LLM guarantees contextual understanding.
 - **Anti-abstraction safeguard**: The 3-layer filter (2+ skills evidence, actionable behavior test, violation risk) prevents overly abstract principles from entering rules.
+
+## Limitations
+
+- **Static Rule Analysis**: Rules are distilled from explicit repository guidelines, instruction files, and past session logs; cannot infer unwritten tacit knowledge.
+- **Quality Filter Required**: Heuristic distillation requires verification before committing into global agent memory.
+- **Deduplication Boundary**: Identifies semantic overlap within scanned files; external cross-repo synchronization requires manual review.
+

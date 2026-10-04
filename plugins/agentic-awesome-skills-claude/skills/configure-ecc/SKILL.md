@@ -215,3 +215,10 @@ npx --yes --package ecc-universal ecc welcome --action configured
 ```
 
 Do not claim that Kimi installed or configured ECC lifecycle hooks.
+
+## Limitations
+
+- **Configuration Scopes**: Modifies only supported agent harness configurations (Claude Code, Gemini CLI, Cursor, Codex).
+- **Interactive Wizard**: Requires user input or explicit command flags when run without an interactive TUI.
+- **Local Environment**: Does not provision remote VM environments or cloud infrastructure directly.
+

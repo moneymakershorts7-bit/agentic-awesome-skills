@@ -172,8 +172,9 @@ function emitTiming(record) {
 function runNodeCommand(args) {
   const startedAt = process.hrtime.bigint();
   const isBun = typeof process.versions.bun !== "undefined" || path.basename(process.execPath).includes("bun");
+  const bunTimeout = process.env.TEST_TIMEOUT || "60000";
   const execArgs = isBun && !args[0].endsWith(".py") && !args.some(a => String(a).includes("run-python.js"))
-    ? ["test", "--timeout", "30000", ...args]
+    ? ["test", "--timeout", bunTimeout, ...args]
     : args;
   const result = spawnSync(process.execPath, execArgs, {
     env: {

@@ -221,3 +221,10 @@ INSTALL PLAN
 VERIFICATION
 - checks run and remaining gaps
 ```
+
+## Limitations
+
+- **Advisory Classification**: Recommendations are advisory and do not automatically mutate agent configuration without user approval.
+- **Repository Context Required**: Accuracy depends on analyzing repository configuration, manifests, and active dependency closures.
+- **Context Overhead**: Does not replace global memory architectures; focuses specifically on session-scoped vs reference separation.
+
