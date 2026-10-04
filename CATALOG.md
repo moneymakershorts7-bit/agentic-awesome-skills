@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2714
+Total skills: 2715
 
 ## agent-behavior (5)
 
@@ -2175,7 +2175,7 @@ Total skills: 2714
 | `protect-mcp-governance` | Agent governance skill for MCP tool calls — Cedar policy authoring, shadow-to-enforce rollout, and Ed25519 receipt verification. | safe | scopeblind/scopeblind-gateway | protect, mcp, governance | protect, mcp, governance, agent, skill, calls, cedar, policy, authoring, shadow, enforce, rollout |
 | `serply-search-mcp` | Search Google, Bing, Google News and Google Scholar, and read public pages, with the Serply MCP server. Use when the user chooses Serply or its connected too... | safe | self | mcp, web-search, news, scholar, research, citations | mcp, web-search, news, scholar, research, citations, serply, search, google, bing, read, public |
 
-## media (44)
+## media (45)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -2185,6 +2185,7 @@ Total skills: 2714
 | `ai-photo-restyler` | Install and use the official Photo to Anime package, pinned by digest, for paid hosted work on the Beatra service. | critical | beatra-ai/photo-to-anime-skill | photo-to-anime, image-stylization, mcp, paid-api, beatra | photo-to-anime, image-stylization, mcp, paid-api, beatra, ai, photo, restyler, install, official, anime, package |
 | `ai-podcast-voiceover` | Install and use the official AI Podcast Voiceover package, pinned by digest, for paid hosted work on the Beatra service. | critical | beatra-ai/ai-podcast-voiceover-skill | podcast, tts, voiceover, mcp, paid-api, beatra | podcast, tts, voiceover, mcp, paid-api, beatra, ai, install, official, package, pinned, digest |
 | `atlas-cloud-media` | Generate Atlas Cloud images and videos through its asynchronous media API with schema-first model selection and credential-safe polling. | critical | self | atlas-cloud, image-generation, video-generation, media-api | atlas-cloud, image-generation, video-generation, media-api, atlas, cloud, media, generate, images, videos, through, asynchronous |
+| `audiobook-producer` | Produce engaging audiobooks from manuscripts with dynamic narrative tension, dialogue separation, and model-tailored emotional prosody across free and paid e... | safe | community | audiobook, narration, tts, voice-acting, book-production, longform-audio, edge-tts, elevenlabs, kokoro | audiobook, narration, tts, voice-acting, book-production, longform-audio, edge-tts, elevenlabs, kokoro, producer, produce, engaging |
 | `beatra` | Install and use the official AI Media Generator package, pinned by digest, for paid hosted work on the Beatra service. | critical | beatra-ai/ai-media-generator-skill | ai-media, image-generation, video-generation, music-generation, tts, mcp, paid-api, beatra | ai-media, image-generation, video-generation, music-generation, tts, mcp, paid-api, beatra, install, official, ai, media |
 | `beatra-ai-video-studio` | Install and use the official Beatra AI Video Studio package, pinned by digest, for paid text-to-video, image-to-video, and video edit or extend jobs on the h... | critical | beatra-ai/beatra-skills | video-generation, text-to-video, image-to-video, video-editing, mcp, paid-api, beatra | video-generation, text-to-video, image-to-video, video-editing, mcp, paid-api, beatra, ai, video, studio, install, official |
 | `ecommerce-listing-image-set` | Install and use the official Ecommerce Product Images package, pinned by digest, for paid hosted work on the Beatra service. | critical | beatra-ai/ecommerce-product-images-skill | ecommerce, product-images, text-to-image, mcp, paid-api, beatra | ecommerce, product-images, text-to-image, mcp, paid-api, beatra, listing, image, set, install, official, product |

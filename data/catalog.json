@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2714,
+  "total": 2715,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -6940,6 +6940,42 @@
         "intelligent"
       ],
       "path": "skills/audio-transcriber/SKILL.md"
+    },
+    {
+      "id": "audiobook-producer",
+      "canonical_id": "audiobook-producer",
+      "name": "audiobook-producer",
+      "description": "Produce engaging audiobooks from manuscripts with dynamic narrative tension, dialogue separation, and model-tailored emotional prosody across free and paid engines.",
+      "category": "media",
+      "risk": "safe",
+      "source": "community",
+      "license": "MIT",
+      "tags": [
+        "audiobook",
+        "narration",
+        "tts",
+        "voice-acting",
+        "book-production",
+        "longform-audio",
+        "edge-tts",
+        "elevenlabs",
+        "kokoro"
+      ],
+      "triggers": [
+        "audiobook",
+        "narration",
+        "tts",
+        "voice-acting",
+        "book-production",
+        "longform-audio",
+        "edge-tts",
+        "elevenlabs",
+        "kokoro",
+        "producer",
+        "produce",
+        "engaging"
+      ],
+      "path": "skills/audiobook-producer/SKILL.md"
     },
     {
       "id": "audit-agent-run-evidence",

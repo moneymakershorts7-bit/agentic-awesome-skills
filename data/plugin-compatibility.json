@@ -4450,6 +4450,25 @@
       "runtime_files": []
     },
     {
+      "id": "audiobook-producer",
+      "path": "skills/audiobook-producer",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "audit-agent-run-evidence",
       "path": "skills/audit-agent-run-evidence",
       "targets": {
@@ -52079,10 +52098,10 @@
     }
   ],
   "summary": {
-    "total_skills": 2714,
+    "total_skills": 2715,
     "supported": {
-      "codex": 2624,
-      "claude": 2651
+      "codex": 2625,
+      "claude": 2652
     },
     "blocked": {
       "codex": 90,
