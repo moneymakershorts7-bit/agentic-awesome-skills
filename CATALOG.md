@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2707
+Total skills: 2708
 
 ## agent-behavior (5)
 
@@ -3027,7 +3027,7 @@ Total skills: 2707
 | --- | --- | --- | --- | --- | --- |
 | `travel-planner` | 旅行/行程规划需求时使用:规划去某地旅行、X天X城、带老人孩子、自驾、假期安排等。产出逐日行程表、预算估算(经济/舒适/奢华三档)、交通住宿建议、景点美食清单。必须先问预算,预算未确认只输出问题清单;事实数据带来源和查询日期。 | safe | saudademjj/luopan | travel, itinerary, planning, trip, chinese | travel, itinerary, planning, trip, chinese, planner |
 
-## uncategorized (50)
+## uncategorized (51)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -3064,6 +3064,7 @@ Total skills: 2707
 | `humanizer` | Rewrite AI-sounding text so it reads like the writer without changing what it says. Use when editing or reviewing prose for AI tells: not-X-but-Y contrasts, ... | safe | community | humanizer | humanizer, rewrite, ai, sounding, text, so, reads, like, writer, without, changing, what |
 | `image-to-code-skill` | Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then i... | safe | community | image, to, code, skill | image, to, code, skill, elite, website, codex, visually, important, web, tasks, must |
 | `k2` | Build and troubleshoot Cloudflare K2 or K2 Streams durable logs. Use for stream setup, producing from Workers or HTTP, configuring retention and inputs, and ... | safe | cloudflare/skills | k2 | k2, troubleshoot, cloudflare, streams, durable, logs, stream, setup, producing, workers, http, configuring |
+| `kaggle` | Unified Kaggle skill and MCP integration. Competitions, datasets, models, notebooks, discussions, writeups, benchmarks, and official Kaggle MCP server tools. | safe | shepsci/kaggle-skill | kaggle | kaggle, unified, skill, mcp, integration, competitions, datasets, models, notebooks, discussions, writeups, benchmarks |
 | `meeting-insights-analyzer` | Analyzes meeting transcripts and recordings to uncover behavioral patterns, communication insights, and actionable feedback. Identifies when you avoid confli... | safe | community | meeting, insights, analyzer | meeting, insights, analyzer, analyzes, transcripts, recordings, uncover, behavioral, communication, actionable, feedback, identifies |
 | `minimalist-skill` | Clean editorial-style interfaces. Warm monochrome palette, typographic contrast, flat bento grids, muted pastels. No gradients, no heavy shadows. | safe | community | minimalist, skill | minimalist, skill, clean, editorial, style, interfaces, warm, monochrome, palette, typographic, contrast, flat |
 | `modlens` | The first vision plugin for DeepSeek Harness and the vision bridge for text-only coding agents. Paste an image to get structured JSON evidence. | safe | community | modlens | modlens, first, vision, plugin, deepseek, harness, bridge, text, coding, agents, paste, image |

@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2707,
+  "total": 2708,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -42748,6 +42748,35 @@
         "kubernetes"
       ],
       "path": "skills/k8s-security-policies/SKILL.md"
+    },
+    {
+      "id": "kaggle",
+      "canonical_id": "kaggle",
+      "name": "kaggle",
+      "description": "Unified Kaggle skill and MCP integration. Competitions, datasets, models, notebooks, discussions, writeups, benchmarks, and official Kaggle MCP server tools.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "community",
+      "source_repo": "shepsci/kaggle-skill",
+      "license": "MIT",
+      "tags": [
+        "kaggle"
+      ],
+      "triggers": [
+        "kaggle",
+        "unified",
+        "skill",
+        "mcp",
+        "integration",
+        "competitions",
+        "datasets",
+        "models",
+        "notebooks",
+        "discussions",
+        "writeups",
+        "benchmarks"
+      ],
+      "path": "skills/kaggle/SKILL.md"
     },
     {
       "id": "kaizen",

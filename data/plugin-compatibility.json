@@ -27712,6 +27712,25 @@
       "runtime_files": []
     },
     {
+      "id": "kaggle",
+      "path": "skills/kaggle",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "kaizen",
       "path": "skills/kaizen",
       "targets": {
@@ -51938,10 +51957,10 @@
     }
   ],
   "summary": {
-    "total_skills": 2707,
+    "total_skills": 2708,
     "supported": {
-      "codex": 2619,
-      "claude": 2644
+      "codex": 2620,
+      "claude": 2645
     },
     "blocked": {
       "codex": 88,
