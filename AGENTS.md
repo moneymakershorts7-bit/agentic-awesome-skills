@@ -63,16 +63,47 @@ or PR-controlled ledger is authorized.
 
 When Google Jules (`https://jules.google`) runs autonomously on this repository (via scheduled tasks, suggested tasks, or remote sessions):
 
-1. **Role & Operating Boundary:**
-   - Jules acts as an automated quality, security, and maintenance sentinel for the skills catalog (`skills/`, `plugins/`, and documentation).
-   - Jules must always create a focused pull request targeting `main`. Jules must never attempt direct pushes to `main`.
-   - Keep pull requests small, self-contained, and atomic (< 150 lines changed when possible).
+1. **Strict Restrictive Governance — Zero Direct Merges:**
+   - **Jules NEVER decides whether to merge code or push to `main` directly.**
+   - All work by Jules MUST be submitted as a pull request on a branch prefixed with `jules/` (e.g., `jules/daily-docs-wiki-sync`, `jules/security-hardening`, `jules/weekly-optimization`).
+   - The decision to merge, request changes, or reject/close the PR is exclusively reserved for the human assistant maintainer during the monthly sweep (`skills-maintainer prs` / `skills-maintainer all`).
+   - Keep pull requests small, self-contained, and atomic (< 150 lines changed when possible). Include a detailed security and audit rationale in the PR body.
 
 2. **Environment & Initial Setup:**
    - Execute `npm ci` to install project dependencies.
    - Standard runtimes (Node 22, Bun, Python 3.12, Go 1.24, Rust 1.87) are preinstalled in the Jules Ubuntu VM.
+   - For security tooling: ensure `uv tool install skill-scanner` and `npx skill-inspector` are accessible.
 
-3. **Required Verification Pipeline:**
+3. **Specialized Autonomous Sentinel Agents:**
+
+   ### A. Daily Documentation & GitHub Wiki Synchronizer (Daily)
+   - **Branch:** `jules/daily-docs-wiki-sync`
+   - **Scope:**
+     1. Synchronize repository metrics, badge counts, and table of contents in `README.md`.
+     2. Update web catalog assets: `npm run update:skills` and `npm run audit:consistency`.
+     3. Synchronize the GitHub Wiki repository (`https://github.com/moneymakershorts7-bit/agentic-awesome-skills.wiki.git`):
+        - Keep `Home.md` aligned with latest release catalog.
+        - Ensure `_Sidebar.md` indexes all skill categories and bundles.
+        - Verify zero dead links in Wiki navigation.
+
+   ### B. Daily Multi-Engine Security & Hardening Auditor (Daily)
+   - **Branch:** `jules/security-hardening-patch`
+   - **Engines & Protocols:**
+     1. **Cisco AI Defense (`skill-scanner`):** Execute `skill-scanner scan --scan-all` to detect AST-level exfiltration, tainted source-to-sink flows, and undeclared network destinations.
+     2. **Skill-Inspector (`inspect-skills`):** Run `npx skill-inspector` across modified skills to verify spec compliance and provider safety boundaries.
+     3. **Cloudflare Security Audit (`cloudflare-security-audit`):** Apply Cloudflare's 6-phase discovery harness to audit trust boundaries, evaluate authentication token handoffs, and eliminate command injection risks in bundled scripts.
+     4. Enforce Principle of Minimum Privilege: restrict `allowed-tools` and declare `allowed-domains` in metadata for any external API interaction.
+     5. **Zero Secrets Rule:** Never commit or echo tokens, credentials, or private keys.
+
+   ### C. Weekly Quality & Performance Optimization Agent (Weekly)
+   - **Branch:** `jules/weekly-optimization-audit`
+   - **Scope:**
+     1. Enforce Progressive Disclosure: ensure `SKILL.md` files stay concise (< 300 lines), moving detailed reference implementations to `references/` and helpers to `scripts/`.
+     2. Deduplicate skill implementations and unify schemas across `skills/` and `plugins/`.
+     3. Run `npm run bundles:sync` and `npm run plugin-compat:sync` to eliminate bundle drift.
+     4. Check warning budget with `npm run check:warning-budget`.
+
+4. **Required Verification Pipeline Before PR Submission:**
    Before finalizing any plan, committing changes, or submitting a Pull Request, Jules MUST execute and pass:
    ```bash
    # 1. Validate skill frontmatter, schemas, and required sections:
@@ -81,15 +112,13 @@ When Google Jules (`https://jules.google`) runs autonomously on this repository 
    # 2. Check for security guidelines, credentials, and network declarations:
    npm run security:docs
 
-   # 3. Run repository test suites:
+   # 3. Verify repository consistency and bundle alignment:
+   npm run audit:consistency
+
+   # 4. Run test suites:
    npm run test
    ```
-
-4. **Task Types & Maintenance Guidelines:**
-   - **Skill Quality Audits:** Verify that `SKILL.md` files have proper YAML frontmatter (`name`, `description`, `allowed-tools`), and that all relative links to `references/` or `scripts/` exist.
-   - **Security Remediation (Sentinel):** Run `npm audit` or inspect scripts for undeclared external network calls. Never commit secrets, tokens, or credentials.
-   - **Suggested Tasks (`#TODO`):** Locate `#TODO` comments in code or skills documentation, implement the required logic or test coverage, and cleanly remove the `#TODO` tag.
-   - **Commit Hygiene:** Follow Conventional Commits: `feat(<skill>):`, `fix(<skill>):`, `docs(<skill>):`, `test(<skill>):`.
+   If any check fails, Jules must fix the issue before opening the PR.
 
 ## Learned User Preferences
 
