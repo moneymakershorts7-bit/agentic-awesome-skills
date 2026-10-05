@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2715,
+  "total": 2716,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -13609,6 +13609,41 @@
         "folder"
       ],
       "path": "skills/brand-kit-print-collateral/SKILL.md"
+    },
+    {
+      "id": "brand-naming",
+      "canonical_id": "brand-naming",
+      "name": "brand-naming",
+      "description": "Master brand naming sprint and verbal identity framework. Synthesizes Alexandra Watkins' SMILE & SCRATCH tests, Marty Neumeier's Onliness statement & 7 naming taxonomies, Anthony Shore's sound symbolism & phonosemantics, and trademark linguistic clearance.",
+      "category": "business",
+      "risk": "safe",
+      "source": "self",
+      "source_type": "self",
+      "tags": [
+        "brand-naming",
+        "naming",
+        "brand-strategy",
+        "trademark",
+        "verbal-identity",
+        "phonosemantics",
+        "brand-architecture",
+        "positioning"
+      ],
+      "triggers": [
+        "brand-naming",
+        "naming",
+        "brand-strategy",
+        "trademark",
+        "verbal-identity",
+        "phonosemantics",
+        "brand-architecture",
+        "positioning",
+        "brand",
+        "sprint",
+        "verbal",
+        "identity"
+      ],
+      "path": "skills/brand-naming/SKILL.md"
     },
     {
       "id": "brand-perception-psychologist",

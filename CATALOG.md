@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2715
+Total skills: 2716
 
 ## agent-behavior (5)
 
@@ -557,7 +557,7 @@ Total skills: 2715
 | `reverse-browser-automation` | Automate browsers (Playwright) and Windows desktop applications (UI automation) for reverse-engineering evidence collection, UI-driven workflows, and network... | safe | zhaoxuya520/reverse-skill | reverse, browser | reverse, browser, automation, automate, browsers, playwright, windows, desktop, applications, ui, engineering, evidence |
 | `skyvern-browser-automation` | AI-powered browser automation — navigate sites, fill forms, extract structured data, log in with stored credentials, and build reusable workflows. | safe | Skyvern-AI/skyvern | browser-automation, mcp, web-scraping, form-filling, ai-agents, workflow-automation | browser-automation, mcp, web-scraping, form-filling, ai-agents, workflow-automation, skyvern, browser, automation, ai, powered, navigate |
 
-## business (176)
+## business (177)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -578,6 +578,7 @@ Total skills: 2715
 | `board-governance` | Board and governance register: meeting date, agenda, decision, resolution number, vote result, action owner and due date. Use for board packs and action trac... | safe | WHOISABHISHEKADHIKARI/sme-ops-system-builder | sme, business, operations, database, csv, notion, sql, protect | sme, business, operations, database, csv, notion, sql, protect, board, governance, register, meeting |
 | `brand-growth-system-builder` | Route requests across 13 brand and growth modules. Use when an SME needs help choosing branding, website, local SEO, content, or cloud-planning workflows. | safe | WHOISABHISHEKADHIKARI/sme-ops-system-builder | sme, brand, design-system, logo, print, website, gbp, local-seo, backlinks, citations, email, deck, social-media, code-of-conduct, observability, cloud, wcag, seo | sme, brand, design-system, logo, print, website, gbp, local-seo, backlinks, citations, email, deck |
 | `brand-kit-print-collateral` | Print collateral spec: item, finished and trim size, bleed, colour mode, stock and GSM, finish, safe margin, print method, quantity and unit cost. Use for ca... | safe | WHOISABHISHEKADHIKARI/sme-ops-system-builder | sme, brand-kit, letterhead, visiting-card, business-card, employee-card, id-card, print, bleed, cmyk, stationery, folder, invoice, email-signature, csv, sql, notion | sme, brand-kit, letterhead, visiting-card, business-card, employee-card, id-card, print, bleed, cmyk, stationery, folder |
+| `brand-naming` | Master brand naming sprint and verbal identity framework. Synthesizes Alexandra Watkins' SMILE & SCRATCH tests, Marty Neumeier's Onliness statement & 7 namin... | safe | self | brand-naming, naming, brand-strategy, trademark, verbal-identity, phonosemantics, brand-architecture, positioning | brand-naming, naming, brand-strategy, trademark, verbal-identity, phonosemantics, brand-architecture, positioning, brand, sprint, verbal, identity |
 | `buddy-program-manager` | Buddy programme register: new hire, assigned buddy, department, start and end dates, check-ins planned and done, and feedback score. Use for onboarding buddy... | safe | WHOISABHISHEKADHIKARI/sme-ops-system-builder | sme, business, operations, database, csv, notion, sql, onboard | sme, business, operations, database, csv, notion, sql, onboard, buddy, program, manager, programme |
 | `budget-cash-flow` | Budget against actual by department, category and period, with budget and actual amounts, variance, percentage used and linked expenses. Use for budget track... | safe | WHOISABHISHEKADHIKARI/sme-ops-system-builder | sme, business, operations, database, csv, notion, sql, operate | sme, business, operations, database, csv, notion, sql, operate, budget, cash, flow, against |
 | `business-analyst` | Master modern business analysis with AI-powered analytics, real-time dashboards, and data-driven insights. Build comprehensive KPI frameworks, predictive mod... | safe | community | business, analyst | business, analyst, analysis, ai, powered, analytics, real, time, dashboards, data, driven, insights |

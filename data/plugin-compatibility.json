@@ -8753,6 +8753,25 @@
       "runtime_files": []
     },
     {
+      "id": "brand-naming",
+      "path": "skills/brand-naming",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "brand-perception-psychologist",
       "path": "skills/brand-perception-psychologist",
       "targets": {
@@ -52098,10 +52117,10 @@
     }
   ],
   "summary": {
-    "total_skills": 2715,
+    "total_skills": 2716,
     "supported": {
-      "codex": 2625,
-      "claude": 2652
+      "codex": 2626,
+      "claude": 2653
     },
     "blocked": {
       "codex": 90,

@@ -46,6 +46,33 @@ Do not use it for: the colour and type system underneath the mark (`design-theme
 the printed items the mark goes on (`brand-kit-print-collateral`), or stock-footage sourcing
 for ads.
 
+## Masterclass Logo Design & Verification Framework
+
+Incorporate master methodologies from **Sagi Haviv** (*Chermayeff & Geismar & Haviv*), **Aaron Draplin** (*Draplin Design Co.*), and **Chris Do** (*The Futur*).
+
+### 1. Sagi Haviv's 3 Golden Rules of Trademark Design
+
+Every viable logo mark must satisfy three non-negotiable criteria:
+
+1. **Appropriate:** The mark must match the tone, dignity, and feeling of the brand. It is **not** a literal illustration of what the company does (e.g., Apple does not sell apples, Mercedes does not sell steering wheels). A logo identifies; it does not explain.
+2. **Distinctive & Memorable (The "Doodle Test"):** Can an average person sketch the silhouette on a paper napkin from memory after seeing it once for 5 seconds? If not, the mark is overcomplicated.
+3. **Simple:** Extreme reduction to fundamental geometry. The mark must remain instantly recognizable when scaled down to a 16×16px browser favicon or stamped in metal.
+
+### 2. Aaron Draplin's Mastercraft Principles
+
+- **Monochrome & Silhouette First:** Design and test the mark in 100% solid black on white first. If it cannot hold its ground as a 1-color silhouette, adding color or gradients will not save it.
+- **Custom Typographic Geometry & Kerning:** Never use default digital typography straight out of a font file. Custom-craft letterform cuts, equalize optical weights, adjust tracking/kerning, and trap negative space intentionally.
+- **The "Slap-On" Utility Test:** The mark must perform across extreme production constraints: laser engraving, embroidered hats, screen printing, enamel pins, mobile app headers, and giant billboards.
+
+### 3. Systematic Lockups & Mark Typologies
+
+Every brand mark system requires 4 core variants:
+- **Primary / Master Lockup:** Optimal symbol + wordmark arrangement.
+- **Horizontal Lockup:** Space-constrained headers, navigation bars, and vehicle sideboards.
+- **Stacked / Centered Lockup:** Square badges, packaging, and signposts.
+- **Standalone Mark / Favicon:** 1:1 symbol or monogram for app icons, avatars, and favicons.
+
+
 ## How It Works
 
 Follow the shared execution contract. The module-specific rules below define only domain fields, decisions, calculations, and safety constraints.

@@ -102,23 +102,22 @@ If the user gives references, match their quality and rhythm, not their exact co
 
 ---
 
-# BRAND STRATEGY FIRST
+# BRAND STRATEGY FIRST (THE ONLINESS ANCHOR)
 
-Before generating, infer the brand strategy.
+Before generating visual boards, ground the identity in Marty Neumeier's positioning formula:
+*Our brand is the ONLY [category] that [differentiator] for [target audience].*
 
 Think through:
 
-- category
-- audience
-- product function
-- emotional promise
-- cultural position
-- trust level
-- visual world
-- symbolic metaphor
-- what the brand should avoid
+- category & market context
+- audience & psychological trigger
+- product function vs emotional promise
+- cultural position & un-blanding strategy
+- trust level & aesthetic authority
+- visual world & symbolic metaphor
+- what the brand must strictly avoid (clichés, category copycats)
 
-The visual system must be based on meaning.
+The visual system must be built on authentic meaning, not cosmetic trends.
 
 Examples:
 
@@ -138,31 +137,29 @@ Do not pick symbols randomly.
 
 ---
 
-# LOGO GENERATION STANDARD
+# LOGO GENERATION STANDARD (THE HAVIV & DRAPLIN BENCHMARK)
 
-The logo must be professional.
+The logo must adhere to the highest international standards of trademark design:
 
-It should be:
-- simple
-- memorable
-- symbolic
-- scalable
-- ownable
-- visually balanced
-- connected to the brand idea
-- usable as icon, wordmark, badge, UI mark, and pattern
+### 1. Sagi Haviv's 3 Golden Rules
+- **Appropriate:** Captures the tone, spirit, and weight of the brand—never a literal illustration of product mechanics.
+- **Distinctive & Memorable (The Doodle Test):** Passes the 5-second napkin test. If a viewer cannot sketch the silhouette from memory, it has too much noise.
+- **Simple (Favicon Scale):** Extreme geometric reduction. Must remain legible and iconic at 16×16px favicon resolution.
+
+### 2. Aaron Draplin's Craft Criteria
+- **Monochrome & Silhouette First:** Validated in 100% solid black/white before any color, glow, or gradient is applied.
+- **Custom Optical Geometry:** Never default font curves; tailored cuts, balanced negative space, and custom kerning.
+- **Extreme Scale Robustness:** Must hold up on embroidered patches, stamps, enamel pins, app headers, and billboards.
 
 Avoid:
 - generic lightning bolts unless strongly justified
-- random animals
-- fake luxury crests
-- copied famous marks
-- overcomplicated symbols
-- clipart-style icons
-- meaningless sparkles
-- inconsistent logo variants
+- random animals or meaningless crests
+- copied famous marks or generic startup gradients
+- overcomplicated symbols with excessive strokes
+- clipart-style icons and soulless AI bloat
+- inconsistent logo marks across panels
 
-The logo should feel like it came from research and reduction.
+The logo should feel like the result of exhaustive research and radical reduction.
 
 ---
 
