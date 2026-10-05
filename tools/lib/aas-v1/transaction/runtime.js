@@ -28,6 +28,7 @@ const {
   cleanupMaterializedLayout,
   remainingMaterializedLayoutPaths,
   inspectLayout,
+  isSameDevice,
   materializeLayout,
   resolveDestination,
   resolveLayout,
@@ -121,7 +122,7 @@ function acquireLock(layout, plan, kind = "apply") {
   try {
     descriptor = fs.openSync(target, fs.constants.O_CREAT | fs.constants.O_EXCL | fs.constants.O_RDWR | (fs.constants.O_NOFOLLOW || 0), 0o600);
     const stat = fs.fstatSync(descriptor);
-    if (!stat.isFile() || stat.nlink !== 1 || stat.dev !== layout.device
+    if (!stat.isFile() || stat.nlink !== 1 || !isSameDevice(stat.dev, layout.device, target)
       || (typeof process.getuid === "function" && typeof stat.uid === "number" && stat.uid !== process.getuid())) {
       throw transactionError("AAS_TRANSACTION_LOCK_UNSAFE", "filesystem", {});
     }
@@ -230,7 +231,7 @@ function readBootstrapRecord(layout, recoveryId, { allowMissing = true } = {}) {
     throw transactionError("AAS_TRANSACTION_BOOTSTRAP_MISSING", "recovery", {});
   }
   const stat = fs.lstatSync(target);
-  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || stat.dev !== layout.device || stat.size > 128 * 1024) {
+  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || !isSameDevice(stat.dev, layout.device, target) || stat.size > 128 * 1024) {
     throw transactionError("AAS_TRANSACTION_BOOTSTRAP_UNSAFE", "filesystem", {});
   }
   let record;
@@ -264,7 +265,7 @@ function bootstrapEvidence(layout, recoveryId) {
   if (!candidates.length) return null;
   const filePath = candidates[0];
   const stat = fs.lstatSync(filePath);
-  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || stat.dev !== layout.device || stat.size > 128 * 1024) {
+  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || !isSameDevice(stat.dev, layout.device, filePath) || stat.size > 128 * 1024) {
     throw transactionError("AAS_TRANSACTION_BOOTSTRAP_UNSAFE", "filesystem", {});
   }
   const bytes = fs.readFileSync(filePath);
@@ -283,7 +284,7 @@ function bootstrapEvidence(layout, recoveryId) {
 function removeBootstrapEvidence(evidence, layout) {
   if (!evidence || !fs.existsSync(evidence.path)) return;
   const stat = fs.lstatSync(evidence.path);
-  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || stat.dev !== layout.device
+  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || !isSameDevice(stat.dev, layout.device, evidence.path)
     || sha256(fs.readFileSync(evidence.path)) !== evidence.rawDigest) {
     throw transactionError("AAS_TRANSACTION_BOOTSTRAP_DRIFT", "drift", {});
   }
@@ -298,7 +299,7 @@ function pendingJournalEvidence(layout, recoveryId) {
   if (!matches.length) return null;
   const filePath = path.join(layout.root, matches[0]);
   const stat = fs.lstatSync(filePath);
-  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || stat.dev !== layout.device || stat.size > 4 * 1024 * 1024) {
+  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || !isSameDevice(stat.dev, layout.device, filePath) || stat.size > 4 * 1024 * 1024) {
     throw transactionError("AAS_TRANSACTION_JOURNAL_UNSAFE", "filesystem", {});
   }
   return { path: filePath, digest: sha256(fs.readFileSync(filePath)) };
@@ -315,7 +316,7 @@ function bootstrapOnlyDigest(lockRecord, bootstrap, pendingJournal) {
 function removePendingJournal(evidence, layout) {
   if (!evidence || !fs.existsSync(evidence.path)) return;
   const stat = fs.lstatSync(evidence.path);
-  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || stat.dev !== layout.device
+  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || !isSameDevice(stat.dev, layout.device, evidence.path)
     || sha256(fs.readFileSync(evidence.path)) !== evidence.digest) {
     throw transactionError("AAS_TRANSACTION_JOURNAL_DRIFT", "drift", {});
   }
@@ -327,7 +328,7 @@ function readLockRecord(layout) {
   const target = lockPath(layout);
   if (!fs.existsSync(target)) return null;
   const stat = fs.lstatSync(target);
-  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || stat.dev !== layout.device
+  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || !isSameDevice(stat.dev, layout.device, target)
     || (typeof process.getuid === "function" && typeof stat.uid === "number" && stat.uid !== process.getuid()) || stat.size > 64 * 1024) {
     throw transactionError("AAS_TRANSACTION_LOCK_UNSAFE", "filesystem", {});
   }
@@ -543,7 +544,7 @@ function assertMutationAuthority(context) {
 function readLockRecordAt(filePath, layout) {
   if (!fs.existsSync(filePath)) return null;
   const stat = fs.lstatSync(filePath);
-  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || stat.dev !== layout.device || stat.size > 64 * 1024) {
+  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || !isSameDevice(stat.dev, layout.device, filePath) || stat.size > 64 * 1024) {
     throw transactionError("AAS_TRANSACTION_LOCK_UNSAFE", "filesystem", {});
   }
   try { return JSON.parse(fs.readFileSync(filePath, "utf8")); } catch (cause) {
@@ -1135,7 +1136,7 @@ function processDefinitelyDead(pid) {
 
 function readRetiredLock(layout, filePath, plan, expectedKind = "apply") {
   const stat = fs.lstatSync(filePath);
-  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || stat.dev !== layout.device || stat.size > 64 * 1024) {
+  if (stat.isSymbolicLink() || !stat.isFile() || stat.nlink !== 1 || !isSameDevice(stat.dev, layout.device, filePath) || stat.size > 64 * 1024) {
     throw transactionError("AAS_TRANSACTION_RETIRED_LOCK_UNSAFE", "filesystem", {});
   }
   let record;

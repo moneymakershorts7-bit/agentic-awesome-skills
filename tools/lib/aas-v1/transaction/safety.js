@@ -10,6 +10,17 @@ function isContained(root, candidate) {
   return relative === "" || (!relative.startsWith(`..${path.sep}`) && relative !== ".." && !path.isAbsolute(relative));
 }
 
+function isSameDevice(statDev, expectedDevice, filePath) {
+  if (statDev === expectedDevice) return true;
+  if (!filePath) return false;
+  try {
+    const parentStat = fs.statSync(path.dirname(filePath));
+    return parentStat.dev === expectedDevice;
+  } catch {
+    return false;
+  }
+}
+
 function assertRegularDirectory(directory, code = "AAS_TRANSACTION_DIRECTORY_UNSAFE") {
   const stat = fs.lstatSync(directory);
   if (stat.isSymbolicLink() || !stat.isDirectory()) {
@@ -79,7 +90,7 @@ function inspectLayout(adapter, target) {
   }
   if (fs.existsSync(resolved.stateFile)) {
     const stateStat = fs.lstatSync(resolved.stateFile);
-    if (stateStat.isSymbolicLink() || !stateStat.isFile() || stateStat.nlink !== 1 || stateStat.dev !== rootStat.dev) {
+    if (stateStat.isSymbolicLink() || !stateStat.isFile() || stateStat.nlink !== 1 || !isSameDevice(stateStat.dev, rootStat.dev, resolved.stateFile)) {
       throw transactionError("AAS_TRANSACTION_STATE_UNSAFE", "filesystem", {});
     }
     assertOwned(stateStat);
@@ -309,6 +320,7 @@ module.exports = {
   clearMaterializedMarkers,
   inspectLayout,
   isContained,
+  isSameDevice,
   materializeLayout,
   resolveDestination,
   resolveLayout,
