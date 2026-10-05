@@ -1,0 +1,23 @@
+{
+  "id": "inspector",
+  "name": "inspector",
+  "repository": "https://github.com/MCPJam/inspector",
+  "description": "Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y inspector",
+  "stars": 2236,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-05",
+  "mcpConfigSnippet": {
+    "inspector": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "inspector"
+      ]
+    }
+  }
+}

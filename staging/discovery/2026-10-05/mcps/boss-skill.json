@@ -1,0 +1,22 @@
+{
+  "id": "boss-skill",
+  "name": "boss-skill",
+  "repository": "https://github.com/motivated-groupthink347/boss-skill",
+  "description": "Build AI boss personas for worker protection, PUA detection, negotiation practice, and labor law checks.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx boss-skill",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-05",
+  "mcpConfigSnippet": {
+    "boss-skill": {
+      "command": "uvx",
+      "args": [
+        "boss-skill"
+      ]
+    }
+  }
+}

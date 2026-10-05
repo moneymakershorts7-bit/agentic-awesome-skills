@@ -1,0 +1,107 @@
+name: Daily Agent Skills & MCP Discovery Scout
+
+on:
+  schedule:
+    # Run every day at 06:00 UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  discovery-scout:
+    name: GitHub Skills & MCP Scout
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner Security
+        uses: step-security/harden-runner@4d991eb9b005fe45404f908ab962ff8e68b3d5cb # v2.11.0
+        with:
+          egress-policy: audit
+
+      - name: Checkout Repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python Runtime
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
+        with:
+          python-version: '3.12'
+
+      - name: Setup Node Runtime
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install Project Dependencies
+        run: |
+          npm ci --ignore-scripts || npm install --no-audit
+
+      - name: Dispatch to Google Jules or Run Discovery Scout
+        id: scout
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JULES_API_KEY: ${{ secrets.JULES_API_KEY }}
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          echo "today=$TODAY" >> "$GITHUB_OUTPUT"
+
+          if [ -n "$JULES_API_KEY" ]; then
+            echo "Dispatching Daily Discovery Scout to Google Jules Cloud..."
+            curl -s -X POST https://jules.googleapis.com/v1alpha/sessions \
+              -H "x-goog-api-key: $JULES_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"prompt\": \"Act as the Daily Agent Skills & MCP Discovery Scout Sentinel for agentic-awesome-skills. Execute python3 tools/scripts/discovery_scout.py --limit 15 to search GitHub for newly released agent skills and MCP servers. Stage candidate skills in staging/discovery/$TODAY/skills/ and MCP descriptors in staging/discovery/$TODAY/mcps/, and update docs/discovery/$TODAY.md and docs/discovery/LEDGER.md. Run npm run validate. Never commit secrets. Propose discoveries on branch jules/daily-discovery-$TODAY via Pull Request titled 'feat(discovery): daily new skills and MCP servers scout [$TODAY]'. DO NOT attempt direct merge to main.\",
+                \"title\": \"Daily Agent Skills & MCP Discovery Scout ($TODAY)\",
+                \"sourceContext\": {
+                  \"source\": \"sources/github/${{ github.repository }}\",
+                  \"githubRepoContext\": { \"startingBranch\": \"main\" }
+                },
+                \"automationMode\": \"AUTO_CREATE_PR\"
+              }" || echo "Jules API dispatch finished or deferred."
+          fi
+
+          echo "Running local discovery scout runner..."
+          python3 tools/scripts/discovery_scout.py --limit 15
+
+          echo "Validating repository integrity..."
+          npm run validate || true
+
+      - name: Create Pull Request with Discovered Candidates
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TODAY="${{ steps.scout.outputs.today }}"
+          BRANCH_NAME="discovery/daily-$TODAY"
+
+          # Check if there are unstaged or untracked changes
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No new skills or MCP servers discovered today. Nothing to stage."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b "$BRANCH_NAME"
+          git add staging/ docs/discovery/ data/discovery/
+          git commit -m "feat(discovery): daily new skills and MCP servers scout [$TODAY]"
+          git push origin "$BRANCH_NAME" --force
+
+          REPORT_CONTENT="Automated daily discovery of newly published Agent Skills and Model Context Protocol (MCP) servers on GitHub."
+          if [ -f "docs/discovery/$TODAY.md" ]; then
+            REPORT_CONTENT=$(cat "docs/discovery/$TODAY.md")
+          fi
+
+          gh pr create \
+            --title "feat(discovery): daily new skills and MCP servers scout [$TODAY]" \
+            --body "$REPORT_CONTENT" \
+            --head "$BRANCH_NAME" \
+            --base "main" \
+            --label "discovery,automated-scout" || echo "PR already exists or was created."

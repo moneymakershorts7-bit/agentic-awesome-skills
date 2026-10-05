@@ -1,0 +1,23 @@
+{
+  "id": "apify-server",
+  "name": "apify-mcp-server",
+  "repository": "https://github.com/apify/apify-mcp-server",
+  "description": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y apify-mcp-server",
+  "stars": 9734,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-05",
+  "mcpConfigSnippet": {
+    "apify-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "apify-mcp-server"
+      ]
+    }
+  }
+}

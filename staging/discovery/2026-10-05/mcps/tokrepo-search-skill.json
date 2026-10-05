@@ -1,0 +1,23 @@
+{
+  "id": "tokrepo-search-skill",
+  "name": "tokrepo-search-skill",
+  "repository": "https://github.com/Norrysubtle368/tokrepo-search-skill",
+  "description": "Discover TokRepo assets from GitHub for AI coding agents and MCP tools with cross-platform search support",
+  "language": "TypeScript",
+  "transport": "sse",
+  "install_cmd": "npx -y tokrepo-search-skill",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-05",
+  "mcpConfigSnippet": {
+    "tokrepo-search-skill": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tokrepo-search-skill"
+      ]
+    }
+  }
+}

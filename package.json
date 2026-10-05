@@ -18,6 +18,8 @@
     "cleanup:synthetic-sections": "node tools/scripts/run-python.js tools/scripts/cleanup_synthetic_skill_sections.py",
     "fix:truncated-descriptions": "node tools/scripts/run-python.js tools/scripts/fix_truncated_descriptions.py",
     "validate:references": "node tools/scripts/run-python.js tools/scripts/validate_references.py",
+    "discovery:scout": "node tools/scripts/run-python.js tools/scripts/discovery_scout.py",
+    "discovery:review": "node tools/scripts/run-python.js tools/scripts/review_discovery.py",
     "plugin-compat:sync": "node tools/scripts/run-python.js tools/scripts/plugin_compatibility.py",
     "plugin-compat:check": "node tools/scripts/run-python.js tools/scripts/plugin_compatibility.py --check",
     "index": "node tools/scripts/run-python.js tools/scripts/generate_index.py",

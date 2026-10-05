@@ -1,0 +1,22 @@
+{
+  "id": "hybrid-orchestrator",
+  "name": "hybrid-orchestrator",
+  "repository": "https://github.com/Anonymousforareason111/hybrid-orchestrator",
+  "description": "\ud83e\udd16 Implement hybrid human-AI orchestration patterns in Python to coordinate agents, manage sessions, and enable smooth AI-human handoffs.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx hybrid-orchestrator",
+  "stars": 3,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-05",
+  "mcpConfigSnippet": {
+    "hybrid-orchestrator": {
+      "command": "uvx",
+      "args": [
+        "hybrid-orchestrator"
+      ]
+    }
+  }
+}

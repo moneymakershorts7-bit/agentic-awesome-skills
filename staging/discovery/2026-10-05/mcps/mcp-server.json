@@ -1,0 +1,22 @@
+{
+  "id": "mcp-server",
+  "name": "mcp-server",
+  "repository": "https://github.com/evehypoglycaemic255/mcp-server",
+  "description": "Power MCP servers for persistent memory, project tracking, and token-efficient AI workflows with a plugin-based MCP architecture",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "LOW",
+  "score": 1,
+  "discovered_at": "2026-10-05",
+  "mcpConfigSnippet": {
+    "mcp-server": {
+      "command": "uvx",
+      "args": [
+        "mcp-server"
+      ]
+    }
+  }
+}

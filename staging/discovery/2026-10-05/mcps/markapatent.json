@@ -1,0 +1,22 @@
+{
+  "id": "markapatent",
+  "name": "markapatent-mcp",
+  "repository": "https://github.com/Andrianagnostic63/markapatent-mcp",
+  "description": "Provide programmatic access to T\u00dcRKPATENT\u2019s trademark, patent, and design databases through a standardized MCP server for IP research tools.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx markapatent-mcp",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-05",
+  "mcpConfigSnippet": {
+    "markapatent": {
+      "command": "uvx",
+      "args": [
+        "markapatent-mcp"
+      ]
+    }
+  }
+}

@@ -120,6 +120,18 @@ When Google Jules (`https://jules.google`) runs autonomously on this repository 
      3. Verify absence of disguised binary payloads (ELF, PE, Mach-O magic headers) inside text files.
      4. Propose atomic defensive patches isolating untrusted inputs on branch `jules/malware-defense-patch`.
 
+   ### F. Daily Agent Skills & MCP Discovery Scout Sentinel (Daily)
+   - **Branch:** `jules/daily-discovery-YYYYMMDD`
+   - **Scope (Multi-Agent & Multi-Model Adaptable):**
+     1. Programmatically scout GitHub for newly published or trending Agent Skills (`topic:agent-skills`, `topic:claude-skills`, `topic:agentic-skills`, `topic:antigravity-skills`) and Model Context Protocol (MCP) servers (`topic:mcp-server`, `topic:modelcontextprotocol`).
+     2. Universal model & harness adaptation: format discovered skills with cross-agent compatibility (Google Antigravity, Anthropic Claude Code, OpenAI Codex, Cursor, Gemini CLI, Windsurf, OpenCode, and open local models via Ollama/vLLM).
+     3. De-duplicate against existing repository catalog (`skills_index.json`, `skills/`, `data/discovered_mcps.json`).
+     4. Stage candidate skills in `staging/discovery/YYYY-MM-DD/skills/<id>/SKILL.md` and MCP server configurations in `staging/discovery/YYYY-MM-DD/mcps/<id>.json`.
+     5. Compile daily scouting digest at `docs/discovery/YYYY-MM-DD.md` and append to master ledger `docs/discovery/LEDGER.md`.
+     6. Run `npm run validate` to ensure strict schema compliance before opening the pull request.
+     7. Propose additions on branch `jules/daily-discovery-YYYYMMDD` via Pull Request titled `feat(discovery): daily new skills and MCP servers scout [YYYY-MM-DD]`.
+     8. Monthly Maintenance Decision Gate: During the monthly sweep (`skills-maintainer all` / `skills-maintainer review-discovery`), the maintainer or any agent model evaluates candidates, audits security, and decides whether to accept into the active catalog or reject.
+
 4. **Required Verification Pipeline Before PR Submission:**
    Before finalizing any plan, committing changes, or submitting a Pull Request, Jules MUST execute and pass:
    ```bash

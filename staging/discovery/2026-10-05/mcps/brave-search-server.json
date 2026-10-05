@@ -1,0 +1,23 @@
+{
+  "id": "brave-search-server",
+  "name": "brave-search-mcp-server",
+  "repository": "https://github.com/brave/brave-search-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y brave-search-mcp-server",
+  "stars": 1487,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-05",
+  "mcpConfigSnippet": {
+    "brave-search-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "brave-search-mcp-server"
+      ]
+    }
+  }
+}

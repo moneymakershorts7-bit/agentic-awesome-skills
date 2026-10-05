@@ -233,12 +233,38 @@ skills-maintainer jules pull <SESSION_ID> [--apply]
 skills-maintainer jules new "Fix flaky end-to-end auth tests"
 
 # Dispatch specialized autonomous sentinels
-skills-maintainer jules security  # Multi-engine security audit
-skills-maintainer jules docs      # Documentation & Wiki sync
-skills-maintainer jules optimize  # Performance & Progressive Disclosure
-skills-maintainer jules ci-fix    # CI/CD and Dependabot auto-healing
-skills-maintainer jules malware   # Supply-chain & reverse shell scanner
+skills-maintainer jules security   # Multi-engine security audit
+skills-maintainer jules docs       # Documentation & Wiki sync
+skills-maintainer jules optimize   # Performance & Progressive Disclosure
+skills-maintainer jules ci-fix     # CI/CD and Dependabot auto-healing
+skills-maintainer jules malware    # Supply-chain & reverse shell scanner
+skills-maintainer jules discovery  # Daily GitHub Scout for new Skills & MCPs
+
+# Review and arbitrate staged discoveries (Monthly Maintenance Sweep)
+skills-maintainer review-discovery --dossier  # Inspect candidate skills and MCPs
+skills-maintainer review-discovery --audit    # Run security scans on candidates
+skills-maintainer review-discovery --accept <id|all-safe> # Promote candidate
+skills-maintainer review-discovery --reject <id> --reason "..." # Reject candidate
 ```
+
+---
+
+## Daily Discovery Scout & Monthly Triage Protocol
+
+1. **Daily GitHub Scout (Jules Cloud Sentinel)**:
+   - At `06:00 UTC` daily, Jules executes `tools/scripts/discovery_scout.py` to search GitHub for newly released Agent Skills and MCP servers.
+   - De-duplicates against existing catalog in `skills/` and `skills_index.json`.
+   - Stages candidate skills under `staging/discovery/YYYY-MM-DD/skills/` and MCP configurations under `staging/discovery/YYYY-MM-DD/mcps/`.
+   - Generates daily scouting report at `docs/discovery/YYYY-MM-DD.md` and appends to `docs/discovery/LEDGER.md`.
+   - Opens an atomic PR on branch `jules/daily-discovery-YYYY-MM-DD`.
+
+2. **Monthly Repository Maintenance Decision Gate**:
+   - On the 1st of each month (during `skills-maintainer all`):
+   - The maintainer/agent runs `skills-maintainer review-discovery --dossier` to inspect all candidates gathered over the month.
+   - Evaluates each candidate against quality, utility, and safety criteria (`skills-maintainer review-discovery --audit`).
+   - Promotes approved skills/MCPs (`--accept <id>`) or discards duplicates/low-quality items (`--reject <id>`).
+
+*For detailed search queries, risk thresholds, and schemas, see [references/discovery_scout.md](references/discovery_scout.md).*
 
 ---
 
