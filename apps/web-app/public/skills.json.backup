@@ -1665,6 +1665,30 @@
     ]
   },
   {
+    "id": "agent-sort",
+    "path": "skills/agent-sort",
+    "category": "ai-ml",
+    "name": "agent-sort",
+    "description": "Build an evidence-backed ECC install plan for a specific repo by sorting skills, commands, rules, hooks, and extras into DAILY vs LIBRARY buckets using parallel repo-aware review passes. Use when ECC should be trimmed to what a project actually needs instead of loading the full bundle.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "affaan-m/ecc",
+    "license": "MIT"
+  },
+  {
     "id": "agent-squad",
     "path": "skills/agent-squad",
     "category": "ai-ml",
@@ -5849,6 +5873,40 @@
       "whisper",
       "meeting-minutes",
       "speech-to-text]"
+    ]
+  },
+  {
+    "id": "audiobook-producer",
+    "path": "skills/audiobook-producer",
+    "category": "media",
+    "name": "audiobook-producer",
+    "description": "Produce engaging audiobooks from manuscripts with dynamic narrative tension, dialogue separation, and model-tailored emotional prosody across free and paid engines.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "license": "MIT",
+    "tags": [
+      "audiobook",
+      "narration",
+      "tts",
+      "voice-acting",
+      "book-production",
+      "longform-audio",
+      "edge-tts",
+      "elevenlabs",
+      "kokoro"
     ]
   },
   {
@@ -16517,6 +16575,30 @@
     }
   },
   {
+    "id": "configure-ecc",
+    "path": "skills/configure-ecc",
+    "category": "uncategorized",
+    "name": "configure-ecc",
+    "description": "Run the conversational ECC setup wizard to inventory, configure, preview, and verify ECC installation scopes and hook modes across supported agent harnesses.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "affaan-m/ecc",
+    "license": "MIT"
+  },
+  {
     "id": "confluence-automation",
     "path": "skills/confluence-automation",
     "category": "project-management",
@@ -22929,6 +23011,30 @@
     "source_repo": "BagelHole/DevOps-Security-Agent-Skills",
     "license": "MIT",
     "license_source": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/main/LICENSE"
+  },
+  {
+    "id": "ecc-guide",
+    "path": "skills/ecc-guide",
+    "category": "uncategorized",
+    "name": "ecc-guide",
+    "description": "Answer questions about ECC by reading the live repo surface \u2014 agents, skills, commands, hooks, rules, install profiles, and docs \u2014 instead of memory. Use when the user asks what ECC includes, how to install or reset it, which skill or command fits a task, or how project onboarding works.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "affaan-m/ecc",
+    "license": "MIT"
   },
   {
     "id": "ecl-harness-engineer",
@@ -36231,6 +36337,30 @@
     }
   },
   {
+    "id": "kaggle",
+    "path": "skills/kaggle",
+    "category": "uncategorized",
+    "name": "kaggle",
+    "description": "Unified Kaggle skill and MCP integration. Competitions, datasets, models, notebooks, discussions, writeups, benchmarks, and official Kaggle MCP server tools.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "shepsci/kaggle-skill",
+    "license": "MIT"
+  },
+  {
     "id": "kaizen",
     "path": "skills/kaizen",
     "category": "code-quality",
@@ -48262,6 +48392,32 @@
     }
   },
   {
+    "id": "plan-canvas",
+    "path": "skills/plan-canvas",
+    "category": "web-development",
+    "name": "plan-canvas",
+    "description": "Open plans and HTML artifacts in a local browser canvas where the human annotates elements, chats, and approves or requests changes without leaving the page. Use when presenting a plan for review, or when feedback like 'move this, change that' is easier pointed at than typed.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "source_repo": "affaan-m/ecc",
+    "license": "MIT"
+  },
+  {
     "id": "plan-ledger-tasks-yylo",
     "path": "skills/plan-ledger-tasks-yylo",
     "category": "project-management",
@@ -53604,6 +53760,32 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "rules-distill",
+    "path": "skills/rules-distill",
+    "category": "uncategorized",
+    "name": "rules-distill",
+    "description": "Scan skills to extract cross-cutting principles and distill them into rules \u2014 append, revise, or create new rule files. Use when the same principle keeps recurring across skills and belongs in a rule file instead.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "source_repo": "affaan-m/ecc",
+    "license": "MIT"
   },
   {
     "id": "run-deep-swe",
@@ -63352,6 +63534,39 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "tts-voice-studio",
+    "path": "skills/tts-voice-studio",
+    "category": "media",
+    "name": "tts-voice-studio",
+    "description": "Transform raw text into emotion-infused spoken scripts and synthesize lifelike audio with human cadence. Supports SSML, ChatTTS, Bark, Kokoro, and ElevenLabs markup using free/open-source tools (Edge-TTS, Kokoro-82M, ChatTTS, Piper) and paid engines (ElevenLabs, Cartesia, OpenAI).",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "tts",
+      "voice",
+      "speech-synthesis",
+      "audio",
+      "ssml",
+      "emotion",
+      "edge-tts",
+      "elevenlabs",
+      "kokoro"
+    ]
   },
   {
     "id": "tune-monitor",
