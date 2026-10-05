@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2716,
+  "total": 2717,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -20126,6 +20126,40 @@
         "caching"
       ],
       "path": "skills/context-optimization/SKILL.md"
+    },
+    {
+      "id": "context-window-compressor",
+      "canonical_id": "context-window-compressor",
+      "name": "context-window-compressor",
+      "description": "Automatic context window compression engine using semantic drift detection, anchored iterative summarization, telemetry pruning, and 3-layer context assembly. Guarantees zero loss in factual accuracy, negative constraints, and file tracking.",
+      "category": "agentic",
+      "risk": "safe",
+      "source": "self",
+      "source_type": "self",
+      "tags": [
+        "context-compression",
+        "context-window",
+        "semantic-drift",
+        "token-optimization",
+        "memory",
+        "accuracy",
+        "telemetry-pruning"
+      ],
+      "triggers": [
+        "context-compression",
+        "context-window",
+        "semantic-drift",
+        "token-optimization",
+        "memory",
+        "accuracy",
+        "telemetry-pruning",
+        "context",
+        "window",
+        "compressor",
+        "automatic",
+        "compression"
+      ],
+      "path": "skills/context-window-compressor/SKILL.md"
     },
     {
       "id": "context-window-management",

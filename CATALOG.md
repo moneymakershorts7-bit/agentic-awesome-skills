@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2716
+Total skills: 2717
 
 ## agent-behavior (5)
 
@@ -92,6 +92,12 @@ Total skills: 2716
 | `aas-compose-stack` | Preserve the coding agent's explicit AAS skill selection as a validated stack and optional evidence. | safe | self | aas, skills, mcp, stack-review | aas, skills, mcp, stack-review, compose, stack, preserve, coding, agent, explicit, skill, selection |
 | `aas-discover` | Discover AAS skills for an explicit task and compare their complete instructions without installing them. | safe | self | aas, skills, mcp, stack-review | aas, skills, mcp, stack-review, discover, explicit, task, compare, complete, instructions, without, installing |
 | `aas-review-stack` | Review AAS stack manifests, preview plans and selection evidence in Workbench without applying changes. | safe | self | aas, skills, mcp, stack-review | aas, skills, mcp, stack-review, review, stack, manifests, preview, plans, selection, evidence, workbench |
+
+## agentic (1)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `context-window-compressor` | Automatic context window compression engine using semantic drift detection, anchored iterative summarization, telemetry pruning, and 3-layer context assembly... | safe | self | context-compression, context-window, semantic-drift, token-optimization, memory, accuracy, telemetry-pruning | context-compression, context-window, semantic-drift, token-optimization, memory, accuracy, telemetry-pruning, context, window, compressor, automatic, compression |
 
 ## ai (1)
 

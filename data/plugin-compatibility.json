@@ -12981,6 +12981,25 @@
       "runtime_files": []
     },
     {
+      "id": "context-window-compressor",
+      "path": "skills/context-window-compressor",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "context-window-management",
       "path": "skills/context-window-management",
       "targets": {
@@ -52117,10 +52136,10 @@
     }
   ],
   "summary": {
-    "total_skills": 2716,
+    "total_skills": 2717,
     "supported": {
-      "codex": 2626,
-      "claude": 2653
+      "codex": 2627,
+      "claude": 2654
     },
     "blocked": {
       "codex": 90,

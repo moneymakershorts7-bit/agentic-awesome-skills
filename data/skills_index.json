@@ -17183,6 +17183,38 @@
     }
   },
   {
+    "id": "context-window-compressor",
+    "path": "skills/context-window-compressor",
+    "category": "agentic",
+    "name": "context-window-compressor",
+    "description": "Automatic context window compression engine using semantic drift detection, anchored iterative summarization, telemetry pruning, and 3-layer context assembly. Guarantees zero loss in factual accuracy, negative constraints, and file tracking.",
+    "risk": "safe",
+    "source": "self",
+    "date_added": "2026-10-05",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "self",
+    "tags": [
+      "context-compression",
+      "context-window",
+      "semantic-drift",
+      "token-optimization",
+      "memory",
+      "accuracy",
+      "telemetry-pruning"
+    ]
+  },
+  {
     "id": "context-window-management",
     "path": "skills/context-window-management",
     "category": "memory",
