@@ -1462,6 +1462,43 @@
     "license_source": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/main/LICENSE"
   },
   {
+    "id": "agent-observe-skill",
+    "path": "skills/agent-observe-skill",
+    "category": "observability",
+    "name": "agent-observe-skill",
+    "description": "Scan a local codebase for AI Agent prompts, Vercel AI SDK and OpenAI calls, tool schemas, loop bounds, telemetry, and side-effect risks.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "scottschindler/agent-observe-skill",
+    "tags": [
+      "agent-observe",
+      "observability",
+      "tracing",
+      "ai-sdk",
+      "vercel-ai",
+      "openai",
+      "prompts",
+      "tools",
+      "security",
+      "evals",
+      "telemetry"
+    ]
+  },
+  {
     "id": "agent-orchestration-improve-agent",
     "path": "skills/agent-orchestration-improve-agent",
     "category": "ai-ml",

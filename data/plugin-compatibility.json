@@ -1039,6 +1039,25 @@
       "runtime_files": []
     },
     {
+      "id": "agent-observe-skill",
+      "path": "skills/agent-observe-skill",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "agent-orchestration-improve-agent",
       "path": "skills/agent-orchestration-improve-agent",
       "targets": {
@@ -52136,10 +52155,10 @@
     }
   ],
   "summary": {
-    "total_skills": 2717,
+    "total_skills": 2718,
     "supported": {
-      "codex": 2627,
-      "claude": 2654
+      "codex": 2628,
+      "claude": 2655
     },
     "blocked": {
       "codex": 90,

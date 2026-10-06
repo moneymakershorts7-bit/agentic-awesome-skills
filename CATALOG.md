@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2717
+Total skills: 2718
 
 ## agent-behavior (5)
 
@@ -2350,6 +2350,12 @@ Total skills: 2717
 | `monopoly/scale-benchmarks` | Reference document for monopoly scale-benchmarks. | safe | community | monopoly/scale, benchmarks | monopoly/scale, benchmarks, scale, reference, document, monopoly |
 | `monopoly/security-checklist` | Reference document for monopoly security-checklist. | safe | community | monopoly/security, checklist | monopoly/security, checklist, security, reference, document, monopoly |
 | `monopoly/tech-matrix` | Reference document for monopoly tech-matrix. | safe | community | monopoly/tech, matrix | monopoly/tech, matrix, tech, reference, document, monopoly |
+
+## observability (1)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `agent-observe-skill` | Scan a local codebase for AI Agent prompts, Vercel AI SDK and OpenAI calls, tool schemas, loop bounds, telemetry, and side-effect risks. | safe | scottschindler/agent-observe-skill | agent-observe, observability, tracing, ai-sdk, vercel-ai, openai, prompts, tools, security, evals, telemetry | agent-observe, observability, tracing, ai-sdk, vercel-ai, openai, prompts, tools, security, evals, telemetry, agent |
 
 ## office-productivity (1)
 

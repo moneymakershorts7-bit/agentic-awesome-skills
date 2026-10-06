@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2717,
+  "total": 2718,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -1648,6 +1648,45 @@
         "reliability"
       ],
       "path": "skills/agent-observability/SKILL.md"
+    },
+    {
+      "id": "agent-observe-skill",
+      "canonical_id": "agent-observe-skill",
+      "name": "agent-observe-skill",
+      "description": "Scan a local codebase for AI Agent prompts, Vercel AI SDK and OpenAI calls, tool schemas, loop bounds, telemetry, and side-effect risks.",
+      "category": "observability",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "scottschindler/agent-observe-skill",
+      "tags": [
+        "agent-observe",
+        "observability",
+        "tracing",
+        "ai-sdk",
+        "vercel-ai",
+        "openai",
+        "prompts",
+        "tools",
+        "security",
+        "evals",
+        "telemetry"
+      ],
+      "triggers": [
+        "agent-observe",
+        "observability",
+        "tracing",
+        "ai-sdk",
+        "vercel-ai",
+        "openai",
+        "prompts",
+        "tools",
+        "security",
+        "evals",
+        "telemetry",
+        "agent"
+      ],
+      "path": "skills/agent-observe-skill/SKILL.md"
     },
     {
       "id": "agent-orchestration-improve-agent",
