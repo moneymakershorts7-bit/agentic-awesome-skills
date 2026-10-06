@@ -10669,6 +10669,25 @@
       "runtime_files": []
     },
     {
+      "id": "claude-mem",
+      "path": "skills/claude-mem",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "claude-monitor",
       "path": "skills/claude-monitor",
       "targets": {
@@ -10734,6 +10753,44 @@
     {
       "id": "claude-speed-reader",
       "path": "skills/claude-speed-reader",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "claude-video",
+      "path": "skills/claude-video",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "claude-video-toolkit",
+      "path": "skills/claude-video-toolkit",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -12981,6 +13038,25 @@
       "runtime_files": []
     },
     {
+      "id": "context-mode",
+      "path": "skills/context-mode",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "context-optimization",
       "path": "skills/context-optimization",
       "targets": {
@@ -13266,6 +13342,29 @@
       "runtime_files": []
     },
     {
+      "id": "cost-guardian",
+      "path": "skills/cost-guardian",
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ],
+      "blocked_reasons": {
+        "codex": [
+          "target_specific_home_path"
+        ],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "cost-optimization",
       "path": "skills/cost-optimization",
       "targets": {
@@ -13426,6 +13525,25 @@
     {
       "id": "create-pr",
       "path": "skills/create-pr",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "creative-resources",
+      "path": "skills/creative-resources",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -23841,6 +23959,25 @@
     {
       "id": "headline-psychologist",
       "path": "skills/headline-psychologist",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "headroom",
+      "path": "skills/headroom",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -35103,6 +35240,25 @@
       "runtime_files": []
     },
     {
+      "id": "one-skill-to-rule-them-all",
+      "path": "skills/one-skill-to-rule-them-all",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "oneroster-csv-validator",
       "path": "skills/oneroster-csv-validator",
       "targets": {
@@ -35700,6 +35856,44 @@
     {
       "id": "outreachagent",
       "path": "skills/outreachagent",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "p5-brush",
+      "path": "skills/p5-brush",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "p5-web-editor",
+      "path": "skills/p5-web-editor",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -36441,6 +36635,101 @@
     {
       "id": "phase-gated-debugging",
       "path": "skills/phase-gated-debugging",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "phoenix-0day-scanner",
+      "path": "skills/phoenix-0day-scanner",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "phoenix-opengrep-rule-generator",
+      "path": "skills/phoenix-opengrep-rule-generator",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "phoenix-production-readiness",
+      "path": "skills/phoenix-production-readiness",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "phoenix-security-reviewer",
+      "path": "skills/phoenix-security-reviewer",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "phoenix-threat-modeling",
+      "path": "skills/phoenix-threat-modeling",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -47028,6 +47317,25 @@
       "runtime_files": []
     },
     {
+      "id": "thinking-orbs",
+      "path": "skills/thinking-orbs",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "threat-hunting",
       "path": "skills/threat-hunting",
       "targets": {
@@ -52155,13 +52463,13 @@
     }
   ],
   "summary": {
-    "total_skills": 2718,
+    "total_skills": 2734,
     "supported": {
-      "codex": 2628,
-      "claude": 2655
+      "codex": 2643,
+      "claude": 2671
     },
     "blocked": {
-      "codex": 90,
+      "codex": 91,
       "claude": 63
     },
     "manual_setup": 20

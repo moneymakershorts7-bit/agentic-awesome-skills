@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2718
+Total skills: 2734
 
 ## agent-behavior (5)
 
@@ -93,11 +93,15 @@ Total skills: 2718
 | `aas-discover` | Discover AAS skills for an explicit task and compare their complete instructions without installing them. | safe | self | aas, skills, mcp, stack-review | aas, skills, mcp, stack-review, discover, explicit, task, compare, complete, instructions, without, installing |
 | `aas-review-stack` | Review AAS stack manifests, preview plans and selection evidence in Workbench without applying changes. | safe | self | aas, skills, mcp, stack-review | aas, skills, mcp, stack-review, review, stack, manifests, preview, plans, selection, evidence, workbench |
 
-## agentic (1)
+## agentic (5)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
+| `claude-mem` | Persistent cross-session memory compression system for AI coding agents. Indexes past decisions, fixes, and architecture patterns with progressive retrieval. | safe | thedotmack/claude-mem | memory, claude-mem, persistent-memory, cross-session, codebase-learning, episodic-memory, indexing | memory, claude-mem, persistent-memory, cross-session, codebase-learning, episodic-memory, indexing, claude, mem, persistent, cross, session |
+| `context-mode` | Intelligent context-mode execution and sandboxing to process large tool outputs, Playwright snapshots, and external docs without flooding the context window. | safe | mksglu/context-mode | context-mode, context-window, sandbox, playwright, token-optimization, cli, memory | context-mode, context-window, sandbox, playwright, token-optimization, cli, memory, context, mode, intelligent, execution, sandboxing |
 | `context-window-compressor` | Automatic context window compression engine using semantic drift detection, anchored iterative summarization, telemetry pruning, and 3-layer context assembly... | safe | self | context-compression, context-window, semantic-drift, token-optimization, memory, accuracy, telemetry-pruning | context-compression, context-window, semantic-drift, token-optimization, memory, accuracy, telemetry-pruning, context, window, compressor, automatic, compression |
+| `headroom` | Context compression layer and memory proxy for AI agents. Compresses tool outputs, logs, RAG chunks, and history locally with token savings and CCR caching. | safe | headroomlabs-ai/headroom | headroom, context-compression, token-savings, agent-proxy, memory, llm-optimization, ccr | headroom, context-compression, token-savings, agent-proxy, memory, llm-optimization, ccr, context, compression, layer, proxy, ai |
+| `one-skill-to-rule-them-all` | Meta-skill and continuous friction observer that detects workflow patterns, user corrections, and tool gaps to distill reusable agent skills autonomously. | safe | rebelytics/one-skill-to-rule-them-all | meta-skill, task-observer, skill-improvement, continuous-learning, friction-log, agentic, orchestration | meta-skill, task-observer, skill-improvement, continuous-learning, friction-log, agentic, orchestration, one, skill, rule, them, all |
 
 ## ai (1)
 
@@ -1095,13 +1099,16 @@ Total skills: 2718
 | --- | --- | --- | --- | --- | --- |
 | `vscode-extension-guide-en` | Guide for VS Code extension development from scaffolding to Marketplace publication | safe | lewiswigmore/agent-skills | vscode, extension, ide, typescript, marketplace | vscode, extension, ide, typescript, marketplace, en, vs, code, development, scaffolding, publication |
 
-## creative (3)
+## creative (6)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `article-illustrations` | Generate hand-drawn 16:9 article illustrations with the Grav character IP, sparse annotations, and absurd but clear visual metaphors. | safe | vipin-si/article-illustrations | illustration, article-graphics, visual-metaphors, image-generation, whiteboard-sketch | illustration, article-graphics, visual-metaphors, image-generation, whiteboard-sketch, article, illustrations, generate, hand, drawn, 16, grav |
+| `creative-resources` | Curated directory of free and open creative production assets, royalty-free audio, SFX, 3D textures, typography, LUTs, and pre-production templates. | safe | adammakesfilm/creative-resources | creative-direction, filmmaking, stock-assets, audio-fx, 3d-textures, palettes, typography, production | creative-direction, filmmaking, stock-assets, audio-fx, 3d-textures, palettes, typography, production, creative, resources, curated, directory |
 | `liuguang-banlan-ui` | Builds two parameterized UI modes—流光溢彩白 (iridescent white) and 五彩斑斓黑 (colorful black)—with OKLCH, WebGL/CSS fallback, vision gating, screenshot QA, and total... | critical | self | ui, frontend, oklch, webgl, accessibility | ui, frontend, oklch, webgl, accessibility, liuguang, banlan, two, parameterized, modes, iridescent, white |
 | `modellix` | Integrate the Modellix API/CLI for async AI image, video, and speech generation or transcription (model run --wait, task download). | critical | Modellix/modellix-plugin | image-generation, video-generation, audio-generation, text-to-speech, speech-to-text, speech-to-speech, modellix, cli, api | image-generation, video-generation, audio-generation, text-to-speech, speech-to-text, speech-to-speech, modellix, cli, api, integrate, async, ai |
+| `p5-brush` | Natural drawing, watercolor fills, charcoal, marker textures, hatch patterns, and vector fields engine for p5.js (WebGL mode) and standalone WebGL2 canvas. | safe | acamposuribe/p5.brush | p5js, generative-art, brush, watercolor, canvas, webgl2, vector-field, shaders | p5js, generative-art, brush, watercolor, canvas, webgl2, vector-field, shaders, p5, natural, drawing, fills |
+| `p5-web-editor` | Scaffolding, live preview, and sandboxed browser development for p5.js sketches, creative coding shaders, canvas animations, and WebGL interactive art. | safe | processing/p5.js-web-editor | p5js, processing, creative-coding, web-editor, generative-art, canvas, live-preview, shaders | p5js, processing, creative-coding, web-editor, generative-art, canvas, live-preview, shaders, p5, web, editor, scaffolding |
 
 ## data (41)
 
@@ -1586,7 +1593,7 @@ Total skills: 2718
 | `systematic-debugging` | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes | critical | community | systematic, debugging | systematic, debugging, encountering, any, bug, test, failure, unexpected, behavior, before, proposing, fixes |
 | `test-fixing` | Systematically identify and fix all failing tests using smart grouping strategies. Use when explicitly asks to fix tests ("fix these tests", "make tests pass... | safe | community | fixing | fixing, test, systematically, identify, fix, all, failing, tests, smart, grouping, explicitly, asks |
 
-## devops (166)
+## devops (167)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -1630,6 +1637,7 @@ Total skills: 2718
 | `cloudish` | Deploy a Dockerfile, source folder, or existing image to Cloudish as a running container at a live URL, built server-side with no local Docker, with confirma... | critical | cloudishai/skills | deploy, docker, containers, hosting, persistent-storage | deploy, docker, containers, hosting, persistent-storage, cloudish, dockerfile, source, folder, existing, image, running |
 | `container-registries` | Manage container registries including ECR, ACR, GCR, and Docker Hub. | critical | BagelHole/DevOps-Security-Agent-Skills | container, registries | container, registries, including, ecr, acr, gcr, docker, hub |
 | `convex-backend` | Build reactive backends with Convex functions, schema validation, auth integration, and deployment workflows. Use when building real-time apps with type-safe... | critical | BagelHole/DevOps-Security-Agent-Skills | convex, backend | convex, backend, reactive, backends, functions, schema, validation, auth, integration, deployment, building, real |
+| `cost-guardian` | Real-time LLM token cost tracking, daily budget enforcement, and SQLite usage analytics for AI agent coding sessions and model API calls. | safe | bifrost-mcp/cost-guardian | cost-tracking, token-monitoring, budget-guard, sqlite, claude-code, observability, tokens | cost-tracking, token-monitoring, budget-guard, sqlite, claude-code, observability, tokens, cost, guardian, real, time, llm |
 | `cron-doctor` | Diagnose and validate cron expressions before they ship. Catches the five silent death-traps: impossible dates that never fire, OR-semantics that fire too of... | safe | takeaseatventure/devops-skills | cron, crontab, scheduling, devops, debugging, kubernetes, validation | cron, crontab, scheduling, devops, debugging, kubernetes, validation, doctor, diagnose, validate, expressions, before |
 | `database-backups` | Implement database backup strategies. Configure automated backups, retention, and recovery testing. Use when designing backup and recovery procedures. | critical | BagelHole/DevOps-Security-Agent-Skills | database, backups | database, backups, backup, configure, automated, retention, recovery, testing, designing, procedures |
 | `datadog` | Implement Datadog monitoring and APM for infrastructure and applications. | critical | BagelHole/DevOps-Security-Agent-Skills | datadog | datadog, monitoring, apm, infrastructure, applications |
@@ -2351,6 +2359,13 @@ Total skills: 2718
 | `monopoly/security-checklist` | Reference document for monopoly security-checklist. | safe | community | monopoly/security, checklist | monopoly/security, checklist, security, reference, document, monopoly |
 | `monopoly/tech-matrix` | Reference document for monopoly tech-matrix. | safe | community | monopoly/tech, matrix | monopoly/tech, matrix, tech, reference, document, monopoly |
 
+## multimedia (2)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `claude-video` | Video comprehension engine using Gemini multimodal video or local ffmpeg keyframe extraction with subtitle transcripts and Whisper fallback. | safe | bradautomates/claude-video | video-analysis, gemini-video, ffmpeg, yt-dlp, transcript, scene-detection, subtitles | video-analysis, gemini-video, ffmpeg, yt-dlp, transcript, scene-detection, subtitles, claude, video, comprehension, engine, gemini |
+| `claude-video-toolkit` | Architecture catalog and router for agentic video generation, Remotion composition, programmatic motion graphics, B-roll assembly, and automated subtitle sync. | safe | zhuyansen/awesome-claude-video-skills | video-production, remotion, motion-design, video-skills, explainers, shorts, b-roll, subtitles | video-production, remotion, motion-design, video-skills, explainers, shorts, b-roll, subtitles, claude, video, toolkit, architecture |
+
 ## observability (1)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
@@ -2619,7 +2634,7 @@ Total skills: 2718
 | `statsmodels` | Statsmodels is Python's premier library for statistical modeling, providing tools for estimation, inference, and diagnostics across a wide range of statistic... | safe | community | statsmodels | statsmodels, python, premier, library, statistical, modeling, providing, estimation, inference, diagnostics, wide, range |
 | `sympy` | SymPy is a Python library for symbolic mathematics that enables exact computation using mathematical symbols rather than numerical approximations. | safe | https://github.com/sympy/sympy | sympy | sympy, python, library, symbolic, mathematics, enables, exact, computation, mathematical, symbols, rather, than |
 
-## security (263)
+## security (268)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -2800,6 +2815,11 @@ Total skills: 2718
 | `pentest-commands` | Provide a comprehensive command reference for penetration testing tools including network scanning, exploitation, password cracking, and web application test... | offensive | community | pentest, commands | pentest, commands, provide, command, reference, penetration, testing, including, network, scanning, exploitation, password |
 | `pentest-tools` | Operate 20+ penetration-testing tools (Nmap, Nuclei, SQLMap, FFUF, Hashcat, and more) through structured workflows with consistent output handling. | offensive | zhaoxuya520/reverse-skill | pentest | pentest, operate, 20, penetration, testing, nmap, nuclei, sqlmap, ffuf, hashcat, through, structured |
 | `permission-manager` | Manage opencode permissions: review always-allow lists, suggest safe read-only commands, configure permission patterns | critical | mskadu/opencode-agent-skills | permission, manager | permission, manager, opencode, permissions, review, always, allow, lists, suggest, safe, read, commands |
+| `phoenix-0day-scanner` | LLM-powered zero-day vulnerability analysis of code changes, PRs, diffs, and commits with severity-ranking, exploit pattern detection, and token budgeting. | safe | Security-Phoenix-demo/security-skills-claude-code | security, 0-day, zero-day, vulnerability-scan, exploit-detection, diff-review, cve | security, 0-day, zero-day, vulnerability-scan, exploit-detection, diff-review, cve, phoenix, 0day, scanner, llm, powered |
+| `phoenix-opengrep-rule-generator` | Generate custom Opengrep and Semgrep SAST rules (pattern matching and taint analysis) from CVEs, CWEs, OWASP categories, or vulnerability code snippets. | safe | Security-Phoenix-demo/security-skills-claude-code | security, sast, opengrep, semgrep, rule-generator, taint-analysis, cve | security, sast, opengrep, semgrep, rule-generator, taint-analysis, cve, phoenix, rule, generator, generate, custom |
+| `phoenix-production-readiness` | Adversarial senior engineer readiness review that verifies codebase implementation against specifications, tracing requirements to deliver a counted SHIP/NO-... | safe | Security-Phoenix-demo/security-skills-claude-code | production-readiness, security-audit, release-gate, quality-assurance, verification | production-readiness, security-audit, release-gate, quality-assurance, verification, phoenix, readiness, adversarial, senior, engineer, review, verifies |
+| `phoenix-security-reviewer` | Multi-language AppSec reviewer covering Python, JS/TS, Go, Rust, Java, Ruby, and .NET against OWASP Top 10 and ASVS controls with severity-ranked actionable ... | safe | Security-Phoenix-demo/security-skills-claude-code | security, appsec, owasp, asvs, vulnerability-scan, code-review, static-analysis | security, appsec, owasp, asvs, vulnerability-scan, code-review, static-analysis, phoenix, reviewer, multi, language, covering |
+| `phoenix-threat-modeling` | Automated STRIDE and DREAD threat modeling from code analysis. Maps trust boundaries, data flows, attack scenarios, and mitigations for architecture reviews. | safe | Security-Phoenix-demo/security-skills-claude-code | security, threat-modeling, stride, dread, attack-tree, architecture-review, trust-boundaries | security, threat-modeling, stride, dread, attack-tree, architecture-review, trust-boundaries, phoenix, threat, modeling, automated, code |
 | `policy-as-code` | Implement policy as code with OPA, Sentinel, and Kyverno. Automate policy enforcement in CI/CD and infrastructure. Use when enforcing compliance through auto... | safe | BagelHole/DevOps-Security-Agent-Skills | policy, as, code | policy, as, code, opa, sentinel, kyverno, automate, enforcement, ci, cd, infrastructure, enforcing |
 | `privacy-by-design` | Use when building apps that collect user data. Ensures privacy protections are built in from the start—data minimization, consent, encryption. | safe | community | privacy, by | privacy, by, building, apps, collect, user, data, ensures, protections, built, start, minimization |
 | `privacy-mask` | Mask, redact, anonymize and censor sensitive information (PII) in screenshots and images — phone numbers, emails, IDs, API keys, crypto wallets, credit cards... | critical | fullstackcrew-alpha/privacy-mask | privacy, mask | privacy, mask, redact, anonymize, censor, sensitive, information, pii, screenshots, images, phone, numbers |
@@ -3042,6 +3062,12 @@ Total skills: 2718
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `travel-planner` | 旅行/行程规划需求时使用:规划去某地旅行、X天X城、带老人孩子、自驾、假期安排等。产出逐日行程表、预算估算(经济/舒适/奢华三档)、交通住宿建议、景点美食清单。必须先问预算,预算未确认只输出问题清单;事实数据带来源和查询日期。 | safe | saudademjj/luopan | travel, itinerary, planning, trip, chinese | travel, itinerary, planning, trip, chinese, planner |
+
+## ui-ux (1)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `thinking-orbs` | Dotted thought-orb loading indicators for AI & agent UIs with 9 animated cognitive states rendered on 2D canvas for React, React Native, and Vanilla JS. | safe | Jakubantalik/thinking-orbs | thinking-orbs, agent-ui, loading-indicator, react, canvas, animation, motion, design, ui-ux | thinking-orbs, agent-ui, loading-indicator, react, canvas, animation, motion, design, ui-ux, thinking, orbs, dotted |
 
 ## uncategorized (54)
 

@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2718,
+  "total": 2734,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -16612,6 +16612,41 @@
       "path": "skills/claude-in-chrome-troubleshooting/SKILL.md"
     },
     {
+      "id": "claude-mem",
+      "canonical_id": "claude-mem",
+      "name": "claude-mem",
+      "description": "Persistent cross-session memory compression system for AI coding agents. Indexes past decisions, fixes, and architecture patterns with progressive retrieval.",
+      "category": "agentic",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "thedotmack/claude-mem",
+      "tags": [
+        "memory",
+        "claude-mem",
+        "persistent-memory",
+        "cross-session",
+        "codebase-learning",
+        "episodic-memory",
+        "indexing"
+      ],
+      "triggers": [
+        "memory",
+        "claude-mem",
+        "persistent-memory",
+        "cross-session",
+        "codebase-learning",
+        "episodic-memory",
+        "indexing",
+        "claude",
+        "mem",
+        "persistent",
+        "cross",
+        "session"
+      ],
+      "path": "skills/claude-mem/SKILL.md"
+    },
+    {
       "id": "claude-monitor",
       "canonical_id": "claude-monitor",
       "name": "claude-monitor",
@@ -16720,6 +16755,77 @@
         "highlighting"
       ],
       "path": "skills/claude-speed-reader/SKILL.md"
+    },
+    {
+      "id": "claude-video",
+      "canonical_id": "claude-video",
+      "name": "claude-video",
+      "description": "Video comprehension engine using Gemini multimodal video or local ffmpeg keyframe extraction with subtitle transcripts and Whisper fallback.",
+      "category": "multimedia",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "bradautomates/claude-video",
+      "tags": [
+        "video-analysis",
+        "gemini-video",
+        "ffmpeg",
+        "yt-dlp",
+        "transcript",
+        "scene-detection",
+        "subtitles"
+      ],
+      "triggers": [
+        "video-analysis",
+        "gemini-video",
+        "ffmpeg",
+        "yt-dlp",
+        "transcript",
+        "scene-detection",
+        "subtitles",
+        "claude",
+        "video",
+        "comprehension",
+        "engine",
+        "gemini"
+      ],
+      "path": "skills/claude-video/SKILL.md"
+    },
+    {
+      "id": "claude-video-toolkit",
+      "canonical_id": "claude-video-toolkit",
+      "name": "claude-video-toolkit",
+      "description": "Architecture catalog and router for agentic video generation, Remotion composition, programmatic motion graphics, B-roll assembly, and automated subtitle sync.",
+      "category": "multimedia",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "zhuyansen/awesome-claude-video-skills",
+      "tags": [
+        "video-production",
+        "remotion",
+        "motion-design",
+        "video-skills",
+        "explainers",
+        "shorts",
+        "b-roll",
+        "subtitles"
+      ],
+      "triggers": [
+        "video-production",
+        "remotion",
+        "motion-design",
+        "video-skills",
+        "explainers",
+        "shorts",
+        "b-roll",
+        "subtitles",
+        "claude",
+        "video",
+        "toolkit",
+        "architecture"
+      ],
+      "path": "skills/claude-video-toolkit/SKILL.md"
     },
     {
       "id": "claude-win11-speckit-update-skill",
@@ -20140,6 +20246,41 @@
       "path": "skills/context-manager/SKILL.md"
     },
     {
+      "id": "context-mode",
+      "canonical_id": "context-mode",
+      "name": "context-mode",
+      "description": "Intelligent context-mode execution and sandboxing to process large tool outputs, Playwright snapshots, and external docs without flooding the context window.",
+      "category": "agentic",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "mksglu/context-mode",
+      "tags": [
+        "context-mode",
+        "context-window",
+        "sandbox",
+        "playwright",
+        "token-optimization",
+        "cli",
+        "memory"
+      ],
+      "triggers": [
+        "context-mode",
+        "context-window",
+        "sandbox",
+        "playwright",
+        "token-optimization",
+        "cli",
+        "memory",
+        "context",
+        "mode",
+        "intelligent",
+        "execution",
+        "sandboxing"
+      ],
+      "path": "skills/context-mode/SKILL.md"
+    },
+    {
       "id": "context-optimization",
       "canonical_id": "context-optimization",
       "name": "context-optimization",
@@ -20567,6 +20708,41 @@
       "path": "skills/core-components/SKILL.md"
     },
     {
+      "id": "cost-guardian",
+      "canonical_id": "cost-guardian",
+      "name": "cost-guardian",
+      "description": "Real-time LLM token cost tracking, daily budget enforcement, and SQLite usage analytics for AI agent coding sessions and model API calls.",
+      "category": "devops",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "bifrost-mcp/cost-guardian",
+      "tags": [
+        "cost-tracking",
+        "token-monitoring",
+        "budget-guard",
+        "sqlite",
+        "claude-code",
+        "observability",
+        "tokens"
+      ],
+      "triggers": [
+        "cost-tracking",
+        "token-monitoring",
+        "budget-guard",
+        "sqlite",
+        "claude-code",
+        "observability",
+        "tokens",
+        "cost",
+        "guardian",
+        "real",
+        "time",
+        "llm"
+      ],
+      "path": "skills/cost-guardian/SKILL.md"
+    },
+    {
       "id": "cost-optimization",
       "canonical_id": "cost-optimization",
       "name": "cost-optimization",
@@ -20827,6 +21003,42 @@
         "redirects"
       ],
       "path": "skills/create-pr/SKILL.md"
+    },
+    {
+      "id": "creative-resources",
+      "canonical_id": "creative-resources",
+      "name": "creative-resources",
+      "description": "Curated directory of free and open creative production assets, royalty-free audio, SFX, 3D textures, typography, LUTs, and pre-production templates.",
+      "category": "creative",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "adammakesfilm/creative-resources",
+      "tags": [
+        "creative-direction",
+        "filmmaking",
+        "stock-assets",
+        "audio-fx",
+        "3d-textures",
+        "palettes",
+        "typography",
+        "production"
+      ],
+      "triggers": [
+        "creative-direction",
+        "filmmaking",
+        "stock-assets",
+        "audio-fx",
+        "3d-textures",
+        "palettes",
+        "typography",
+        "production",
+        "creative",
+        "resources",
+        "curated",
+        "directory"
+      ],
+      "path": "skills/creative-resources/SKILL.md"
     },
     {
       "id": "cred-omega",
@@ -36960,6 +37172,41 @@
         "invoke"
       ],
       "path": "skills/headline-psychologist/SKILL.md"
+    },
+    {
+      "id": "headroom",
+      "canonical_id": "headroom",
+      "name": "headroom",
+      "description": "Context compression layer and memory proxy for AI agents. Compresses tool outputs, logs, RAG chunks, and history locally with token savings and CCR caching.",
+      "category": "agentic",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "headroomlabs-ai/headroom",
+      "tags": [
+        "headroom",
+        "context-compression",
+        "token-savings",
+        "agent-proxy",
+        "memory",
+        "llm-optimization",
+        "ccr"
+      ],
+      "triggers": [
+        "headroom",
+        "context-compression",
+        "token-savings",
+        "agent-proxy",
+        "memory",
+        "llm-optimization",
+        "ccr",
+        "context",
+        "compression",
+        "layer",
+        "proxy",
+        "ai"
+      ],
+      "path": "skills/headroom/SKILL.md"
     },
     {
       "id": "health-trend-analyzer",
@@ -54354,6 +54601,41 @@
       "path": "skills/one-drive-automation/SKILL.md"
     },
     {
+      "id": "one-skill-to-rule-them-all",
+      "canonical_id": "one-skill-to-rule-them-all",
+      "name": "one-skill-to-rule-them-all",
+      "description": "Meta-skill and continuous friction observer that detects workflow patterns, user corrections, and tool gaps to distill reusable agent skills autonomously.",
+      "category": "agentic",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "rebelytics/one-skill-to-rule-them-all",
+      "tags": [
+        "meta-skill",
+        "task-observer",
+        "skill-improvement",
+        "continuous-learning",
+        "friction-log",
+        "agentic",
+        "orchestration"
+      ],
+      "triggers": [
+        "meta-skill",
+        "task-observer",
+        "skill-improvement",
+        "continuous-learning",
+        "friction-log",
+        "agentic",
+        "orchestration",
+        "one",
+        "skill",
+        "rule",
+        "them",
+        "all"
+      ],
+      "path": "skills/one-skill-to-rule-them-all/SKILL.md"
+    },
+    {
       "id": "oneroster-csv-validator",
       "canonical_id": "oneroster-csv-validator",
       "name": "oneroster-csv-validator",
@@ -55339,6 +55621,78 @@
         "aware"
       ],
       "path": "skills/outreachagent/SKILL.md"
+    },
+    {
+      "id": "p5-brush",
+      "canonical_id": "p5-brush",
+      "name": "p5-brush",
+      "description": "Natural drawing, watercolor fills, charcoal, marker textures, hatch patterns, and vector fields engine for p5.js (WebGL mode) and standalone WebGL2 canvas.",
+      "category": "creative",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "acamposuribe/p5.brush",
+      "tags": [
+        "p5js",
+        "generative-art",
+        "brush",
+        "watercolor",
+        "canvas",
+        "webgl2",
+        "vector-field",
+        "shaders"
+      ],
+      "triggers": [
+        "p5js",
+        "generative-art",
+        "brush",
+        "watercolor",
+        "canvas",
+        "webgl2",
+        "vector-field",
+        "shaders",
+        "p5",
+        "natural",
+        "drawing",
+        "fills"
+      ],
+      "path": "skills/p5-brush/SKILL.md"
+    },
+    {
+      "id": "p5-web-editor",
+      "canonical_id": "p5-web-editor",
+      "name": "p5-web-editor",
+      "description": "Scaffolding, live preview, and sandboxed browser development for p5.js sketches, creative coding shaders, canvas animations, and WebGL interactive art.",
+      "category": "creative",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "processing/p5.js-web-editor",
+      "tags": [
+        "p5js",
+        "processing",
+        "creative-coding",
+        "web-editor",
+        "generative-art",
+        "canvas",
+        "live-preview",
+        "shaders"
+      ],
+      "triggers": [
+        "p5js",
+        "processing",
+        "creative-coding",
+        "web-editor",
+        "generative-art",
+        "canvas",
+        "live-preview",
+        "shaders",
+        "p5",
+        "web",
+        "editor",
+        "scaffolding"
+      ],
+      "path": "skills/p5-web-editor/SKILL.md"
     },
     {
       "id": "page-cro",
@@ -56521,6 +56875,179 @@
         "until"
       ],
       "path": "skills/phase-gated-debugging/SKILL.md"
+    },
+    {
+      "id": "phoenix-0day-scanner",
+      "canonical_id": "phoenix-0day-scanner",
+      "name": "phoenix-0day-scanner",
+      "description": "LLM-powered zero-day vulnerability analysis of code changes, PRs, diffs, and commits with severity-ranking, exploit pattern detection, and token budgeting.",
+      "category": "security",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "Security-Phoenix-demo/security-skills-claude-code",
+      "tags": [
+        "security",
+        "0-day",
+        "zero-day",
+        "vulnerability-scan",
+        "exploit-detection",
+        "diff-review",
+        "cve"
+      ],
+      "triggers": [
+        "security",
+        "0-day",
+        "zero-day",
+        "vulnerability-scan",
+        "exploit-detection",
+        "diff-review",
+        "cve",
+        "phoenix",
+        "0day",
+        "scanner",
+        "llm",
+        "powered"
+      ],
+      "path": "skills/phoenix-0day-scanner/SKILL.md"
+    },
+    {
+      "id": "phoenix-opengrep-rule-generator",
+      "canonical_id": "phoenix-opengrep-rule-generator",
+      "name": "phoenix-opengrep-rule-generator",
+      "description": "Generate custom Opengrep and Semgrep SAST rules (pattern matching and taint analysis) from CVEs, CWEs, OWASP categories, or vulnerability code snippets.",
+      "category": "security",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "Security-Phoenix-demo/security-skills-claude-code",
+      "tags": [
+        "security",
+        "sast",
+        "opengrep",
+        "semgrep",
+        "rule-generator",
+        "taint-analysis",
+        "cve"
+      ],
+      "triggers": [
+        "security",
+        "sast",
+        "opengrep",
+        "semgrep",
+        "rule-generator",
+        "taint-analysis",
+        "cve",
+        "phoenix",
+        "rule",
+        "generator",
+        "generate",
+        "custom"
+      ],
+      "path": "skills/phoenix-opengrep-rule-generator/SKILL.md"
+    },
+    {
+      "id": "phoenix-production-readiness",
+      "canonical_id": "phoenix-production-readiness",
+      "name": "phoenix-production-readiness",
+      "description": "Adversarial senior engineer readiness review that verifies codebase implementation against specifications, tracing requirements to deliver a counted SHIP/NO-SHIP verdict.",
+      "category": "security",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "Security-Phoenix-demo/security-skills-claude-code",
+      "tags": [
+        "production-readiness",
+        "security-audit",
+        "release-gate",
+        "quality-assurance",
+        "verification"
+      ],
+      "triggers": [
+        "production-readiness",
+        "security-audit",
+        "release-gate",
+        "quality-assurance",
+        "verification",
+        "phoenix",
+        "readiness",
+        "adversarial",
+        "senior",
+        "engineer",
+        "review",
+        "verifies"
+      ],
+      "path": "skills/phoenix-production-readiness/SKILL.md"
+    },
+    {
+      "id": "phoenix-security-reviewer",
+      "canonical_id": "phoenix-security-reviewer",
+      "name": "phoenix-security-reviewer",
+      "description": "Multi-language AppSec reviewer covering Python, JS/TS, Go, Rust, Java, Ruby, and .NET against OWASP Top 10 and ASVS controls with severity-ranked actionable findings.",
+      "category": "security",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "Security-Phoenix-demo/security-skills-claude-code",
+      "tags": [
+        "security",
+        "appsec",
+        "owasp",
+        "asvs",
+        "vulnerability-scan",
+        "code-review",
+        "static-analysis"
+      ],
+      "triggers": [
+        "security",
+        "appsec",
+        "owasp",
+        "asvs",
+        "vulnerability-scan",
+        "code-review",
+        "static-analysis",
+        "phoenix",
+        "reviewer",
+        "multi",
+        "language",
+        "covering"
+      ],
+      "path": "skills/phoenix-security-reviewer/SKILL.md"
+    },
+    {
+      "id": "phoenix-threat-modeling",
+      "canonical_id": "phoenix-threat-modeling",
+      "name": "phoenix-threat-modeling",
+      "description": "Automated STRIDE and DREAD threat modeling from code analysis. Maps trust boundaries, data flows, attack scenarios, and mitigations for architecture reviews.",
+      "category": "security",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "Security-Phoenix-demo/security-skills-claude-code",
+      "tags": [
+        "security",
+        "threat-modeling",
+        "stride",
+        "dread",
+        "attack-tree",
+        "architecture-review",
+        "trust-boundaries"
+      ],
+      "triggers": [
+        "security",
+        "threat-modeling",
+        "stride",
+        "dread",
+        "attack-tree",
+        "architecture-review",
+        "trust-boundaries",
+        "phoenix",
+        "threat",
+        "modeling",
+        "automated",
+        "code"
+      ],
+      "path": "skills/phoenix-threat-modeling/SKILL.md"
     },
     {
       "id": "photopea-embedded-editor",
@@ -72770,6 +73297,43 @@
         "grow"
       ],
       "path": "skills/think/SKILL.md"
+    },
+    {
+      "id": "thinking-orbs",
+      "canonical_id": "thinking-orbs",
+      "name": "thinking-orbs",
+      "description": "Dotted thought-orb loading indicators for AI & agent UIs with 9 animated cognitive states rendered on 2D canvas for React, React Native, and Vanilla JS.",
+      "category": "ui-ux",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "Jakubantalik/thinking-orbs",
+      "tags": [
+        "thinking-orbs",
+        "agent-ui",
+        "loading-indicator",
+        "react",
+        "canvas",
+        "animation",
+        "motion",
+        "design",
+        "ui-ux"
+      ],
+      "triggers": [
+        "thinking-orbs",
+        "agent-ui",
+        "loading-indicator",
+        "react",
+        "canvas",
+        "animation",
+        "motion",
+        "design",
+        "ui-ux",
+        "thinking",
+        "orbs",
+        "dotted"
+      ],
+      "path": "skills/thinking-orbs/SKILL.md"
     },
     {
       "id": "threat-hunting",

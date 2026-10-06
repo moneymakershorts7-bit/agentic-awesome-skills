@@ -203,6 +203,7 @@
     "src-hunter": "pentest-tools/src-hunter",
     "performance-testing-ai": "performance-testing-review-ai-review",
     "performance-testing-agent": "performance-testing-review-multi-agent-review",
+    "phoenix-opengrep-generator": "phoenix-opengrep-rule-generator",
     "polis-protocol-agents": "polis-protocol-a-self-optimizing-city-of-agents",
     "python-development-scaffold": "python-development-python-scaffold",
     "recursive-context-budgeting": "recursive-context-pruning-token-budgeting",

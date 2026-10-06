@@ -14121,6 +14121,39 @@
     }
   },
   {
+    "id": "claude-mem",
+    "path": "skills/claude-mem",
+    "category": "agentic",
+    "name": "claude-mem",
+    "description": "Persistent cross-session memory compression system for AI coding agents. Indexes past decisions, fixes, and architecture patterns with progressive retrieval.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "thedotmack/claude-mem",
+    "tags": [
+      "memory",
+      "claude-mem",
+      "persistent-memory",
+      "cross-session",
+      "codebase-learning",
+      "episodic-memory",
+      "indexing"
+    ]
+  },
+  {
     "id": "claude-monitor",
     "path": "skills/claude-monitor",
     "category": "ai-ml",
@@ -14215,6 +14248,73 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "claude-video",
+    "path": "skills/claude-video",
+    "category": "multimedia",
+    "name": "claude-video",
+    "description": "Video comprehension engine using Gemini multimodal video or local ffmpeg keyframe extraction with subtitle transcripts and Whisper fallback.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "bradautomates/claude-video",
+    "tags": [
+      "video-analysis",
+      "gemini-video",
+      "ffmpeg",
+      "yt-dlp",
+      "transcript",
+      "scene-detection",
+      "subtitles"
+    ]
+  },
+  {
+    "id": "claude-video-toolkit",
+    "path": "skills/claude-video-toolkit",
+    "category": "multimedia",
+    "name": "claude-video-toolkit",
+    "description": "Architecture catalog and router for agentic video generation, Remotion composition, programmatic motion graphics, B-roll assembly, and automated subtitle sync.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "zhuyansen/awesome-claude-video-skills",
+    "tags": [
+      "video-production",
+      "remotion",
+      "motion-design",
+      "video-skills",
+      "explainers",
+      "shorts",
+      "b-roll",
+      "subtitles"
+    ]
   },
   {
     "id": "claude-win11-speckit-update-skill",
@@ -17198,6 +17298,39 @@
     }
   },
   {
+    "id": "context-mode",
+    "path": "skills/context-mode",
+    "category": "agentic",
+    "name": "context-mode",
+    "description": "Intelligent context-mode execution and sandboxing to process large tool outputs, Playwright snapshots, and external docs without flooding the context window.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "mksglu/context-mode",
+    "tags": [
+      "context-mode",
+      "context-window",
+      "sandbox",
+      "playwright",
+      "token-optimization",
+      "cli",
+      "memory"
+    ]
+  },
+  {
     "id": "context-optimization",
     "path": "skills/context-optimization",
     "category": "ai-ml",
@@ -17558,6 +17691,41 @@
     }
   },
   {
+    "id": "cost-guardian",
+    "path": "skills/cost-guardian",
+    "category": "devops",
+    "name": "cost-guardian",
+    "description": "Real-time LLM token cost tracking, daily budget enforcement, and SQLite usage analytics for AI agent coding sessions and model API calls.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "source_type": "community",
+    "source_repo": "bifrost-mcp/cost-guardian",
+    "tags": [
+      "cost-tracking",
+      "token-monitoring",
+      "budget-guard",
+      "sqlite",
+      "claude-code",
+      "observability",
+      "tokens"
+    ]
+  },
+  {
     "id": "cost-optimization",
     "path": "skills/cost-optimization",
     "category": "cloud",
@@ -17794,6 +17962,40 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "creative-resources",
+    "path": "skills/creative-resources",
+    "category": "creative",
+    "name": "creative-resources",
+    "description": "Curated directory of free and open creative production assets, royalty-free audio, SFX, 3D textures, typography, LUTs, and pre-production templates.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "adammakesfilm/creative-resources",
+    "tags": [
+      "creative-direction",
+      "filmmaking",
+      "stock-assets",
+      "audio-fx",
+      "3d-textures",
+      "palettes",
+      "typography",
+      "production"
+    ]
   },
   {
     "id": "cred-omega",
@@ -30974,6 +31176,39 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "headroom",
+    "path": "skills/headroom",
+    "category": "agentic",
+    "name": "headroom",
+    "description": "Context compression layer and memory proxy for AI agents. Compresses tool outputs, logs, RAG chunks, and history locally with token savings and CCR caching.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "headroomlabs-ai/headroom",
+    "tags": [
+      "headroom",
+      "context-compression",
+      "token-savings",
+      "agent-proxy",
+      "memory",
+      "llm-optimization",
+      "ccr"
+    ]
   },
   {
     "id": "health-trend-analyzer",
@@ -46268,6 +46503,39 @@
     }
   },
   {
+    "id": "one-skill-to-rule-them-all",
+    "path": "skills/one-skill-to-rule-them-all",
+    "category": "agentic",
+    "name": "one-skill-to-rule-them-all",
+    "description": "Meta-skill and continuous friction observer that detects workflow patterns, user corrections, and tool gaps to distill reusable agent skills autonomously.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "rebelytics/one-skill-to-rule-them-all",
+    "tags": [
+      "meta-skill",
+      "task-observer",
+      "skill-improvement",
+      "continuous-learning",
+      "friction-log",
+      "agentic",
+      "orchestration"
+    ]
+  },
+  {
     "id": "oneroster-csv-validator",
     "path": "skills/oneroster-csv-validator",
     "category": "testing",
@@ -47133,6 +47401,74 @@
       "deliverability",
       "webhooks",
       "rest-api"
+    ]
+  },
+  {
+    "id": "p5-brush",
+    "path": "skills/p5-brush",
+    "category": "creative",
+    "name": "p5-brush",
+    "description": "Natural drawing, watercolor fills, charcoal, marker textures, hatch patterns, and vector fields engine for p5.js (WebGL mode) and standalone WebGL2 canvas.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "acamposuribe/p5.brush",
+    "tags": [
+      "p5js",
+      "generative-art",
+      "brush",
+      "watercolor",
+      "canvas",
+      "webgl2",
+      "vector-field",
+      "shaders"
+    ]
+  },
+  {
+    "id": "p5-web-editor",
+    "path": "skills/p5-web-editor",
+    "category": "creative",
+    "name": "p5-web-editor",
+    "description": "Scaffolding, live preview, and sandboxed browser development for p5.js sketches, creative coding shaders, canvas animations, and WebGL interactive art.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "processing/p5.js-web-editor",
+    "tags": [
+      "p5js",
+      "processing",
+      "creative-coding",
+      "web-editor",
+      "generative-art",
+      "canvas",
+      "live-preview",
+      "shaders"
     ]
   },
   {
@@ -48171,6 +48507,169 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "phoenix-0day-scanner",
+    "path": "skills/phoenix-0day-scanner",
+    "category": "security",
+    "name": "phoenix-0day-scanner",
+    "description": "LLM-powered zero-day vulnerability analysis of code changes, PRs, diffs, and commits with severity-ranking, exploit pattern detection, and token budgeting.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "Security-Phoenix-demo/security-skills-claude-code",
+    "tags": [
+      "security",
+      "0-day",
+      "zero-day",
+      "vulnerability-scan",
+      "exploit-detection",
+      "diff-review",
+      "cve"
+    ]
+  },
+  {
+    "id": "phoenix-opengrep-rule-generator",
+    "path": "skills/phoenix-opengrep-rule-generator",
+    "category": "security",
+    "name": "phoenix-opengrep-rule-generator",
+    "description": "Generate custom Opengrep and Semgrep SAST rules (pattern matching and taint analysis) from CVEs, CWEs, OWASP categories, or vulnerability code snippets.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "Security-Phoenix-demo/security-skills-claude-code",
+    "tags": [
+      "security",
+      "sast",
+      "opengrep",
+      "semgrep",
+      "rule-generator",
+      "taint-analysis",
+      "cve"
+    ]
+  },
+  {
+    "id": "phoenix-production-readiness",
+    "path": "skills/phoenix-production-readiness",
+    "category": "security",
+    "name": "phoenix-production-readiness",
+    "description": "Adversarial senior engineer readiness review that verifies codebase implementation against specifications, tracing requirements to deliver a counted SHIP/NO-SHIP verdict.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "Security-Phoenix-demo/security-skills-claude-code",
+    "tags": [
+      "production-readiness",
+      "security-audit",
+      "release-gate",
+      "quality-assurance",
+      "verification"
+    ]
+  },
+  {
+    "id": "phoenix-security-reviewer",
+    "path": "skills/phoenix-security-reviewer",
+    "category": "security",
+    "name": "phoenix-security-reviewer",
+    "description": "Multi-language AppSec reviewer covering Python, JS/TS, Go, Rust, Java, Ruby, and .NET against OWASP Top 10 and ASVS controls with severity-ranked actionable findings.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "Security-Phoenix-demo/security-skills-claude-code",
+    "tags": [
+      "security",
+      "appsec",
+      "owasp",
+      "asvs",
+      "vulnerability-scan",
+      "code-review",
+      "static-analysis"
+    ]
+  },
+  {
+    "id": "phoenix-threat-modeling",
+    "path": "skills/phoenix-threat-modeling",
+    "category": "security",
+    "name": "phoenix-threat-modeling",
+    "description": "Automated STRIDE and DREAD threat modeling from code analysis. Maps trust boundaries, data flows, attack scenarios, and mitigations for architecture reviews.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "Security-Phoenix-demo/security-skills-claude-code",
+    "tags": [
+      "security",
+      "threat-modeling",
+      "stride",
+      "dread",
+      "attack-tree",
+      "architecture-review",
+      "trust-boundaries"
+    ]
   },
   {
     "id": "photopea-embedded-editor",
@@ -62296,6 +62795,41 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "thinking-orbs",
+    "path": "skills/thinking-orbs",
+    "category": "ui-ux",
+    "name": "thinking-orbs",
+    "description": "Dotted thought-orb loading indicators for AI & agent UIs with 9 animated cognitive states rendered on 2D canvas for React, React Native, and Vanilla JS.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "Jakubantalik/thinking-orbs",
+    "tags": [
+      "thinking-orbs",
+      "agent-ui",
+      "loading-indicator",
+      "react",
+      "canvas",
+      "animation",
+      "motion",
+      "design",
+      "ui-ux"
+    ]
   },
   {
     "id": "threat-hunting",
