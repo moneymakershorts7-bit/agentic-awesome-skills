@@ -40,7 +40,9 @@ A structured knowledge base and architectural toolkit for programmatic video gen
 
 ## Recommended Pipelines
 
-### 1. Programmatic React Explainer (Remotion)
+### 1. Programmatic React Explainer (5-Stage Video-as-Code Pipeline)
+
+For structured explainer animations, use the dedicated **[`ai-animation-workflow`](../ai-animation-workflow/SKILL.md)** skill, which enforces a 5-stage decoupled pipeline (`01_voice` $\to$ `02_transcript` $\to$ `03_cues` $\to$ `04_scene` $\to$ `05_render`).
 
 ```tsx
 import { Composition } from 'remotion'
@@ -75,4 +77,5 @@ ffmpeg -i voiceover.wav -i bgm.mp3 -filter_complex \
 
 ---
 
-For complete framework catalogs, animation patterns, and asset specifications, see [video-frameworks.md](references/video-frameworks.md).
+For complete framework catalogs, animation patterns, and asset specifications, see [video-frameworks.md](references/video-frameworks.md). For step-by-step explainer builds, load [`ai-animation-workflow`](../ai-animation-workflow/SKILL.md).
+
