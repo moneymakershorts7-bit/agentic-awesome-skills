@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2734,
+  "total": 2735,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -44058,6 +44058,42 @@
         "attention"
       ],
       "path": "skills/launch-strategy/SKILL.md"
+    },
+    {
+      "id": "lazaro",
+      "canonical_id": "lazaro",
+      "name": "lazaro",
+      "description": "Automated agent personalization backup, 0-secret sanitizer, and 1-click disaster recovery system with private GitHub syncing and local archive generation.",
+      "category": "agentic",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "moneymakershorts7-bit/lazaro-personalization-backup",
+      "tags": [
+        "lazaro",
+        "backup",
+        "disaster-recovery",
+        "state-snapshot",
+        "personalization",
+        "secrets-free",
+        "memory",
+        "resurrection"
+      ],
+      "triggers": [
+        "lazaro",
+        "backup",
+        "disaster-recovery",
+        "state-snapshot",
+        "personalization",
+        "secrets-free",
+        "memory",
+        "resurrection",
+        "automated",
+        "agent",
+        "secret",
+        "sanitizer"
+      ],
+      "path": "skills/lazaro/SKILL.md"
     },
     {
       "id": "lead-magnets",

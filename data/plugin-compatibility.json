@@ -28518,6 +28518,25 @@
       "runtime_files": []
     },
     {
+      "id": "lazaro",
+      "path": "skills/lazaro",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "lead-magnets",
       "path": "skills/lead-magnets",
       "targets": {
@@ -52463,10 +52482,10 @@
     }
   ],
   "summary": {
-    "total_skills": 2734,
+    "total_skills": 2735,
     "supported": {
-      "codex": 2643,
-      "claude": 2671
+      "codex": 2644,
+      "claude": 2672
     },
     "blocked": {
       "codex": 91,

@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2734
+Total skills: 2735
 
 ## agent-behavior (5)
 
@@ -93,7 +93,7 @@ Total skills: 2734
 | `aas-discover` | Discover AAS skills for an explicit task and compare their complete instructions without installing them. | safe | self | aas, skills, mcp, stack-review | aas, skills, mcp, stack-review, discover, explicit, task, compare, complete, instructions, without, installing |
 | `aas-review-stack` | Review AAS stack manifests, preview plans and selection evidence in Workbench without applying changes. | safe | self | aas, skills, mcp, stack-review | aas, skills, mcp, stack-review, review, stack, manifests, preview, plans, selection, evidence, workbench |
 
-## agentic (5)
+## agentic (6)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -101,6 +101,7 @@ Total skills: 2734
 | `context-mode` | Intelligent context-mode execution and sandboxing to process large tool outputs, Playwright snapshots, and external docs without flooding the context window. | safe | mksglu/context-mode | context-mode, context-window, sandbox, playwright, token-optimization, cli, memory | context-mode, context-window, sandbox, playwright, token-optimization, cli, memory, context, mode, intelligent, execution, sandboxing |
 | `context-window-compressor` | Automatic context window compression engine using semantic drift detection, anchored iterative summarization, telemetry pruning, and 3-layer context assembly... | safe | self | context-compression, context-window, semantic-drift, token-optimization, memory, accuracy, telemetry-pruning | context-compression, context-window, semantic-drift, token-optimization, memory, accuracy, telemetry-pruning, context, window, compressor, automatic, compression |
 | `headroom` | Context compression layer and memory proxy for AI agents. Compresses tool outputs, logs, RAG chunks, and history locally with token savings and CCR caching. | safe | headroomlabs-ai/headroom | headroom, context-compression, token-savings, agent-proxy, memory, llm-optimization, ccr | headroom, context-compression, token-savings, agent-proxy, memory, llm-optimization, ccr, context, compression, layer, proxy, ai |
+| `lazaro` | Automated agent personalization backup, 0-secret sanitizer, and 1-click disaster recovery system with private GitHub syncing and local archive generation. | safe | moneymakershorts7-bit/lazaro-personalization-backup | lazaro, backup, disaster-recovery, state-snapshot, personalization, secrets-free, memory, resurrection | lazaro, backup, disaster-recovery, state-snapshot, personalization, secrets-free, memory, resurrection, automated, agent, secret, sanitizer |
 | `one-skill-to-rule-them-all` | Meta-skill and continuous friction observer that detects workflow patterns, user corrections, and tool gaps to distill reusable agent skills autonomously. | safe | rebelytics/one-skill-to-rule-them-all | meta-skill, task-observer, skill-improvement, continuous-learning, friction-log, agentic, orchestration | meta-skill, task-observer, skill-improvement, continuous-learning, friction-log, agentic, orchestration, one, skill, rule, them, all |
 
 ## ai (1)

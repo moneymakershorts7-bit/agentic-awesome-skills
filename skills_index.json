@@ -37448,6 +37448,40 @@
     "source_type": "self"
   },
   {
+    "id": "lazaro",
+    "path": "skills/lazaro",
+    "category": "agentic",
+    "name": "lazaro",
+    "description": "Automated agent personalization backup, 0-secret sanitizer, and 1-click disaster recovery system with private GitHub syncing and local archive generation.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "moneymakershorts7-bit/lazaro-personalization-backup",
+    "tags": [
+      "lazaro",
+      "backup",
+      "disaster-recovery",
+      "state-snapshot",
+      "personalization",
+      "secrets-free",
+      "memory",
+      "resurrection"
+    ]
+  },
+  {
     "id": "lead-magnets",
     "path": "skills/lead-magnets",
     "category": "marketing",
