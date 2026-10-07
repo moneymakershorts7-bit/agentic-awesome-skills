@@ -1,0 +1,108 @@
+name: Daily Free-For-Dev Tools & Services Scout
+
+on:
+  schedule:
+    # Run every day at 07:00 UTC
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  free-for-dev-scout:
+    name: Free Dev Tools & Services Scout
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner Security
+        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
+        with:
+          egress-policy: audit
+
+      - name: Checkout Repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python Runtime
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
+        with:
+          python-version: '3.12'
+
+      - name: Setup Node Runtime
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install Project Dependencies
+        run: |
+          npm ci --ignore-scripts || npm install --no-audit
+
+      - name: Dispatch to Google Jules or Run Free-For-Dev Scout
+        id: scout
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JULES_API_KEY: ${{ secrets.JULES_API_KEY }}
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          echo "today=$TODAY" >> "$GITHUB_OUTPUT"
+
+          if [ -n "$JULES_API_KEY" ]; then
+            echo "Dispatching Daily Free-For-Dev Sentinel to Google Jules Cloud..."
+            curl -s -X POST https://jules.googleapis.com/v1alpha/sessions \
+              -H "x-goog-api-key: $JULES_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"prompt\": \"Act as the Daily Free-For-Dev Tools & Services Sentinel for agentic-awesome-skills. Execute python3 tools/scripts/free_for_dev_scout.py --sentinel to fetch newly merged tools from ripienaar/free-for-dev. Update data/free_for_dev_index.json and docs/free_for_dev/CATALOG.md using python3 tools/scripts/free_for_dev_indexer.py --update. Generate daily discovery dossier under docs/free_for_dev/daily/$TODAY.md and append discoveries to docs/free_for_dev/LEDGER.md. Formulate actionable project integration recipes. Run npm run validate. Never commit secrets. Propose daily index update on branch jules/free-for-dev-$TODAY via Pull Request titled 'feat(free-for-dev): daily free developer tools and services index [$TODAY]'. DO NOT attempt direct merge to main.\",
+                \"title\": \"Daily Free-For-Dev Scout ($TODAY)\",
+                \"sourceContext\": {
+                  \"source\": \"sources/github/${{ github.repository }}\",
+                  \"githubRepoContext\": { \"startingBranch\": \"main\" }
+                },
+                \"automationMode\": \"AUTO_CREATE_PR\"
+              }" || echo "Jules API dispatch finished or deferred."
+          fi
+
+          echo "Running local free-for-dev scout & indexer..."
+          python3 tools/scripts/free_for_dev_indexer.py --update
+          python3 tools/scripts/free_for_dev_scout.py --sentinel --notify
+
+          echo "Validating repository integrity..."
+          npm run validate || true
+
+      - name: Create Pull Request with Free Tools Updates
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TODAY="${{ steps.scout.outputs.today }}"
+          BRANCH_NAME="free-for-dev/daily-$TODAY"
+
+          # Check if there are unstaged or untracked changes
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No free tool index updates today. Clean working tree."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b "$BRANCH_NAME"
+          git add data/free_for_dev_index.json docs/free_for_dev/
+          git commit -m "feat(free-for-dev): daily free developer tools and services index [$TODAY]"
+          git push origin "$BRANCH_NAME" --force
+
+          REPORT_CONTENT="Automated daily index update and discovery of free developer tools from ripienaar/free-for-dev."
+          if [ -f "docs/free_for_dev/daily/$TODAY.md" ]; then
+            REPORT_CONTENT=$(cat "docs/free_for_dev/daily/$TODAY.md")
+          fi
+
+          gh pr create \
+            --title "feat(free-for-dev): daily free developer tools and services index [$TODAY]" \
+            --body "$REPORT_CONTENT" \
+            --head "$BRANCH_NAME" \
+            --base "main" \
+            --label "free-for-dev,automated-scout" || echo "PR already exists or was created."
