@@ -518,7 +518,7 @@ class WhitelistLoader:
         config = UserWhitelistConfig()
         
         # Load user-whitelist.json
-        user_whitelist_path = os.path.join(directory, USER_WHITELIST_FILE)
+        user_whitelist_path = os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE))
         if os.path.exists(user_whitelist_path):
             try:
                 with open(user_whitelist_path, 'r', encoding='utf-8') as f:
@@ -755,7 +755,7 @@ class WhitelistLoader:
         os.makedirs(directory, exist_ok=True)
         
         # Save user-whitelist.json
-        user_whitelist_path = os.path.join(directory, USER_WHITELIST_FILE)
+        user_whitelist_path = os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE))
         with open(user_whitelist_path, 'w', encoding='utf-8') as f:
             json.dump(config.to_dict(), f, indent=2, ensure_ascii=False)
         

@@ -5,13 +5,25 @@ description: 'Query and handle security risk events from Alibaba Cloud Data Secu
   handling operations on risk events.
 
   Trigger words: "Data Security Center", "security risk events", "DSC", "risk handling",
-  "DescribeRiskRules", "PreHandleAuditRisk"'
+  "DescribeRiskRules...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Alibaba Cloud Data Security Center Risk Event Query and Handling
@@ -87,7 +99,7 @@ Do not attach `--user-agent` to system or utility commands, including `aliyun co
 
 > **Pre-check: Aliyun CLI >= 3.3.3 required**
 > Run the following command to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see `references/cli-installation-guide.md` for installation instructions.
 
 ```bash

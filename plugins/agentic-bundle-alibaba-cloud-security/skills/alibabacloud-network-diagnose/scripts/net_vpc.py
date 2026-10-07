@@ -20,7 +20,7 @@ def describe_vpcs(vpc_ids: list = None, region: str = None) -> dict:
     all_vpcs = []
     page_number = 1
 
-    while True:
+    for _loop_counter in range(1, 1000):
         params["PageNumber"] = str(page_number)
         result = _call_with_retry("vpc", "describe-vpcs", params, region)
         if "error" in result:
@@ -131,7 +131,7 @@ def describe_route_entry_list(route_table_id: str, region: str = None) -> dict:
     all_entries = []
     next_token = None
 
-    while True:
+    for _loop_counter in range(1, 1000):
         if next_token:
             params["NextToken"] = next_token
 
@@ -379,7 +379,7 @@ def describe_forward_table_entries(forward_table_id: str,
     all_entries = []
     page = 1
 
-    while True:
+    for _loop_counter in range(1, 1000):
         params["PageNumber"] = str(page)
         result = _call_with_retry("vpc", "describe-forward-table-entries", params, region)
         if "error" in result:
@@ -418,7 +418,7 @@ def describe_snat_table_entries(snat_table_id: str,
     all_entries = []
     page = 1
 
-    while True:
+    for _loop_counter in range(1, 1000):
         params["PageNumber"] = str(page)
         result = _call_with_retry("vpc", "describe-snat-table-entries", params, region)
         if "error" in result:

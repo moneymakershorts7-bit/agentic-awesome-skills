@@ -3,20 +3,25 @@ name: alibabacloud-aisc-skill-inspection
 description: Submit Alibaba Cloud AISC Skill file security scans, poll scan tasks,
   diagnose API or upload failures, and interpret scan reports for malicious code,
   prompt injection, hardcoded credentials, sensitive data, risky configuration, and
-  other Skill package security findings. Use when the user asks whether a Skill package
-  or Skill file is safe, wants to scan/check/detect a Skill package, provides one
-  or more Skill download URLs for AISC security detection, asks to run or poll CreateSkillFileCheck/ListSubTasks,
-  asks about check-report.json or rootTaskId status, needs help with permission/parameter/throttling/system
-  scan errors, or needs to choose between multiple candidate Skill files for security
-  scanning. Trigger phrases include AISC scan, Skill security check, Skill file check,
-  Skill 安全检测, Skill 文件安全扫描, 扫描 Skill 包, 检测 Skill 是否安全, and 检查 Skill 文件有没有恶意代码/敏感凭据/prompt
-  注入.
+  other Skill package security findings. Use when the user asks w...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # AISC Skill File Security Check

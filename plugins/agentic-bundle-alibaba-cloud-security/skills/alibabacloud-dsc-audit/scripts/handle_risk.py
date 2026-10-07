@@ -137,7 +137,7 @@ def find_risk_in_unprocessed(risk_id):
     current_page = 1
     page_size = 50
     
-    while True:
+    for _loop_counter in range(1, 1000):
         response = describe_risk_rules(current_page, page_size)
         status_code = response.get('statusCode')
         body = response.get('body', {})
@@ -166,7 +166,7 @@ def collect_unprocessed_risk_summaries(page_size=50):
     current_page = 1
     summaries = []
 
-    while True:
+    for _loop_counter in range(1, 1000):
         response = describe_risk_rules(current_page, page_size)
         status_code = response.get('statusCode')
         body = response.get('body', {})

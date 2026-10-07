@@ -5,18 +5,25 @@ description: 'Query Alibaba Cloud DDoS Pro (ddoscoo) block/intercept reasons via
   including CC protection rules, precise access control rules, region blocking, and
   IP blacklist policies.
 
-  Use when users report being blocked by DDoS Pro, encounter block pages, or need
-  to investigate and remediate DDoS protection rules.
-
-  Trigger words: "DDoS block query", "blocked by DDoS Pro", "DDoS intercept", "ddoscoo
-  intercept query", "CC block", "precise access control block", "高防拦截查询", "request
-  blocked by anti-ddos"'
+  Use when users report being blocked...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # DDoS Pro (Anti-DDoS Pro) Intercept Query

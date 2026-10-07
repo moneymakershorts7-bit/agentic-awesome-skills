@@ -96,7 +96,7 @@ def describe_cens(region: str = None) -> dict:
     all_cens = []
     page_number = 1
 
-    while True:
+    for _loop_counter in range(1, 1000):
         params["PageNumber"] = str(page_number)
         result = _call_with_retry("cbn", "describe-cens", params, region)
         if "error" in result:
@@ -199,7 +199,7 @@ def describe_cen_child_instance_route_entries(cen_id: str, child_instance_id: st
     page_number = 1
     page_size = 50
     
-    while True:
+    for _loop_counter in range(1, 1000):
         params = {
             "CenId": cen_id,
             "ChildInstanceId": child_instance_id,
@@ -536,7 +536,7 @@ def list_transit_router_route_entries(transit_router_route_table_id: str,
     all_entries = []
     next_token = None
 
-    while True:
+    for _loop_counter in range(1, 1000):
         if next_token:
             params["NextToken"] = next_token
 
@@ -599,7 +599,7 @@ def list_transit_router_route_table_associations(transit_router_route_table_id: 
     all_associations = []
     next_token = None
 
-    while True:
+    for _loop_counter in range(1, 1000):
         if next_token:
             params["NextToken"] = next_token
 
@@ -639,7 +639,7 @@ def list_transit_router_route_table_propagations(transit_router_route_table_id: 
     all_propagations = []
     next_token = None
 
-    while True:
+    for _loop_counter in range(1, 1000):
         if next_token:
             params["NextToken"] = next_token
 
@@ -680,7 +680,7 @@ def describe_cen_route_maps(cen_id: str, cen_region_id: str = None,
     all_maps = []
     page_number = 1
 
-    while True:
+    for _loop_counter in range(1, 1000):
         params["PageNumber"] = str(page_number)
 
         result = _call_with_retry("cbn", "describe-cen-route-maps", params, region)
@@ -864,7 +864,7 @@ def _basic_tr_route_lookup_via_cen(cen_id: str, cen_region_id: str,
     all_entries = []
     page_number = 1
 
-    while True:
+    for _loop_counter in range(1, 1000):
         params["PageNumber"] = str(page_number)
         result = _call_with_retry("cbn", "describe-cen-region-domain-route-entries",
                                    params, cen_region_id)

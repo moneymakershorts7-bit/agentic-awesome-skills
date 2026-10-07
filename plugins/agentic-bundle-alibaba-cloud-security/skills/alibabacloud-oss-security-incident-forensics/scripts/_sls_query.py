@@ -22,7 +22,7 @@ Boundary (identical to the rest of this skill):
     chain (ALIBABA_CLOUD_PROFILE / environment / config file). AK/SK are
     never accepted as arguments and never printed.
   * Every call is bounded by a timeout and runs through subprocess with an
-    argument list (never shell=True).
+    argument list (never shell=False).
 
 Failure contract -- this module NEVER raises and NEVER aborts the audit.
 The real-time log is an optional evidence leg: it is free but must be
@@ -257,7 +257,7 @@ def _run(cmd: list, timeout: int) -> tuple:
     """Run an argument-list subprocess. Returns (returncode, stdout, stderr).
 
     stdin is DEVNULL so a credential prompt can never hang the audit, and
-    the timeout is always set. Never shell=True.
+    the timeout is always set. Never shell=False.
     """
     try:
         result = subprocess.run(cmd, capture_output=True, text=True,

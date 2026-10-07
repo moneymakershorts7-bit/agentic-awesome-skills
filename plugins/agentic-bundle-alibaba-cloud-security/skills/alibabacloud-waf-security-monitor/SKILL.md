@@ -9,24 +9,25 @@ description: 'Perform security inspection and monitoring for Alibaba Cloud WAF (
   Supports querying Web attacks, CC attacks, Bot attacks, API security events, traffic
   analysis
 
-  (QPS/bandwidth), HTTP status code anomalies (4xx/5xx period-over-period), protection
-  status,
-
-  certificate expiry, and instance asset inventory. Use this Skill when users need
-  WAF security
-
-  inspection, protection status checks, attack event queries, traffic anomaly investigation,
-
-  or to confirm whether WAF products are provisioned.
-
-  Triggers: "WAF inspection", "WAF security check", "Web attack query", "traffic anomaly",
-  "certificate check"'
+  (QPS/bandwidth), H...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # WAF Security Product Inspection & Monitoring
@@ -39,7 +40,7 @@ This skill performs comprehensive security inspection for Alibaba Cloud WAF 3.0 
 
 **Pre-check: Aliyun CLI >= 3.3.3 required**
 > Run `aliyun version` to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to install/update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see [references/cli-installation-guide.md](references/cli-installation-guide.md) for installation instructions.
 
 **Pre-check: Aliyun CLI plugin update required**
@@ -217,7 +218,7 @@ echo "[PHASE 1-2-3 DONE] Instances: cn-hangzhou=${REGION_INSTANCES[cn-hangzhou]}
 
 > **All code blocks 4.1-4.5 should execute regardless of prior results**, because each inspection dimension is independent.
 > - Error in call N: log the error and immediately execute call N+1.
-> - Every call must include `--user-agent "$ALIBABA_CLOUD_USER_AGENT"` flag.
+> - Every call specifies `--user-agent "$ALIBABA_CLOUD_USER_AGENT"` flag.
 > - Every call: `RESULT=$(aliyun waf-openapi <cmd> --region $region --user-agent "$ALIBABA_CLOUD_USER_AGENT" ... 2>&1); echo "$RESULT" >> /tmp/waf_skill_output.log`
 > - Loop: `for region in cn-hangzhou ap-southeast-1; do for instance_id in ${REGION_INSTANCES[$region]}; do`
 > - After each region completes 4.1-4.5, print: `echo "[CHECKPOINT] region=$region ALL phases done"`
@@ -379,7 +380,7 @@ See [references/verification-method.md](references/verification-method.md) for d
 
 1. Always query both WAF business regions (cn-hangzhou, ap-southeast-1) independently
 2. Use `--region` only -- never `--region-id` or `--biz-region-id`
-3. Every `aliyun waf-openapi` command must include `--user-agent "$ALIBABA_CLOUD_USER_AGENT"`
+3. Every `aliyun waf-openapi` command specifies `--user-agent "$ALIBABA_CLOUD_USER_AGENT"`
 4. Use python3 for JSON extraction, never grep/sed/awk on API responses
 5. Filter defense templates by `DefenseScene=bot_manager` only -- all other scenes return errors
 6. Execute all inspection phases regardless of prior errors -- each dimension is independent

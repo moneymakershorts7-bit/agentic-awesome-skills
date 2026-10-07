@@ -3,14 +3,25 @@ name: alibabacloud-cas-ssl-cert-deploy
 description: Deploy SSL certificates to Alibaba Cloud products (CDN/SLB/WAF/ALB/NLB/OSS/ESA,
   etc.). One-click or batch deployment via CAS DeploymentJob API, with progress tracking,
   failure diagnosis, rollback, and HTTPS verification. Activate when user says "deploy
-  certificate to CDN", "deploy to SLB", "one-click deploy certificate", "push certificate
-  to cloud", "部署证书到 CDN", "部署到 SLB", "一键部署证书", "证书推送到云产品".
+  certificate to CDN", "deploy to SLB", "one...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Deploy Certificate to Alibaba Cloud Products (SSL-4a)
@@ -91,7 +102,7 @@ Match this skill when the user expresses any of the following intents:
 
 **Pre-check: Aliyun CLI >= 3.3.3 required**
 > [MUST] Verify: `aliyun version` — must be >= 3.3.3.
-> - **First install or major upgrade (download → review → run; never pipe remote scripts directly into bash):** `curl -fsSL --connect-timeout 10 --max-time 120 -o "$HOME/aliyun-cli-setup.sh" https://aliyuncli.alicdn.com/setup.sh` → inspect the downloaded script (e.g. `head -50 "$HOME/aliyun-cli-setup.sh"`) → execute `bash "$HOME/aliyun-cli-setup.sh"`
+> - **First install or major upgrade (download → review → run; never pipe remote scripts directly into bash):** `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > - **Routine update (CLI >= 3.3.5):** `aliyun upgrade` — prefer this built-in self-update over re-running the install script.
 > - See `references/cli-installation-guide.md` for full installation instructions.
 

@@ -9,32 +9,25 @@ description: 'Alibaba Cloud ECS snapshot-based cross-AZ disaster recovery skill.
   multi-disk uses snapshot consistency group for crash consistency, creates full custom
   image
 
-  (system + data disks), launches new instance in target AZ; single-disk uses individual
-  snapshot.
-
-  Scenario B (Disk-Level Recovery): Snapshot specific disks from source instance,
-
-  create new disks from snapshots, and attach them to an existing target instance.
-
-  Triggers: cross-AZ disaster recovery, cross-zone backup, ECS snapshot recovery,
-
-  snapshot backup, DR recovery, create instance from snapshot in another AZ,
-
-  attach disk snapshot to another instance, create instance replica via snapshot.
-
-  可用区灾备恢复、跨可用区备份、ECS 快照恢复、快照备份、灾备恢复、
-
-  在另一个可用区从快照创建实例、把盘快照挂载到其他实例、用快照在另一个可用区创建实例副本、
-
-  恢复这台机器到另一个可用区、跨实例磁盘备份。
-
-  Note: This is "backup" not "migration" — the original instance remains untouched.'
+  (system + data disks), launch...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # ECS Snapshot-Based Disaster Recovery Backup
@@ -72,7 +65,7 @@ Once the scenario is determined, follow the corresponding workflow below.
 >
 > 1. Run `aliyun version` to check if CLI is installed and its version.
 > 2. If CLI is **not installed** (command not found): inform the user and ask whether to install it.
->    Only after user confirmation, download the installer with `curl -fsSL --connect-timeout 10 --max-time 60 https://aliyuncli.alicdn.com/setup.sh -o /tmp/aliyun_cli_setup.sh`,
+>    Only after user confirmation, download the installer with `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 >    then run `bash /tmp/aliyun_cli_setup.sh` to execute the downloaded script.
 > 3. If CLI is installed but **version < 3.3.3**: inform the user of the current version and the minimum requirement,
 >    then ask whether to upgrade. Only after user confirmation, run the upgrade command.

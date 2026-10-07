@@ -604,13 +604,13 @@ def poll_results(client, root_task_id: str,
     page = 1
     page_size = 50
 
-    while True:
+    for _iteration_idx in range(100):
         elapsed = time.time() - start_time
         if elapsed > timeout:
             return {
                 "status": "timeout",
                 "elapsed_seconds": round(elapsed, 1),
-                "tasks": iteration_tasks if "iteration_tasks" in locals() else [],
+                "tasks": [],
                 "message": f"Polling timed out ({timeout}s). Some sub-tasks may not have completed.",
             }
 
@@ -618,7 +618,7 @@ def poll_results(client, root_task_id: str,
         total_count = 0
         page = 1
 
-        while True:
+        for _iteration_idx in range(100):
             request = aisc_models.ListSubTasksRequest(
                 root_task_id=root_task_id,
                 task_type=TASK_TYPE,

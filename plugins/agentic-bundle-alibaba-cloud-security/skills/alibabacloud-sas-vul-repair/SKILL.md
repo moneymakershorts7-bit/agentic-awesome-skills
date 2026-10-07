@@ -3,22 +3,25 @@ name: alibabacloud-sas-vul-repair
 description: 'Alicloud Service Scenario-Based Skill. Use for the vulnerability module
   of Alibaba Cloud Security Center (SAS): querying and filtering vulnerabilities (by
   severity/type/asset/status), triggering vulnerability repair and post-fix re-verification,
-  interpreting repair failure error codes (8009, 8037, 9003, etc.) with repository
-  and network troubleshooting, handling "fixed but still detected" status refresh,
-  and manual repair guidance for non-standard systems (self-compiled kernels, non-Alibaba-Cloud
-  hosts, offline environments, custom images, EOL systems).
-
-  Triggers: "Security Center vulnerability", "vulnerability repair", "vulnerability
-  fix", "fix failed", "repair failed", "vulnerability error code", "fixed but still
-  detected", "re-verify vulnerability", "unfixed vulnerability list", "self-compiled
-  kernel", "manual vulnerability fix", "CVE", "漏洞修复", "修复失败", "漏洞错误码", "已修复仍检出", "重新验证漏洞",
-  "漏洞复检", "未修复漏洞清单", "yum 源超时", "自编译内核", "手动修复漏洞".'
+  interpreting repair failure error codes (8009, 80...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # SAS Vulnerability Repair
@@ -37,7 +40,7 @@ Security Center (SAS) + Server Assets (Alibaba Cloud ECS / Non-Alibaba Cloud hos
 
 **Pre-check: Aliyun CLI >= 3.3.3 required**
 > [MUST] Verify: `aliyun version` — must be >= 3.3.3.
-> - **First install or major upgrade:** `curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh`
+> - **First install or major upgrade:** `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > - **Routine update (CLI >= 3.3.5):** `aliyun upgrade` — prefer this built-in self-update over re-running the install script.
 > - See [references/cli-installation-guide.md](references/cli-installation-guide.md) for full installation instructions.
 

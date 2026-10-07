@@ -1,18 +1,27 @@
 ---
-name: grant-data-source-permission
+name: alibabacloud-grant-data-source-permission
 description: 给项目生产账号（PRODUCE）授权数据源 SYNC_READ/SYNC_WRITE，是发布到生产的前置条件。 触发场景：发布失败报 DsRead/DsWrite
   / DATA_SOURCE_AUTH_NO_PERMISSION / 给生产账号授权 / 数据源权限不足 / PublishStatus=0 且 ErrorMessage
   含权限报错 / grant-resource-permission / 发布生效校验。 完整流程：get-project-produce-user → grant-resource-permission
-  → publish-object-list → list-publish-records(PublishStatus=1) → list-nodes --env
-  PROD(HasProd=true)。 关键限制：effective-end 必须 yyyy-MM-dd HH:mm:ss 字符串；DATASOURCE.RUN
-  不能授给 PRODUCE 账号（OpenAPI 限制）。 触发词：发布失败、DsRead、DsWrite、DATA_SOURCE_AUTH_NO_PERMISSION、数据源授权、生产账号授权、grant-resource-permission、PublishStatus=0、发布生效校验、PRODUCE
-  账号。
+  → publish-object-list → l...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # 数据源授权给生产账号 skill

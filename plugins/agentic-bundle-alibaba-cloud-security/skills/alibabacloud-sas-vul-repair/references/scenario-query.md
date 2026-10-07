@@ -14,7 +14,7 @@ Example user phrasings (enter this scenario when any matches):
 
 ## Prerequisites
 
-1. CLI and credential checks, session-id generation: see SKILL.md (Observability section). All API commands must include `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-sas-vul-repair/<session-id>`.
+1. CLI and credential checks, session-id generation: see SKILL.md (Observability section). All API commands specifies `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-sas-vul-repair/<session-id>`.
 2. All operations in this scenario are read operations — execute directly; state the query intent to the user in one sentence before execution.
 3. Clarify the query scope: confirm the four dimensions — vulnerability type (Type), severity (Necessity), status (Status), asset (Uuids/Remark) — with the user first; never assume default values.
 

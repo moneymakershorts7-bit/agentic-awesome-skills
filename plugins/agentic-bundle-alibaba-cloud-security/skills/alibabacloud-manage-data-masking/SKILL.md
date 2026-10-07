@@ -1,5 +1,5 @@
 ---
-name: manage-data-masking
+name: alibabacloud-manage-data-masking
 description: '管理 Dataphin 数据脱敏规则配置的需求拆解、前置分类分级检查和公开 API 覆盖边界。
 
   当用户要给手机号、身份证号、邮箱、姓名等敏感字段配置掩码、加密、哈希、保留首尾、白名单绕过或验证查询脱敏效果时进入。
@@ -8,11 +8,23 @@ description: '管理 Dataphin 数据脱敏规则配置的需求拆解、前置�
 
   关键限制：当前 dataphin-public CLI 和版本感知 OpenAPI 索引未暴露脱敏规则 CRUD；本 Skill 不伪造内部 REST 为外部命令，只执行公开分类分级前置检查并输出可交付参数清单。'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # 数据脱敏规则配置 Skill

@@ -14,7 +14,7 @@ Example user phrasings (enter this scenario when any matches):
 
 ## Prerequisites
 
-1. CLI and credential checks, session-id generation: see SKILL.md. All API commands must include `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-sas-vul-repair/<session-id>`.
+1. CLI and credential checks, session-id generation: see SKILL.md. All API commands specifies `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-sas-vul-repair/<session-id>`.
 2. Write operations (verify, ignore, scan) must be confirmed with the user first; the impact scope must be explained before triggering a full scan.
 3. Query the current status before explaining anything (do not draw conclusions from the user's description alone) — see Step 1 of the handling action flow.
 

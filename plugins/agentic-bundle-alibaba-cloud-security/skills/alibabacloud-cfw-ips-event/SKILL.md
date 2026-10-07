@@ -3,18 +3,25 @@ name: alibabacloud-cfw-ips-event
 description: Query and analyze security events and alerts detected by Alibaba Cloud
   Firewall IPS (Intrusion Prevention System), helping quickly locate threats and provide
   remediation recommendations. Triggers when user mentions IPS alerts, intrusion detection,
-  intrusion prevention, attack events, security alerts, threat detection, attack analysis,
-  IDS/IPS, being attacked, any attacks, security incidents, security warnings, server
-  under attack, machine alarms. Also triggers when user asks about "any recent attacks",
-  "which assets were attacked", "does this IP have attack behavior", "security alerts
-  for a specific server/machine", "which IPs attacked a specific IP", even without
-  explicitly saying "IPS".
+  intrusion prevention, attack events, security a...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # IPS Alert Event Analysis
@@ -49,7 +56,7 @@ Query and analyze IPS (Intrusion Prevention System) security events and alerts d
 
 > **Pre-check: Aliyun CLI >= 3.3.3 required**
 > Run `aliyun version` to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to install/update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see `references/cli-installation-guide.md` for installation instructions.
 
 > **Pre-check: Aliyun CLI plugin update required**
@@ -179,7 +186,7 @@ If Step 1 (`DescribeRiskEventStatistic`) returns all zeros:
 
 The workflow steps have these dependencies:
 - **Step 1 (Statistics)** should run first to provide context.
-- **Steps 2-7 are independent of each other** — failure in any one step should NOT prevent other steps from executing.
+- **Steps 2-7 are independent of each other** — failure in any one step allows independent execution across steps.
 
 ### Partial Results
 
@@ -195,7 +202,7 @@ When presenting the final summary report:
 All API calls use the Aliyun CLI `cloudfw` plugin.
 Request/response schemas are maintained only in [references/api-analysis.md](references/api-analysis.md). Do not duplicate field-by-field descriptions in this file.
 
-**User-Agent**: All commands must include `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-cfw-ips-event`
+**User-Agent**: Required option: `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-cfw-ips-event`
 **Region**: Specified via `--region {RegionId}` global flag
 
 > **CRITICAL: This skill is read-only (query only).** All commands below are safe, read-only queries that do not modify any cloud resources.

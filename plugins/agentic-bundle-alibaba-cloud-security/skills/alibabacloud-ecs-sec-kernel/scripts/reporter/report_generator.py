@@ -1,3 +1,4 @@
+from pathlib import Path
 """
 ReportGenerator
 
@@ -79,20 +80,16 @@ class ReportGenerator:
                                               poc_enabled, cve_metadata)
             filename = "sec-kernel-report.md"
 
-        filepath = os.path.join(output_dir, filename)
+        out_path = Path(output_dir) / filename
         try:
-            with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(content)
+            out_path.write_text(content, encoding='utf-8')
+            filepath = str(out_path)
         except (PermissionError, OSError):
-            # File already exists and cannot be overwritten, use timestamped filename
             ts = time.strftime("%Y%m%d_%H%M%S")
             base, ext = os.path.splitext(filename)
-            filename = f"{base}_{ts}{ext}"
-            filepath = os.path.join(output_dir, filename)
-            with open(filepath, 'w', encoding='utf-8') as f:
-                f.write(content)
-
-        # Transfer file ownership to the calling user
+            out_path = Path(output_dir) / f"{base}_{ts}{ext}"
+            out_path.write_text(content, encoding='utf-8')
+            filepath = str(out_path)
         chown_to_caller(filepath)
         logger.info(f"Report generated: {filepath}")
         return filepath

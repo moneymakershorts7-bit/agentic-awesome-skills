@@ -3,7 +3,7 @@
 ## Install / Update
 
 ```bash
-curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+# Install Alibaba Cloud CLI via official package manager or aliyun.com
 ```
 
 Verify:
@@ -52,7 +52,7 @@ brew install aliyun-cli
 
 ```bash
 # x86_64
-curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+# Install Alibaba Cloud CLI via official package manager or aliyun.com
 
 # aarch64
 curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup_arm64.sh && bash /tmp/setup.sh

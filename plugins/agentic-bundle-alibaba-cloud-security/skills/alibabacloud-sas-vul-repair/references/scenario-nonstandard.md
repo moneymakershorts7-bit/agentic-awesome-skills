@@ -14,7 +14,7 @@ Example user phrasings (enter this scenario when any matches):
 
 ## Prerequisites
 
-1. CLI and credential checks, session-id generation: see SKILL.md. All API commands must include `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-sas-vul-repair/<session-id>`.
+1. CLI and credential checks, session-id generation: see SKILL.md. All API commands specifies `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-sas-vul-repair/<session-id>`.
 2. Manual repair commands must come primarily from the UpdateCmd/Solution returned by the API (real data); giving generic commands from experience alone is forbidden.
 3. High-risk server-side operations in this scenario (kernel uninstallation, force fix, grub modification) require a snapshot and user confirmation first.
 

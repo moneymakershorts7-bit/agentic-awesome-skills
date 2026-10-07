@@ -1,7 +1,7 @@
 """Cilium Evasion Detection Module
 
 Detects sophisticated evasion techniques where attackers leverage Cilium/eBPF capabilities
-to bypass security controls or execute attacks.
+to verify security controls or execute attacks.
 
 Components:
 - eBPF-based Container Escape Detection

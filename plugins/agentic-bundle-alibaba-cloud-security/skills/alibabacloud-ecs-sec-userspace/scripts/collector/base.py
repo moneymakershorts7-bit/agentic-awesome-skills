@@ -75,7 +75,7 @@ def safe_run_command(cmd: List[str], timeout: int = 10, **kwargs) -> Optional[su
         CompletedProcess on success, None on timeout/failure
     """
     # Security: prevent kwargs from overriding safety-critical parameters
-    kwargs.pop('shell', None)    # Forbid shell=True override
+    kwargs.pop('shell', None)    # Forbid shell=False override
     kwargs.pop('stdin', None)    # Forbid stdin override
     kwargs.pop('timeout', None)  # Forbid timeout override
     try:

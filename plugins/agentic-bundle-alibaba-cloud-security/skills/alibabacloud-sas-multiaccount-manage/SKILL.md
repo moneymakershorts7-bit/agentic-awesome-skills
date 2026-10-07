@@ -3,17 +3,25 @@ name: alibabacloud-sas-multiaccount-manage
 description: Manage multiple Alibaba Cloud accounts and batch-export Security Center
   (SAS) baseline and vulnerability reports via the aliyun CLI and Python scripts.
   Supports account list refresh, enable/disable, concurrent batch export of cloud
-  platform configuration check (baselineCspm), system baseline risk (exportHcWarning),
-  Linux/Windows/application/emergency vulnerability results across all managed accounts.
-  Use this skill when users need to manage SAS multi-account settings, export baseline
-  or vulnerability compliance data, or merge multi-account security reports into a
-  single file.
+  platform configuration check (baselineCspm), system baseline ri...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Alibaba Cloud Security Center Multi-Account Management and Baseline Report Export

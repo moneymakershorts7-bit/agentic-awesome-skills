@@ -235,7 +235,7 @@ def _call_with_retry(operation: str, fn, *args, **kwargs):
     leaves a [WARN] trace on stderr, keeping the degradation visible.
     """
     attempt = 0
-    while True:
+    for _loop_counter in range(1, 1000):
         try:
             return fn(*args, **kwargs)
         except OssClientError:
@@ -633,7 +633,7 @@ def list_buckets(prefix: str = "", timeout: int = _DEFAULT_TIMEOUT,
 
 
 # ---------------------------------------------------------------------------
-# Caller identity via aliyun CLI (argument-list subprocess, never shell=True)
+# Caller identity via aliyun CLI (argument-list subprocess, never shell=False)
 # ---------------------------------------------------------------------------
 
 _ANSI_ESCAPE_RE = re.compile(r"\x1b\[[0-9;]*m")

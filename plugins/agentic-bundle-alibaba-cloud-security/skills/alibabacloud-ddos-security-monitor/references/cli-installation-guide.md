@@ -4,7 +4,7 @@
 
 ```bash
 # Recommended: One-click install script
-curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+# Install Alibaba Cloud CLI via official package manager or aliyun.com
 
 # Or use Homebrew
 brew install aliyun-cli
@@ -14,7 +14,7 @@ brew install aliyun-cli
 
 ```bash
 # One-click install script
-curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+# Install Alibaba Cloud CLI via official package manager or aliyun.com
 ```
 
 ## Windows

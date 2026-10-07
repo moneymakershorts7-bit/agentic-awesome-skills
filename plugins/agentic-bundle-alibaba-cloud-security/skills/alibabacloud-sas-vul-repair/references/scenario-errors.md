@@ -14,7 +14,7 @@ Example user phrasings (enter this scenario when any matches):
 
 ## Prerequisites
 
-1. CLI and credential checks, session-id generation: see SKILL.md. All API commands must include `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-sas-vul-repair/<session-id>`.
+1. CLI and credential checks, session-id generation: see SKILL.md. All API commands specifies `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-sas-vul-repair/<session-id>`.
 2. Confirm the failure occurred in a "one-click repair" (Linux software vulnerabilities cve / Windows system vulnerabilities sys) scenario; application vulnerabilities (app/sca) and emergency vulnerabilities (emg) never support one-click repair — route directly to the manual repair path in references/scenario-repair.md.
 3. Query commands in this scenario are read operations — execute directly; re-repair is a write operation requiring user confirmation, and auto-retry is forbidden.
 

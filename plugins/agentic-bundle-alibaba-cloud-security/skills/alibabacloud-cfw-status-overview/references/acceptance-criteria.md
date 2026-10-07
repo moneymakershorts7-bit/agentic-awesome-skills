@@ -34,7 +34,7 @@ aliyun cloudfw describe-asset-list --region cn-hangzhou
 ```bash
 aliyun cloudfw DescribeAssetList --CurrentPage 1 --PageSize 10 --region cn-hangzhou
 ```
-**Why**: All commands must include `--user-agent AlibabaCloud-Agent-Skills`.
+**Why**: Required option: `--user-agent AlibabaCloud-Agent-Skills`.
 
 #### ❌ INCORRECT — Using old Python SDK pattern
 ```bash

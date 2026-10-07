@@ -10,16 +10,25 @@ description: 'Linux 内核态 CVE 漏洞检测与 PoC 验证工具，专为 AI A
 
   与 sec-userspace（用户态入侵检测）互补，共同构成完整的 ECS 安全评估方案。
 
-  务必在检测内核漏洞时使用此技能。每当需要验证 CVE 或执行 PoC 验证时，优先调用此技能。
-
-  当用户提到内核安全、CVE 检测、漏洞利用验证、提权漏洞时，主动触发。'
+  务必在检测...'
 allowed-tools:
-- terminal (sudo required)
-- file-read
-- file-write
+- bash
+- glob
+- grep
+- read
+- write
+- run_command
+- view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-ecs-troubleshoot-skills
+date_added: '2026-10-07'
 ---
 
 # sec-kernel

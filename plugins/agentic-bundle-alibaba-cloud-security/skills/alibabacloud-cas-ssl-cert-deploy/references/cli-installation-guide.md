@@ -12,7 +12,7 @@ Download the installer, review it, then execute — works on both macOS and Linu
 
 ```bash
 # 1. Download the official installer script
-curl -fsSL --connect-timeout 10 --max-time 120 -o "$HOME/aliyun-cli-setup.sh" https://aliyuncli.alicdn.com/setup.sh
+# Install Alibaba Cloud CLI via official package manager or aliyun.com
 # 2. Review the script content before executing
 head -50 "$HOME/aliyun-cli-setup.sh"
 # 3. Execute after review

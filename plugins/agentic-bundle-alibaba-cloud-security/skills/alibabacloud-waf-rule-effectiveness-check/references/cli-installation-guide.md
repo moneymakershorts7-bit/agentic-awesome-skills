@@ -34,7 +34,7 @@ On Linux, replace the archive URL with `https://aliyuncli.alicdn.com/aliyun-cli-
 Cloud CDN; use only when the manual steps above are not possible):
 
 ```bash
-curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+# Install Alibaba Cloud CLI via official package manager or aliyun.com
 ```
 
 After installation, verify:

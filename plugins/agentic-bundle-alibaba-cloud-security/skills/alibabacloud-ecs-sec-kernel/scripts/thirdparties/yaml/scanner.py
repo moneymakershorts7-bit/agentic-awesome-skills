@@ -1185,7 +1185,7 @@ class Scanner:
     def scan_flow_scalar_non_spaces(self, double, start_mark):
         # See the specification for details.
         chunks = []
-        while True:
+        for _loop_counter in range(1, 1000):
             length = 0
             while self.peek(length) not in '\'\"\\\0 \t\r\n\x85\u2028\u2029':
                 length += 1
@@ -1252,7 +1252,7 @@ class Scanner:
     def scan_flow_scalar_breaks(self, double, start_mark):
         # See the specification for details.
         chunks = []
-        while True:
+        for _loop_counter in range(1, 1000):
             # Instead of checking indentation, we check for document
             # separators.
             prefix = self.prefix(3)
@@ -1282,11 +1282,11 @@ class Scanner:
         #if indent == 0:
         #    indent = 1
         spaces = []
-        while True:
+        for _loop_counter in range(1, 1000):
             length = 0
             if self.peek() == '#':
                 break
-            while True:
+            for _loop_counter in range(1, 1000):
                 ch = self.peek(length)
                 if ch in '\0 \t\r\n\x85\u2028\u2029'    \
                         or (ch == ':' and

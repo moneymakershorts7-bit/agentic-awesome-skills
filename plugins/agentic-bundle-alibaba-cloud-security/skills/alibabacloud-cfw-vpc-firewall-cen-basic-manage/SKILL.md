@@ -1,21 +1,27 @@
 ---
 name: alibabacloud-cfw-vpc-firewall-cen-basic-manage
-description: 'Manage Cloud Firewall (CFW) VPC border firewalls on CEN Basic Edition
+description: Manage Cloud Firewall (CFW) VPC border firewalls on CEN Basic Edition
   (transit-router-type Basic) on Alibaba Cloud. Use this Skill to inventory the VPC
   firewall slots and their diversion switch status, onboard or offboard a business
-  VPC, toggle traffic diversion, and troubleshoot stuck firewall states. Only for
-  CEN Basic Edition, not the Enterprise transit router, access-control policies, or
-  manual routing. 管理阿里云云防火墙（CFW）基于云企业网 CEN 基础版的 VPC 边界防火墙； 仅适用于基础版，不涉及企业版转发路由器、访问控制策略与手动路由模式。
-  Triggers: list VPC firewall slots, check VPC firewall diversion switch status, inspect
-  VPC firewall detail and defended CIDR, run the VPC firewall pre-access check, attach
-  a business VPC to the firewall, open or close traffic diversion, rename a VPC firewall,
-  remove a VPC firewall access configuration, query available firewall zone pairs,
-  diagnose a VPC firewall stuck opening or closing, 查看 CEN 基础版 VPC 墙清单与引流开关状态, 为业务
-  VPC 接入防火墙, 打开或关闭引流, 给 VPC 防火墙改名, 移除 VPC 接入配置, 排查开墙预检查失败或任务卡住'
-allowed-tools: Bash Read
+  VPC, toggle traffic diversion, and troubleshoot stuck firewall...
+allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
+- run_command
+- view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 ## 1. Scenario Description
@@ -57,7 +63,7 @@ Different VPCs, usually different zones.
 
 > Verify: `aliyun version` — must be >= 3.3.3.
 > - First install or major upgrade:
->   `curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh`
+>   `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > - Routine update (CLI >= 3.3.5): `aliyun upgrade`
 > - Alternative on macOS: `brew install aliyun-cli` / `brew upgrade aliyun-cli`
 > - See `references/cli-installation-guide.md` for full instructions.

@@ -234,7 +234,7 @@ def fetch_all_risk_rules():
     all_items = []
     current_page = 1
     
-    while True:
+    for _loop_counter in range(1, 1000):
         response = describe_risk_rules(current_page)
         body = response.get('body', {})
         items = body.get('Items', [])

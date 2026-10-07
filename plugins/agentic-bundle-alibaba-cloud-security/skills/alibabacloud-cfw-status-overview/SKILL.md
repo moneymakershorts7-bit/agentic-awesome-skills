@@ -5,15 +5,25 @@ description: 'Alibaba Cloud Firewall Status Overview Skill. One-click query of o
   and traffic overview.
 
   Triggers: "cloud firewall status", "firewall overview", "firewall status overview",
-  "asset management", "protection coverage", "what is the overall cloud firewall status",
-  "how many assets are not managed", "what is the protection coverage for each boundary",
-  "CFW status", "cloud firewall overview"'
+  "asset management", "protection cov...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Cloud Firewall Status Overview
@@ -56,7 +66,7 @@ One-click query of Alibaba Cloud Firewall overall status, including asset manage
 
 **Pre-check: Aliyun CLI >= 3.3.3 required**
 > Run `aliyun version` to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to install/update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see `references/cli-installation-guide.md` for installation instructions.
 
 **Pre-check: Aliyun CLI plugin update required**

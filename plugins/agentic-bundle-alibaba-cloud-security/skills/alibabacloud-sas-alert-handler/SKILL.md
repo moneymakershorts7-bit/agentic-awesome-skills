@@ -5,13 +5,25 @@ description: 'Alibaba Cloud Security Center (SAS) CWPP host security alert handl
   Center.
 
   Triggers: "security alert", "alert handling", "CWPP alert", "Cloud Security Center
-  alert", "SAS alert", "Aegis alert", "view alerts", "handle alerts"'
+  alert", "SAS alert", "Aegis alert", "view alerts...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Cloud Security Center CWPP Alert Handling Skill
@@ -34,7 +46,7 @@ This skill helps users query and handle CWPP host security alerts from Alibaba C
 
 **Pre-check: Aliyun CLI >= 3.3.3 required**
 > Run `aliyun version` to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see `references/cli-installation-guide.md` for installation instructions.
 
 **Pre-check: Aliyun CLI plugin update required**

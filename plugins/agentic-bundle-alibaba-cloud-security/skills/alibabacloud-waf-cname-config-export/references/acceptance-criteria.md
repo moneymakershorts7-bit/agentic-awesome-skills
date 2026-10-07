@@ -90,7 +90,7 @@ def run_cli(args, cli_profile=None):
 ```python
 def query_domains(instance_id, region, cli_profile=None):
     all_domains, page = [], 1
-    while True:
+    for _loop_counter in range(1, 1000):
         data = run_cli([
             "waf-openapi", "describe-domains",
             "--region", region, "--instance-id", instance_id,

@@ -5,11 +5,23 @@ description: 查询阿里云四款安全产品（云安全中心 / WAF / 云防�
   Skill。基于 avd.aliyun.com 高危漏洞库的离线快照（1697 条记录，覆盖 2002–2026 年），运行时纯本地 grep 查询，不联网、不调用浏览器、不需要任何凭证。也支持批量比对一组
   CVE。
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # alibabacloud-security-vuln-coverage-check

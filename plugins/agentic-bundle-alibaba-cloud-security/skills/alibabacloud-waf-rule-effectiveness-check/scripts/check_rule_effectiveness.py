@@ -88,7 +88,7 @@ def get_template(instance_id, region, template_id, session_id):
 def get_template_resources(instance_id, region, template_id, resource_type, session_id):
     """Page through DescribeTemplateResources and return the full name list."""
     names, next_token = [], None
-    while True:
+    for _loop_counter in range(1, 1000):
         args = ["describe-template-resources", "--biz-region-id", region,
                 "--instance-id", instance_id, "--template-id", str(template_id),
                 "--resource-type", resource_type, "--max-results", "500"]

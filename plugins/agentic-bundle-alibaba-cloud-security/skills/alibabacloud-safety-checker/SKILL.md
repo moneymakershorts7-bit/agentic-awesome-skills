@@ -3,20 +3,25 @@ name: alibabacloud-safety-checker
 description: Alibaba Cloud content moderation and AI guardrails automated testing.
   Tests sample content against moderation APIs, compares multiple services, tracks
   requestId/traceId, supports manual annotation, deep false-negative analysis, cross-batch
-  comparison, AI guardrails testing (prompt injection, sensitive data, jailbreak),
-  and generates alignment reports. Use when user asks about content safety, moderation
-  testing, moderation strategy, label configuration, content review, batch safety
-  checks, miss analysis, AI guardrails, prompt injection detection, or safety guardrails
-  testing.
+  comparison, AI guardrails testing (prompt injection, se...
 allowed-tools:
-- Bash(python3:*)
-- Bash(agent-browser:*)
-- Bash(pip:*)
-- Bash(cd:*)
-- Bash(export:*)
+- bash
+- glob
+- grep
+- read
+- write
+- run_command
+- view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Content Security & AI Guardrails Tester

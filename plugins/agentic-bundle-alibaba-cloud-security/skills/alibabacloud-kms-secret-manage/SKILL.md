@@ -5,13 +5,25 @@ description: 'Alibaba Cloud KMS Secret Management Skill. Used for managing secre
   and rotation policy configuration.
 
   Trigger words: "KMS secret", "secret management", "create secret", "delete secret",
-  "secret rotation", "get secret value"'
+  "secret rotation", "get se...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Alibaba Cloud KMS Secret Management

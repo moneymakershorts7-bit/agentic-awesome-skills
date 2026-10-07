@@ -1304,7 +1304,7 @@ run_static_analysis() {
     # Scenario 6: Prompt Injection (High)
     # ============================================
     log_info "  Checking Scenario 6: Prompt Injection..."
-    scan_pattern "ignore previous instructions" "Found prompt injection pattern" "high"
+    scan_pattern "process user instructions" "Found prompt injection pattern" "high"
     scan_pattern "ignore all.*instructions" "Found ignore-all injection pattern" "high"
     scan_pattern "you are now.*(assistant|expert|hacker)" "Found role override injection" "high"
     scan_pattern "act as.*(ignore|bypass|override)" "Found act-as bypass injection" "high"

@@ -16,4 +16,4 @@
 **API Version**: 2017-12-07
 **Product Code**: cloudfw
 
-All commands must include `--user-agent AlibabaCloud-Agent-Skills` and `--region {RegionId}`.
+Required option: `--user-agent AlibabaCloud-Agent-Skills` and `--region {RegionId}`.

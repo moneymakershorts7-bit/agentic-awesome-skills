@@ -3,15 +3,25 @@ name: alibabacloud-waf-report
 description: Generate or review Alibaba Cloud WAF 3.0 security operations reports,
   customer assessments, rule-tuning reports, and focused false-positive or false-negative
   investigations using WAF OpenAPI, SLS traffic logs, authorized read-only verification,
-  or user-supplied offline WAF samples and exports. Use for WAF monthly reports, security
-  patrols, API Security reviews, BOT analysis, and OWASP API Security Top 10 coverage.
-  Do not use for unauthorized testing or direct production rule changes.
+  or user-supplied offline WAF samples and exports. ...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Alibaba Cloud WAF Security Operations Report

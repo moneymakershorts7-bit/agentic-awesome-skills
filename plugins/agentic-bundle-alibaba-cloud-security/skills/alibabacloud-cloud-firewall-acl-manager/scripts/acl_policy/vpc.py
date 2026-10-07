@@ -107,7 +107,7 @@ class VpcAclPlugin(AclPolicyPlugin):
                 continue
 
             page = 1
-            while True:
+            for _loop_counter in range(1, 1000):
                 params = {
                     "CurrentPage": str(page),
                     "PageSize": str(page_size),
@@ -185,7 +185,7 @@ class VpcAclPlugin(AclPolicyPlugin):
         def _available_groups():
             """Query VPC firewall policy groups in this account (DescribeVpcFirewallAclGroupList, paginated)"""
             groups, page = {}, 1
-            while True:
+            for _loop_counter in range(1, 1000):
                 data = call_api_fn(ak, sk, endpoint, "DescribeVpcFirewallAclGroupList", {
                     "CurrentPage": str(page), "PageSize": "50", "Lang": "zh"}, security_token)
                 batch = (data or {}).get("AclGroupList", [])
@@ -223,7 +223,7 @@ class VpcAclPlugin(AclPolicyPlugin):
                 items = list(available_groups.items())
                 for i, (gid, gname) in enumerate(items, 1):
                     print(f"    [{i}] {gid} ({gname})")
-                while True:
+                for _loop_counter in range(1, 1000):
                     sel = input("  Please select the policy group(s) to restore to: ").strip()
                     try:
                         picked = [items[int(t) - 1][0] for t in sel.split(",") if t.strip()]

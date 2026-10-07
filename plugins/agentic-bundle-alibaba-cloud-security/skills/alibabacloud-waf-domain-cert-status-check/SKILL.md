@@ -9,32 +9,25 @@ description: 'Read-only inventory of SSL certificates bound to domains onboarded
   expired / expiring / healthy, and returns a summary table with renewal guidance
   so HTTPS is not
 
-  interrupted by a silently expiring certificate.
-
-  Use when a customer asks which WAF certificates are about to expire, wants an expiry
-  audit across
-
-  onboarded domains, worries about HTTPS breaking after expiry, or needs a periodic
-  certificate health check.
-
-  Not for: why one request was blocked, protection rule effectiveness, certificate-chain
-  / TLS handshake
-
-  troubleshooting, cloud-product-access domains (CLB / ALB / ECS), or performing the
-  renewal itself.
-
-  Triggers: "WAF证书到期", "证书快过期了吗", "证书有效期", "证书过期检查", "证书到期提醒", "证书巡检",
-
-  "证书续期", "域名证书状态", "HTTPS证书会不会断", "cert expiry check", "certificate about to expire",
-
-  "WAF certificate status", "certificate validity audit", "renew certificate before
-  expiry"'
+  in...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # WAF Domain Certificate Status Check
@@ -149,7 +142,7 @@ Customer ask: which WAF domain certificates are expired / about to expire?
 > [MUST] Verify: `aliyun version` — must be >= 3.3.3.
 > - **Preferred (no remote script execution):** download `https://aliyuncli.alicdn.com/aliyun-cli-linux-latest-amd64.tgz`
 >   (macOS: `aliyun-cli-macosx-latest-{amd64|arm64}.tgz`), `tar tzf` to inspect, `tar xzf`, `sudo mv aliyun /usr/local/bin/`.
-> - **Alternative:** `curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh`
+> - **Alternative:** `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > - **Update (CLI >= 3.3.5):** `aliyun upgrade`. Full instructions: `references/cli-installation-guide.md`.
 
 **Pre-check: Aliyun CLI plugin update required**

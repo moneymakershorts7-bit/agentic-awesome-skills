@@ -41,7 +41,7 @@ if [[ "$INSTALL_GUIDE" == "true" ]]; then
 === Alibaba Cloud CLI Installation & Setup Guide ===
 
 1. Install CLI (>= 3.3.3):
-   curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+   # Install Alibaba Cloud CLI via official package manager or aliyun.com
    Routine updates afterwards: aliyun upgrade --yes
 
 2. Verify installation:

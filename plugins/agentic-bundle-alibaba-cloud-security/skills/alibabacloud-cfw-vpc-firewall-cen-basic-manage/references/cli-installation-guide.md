@@ -22,7 +22,7 @@ Complete guide for installing and configuring Aliyun CLI.
 One command to install or update — works on both macOS and Linux, auto-detects architecture:
 
 ```bash
-curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+# Install Alibaba Cloud CLI via official package manager or aliyun.com
 ```
 
 After installation, verify:

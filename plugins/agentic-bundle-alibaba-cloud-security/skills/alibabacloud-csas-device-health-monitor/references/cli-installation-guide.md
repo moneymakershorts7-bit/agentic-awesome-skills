@@ -5,7 +5,7 @@ This skill requires Alibaba Cloud CLI 3.3.3 or later.
 For a first installation or major upgrade:
 
 ```bash
-curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+# Install Alibaba Cloud CLI via official package manager or aliyun.com
 ```
 
 For routine upgrades on CLI 3.3.5 or later:

@@ -3,15 +3,25 @@ name: alibabacloud-sas-openclaw-security
 description: Perform security operations on OpenClaw environments by calling Alibaba
   Cloud Security Center (SAS) and ECS APIs via the aliyun CLI. Supports asset queries,
   vulnerability detection, baseline checks, alert analysis, daily security report
-  generation, and Cloud Assistant command execution. Use this skill when users need
-  to query OpenClaw security status, handle security alerts, check vulnerability risks,
-  execute emergency commands, or generate security reports.
+  generation, and Cloud Assistant command execution. Use thi...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # OpenClaw Security Operations
@@ -37,7 +47,7 @@ All API calls are made through the **aliyun CLI**. Complete the following steps 
 
 **Pre-check: Aliyun CLI >= 3.3.3 required**
 > Run `aliyun version` to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to update.
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 
 **Pre-check: Aliyun CLI plugin update required**
 > [MUST] run `aliyun configure set --auto-plugin-install true` to enable automatic plugin installation.

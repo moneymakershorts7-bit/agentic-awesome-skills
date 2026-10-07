@@ -1,5 +1,5 @@
 ---
-name: manage-data-classification
+name: alibabacloud-manage-data-classification
 description: '管理 Dataphin 数据分级、数据分类目录、数据分类和字段级安全识别结果。
 
   当用户要把手机号、身份证号、姓名、薪资等字段标记为 C1/C2/C3/C4 或 L1/L2/L3/L4，创建或调整分类分级体系，查询字段当前分类分级标签，或批量启停/删除识别结果时进入。
@@ -7,14 +7,25 @@ description: '管理 Dataphin 数据分级、数据分类目录、数据分类�
   触发词：数据分级分类、分类分级、数据分类、数据分级、安全等级、敏感数据标签、识别结果、identify result、security classify、security
   level、C1、C2、C3、C4、L1、L2、L3、L4。
 
-  关键限制：公共 OpenAPI 管理的是分级、分类、识别结果三层对象；字段打标用 create-security-identify-result；批量覆盖需确认
-  conflict-strategy；写操作需 HITL 确认。'
+  关键限制：公共 OpenAPI 管理的是分级、分类、识别结果三层对象；字段打标用 cre...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # 数据分级分类 Skill

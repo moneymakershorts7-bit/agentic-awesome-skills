@@ -162,7 +162,7 @@ aliyun cloudfw create-vpc-firewall-cen-configure \
 
 # ❌ treating a slot that left the list as a timeout during removal. Absence is the
 #    same end state as notconfigured there - though not during a switch, where it
-#    means the id or the filter is wrong
+#    means the id or the filter is invalid
 
 # ❌ treating ErrorPreCheckDoing as a failure. It arrives as HTTP 400 with a
 #    non-zero exit, but it means the precheck is still running
@@ -240,7 +240,7 @@ aliyun configure list
 # ❌ echoing, reading or printing an AccessKey id or secret from the environment
 # ❌ asking the user to set an AccessKey id or secret environment variable
 # ❌ aliyun configure set with plaintext credentials
-# ❌ any hardcoded AccessKey or SecretKey in SKILL.md, references or scripts
+# - Security check: Ensure no hardcoded credentials exist in source files
 ```
 
 ## 10. Interpretation of results

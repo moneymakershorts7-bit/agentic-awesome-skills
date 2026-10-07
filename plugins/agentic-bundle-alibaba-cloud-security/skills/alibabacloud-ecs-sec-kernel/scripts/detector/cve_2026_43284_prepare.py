@@ -227,7 +227,7 @@ class CVE202643284PrepareHandler(BasePrepareHandler):
         try:
             result = subprocess.run(
                 "lsmod | grep esp",
-                shell=True,
+                shell=False,
                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True,
                 timeout=5,
             )

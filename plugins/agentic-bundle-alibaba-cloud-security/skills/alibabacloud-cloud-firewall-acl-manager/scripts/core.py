@@ -186,7 +186,7 @@ class BackupEngine:
                     extra_base[f"GroupTypes.{i}"] = gt
         extra_base.update(plugin.extra_params())
 
-        while True:
+        for _loop_counter in range(1, 1000):
             data = call_api(self.ak, self.sk, self.endpoint,
                            plugin.api_action, {
                                plugin.page_no_key: str(page),

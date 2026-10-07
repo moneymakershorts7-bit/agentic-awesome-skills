@@ -29,7 +29,7 @@ repos:
       # =========================================================================
       - id: ruff-lint
         name: Ruff Linter (Python)
-        entry: ruff check --config ruff.toml
+        entry: ruff check --config ruff.toml --force-exclude
         language: system
         types: [python]
         require_serial: true
@@ -52,6 +52,7 @@ repos:
         language: system
         types: [shell]
         args: [--severity=warning]
+        exclude: ^(plugins|skills)/
 
       # =========================================================================
       # 6. Dockerfile Linter

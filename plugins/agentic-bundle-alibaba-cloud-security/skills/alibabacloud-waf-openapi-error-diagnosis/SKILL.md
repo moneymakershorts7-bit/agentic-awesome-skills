@@ -6,36 +6,25 @@ description: 'Diagnose why an Alibaba Cloud WAF OpenAPI call failed: find which 
   or required-ness disagrees with the official spec, and return a corrected call in
   the same channel. Covers
 
-  BOTH generations -- WAF 2.0 (version 2019-09-10) and WAF 3.0 (version 2021-10-01)
-  -- across CLI, SDK, and
-
-  raw RPC. Read-only: fetches the authoritative parameter spec and diffs the request;
-  never runs a write
-
-  action and needs no credentials for the core diff.
-
-  Use when a call returns InvalidParameter / MissingParameter / a malformed-parameter
-  error, when parameters
-
-  filled per the docs still fail, when a CLI action is "not available in the current
-  API version", or when
-
-  asked which parameter is wrong.
-
-  Not for: credential/signature, RAM denials, throttling, not-purchased, server 5xx,
-  rule-not-effective, or
-
-  why one request was blocked.
-
-  Triggers: "WAF OpenAPI 报错", "InvalidParameter", "MissingParameter", "参数格式错误",
-
-  "哪个参数错了", "not available in the current API version", "which parameter is wrong"'
+  BOTH generations -- WAF 2.0 (version 2019-09-10) and WAF 3.0 (version 2021-10-01)...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # WAF OpenAPI Error Diagnosis
@@ -139,7 +128,7 @@ Customer: "calling WAF OpenAPI fails with error <Code>"
 > [MUST] Verify: `aliyun version` — must be >= 3.3.3.
 > - **Preferred (no remote script execution):** download `https://aliyuncli.alicdn.com/aliyun-cli-linux-latest-amd64.tgz`
 >   (macOS: `aliyun-cli-macosx-latest-{amd64|arm64}.tgz`), `tar tzf` to inspect, `tar xzf`, `sudo mv aliyun /usr/local/bin/`.
-> - **Alternative:** `curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh`
+> - **Alternative:** `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > - **Update (CLI >= 3.3.5):** `aliyun upgrade`. Full instructions: `references/cli-installation-guide.md`.
 
 **Pre-check: Aliyun CLI plugin update required**

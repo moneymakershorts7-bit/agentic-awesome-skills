@@ -1,0 +1,36 @@
+{
+  "name": "aasb-alibaba-cloud-security",
+  "version": "1.0.0",
+  "description": "Install the official Alibaba Cloud Security and Operations skill bundle from Agentic Awesome Skills.",
+  "author": {
+    "name": "Alibaba Cloud & Agentic Awesome Skills contributors",
+    "url": "https://github.com/sickn33/agentic-awesome-skills"
+  },
+  "homepage": "https://github.com/sickn33/agentic-awesome-skills",
+  "repository": "https://github.com/sickn33/agentic-awesome-skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "codex",
+    "skills",
+    "bundle",
+    "alibaba-cloud",
+    "security",
+    "waf",
+    "cloud-firewall",
+    "sas",
+    "forensics"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Alibaba Cloud Security & Defense",
+    "shortDescription": "Cloud Security Suite \u00b7 59 defensive skills",
+    "longDescription": "Comprehensive security, forensics, WAF 3.0, Cloud Firewall, Security Center (SAS), SSL/CAS, and data compliance skills for Alibaba Cloud environments.",
+    "developerName": "Alibaba Cloud & sickn33",
+    "category": "Security & Defense",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "brandColor": "#FF6A00"
+  }
+}

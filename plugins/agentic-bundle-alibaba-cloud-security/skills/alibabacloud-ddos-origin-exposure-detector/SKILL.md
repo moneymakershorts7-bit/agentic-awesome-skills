@@ -9,32 +9,25 @@ description: 'Alibaba Cloud Anti-DDoS Proxy (ddoscoo) origin-server IP exposure 
   direct attack, across two scenarios: (S1) a protected domain whose public DNS still
   resolves
 
-  to the origin IP, bypassing protection;
-
-  (S2) the origin IP is directly reachable from the public Internet. Reads protected
-  domains /
-
-  CNAME / origin IPs via ddoscoo (DescribeWebRules / DescribeNetworkRules). Two probe
-  methods:
-
-  (1) cloud probe via Cms one-off site monitor (CreateInstantSiteMonitor + DescribeSiteMonitorLog);
-
-  (2) local dig / curl / nc, used when cloud probe is unavailable. Binary verdict.
-
-  Triggers: "源站IP暴露", "源站暴露检测", "高防被绕过", "流量绕过高防", "origin IP exposure",
-
-  "DDoS origin detection", "ddos-origin-exposure", "检测源站", "探测源站", "网络分析与监控探测源站",
-
-  "Call DescribeWebRules", "DescribeWebRules", "DescribeNetworkRules", "CreateInstantSiteMonitor",
-
-  "DescribeSiteMonitorLog", "get protected domains", "probe origin server", "site
-  monitor probe origin".'
+  to the origin IP, bypassing pro...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Anti-DDoS Proxy Origin Cloud IP Exposure Risk Detection
@@ -148,7 +141,7 @@ Do not skip, alter the format, or omit `--user-agent` on any `aliyun` API comman
 
 > Run these checks now. If any fails, pause and ask the user to fix before continuing to Step 1.
 
-1. **CLI version**: `aliyun version` — must be >= 3.3.3. If not: `curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` or `aliyun upgrade` (CLI >= 3.3.5). See `references/cli-installation-guide.md`.
+1. **CLI version**: `aliyun version` — must be >= 3.3.3. If not: `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 2. **Plugin auto-install**: `aliyun configure set --auto-plugin-install true`, then `aliyun plugin update`.
 3. **Credentials**: `aliyun configure list` — confirm a valid profile (AK/STS/OAuth). **NEVER** read/echo/print AK/SK values; **NEVER** ask the user to input credentials in conversation. If no valid profile: stop, ask user to configure credentials outside this session, then re-run.
 

@@ -3,15 +3,25 @@ name: alibabacloud-network-diagnose
 description: '[project] [user] Alibaba Cloud private network connectivity diagnosis
   tool. Use when ECS ping/telnet fails, same-VPC access fails, cross-VPC access fails,
   VPN or Express Connect is unreachable, NAT Gateway DNAT/SNAT behaves asymmetrically,
-  or the user suspects security group, network ACL, route table, CEN/TR, VPC Peering,
-  VPN Gateway, VBR, or NAT Gateway blocking. Not for classic network, public internet
-  access, DNS resolution, CDN, SLB, or WAF issues.'
+  or the user suspects security group, network ACL, route...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Alibaba Cloud Private Network Connectivity Diagnosis

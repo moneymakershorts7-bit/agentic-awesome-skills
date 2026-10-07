@@ -119,7 +119,7 @@ class InternetAclPlugin(AclPolicyPlugin):
             ip_label = "IPv4" if ip_version == "4" else "IPv6"
             for direction in ["in", "out"]:
                 page = 1
-                while True:
+                for _loop_counter in range(1, 1000):
                     params = {
                         "CurrentPage": str(page),
                         "PageSize": str(page_size),

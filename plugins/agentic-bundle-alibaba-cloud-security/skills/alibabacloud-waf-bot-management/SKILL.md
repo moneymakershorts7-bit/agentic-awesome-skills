@@ -3,16 +3,25 @@ name: alibabacloud-waf-bot-management
 description: Alibaba Cloud WAF Bot Management automated configuration assistant. Automatically
   completes bot protection policy evaluation, configuration, verification, and tuning
   via OpenAPI/CLI. Supports scenarios such as LLM API protection, retail promotion
-  anti-scalper, general anti-crawling, and academic research platforms. Triggers when
-  the user mentions Bot management, crawler protection, anti-crawling, WAF Bot, BOT2.0,
-  LLM API abuse prevention, retail anti-scalper, promotion protection, SMS bombing,
-  script attacks, or automated traffic protection.
+  anti-scalper, general anti-crawling, and academi...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # WAF Bot Management Automated Configuration Assistant

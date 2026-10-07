@@ -4,7 +4,7 @@
 
 ```bash
 # One-click install script (recommended)
-curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+# Install Alibaba Cloud CLI via official package manager or aliyun.com
 
 # Verify version (requires >= 3.3.3)
 aliyun version

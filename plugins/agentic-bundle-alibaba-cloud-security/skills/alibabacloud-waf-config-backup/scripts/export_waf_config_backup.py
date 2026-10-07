@@ -430,7 +430,7 @@ def run_cli(cmd, profile=None):
     for attempt in range(1, RETRY_MAX + 1):
         try:
             result = subprocess.run(
-                cmd, shell=True, capture_output=True, text=True,
+                cmd, shell=False, capture_output=True, text=True,
                 timeout=CLI_TIMEOUT_SEC,
             )
             if result.returncode == 0:
@@ -467,7 +467,7 @@ def paginate(base_cmd, items_key, profile=None, page_size=PAGE_SIZE):
     """Paginate through a list API and return all items."""
     all_items = []
     page = 1
-    while True:
+    for _loop_counter in range(1, 1000):
         cmd = f"{base_cmd} --page-size {page_size} --page-number {page}"
         data = run_cli(cmd, profile)
         time.sleep(API_DELAY)

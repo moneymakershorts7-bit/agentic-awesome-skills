@@ -3,17 +3,25 @@ name: alibabacloud-cas-ssl-cert-purchase
 description: 'Purchase and apply SSL certificates via Alibaba Cloud CAS (V2.0 unified
   flow). Supports China site (ProductCode=cas) and International site (ProductCode=cas_intl).
   Automates instance acquisition via BSS API or reuses existing inactive instances.
-  All certificate types follow: list-instances → update-instance → apply-certificate.
-  OV/EV certificates require additional company info and contact IDs. Activate when
-  user says "apply certificate", "purchase SSL", "buy certificate", "certificate order",
-  "purchase certificate instance", "buy overseas certificate", "申请证书", "购买 SSL", "买证书",
-  "证书下单", "购买证书实例", "买海外证书".'
+  All certificate types follow: list-instances → up...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Purchase and Apply SSL Certificate (V2.0)

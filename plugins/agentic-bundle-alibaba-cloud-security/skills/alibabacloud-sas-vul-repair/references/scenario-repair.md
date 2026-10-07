@@ -14,7 +14,7 @@ Example user phrasings (enter this scenario when any matches):
 
 ## Prerequisites
 
-1. CLI and credential checks, session-id generation: see SKILL.md. All API commands must include `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-sas-vul-repair/<session-id>`.
+1. CLI and credential checks, session-id generation: see SKILL.md. All API commands specifies `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-sas-vul-repair/<session-id>`.
 2. This scenario includes write operations: present the change list and obtain confirmation before execution; auto-execution and auto-retry after failure are forbidden.
 3. The target vulnerability list and affected assets have been clarified via Scenario 1 (references/scenario-query.md).
 

@@ -163,7 +163,7 @@ class CVE202521756PrepareHandler(BasePrepareHandler):
         try:
             result = subprocess.run(
                 "lsmod | grep vsock",
-                shell=True,
+                shell=False,
                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True,
                 timeout=5,
             )

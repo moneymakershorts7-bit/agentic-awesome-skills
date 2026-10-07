@@ -689,7 +689,7 @@ class WebshellAnalyzer(BaseAnalyzer):
         current = content
 
         # Check for nested encoding patterns
-        while True:
+        for _loop_counter in range(1, 1000):
             found_encoding = False
 
             for pattern, _ in self.ENCODING_FUNCTIONS:

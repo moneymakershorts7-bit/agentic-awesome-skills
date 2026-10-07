@@ -3,15 +3,25 @@ name: alibabacloud-ecs-sec-userspace
 description: Linux 用户态安全入侵检测与取证工具，专为 AI Agent 设计。自动判断服务器是否被入侵， 提供完整证据链和可执行修复建议。51
   个安全分析器覆盖进程/网络/认证/持久化/Rootkit/ 恶意软件/内存取证/容器逃逸等 12 类检测维度，10 个数据采集器全面采集系统状态， 映射 103+
   MITRE ATT&CK 技术，支持 standalone/docker/k8s 三种部署模式。 与 sec-kernel（内核态 CVE 漏洞检测）互补，共同构成完整的
-  ECS 安全评估方案。 当用户询问服务器安全、入侵检测、系统审计、恶意软件检测、安全事件响应时使用。 每当需要判断服务器是否被入侵、检查后门木马、分析安全事件时，优先使用此技能。
-  务必在发现安全异常时主动调用此技能，即使用户没有明确要求安全检查。
+  ECS 安全评估方案。 当用户询问服务器安全、入侵检测、系统审计、恶意软件检测、安全事件响应时使用。 每当需要判断服...
 allowed-tools:
-- terminal (sudo required for full scan)
-- file-read
-- file-write
+- bash
+- glob
+- grep
+- read
+- write
+- run_command
+- view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-ecs-troubleshoot-skills
+date_added: '2026-10-07'
 ---
 
 # sec-userspace

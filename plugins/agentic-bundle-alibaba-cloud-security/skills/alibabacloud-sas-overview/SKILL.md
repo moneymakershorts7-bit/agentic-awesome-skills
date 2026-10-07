@@ -1,22 +1,34 @@
 ---
 name: alibabacloud-sas-overview
-description: "Alibaba Cloud Security Center (SAS) Overview Data Query Skill.\nRetrieves\
-  \ security score, asset status, risk governance, asset risk trends, and billing\
-  \ info.\nSupports flexible scope: query a single data item, a specific module, or\
-  \ the full overview based on user intent.\n阿里云云安全中心（SAS）总览数据查询技能。\n可获取安全评分、资产状态、风险治理、资产风险趋势及账单信息。\n\
-  支持灵活查询范围：根据用户意图查询单个数据项、特定模块或完整总览。\nTriggers: \"SAS overview\", \"security center\
-  \ overview\", \"SAS 总览\", \"云安全中心总览\",\n  \"security score\", \"安全评分\", \"安全分\"\
-  ,\n  \"vulnerability fix\", \"baseline risk\", \"handled alerts\",\n  \"host assets\"\
-  , \"uninstalled clients\",\n  \"risk governance\", \"WAF blocks\", \"asset risk\
-  \ trend\",\n  \"SAS billing\", \"订阅状态\", \"账单\"\nOut of scope: This Skill only covers\
-  \ SAS overview data queries. It does not perform remediation, modify configurations,\
-  \ or manage non-SAS services."
+description: 'Alibaba Cloud Security Center (SAS) Overview Data Query Skill.
+
+  Retrieves security score, asset status, risk governance, asset risk trends, and
+  billing info.
+
+  Supports flexible scope: query a single data item, a specific module, or the full
+  overview based on user intent.
+
+  阿里云云安全中心（SAS）总览数据查询技能。
+
+  可获...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # SAS Overview Data Query
@@ -58,7 +70,7 @@ aliyun sas describe-version-config --user-agent "AlibabaCloud-Agent-Skills/aliba
 
 > **Pre-check: Aliyun CLI >= 3.3.1 required**
 > Run `aliyun version` to verify >= 3.3.1. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see `references/cli-installation-guide.md` for installation instructions.
 
 > **Pre-check: Aliyun CLI plugin update required**

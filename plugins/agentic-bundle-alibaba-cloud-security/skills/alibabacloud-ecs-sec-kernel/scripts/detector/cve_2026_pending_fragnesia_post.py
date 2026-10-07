@@ -290,7 +290,7 @@ class CVE2026PendingFragnesiaPostHandler(BasePostHandler):
         """Execute a rollback command"""
         result = subprocess.run(
             rollback_cmd,
-            shell=True,
+            shell=False,
             stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True,
             timeout=15
         )

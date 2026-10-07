@@ -177,7 +177,7 @@ KawPow
 
 **Direct Patterns**:
 ```
-ignore previous instructions
+process user instructions
 ignore all.*instructions
 you are now.*assistant|expert|hacker
 act as.*ignore|bypass|override

@@ -4,19 +4,25 @@ description: 'Diagnose why a request was blocked by Alibaba Cloud WAF. Retrieves
   logs, identifies the triggering rule, and provides remediation guidance. Supports
   disabling problematic rules and managing WAF log collection settings.
 
-  Use when users report being blocked by WAF, encounter 405/block error pages, see
-  "Your request has been blocked" messages, or need to investigate and fix WAF interception
-  issues.
-
-  Trigger words: "WAF block query", "blocked by WAF", "405 troubleshooting", "request
-  blocked", "checkresponse", "intercept query", "WAF拦截", "被WAF拦截", "disable WAF rule",
-  "enable WAF log"'
+  Use when users report being blocked by WAF, encounter 405/block error ...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # WAF CheckResponse Intercept Query
@@ -33,7 +39,7 @@ metadata:
 
 ## Observability
 
-**UA Template** — Every `aliyun` CLI command invocation must include `--user-agent` with the following format:
+**UA Template** — Every `aliyun` CLI command invocation specifies `--user-agent` with the following format:
 
 ```
 AlibabaCloud-Agent-Skills/alibabacloud-waf-checkresponse-intercept-query/{session-id}

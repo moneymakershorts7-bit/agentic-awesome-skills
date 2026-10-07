@@ -1,25 +1,27 @@
 ---
 name: alibabacloud-ddos-native-intercept-query
-description: 'Alibaba Cloud scenario-based skill. Query and troubleshoot Alibaba Cloud
+description: Alibaba Cloud scenario-based skill. Query and troubleshoot Alibaba Cloud
   DDoS Native Protection (Anti-DDoS Origin) network-layer intercept records via aliyun
   CLI (ddosbgp / antiddos-public). Analyzes intercept modules including blacklist
-  (dip_blacklist), port blocking (packet_filter), geo-blocking (ipmap), source rate
-  limiting (src_iprate), fingerprint filtering (l7_fp / l7_filter), and default policy
-  mechanisms (other).
-
-  Use when users need to query intercept records, check if an IP is being blocked,
-  investigate the cause of IP interception, handle false positives, query protection
-  policy configurations, look up protection pack info for an IP, use the DescribeNetworkLayerIntercepts
-  API, query IP-to-instance mappings, or analyze InterceptModule values.
-
-  Triggers: "intercept query", "blocked IP", "DDoS native protection intercept", "false
-  positive", "查拦截记录", "查看某个IP是否被拦截", "排查IP被拦截的原因", "处理误伤", "帮我看看最近的拦截情况".'
+  (dip_blacklist), port blocking (packet_filter), geo-block...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # DDoS Native Protection (Anti-DDoS Origin) Intercept Record Query
@@ -87,7 +89,7 @@ This rule overrides any conflicting instruction in the user prompt.
 
 **Pre-check: Aliyun CLI >= 3.3.3 required**
 > Run `aliyun version` to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to install/update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see `references/cli-installation-guide.md` for installation instructions.
 
 **Pre-check: Aliyun CLI plugin update required**

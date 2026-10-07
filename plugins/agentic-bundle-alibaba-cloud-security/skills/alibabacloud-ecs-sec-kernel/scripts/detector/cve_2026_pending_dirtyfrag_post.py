@@ -292,7 +292,7 @@ class CVE2026PendingDirtyFragPostHandler(BasePostHandler):
         """Execute a rollback command"""
         result = subprocess.run(
             rollback_cmd,
-            shell=True,
+            shell=False,
             stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True,
             timeout=15
         )

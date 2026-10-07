@@ -3,14 +3,25 @@ name: alibabacloud-ddoscoo-port-configuration-backup
 description: Export, import, and restore Alibaba Cloud DDoS Pro manual non-website
   TCP and UDP port forwarding rules and their portable configuration through Aliyun
   CLI. Use for non-website port backup, migration, reuse on another instance, or recovery;
-  do not use for website-generated rules, website or infrastructure protection, or
-  runtime traffic and attack data.
+  do not use for website-generated rules, website or inf...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Alibaba Cloud DDoS Pro Port Configuration Backup and Restore

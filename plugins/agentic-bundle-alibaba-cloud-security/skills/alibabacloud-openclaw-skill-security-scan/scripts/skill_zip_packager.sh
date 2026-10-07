@@ -222,7 +222,7 @@ create_skills_zip() {
     echo "  Setting fixed timestamp: $fixed_timestamp" >&2
 
     local touch_count=0
-    if find "$temp_dir" -exec touch -t "$fixed_timestamp" {} + 2>/dev/null; then
+    if for f in $(find "$temp_dir"); do touch -t "$fixed_timestamp" {} "$f"; done 2>/dev/null; then
         touch_count=$(find "$temp_dir" -type f 2>/dev/null | wc -l | tr -d ' ')
         echo "  ✓ Fixed timestamp set for $touch_count files" >&2
     else

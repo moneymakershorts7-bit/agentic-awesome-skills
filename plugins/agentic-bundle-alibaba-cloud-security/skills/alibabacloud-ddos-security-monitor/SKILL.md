@@ -7,22 +7,25 @@ description: '[user] Perform security inspection and monitoring for Alibaba Clou
 
   Supports querying blackhole/scrubbing events, QPS spikes/drops, L4 traffic anomalies,
 
-  HTTP status code (4xx/5xx) period-over-period surges, origin status code anomalies,
-
-  and instance asset inventory. Use this Skill when users need security inspection,
-
-  DDoS protection status checks, attack event queries, traffic anomaly investigation,
-
-  or to confirm whether DDoS security products are provisioned.
-
-  Triggers: "DDoS inspection", "security check", "DDoS protection check", "attack
-  event query", "traffic anomaly"'
+  HTTP status code (4xx/5xx) pe...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # DDoS Security Product Inspection & Monitoring

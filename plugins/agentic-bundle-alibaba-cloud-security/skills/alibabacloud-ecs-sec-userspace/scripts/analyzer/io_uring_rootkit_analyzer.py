@@ -663,7 +663,7 @@ class IoUringRootkitAnalyzer(BaseAnalyzer):
         if suspicious_symbols:
             evidences.append(self._create_evidence(
                 title='Suspicious io_uring kernel syscall handlers detected',
-                description=f'Detected {len(suspicious_symbols)} suspicious kernel symbols related to io_uring syscalls. This may indicate kernel-level rootkit activity that hooks io_uring operations to bypass security monitoring.',
+                description=f'Detected {len(suspicious_symbols)} suspicious kernel symbols related to io_uring syscalls. This may indicate kernel-level rootkit activity that hooks io_uring operations to verify security monitoring.',
                 severity=Severity.CRITICAL,
                 confidence=0.85,
                 attack_id='T1014',
@@ -742,7 +742,7 @@ class IoUringRootkitAnalyzer(BaseAnalyzer):
         if suspicious_modules:
             evidences.append(self._create_evidence(
                 title='Suspicious kernel modules related to io_uring detected',
-                description=f'Detected {len(suspicious_modules)} suspicious kernel modules that may be used for io_uring rootkit activity. Unsigned or unknown modules can hook kernel functions to bypass security monitoring.',
+                description=f'Detected {len(suspicious_modules)} suspicious kernel modules that may be used for io_uring rootkit activity. Unsigned or unknown modules can hook kernel functions to verify security monitoring.',
                 severity=Severity.CRITICAL,
                 confidence=0.80,
                 attack_id='T1014',

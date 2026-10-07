@@ -3,17 +3,25 @@ name: alibabacloud-ddoscoo-domain-configuration-backup
 description: 'Alibaba Cloud DDoS Pro (ddoscoo) domain-level (Layer 7 website) configuration
   full export and import. Use for disaster recovery backup, configuration audit, rollback
   after misconfiguration, or batch import of domain settings. Covers 20 configuration
-  dimensions in YAML v2.0 format. Triggers: DDoS domain config export, domain config
-  import, domain config backup, domain config audit. Does NOT cover Layer 4 port forwarding
-  (TCP/UDP) -- handled by `alibabacloud-ddoscoo-port-config-migration`.'
+  dimensions in YAML v2.0 format. Triggers: DDo...'
 allowed-tools:
-- Bash
-- Read
-- Write
-- AskUserQuestion
+- bash
+- glob
+- grep
+- read
+- write
+- run_command
+- view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # DDoS Pro Domain Configuration Migration Skill

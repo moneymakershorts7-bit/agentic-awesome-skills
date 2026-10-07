@@ -4,14 +4,25 @@ description: 'Solution skill for using WAF to protect web applications on ECS. U
   for quickly deploying network environments including VPC, security groups, and ECS
   instances, and integrating WAF for web application protection.
 
-  Trigger words: "WAF protection", "ECS web protection", "Web Application Firewall",
-  "website security"'
+  Trigger words: "WAF protection", "ECS web protection", "Web Application Firewal...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Using WAF to Protect Web Applications on ECS
@@ -22,7 +33,7 @@ With this skill, you can quickly deploy a complete web application protection so
 
 **Pre-check: Aliyun CLI >= 3.3.3 required**
 > Run `aliyun version` to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see `references/cli-installation-guide.md` for installation instructions.
 
 **Pre-check: Aliyun CLI plugin update required**
@@ -98,7 +109,7 @@ With this skill, you can quickly deploy a complete web application protection so
 
 > **IMPORTANT: Must proactively ask and help users complete the following checks before running**
 > 
-> 1. **CLI Version**: Run `aliyun version` to confirm version >= 3.3.3. If not installed or version too low, run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to install/update.
+> 1. **CLI Version**: Run `aliyun version` to confirm version >= 3.3.3. If not installed or version too low, run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 >    Then [MUST] run `aliyun plugin update` to ensure that any existing plugins on your local machine are always up-to-date.
 > 2. **Authentication Configuration**: Run `aliyun configure list` to confirm authentication status is Valid
 > 3. **Auto Plugin**: Run `aliyun configure set --auto-plugin-install true`

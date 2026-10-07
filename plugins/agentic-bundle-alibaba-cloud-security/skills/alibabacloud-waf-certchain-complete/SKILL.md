@@ -4,11 +4,23 @@ description: Use when Alibaba Cloud WAF reports an incomplete SSL certificate ch
   or missing intermediate certificate, when a WAF certificate needs a cert chain fix,
   or when a WAF certificate PEM must be checked and repaired before manual upload.
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # WAF Certificate Chain Check and Repair

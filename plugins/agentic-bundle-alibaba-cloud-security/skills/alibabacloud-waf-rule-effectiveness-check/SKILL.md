@@ -7,33 +7,25 @@ description: 'Diagnose why a configured Alibaba Cloud WAF 3.0 custom protection 
   chain and hand back the
 
   console fix path. Read-only checks of configuration state only; never sends test
-  traffic.
-
-  Use it when a customer says a rule has no effect at all, a rule matches in the logs
-  but nothing is blocked,
-
-  an attack that should have been blocked got through, a rule worked yesterday but
-  not today, or a CC or
-
-  rate-limiting rule does not trigger or bans far too widely.
-
-  Not for: explaining why one specific request was blocked or looking it up by trace_id,
-  whitelist rule
-
-  effectiveness itself, live attack sample validation, built-in rule toggles, config
-  export, or reports.
-
-  Triggers: "规则不生效", "规则配了但不生效", "自定义规则不生效", "预期拦未拦", "该拦的没拦住",
-
-  "漏拦截", "规则命中但没拦", "规则昨天还好今天失效", "CC不触发", "误封面过大", "规则为什么没生效",
-
-  "WAF rule not effective", "rule not taking effect", "rule hit but not blocked"'
+  traff...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # WAF Custom Rule Effectiveness Check
@@ -133,7 +125,7 @@ Customer report: custom rule not effective / expected block missed / CC not trig
 > [MUST] Verify: `aliyun version` — must be >= 3.3.3.
 > - **Preferred (no remote script execution):** download `https://aliyuncli.alicdn.com/aliyun-cli-linux-latest-amd64.tgz`
 >   (macOS: `aliyun-cli-macosx-latest-{amd64|arm64}.tgz`), `tar tzf` to inspect, `tar xzf`, `sudo mv aliyun /usr/local/bin/`.
-> - **Alternative:** `curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh`
+> - **Alternative:** `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > - **Update (CLI >= 3.3.5):** `aliyun upgrade`. Full instructions: `references/cli-installation-guide.md`.
 
 **Pre-check: Aliyun CLI plugin update required**

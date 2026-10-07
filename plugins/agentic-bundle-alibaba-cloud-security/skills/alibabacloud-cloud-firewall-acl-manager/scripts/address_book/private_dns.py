@@ -22,7 +22,7 @@ class PrivateDnsPlugin(AddressBookPlugin):
         current_page = 1
         
         # Step 1: get all DNS instances
-        while True:
+        for _loop_counter in range(1, 1000):
             params = {
                 "CurrentPage": current_page,
                 "PageSize": page_size,

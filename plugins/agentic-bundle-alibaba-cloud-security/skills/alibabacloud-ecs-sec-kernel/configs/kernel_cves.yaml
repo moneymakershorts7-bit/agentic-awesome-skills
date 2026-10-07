@@ -439,7 +439,7 @@ cves:
   - read_root_file
   retry_count: 3
   vulnerability_principle: 'eBPF verifier pruning logic error: BPF verifier state pruning algorithm incorrectly skips equivalent
-    state verification, allowing crafted BPF programs to bypass security checks, achieve arbitrary kernel memory read/write
+    state verification, allowing crafted BPF programs to circumvent validation, achieve arbitrary kernel memory read/write
     and privilege escalation.'
 - cve_id: CVE-2023-32233
   enabled: true

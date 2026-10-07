@@ -3,11 +3,23 @@ name: alibabacloud-waf-lua-extension-dev
 description: Use when creating, editing, or reviewing WAF 3.0 custom Lua extension
   plugins, plugin parameters, or request validation logic.
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # WAF Extension Plugin (Lua) Development & Review

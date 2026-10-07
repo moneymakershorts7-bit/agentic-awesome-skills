@@ -120,7 +120,7 @@ waf, acl, ddos, blacklist, white_list, scan, bot
 import subprocess, json
 
 def run_cli(cmd):
-    result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+    result = subprocess.run(cmd, shell=False, capture_output=True, text=True)
     if result.returncode != 0:
         return None
     return json.loads(result.stdout)
@@ -144,7 +144,7 @@ os.environ['ALIBABA_CLOUD_ACCESS_KEY_ID'] = 'LTAI...'
 def paginate(base_cmd, page_size=50):
     all_items = []
     page = 1
-    while True:
+    for _loop_counter in range(1, 1000):
         cmd = f"{base_cmd} --page-size {page_size} --page-number {page}"
         data = run_cli(cmd)
         if not data:

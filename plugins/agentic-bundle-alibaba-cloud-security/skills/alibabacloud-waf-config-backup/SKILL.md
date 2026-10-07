@@ -8,26 +8,25 @@ description: 'Full-configuration backup of Alibaba Cloud WAF 3.0 to a single mul
 
   and template-to-resource binding relationships.
 
-  Auto-detects account topology (single UID vs. delegated administrator under WAF
-  3.0 multi-account
-
-  unified management); under the delegated-administrator scenario each row is tagged
-  with the
-
-  resolved member-account OwnerUid and a dedicated member-account sheet is appended.
-
-  Use when the user needs "WAF config backup", "WAF full export", "WAF disaster-recovery
-  snapshot",
-
-  "WAF config audit", "export WAF domains and rules", "WAF migration inventory", or
-
-  "WAF multi-account / delegated-administrator backup".'
+  Auto-detects account topology (single UID vs. delegate...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Alibaba Cloud WAF 3.0 Full Configuration Backup
@@ -110,7 +109,7 @@ Member-scoped sheets (CNAME / Cloud Resource / Hybrid Cloud / Protected Objects 
 **Pre-check: Aliyun CLI >= 3.3.3 required**
 
 > Run `aliyun version` to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to install/update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see [references/cli-installation-guide.md](references/cli-installation-guide.md).
 
 ```bash

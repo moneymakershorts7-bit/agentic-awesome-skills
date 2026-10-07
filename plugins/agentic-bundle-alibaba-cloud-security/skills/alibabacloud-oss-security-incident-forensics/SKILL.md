@@ -8,24 +8,25 @@ description: 'Read-only forensics for OSS traffic abuse and security incidents
 
   SLS log query sequence, routes root causes, outputs containment
 
-  checklists. Triggers: "OSS traffic spike overnight", "traffic abuse", "strange files
-  in my bucket", "suspected AK leak on OSS", "hotlinking abuse", "unexpected outbound
-  traffic", "unauthorized downloads from my bucket".
-
-  Do NOT use: for transfer error codes use alibabacloud-oss-transfer-error-code-diagnosis;
-
-  for billing use alibabacloud-oss-billing-diagnosis; for endpoint choice use alibabacloud-oss-endpoint-internal-diagnosis;
-
-  for signed-URL use alibabacloud-oss-presigned-url-v4-diagnosis; for access-log tracing
-  use alibabacloud-oss-access-log-trace-diagnosis;
-
-  for direct-link issues use alibabacloud-oss-direct-access-link-diagnosis.'
+  checklists. Triggers: "OSS tra...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # OSS Traffic Abuse & Security Incident Forensics

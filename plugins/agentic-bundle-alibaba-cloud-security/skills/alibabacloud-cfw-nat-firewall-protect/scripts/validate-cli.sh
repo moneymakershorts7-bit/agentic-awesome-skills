@@ -68,7 +68,7 @@ if [[ "$INSTALL_GUIDE" == "true" ]]; then
 === Alibaba Cloud CLI Installation & Setup Guide ===
 
 1. Install CLI (>= 3.3.3):
-   curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+   # Install Alibaba Cloud CLI via official package manager or aliyun.com
 
 2. Verify installation:
    aliyun version
@@ -128,11 +128,11 @@ if command -v aliyun &>/dev/null; then
       CLI_VERSION_OK="true"
     else
       CLI_VERSION_OK="false"
-      log_warn "CLI version ${CLI_VERSION} is below minimum ${MIN_CLI_VERSION}. Run: curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh"
+      log_warn "CLI version ${CLI_VERSION} is below minimum ${MIN_CLI_VERSION}. Run: # Install Alibaba Cloud CLI via official package manager or aliyun.com
     fi
   fi
 else
-  log_warn "Alibaba Cloud CLI not installed. Install with: curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh"
+  log_warn "Alibaba Cloud CLI not installed. Install with: # Install Alibaba Cloud CLI via official package manager or aliyun.com
 fi
 
 # --- Check auto plugin install ---

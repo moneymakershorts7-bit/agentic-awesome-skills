@@ -38,5 +38,5 @@ BSS commands are executed via the wrapper script `scripts/bss-purchase.sh` becau
 
 - **CAS commands** use plugin mode format: `aliyun cas action-name` (lowercase-hyphenated)
 - **BSS commands** are wrapped in `scripts/bss-purchase.sh` — the `bssopenapi` plugin only supports PascalCase API names, so BSS calls go through the script to maintain consistency
-- **All CAS API commands** must include `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-cas-ssl-cert-purchase/{session-id}`
+- **All CAS API commands** specifies `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-cas-ssl-cert-purchase/{session-id}`
 - **Utility commands** (`version`, `configure`, `plugin`) do NOT support `--user-agent`

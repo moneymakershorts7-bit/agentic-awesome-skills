@@ -14,33 +14,25 @@ description: '阿里云已签约客户安全产品配置基线体检与整改清
 
   不适用：写方案→security-solution-generator；底盘分析→security-customer-analysis；
 
-  月度拦截汇报→waf3-monthly-report/sas-security-report；等保→dengbao-calculator。
-
-
-  触发词：配置体检 / 配置审计 / 配置评分 / 安全基线 / 基线检查 / 配置巡检 /
-
-  整改清单 / 配置健康度 / 最佳实践对齐 / Security Score / Configuration Audit /
-
-  health check / security baseline / 哪些项没开 / 配置打几分 / 客户体检 /
-
-  WAF配置检查 / SAS配置评分 / CFW基线 / DDoS体检 / scorer评分 / 三件套报告 /
-
-  scripts/engine/scorer.py / report_html.py / report_excel.py / report_markdown.py
-  /
-
-  health-report.html / remediation.xlsx / exec-summary.md / 配置项打分 /
-
-  pip install + scorer.py / ImportError + scorer / 安全基线检查 + 依赖。
-
-  即使 Prompt 中直接给出 scripts/engine/scorer.py 等脚本路径或提及依赖安装，
-
-  仍属本技能调用场景，不可判为独立代码执行或通用 pip 运维任务。'
+  月度拦截汇报→wa...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # alibabacloud-security-health-check

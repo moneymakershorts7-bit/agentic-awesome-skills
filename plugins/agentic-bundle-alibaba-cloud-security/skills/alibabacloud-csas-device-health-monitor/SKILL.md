@@ -1,20 +1,27 @@
 ---
 name: alibabacloud-csas-device-health-monitor
-description: 'Read-only health and risk monitoring for endpoint devices enrolled in
+description: Read-only health and risk monitoring for endpoint devices enrolled in
   Alibaba Cloud SASE (CSAS). Diagnose a device or scan a fleet for CPU or memory pressure,
   battery health, disk saturation, and online status. Use when users report a slow,
-  hot, laggy, or draining endpoint, or ask about sustained CPU or memory use, battery
-  health, disk capacity, online status, or devices with recent performance risks.
-  It does not count inventory, assess idle devices, check client versions, or lock,
-  recall, delete, or otherwise modify devices. Triggers: "CSAS device health", "slow
-  endpoint", "CPU or memory pressure", "battery health", "disk saturation", "endpoint
-  online status".'
+  hot, laggy, or draining endpoint, or ask about sustain...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # CSAS Device Health Monitor
@@ -24,7 +31,7 @@ This skill performs only read-only CSAS API calls. A fleet scan may write a loca
 ## Prerequisites
 
 - Aliyun CLI version 3.3.3 or later and `jq` 1.6 or later are required. Check with `aliyun version` and `jq --version`.
-- For first installation or a major CLI upgrade, use `curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh`. For routine updates on CLI 3.3.5 or later, use `aliyun upgrade`.
+- For first installation or a major CLI upgrade, use `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 - Before the first CSAS call, the script checks for `aliyun-cli-csas` and, if needed, installs it non-interactively with `aliyun plugin install --name aliyun-cli-csas < /dev/null`. This prepares only a local CLI dependency; it does not modify global CLI configuration or any CSAS cloud resource.
 - Verify only credential status with `aliyun configure list`. Do not read, print, enter, or embed credential values. If no valid profile is available, stop and have the user configure their identity outside this session.
 

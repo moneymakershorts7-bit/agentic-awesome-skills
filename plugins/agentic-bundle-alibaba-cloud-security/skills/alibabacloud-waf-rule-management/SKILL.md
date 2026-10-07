@@ -3,15 +3,25 @@ name: alibabacloud-waf-rule-management
 description: 'Alibaba Cloud WAF 3.0 read-only diagnostic assistant for interception
   diagnosis, rule queries, and configuration guidance. Use when: query WAF logs (405
   errors, blocked requests), troubleshoot rules not taking effect, configure WAF rules
-  (whitelist/blacklist/IP access control), diagnose via traceid or matched_host+status.
-  Provides TEXT-ONLY console guidance. Uses `aliyun sls get-logs-v2` (SLS plugin required).
-
-  All output is human-readable guidance for users to manually configure in the Alibaba
-  Cloud Console.'
-allowed-tools: Bash Read
+  (whitelist/blacklist/IP access control), diagnose via tra...'
+allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
+- run_command
+- view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 ## 🚫 ABSOLUTE PROHIBITIONS (Critical - Read First)

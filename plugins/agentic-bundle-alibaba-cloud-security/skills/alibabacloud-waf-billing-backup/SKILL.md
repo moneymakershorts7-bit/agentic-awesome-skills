@@ -3,15 +3,25 @@ name: alibabacloud-waf-billing-backup
 description: Query and back up Alibaba Cloud WAF 3.0 billing data. Use this Skill
   when a user asks to check WAF bills, export WAF cost details, back up WAF billing
   data locally, or analyze daily/hourly SeCU and Credit usage. The Skill retrieves
-  instance information, daily bill summaries, and hourly cost breakdowns (function
-  fees, traffic processing fees, Credit usage) via aliyun-cli, then exports the results
-  as JSON and CSV files to the local workspace.
+  instance information, daily bill summaries, and hourly cost bre...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # WAF 3.0 Billing Query and Local Backup

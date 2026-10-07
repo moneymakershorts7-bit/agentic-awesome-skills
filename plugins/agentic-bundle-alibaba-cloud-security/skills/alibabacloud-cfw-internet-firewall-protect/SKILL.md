@@ -3,14 +3,25 @@ name: alibabacloud-cfw-internet-firewall-protect
 description: Manage Cloud Firewall (CFW) Internet Firewall public IP protection switches
   on Alibaba Cloud. Use this Skill when enabling or disabling firewall protection
   for public IPs, querying asset protection status, batch protecting ECS/EIP/NAT/SLB
-  resources, toggling all public IPs at once, or configuring auto-protection for new
-  assets. Supports multi-account management via member-uid. 管理阿里云云防火墙（CFW）互联网防火墙的公网IP防护开关。
-  当用户需要开启云防火墙、管理互联网防火墙开关、查看公网IP是否受保护、 批量开启ECS/EIP/NAT/SLB等资源的防火墙、配置新资产自动防护时使用此Skill。
-  支持多账号管理（member-uid）。
-allowed-tools: Bash Read
+  resources, toggling all public IPs at once, or configuri...
+allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
+- run_command
+- view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 ## Operation Routing
@@ -64,7 +75,7 @@ Generate the session-id described in "Observability" below **before** running an
 
 ```bash
 # First install, or major upgrade
-curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 
 # Routine self-update (supported from CLI 3.3.5)
 aliyun upgrade --yes

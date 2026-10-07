@@ -7,14 +7,25 @@ description: 'Export and backup Alibaba Cloud WAF protection configurations for 
 
   Output format: Excel workbooks (.xlsx) with each data module as a separate sheet.
 
-  Triggers: "WAF backup", "WAF config export", "WAF config backup", "protection config
-  backup"'
+  Triggers: "WAF backup", "WAF ...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # WAF Protection Config Backup
@@ -48,7 +59,7 @@ Output: waf3-{region}.xlsx (8 sheets) | waf2-{region}.xlsx (5 sheets)
 **Pre-check: Aliyun CLI >= 3.3.3 required**
 
 > Run `aliyun version` to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to install/update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see [references/cli-installation-guide.md](references/cli-installation-guide.md) for detailed instructions.
 
 **Pre-check: Aliyun CLI plugin update required**

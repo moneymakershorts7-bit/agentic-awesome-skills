@@ -4,16 +4,25 @@ description: 'Scan installed skills for security risks and audit platform config
 
   When to use: user requests security scan, security analysis, skill audit, OpenClaw
   health check, config audit, security baseline check, pre-install, safety check,
-  supply chain security check, or asks "is this skill safe".
-
-  Trigger phrases: "security scan", "安全扫描", "安全分析", "风险评估", "安全体检", "skill audit",
-  "配置审计", "安全基线", "skill安全扫描", "检查skill风险", "这个skill安全吗", "安装前检查", "能不能装这个skill".'
+  supply chain security check, or asks "is this skill safe"...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Security Scan Skill

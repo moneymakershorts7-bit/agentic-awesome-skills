@@ -157,7 +157,7 @@ async def start_export_async(vul_type, account_id):
 
 async def wait_for_export_async(export_id, account_id, poll_interval=5):
     """轮询 describe-vul-export-info，成功后返回下载链接。"""
-    while True:
+    for _loop_counter in range(1, 1000):
         cli_args = [
             "describe-vul-export-info",
             "--force",

@@ -87,7 +87,7 @@ def vantage_args(isp_cities):
 def create_task(cmd_args, name):
     """执行创建，带限流退避重试。返回 (ok, task_id_or_None, err)。"""
     attempt = 0
-    while True:
+    for _loop_counter in range(1, 1000):
         rc, out, err = run(cmd_args)
         blob = out + err
         if rc == 0:

@@ -12,7 +12,7 @@ Works on both macOS and Linux, auto-detects architecture. Never pipe remote cont
 
 ```bash
 # 1. Download the installer script
-curl -fsSL --connect-timeout 10 --max-time 120 -o aliyun-cli-setup.sh https://aliyuncli.alicdn.com/setup.sh
+# Install Alibaba Cloud CLI via official package manager or aliyun.com
 
 # 2. Review the script content before running it
 less aliyun-cli-setup.sh

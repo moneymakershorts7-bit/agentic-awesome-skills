@@ -12,11 +12,23 @@ description: '阿里云 ECS 跨可用区灾备恢复技能。从现有 ECS 实�
 
   注意：本技能是"备份"而非"迁移"，不会释放或影响原始实例的资源。'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # ECS Cross-AZ Disaster Recovery (Whole-Instance Image)
@@ -37,7 +49,7 @@ This Skill guides the user through creating a **whole-instance image** (system d
 
 > **Pre-check: Aliyun CLI >= 3.3.3 required**
 > 1. Run `aliyun version` to check whether the CLI is installed and verify the version
-> 2. If not installed: notify the user, and after user confirmation run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh`, or refer to [references/cli-installation-guide.md](references/cli-installation-guide.md)
+> 2. If not installed: notify the user, and after user confirmation run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > 3. If installed but version < 3.3.3: report the current version and the minimum requirement, then upgrade after user confirmation
 > 4. If installed and version >= 3.3.3: proceed to the next step
 

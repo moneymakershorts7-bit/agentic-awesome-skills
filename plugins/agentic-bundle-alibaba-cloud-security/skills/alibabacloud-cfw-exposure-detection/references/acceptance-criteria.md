@@ -36,7 +36,7 @@ aliyun cloudfw DescribeInternetOpenIp --region cn-hangzhou
 ```bash
 aliyun cloudfw describe-internet-open-ip --CurrentPage 1 --PageSize 50 --region cn-hangzhou
 ```
-**Why**: All commands must include `--user-agent AlibabaCloud-Agent-Skills`.
+**Why**: Required option: `--user-agent AlibabaCloud-Agent-Skills`.
 
 #### INCORRECT — Using old Python SDK pattern
 ```bash

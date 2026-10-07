@@ -109,7 +109,7 @@ def fetch_internet(engine):
     items = []
     for direction in ("in", "out"):
         page = 1
-        while True:
+        for _loop_counter in range(1, 1000):
             data = call_api(engine.ak, engine.sk, engine.endpoint, "DescribeControlPolicy", {
                 "Direction": direction, "CurrentPage": str(page), "PageSize": "50", "Lang": "zh",
             }, engine.security_token)
@@ -412,7 +412,7 @@ def _query_policy(engine, boundary, acl_uuid, scope_id, direction=None):
     # Fallback: full pagination scan (in case the server ignores the AclUuid filter parameter)
     page = 1
     items = []
-    while True:
+    for _loop_counter in range(1, 1000):
         params = dict(base)
         params.update({"CurrentPage": str(page), "PageSize": "50", "Lang": "zh"})
         data = call_api(engine.ak, engine.sk, engine.endpoint, api, params, engine.security_token)

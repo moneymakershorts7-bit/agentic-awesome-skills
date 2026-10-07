@@ -1,3 +1,4 @@
+from pathlib import Path
 """
 CVE-2009-2692 Detector - sock_sendpage() NULL pointer dereference via PF_PPPOX
 
@@ -395,14 +396,10 @@ class CVE20092692Detector(BaseDetector):
                 continue
             try:
                 for filename in os.listdir(dir_path):
-                    if not filename.endswith(".conf"):
-                        continue
-                    conf_path = os.path.join(dir_path, filename)
-                    with open(conf_path, "r", encoding="utf-8") as f:
-                        content = f.read()
-                        if "install pppox /bin/false" in content:
+                    if filename.endswith(".conf"):
+                        p = Path(dir_path) / filename
+                        if "install pppox /bin/false" in p.read_text(encoding="utf-8", errors="ignore"):
                             return True
             except (OSError, IOError):
                 continue
-
         return False

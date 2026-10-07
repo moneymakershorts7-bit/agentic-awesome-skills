@@ -590,7 +590,7 @@ grep -n -E "curl|wget|base64|/dev/tcp|eval|python.*-c" /home/*/.bashrc /root/.ba
 
 ```bash
 # Step 1: 列出所有 authorized_keys
-find / -name "authorized_keys" -exec echo "--- {} ---" \; -exec cat {} \; 2>/dev/null
+for f in $(find / -name "authorized_keys" -exec echo "--- {} ---" \;); do cat {} "$f"; done 2>/dev/null
 
 # Step 2: 检查密钥指纹
 ssh-keygen -lf /home/<user>/.ssh/authorized_keys
@@ -671,7 +671,7 @@ stat <webshell_file>
 ls -la <webshell_file>
 
 # Step 3: 在 Web 目录搜索类似文件
-find /var/www -name "*.php" -newer /etc/os-release -exec ls -la {} \;
+for f in $(find /var/www -name "*.php" -newer /etc/os-release); do ls -la {} "$f"; done
 grep -rl "eval\|base64_decode\|system\|passthru\|exec\|shell_exec" /var/www/ 2>/dev/null
 
 # Step 4: 检查 Web 服务器访问日志

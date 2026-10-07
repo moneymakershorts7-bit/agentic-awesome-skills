@@ -3,16 +3,25 @@ name: alibabacloud-cfw-exposure-detection
 description: Query and analyze Alibaba Cloud public network exposure, identify unnecessary
   exposed assets and ports, assess exposure risks, and generate remediation recommendations.
   Triggers when user mentions public network exposure, exposed assets, exposed ports,
-  public IP security, port scan results, attack surface analysis, internet reachability,
-  high-risk port detection. Also triggers when user asks about "which IPs/ports are
-  exposed to the internet", "public asset inventory", "security baseline check", even
-  without explicitly saying "exposure".
+  public IP security, port scan results, att...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Public Network Exposure Detection & Analysis
@@ -59,7 +68,7 @@ This skill follows least-privilege network access:
 
 > **Pre-check: Aliyun CLI >= 3.3.3 required**
 > Run `aliyun version` to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to install/update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see `references/cli-installation-guide.md` for installation instructions.
 
 **Pre-check: Aliyun CLI plugin update required**

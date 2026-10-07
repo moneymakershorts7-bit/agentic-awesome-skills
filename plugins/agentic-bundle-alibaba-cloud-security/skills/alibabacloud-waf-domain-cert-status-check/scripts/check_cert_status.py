@@ -216,7 +216,7 @@ def waf3_domains(region, instance_id, domain, session_id):
     if domain:
         return [domain]
     names, page = [], 1
-    while True:
+    for _loop_counter in range(1, 1000):
         data = run_waf(["describe-domains", "--biz-region-id", region,
                         "--instance-id", instance_id,
                         "--page-number", str(page), "--page-size", str(PAGE_SIZE)],

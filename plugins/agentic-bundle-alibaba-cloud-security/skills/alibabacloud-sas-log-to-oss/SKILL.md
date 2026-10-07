@@ -4,16 +4,25 @@ description: 'Alicloud Service Scenario-Based Skill. Use for automating SLS (Log
   log export to OSS (Object Storage) for cold storage archival.
 
   Triggers: "SLS", "OSS", "log export", "log shipping", "cold storage", "log archive",
-  "Security Center log backup", "list LogStore", "view LogStore", "create export task",
-  "delete export task", "stop export task", "start export task", "manage export task",
-  "cleanup export task", "force delete export", "日志导出", "日志投递", "冷存储", "日志归档", "创建导出",
-  "删除导出", "停掉导出", "暂停导出", "关闭导出", "停用导出", "终止导出", "启动导出", "查看导出", "列出导出", "清理导出".'
+  "Security Center log backup", "list LogStore", "view LogStore", "create ...'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # SLS Log Export to OSS
@@ -32,7 +41,7 @@ SLS Project + LogStore + OSS Bucket + RAM Role (AliyunLogDefaultRole) + SLS OSS 
 
 **Pre-check: Aliyun CLI >= 3.3.3 required**
 > [MUST] Verify: `aliyun version` — must be >= 3.3.3.
-> - **First install or major upgrade:** `curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh`
+> - **First install or major upgrade:** `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > - **Routine update (CLI >= 3.3.5):** `aliyun upgrade` — prefer this built-in self-update over re-running the install script.
 > - See [references/cli-installation-guide.md](references/cli-installation-guide.md) for full installation instructions.
 

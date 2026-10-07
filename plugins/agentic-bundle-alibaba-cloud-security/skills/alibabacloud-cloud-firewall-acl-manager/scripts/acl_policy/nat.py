@@ -135,7 +135,7 @@ class NatAclPlugin(AclPolicyPlugin):
 
             # Direction for NAT firewall only supports "out"
             page = 1
-            while True:
+            for _loop_counter in range(1, 1000):
                 params = {
                     "CurrentPage": str(page),
                     "PageSize": str(page_size),
@@ -213,7 +213,7 @@ class NatAclPlugin(AclPolicyPlugin):
             conclusion that "no available NAT gateway exists in this account".
             """
             gws, page = set(), 1
-            while True:
+            for _loop_counter in range(1, 1000):
                 data = call_api_fn(ak, sk, endpoint, "DescribeNatFirewallList", {
                     "PageNo": str(page), "PageSize": "50", "Lang": "zh"}, security_token)
                 batch = (data or {}).get("NatFirewallList", [])
@@ -263,7 +263,7 @@ class NatAclPlugin(AclPolicyPlugin):
                 print(f"  Available NAT gateways in this account (multiple allowed, comma-separated indices):")
                 for i, g in enumerate(available_gws, 1):
                     print(f"    [{i}] {g}")
-                while True:
+                for _loop_counter in range(1, 1000):
                     sel = input("  Please select the NAT gateway(s) to restore to: ").strip()
                     try:
                         picked = [available_gws[int(t) - 1] for t in sel.split(",") if t.strip()]

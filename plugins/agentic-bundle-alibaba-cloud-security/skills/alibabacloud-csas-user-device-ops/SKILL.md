@@ -3,16 +3,25 @@ name: alibabacloud-csas-user-device-ops
 description: 'Use this skill when users ask about SASE terminal device management,
   user account queries, inactive device analysis, or device locking on Alibaba Cloud
   SASE (product code: csas). Trigger scenarios: "查下哪些设备长期离线", "某部门有多少 终端设备", "锁定闲置设备",
-  "查看用户被授权了哪些应用". Capabilities: flexible device querying with 20+ filters (department,
-  device type, OS, SASE feature status, etc.), user listing, user application authorization
-  queries, inactive device analysis, and locking inactive devices. Deletion or irreversible
-  operations are NOT supported — users are guided to the SASE console. 当用户询问 SASE
-  终端设备管理、用户账号查询、非活跃设备分析、设备锁定时使用此 Skill。 支持灵活的设备条件组合查询（20+ 筛选项）、用户列表查询、应用授权查询、非活跃设备分析、
-  锁定非活跃终端。不支持删除等不可逆操作。 注意：当前不支持用户活跃度分析（API 不提供用户最后活跃时间，设备绑定关系会变更）。'
-allowed-tools: Bash Read
+  "查看用户被授权了哪些应用". Capabilities: flexible device querying wit...'
+allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
+- run_command
+- view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 ## Pre-checks

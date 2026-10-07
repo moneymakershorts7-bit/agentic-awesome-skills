@@ -3,15 +3,25 @@ name: alibabacloud-nas-mount-diagnosis
 description: Diagnose and troubleshoot Alibaba Cloud NAS mount failures. Use when
   users encounter NAS mount errors on Linux or Windows, including NFS and SMB protocol
   mount failures, network connectivity issues, permission group misconfigurations,
-  security group port blocks, or specific error codes like "mount.nfs No such device",
-  "access denied by server", Windows system error 53/58/64/67/85/1231/1272/1312/3227320323,
-  and auto-mount failures on boot. Covers both General Purpose NAS and Extreme NAS
-  file systems. Also handles container (K8s/Docker) NAS mount issues, cross-VPC/cross-account
-  mount problems, and ECS cloud assistant batch mount failures.
-allowed-tools: Bash Read aliyun
+  security group port blocks, or specific error codes like "mo...
+allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
+- run_command
+- view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-ecs-troubleshoot-skills
+date_added: '2026-10-07'
 ---
 
 # NAS Mount Failure Troubleshooting

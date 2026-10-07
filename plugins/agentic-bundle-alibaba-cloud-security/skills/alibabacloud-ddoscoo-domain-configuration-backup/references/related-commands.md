@@ -2,7 +2,7 @@
 
 Complete quick-reference table of all `aliyun ddoscoo` CLI commands used by this skill.
 
-> All commands must include `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-ddoscoo-domain-configuration-backup/<SESSION_ID>`.
+> Required option: `--user-agent AlibabaCloud-Agent-Skills/alibabacloud-ddoscoo-domain-configuration-backup/<SESSION_ID>`.
 
 ## Export Commands (16 describe APIs)
 

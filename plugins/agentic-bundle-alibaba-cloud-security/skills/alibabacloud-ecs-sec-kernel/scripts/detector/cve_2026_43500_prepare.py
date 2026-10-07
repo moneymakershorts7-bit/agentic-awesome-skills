@@ -216,7 +216,7 @@ class CVE202643500PrepareHandler(BasePrepareHandler):
         try:
             result = subprocess.run(
                 "lsmod | grep rxrpc",
-                shell=True,
+                shell=False,
                 stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True,
                 timeout=5,
             )

@@ -17,7 +17,7 @@ import http.client
 import ipaddress
 import os
 import re
-import socket
+import urllib.request
 import ssl
 import subprocess
 import sys

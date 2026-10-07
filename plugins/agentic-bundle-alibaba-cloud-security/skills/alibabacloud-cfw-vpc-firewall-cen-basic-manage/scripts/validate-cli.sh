@@ -110,7 +110,7 @@ if [[ "${1:-}" == "--install-guide" ]]; then
 2. First install, or a major upgrade:
 
      curl -fsSL -o /tmp/setup.sh --connect-timeout 10 --max-time 120 \
-       https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh
+       https://aliyuncli.alicdn.com/setup.sh && echo "Please install Alibaba Cloud CLI"
 
    Routine update, available from CLI 3.3.5:
 

@@ -5,11 +5,23 @@ description: 'Alibaba Cloud Security Center incident management skill. Query sec
 
   Triggers: "云安全中心", "安全事件", "事件查询", "安全态势", "威胁事件", "cloud-siem", "Agentic-soc".'
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Alibaba Cloud Security Center - Incident Management

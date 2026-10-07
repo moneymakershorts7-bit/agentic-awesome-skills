@@ -3,18 +3,25 @@ name: alibabacloud-sas-install-agent
 description: Alibaba Cloud Security Center (SAS) agent onboarding and management assistant.
   Use this skill when the user wants to onboard servers to Security Center, install
   the security agent, deploy cloud security protection, connect via proxy, troubleshoot
-  agent offline or installation failures, create image templates with pre-installed
-  agent, view Security Center version and expiration, check authorization quota, upgrade
-  or switch server protection versions, toggle pay-as-you-go feature modules, uninstall
-  the Security Center agent from a server, find servers with specific software installed
-  (e.g. Nginx, MySQL, Redis), or detect security risks (vulnerability scanning, baseline
-  checks, security alert queries).
+  agent offline or installation failures, create i...
 allowed-tools:
+- bash
+- glob
+- grep
+- read
+- write
 - run_command
 - view_file
+- write_to_file
 metadata:
   author: Alibaba Cloud
   category: security
+license: Apache-2.0
+risk: safe
+source: official
+source_type: official
+source_repo: aliyun/alibabacloud-aiops-skills
+date_added: '2026-10-07'
 ---
 
 # Security Center Agent Onboarding and Management
@@ -27,7 +34,7 @@ Execution model: read operations execute directly (ReAct), write operations disp
 
 > **Pre-check: Aliyun CLI >= 3.3.3 required**
 > Run `aliyun version` to verify >= 3.3.3. If not installed or version too low,
-> run `curl -fsSL -o /tmp/setup.sh https://aliyuncli.alicdn.com/setup.sh && bash /tmp/setup.sh` to install/update,
+> run `echo 'Refer to official Alibaba Cloud CLI documentation for installation.'
 > or see `references/cli-installation-guide.md` for installation instructions.
 > Then [MUST] run `aliyun configure set --auto-plugin-install true` to enable automatic plugin installation.
 > Then [MUST] run `aliyun plugin update` to ensure that any existing plugins on your local machine are always up-to-date.
