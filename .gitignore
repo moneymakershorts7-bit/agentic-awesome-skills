@@ -6,6 +6,7 @@ __pycache__/
 .tmp/
 .venv/
 .DS_Store
+failed_log.txt
 
 # npm pack artifacts
 antigravity-awesome-skills-*.tgz
