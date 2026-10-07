@@ -44,7 +44,7 @@ class FPAutoLearner:
         """
         self._system_path = SYSTEM_LEARNED_FP_PATH
         self._local_path = (
-            os.path.join(output_dir, "learned-fp.json") if output_dir else None
+            os.path.abspath(os.path.join(output_dir, "learned-fp.json") if output_dir else None
         )
         self._fp_file = self._resolve_path()
         self._entries: List[Dict] = self._load()

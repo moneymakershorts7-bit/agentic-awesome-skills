@@ -278,7 +278,7 @@ class K8sLateralMovementAnalyzer(BaseAnalyzer):
             try:
                 for root, dirs, files in os.walk(cni_dir):
                     for filename in files:
-                        filepath = os.path.join(root, filename)
+                        filepath = os.path.abspath(os.path.join(root, filename)
                         
                         if filename.endswith(('.conflist', '.conf', '.json')):
                             evidences.extend(self._check_cni_config_file(filepath))
@@ -434,7 +434,7 @@ class K8sLateralMovementAnalyzer(BaseAnalyzer):
                 try:
                     for root, dirs, files in os.walk(bpf_path):
                         for filename in files:
-                            filepath = os.path.join(root, filename)
+                            filepath = os.path.abspath(os.path.join(root, filename)
                             
                             for prog_type, description in self.EBPF_PROGRAM_TYPES.items():
                                 if prog_type in filename.lower() or prog_type in filepath.lower():
@@ -517,7 +517,7 @@ class K8sLateralMovementAnalyzer(BaseAnalyzer):
                         if not filename.endswith(('.yaml', '.yml')):
                             continue
                         
-                        filepath = os.path.join(root, filename)
+                        filepath = os.path.abspath(os.path.join(root, filename)
                         try:
                             with open(filepath, 'r', errors='replace', encoding='utf-8') as f:
                                 content = f.read()
@@ -618,7 +618,7 @@ class K8sLateralMovementAnalyzer(BaseAnalyzer):
                         if not filename.endswith(('.yaml', '.yml', '.json')):
                             continue
                         
-                        filepath = os.path.join(root, filename)
+                        filepath = os.path.abspath(os.path.join(root, filename)
                         try:
                             with open(filepath, 'r', errors='replace', encoding='utf-8') as f:
                                 content = f.read()
@@ -737,7 +737,7 @@ class K8sLateralMovementAnalyzer(BaseAnalyzer):
                         if not filename.endswith(('.yaml', '.yml')):
                             continue
                         
-                        filepath = os.path.join(root, filename)
+                        filepath = os.path.abspath(os.path.join(root, filename)
                         try:
                             with open(filepath, 'r', errors='replace', encoding='utf-8') as f:
                                 content = f.read()

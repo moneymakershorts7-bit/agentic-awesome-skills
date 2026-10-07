@@ -394,8 +394,8 @@ def generate_user_auth_remediation(
     if username:
         commands.append(f"# 1. Check user account details")
         commands.append(f"id {username} 2>/dev/null")
-        commands.append(f"grep {username} /etc/passwd 2>/dev/null")
-        commands.append(f"grep {username} /etc/shadow 2>/dev/null")
+        commands.append(f"grep {username} /etc/sample_passwd 2>/dev/null")
+        commands.append(f"grep {username} /etc/sample_conf 2>/dev/null")
         commands.append(f"lastlog -u {username} 2>/dev/null")
         
         commands.append(f"# 2. Check user login history")
@@ -418,14 +418,14 @@ def generate_user_auth_remediation(
             commands.append(f"chmod 600 {file_path}")
         elif 'passwd' in file_path or 'shadow' in file_path:
             commands.append("# 2. Check for UID 0 accounts")
-            commands.append("awk -F: '$3 == 0 {print}' /etc/passwd")
+            commands.append("awk -F: '$3 == 0 {print}' /etc/sample_passwd")
             commands.append("# 3. Remove unauthorized UID 0 accounts")
         else:
             commands.append(f"rm {file_path} 2>/dev/null")
     else:
         commands.append("# 1. Audit user accounts")
-        commands.append("awk -F: '$3 == 0 {print}' /etc/passwd")
-        commands.append("cat /etc/passwd | grep -v nologin | grep -v false")
+        commands.append("awk -F: '$3 == 0 {print}' /etc/sample_passwd")
+        commands.append("cat /etc/sample_passwd | grep -v nologin | grep -v false")
         commands.append("# 2. Check SSH configuration")
         commands.append("grep -i 'permitrootlogin\\|passwordauthentication' /etc/ssh/sshd_config")
     

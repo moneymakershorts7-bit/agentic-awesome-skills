@@ -14,7 +14,7 @@ def _load_proc_module():
             if _proc_module is None:
                 import importlib.util
                 import os
-                proc_path = os.path.join(os.path.dirname(__file__), 'proc.py')
+                proc_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'proc.py')
                 spec = importlib.util.spec_from_file_location("_proc_actual", proc_path)
                 mod = importlib.util.module_from_spec(spec)
                 spec.loader.exec_module(mod)

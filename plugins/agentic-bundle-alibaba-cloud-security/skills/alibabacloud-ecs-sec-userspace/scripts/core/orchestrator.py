@@ -106,8 +106,8 @@ def _setup_logging(output_dir: str, quiet: bool = False, log_level: str = "INFO"
     logger.handlers.clear()
 
     log_date = date.today().isoformat()
-    os.makedirs(os.path.join(output_dir, 'report'), exist_ok=True)
-    log_file = os.path.join(output_dir, 'report', f'sec-userspace-log-{log_date}.log')
+    os.makedirs(os.path.abspath(os.path.join(output_dir, 'report'), exist_ok=True)
+    log_file = os.path.abspath(os.path.join(output_dir, 'report', f'sec-userspace-log-{log_date}.log')
 
     file_handler = logging.FileHandler(log_file, encoding='utf-8')
     numeric_level = getattr(logging, log_level.upper(), logging.INFO)
@@ -291,7 +291,7 @@ def run_whitelist_maintenance(workspace_dir: str, stream_out, logger, args=None)
             return
 
         environment = detect_environment()
-        whitelist_path = os.path.join(workspace_dir, "whitelist.json")
+        whitelist_path = os.path.abspath(os.path.join(workspace_dir, "whitelist.json")
         manager = WhitelistManager(whitelist_path, environment)
 
         if config.should_auto_cleanup():
@@ -446,7 +446,7 @@ def handle_performance_commands(args):
 def run_trend_analysis_if_enabled(args, stream_out, logger, module_stats=None, throttle_ctrl=None, report_summary=None):
     """Execute trend analysis."""
     workspace_dir = getattr(args, "workspace_dir", args.output_dir)
-    report_dir = os.path.join(workspace_dir, "report")
+    report_dir = os.path.abspath(os.path.join(workspace_dir, "report")
     try:
         from ..reporter.trend import TrendAnalyzer
         trend_analyzer = TrendAnalyzer(base_dir=args.output_dir, days=7)
@@ -464,7 +464,7 @@ def run_trend_analysis_if_enabled(args, stream_out, logger, module_stats=None, t
 
 def _generate_timeout_report(workspace_dir: str, args, stream_out) -> None:
     """Generate a minimal report when scan times out."""
-    report_dir = os.path.join(workspace_dir, datetime.now().strftime("%Y-%m-%d"), "report")
+    report_dir = os.path.abspath(os.path.join(workspace_dir, datetime.now().strftime("%Y-%m-%d"), "report")
     os.makedirs(report_dir, exist_ok=True)
     date_str = date.today().isoformat()
     try:
@@ -483,7 +483,7 @@ def _generate_timeout_report(workspace_dir: str, args, stream_out) -> None:
         f"## Partial Results\n- **Evidence**: {partial_evidences}\n- **Modules**: {partial_modules}/{total_modules}\n\n"
         f"Use --force or retry during lower load.\n"
     )
-    sec_report_path = os.path.join(report_dir, f"sec-report-{date_str}.md")
+    sec_report_path = os.path.abspath(os.path.join(report_dir, f"sec-report-{date_str}.md")
     with open(sec_report_path, "w", encoding="utf-8") as f:
         f.write(timeout_md)
     stream_out.info(f"Timeout report: {sec_report_path}")
@@ -492,7 +492,7 @@ def _generate_timeout_report(workspace_dir: str, args, stream_out) -> None:
 def _generate_error_report(workspace_dir: str, args, error: Exception, stream_out) -> None:
     """Generate a minimal error report on fatal failure."""
     import traceback
-    report_dir = os.path.join(workspace_dir, datetime.now().strftime("%Y-%m-%d"), "report")
+    report_dir = os.path.abspath(os.path.join(workspace_dir, datetime.now().strftime("%Y-%m-%d"), "report")
     os.makedirs(report_dir, exist_ok=True)
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d-%H%M%S")
 
@@ -505,7 +505,7 @@ def _generate_error_report(workspace_dir: str, args, error: Exception, stream_ou
         "traceback": traceback.format_exc(),
         "partial_results": {"evidences": partial_evidences, "modules": partial_modules},
     }
-    report_path = os.path.join(report_dir, f"error-report-{timestamp}.json")
+    report_path = os.path.abspath(os.path.join(report_dir, f"error-report-{timestamp}.json")
     with open(report_path, 'w', encoding='utf-8') as f:
         json.dump(error_report, f, indent=2, ensure_ascii=False)
     stream_out.warn(f"Error report: {report_path}")

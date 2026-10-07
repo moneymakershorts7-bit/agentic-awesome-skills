@@ -20,7 +20,7 @@ from typing import Dict, List, Optional
 DEFAULT_FP_EXCEPTIONS_PATHS = [
     '/etc/sec-userspace/fp-exceptions.json',
     os.path.expanduser('~/.sec-userspace/fp-exceptions.json'),
-    os.path.join(os.path.dirname(__file__), 'fp-exceptions.json'),
+    os.path.abspath(os.path.join(os.path.dirname(__file__), 'fp-exceptions.json'),
 ]
 
 
@@ -119,7 +119,7 @@ class FpTracker:
         if not logger.handlers:
             try:
                 handler = logging.FileHandler(
-                    os.path.join(self._log_dir, 'fp-tracker.log'),
+                    os.path.abspath(os.path.join(self._log_dir, 'fp-tracker.log'),
                     encoding='utf-8'
                 )
                 handler.setFormatter(logging.Formatter(
@@ -131,7 +131,7 @@ class FpTracker:
                 self._log_dir = '/tmp/sec-userspace-fp'
                 os.makedirs(self._log_dir, exist_ok=True)
                 handler = logging.FileHandler(
-                    os.path.join(self._log_dir, 'fp-tracker.log'),
+                    os.path.abspath(os.path.join(self._log_dir, 'fp-tracker.log'),
                     encoding='utf-8'
                 )
                 handler.setFormatter(logging.Formatter(
@@ -143,7 +143,7 @@ class FpTracker:
     
     def _load_existing_records(self):
         """Load existing FP records from log file."""
-        log_file = os.path.join(self._log_dir, 'fp-records.json')
+        log_file = os.path.abspath(os.path.join(self._log_dir, 'fp-records.json')
         if os.path.exists(log_file):
             try:
                 with open(log_file, 'r', encoding='utf-8') as f:
@@ -308,7 +308,7 @@ class FpTracker:
     
     def _save_records(self):
         """Save FP records to file."""
-        log_file = os.path.join(self._log_dir, 'fp-records.json')
+        log_file = os.path.abspath(os.path.join(self._log_dir, 'fp-records.json')
         try:
             with open(log_file, 'w', encoding='utf-8') as f:
                 json.dump({
@@ -627,7 +627,7 @@ class FpTracker:
             except OSError as e:
                 self._logger.error(f"Failed to write FP report: {e}")
                 # Fallback to log directory
-                fallback_path = os.path.join(self._log_dir, f"fp-report-{now.strftime('%Y-%m-%d')}.md")
+                fallback_path = os.path.abspath(os.path.join(self._log_dir, f"fp-report-{now.strftime('%Y-%m-%d')}.md")
                 with open(fallback_path, 'w', encoding='utf-8') as f:
                     f.write(content)
                 output_path = fallback_path
@@ -696,7 +696,7 @@ class FpTracker:
         
         self._logger.info(f"Auto-FP Suggestion: {analyzer}/{evidence_type} ({occurrence_count} occurrences)")
         
-        suggestion_file = os.path.join(self._log_dir, 'fp-suggestions.json')
+        suggestion_file = os.path.abspath(os.path.join(self._log_dir, 'fp-suggestions.json')
         suggestions = []
         if os.path.exists(suggestion_file):
             try:
@@ -725,7 +725,7 @@ class FpTracker:
         Returns:
             List of suggestion dictionaries
         """
-        suggestion_file = os.path.join(self._log_dir, 'fp-suggestions.json')
+        suggestion_file = os.path.abspath(os.path.join(self._log_dir, 'fp-suggestions.json')
         if os.path.exists(suggestion_file):
             try:
                 with open(suggestion_file, 'r', encoding='utf-8') as f:

@@ -245,7 +245,7 @@ class FileScannerMixin:
             home_dir = user["home_dir"]
 
             # Check .bash_history
-            bash_history = os.path.join(home_dir, ".bash_history")
+            bash_history = os.path.abspath(os.path.join(home_dir, ".bash_history")
             if os.path.exists(bash_history):
                 try:
                     st = os.stat(bash_history)
@@ -269,7 +269,7 @@ class FileScannerMixin:
 
             # Check .bashrc and .bash_profile
             for config_file in [".bashrc", ".bash_profile", ".profile"]:
-                config_path = os.path.join(home_dir, config_file)
+                config_path = os.path.abspath(os.path.join(home_dir, config_file)
                 if os.path.exists(config_path):
                     try:
                         file_size = os.path.getsize(config_path)
@@ -316,7 +316,7 @@ class FileScannerMixin:
             home_dir = user["home_dir"]
 
             for skill_pattern in skill_dir_patterns:
-                skill_dir = os.path.join(home_dir, skill_pattern)
+                skill_dir = os.path.abspath(os.path.join(home_dir, skill_pattern)
 
                 if not os.path.isdir(skill_dir):
                     continue

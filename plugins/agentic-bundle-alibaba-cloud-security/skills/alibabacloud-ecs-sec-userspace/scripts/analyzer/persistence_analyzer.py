@@ -805,9 +805,9 @@ class PersistenceAnalyzer(BaseAnalyzer):
                     continue
                 
                 user_startup_files = [
-                    (os.path.join(home, ".bashrc"), f"{username}'s .bashrc"),
-                    (os.path.join(home, ".profile"), f"{username}'s .profile"),
-                    (os.path.join(home, ".bash_profile"), f"{username}'s .bash_profile"),
+                    (os.path.abspath(os.path.join(home, ".bashrc"), f"{username}'s .bashrc"),
+                    (os.path.abspath(os.path.join(home, ".profile"), f"{username}'s .profile"),
+                    (os.path.abspath(os.path.join(home, ".bash_profile"), f"{username}'s .bash_profile"),
                 ]
                 
                 for filepath, desc in user_startup_files:
@@ -816,7 +816,7 @@ class PersistenceAnalyzer(BaseAnalyzer):
                         evidences.append(evidence)
                 
                 # Check XDG autostart directory
-                xdg_autostart = os.path.join(home, ".config", "autostart")
+                xdg_autostart = os.path.abspath(os.path.join(home, ".config", "autostart")
                 if os.path.isdir(xdg_autostart):
                     try:
                         for entry in os.scandir(xdg_autostart):
@@ -1024,10 +1024,10 @@ class PersistenceAnalyzer(BaseAnalyzer):
     def _get_user_config_paths(self, home_dir: str) -> List[str]:
         """Get list of user-level PATH configuration file paths."""
         return [
-            os.path.join(home_dir, '.bashrc'),
-            os.path.join(home_dir, '.profile'),
-            os.path.join(home_dir, '.bash_profile'),
-            os.path.join(home_dir, '.zshrc'),
+            os.path.abspath(os.path.join(home_dir, '.bashrc'),
+            os.path.abspath(os.path.join(home_dir, '.profile'),
+            os.path.abspath(os.path.join(home_dir, '.bash_profile'),
+            os.path.abspath(os.path.join(home_dir, '.zshrc'),
         ]
 
     def _read_file_safely(self, filepath: str) -> Optional[str]:

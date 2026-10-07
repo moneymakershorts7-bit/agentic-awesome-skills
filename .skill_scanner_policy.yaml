@@ -1,0 +1,77 @@
+policy_name: agentic-awesome-skills-policy
+policy_version: "1.0"
+suppressions:
+  - rule_id: COMPOUND_FETCH_EXECUTE
+    skills:
+      - "alibabacloud-nas-mount-diagnosis"
+    reason: "Official Alibaba Cloud NAS diagnostic client script download instructions"
+  - rule_id: YARA_jailbreak_generic
+    skills:
+      - "alibabacloud-safety-checker"
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "LLM safety benchmark and jailbreak evaluation dataset test cases"
+  - rule_id: YARA_coercive_injection_generic
+    skills:
+      - "alibabacloud-sas-incident-manage"
+      - "alibabacloud-waf-rule-management"
+    reason: "Security incident response and WAF rule definition instructions"
+  - rule_id: YARA_system_manipulation_generic
+    skills:
+      - "alibabacloud-sas-openclaw-security"
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Cloud Assistant command invocation and security hardening logic"
+  - rule_id: YARA_command_injection_generic
+    skills:
+      - "alibabacloud-sas-openclaw-security"
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Security hardening command dispatch helpers"
+  - rule_id: COMPOUND_EXTRACT_EXECUTE
+    skills:
+      - "alibabacloud-security-health-check"
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Collector runner unpacks diagnostic tools locally"
+  - rule_id: DATA_EXFIL_SOCKET_CONNECT
+    skills:
+      - "alibabacloud-waf-certchain-complete"
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "SSL/TLS certificate chain verification connect probe and network prober"
+  - rule_id: FIND_EXEC_PATTERN
+    skills:
+      - "alibabacloud-waf-protectionconfig-backup"
+    reason: "File cleanup verification command documentation"
+  - rule_id: YARA_malware_generic
+    skills:
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Host forensics signatures and detection engine rules"
+  - rule_id: YARA_injection_generic
+    skills:
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Library injection detection engine rules"
+  - rule_id: YARA_credential_harvesting_generic
+    skills:
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Forensic analyzer detects credential harvesting patterns"
+  - rule_id: PATH_TRAVERSAL_OPEN
+    skills:
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Forensic analyzer path parsing routines"
+  - rule_id: COMMAND_INJECTION_OS_SYSTEM
+    skills:
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Forensic analyzer command inspection"
+  - rule_id: COMMAND_INJECTION_EVAL
+    skills:
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Forensic analyzer eval detection logic"
+  - rule_id: DATA_EXFIL_SENSITIVE_FILES
+    skills:
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Host security audit inspects /proc and system config files"
+  - rule_id: SQL_INJECTION_STRING_FORMAT
+    skills:
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Local sqlite report database queries"
+  - rule_id: DATA_EXFIL_SENSITIVE_FILE_GLOB
+    skills:
+      - "alibabacloud-ecs-sec-userspace"
+    reason: "Host security auditor file scanner"

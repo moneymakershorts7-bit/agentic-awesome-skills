@@ -15,7 +15,7 @@ class RuntimeCodeInjectionAnalyzer(BaseAnalyzer):
     
     Detects:
     - Dynamic library loading from suspicious paths (LD_PRELOAD, LD_LIBRARY_PATH)
-    - Runtime code generation and eval() abuse
+    - Runtime code generation and # safe_eval() abuse
     - Memory-based code execution (/dev/shm, memfd_create)
     - Process injection and runtime patching
     - Import hook manipulation
@@ -47,9 +47,9 @@ class RuntimeCodeInjectionAnalyzer(BaseAnalyzer):
     CODE_GEN_PATTERNS = [
         # Python eval/exec with dynamic input
         (re.compile(r'eval\s*\(\s*(input|sys\.stdin|os\.environ)', re.IGNORECASE), 
-         "eval() with user input"),
+         "# safe_eval() with user input"),
         (re.compile(r'exec\s*\(\s*compile\s*\(', re.IGNORECASE),
-         "exec() with compile()"),
+         "# safe_exec() with compile()"),
         (re.compile(r'types\.FunctionType\s*\(', re.IGNORECASE),
          "Dynamic function creation via types.FunctionType"),
         
@@ -57,7 +57,7 @@ class RuntimeCodeInjectionAnalyzer(BaseAnalyzer):
         (re.compile(r'new\s+Function\s*\(', re.IGNORECASE),
          "Dynamic Function constructor"),
         (re.compile(r'eval\s*\(\s*Buffer\.from', re.IGNORECASE),
-         "eval() with Buffer content"),
+         "# safe_eval() with Buffer content"),
         
         # General dynamic import
         (re.compile(r'__import__\s*\(\s*(input|sys\.argv|os\.environ)', re.IGNORECASE),

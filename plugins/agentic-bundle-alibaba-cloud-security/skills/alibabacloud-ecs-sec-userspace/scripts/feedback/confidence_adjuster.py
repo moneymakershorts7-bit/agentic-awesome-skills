@@ -31,8 +31,8 @@ class ConfidenceAdjuster:
 
     def __init__(self, workspace_dir: str):
         self._workspace_dir = workspace_dir
-        self._feedback_dir = os.path.join(workspace_dir, "feedback")
-        self._state_path = os.path.join(self._feedback_dir, "confidence_state.json")
+        self._feedback_dir = os.path.abspath(os.path.join(workspace_dir, "feedback")
+        self._state_path = os.path.abspath(os.path.join(self._feedback_dir, "confidence_state.json")
         self._history = ScanHistoryStore(workspace_dir)
         self._state: Dict[str, Dict] = {}
         self._load_state()

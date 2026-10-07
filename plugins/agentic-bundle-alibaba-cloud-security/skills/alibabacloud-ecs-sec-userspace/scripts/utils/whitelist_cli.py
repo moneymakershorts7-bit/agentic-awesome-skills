@@ -611,11 +611,11 @@ def handle_whitelist_add(args) -> int:
         
         # Load existing user config or create new one
         if args.level == "workspace":
-            directory = os.path.join(args.workspace_dir, "whitelist")
+            directory = os.path.abspath(os.path.join(args.workspace_dir, "whitelist")
         else:
             directory = SYSTEM_WHITELIST_DIR
         
-        user_whitelist_path = os.path.join(directory, USER_WHITELIST_FILE)
+        user_whitelist_path = os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE)
         
         if os.path.exists(user_whitelist_path):
             with open(user_whitelist_path, 'r', encoding='utf-8') as f:
@@ -672,11 +672,11 @@ def handle_whitelist_remove(args) -> int:
         WhitelistLoader(args.workspace_dir)
         
         if args.level == "workspace":
-            directory = os.path.join(args.workspace_dir, "whitelist")
+            directory = os.path.abspath(os.path.join(args.workspace_dir, "whitelist")
         else:
             directory = SYSTEM_WHITELIST_DIR
         
-        user_whitelist_path = os.path.join(directory, USER_WHITELIST_FILE)
+        user_whitelist_path = os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE)
         
         if not os.path.exists(user_whitelist_path):
             print(f"No user whitelist found at {user_whitelist_path}")
@@ -802,11 +802,11 @@ def handle_whitelist_export(args) -> int:
         from .whitelist_loader import USER_WHITELIST_FILE
         
         if args.level == "workspace":
-            directory = os.path.join(args.workspace_dir, "whitelist")
+            directory = os.path.abspath(os.path.join(args.workspace_dir, "whitelist")
         else:
             directory = SYSTEM_WHITELIST_DIR
         
-        user_whitelist_path = os.path.join(directory, USER_WHITELIST_FILE)
+        user_whitelist_path = os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE)
         
         if not os.path.exists(user_whitelist_path):
             print(f"No user whitelist found at {user_whitelist_path}")
@@ -856,11 +856,11 @@ def handle_whitelist_import(args) -> int:
             return 1
         
         if args.level == "workspace":
-            directory = os.path.join(args.workspace_dir, "whitelist")
+            directory = os.path.abspath(os.path.join(args.workspace_dir, "whitelist")
         else:
             directory = SYSTEM_WHITELIST_DIR
         
-        user_whitelist_path = os.path.join(directory, USER_WHITELIST_FILE)
+        user_whitelist_path = os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE)
         
         if args.merge and os.path.exists(user_whitelist_path):
             # Merge with existing configuration
@@ -919,11 +919,11 @@ def handle_whitelist_add_prefix(args) -> int:
         WhitelistLoader(args.workspace_dir)
         
         if args.level == "workspace":
-            directory = os.path.join(args.workspace_dir, "whitelist")
+            directory = os.path.abspath(os.path.join(args.workspace_dir, "whitelist")
         else:
             directory = SYSTEM_WHITELIST_DIR
         
-        user_whitelist_path = os.path.join(directory, USER_WHITELIST_FILE)
+        user_whitelist_path = os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE)
         
         # Load existing config or create new one
         if os.path.exists(user_whitelist_path):
@@ -982,11 +982,11 @@ def handle_whitelist_add_category(args) -> int:
         WhitelistLoader(args.workspace_dir)
         
         if args.level == "workspace":
-            directory = os.path.join(args.workspace_dir, "whitelist")
+            directory = os.path.abspath(os.path.join(args.workspace_dir, "whitelist")
         else:
             directory = SYSTEM_WHITELIST_DIR
         
-        user_whitelist_path = os.path.join(directory, USER_WHITELIST_FILE)
+        user_whitelist_path = os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE)
         
         # Load existing config or create new one
         if os.path.exists(user_whitelist_path):

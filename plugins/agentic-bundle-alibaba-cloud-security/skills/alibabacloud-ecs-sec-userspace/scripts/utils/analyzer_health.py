@@ -18,7 +18,7 @@ class AnalyzerHealthTracker:
     """Tracks analyzer health metrics across multiple scans."""
 
     def __init__(self, workspace_dir: str, window: int = _DEFAULT_WINDOW):
-        self._path = os.path.join(workspace_dir, "analyzer_health.json")
+        self._path = os.path.abspath(os.path.join(workspace_dir, "analyzer_health.json")
         self._window = window
         self._data: Dict[str, Dict[str, Any]] = {}
         self._load()

@@ -585,7 +585,7 @@ def get_whitelist_manager(workspace_dir: str, environment: Optional[str] = None)
     if _whitelist_manager is None:
         with _whitelist_manager_lock:
             if _whitelist_manager is None:
-                whitelist_path = os.path.join(workspace_dir, "whitelist.json")
+                whitelist_path = os.path.abspath(os.path.join(workspace_dir, "whitelist.json")
                 _whitelist_manager = WhitelistManager(whitelist_path, environment)
 
     return _whitelist_manager

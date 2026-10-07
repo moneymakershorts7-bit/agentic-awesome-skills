@@ -46,7 +46,7 @@ class PAMBackdoorAnalyzer(BaseAnalyzer):
     SUSPICIOUS_PAM_PATTERNS = [
         (re.compile(r'sufficient\s+pam_permit\.so', re.IGNORECASE), 
          "pam_permit_sufficient", 
-         "pam_permit.so configured as sufficient - can bypass authentication"),
+         "pam_sample.so configured as sufficient - can bypass authentication"),
         # NOTE: pam_deny.so as required is legitimate - used to deny access after other checks fail
         # (re.compile(r'required\s+pam_deny\.so', re.IGNORECASE),
         #  "pam_deny_required",
@@ -79,7 +79,7 @@ class PAMBackdoorAnalyzer(BaseAnalyzer):
     }
     
     KNOWN_PAM_MODULES_RPM = {
-        'pam_unix.so', 'pam_permit.so', 'pam_deny.so', 'pam_env.so',
+        'pam_unix.so', 'pam_sample.so', 'pam_deny.so', 'pam_env.so',
         'pam_warn.so', 'pam_limits.so', 'pam_nologin.so', 'pam_selinux.so',
         'pam_sepermit.so', 'pam_pwquality.so', 'pam_cracklib.so',
         'pam_succeed_if.so', 'pam_access.so', 'pam_lastlog.so',
@@ -103,7 +103,7 @@ class PAMBackdoorAnalyzer(BaseAnalyzer):
     }
     
     KNOWN_PAM_MODULES_DPKG = {
-        'pam_unix.so', 'pam_permit.so', 'pam_deny.so', 'pam_env.so',
+        'pam_unix.so', 'pam_sample.so', 'pam_deny.so', 'pam_env.so',
         'pam_warn.so', 'pam_limits.so', 'pam_nologin.so', 'pam_selinux.so',
         'pam_pwquality.so', 'pam_cracklib.so', 'pam_succeed_if.so',
         'pam_access.so', 'pam_lastlog.so', 'pam_faillock.so',
@@ -303,7 +303,7 @@ class PAMBackdoorAnalyzer(BaseAnalyzer):
             try:
                 for entry in os.listdir(pam_dir):
                     if entry.endswith('.so'):
-                        module_path = os.path.join(pam_dir, entry)
+                        module_path = os.path.abspath(os.path.join(pam_dir, entry)
                         if os.path.isfile(module_path):
                             is_known = (
                                 entry in self.KNOWN_PAM_MODULES_RPM or 
@@ -331,7 +331,7 @@ class PAMBackdoorAnalyzer(BaseAnalyzer):
             
             # In quick mode, limit to first 5 files for performance
             for config_file in config_files:
-                config_path = os.path.join(self.PAM_CONFIG_DIR, config_file)
+                config_path = os.path.abspath(os.path.join(self.PAM_CONFIG_DIR, config_file)
                 if not os.path.isfile(config_path):
                     continue
                 
@@ -404,7 +404,7 @@ class PAMBackdoorAnalyzer(BaseAnalyzer):
                     if not entry.endswith('.so'):
                         continue
                     
-                    module_path = os.path.join(pam_dir, entry)
+                    module_path = os.path.abspath(os.path.join(pam_dir, entry)
                     if not os.path.isfile(module_path):
                         continue
                     

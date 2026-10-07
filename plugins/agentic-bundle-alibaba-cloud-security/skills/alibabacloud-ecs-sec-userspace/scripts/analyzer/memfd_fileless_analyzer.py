@@ -427,7 +427,7 @@ class MemfdFilelessAnalyzer(BaseAnalyzer):
                 return shm_files
             
             for entry in os.listdir(shm_path):
-                full_path = os.path.join(shm_path, entry)
+                full_path = os.path.abspath(os.path.join(shm_path, entry)
                 try:
                     stat_result = os.stat(full_path)
                     shm_files.append({

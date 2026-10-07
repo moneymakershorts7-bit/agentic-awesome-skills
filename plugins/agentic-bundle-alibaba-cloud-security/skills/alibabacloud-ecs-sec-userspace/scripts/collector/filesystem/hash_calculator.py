@@ -21,7 +21,7 @@ class HashCalculatorMixin:
         """Save binary hash results to disk cache"""
         try:
             os.makedirs(self._cache_dir, exist_ok=True)
-            cache_file = os.path.join(self._cache_dir, "binary_hash_cache.json")
+            cache_file = os.path.abspath(os.path.join(self._cache_dir, "binary_hash_cache.json")
 
             cache_data = {
                 "timestamp": time.time(),

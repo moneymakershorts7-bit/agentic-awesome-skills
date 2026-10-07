@@ -345,10 +345,10 @@ class BehaviorVerifier:
         ]
         if os.path.isdir(home_base):
             for user_dir in os.listdir(home_base):
-                user_home = os.path.join(home_base, user_dir)
+                user_home = os.path.abspath(os.path.join(home_base, user_dir)
                 if os.path.isdir(user_home):
                     for tool_dir in ai_tool_dirs:
-                        if os.path.exists(os.path.join(user_home, tool_dir)):
+                        if os.path.exists(os.path.abspath(os.path.join(user_home, tool_dir)):
                             dev_indicators.append(True)
                             break
         return sum(dev_indicators) >= 2

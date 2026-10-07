@@ -47,11 +47,11 @@ def _apply_cgroup_cpu_limit(cpu_limit: int) -> bool:
         quota = cpu_limit * 1000
         period = 100000
         
-        cpu_max_file = os.path.join(cgroup_path, 'cpu.max')
+        cpu_max_file = os.path.abspath(os.path.join(cgroup_path, 'cpu.max')
         with open(cpu_max_file, 'w', encoding='utf-8') as f:
             f.write(f"{quota} {period}")
         
-        cgroup_procs_file = os.path.join(cgroup_path, 'cgroup.procs')
+        cgroup_procs_file = os.path.abspath(os.path.join(cgroup_path, 'cgroup.procs')
         with open(cgroup_procs_file, 'w', encoding='utf-8') as f:
             f.write(str(os.getpid()))
         

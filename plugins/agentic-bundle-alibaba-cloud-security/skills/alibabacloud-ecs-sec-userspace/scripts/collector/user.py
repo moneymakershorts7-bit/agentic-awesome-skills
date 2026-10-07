@@ -116,7 +116,7 @@ class UserCollector(BaseCollector):
             username = user_info.get("username", "")
             if not home or not username:
                 continue
-            auth_keys_path = os.path.join(home, ".ssh", "authorized_keys")
+            auth_keys_path = os.path.abspath(os.path.join(home, ".ssh", "authorized_keys")
             
             if os.path.exists(auth_keys_path):
                 try:
@@ -210,7 +210,7 @@ class UserCollector(BaseCollector):
         try:
             if os.path.isdir(sudoers_d):
                 for filename in os.listdir(sudoers_d):
-                    filepath = os.path.join(sudoers_d, filename)
+                    filepath = os.path.abspath(os.path.join(sudoers_d, filename)
                     if os.path.isfile(filepath):
                         try:
                             with open(filepath, "r", errors='replace', encoding='utf-8') as f:

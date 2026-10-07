@@ -490,7 +490,7 @@ class ChineseReportGenerator:
         """
         os.makedirs(output_dir, exist_ok=True)
         date_str = datetime.now().strftime("%Y-%m-%d")
-        filepath = os.path.join(output_dir, f"sec-report-{date_str}-cn.md")
+        filepath = os.path.abspath(os.path.join(output_dir, f"sec-report-{date_str}-cn.md")
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(content)
         return filepath

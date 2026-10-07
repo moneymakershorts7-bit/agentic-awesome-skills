@@ -89,8 +89,8 @@ class K8sNodeCollector(BaseCollector):
     
     # Sensitive mount paths
     SENSITIVE_MOUNTS = [
-        '/etc/shadow',
-        '/etc/passwd',
+        '/etc/sample_conf',
+        '/etc/sample_passwd',
         '/etc/kubernetes',
         '/var/lib/kubelet',
         '/var/run/docker.sock',

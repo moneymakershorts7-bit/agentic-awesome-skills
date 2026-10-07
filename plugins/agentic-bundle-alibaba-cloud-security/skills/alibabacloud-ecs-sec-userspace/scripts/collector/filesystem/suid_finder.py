@@ -33,7 +33,7 @@ class SuidFinderMixin:
             os.makedirs(self._cache_dir, exist_ok=True)
 
             # Load SUID/SGID cache
-            suid_cache_file = os.path.join(self._cache_dir, "suid_sgid_cache.json")
+            suid_cache_file = os.path.abspath(os.path.join(self._cache_dir, "suid_sgid_cache.json")
             if os.path.exists(suid_cache_file):
                 cache_age = time.time() - os.path.getmtime(suid_cache_file)
                 if cache_age <= _SUID_SGID_CACHE_TTL:

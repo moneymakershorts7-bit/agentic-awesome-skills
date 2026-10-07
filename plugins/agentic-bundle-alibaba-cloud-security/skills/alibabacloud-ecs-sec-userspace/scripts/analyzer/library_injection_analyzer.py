@@ -235,7 +235,7 @@ class LibraryInjectionAnalyzer(BaseAnalyzer):
             for filename in os.listdir(conf_dir):
                 if not filename.endswith('.conf'):
                     continue
-                filepath = os.path.join(conf_dir, filename)
+                filepath = os.path.abspath(os.path.join(conf_dir, filename)
                 try:
                     with open(filepath, 'r', errors='replace', encoding='utf-8') as f:
                         content = f.read()
@@ -394,7 +394,7 @@ class LibraryInjectionAnalyzer(BaseAnalyzer):
                 for dirpath, dirnames, filenames in os.walk(root):
                     hidden_dirs = [d for d in dirnames if d.startswith('.')]
                     for hidden_dir in hidden_dirs:
-                        hidden_path = os.path.join(dirpath, hidden_dir)
+                        hidden_path = os.path.abspath(os.path.join(dirpath, hidden_dir)
                         try:
                             for entry in os.scandir(hidden_path):
                                 if not entry.is_file(follow_symlinks=False):

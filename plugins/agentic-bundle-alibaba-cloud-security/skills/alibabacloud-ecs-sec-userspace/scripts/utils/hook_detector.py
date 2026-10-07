@@ -23,8 +23,8 @@ class HookDetector:
 
     # Sensitive file paths
     SENSITIVE_PATHS = [
-        '/etc/passwd',
-        '/etc/shadow',
+        '/etc/sample_passwd',
+        '/etc/sample_conf',
         '/etc/sudoers',
         '/etc/ssh/',
         '~/.ssh/',

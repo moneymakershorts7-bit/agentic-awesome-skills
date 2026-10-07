@@ -56,12 +56,12 @@ class HashedWhitelistManager:
             return False
         
         # Database path
-        self._db_path = os.path.join(self.workspace_dir, "whitelist.db")
+        self._db_path = os.path.abspath(os.path.join(self.workspace_dir, "whitelist.db")
         
         # Check if migration is needed
         db_exists = os.path.exists(self._db_path)
         from .path_resolver import get_scripts_dir
-        fp_exceptions_path = os.path.join(get_scripts_dir(), "utils", "fp-exceptions.json")
+        fp_exceptions_path = os.path.abspath(os.path.join(get_scripts_dir(), "utils", "fp-exceptions.json")
         fp_exceptions_exists = os.path.exists(fp_exceptions_path)
         
         # Auto-migrate if: fp-exceptions.json exists AND whitelist.db doesn't exist
@@ -125,7 +125,7 @@ class HashedWhitelistManager:
         
         # Try to load from workspace cache
         try:
-            key_file = os.path.join(self.workspace_dir, "hmac.key")
+            key_file = os.path.abspath(os.path.join(self.workspace_dir, "hmac.key")
             if os.path.exists(key_file):
                 with open(key_file, 'r', encoding='utf-8') as f:
                     data = json.load(f)
@@ -140,7 +140,7 @@ class HashedWhitelistManager:
         
         # Save to workspace
         try:
-            key_file = os.path.join(self.workspace_dir, "hmac.key")
+            key_file = os.path.abspath(os.path.join(self.workspace_dir, "hmac.key")
             os.makedirs(os.path.dirname(key_file), exist_ok=True)
             with open(key_file, 'w', encoding='utf-8') as f:
                 json.dump({

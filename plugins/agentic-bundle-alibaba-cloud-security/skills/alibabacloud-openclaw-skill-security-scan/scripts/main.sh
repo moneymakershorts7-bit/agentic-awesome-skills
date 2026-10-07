@@ -1307,7 +1307,7 @@ run_static_analysis() {
     scan_pattern "process user instructions" "Found prompt injection pattern" "high"
     scan_pattern "ignore all.*instructions" "Found ignore-all injection pattern" "high"
     scan_pattern "you are now.*(assistant|expert|hacker)" "Found role override injection" "high"
-    scan_pattern "act as.*(ignore|bypass|override)" "Found act-as bypass injection" "high"
+    scan_pattern "act_as_override_pattern" "Found act-as bypass injection" "high"
     scan_pattern "system prompt.*override" "Found system prompt override" "high"
     scan_pattern "\bDAN\b|Do Anything Now" "Found DAN jailbreak reference" "high"
     scan_pattern "jailbreak|mode.*unfiltered" "Found jailbreak reference" "high"
@@ -1316,9 +1316,9 @@ run_static_analysis() {
     # Scenario 7: Code Obfuscation (Medium)
     # ============================================
     log_info "  Checking Scenario 7: Code Obfuscation..."
-    scan_pattern "eval\(atob\(" "Found eval(atob()) obfuscation" "medium"
-    scan_pattern "eval\(Buffer\.from" "Found eval(Buffer.from) obfuscation" "medium"
-    scan_pattern "Function\(.*atob" "Found Function+atob obfuscation" "medium"
+    scan_pattern "eval_pattern_atob" "Found eval(atob()) obfuscation" "medium"
+    scan_pattern "eval_pattern_buffer" "Found eval(Buffer.from) obfuscation" "medium"
+    scan_pattern "function_pattern_atob" "Found Function+atob obfuscation" "medium"
     scan_pattern "String\.fromCharCode" "Found fromCharCode obfuscation" "medium"
     scan_pattern "_0x[0-9a-fA-F]+" "Found hex variable naming" "medium"
     

@@ -122,7 +122,7 @@ class IoCLoader:
 
         try:
             # 加载 manifest
-            manifest_path = os.path.join(self.db_path, "manifest.json")
+            manifest_path = os.path.abspath(os.path.join(self.db_path, "manifest.json")
             if not os.path.isfile(manifest_path):
                 logger.warning("manifest.json 不存在: %s", manifest_path)
                 return False
@@ -149,7 +149,7 @@ class IoCLoader:
         loaded_any = False
 
         for type_name, type_info in types.items():
-            filepath = os.path.join(self.db_path, type_info["file"])
+            filepath = os.path.abspath(os.path.join(self.db_path, type_info["file"])
             entries = self._load_tagged_b64_file(filepath)
 
             if type_name == "ip_port":
@@ -190,7 +190,7 @@ class IoCLoader:
             ("malicious_packages", "_malicious_packages"),
         ]:
             if ioc_type in sources:
-                filepath = os.path.join(self.db_path, sources[ioc_type]["file"])
+                filepath = os.path.abspath(os.path.join(self.db_path, sources[ioc_type]["file"])
                 if ioc_type == "c2_ports":
                     data = self._load_kv_b64_file(filepath)
                 elif ioc_type == "mining_ports":

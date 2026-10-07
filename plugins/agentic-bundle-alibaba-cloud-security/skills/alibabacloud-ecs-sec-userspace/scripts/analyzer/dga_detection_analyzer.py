@@ -90,7 +90,7 @@ class DGADetectionAnalyzer(BaseAnalyzer):
             self._dns_baseline = self._create_empty_baseline()
             return
         try:
-            baseline_file = os.path.join(self.workspace_dir, 'dns_baseline.json')
+            baseline_file = os.path.abspath(os.path.join(self.workspace_dir, 'dns_baseline.json')
             if os.path.exists(baseline_file):
                 with open(baseline_file, 'r', encoding='utf-8') as f:
                     loaded_baseline = json.load(f)
@@ -118,7 +118,7 @@ class DGADetectionAnalyzer(BaseAnalyzer):
             self._dns_baseline = self._create_empty_baseline()
             return
         try:
-            backup_file = os.path.join(self.workspace_dir, 'dns_baseline.json.bak')
+            backup_file = os.path.abspath(os.path.join(self.workspace_dir, 'dns_baseline.json.bak')
             if os.path.exists(backup_file):
                 with open(backup_file, 'r', encoding='utf-8') as f:
                     restored_baseline = json.load(f)
@@ -150,7 +150,7 @@ class DGADetectionAnalyzer(BaseAnalyzer):
         if not self.workspace_dir or not self._dns_baseline:
             return
         try:
-            baseline_file = os.path.join(self.workspace_dir, 'dns_baseline.json')
+            baseline_file = os.path.abspath(os.path.join(self.workspace_dir, 'dns_baseline.json')
             os.makedirs(os.path.dirname(baseline_file), exist_ok=True)
             backup_file = baseline_file + '.bak'
             if os.path.exists(baseline_file):
@@ -164,7 +164,7 @@ class DGADetectionAnalyzer(BaseAnalyzer):
         except OSError as e:
             _get_logger().warning(f'Failed to save DNS baseline: {e}')
             try:
-                temp_file = os.path.join(self.workspace_dir, 'dns_baseline.json.tmp')
+                temp_file = os.path.abspath(os.path.join(self.workspace_dir, 'dns_baseline.json.tmp')
                 if os.path.exists(temp_file):
                     os.remove(temp_file)
             except OSError:
@@ -203,10 +203,10 @@ class DGADetectionAnalyzer(BaseAnalyzer):
         if not self.workspace_dir:
             return
         try:
-            history_dir = os.path.join(self.workspace_dir, 'dns_history')
+            history_dir = os.path.abspath(os.path.join(self.workspace_dir, 'dns_history')
             os.makedirs(history_dir, exist_ok=True)
             today_str = datetime.now().strftime('%Y-%m-%d')
-            history_file = os.path.join(history_dir, f'{today_str}.json')
+            history_file = os.path.abspath(os.path.join(history_dir, f'{today_str}.json')
             archive_data = {'date': today_str, 'total_queries': daily_stats.get('total_queries', 0), 'unique_domains': daily_stats.get('unique_domains', 0), 'nxdomain_count': int(daily_stats.get('total_queries', 0) * daily_stats.get('nxdomain_rate', 0)), 'nxdomain_rate': daily_stats.get('nxdomain_rate', 0), 'hourly_distribution': daily_stats.get('hourly_distribution', {}), 'archived_at': datetime.now().isoformat(), 'analyzer_version': self.MODEL_VERSION}
             temp_file = history_file + '.tmp'
             with open(temp_file, 'w', encoding='utf-8') as f:
@@ -229,7 +229,7 @@ class DGADetectionAnalyzer(BaseAnalyzer):
         if not self.workspace_dir:
             return
         try:
-            history_dir = os.path.join(self.workspace_dir, 'dns_history')
+            history_dir = os.path.abspath(os.path.join(self.workspace_dir, 'dns_history')
             if not os.path.exists(history_dir):
                 return
             cutoff_date = datetime.now() - timedelta(days=retention_days)
@@ -258,7 +258,7 @@ class DGADetectionAnalyzer(BaseAnalyzer):
         if not self.workspace_dir:
             return None
         try:
-            cache_file = os.path.join(self.workspace_dir, 'dns_periodicity', 'analysis_results.json')
+            cache_file = os.path.abspath(os.path.join(self.workspace_dir, 'dns_periodicity', 'analysis_results.json')
             if not os.path.exists(cache_file):
                 return None
             with open(cache_file, 'r', encoding='utf-8') as f:
@@ -292,9 +292,9 @@ class DGADetectionAnalyzer(BaseAnalyzer):
         if not self.workspace_dir or not results:
             return
         try:
-            cache_dir = os.path.join(self.workspace_dir, 'dns_periodicity')
+            cache_dir = os.path.abspath(os.path.join(self.workspace_dir, 'dns_periodicity')
             os.makedirs(cache_dir, exist_ok=True)
-            cache_file = os.path.join(cache_dir, 'analysis_results.json')
+            cache_file = os.path.abspath(os.path.join(cache_dir, 'analysis_results.json')
             total_days = self._dns_baseline.get('total_days', 0) if self._dns_baseline else 0
             if total_days < 3:
                 reanalyze_interval = 1

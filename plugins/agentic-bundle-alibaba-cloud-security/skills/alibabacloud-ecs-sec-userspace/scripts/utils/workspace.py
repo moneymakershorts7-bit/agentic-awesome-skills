@@ -22,7 +22,7 @@ WORKSPACE_MAX_BYTES = 1 * 1024 * 1024 * 1024
 def get_today_workspace(base_dir: str = DEFAULT_BASE_DIR) -> str:
     """Get today's workspace directory path: {base_dir}/{YYYY-MM-DD}/"""
     today = datetime.date.today().isoformat()
-    return os.path.join(base_dir, today)
+    return os.path.abspath(os.path.join(base_dir, today)
 
 
 def create_workspace(base_dir: str = DEFAULT_BASE_DIR) -> str:
@@ -40,15 +40,15 @@ def create_workspace(base_dir: str = DEFAULT_BASE_DIR) -> str:
         os.makedirs(base_dir, exist_ok=True)
         
         # Global marker file (under base_dir)
-        marker_file = os.path.join(base_dir, ".sec-userspace-workspace")
+        marker_file = os.path.abspath(os.path.join(base_dir, ".sec-userspace-workspace")
         if not os.path.isfile(marker_file):
             with open(marker_file, 'w', encoding='utf-8') as f:
                 f.write(datetime.datetime.now().isoformat())
         
         # Create date subdirectory structure (report/ and tmp/ only, no .venv)
         os.makedirs(workspace_dir, exist_ok=True)
-        os.makedirs(os.path.join(workspace_dir, "report"), exist_ok=True)
-        os.makedirs(os.path.join(workspace_dir, "tmp"), exist_ok=True)
+        os.makedirs(os.path.abspath(os.path.join(workspace_dir, "report"), exist_ok=True)
+        os.makedirs(os.path.abspath(os.path.join(workspace_dir, "tmp"), exist_ok=True)
         
         logger.info(f"Workspace created successfully: {workspace_dir}")
         return os.path.abspath(workspace_dir)
@@ -73,8 +73,8 @@ def get_or_create_venv(base_dir: str = DEFAULT_BASE_DIR) -> str:
     """
     try:
         # Unified venv at base_dir root, NOT in date subdirectory
-        venv_dir = os.path.join(base_dir, ".venv")
-        python_bin = os.path.join(venv_dir, "bin", "python3")
+        venv_dir = os.path.abspath(os.path.join(base_dir, ".venv")
+        python_bin = os.path.abspath(os.path.join(venv_dir, "bin", "python3")
         
         # Reuse if exists and available, don't recreate
         if os.path.isfile(python_bin):
@@ -111,12 +111,12 @@ def create_venv(workspace_dir: str) -> str:
 def validate_workspace(workspace_dir: str) -> bool:
     """Check workspace integrity"""
     try:
-        report_dir = os.path.join(workspace_dir, "report")
-        tmp_dir = os.path.join(workspace_dir, "tmp")
+        report_dir = os.path.abspath(os.path.join(workspace_dir, "report")
+        tmp_dir = os.path.abspath(os.path.join(workspace_dir, "tmp")
         
         # Marker file is under base_dir, not in date directory
         base_dir = os.path.dirname(workspace_dir)
-        marker_file = os.path.join(base_dir, ".sec-userspace-workspace")
+        marker_file = os.path.abspath(os.path.join(base_dir, ".sec-userspace-workspace")
         
         if not os.path.isdir(report_dir):
             logger.warning(f"Workspace missing report directory: {report_dir}")
@@ -211,7 +211,7 @@ def _cleanup_old_reports(base_dir: str, keep_days: int = 7):
 def cleanup_tmp(workspace_dir: str):
     """Clean up all files under workspace_dir/tmp/ directory"""
     try:
-        tmp_dir = os.path.join(workspace_dir, "tmp")
+        tmp_dir = os.path.abspath(os.path.join(workspace_dir, "tmp")
         
         if os.path.exists(tmp_dir):
             shutil.rmtree(tmp_dir, ignore_errors=True)

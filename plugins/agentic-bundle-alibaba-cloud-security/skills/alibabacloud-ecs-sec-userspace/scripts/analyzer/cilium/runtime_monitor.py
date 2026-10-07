@@ -200,7 +200,7 @@ class RuntimeMonitorMixin:
             try:
                 for item in os.listdir(bpf_path):
                     if not item.startswith('cil_'): continue
-                    full_path = os.path.join(bpf_path, item)
+                    full_path = os.path.abspath(os.path.join(bpf_path, item)
                     mod_date = datetime.fromtimestamp(os.stat(full_path).st_mtime)
                     mins = (datetime.now() - mod_date).total_seconds() / 60
                     if mins < 5: continue
@@ -275,7 +275,7 @@ class RuntimeMonitorMixin:
                 for map_name, map_desc in CRITICAL_EBPF_MAPS:
                     for item in items:
                         if map_name in item:
-                            full_path = os.path.join(bpf_path, item)
+                            full_path = os.path.abspath(os.path.join(bpf_path, item)
                             mod_date = datetime.fromtimestamp(os.stat(full_path).st_mtime)
                             hours = (datetime.now() - mod_date).total_seconds() / 3600
                             if hours < 24:
@@ -338,7 +338,7 @@ class RuntimeMonitorMixin:
                 for root, dirs, files in os.walk(base_dir):
                     for fn in files:
                         if not fn.endswith(('.yaml', '.yml', '.json')): continue
-                        fp = os.path.join(root, fn)
+                        fp = os.path.abspath(os.path.join(root, fn)
                         try:
                             with open(fp, 'r', errors='replace', encoding='utf-8') as f: content = f.read()
                             for pattern, description in SUSPICIOUS_HUBBLE_PATTERNS:

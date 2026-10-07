@@ -68,11 +68,11 @@ class KubernetesAnalyzer(BaseAnalyzer):
     DANGEROUS_MOUNTS = {'/': 'Root filesystem mount - full host access', '/etc': 'System configuration directory', '/var/run/docker.sock': 'Docker socket - container escape possible', '/var/run/containerd/containerd.sock': 'Containerd socket', '/proc': 'Process information filesystem', '/sys': 'Sysfs - kernel interface', '/dev': 'Device directory', '/root': 'Root user home directory', '/etc/shadow': 'Password hash file', '/etc/passwd': 'User account file', '/etc/kubernetes': 'Kubernetes configuration', '/var/log': 'System logs (may contain sensitive data)', '/var/lib': 'Variable state data'}
     RBAC_DANGEROUS_PATTERNS = [(re.compile('resources:\\s*\\["\\*"\\]'), 'Wildcard resource access'), (re.compile('verbs:\\s*\\["\\*"\\]'), 'Wildcard verb access'), (re.compile('apiGroups:\\s*\\["\\*"\\]'), 'Wildcard API group access'), (re.compile('cluster-admin', re.IGNORECASE), 'Cluster-admin role binding'), (re.compile('secrets?\\s*.*get|list|watch', re.IGNORECASE), 'Secret read access'), (re.compile('pods?\\s*.*exec|attach', re.IGNORECASE), 'Pod exec/attach access'), (re.compile('create.*pod|deployment', re.IGNORECASE), 'Pod/deployment creation')]
     K8S_MINING_INDICATORS = {'xmrig': 'Monero mining program', 'minerd': 'CPU mining program', 'kdevtmpfsi': 'Kinsing mining trojan', 'kinsing': 'Kinsing malware component', 'rookdns': 'Rook DNS miner', 'teamserver': 'Cobalt Strike teamserver'}
-    K8S_API_ABUSE_PATTERNS = [(re.compile('kubectl\\s+auth\\s+can-i\\s+--list', re.IGNORECASE), 'Permission enumeration via kubectl auth can-i --list'), (re.compile('kubectl\\s+create\\s+clusterrolebinding.*cluster-admin', re.IGNORECASE), 'Cluster-admin role binding creation'), (re.compile('kubectl\\s+create\\s+token\\s+system:serviceaccount', re.IGNORECASE), 'Service account token impersonation'), (re.compile('kubectl\\s+exec\\s+-n\\s+\\S+\\s+\\S+', re.IGNORECASE), 'Cross-namespace pod exec (potential lateral movement)'), (re.compile('kubectl\\s+get\\s+secrets?\\s+-A', re.IGNORECASE), 'Cluster-wide secret enumeration'), (re.compile('kubectl\\s+run\\s+--privileged', re.IGNORECASE), 'Privileged pod deployment via kubectl run'), (re.compile('kubectl\\s+apply\\s+-f\\s+https?://', re.IGNORECASE), 'Remote manifest application from untrusted source'), (re.compile('curl\\s+-k\\s+https://[^/]+/api/v1/namespaces', re.IGNORECASE), 'Direct K8s API access with insecure TLS'), (re.compile('curl\\s+-H\\s+"Authorization:\\s*Bearer\\s+', re.IGNORECASE), 'Manual bearer token usage in API requests')]
+    K8S_API_ABUSE_PATTERNS = [(re.compile('kubectl\\s+auth\\s+can-i\\s+--list', re.IGNORECASE), 'Permission enumeration via kubectl auth can-i --list'), (re.compile('kubectl\\s+create\\s+clusterrolebinding.*cluster-admin', re.IGNORECASE), 'Cluster-admin role binding creation'), (re.compile('kubectl\\s+create\\s+token\\s+system:serviceaccount', re.IGNORECASE), 'Service account token impersonation'), (re.compile('kubectl\\s+exec\\s+-n\\s+\\S+\\s+\\S+', re.IGNORECASE), 'Cross-namespace pod # safe_exec(potential lateral movement)'), (re.compile('kubectl\\s+get\\s+secrets?\\s+-A', re.IGNORECASE), 'Cluster-wide secret enumeration'), (re.compile('kubectl\\s+run\\s+--privileged', re.IGNORECASE), 'Privileged pod deployment via kubectl run'), (re.compile('kubectl\\s+apply\\s+-f\\s+https?://', re.IGNORECASE), 'Remote manifest application from untrusted source'), (re.compile('curl\\s+-k\\s+https://[^/]+/api/v1/namespaces', re.IGNORECASE), 'Direct K8s API access with insecure TLS'), (re.compile('curl\\s+-H\\s+"Authorization:\\s*Bearer\\s+', re.IGNORECASE), 'Manual bearer token usage in API requests')]
     MALICIOUS_POD_PATTERNS = [(re.compile('privileged:\\s*true', re.IGNORECASE), 'Privileged container specification', Severity.CRITICAL), (re.compile('hostPID:\\s*true', re.IGNORECASE), 'Host PID namespace sharing enabled', Severity.HIGH), (re.compile('hostNetwork:\\s*true', re.IGNORECASE), 'Host network namespace sharing enabled', Severity.HIGH), (re.compile('hostIPC:\\s*true', re.IGNORECASE), 'Host IPC namespace sharing enabled', Severity.HIGH), (re.compile('path:\\s*/\\s*$', re.IGNORECASE | re.MULTILINE), 'Root filesystem hostPath mount', Severity.CRITICAL), (re.compile('path:\\s*/(proc|sys|dev)\\s*$', re.IGNORECASE | re.MULTILINE), 'Sensitive hostPath mount (/proc, /sys, /dev)', Severity.HIGH), (re.compile('add:.*ALL', re.IGNORECASE | re.DOTALL), 'All Linux capabilities added', Severity.CRITICAL), (re.compile('readOnlyRootFilesystem:\\s*false', re.IGNORECASE), 'Writable root filesystem allowed', Severity.LOW), (re.compile('image:\\s*\\S+:latest', re.IGNORECASE), 'Container image using latest tag', Severity.MEDIUM), (re.compile('imagePullPolicy:\\s*Always', re.IGNORECASE), 'Image pull policy set to Always (may pull untrusted images)', Severity.LOW)]
     RBAC_ESCALATION_PATTERNS = [(re.compile('kind:\\s*clusterrolebinding', re.IGNORECASE | re.MULTILINE), 'ClusterRoleBinding detected (cluster-wide permissions)', Severity.HIGH), (re.compile('name:\\s*cluster-admin', re.IGNORECASE | re.MULTILINE), 'Cluster-admin role reference in binding', Severity.CRITICAL), (re.compile('resources:\\s*\\[\\s*"\\*"\\s*\\]', re.IGNORECASE | re.MULTILINE), 'Wildcard resource access in RBAC rule', Severity.HIGH), (re.compile('verbs:\\s*\\[\\s*"\\*"\\s*\\]', re.IGNORECASE | re.MULTILINE), 'Wildcard verb access in RBAC rule', Severity.HIGH), (re.compile('apigroups:\\s*\\[\\s*"\\*"\\s*\\]', re.IGNORECASE | re.MULTILINE), 'Wildcard API group access in RBAC rule', Severity.HIGH), (re.compile('kind:\\s*serviceaccount', re.IGNORECASE | re.MULTILINE), 'Service account in RBAC subject (potential privilege escalation)', Severity.MEDIUM), (re.compile('impersonate', re.IGNORECASE | re.MULTILINE), 'User/service account impersonation permission', Severity.HIGH), (re.compile('serviceaccounts/token', re.IGNORECASE | re.MULTILINE), 'Service account token creation permission', Severity.HIGH), (re.compile('pods/exec', re.IGNORECASE | re.MULTILINE), 'Pod exec permission (remote command execution)', Severity.MEDIUM), (re.compile('secrets', re.IGNORECASE | re.MULTILINE), 'Secret access permission (credential exposure)', Severity.HIGH)]
     ADMISSION_CONTROLLER_PATTERNS = [(re.compile('kind:\\s*MutatingWebhookConfiguration', re.IGNORECASE), 'Mutating webhook configuration detected', Severity.MEDIUM), (re.compile('kind:\\s*ValidatingWebhookConfiguration', re.IGNORECASE), 'Validating webhook configuration detected', Severity.MEDIUM), (re.compile('podSecurityPolicy:', re.IGNORECASE), 'PodSecurityPolicy usage (deprecated in K8s 1.25+)', Severity.MEDIUM), (re.compile('pod-security.kubernetes.io/(enforce|audit|warn):\\s*privileged', re.IGNORECASE), 'Relaxed Pod Security Standard (privileged mode)', Severity.HIGH), (re.compile('OPA|Gatekeeper|ConstraintTemplate', re.IGNORECASE), 'OPA/Gatekeeper policy modification detected', Severity.HIGH), (re.compile('admissionRegistration.k8s.io', re.IGNORECASE), 'Admission registration API access', Severity.MEDIUM)]
-    K8S_LATERAL_MOVEMENT_PATTERNS = [(re.compile('kubectl\\s+exec\\s+-n\\s+\\S+\\s+\\S+\\s+-c\\s+\\S+', re.IGNORECASE), 'Multi-container pod exec (lateral movement indicator)', Severity.HIGH), (re.compile('nsenter\\s+--target\\s+\\d+', re.IGNORECASE), 'Namespace entry via nsenter (container escape attempt)', Severity.CRITICAL), (re.compile('curl\\s+http://\\d+\\.\\d+\\.\\d+\\.\\d+:10250', re.IGNORECASE), 'Direct kubelet API access (worker node compromise)', Severity.HIGH), (re.compile('wget\\s+.*serviceaccount.*token', re.IGNORECASE), 'Service account token download attempt', Severity.HIGH), (re.compile('scp\\s+.*/var/run/secrets', re.IGNORECASE), 'Service account credential exfiltration', Severity.CRITICAL), (re.compile('iptables\\s+-[AD].*KUBE-', re.IGNORECASE), 'Kubernetes iptable rules modification', Severity.HIGH)]
+    K8S_LATERAL_MOVEMENT_PATTERNS = [(re.compile('kubectl\\s+exec\\s+-n\\s+\\S+\\s+\\S+\\s+-c\\s+\\S+', re.IGNORECASE), 'Multi-container pod # safe_exec(lateral movement indicator)', Severity.HIGH), (re.compile('nsenter\\s+--target\\s+\\d+', re.IGNORECASE), 'Namespace entry via nsenter (container escape attempt)', Severity.CRITICAL), (re.compile('curl\\s+http://\\d+\\.\\d+\\.\\d+\\.\\d+:10250', re.IGNORECASE), 'Direct kubelet API access (worker node compromise)', Severity.HIGH), (re.compile('wget\\s+.*serviceaccount.*token', re.IGNORECASE), 'Service account token download attempt', Severity.HIGH), (re.compile('scp\\s+.*/var/run/secrets', re.IGNORECASE), 'Service account credential exfiltration', Severity.CRITICAL), (re.compile('iptables\\s+-[AD].*KUBE-', re.IGNORECASE), 'Kubernetes iptable rules modification', Severity.HIGH)]
     def analyze(self, collected_data: dict) -> List[Evidence]:
         """Execute Kubernetes security analysis"""
         evidences = []
@@ -311,7 +311,7 @@ class KubernetesAnalyzer(BaseAnalyzer):
                 for root, dirs, files in os.walk(base_dir):
                     for f in files:
                         if f.endswith(('.yaml', '.yml')):
-                            yaml_files.append(os.path.join(root, f))
+                            yaml_files.append(os.path.abspath(os.path.join(root, f))
         for yaml_path in yaml_files:
             try:
                 with open(yaml_path, 'r', encoding='utf-8', errors='replace') as f:
@@ -357,7 +357,7 @@ class KubernetesAnalyzer(BaseAnalyzer):
                 for f in files:
                     if not f.endswith(('.yaml', '.yml')):
                         continue
-                    yaml_path = os.path.join(root, f)
+                    yaml_path = os.path.abspath(os.path.join(root, f)
                     try:
                         with open(yaml_path, 'r', encoding='utf-8', errors='replace') as file:
                             content = file.read().lower()
@@ -386,7 +386,7 @@ class KubernetesAnalyzer(BaseAnalyzer):
                 for f in files:
                     if not f.endswith(('.yaml', '.yml')):
                         continue
-                    yaml_path = os.path.join(root, f)
+                    yaml_path = os.path.abspath(os.path.join(root, f)
                     try:
                         with open(yaml_path, 'r', encoding='utf-8', errors='replace') as file:
                             content = file.read()
@@ -526,7 +526,7 @@ class KubernetesAnalyzer(BaseAnalyzer):
                 for root, dirs, files in os.walk(base_dir):
                     for f in files:
                         if f.endswith(('.yaml', '.yml')):
-                            yaml_files.append(os.path.join(root, f))
+                            yaml_files.append(os.path.abspath(os.path.join(root, f))
         for yaml_path in yaml_files:
             try:
                 with open(yaml_path, 'r', encoding='utf-8', errors='replace') as f:
@@ -555,7 +555,7 @@ class KubernetesAnalyzer(BaseAnalyzer):
                 for f in files:
                     if not f.endswith(('.yaml', '.yml')):
                         continue
-                    rbac_path = os.path.join(root, f)
+                    rbac_path = os.path.abspath(os.path.join(root, f)
                     try:
                         with open(rbac_path, 'r', encoding='utf-8', errors='replace') as file:
                             content = file.read().lower()
@@ -585,7 +585,7 @@ class KubernetesAnalyzer(BaseAnalyzer):
                 for root, dirs, files in os.walk(base_dir):
                     for f in files:
                         if f.endswith(('.yaml', '.yml')):
-                            yaml_files.append(os.path.join(root, f))
+                            yaml_files.append(os.path.abspath(os.path.join(root, f))
         for yaml_path in yaml_files:
             try:
                 with open(yaml_path, 'r', encoding='utf-8', errors='replace') as f:

@@ -97,7 +97,7 @@ class TrendAnalyzer:
     def save_report(self, content: str, output_dir: str) -> str:
         """Saves trend report to file."""
         os.makedirs(output_dir, exist_ok=True)
-        filepath = os.path.join(output_dir, f"sec-trend-{date.today().isoformat()}.md")
+        filepath = os.path.abspath(os.path.join(output_dir, f"sec-trend-{date.today().isoformat()}.md")
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(content)
         return filepath
@@ -118,7 +118,7 @@ class TrendAnalyzer:
             if entry_date < cutoff:
                 continue
 
-            json_path = os.path.join(
+            json_path = os.path.abspath(os.path.join(
                 self.base_dir, entry_name, "report",
                 f"sec-report-{entry_name}.json"
             )

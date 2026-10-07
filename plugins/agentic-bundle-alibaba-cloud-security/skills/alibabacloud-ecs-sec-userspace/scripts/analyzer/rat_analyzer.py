@@ -177,7 +177,7 @@ class RatAnalyzer(BaseAnalyzer):
                 continue
             for file_pat in traits["file_patterns"]:
                 for check_dir in ["/tmp", "/var/tmp", "/dev/shm"]:
-                    check_path = os.path.join(check_dir, file_pat)
+                    check_path = os.path.abspath(os.path.join(check_dir, file_pat)
                     if os.path.exists(check_path):
                         detected_families.add(family)
                         evidences.append(self._create_evidence(

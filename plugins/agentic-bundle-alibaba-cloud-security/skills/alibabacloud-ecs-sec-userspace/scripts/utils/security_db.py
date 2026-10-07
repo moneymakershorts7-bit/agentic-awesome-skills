@@ -254,8 +254,8 @@ class SecurityDBManager:
             assets_dir: Path to assets directory containing ioc/
         """
         self.assets_dir = assets_dir
-        self.security_db_dir = os.path.join(assets_dir, "ioc")
-        self.metadata_dir = os.path.join(self.security_db_dir, ".metadata")
+        self.security_db_dir = os.path.abspath(os.path.join(assets_dir, "ioc")
+        self.metadata_dir = os.path.abspath(os.path.join(self.security_db_dir, ".metadata")
         self._cache_lock = threading.Lock()
 
         # In-memory caches
@@ -308,7 +308,7 @@ class SecurityDBManager:
         Returns:
             Number of domains loaded
         """
-        domains_file = os.path.join(self.security_db_dir, "domains.json")
+        domains_file = os.path.abspath(os.path.join(self.security_db_dir, "domains.json")
 
         if not os.path.exists(domains_file):
             return 0
@@ -344,7 +344,7 @@ class SecurityDBManager:
         Returns:
             Number of hashes loaded
         """
-        hashes_file = os.path.join(self.security_db_dir, "hashes.json")
+        hashes_file = os.path.abspath(os.path.join(self.security_db_dir, "hashes.json")
 
         if not os.path.exists(hashes_file):
             return 0
@@ -380,7 +380,7 @@ class SecurityDBManager:
         Returns:
             Number of vulnerabilities loaded
         """
-        vulns_file = os.path.join(self.security_db_dir, "vulnerabilities.json")
+        vulns_file = os.path.abspath(os.path.join(self.security_db_dir, "vulnerabilities.json")
 
         if not os.path.exists(vulns_file):
             return 0
@@ -601,7 +601,7 @@ class SecurityDBManager:
         }
 
         filename, key_func = file_map[source_type]
-        filepath = os.path.join(self.security_db_dir, filename)
+        filepath = os.path.abspath(os.path.join(self.security_db_dir, filename)
 
         existing = {}
         user_whitelist = set()
@@ -849,7 +849,7 @@ class SecurityDBManager:
         }
 
         filename = file_map[source_type]
-        filepath = os.path.join(self.security_db_dir, filename)
+        filepath = os.path.abspath(os.path.join(self.security_db_dir, filename)
 
         # Sort entries for consistent output
         entries_sorted = sorted(entries, key=lambda e: str(e))
@@ -908,7 +908,7 @@ class SecurityDBManager:
                 return self._metadata[source_type]
 
         # Load from disk
-        metadata_file = os.path.join(self.metadata_dir, f"{source_type}.json")
+        metadata_file = os.path.abspath(os.path.join(self.metadata_dir, f"{source_type}.json")
 
         if os.path.exists(metadata_file):
             try:
@@ -930,7 +930,7 @@ class SecurityDBManager:
             source_type: Type of database
             metadata: Metadata to save
         """
-        metadata_file = os.path.join(self.metadata_dir, f"{source_type}.json")
+        metadata_file = os.path.abspath(os.path.join(self.metadata_dir, f"{source_type}.json")
         tmp_path = metadata_file + ".tmp"
 
         try:

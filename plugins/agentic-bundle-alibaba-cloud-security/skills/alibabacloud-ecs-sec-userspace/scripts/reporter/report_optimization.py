@@ -173,7 +173,7 @@ class ParallelReportGenerator:
         def _gen_markdown():
             try:
                 content = markdown_generator.generate(*markdown_args)
-                path = os.path.join(output_dir, f"report-{date_str}.md")
+                path = os.path.abspath(os.path.join(output_dir, f"report-{date_str}.md")
                 with open(path, 'w', encoding='utf-8') as f:
                     f.write(content)
                 return path
@@ -184,7 +184,7 @@ class ParallelReportGenerator:
         def _gen_json():
             try:
                 content = json_generator.generate(*json_args)
-                path = os.path.join(output_dir, f"report-{date_str}.json")
+                path = os.path.abspath(os.path.join(output_dir, f"report-{date_str}.json")
                 with open(path, 'w', encoding='utf-8') as f:
                     f.write(content)
                 return path

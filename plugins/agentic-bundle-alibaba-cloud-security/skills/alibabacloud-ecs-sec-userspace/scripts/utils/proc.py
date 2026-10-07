@@ -223,7 +223,7 @@ def get_proc_fd_list(pid: int) -> List[dict]:
         result = []
         for fd_name in os.listdir(fd_dir):
             try:
-                fd_path = os.path.join(fd_dir, fd_name)
+                fd_path = os.path.abspath(os.path.join(fd_dir, fd_name)
                 target = os.readlink(fd_path)
 
                 # Determine type

@@ -19,9 +19,9 @@ class ScanHistoryStore:
     """
 
     def __init__(self, workspace_dir: str):
-        self._feedback_dir = os.path.join(workspace_dir, "feedback")
-        self._history_path = os.path.join(self._feedback_dir, "scan_history.jsonl")
-        self._archive_path = os.path.join(self._feedback_dir, "scan_history.archive.jsonl")
+        self._feedback_dir = os.path.abspath(os.path.join(workspace_dir, "feedback")
+        self._history_path = os.path.abspath(os.path.join(self._feedback_dir, "scan_history.jsonl")
+        self._archive_path = os.path.abspath(os.path.join(self._feedback_dir, "scan_history.archive.jsonl")
 
     def _ensure_dir(self):
         os.makedirs(self._feedback_dir, exist_ok=True)

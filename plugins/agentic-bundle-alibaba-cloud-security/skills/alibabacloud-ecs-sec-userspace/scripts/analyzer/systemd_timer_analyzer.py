@@ -119,7 +119,7 @@ class SystemdTimerAnalyzer(BaseAnalyzer):
                 service_dirs = ['/etc/systemd/system', '/usr/lib/systemd/system', '/lib/systemd/system']
                 import os
                 for svc_dir in service_dirs:
-                    svc_path = os.path.join(svc_dir, declared_unit)
+                    svc_path = os.path.abspath(os.path.join(svc_dir, declared_unit)
                     if os.path.exists(svc_path):
                         service_exists = True
                         break
@@ -195,5 +195,5 @@ class SystemdTimerAnalyzer(BaseAnalyzer):
             if not filename.endswith('.service'):
                 continue
             if filename not in service_names:
-                evidences.append(self._create_evidence(title=f'Transient Unit Detected: {filename}', description=f'Transient service unit {filename} found in {transient_dir}. Transient units are often created by systemd-run and may indicate ephemeral attack infrastructure.', severity=Severity.LOW, confidence=0.6, attack_id='T1543.002', source_path=os.path.join(transient_dir, filename), raw_data={'unit_file': filename, 'location': transient_dir}, remediation='Investigate transient unit creation source.', evidence_details=EvidenceDetail(file_path=os.path.join(transient_dir, filename), service_type='transient_unit'), remediation_commands=['Review systemd timer configurations for anomalies', 'Audit timer units for malicious service execution', 'Verify timer authenticity and remove unauthorized entries', 'Monitor for continued suspicious timer activity']))
+                evidences.append(self._create_evidence(title=f'Transient Unit Detected: {filename}', description=f'Transient service unit {filename} found in {transient_dir}. Transient units are often created by systemd-run and may indicate ephemeral attack infrastructure.', severity=Severity.LOW, confidence=0.6, attack_id='T1543.002', source_path=os.path.abspath(os.path.join(transient_dir, filename), raw_data={'unit_file': filename, 'location': transient_dir}, remediation='Investigate transient unit creation source.', evidence_details=EvidenceDetail(file_path=os.path.abspath(os.path.join(transient_dir, filename), service_type='transient_unit'), remediation_commands=['Review systemd timer configurations for anomalies', 'Audit timer units for malicious service execution', 'Verify timer authenticity and remove unauthorized entries', 'Monitor for continued suspicious timer activity']))
         return evidences

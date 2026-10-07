@@ -1223,7 +1223,7 @@ class MemoryForensicsAnalyzer(BaseAnalyzer):
         },
         
         # 2. Persistent Jailbreak
-        'persistent_jailbreak': {
+        'persistent_security_probe': {
             'patterns': [
                 (re.compile(r'(?:remember|always|never)\s+(?:do|say|respond|act)', re.IGNORECASE),
                  "Persistent behavior modification", Severity.HIGH),

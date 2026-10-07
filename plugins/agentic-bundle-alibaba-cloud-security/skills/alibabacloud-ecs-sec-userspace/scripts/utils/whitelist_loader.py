@@ -396,7 +396,7 @@ class WhitelistLoader:
         for filename in sorted(os.listdir(assets_dir)):
             if not filename.endswith(".json") or filename == "manifest.json":
                 continue
-            filepath = os.path.join(assets_dir, filename)
+            filepath = os.path.abspath(os.path.join(assets_dir, filename)
             try:
                 with open(filepath, "r", encoding="utf-8") as f:
                     file_data = json.load(f)
@@ -496,7 +496,7 @@ class WhitelistLoader:
     
     def _load_workspace_user(self) -> None:
         """Load workspace-level user whitelist from ./sec-userspace/whitelist/"""
-        workspace_whitelist_dir = os.path.join(self.workspace_dir, "whitelist")
+        workspace_whitelist_dir = os.path.abspath(os.path.join(self.workspace_dir, "whitelist")
         self.workspace_user_config = self._load_user_directory(workspace_whitelist_dir)
         if self.workspace_user_config:
             logger.debug(f"Loaded workspace-level user whitelist from {workspace_whitelist_dir}")
@@ -518,7 +518,7 @@ class WhitelistLoader:
         config = UserWhitelistConfig()
         
         # Load user-whitelist.json
-        user_whitelist_path = os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE))
+        user_whitelist_path = os.path.abspath(os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE))
         if os.path.exists(user_whitelist_path):
             try:
                 with open(user_whitelist_path, 'r', encoding='utf-8') as f:
@@ -531,7 +531,7 @@ class WhitelistLoader:
                 logger.warning(f"Failed to load {user_whitelist_path}: {e}")
         
         # Load override-rules.json
-        override_path = os.path.join(directory, OVERRIDE_RULES_FILE)
+        override_path = os.path.abspath(os.path.join(directory, OVERRIDE_RULES_FILE)
         if os.path.exists(override_path):
             try:
                 with open(override_path, 'r', encoding='utf-8') as f:
@@ -543,7 +543,7 @@ class WhitelistLoader:
                 logger.warning(f"Failed to load {override_path}: {e}")
         
         # Load custom-prefixes.json
-        prefixes_path = os.path.join(directory, CUSTOM_PREFIXES_FILE)
+        prefixes_path = os.path.abspath(os.path.join(directory, CUSTOM_PREFIXES_FILE)
         if os.path.exists(prefixes_path):
             try:
                 with open(prefixes_path, 'r', encoding='utf-8') as f:
@@ -575,7 +575,7 @@ class WhitelistLoader:
         """
         learned_paths = [
             "/etc/sec-userspace/learned-fp.json",
-            os.path.join(self.workspace_dir, "learned-fp.json"),
+            os.path.abspath(os.path.join(self.workspace_dir, "learned-fp.json"),
         ]
         
         for fp_path in learned_paths:
@@ -749,13 +749,13 @@ class WhitelistLoader:
         if level == "system":
             directory = SYSTEM_WHITELIST_DIR
         else:
-            directory = os.path.join(self.workspace_dir, "whitelist")
+            directory = os.path.abspath(os.path.join(self.workspace_dir, "whitelist")
         
         # Ensure directory exists
         os.makedirs(directory, exist_ok=True)
         
         # Save user-whitelist.json
-        user_whitelist_path = os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE))
+        user_whitelist_path = os.path.abspath(os.path.abspath(os.path.join(directory, USER_WHITELIST_FILE))
         with open(user_whitelist_path, 'w', encoding='utf-8') as f:
             json.dump(config.to_dict(), f, indent=2, ensure_ascii=False)
         

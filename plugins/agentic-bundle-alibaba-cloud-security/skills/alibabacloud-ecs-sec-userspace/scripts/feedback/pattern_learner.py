@@ -24,8 +24,8 @@ class PatternLearner:
 
     def __init__(self, workspace_dir: str):
         self._workspace_dir = workspace_dir
-        self._feedback_dir = os.path.join(workspace_dir, "feedback")
-        self._candidate_ioc_path = os.path.join(
+        self._feedback_dir = os.path.abspath(os.path.join(workspace_dir, "feedback")
+        self._candidate_ioc_path = os.path.abspath(os.path.join(
             self._feedback_dir, "candidate_iocs.jsonl"
         )
         self._history = ScanHistoryStore(workspace_dir)

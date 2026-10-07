@@ -142,8 +142,8 @@ def _find_config_path() -> str:
     base_dir = os.path.dirname(scripts_dir)
 
     candidates = [
-        os.path.join(base_dir, "configs", "collector.yaml"),
-        os.path.join(scripts_dir, "..", "configs", "collector.yaml"),
+        os.path.abspath(os.path.join(base_dir, "configs", "collector.yaml"),
+        os.path.abspath(os.path.join(scripts_dir, "..", "configs", "collector.yaml"),
         # Zipapp mode: look for configs/ in common locations
         "/etc/sec-userspace/configs/collector.yaml",
     ]
@@ -156,7 +156,7 @@ def _find_config_path() -> str:
     # Fallback: resolve configs/ via path_resolver (works in zipapp mode)
     try:
         from ..utils.path_resolver import get_skill_root
-        path = os.path.normpath(os.path.join(get_skill_root(), "configs", "collector.yaml"))
+        path = os.path.normpath(os.path.abspath(os.path.join(get_skill_root(), "configs", "collector.yaml"))
         if os.path.isfile(path):
             return path
     except ImportError:

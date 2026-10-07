@@ -39,7 +39,7 @@ def write_markdown_report(
         )
         stream_out.info("Minimal report generated (core findings only)")
 
-    report_path = os.path.join(report_dir, f"sec-report-{date_str}.md")
+    report_path = os.path.abspath(os.path.join(report_dir, f"sec-report-{date_str}.md")
     with open(report_path, "w", encoding="utf-8") as f:
         f.write(report_content)
     stream_out.info(f"Markdown report output to {report_path}")
@@ -62,7 +62,7 @@ def write_markdown_report(
                     load_ratio=load_ratio
                 )
             cn_suffix = "-cn" if lang_mode == 'zh' else ""
-            cn_report_path = os.path.join(report_dir, f"sec-report{cn_suffix}-{date_str}-cn.md")
+            cn_report_path = os.path.abspath(os.path.join(report_dir, f"sec-report{cn_suffix}-{date_str}-cn.md")
             with open(cn_report_path, "w", encoding="utf-8") as f:
                 f.write(cn_report_content)
             stream_out.info(f"Chinese report output to {cn_report_path}")
@@ -106,7 +106,7 @@ def write_all_reports(
     start_time, MarkdownReportGenerator_cls, JsonReportGenerator_cls,
 ):
     """Write all report files (markdown, Chinese, JSON) based on args.format."""
-    report_dir = os.path.join(getattr(args, "workspace_dir", args.output_dir), "report")
+    report_dir = os.path.abspath(os.path.join(getattr(args, "workspace_dir", args.output_dir), "report")
     os.makedirs(report_dir, exist_ok=True)
     date_str = date.today().isoformat()
 

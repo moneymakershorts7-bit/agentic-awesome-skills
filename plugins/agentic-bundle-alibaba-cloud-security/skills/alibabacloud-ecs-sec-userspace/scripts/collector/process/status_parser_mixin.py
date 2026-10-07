@@ -57,7 +57,7 @@ class StatusParserMixin:
             fds = os.listdir(fd_dir)
             for fd_num in fds[:max_fds]:  # Limit FDs based on scan mode
                 try:
-                    fd_path = os.readlink(os.path.join(fd_dir, fd_num))
+                    fd_path = os.readlink(os.path.abspath(os.path.join(fd_dir, fd_num))
                     fd_info.append({
                         "fd": int(fd_num),
                         "path": fd_path

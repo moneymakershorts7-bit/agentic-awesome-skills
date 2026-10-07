@@ -325,7 +325,7 @@ class CiliumEvasionDetector(BaseAnalyzer):
                     # Check for suspicious program names
                     for helper_name in self.DANGEROUS_EBPF_HELPERS.keys():
                         if helper_name in item.lower():
-                            full_path = os.path.join(bpf_path, item)
+                            full_path = os.path.abspath(os.path.join(bpf_path, item)
                             evidences.append(self._create_evidence(
                                 title=f"Suspicious eBPF Program File: {item}",
                                 description=f"Found eBPF program file with dangerous helper name: {item}. "
@@ -424,7 +424,7 @@ class CiliumEvasionDetector(BaseAnalyzer):
                         if not filename.endswith(('.yaml', '.yml')):
                             continue
 
-                        filepath = os.path.join(root, filename)
+                        filepath = os.path.abspath(os.path.join(root, filename)
                         try:
                             with open(filepath, 'r', errors='replace', encoding='utf-8') as f:
                                 content = f.read()
@@ -544,7 +544,7 @@ class CiliumEvasionDetector(BaseAnalyzer):
                         if not filename.endswith(('.yaml', '.yml', '.json')):
                             continue
 
-                        filepath = os.path.join(root, filename)
+                        filepath = os.path.abspath(os.path.join(root, filename)
                         try:
                             with open(filepath, 'r', errors='replace', encoding='utf-8') as f:
                                 content = f.read()
@@ -652,7 +652,7 @@ class CiliumEvasionDetector(BaseAnalyzer):
                         if not plugin.endswith('.so'):
                             continue
 
-                        plugin_path = os.path.join(plugin_dir, plugin)
+                        plugin_path = os.path.abspath(os.path.join(plugin_dir, plugin)
                         evidences.append(self._create_evidence(
                             title=f"Unauthorized Cilium Plugin: {plugin}",
                             description=f"Found plugin {plugin} in {plugin_dir}. "

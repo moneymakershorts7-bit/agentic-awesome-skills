@@ -217,7 +217,7 @@ class MemfdFilelessAnalyzer(BaseAnalyzer):
         try:
             if os.path.exists("/dev/shm"):
                 for filename in os.listdir("/dev/shm"):
-                    filepath = os.path.join("/dev/shm", filename)
+                    filepath = os.path.abspath(os.path.join("/dev/shm", filename)
                     if os.path.isfile(filepath):
                         shm_files.append({
                             "path": filepath,

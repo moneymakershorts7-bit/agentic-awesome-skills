@@ -69,7 +69,7 @@ def get_scripts_dir():
     Returns:
         Absolute path to the scripts/ directory.
     """
-    return os.path.join(get_skill_root(), "scripts")
+    return os.path.abspath(os.path.join(get_skill_root(), "scripts")
 
 
 def get_assets_dir():
@@ -78,7 +78,7 @@ def get_assets_dir():
     Returns:
         Absolute path to the assets/ directory.
     """
-    return os.path.join(get_skill_root(), "assets")
+    return os.path.abspath(os.path.join(get_skill_root(), "assets")
 
 
 def get_configs_dir():
@@ -87,7 +87,7 @@ def get_configs_dir():
     Returns:
         Absolute path to the configs/ directory.
     """
-    return os.path.join(get_skill_root(), "configs")
+    return os.path.abspath(os.path.join(get_skill_root(), "configs")
 
 
 def get_asset_path(*parts):
@@ -99,7 +99,7 @@ def get_asset_path(*parts):
     Returns:
         Absolute path to the specified asset.
     """
-    return os.path.join(get_assets_dir(), *parts)
+    return os.path.abspath(os.path.join(get_assets_dir(), *parts)
 
 
 def get_config_version():
@@ -108,7 +108,7 @@ def get_config_version():
     Returns:
         Version string (e.g. "1.0.0"), or empty string if not found.
     """
-    version_path = os.path.join(get_skill_root(), "VERSION")
+    version_path = os.path.abspath(os.path.join(get_skill_root(), "VERSION")
     if os.path.isfile(version_path):
         try:
             with open(version_path, 'r', encoding='utf-8') as f:

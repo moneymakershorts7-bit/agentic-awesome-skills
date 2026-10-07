@@ -404,7 +404,7 @@ class IoUringRootkitAnalyzer(BaseAnalyzer):
                 io_uring_info['contexts'] = len(entries)
                 io_uring_info['has_io_uring'] = True
                 for entry in entries:
-                    info_file = os.path.join(io_uring_dir, entry, 'info')
+                    info_file = os.path.abspath(os.path.join(io_uring_dir, entry, 'info')
                     if os.path.exists(info_file):
                         content = self._read_proc_file(info_file)
                         if content:

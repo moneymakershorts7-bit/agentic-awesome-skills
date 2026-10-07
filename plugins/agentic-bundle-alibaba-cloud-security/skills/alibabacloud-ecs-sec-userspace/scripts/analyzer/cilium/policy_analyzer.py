@@ -28,7 +28,7 @@ class PolicyAnalyzerMixin:
                     for filename in files:
                         if not filename.endswith(('.yaml', '.yml')):
                             continue
-                        filepath = os.path.join(root, filename)
+                        filepath = os.path.abspath(os.path.join(root, filename)
                         try:
                             with open(filepath, 'r', errors='replace', encoding='utf-8') as f:
                                 content = f.read()
@@ -74,7 +74,7 @@ class PolicyAnalyzerMixin:
                     for filename in files:
                         if not filename.endswith('.yaml'):
                             continue
-                        filepath = os.path.join(root, filename)
+                        filepath = os.path.abspath(os.path.join(root, filename)
                         try:
                             with open(filepath, 'r', errors='replace', encoding='utf-8') as f:
                                 content = f.read()

@@ -40,10 +40,10 @@ class AssetManager:
             assets_dir: Absolute path to the assets root directory.
         """
         self.assets_dir = assets_dir
-        self.ioc_dir = os.path.join(assets_dir, "ioc")
-        self.whitelist_dir = os.path.join(assets_dir, "whitelist")
+        self.ioc_dir = os.path.abspath(os.path.join(assets_dir, "ioc")
+        self.whitelist_dir = os.path.abspath(os.path.join(assets_dir, "whitelist")
         # origin dir is at the same level as assets_dir: assets-origin/
-        self.origin_dir = os.path.join(os.path.dirname(assets_dir), "assets-origin")
+        self.origin_dir = os.path.abspath(os.path.join(os.path.dirname(assets_dir), "assets-origin")
 
         # In-memory stores
         self._ioc_data: Dict[str, Set[str]] = {}
@@ -59,8 +59,8 @@ class AssetManager:
     def _auto_copy_from_origin(self) -> None:
         """Auto-copy data from assets-origin/ if assets/ subdirectories are empty."""
         for subdir in ("ioc", "whitelist"):
-            target = os.path.join(self.assets_dir, subdir)
-            origin_src = os.path.join(self.origin_dir, subdir)
+            target = os.path.abspath(os.path.join(self.assets_dir, subdir)
+            origin_src = os.path.abspath(os.path.join(self.origin_dir, subdir)
             # Copy if target dir doesn't exist or is empty (ignoring .gitkeep)
             needs_copy = False
             if not os.path.isdir(target):
@@ -107,7 +107,7 @@ class AssetManager:
         self._ioc_data = {}
 
         # Load manifest if present
-        manifest_path = os.path.join(self.ioc_dir, "manifest.json")
+        manifest_path = os.path.abspath(os.path.join(self.ioc_dir, "manifest.json")
         if os.path.isfile(manifest_path):
             with open(manifest_path, "r", encoding="utf-8") as fh:
                 self._ioc_manifest = json.load(fh)
@@ -121,7 +121,7 @@ class AssetManager:
             if not fname.endswith(".b64"):
                 continue
             type_name = fname[:-4]  # strip .b64
-            filepath = os.path.join(self.ioc_dir, fname)
+            filepath = os.path.abspath(os.path.join(self.ioc_dir, fname)
             entries = self._decode_b64_lines(filepath)
             self._ioc_data[type_name] = entries
 
@@ -144,7 +144,7 @@ class AssetManager:
         self._whitelist_data = {}
 
         # Load manifest if present
-        manifest_path = os.path.join(self.whitelist_dir, "manifest.json")
+        manifest_path = os.path.abspath(os.path.join(self.whitelist_dir, "manifest.json")
         if os.path.isfile(manifest_path):
             with open(manifest_path, "r", encoding="utf-8") as fh:
                 self._whitelist_manifest = json.load(fh)
@@ -154,13 +154,13 @@ class AssetManager:
             return self._whitelist_data
 
         # Load analyzer_rules.b64 if present
-        analyzer_rules_path = os.path.join(self.whitelist_dir, "analyzer_rules.b64")
+        analyzer_rules_path = os.path.abspath(os.path.join(self.whitelist_dir, "analyzer_rules.b64")
         if os.path.isfile(analyzer_rules_path):
             self._whitelist_data = self._load_whitelist_b64(analyzer_rules_path)
 
         # Also load IoC-type whitelist files if present
         for ioc_type in ("domain", "ip_port", "url", "hash"):
-            ioc_file = os.path.join(self.whitelist_dir, f"{ioc_type}.b64")
+            ioc_file = os.path.abspath(os.path.join(self.whitelist_dir, f"{ioc_type}.b64")
             if os.path.isfile(ioc_file):
                 entries = self._decode_ioc_whitelist(ioc_file, ioc_type)
                 if entries:
@@ -305,7 +305,7 @@ class AssetManager:
         }
 
         for type_name, values in self._ioc_data.items():
-            filepath = os.path.join(self.ioc_dir, f"{type_name}.b64")
+            filepath = os.path.abspath(os.path.join(self.ioc_dir, f"{type_name}.b64")
             with open(filepath, "w", encoding="utf-8") as fh:
                 # Write header if known type
                 for hdr in type_headers.get(type_name, []):
@@ -330,7 +330,7 @@ class AssetManager:
             "updated": now,
             "types": types_info,
         })
-        manifest_path = os.path.join(self.ioc_dir, "manifest.json")
+        manifest_path = os.path.abspath(os.path.join(self.ioc_dir, "manifest.json")
         with open(manifest_path, "w", encoding="utf-8") as fh:
             json.dump(self._ioc_manifest, fh, indent=2, ensure_ascii=False)
 
@@ -383,7 +383,7 @@ class AssetManager:
                     total_analyzer += 1
 
         # Save analyzer_rules.b64
-        rules_path = os.path.join(self.whitelist_dir, "analyzer_rules.b64")
+        rules_path = os.path.abspath(os.path.join(self.whitelist_dir, "analyzer_rules.b64")
         with open(rules_path, "w", encoding="utf-8") as fh:
             fh.write("\n".join(analyzer_rules_lines) + "\n")
 
@@ -395,7 +395,7 @@ class AssetManager:
             "hash": ["# Whitelisted file hashes - line-based-b64 v1", "# Format: base64([tag]value)", ""],
         }
         for ioc_type, encoded_entries in ioc_type_entries.items():
-            filepath = os.path.join(self.whitelist_dir, f"{ioc_type}.b64")
+            filepath = os.path.abspath(os.path.join(self.whitelist_dir, f"{ioc_type}.b64")
             with open(filepath, "w", encoding="utf-8") as fh:
                 for hdr in ioc_headers.get(ioc_type, []):
                     fh.write(hdr + "\n")
@@ -421,7 +421,7 @@ class AssetManager:
             "types": types_info,
             "total_entries": total_analyzer + sum(total_ioc.values()),
         })
-        manifest_path = os.path.join(self.whitelist_dir, "manifest.json")
+        manifest_path = os.path.abspath(os.path.join(self.whitelist_dir, "manifest.json")
         with open(manifest_path, "w", encoding="utf-8") as fh:
             json.dump(self._whitelist_manifest, fh, indent=2, ensure_ascii=False)
 
@@ -440,8 +440,8 @@ class AssetManager:
         Returns:
             True if restoration succeeded.
         """
-        origin_ioc = os.path.join(self.origin_dir, "ioc")
-        origin_wl = os.path.join(self.origin_dir, "whitelist")
+        origin_ioc = os.path.abspath(os.path.join(self.origin_dir, "ioc")
+        origin_wl = os.path.abspath(os.path.join(self.origin_dir, "whitelist")
 
         if not os.path.isdir(self.origin_dir):
             logger.error("Origin 备份目录不存在: %s", self.origin_dir)
@@ -605,7 +605,7 @@ class AssetManager:
         self._whitelist_data[cat_name]["entries"].append(entry)
 
         # Persist to file
-        filepath = os.path.join(self.whitelist_dir, f"{ioc_type}.b64")
+        filepath = os.path.abspath(os.path.join(self.whitelist_dir, f"{ioc_type}.b64")
         tagged = f"[{tag}]{value}" if tag else value
         encoded = base64.b64encode(tagged.encode("utf-8")).decode("ascii")
         with open(filepath, "a", encoding="utf-8") as fh:

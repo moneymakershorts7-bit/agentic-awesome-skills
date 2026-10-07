@@ -705,7 +705,7 @@ class InheritedConfigLoader:
             Absolute path to parent config file
         """
         child_dir = os.path.dirname(os.path.abspath(child_path))
-        return os.path.join(child_dir, parent_ref)
+        return os.path.abspath(os.path.join(child_dir, parent_ref)
 
 
 class ConfigValidator:

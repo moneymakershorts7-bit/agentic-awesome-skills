@@ -263,7 +263,7 @@ def verify_permissions() -> List[Tuple[str, bool, str]]:
     # 3. Verify write permissions on workspace
     workspace_candidates = [
         '/data/sec-userspace/workspace',
-        os.path.join(os.getcwd(), 'workspace'),
+        os.path.abspath(os.path.join(os.getcwd(), 'workspace'),
     ]
     for dirpath in workspace_candidates:
         try:

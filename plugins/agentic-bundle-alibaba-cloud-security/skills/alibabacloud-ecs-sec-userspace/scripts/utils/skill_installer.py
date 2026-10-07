@@ -47,7 +47,7 @@ def _install_link(skill_dir: str, target: str) -> bool:
     Returns:
         True if installation succeeded or already exists, False if failed
     """
-    link_path = os.path.join(skill_dir, SKILL_NAME)
+    link_path = os.path.abspath(os.path.join(skill_dir, SKILL_NAME)
 
     try:
         os.makedirs(skill_dir, exist_ok=True)
@@ -89,19 +89,19 @@ def install_skill_links() -> dict:
     result = {"installed": [], "skipped": [], "failed": []}
 
     for tool_name, skill_rel, detect_rel in AI_TOOLS:
-        detect_path = os.path.join(home, detect_rel)
+        detect_path = os.path.abspath(os.path.join(home, detect_rel)
         if not os.path.isdir(detect_path):
             result["skipped"].append(tool_name)
             continue
 
-        skill_path = os.path.join(home, skill_rel)
+        skill_path = os.path.abspath(os.path.join(home, skill_rel)
         if _install_link(skill_path, skill_root):
             result["installed"].append(tool_name)
         else:
             result["failed"].append(tool_name)
 
     # always install to generic path
-    universal_path = os.path.join(home, UNIVERSAL_SKILL_DIR)
+    universal_path = os.path.abspath(os.path.join(home, UNIVERSAL_SKILL_DIR)
     if _install_link(universal_path, skill_root):
         result["installed"].append("universal")
     else:
