@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:01dd3883617e5805606c0e1bb67251b20c33261a3e2c813c4328417f0e0e9db7",
+      "rule_id": "SSRF1",
+      "file": "references/owasp-api-top10-queries.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:83ffa1b5b8c4ad4e7a9693c4b60ea257e787352f517eb311305d4e77050a5d6e",
+      "rule_id": "PE3",
+      "file": "references/owasp-api-top10-queries.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:f6462a1d2f11bf44ceeea0a28ba18ae724724f430e4cf53c0ef067921bea913e",
+      "rule_id": "PE3",
+      "file": "references/sls-query-cookbook.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    }
+  ]
+}

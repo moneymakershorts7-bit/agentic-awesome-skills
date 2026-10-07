@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:939f59a1447586173d3c34434bdac8acf98f3cadc3b742fc40303e078d268436",
+      "rule_id": "SC2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:5a40bfc821117fd317a11f3fb1b2d89a121d341d1e047556ff9aff3f1bfebd32",
+      "rule_id": "TM2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:39caddd91e951b3bac030876d009fe36387d56ef838da6b150a4039c877563e7",
+      "rule_id": "SC2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:9aafc0d405b06cdf6e6866d3b1a0c40316086b8aeebfc7aa1db5cc35f43d2db2",
+      "rule_id": "LP1",
+      "file": "scripts/fix_certchain.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:5aa47406238d2e1b73329a4b321226bdbe108ffcca118fbb715372f6df498ede",
+      "rule_id": "LP1",
+      "file": "scripts/fix_certchain.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:d2d397a327d2f4c94740cd43994274ac2bc80dafcf4a27cf336287d18a935759",
+      "rule_id": "LP1",
+      "file": "scripts/fix_certchain.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:c5c909aeb32ad0ddd5a0240d17d74b7f2ccbb9601069f74b142483035550fcb2",
+      "rule_id": "LP1",
+      "file": "scripts/fix_certchain.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:2ba672c48b6a420c52ec3f14f35e83ef63948624d3c806dfce5a8af9924c4e56",
+      "rule_id": "EA2",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:b4bc92e8278af6125bc5f1b32642458dd67efbc1059b09582ad78424b6224a9a",
+      "rule_id": "EA2",
+      "file": "references/ram-policies.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:868a004a14fa55e52f6315ecd2746a1242c0e44cb969e321b9fcb934ccb9b6da",
+      "rule_id": "AST4",
+      "file": "scripts/fix_certchain.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:65aca37424bbde1b8d843c28af0941ef3ff1a9f9fae8819889b07ebe14516d36",
+      "rule_id": "AST4",
+      "file": "scripts/fix_certchain.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    }
+  ]
+}

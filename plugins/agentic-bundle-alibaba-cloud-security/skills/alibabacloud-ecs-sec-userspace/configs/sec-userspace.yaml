@@ -1,0 +1,25 @@
+# sec-userspace 主配置文件（唯一格式，需要 PyYAML）
+
+version: "1.4.1"
+
+server:
+  endpoint: ""
+  api_version: "v1"
+  timeout: 30
+  retry: 3
+
+ioc:
+  local_db: "assets/ioc"
+  auto_update: false
+  update_interval: 3600
+
+scan:
+  output_dir: "/tmp/sec-userspace"
+  format: "both"
+  skip_expensive: false
+  cpu_limit: 40          # CPU 使用率上限（单核百分比，1-100），默认 40%
+  scan_timeout: 300      # 扫描最长运行时间（秒），默认 300 秒（5 分钟）
+
+logging:
+  level: "INFO"
+  quiet: false

@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:141d08bee32068935de4476ab88dd17aa0fa28f43e2e05e7ff2a8144c3567144",
+      "rule_id": "PE3",
+      "file": "references/checks/sas.yaml",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:cf3b1a2938a82aecda7e82d8323572c1f5aedceaf9c9d17c05452a09d543352c",
+      "rule_id": "PE3",
+      "file": "references/checks/sas.yaml",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:d1fd5f7ead627e56b9e8d5e6109a4dd88caa7dedaa29a52071e398d43a5fc0d6",
+      "rule_id": "LP1",
+      "file": "scripts/collectors/run.sh",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:5387bea333fe23753ee2b66e3da80ba144dfba4d3c60ff7c5d98bc3462b18350",
+      "rule_id": "LP1",
+      "file": "scripts/engine/report_excel.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:e94ca6262523adf8b9d3e0cd4077533c2ccb01d0f86245e6a7a7bf8e2f85acef",
+      "rule_id": "LP1",
+      "file": "scripts/engine/report_html.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:5c457a2706a18685605e0ef393e61fcf8da57afd1144ce3f98bfb068c902ff71",
+      "rule_id": "EA2",
+      "file": "references/checks/sas.yaml",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:d293caf005c0f05d11d1ed207dfa882d172eb832f5ae42eae46bfba0969f49c2",
+      "rule_id": "SC4",
+      "file": "scripts/requirements.txt",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:a2480d00539337c038f99e3c0d27c248d08793b4d1a55449b744b8592b35889f",
+      "rule_id": "SC4",
+      "file": "scripts/requirements.txt",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:fbe54807f57d7f91ce1188c32fad130b1e052114f772eb401c2c6538fd52f7ed",
+      "rule_id": "SC4",
+      "file": "scripts/requirements.txt",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    }
+  ]
+}

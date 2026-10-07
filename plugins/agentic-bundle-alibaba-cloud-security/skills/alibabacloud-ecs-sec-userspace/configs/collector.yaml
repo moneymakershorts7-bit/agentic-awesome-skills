@@ -1,0 +1,141 @@
+# Collector 采集配置
+# 所有字段均有代码内默认值，此文件仅用于覆盖
+# 格式: YAML (由 scripts/thirdparties/yaml 解析，零外部依赖)
+
+# 全局默认配置（各 collector 未指定时继承）
+
+version: "1.4.1"
+
+defaults:
+  timeout: 60          # 默认超时(秒)
+  retry: 0             # 默认重试次数
+  retry_delay: 1       # 重试间隔(秒)
+  enabled: true        # 是否启用
+
+# 各 Collector 独立配置
+collectors:
+  system:
+    timeout: 10
+    paths:
+      os_release: "/etc/os-release"
+      hostname: "/etc/hostname"
+      cpu_info: "/proc/cpuinfo"
+      mem_info: "/proc/meminfo"
+      kernel_version: "/proc/version"
+      uptime: "/proc/uptime"
+
+  process:
+    timeout: 120
+    max_processes: 500       # 最大采集进程数
+    thread_count: 20         # 并行线程数
+    paths:
+      proc_dir: "/proc"
+    early_return:
+      load_threshold: 3.0   # 负载超此值触发提前返回
+      min_processes: 20      # 提前返回最少采集进程数
+
+  network:
+    timeout: 180
+    tcp_timeout: 10          # TCP连接解析超时
+    udp_timeout: 15          # UDP连接解析超时
+    paths:
+      tcp: "/proc/net/tcp"
+      tcp6: "/proc/net/tcp6"
+      udp: "/proc/net/udp"
+      udp6: "/proc/net/udp6"
+
+  filesystem:
+    timeout: 180
+    max_files_per_dir: 100   # 每目录最大文件数
+    scan_paths:              # 扫描目标目录列表
+      - "/tmp"
+      - "/var/tmp"
+      - "/dev/shm"
+
+  cron:
+    timeout: 30
+    soft_timeout_ratio: 0.85  # 软超时比例
+    max_cron_d_files: 100     # /etc/cron.d 最大文件数
+    max_periodic_files: 100   # cron.{period} 最大文件数
+    max_user_crontabs: 50     # 用户crontab最大数
+    max_cron_script_size: 1048576  # cron脚本最大字节数(1MB)
+    paths:
+      crontab: "/etc/crontab"
+      crontab_dir: "/var/spool/cron/crontabs"
+      cron_d: "/etc/cron.d"
+    timer_dirs:
+      - "/etc/systemd/system"
+      - "/usr/lib/systemd/system"
+      - "/lib/systemd/system"
+
+  log:
+    timeout: 90
+    max_lines: 1000           # 最大读取行数
+    paths:
+      auth_log: "/var/log/auth.log"
+      secure: "/var/log/secure"
+      syslog: "/var/log/syslog"
+      messages: "/var/log/messages"
+      wtmp: "/var/log/wtmp"
+      btmp: "/var/log/btmp"
+      lastlog: "/var/log/lastlog"
+
+  user:
+    timeout: 30
+    max_sudoers: 100          # sudoers限制
+    max_auth_keys_file_size: 1048576   # authorized_keys最大字节数(1MB)
+    max_sshd_config_size: 1048576      # sshd_config最大字节数(1MB)
+    max_shadow_size: 1048576           # shadow最大字节数(1MB)
+    paths:
+      passwd: "/etc/passwd"
+      shadow: "/etc/shadow"
+      group: "/etc/group"
+      sudoers: "/etc/sudoers"
+      sudoers_d: "/etc/sudoers.d"
+      login_defs: "/etc/login.defs"
+      sshd_config: "/etc/ssh/sshd_config"
+
+  service:
+    timeout: 60
+    soft_timeout_ratio: 0.85
+    max_services: 500
+    commands:
+      list_units: "systemctl list-units --type=service --all --no-pager --no-legend"
+
+  dns:
+    timeout: 60
+    max_reverse_lookups: 50
+    reverse_dns_timeout: 2
+    paths:
+      resolv_conf: "/etc/resolv.conf"
+      hosts: "/etc/hosts"
+      nsswitch: "/etc/nsswitch.conf"
+
+  package_history:
+    timeout: 120
+    batch_gc_interval: 10     # 每N个包执行一次GC
+    package_managers:         # 启用的包管理器列表
+      - "dpkg"
+      - "rpm"
+      - "pip"
+      - "npm"
+      - "gem"
+      - "cargo"
+
+# Executor 执行配置
+executor:
+  phase_timeout: 55           # 采集阶段总超时(秒)
+  intra_group_check_interval: 5  # 组内超时检查间隔(秒)
+  max_workers: 4              # 最大并行 worker 数
+  global_timeout: 600         # 全局超时(秒)
+  groups:                     # 分组执行顺序（可调整）
+    - name: "system_info"
+      collectors: ["system", "user", "dns"]
+    - name: "runtime_state"
+      collectors: ["process", "network", "service", "cron"]
+    - name: "filesystem_logs"
+      collectors: ["filesystem", "log"]
+    - name: "container_cloud"
+      collectors: ["container_runtime", "k8s_workload", "k8s_node", "openclaw"]
+    - name: "ai_agent"
+      collectors: ["ebpf", "ai_dev", "conversation", "mcp_config", "agent_memory", "agent_dependency", "agent_tools"]

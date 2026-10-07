@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2026-04-02T00:00:00Z",
+    "source": "sec-userspace"
+  },
+  "packages": {
+    "npm:event-stream": {
+      "name": "event-stream",
+      "package_manager": "npm",
+      "threats": [
+        {
+          "version": "3.3.6",
+          "threat_type": "backdoor",
+          "severity": "CRITICAL",
+          "description": "Malicious version injected with cryptocurrency stealer targeting Bitcoin wallets",
+          "cve_id": null,
+          "author": "FallingSnow",
+          "malicious_hashes": [],
+          "malicious_domains": ["bitpay[.]com"],
+          "suspicious_scripts": ["flatmap-stream"],
+          "source": "historical",
+          "confidence": 1.0,
+          "added_at": "2026-04-02T00:00:00Z"
+        }
+      ]
+    },
+    "npm:colors": {
+      "name": "colors",
+      "package_manager": "npm",
+      "threats": [
+        {
+          "version": "1.4.0",
+          "threat_type": "protestware",
+          "severity": "HIGH",
+          "description": "Deliberately breaks applications in protest against corporate usage",
+          "cve_id": null,
+          "author": "Marak",
+          "malicious_hashes": [],
+          "malicious_domains": [],
+          "suspicious_scripts": [],
+          "source": "historical",
+          "confidence": 0.95,
+          "added_at": "2026-04-02T00:00:00Z"
+        }
+      ]
+    },
+    "npm:node-ipc": {
+      "name": "node-ipc",
+      "package_manager": "npm",
+      "threats": [
+        {
+          "version": ">=10.1.1",
+          "threat_type": "protestware",
+          "severity": "CRITICAL",
+          "description": "Deletes user files and obfuscates code as political protest",
+          "cve_id": null,
+          "author": "Brandon Nozaki Miller",
+          "malicious_hashes": [],
+          "malicious_domains": [],
+          "suspicious_scripts": ["file deletion", "code obfuscation"],
+          "source": "historical",
+          "confidence": 1.0,
+          "added_at": "2026-04-02T00:00:00Z"
+        }
+      ]
+    },
+    "pip:colour": {
+      "name": "colour",
+      "package_manager": "pip",
+      "threats": [
+        {
+          "version": "*",
+          "threat_type": "typosquat",
+          "severity": "HIGH",
+          "description": "Typosquatting package targeting 'color' misspellings, steals environment variables",
+          "cve_id": null,
+          "author": "unknown",
+          "malicious_hashes": [],
+          "malicious_domains": [],
+          "suspicious_scripts": ["os.environ access"],
+          "source": "security-research",
+          "confidence": 0.9,
+          "added_at": "2026-04-02T00:00:00Z"
+        }
+      ]
+    },
+    "pip:python-sqlite": {
+      "name": "python-sqlite",
+      "package_manager": "pip",
+      "threats": [
+        {
+          "version": "*",
+          "threat_type": "malware",
+          "severity": "CRITICAL",
+          "description": "Malicious package exfiltrating credentials and system information",
+          "cve_id": null,
+          "author": "unknown",
+          "malicious_hashes": [],
+          "malicious_domains": ["pastebin.com"],
+          "suspicious_scripts": ["credential exfiltration"],
+          "source": "osv",
+          "confidence": 0.95,
+          "added_at": "2026-04-02T00:00:00Z"
+        }
+      ]
+    },
+    "npm:ua-parser-js": {
+      "name": "ua-parser-js",
+      "package_manager": "npm",
+      "threats": [
+        {
+          "version": "0.7.30",
+          "threat_type": "cryptominer",
+          "severity": "CRITICAL",
+          "description": "Compromised version downloads cryptocurrency miner from external server",
+          "cve_id": "CVE-2021-27292",
+          "author": "unknown",
+          "malicious_hashes": [],
+          "malicious_domains": ["85.93.203.178"],
+          "suspicious_scripts": ["wget | sh"],
+          "source": "cve",
+          "confidence": 1.0,
+          "added_at": "2026-04-02T00:00:00Z"
+        }
+      ]
+    },
+    "npm:coa": {
+      "name": "coa",
+      "package_manager": "npm",
+      "threats": [
+        {
+          "version": "2.0.2",
+          "threat_type": "malware",
+          "severity": "CRITICAL",
+          "description": "Compromised version with malicious install script",
+          "cve_id": null,
+          "author": "unknown",
+          "malicious_hashes": [],
+          "malicious_domains": [],
+          "suspicious_scripts": ["obfuscated payload"],
+          "source": "security-research",
+          "confidence": 0.95,
+          "added_at": "2026-04-02T00:00:00Z"
+        }
+      ]
+    },
+    "npm:rc": {
+      "name": "rc",
+      "package_manager": "npm",
+      "threats": [
+        {
+          "version": "1.2.8",
+          "threat_type": "malware",
+          "severity": "CRITICAL",
+          "description": "Compromised version steals npm tokens and credentials",
+          "cve_id": null,
+          "author": "unknown",
+          "malicious_hashes": [],
+          "malicious_domains": [],
+          "suspicious_scripts": ["credential theft"],
+          "source": "security-research",
+          "confidence": 1.0,
+          "added_at": "2026-04-02T00:00:00Z"
+        }
+      ]
+    },
+    "pip:setup": {
+      "name": "setup",
+      "package_manager": "pip",
+      "threats": [
+        {
+          "version": "*",
+          "threat_type": "typosquat",
+          "severity": "HIGH",
+          "description": "Typosquatting package targeting common import mistakes",
+          "cve_id": null,
+          "author": "unknown",
+          "malicious_hashes": [],
+          "malicious_domains": [],
+          "suspicious_scripts": [],
+          "source": "pypi-advisory",
+          "confidence": 0.85,
+          "added_at": "2026-04-02T00:00:00Z"
+        }
+      ]
+    },
+    "apt:libreoffice-help-es": {
+      "name": "libreoffice-help-es",
+      "package_manager": "apt",
+      "threats": [
+        {
+          "version": "1:5.3.6-0ubuntu0.16.04.1",
+          "threat_type": "backdoor",
+          "severity": "CRITICAL",
+          "description": "Compromised Ubuntu package with reverse shell backdoor",
+          "cve_id": null,
+          "author": "unknown",
+          "malicious_hashes": [],
+          "malicious_domains": ["ipify.org"],
+          "suspicious_scripts": ["reverse shell"],
+          "source": "ubuntu-security",
+          "confidence": 1.0,
+          "added_at": "2026-04-02T00:00:00Z"
+        }
+      ]
+    }
+  },
+  "domains": [
+    "bitpay[.]com",
+    "85.93.203.178",
+    "ipify.org",
+    "pastebin.com"
+  ],
+  "ips": [
+    "85.93.203.178"
+  ],
+  "authors": [
+    "FallingSnow",
+    "Brandon Nozaki Miller"
+  ],
+  "hashes": {}
+}

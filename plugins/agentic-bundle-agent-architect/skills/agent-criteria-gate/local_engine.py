@@ -2,11 +2,13 @@
 Local In-Process Discriminative Decision Engine
 Provides fast, deterministic heuristic & semantic criteria evaluation when offline
 or running in edge/embedded Python environments.
-Calculates calibrated softmax probabilities for Noul, Choice, and Score primitives.
+Calculates calibrated softmax probabilities for Noul, Choice, and Score primitives,
+including hierarchical codebase discovery and dynamic retraction criteria.
 """
 
 from __future__ import annotations
 import math
+import os
 import re
 from typing import Any, Dict, List, Set, Tuple
 
@@ -37,6 +39,12 @@ class LocalDecisionEngine:
         }
         self.vague_pronouns: Set[str] = {
             "it", "stuff", "things", "something", "all", "some", "anything", "whatever", "everything"
+        }
+
+        # Code discovery keywords
+        self.discovery_keywords: Set[str] = {
+            "where", "how", "find", "locate", "search", "trace", "which",
+            "implements", "defined", "handles", "records", "sends", "discovery"
         }
 
     def _tokenize(self, text: str) -> List[str]:
@@ -112,7 +120,37 @@ class LocalDecisionEngine:
             prob = 1.0 / (1.0 + math.exp(-raw_score / self.temperature))
             return {"noul": round(prob, 4)}
 
-        # Case 3: Generic semantic overlap
+        # Case 3: Code discovery intent
+        if "code_discovery" in instructions or any(term in instructions for term in ["locate", "search", "where", "behavior works in the repository"]):
+            raw_score = -1.0
+            matches = set(state_tokens).intersection(self.discovery_keywords)
+            if len(matches) >= 2:
+                raw_score += 3.5
+            elif len(matches) == 1:
+                raw_score += 1.5
+
+            if any(k in state_lower for k in ["how does", "where is", "where are", "which file", "which test"]):
+                raw_score += 3.0
+
+            prob = 1.0 / (1.0 + math.exp(-raw_score / self.temperature))
+            return {"noul": round(prob, 4)}
+
+        # Case 4: Directory / File / Declaration relevance evaluation
+        if any(term in instructions for term in ["relevant_dir", "relevant_file", "relevant_decl", "likely to contain", "directly answer"]):
+            overlap = self._calculate_overlap_score(state_lower, instructions)
+            raw_score = (overlap - 0.20) * 4.5
+            # Boost if name matches keyword
+            prob = 1.0 / (1.0 + math.exp(-raw_score / self.temperature))
+            return {"noul": round(prob, 4)}
+
+        # Case 5: Dynamic retraction / still relevant
+        if "still_relevant" in instructions:
+            overlap = self._calculate_overlap_score(state_lower, instructions)
+            raw_score = (overlap - 0.15) * 4.0
+            prob = 1.0 / (1.0 + math.exp(-raw_score / self.temperature))
+            return {"noul": round(prob, 4)}
+
+        # Case 6: Generic semantic overlap
         overlap = self._calculate_overlap_score(state_lower, instructions)
         raw_score = (overlap - 0.25) * 4.0
         prob = 1.0 / (1.0 + math.exp(-raw_score / self.temperature))
@@ -142,11 +180,15 @@ class LocalDecisionEngine:
             score = self._calculate_overlap_score(state, combined_target)
 
             # Intent specific boosting
-            if ("general" in name or "qa" in name) and any(kw in state_lower for kw in ["what", "why", "how", "explain", "difference", "who", "tell me"]):
+            if ("discovery" in name or "search" in name) and (
+                any(kw in state_lower for kw in ["where is", "where are", "how does", "which file", "find the", "locate the", "how are", "where the"])
+            ):
+                score += 1.2
+            elif ("general" in name or "qa" in name) and any(kw in state_lower for kw in ["what is", "why is", "explain", "difference between", "who is", "tell me about"]):
                 score += 0.8
-            if ("code" in name or "dev" in name) and any(kw in state_lower for kw in ["def ", "class ", "function", "var ", "const ", "import", "fastapi", "react", "python", "endpoint"]):
-                score += 0.7
-            if ("file" in name) and any(kw in state_lower for kw in ["file", "directory", "folder", "copy", "move", "archive"]):
+            if ("dev" in name or name == "code_development" or name == "code_dev") and any(kw in state_lower for kw in ["def ", "class ", "function", "var ", "const ", "import", "fastapi", "react", "python", "endpoint", "implement", "write", "refactor", "api", "rest"]):
+                score += 1.2
+            if ("file" in name and "discovery" not in name) and any(kw in state_lower for kw in ["file", "directory", "folder", "copy", "move", "archive"]):
                 score += 0.7
             if ("terminal" in name or "admin" in name) and any(kw in state_lower for kw in ["bash", "shell", "server", "admin", "process", "service"]):
                 score += 0.7

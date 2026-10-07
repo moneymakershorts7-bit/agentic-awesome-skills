@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:5426a3f0fd03e4092d49a03f80845d071434250e0fefe2e06277ba872e804a37",
+      "rule_id": "SC2",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:5e1a760f766bc7faf0deacab82b7ad0f6a83be446d20facde10a20127ed1d61e",
+      "rule_id": "AE1",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:a213d85035a5679dc73553606b895256cffba9b9f1f0581c4bd34c95179bb857",
+      "rule_id": "EA2",
+      "file": "references/acceptance-criteria.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:dca170dbbacaaf5806271d56c2294e0a231707c9316062f1a5b2fbb21907d2f8",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:d10fa798ad5e902893c5004c266af1f66fb451ed81102aa35430adf2e10ed62c",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:c4b3bb9aca690ab9aeedb71acef923841ea941a65b49bcbf6af44818fb29d54b",
+      "rule_id": "RA2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:0f25f42742c5eb2ba37817766342b20358f4de600c5809953e1a4b2cb4fb43e4",
+      "rule_id": "RA2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:78815e157568637e376bbaca4aa82ac94aaa853709c0b187f3528d33a5a5f5c9",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:0bb33b5b36887083afbbc67b33325741a5e08414ef14935a1700af990cae3ea9",
+      "rule_id": "EA2",
+      "file": "references/verification-method.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    }
+  ]
+}

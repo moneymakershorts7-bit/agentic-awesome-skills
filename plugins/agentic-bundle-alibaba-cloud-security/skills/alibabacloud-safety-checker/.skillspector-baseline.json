@@ -1,0 +1,97 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:7cb384d2092ef89201a8905bc060f2c109d5e59b7af7a6ac07662630fec9935c",
+      "rule_id": "AR3",
+      "file": "assets/ai_guardrail_157.json",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:91ca51a519cf07f2cdfe5c19ee0ab47db03b7283d6b830df4406fddf54c8a00d",
+      "rule_id": "AR1",
+      "file": "assets/zhipu_poc_10.json",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:5593d5adf629ec488f426139ee38df8e9e279eb2832c0f2fab8eae27513f68d0",
+      "rule_id": "LP1",
+      "file": "scripts/ai_guardrail.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:cbb4bc80fd032f1237635aeef5ea850523e352915852ab18891ba47a98a240ac",
+      "rule_id": "LP1",
+      "file": "scripts/ai_guardrail.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:0f63b9ad508cc0767508b6a7e8c4497da7bf9369448e833de1e2370205195378",
+      "rule_id": "LP1",
+      "file": "scripts/ai_guardrail.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:1a965b43de8a4b5b7ed54c20074bf5c2d22f5860a11c0dcd2a23e383b806339a",
+      "rule_id": "LP1",
+      "file": "scripts/console_automator.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:195e629673e631d6f441e16b9de1ebf2288558c40ac6ea4590d11a40b1659da1",
+      "rule_id": "MP1",
+      "file": "assets/zhipu_poc_10.json",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:4d5279e8ea03c15ed3f6e4ed92f5c325b4daf00196d3f88ef2cc1020f8cfb79b",
+      "rule_id": "AST4",
+      "file": "scripts/console_automator.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:608702fa51fa43cf3f1c5f3844004d7856ec87705531dec50ee6b5882655a326",
+      "rule_id": "AST3",
+      "file": "scripts/console_automator.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:07dae0cca37c10bed344726678126dad55b9e84c197aa51e87d57b20d38fc2d9",
+      "rule_id": "AST4",
+      "file": "scripts/cst.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:eda37e9b3bef5f2219d1f9d7f1f69445015d593823fb9df498a381ba211d449e",
+      "rule_id": "AST4",
+      "file": "scripts/cst.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:3f559f335de1e6ad25b103ab39ddce1852fff5a6a7a8a3d723fc6e78c122b7a1",
+      "rule_id": "AST4",
+      "file": "scripts/cst.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:23551461f1328296ddeeb37cc146d4b0490d2efd035fdb205242074ce75868c9",
+      "rule_id": "AST4",
+      "file": "scripts/cst.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:5d24f6e0e50806efd4dd48ed12bd288f395c99a77d268b95caf728d4caca306d",
+      "rule_id": "AST4",
+      "file": "scripts/cst.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:1ace6c9a87508b0f3f637ccbac2cf0d16fefe873ccc4a63483ced27a864e1011",
+      "rule_id": "SC4",
+      "file": "scripts/requirements.txt",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    }
+  ]
+}

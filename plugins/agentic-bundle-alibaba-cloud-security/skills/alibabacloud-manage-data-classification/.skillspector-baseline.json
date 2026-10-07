@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:0feae678bc71be8c8b070da445008e20ddd813ce288eb648100192f280bc0dfa",
+      "rule_id": "AE1",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:71b418c077f733ebc452f44a8a4f5b937efbed43c62fa21eea9c07065641b06a",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    }
+  ]
+}

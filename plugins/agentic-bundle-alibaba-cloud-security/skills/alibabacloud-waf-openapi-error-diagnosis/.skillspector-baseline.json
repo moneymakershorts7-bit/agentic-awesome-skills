@@ -1,0 +1,109 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:baf5721f417ba761cc30c4d2b14bd1353920a373158df0b26361d4f98981179f",
+      "rule_id": "AE1",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:63775c3a052cd82532c5db2b1a40d6aaa479a46c62e2342f8c739b60ed81dcff",
+      "rule_id": "RA1",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:8c75b218c26ca25d8f84b2be2ce00b5f28eddb9386e0400dc755fdd0e38bf404",
+      "rule_id": "RA1",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:0198ff1bc7fee2016f9be75fc5949f92424da0a9dac5a47aed05c43e95817ff3",
+      "rule_id": "LP1",
+      "file": "scripts/diagnose_openapi_error.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:eb6d8d2fcd97ac17b0b827fa5e9ff1ce67b8c213d4742f2a83a20b4c5f048fef",
+      "rule_id": "LP1",
+      "file": "scripts/diagnose_openapi_error.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:b52a72cdc0e8688a01dad76b300aaac9f74343ba542731cdfdef037811efe33e",
+      "rule_id": "LP1",
+      "file": "scripts/diagnose_openapi_error.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:419b749216f89d561345e832a284eff8967835979cf0d6ad5fab647ce80d8109",
+      "rule_id": "LP1",
+      "file": "scripts/diagnose_openapi_error.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:e17c53227ccd4b86888d04a979f33a4046275ea9fe74c4f04bf01be83820c839",
+      "rule_id": "EA2",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:acea279ecf8b24a18f9c8db4fe0185d6454e9cd4fa9ad64f729b49fbde504cb7",
+      "rule_id": "PE2",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:f21027c1d21696464e0810e2c54e92af080c9cc1fb23a79277c6f4dff993d020",
+      "rule_id": "EA1",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:6e9cd82aa0fca8dc005fe59778b877ce7c7dfa37e559cce108269ece7f674d48",
+      "rule_id": "EA2",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:345e1fde012cf4d65613456ee448d5dd658be0e93e76b46b08f77473247dd201",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:187378a35af2fe7f9957458b88ea37228faed01b0b80300c558b86b520d87f43",
+      "rule_id": "RA2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:bc91c3e34e89f460fd128695c3b089ec0ff9fe3dd4eee833994dd6464a5ff221",
+      "rule_id": "RA2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:27e488ed23a86174c95f81efd6e2ee595a7039a0a688512370a0040f33ea009b",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:d319a5cb27298b3eaf78d8cdb69e5f4227c7589a2e0a3ab2287b93757e2a3fab",
+      "rule_id": "E1",
+      "file": "scripts/diagnose_openapi_error.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:47b45f7413d59472452dfe3955d7a60f3fac694830bf8370e2c9a053441b1011",
+      "rule_id": "AST4",
+      "file": "scripts/diagnose_openapi_error.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    }
+  ]
+}

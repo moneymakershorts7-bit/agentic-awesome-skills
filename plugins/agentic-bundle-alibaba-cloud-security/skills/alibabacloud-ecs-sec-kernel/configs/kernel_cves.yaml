@@ -1,0 +1,1439 @@
+
+version: "1.4.1"
+
+cves:
+- cve_id: CVE-2003-0127
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.2
+  has_poc: true
+  detector_file: cve_2003_0127.py
+  poc_binary: cve_2003_0127.bin
+  poc_url: https://github.com/SecWiki/linux-kernel-exploits/blob/master/2003/CVE-2003-0127/
+  test_modes:
+  - read_root_file
+  retry_count: 3
+  vulnerability_principle: ptrace/kmod 内核模块加载器竞争条件：攻击者使用 ptrace 附加到触发模块加载的进程，在 kmod 调用 /sbin/modprobe 时劫持执行流，以 root 权限执行任意代码。
+- cve_id: CVE-2004-0077
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.2
+  has_poc: true
+  detector_file: cve_2004_0077.py
+  poc_binary: cve_2004_0077.bin
+  poc_url: https://github.com/SecWiki/linux-kernel-exploits/blob/master/2004/CVE-2004-0077/
+  test_modes:
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: mremap() 函数在 VMA 描述符耗尽时未检查 do_munmap() 返回值，导致产生'无主' PTE 条目。攻击者通过 saturate VMA 配额后触发 mremap 失败，未清除的页帧进入
+    slab 缓存，后续进程分配时可插入恶意数据到特权进程虚拟内存空间，实现本地提权。
+- cve_id: CVE-2004-1235
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.2
+  has_poc: true
+  detector_file: cve_2004_1235.py
+  poc_binary: cve_2004_1235.bin
+  poc_url: https://github.com/SecWiki/linux-kernel-exploits/blob/master/2004/CVE-2004-1235/
+  test_modes:
+  - read_root_file
+  retry_count: 3
+  vulnerability_principle: 'uselib() race condition in load_elf_library: kernel generates library''s brk segment without holding
+    mmap_sem, allowing concurrent processes to alter VMA structures. Local users can gain root privileges via LDT call gate
+    construction.'
+- cve_id: CVE-2006-2451
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.2
+  has_poc: true
+  detector_file: cve_2006_2451.py
+  poc_binary: cve_2006_2451.bin
+  poc_url: https://github.com/SecWiki/linux-kernel-exploits/blob/master/2006/CVE-2006-2451/
+  test_modes:
+  - read_root_file
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: prctl(PR_SET_DUMPABLE, 2) allows unprivileged users to set suidsafe mode; crash-induced core dumps
+    as root can write to restricted directories, enabling local privilege escalation.
+- cve_id: CVE-2006-3626
+  cvss_score: 7.2
+  detector_file: cve_2006_3626.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2006_3626.bin
+  poc_url: https://github.com/SecWiki/linux-kernel-exploits/blob/master/2006/CVE-2006-3626/
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - read_root_file
+  - write_root_file
+  vulnerability_principle: 'procfs /proc/self/environ race condition. Concurrent environment modification during reads allows
+
+    local users to read sensitive kernel memory or gain privileges.
+
+    '
+- cve_id: CVE-2008-0600
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2008_0600.py
+  poc_binary: cve_2008_0600.bin
+  poc_url: https://github.com/SecWiki/linux-kernel-exploits/blob/master/2008/CVE-2008-0600/
+  test_modes:
+  - write_root_file
+  - read_root_file
+  retry_count: 3
+  vulnerability_principle: vmsplice() fails to validate user-space iovec pointers, allowing crafted arguments to write arbitrary
+    data to kernel memory and escalate privileges via page cache pollution.
+- cve_id: CVE-2009-2692
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.2
+  has_poc: true
+  detector_file: cve_2009_2692.py
+  poc_binary: cve_2009_2692.bin
+  poc_url: https://github.com/jdvalentini/CVE-2009-2692
+  test_modes:
+  - read_root_file
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: sock_sendpage() 未校验 socket->ops->sendpage 是否为 NULL，攻击者映射 NULL 页面后通过 PF_PPPOX 套接字触发 sendfile() 调用
+    sock_sendpage()，空指针解引用执行用户映射到 NULL 页面的代码，实现本地提权。
+- cve_id: CVE-2010-3904
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.2
+  has_poc: true
+  detector_file: cve_2010_3904.py
+  poc_binary: cve_2010_3904.bin
+  poc_url: https://github.com/bcoles/kernel-exploits/blob/master/CVE-2010-3904/
+  test_modes:
+  - read_root_file
+  retry_count: 3
+  vulnerability_principle: RDS rds_page_copy_user() 函数未正确验证用户空间地址，攻击者通过 RDS socket 选项传递构造的地址绕过 access_ok() 检查，导致内核内存信息泄露或本地提权。
+- cve_id: CVE-2013-2094
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.2
+  has_poc: true
+  detector_file: cve_2013_2094.py
+  poc_binary: cve_2013_2094.bin
+  poc_url: https://github.com/SecWiki/linux-kernel-exploits/blob/master/2013/CVE-2013-2094/
+  test_modes:
+  - read_root_file
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: perf_swevent_init() 使用有符号 32 位整数作为 perf_swevent_enabled[] 数组索引，攻击者通过 perf_event_open() 传入负数 event_id
+    导致数组越界写，覆写内核内存实现 ring 0 代码执行和本地提权。
+- cve_id: CVE-2014-3153
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2014_3153.py
+  poc_binary: cve_2014_3153.bin
+  poc_url: https://github.com/timwr/CVE-2014-3153
+  test_modes:
+  - write_root_file
+  - read_root_file
+  retry_count: 3
+  vulnerability_principle: futex_requeue() 未验证两个 futex 地址是否不同，攻击者通过构造相同地址的 futex_requeue 调用触发竞争条件，导致 waiter 状态被不安全地修改，可绕过
+    VFS 权限检查实现对 root 文件的读写。
+- cve_id: CVE-2015-1328
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.2
+  has_poc: true
+  detector_file: cve_2015_1328.py
+  poc_binary: cve_2015_1328.bin
+  poc_url: https://github.com/0xf1d0/CVE-2015-1328
+  test_modes:
+  - write_root_file
+  - read_root_file
+  retry_count: 3
+  vulnerability_principle: OverlayFS 在 user namespace 中挂载时未正确验证上层目录权限，攻击者可通过在 user namespace 中创建 overlayfs 挂载并以任意权限在上层目录创建文件，实现对
+    root 文件的写入。
+- cve_id: CVE-2016-0728
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.2
+  has_poc: true
+  detector_file: cve_2016_0728.py
+  poc_binary: cve_2016_0728.bin
+  poc_url: https://github.com/SecWiki/linux-kernel-exploits/blob/master/2016/CVE-2016-0728/
+  test_modes:
+  - read_root_file
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: join_session_keyring() 函数中 keyring 引用计数溢出（32 位有符号整数），攻击者通过反复加入同一 session keyring 使计数溢出归零，导致 keyring
+    对象被释放但仍有引用指向它（UAF）。利用堆喷射 + ROP 可实现本地提权。完整利用需要约 2^32 次调用（数小时），不适合 CTF 文件读写验证模式。
+- cve_id: CVE-2016-4557
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2016_4557.py
+  poc_binary: cve_2016_4557.bin
+  poc_url: https://github.com/bcoles/kernel-exploits/blob/master/CVE-2016-4557/
+  test_modes:
+  - read_root_file
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: BPF verifier replace_map_fd_with_map_ptr 函数未正确追踪文件描述符引用，替换 map 元素时旧元素引用计数未正确递减，导致 use-after-free。攻击者通过堆喷射控制释放的对象，覆盖函数指针实现内核代码执行。
+- cve_id: CVE-2016-5195
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.0
+  has_poc: true
+  detector_file: cve_2016_5195.py
+  poc_binary: cve_2016_5195.bin
+  poc_url: https://github.com/firefart/dirtycow
+  test_modes:
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: Dirty COW - race condition in mm/gup.c copy-on-write handling allows writing to read-only memory
+    mappings via /proc/self/mem racing against MADV_DONTNEED, causing page cache pollution
+- cve_id: CVE-2016-8655
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.2
+  has_poc: true
+  detector_file: cve_2016_8655.py
+  poc_binary: cve_2016_8655.bin
+  poc_url: https://github.com/bcoles/kernel-exploits/blob/master/CVE-2016-8655/
+  test_modes:
+  - read_root_file
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: 'AF_PACKET packet_set_ring() race condition: PACKET_FANOUT + PACKET_TX_RING vs close() triggers
+    timer_list use-after-free, allowing attacker to control timer callback function pointer and execute ROP chain for local
+    privilege escalation via commit_creds(prepare_kernel_cred(0))'
+- cve_id: CVE-2016-9793
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.2
+  has_poc: true
+  detector_file: cve_2016_9793.py
+  poc_binary: cve_2016_9793.bin
+  poc_url: https://github.com/bcoles/kernel-exploits/blob/master/CVE-2016-9793/
+  test_modes:
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: sock_setsockopt() SO_SNDBUFFORCE/SO_RCVBUFFORCE 未正确校验负数/极大值，val * 2 触发有符号整数溢出，导致 alloc_skb 路径堆内存越界写，可覆写相邻内核对象实现本地提权。利用需要
+    CAP_NET_ADMIN（可通过 user namespace 获取）。
+- cve_id: CVE-2017-1000112
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2017_1000112.py
+  poc_binary: cve_2017_1000112.bin
+  poc_url: https://github.com/bcoles/kernel-exploits/blob/master/CVE-2017-1000112/
+  test_modes:
+    - write_root_file
+  retry_count: 3
+  vulnerability_principle: "__ip_append_data() UFO to non-UFO path switch causes heap out-of-bounds write, overwriting adjacent skb_shared_info metadata to control pipe_buffer structures for arbitrary write -> LPE"
+- cve_id: CVE-2017-16995
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  poc_locked: true
+  detector_file: cve_2017_16995.py
+  poc_binary: cve_2017_16995.bin
+  poc_url: https://github.com/bcoles/kernel-exploits/blob/master/CVE-2017-16995/
+  test_modes:
+    - write_root_file
+  retry_count: 3
+  vulnerability_principle: "eBPF verifier check_alu_op() 32-bit ALU operation range tracking bypass leading to OOB access and arbitrary kernel memory read/write"
+- cve_id: CVE-2017-6074
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2017_6074.py
+  poc_binary: cve_2017_6074.bin
+  poc_url: https://github.com/xairy/kernel-exploits/tree/master/CVE-2017-6074/
+  test_modes:
+    - write_root_file
+  retry_count: 3
+  vulnerability_principle: "DCCP IPV6_RECVPKTINFO skb double-free in dccp_rcv_state_process leading to heap corruption and LPE"
+- cve_id: CVE-2017-7308
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2017_7308.py
+  poc_binary: cve_2017_7308.bin
+  poc_url: https://github.com/bcoles/kernel-exploits/blob/master/CVE-2017-7308/
+  test_modes:
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: AF_PACKET packet_set_ring signed integer overflow in sizeof_priv calculation causes ring buffer
+    OOB write, corrupting adjacent kernel objects (timer_list/xmit) for ROP chain execution and local privilege escalation.
+- cve_id: CVE-2018-14634
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  poc_locked: true
+  detector_file: cve_2018_14634.py
+  poc_binary: cve_2018_14634.bin
+  poc_url: https://github.com/luan0ap/cve-2018-14634
+  test_modes:
+  - write_root_file
+  - read_root_file
+  retry_count: 3
+  vulnerability_principle: 'create_elf_tables() integer overflow in argv/envp size calculation allows
+
+    stack redirection via SUID binary, bypassing ld.so UNSECURE_ENVVARS filtering.
+
+    '
+- cve_id: CVE-2018-18955
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2018_18955.py
+  poc_binary: cve_2018_18955.elf
+  poc_url: https://github.com/bcoles/kernel-exploits/tree/master/CVE-2018-18955
+  test_modes:
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: 'User namespace map_write() nested >5 entries bypass. When a nested user
+
+    namespace has more than 5 UID/GID mapping entries, the kernel switches from
+
+    inline extent array to sorted tree. map_id_up() mishandles this transition,
+
+    causing UID 0 in inner namespace to map to real root in init namespace.
+
+    '
+- cve_id: CVE-2019-13272
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2019_13272.py
+  poc_binary: cve_2019_13272.bin
+  poc_url: https://github.com/bcoles/kernel-exploits/blob/master/CVE-2019-13272/
+  test_modes:
+  - read_root_file
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: CVE-2019-13272 Linux kernel local privilege escalation vulnerability
+- cve_id: CVE-2020-14386
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2020_14386.py
+  poc_binary: cve_2020_14386.bin
+  poc_url: https://github.com/chompie1337/cve-2020-14386-poc
+  test_modes:
+  - write_root_file
+  - read_root_file
+  retry_count: 3
+  vulnerability_principle: 'AF_PACKET tpacket_rcv integer overflow in netoff calculation via PACKET_RESERVE.
+
+    Combined with PACKET_VNET_HDR, causes OOB write via virtio_net_hdr_from_skb into
+
+    adjacent slab objects (cred structure) for local privilege escalation.
+
+    '
+- cve_id: CVE-2020-8835
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2020_8835.py
+  poc_binary: cve_2020_8835.bin
+  poc_url: https://github.com/zilong3033/CVE-2020-8835
+  test_modes:
+  - write_root_file
+  - read_root_file
+  retry_count: 3
+  vulnerability_principle: 'BPF verifier 32-bit ALU boundary tracking error allows crafted BPF programs to
+
+    bypass verifier bounds checks, achieving OOB map access for arbitrary kernel
+
+    memory read/write, then overwrite cred for privilege escalation.
+
+    '
+- cve_id: CVE-2021-22555
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.8
+  has_poc: true
+  poc_locked: true
+  detector_file: cve_2021_22555.py
+  poc_binary: cve_2021_22555.bin
+  poc_url: https://github.com/google/security-research/blob/master/pocs/linux/cve-2021-22555/exploit.c
+  test_modes:
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: 'Netfilter xt_compat_target_from_user heap out-of-bounds write. 2-byte OOB in
+
+    64-to-32-bit compat conversion corrupts adjacent msg_msg for arbitrary R/W and LPE.
+
+    '
+- cve_id: CVE-2022-0847
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2022_0847.py
+  poc_binary: cve_2022_0847.bin
+  poc_url: https://github.com/AlexisAhmed/CVE-2022-0847-DirtyPipe-Exploits
+  test_modes:
+  - read_root_file
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: CVE-2022-0847 Linux kernel local privilege escalation vulnerability
+- cve_id: CVE-2022-32250
+  cvss_score: 7.8
+  detector_file: cve_2022_32250.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2022_32250.bin
+  poc_url: https://github.com/bcoles/kernel-exploits/blob/master/CVE-2022-32250/
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - uaf
+  - write_root_file
+  - read_root_file
+  vulnerability_principle: 'nf_tables nftables use-after-free via incorrect NFT_STATEFUL_EXPR check. When creating an
+
+    anonymous set with a lookup expression binding to a named set, the expression destroy callback
+
+    frees the set binding without proper reference counting, causing UAF. Exploitable via heap spray
+
+    (user_key_payload/mqueue) to achieve kernel code execution and local privilege escalation.
+
+    '
+- cve_id: CVE-2023-0386
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2023_0386.py
+  poc_binary: cve_2023_0386.bin
+  poc_url: https://github.com/Fanxiaoyao66/CVE-2023-0386
+  test_modes:
+  - read_root_file
+  - write_root_file
+  retry_count: 3
+  vulnerability_principle: CVE-2023-0386 Linux kernel local privilege escalation vulnerability
+- cve_id: CVE-2023-2163
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 8.8
+  has_poc: true
+  detector_file: cve_2023_2163.py
+  poc_binary: cve_2023_2163.bin
+  poc_url: https://github.com/google/security-research/blob/master/pocs/linux/cve-2023-2163/
+  test_modes:
+  - write_root_file
+  - read_root_file
+  retry_count: 3
+  vulnerability_principle: 'eBPF verifier pruning logic error: BPF verifier state pruning algorithm incorrectly skips equivalent
+    state verification, allowing crafted BPF programs to bypass security checks, achieve arbitrary kernel memory read/write
+    and privilege escalation.'
+- cve_id: CVE-2023-32233
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2023_32233.py
+  poc_binary: cve_2023_32233.bin
+  poc_url: https://github.com/oferchen/POC-CVE-2023-32233
+  test_modes:
+  - uaf
+  retry_count: 3
+  vulnerability_principle: 'nf_tables anonymous set use-after-free via batch operations. When a batch contains
+
+    NFT_MSG_NEWRULE referencing an anonymous set followed by NFT_MSG_DELRULE, the set is
+
+    freed while bindings still reference it, creating a UAF exploitable for LPE.
+
+    '
+- cve_id: CVE-2024-0193
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2024_0193.py
+  poc_binary: cve_2024_0193.bin
+  poc_url: https://github.com/google/security-research/blob/master/pocs/linux/kernelctf/CVE-2024-0193_lts/
+  test_modes:
+  - write_root_file
+  - uaf
+  retry_count: 3
+  vulnerability_principle: 'nftables set catchall element double-deactivate UAF: when a pipapo set with TIMEOUT flag is GC''d,
+    catchall element deactivated twice causing UAF on NFT_CHAIN object. Exploitable via user namespace (CAP_NET_ADMIN) for
+    LPE.'
+- cve_id: CVE-2024-1086
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2024_1086.py
+  poc_binary: cve_2024_1086.bin
+  poc_url: https://github.com/notselwyn/cve-2024-1086
+  test_modes:
+  - write_root_file
+  - uaf
+  retry_count: 3
+  vulnerability_principle: 'nf_tables nftables verdict double-free use-after-free. nft_do_chain() returns
+
+    verdict 0xFFFF0000 (NF_DROP with errno), nf_hook_slow() frees the skb via
+
+    kfree_skb() but the nfnetlink batch error path also frees it, causing double-free.
+
+    Attacker sprays PTEs to achieve PMD/PTE overlap, scans physical memory for kernel
+
+    base, overwrites modprobe_path for arbitrary command execution as root.
+
+    '
+- cve_id: CVE-2025-21756
+  enabled: true
+  severity: HIGH
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2025_21756.py
+  poc_binary: cve_2025_21756.bin
+  poc_url: https://github.com/hoefler02/CVE-2025-21756
+  test_modes:
+  - write_root_file
+  - uaf
+  retry_count: 3
+  vulnerability_principle: 'vsock transport reassignment refcount UAF. vsock_assign_transport() unconditionally
+
+    decrements refcount for unbound sockets during transport reassignment, causing premature
+
+    free and use-after-free exploitable for local privilege escalation.
+
+    '
+- cve_id: CVE-2026-31431
+  enabled: true
+  has_poc: true
+  poc_locked: true
+  poc_binary: cve_2026_31431.bin
+  poc_url: https://github.com/theori-io/copy-fail-CVE-2026-31431
+  retry_count: 3
+  severity: CRITICAL
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'AF_ALG AEAD authencesn splice path triggers page cache pollution.
+
+    crypto_aead_encrypt fails to isolate page references when processing associated data.
+
+    Allows unprivileged users to overwrite root-owned file page cache via sendmsg+splice combination.
+
+    '
+- cve_id: CVE-2025-40364
+  cvss_score: 7.8
+  detector_file: cve_2025_40364.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_40364.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-40364_lts_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'io_uring io_req_prep_async use-after-free with provided buffers.
+
+    Incorrect async preparation of requests using provided buffer rings leads to UAF,
+
+    enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2025-40019
+  cvss_score: 7.8
+  detector_file: cve_2025_40019.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_40019.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-40019_lts_cos_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Crypto ESSIV ssize validation error for decryption and in-place encryption.
+
+    Missing size check in ESSIV cipher mode allows buffer overflow during cryptographic operations,
+
+    enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2025-39965
+  cvss_score: 7.8
+  detector_file: cve_2025_39965.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_39965.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-39965_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'IPsec xfrm_alloc_spi using 0 as SPI value error.
+
+    Allocating Security Parameter Index with value 0 causes null dereference in xfrm lookup,
+
+    enabling denial of service and potential privilege escalation.
+
+    '
+- cve_id: CVE-2025-39946
+  cvss_score: 7.8
+  detector_file: cve_2025_39946.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_39946.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-39946_lts_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'TLS stream abort on bogus headers. Malformed TLS record headers trigger improper stream abort
+    handling,
+
+    leading to use-after-free of socket buffer and local privilege escalation.
+
+    '
+- cve_id: CVE-2025-39682
+  cvss_score: 7.8
+  detector_file: cve_2025_39682.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_39682.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-39682_lts_cos_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'TLS zero-length records handling error on rx_list. Improper processing of zero-length TLS records
+
+    in receive list causes state corruption, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2025-38616
+  cvss_score: 7.8
+  detector_file: cve_2025_38616.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_38616.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-38616_lts_cos_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'TLS data disappearing under ULP context. Race condition in Upper Layer Protocol handling
+
+    causes TLS data loss and potential memory corruption, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2025-38502
+  cvss_score: 7.8
+  detector_file: cve_2025_38502.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_38502.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-38502_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'BPF cgroup local storage map out-of-bounds access. Incorrect bounds check in cgroup local storage
+
+    operations allows OOB read/write, enabling local privilege escalation via crafted BPF programs.
+
+    '
+- cve_id: CVE-2025-38500
+  cvss_score: 7.8
+  detector_file: cve_2025_38500.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_38500.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-38500_lts_cos_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'IPsec xfrm interface use-after-free after changing mode. Switching xfrm interface mode
+
+    while traffic is active leads to UAF of transform state, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2025-38477
+  cvss_score: 7.8
+  detector_file: cve_2025_38477.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_38477.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-38477_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Network scheduler QFQ aggregate calculation race condition. Concurrent access to QFQ scheduler
+
+    aggregate data structures leads to use-after-free, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2025-38350
+  cvss_score: 7.8
+  detector_file: cve_2025_38350.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_38350.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-38350_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Network scheduler class notification error when child becomes empty. Incorrect notification handling
+
+    during qdisc class emptying leads to state inconsistency and potential privilege escalation.
+
+    '
+- cve_id: CVE-2025-38083
+  cvss_score: 7.8
+  detector_file: cve_2025_38083.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_38083.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-38083_cos_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Network scheduler PRIO qdisc race condition in prio_tune(). Concurrent priority band reconfiguration
+
+    leads to use-after-free of child qdiscs, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2025-38001
+  cvss_score: 8.4
+  detector_file: cve_2025_38001.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_38001.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-38001_mitigation
+  retry_count: 3
+  severity: CRITICAL
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'HFSC packet scheduler use-after-free. Race condition in Hierarchical Fair Service Curve scheduler
+
+    class destruction allows UAF, bypassing kernelctf mitigations. Enables local privilege escalation.
+
+    '
+- cve_id: CVE-2025-37756
+  cvss_score: 7.8
+  detector_file: cve_2025_37756.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_37756.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-37756_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'TLS improper disconnect handling. Missing explicit disallow of disconnect operation in TLS socket
+    layer
+
+    allows state corruption during connection teardown, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2025-37752
+  cvss_score: 7.8
+  detector_file: cve_2025_37752.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_37752.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-37752_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Net subsystem use-after-free in socket buffer handling. Race condition in network packet processing
+
+    leads to UAF of skb structure, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2025-21836
+  cvss_score: 7.8
+  detector_file: cve_2025_21836.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_21836.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-21836_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'io_uring provided buffer list reallocation error on upgrade. Incorrect buffer management during
+
+    ring upgrade leads to use-after-free of buffer entries, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2025-21702
+  cvss_score: 7.8
+  detector_file: cve_2025_21702.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_21702.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-21702_lts_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Network scheduler pfifo_tail_enqueue incorrect packet drop when sch->limit == 0.
+
+    Logic error in tail-drop FIFO qdisc causes memory corruption, enabling privilege escalation.
+
+    '
+- cve_id: CVE-2025-21701
+  cvss_score: 7.8
+  detector_file: cve_2025_21701.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_21701.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-21701_lts_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Ethernet/Network race condition between device unregistration and ethnl operations.
+
+    Concurrent device removal and ethtool netlink access leads to use-after-free and local privilege escalation.
+
+    '
+- cve_id: CVE-2025-21700
+  cvss_score: 7.8
+  detector_file: cve_2025_21700.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2025_21700.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2025-21700_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Network namespace use-after-free. Improper reference counting during network namespace cleanup
+
+    allows UAF when net devices are still active, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2024-58240
+  cvss_score: 7.8
+  detector_file: cve_2024_58240.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_58240.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-58240_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'TLS improper separation of async and non-async decryption requests. Missing isolation between
+
+    synchronous and asynchronous decrypt paths leads to data corruption and privilege escalation.
+
+    '
+- cve_id: CVE-2024-58239
+  cvss_score: 7.8
+  detector_file: cve_2024_58239.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_58239.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-58239_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'TLS recv() not stopping after initial process_rx_list completion. Infinite loop in TLS receive
+    path
+
+    when processing rx_list allows denial of service and potential memory corruption.
+
+    '
+- cve_id: CVE-2024-57947
+  cvss_score: 7.8
+  detector_file: cve_2024_57947.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_57947.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-57947_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Netfilter nft_set_pipapo initial map fill logic error. Incorrect initialization of pipapo lookup
+    map
+
+    allows out-of-bounds access during set element matching, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2024-53197
+  cvss_score: 7.8
+  detector_file: cve_2024_53197.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_53197.bin
+  poc_url: https://www.cve.org/CVERecord?id=CVE-2024-53197
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  - read_root_file
+  vulnerability_principle: 'ALSA USB audio snd_usb_extigy out-of-bounds access. Bogus USB device provides bNumConfigurations
+
+    exceeding allocated dev->config array, causing OOB heap access in kmalloc-1024 slab during
+
+    usb_destroy_configuration, enabling kernel memory corruption and local privilege escalation.
+
+    '
+- cve_id: CVE-2024-53164
+  cvss_score: 7.8
+  detector_file: cve_2024_53164.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_53164.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-53164_lts_cos_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Network scheduler qlen adjustment ordering error. Incorrect ordering of queue length updates in
+
+    qdisc operations leads to inconsistent state, enabling memory corruption and local privilege escalation.
+
+    '
+- cve_id: CVE-2024-53141
+  cvss_score: 7.8
+  detector_file: cve_2024_53141.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_53141.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-53141_cos_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Netfilter ipset bitmap_ip_uadt integer overflow in range check. Missing upper bound validation
+    in
+
+    bitmap IP set allows integer overflow, leading to out-of-bounds write and local privilege escalation.
+
+    '
+- cve_id: CVE-2024-53125
+  cvss_score: 7.8
+  detector_file: cve_2024_53125.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_53125.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-53125_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'BPF sync_linked_regs() subreg_def preservation error. Incorrect sub-register definition tracking
+
+    during linked register synchronization allows out-of-bounds access and local privilege escalation.
+
+    '
+- cve_id: CVE-2024-50164
+  cvss_score: 7.8
+  detector_file: cve_2024_50164.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_50164.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-50164_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'BPF verifier MEM_UNINIT meaning overloading vulnerability. Ambiguous semantics of MEM_UNINIT flag
+
+    in BPF verifier enables type confusion, allowing crafted programs to bypass memory safety checks.
+
+    '
+- cve_id: CVE-2024-49861
+  cvss_score: 7.8
+  detector_file: cve_2024_49861.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_49861.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-49861_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'BPF verifier logic error allowing helper writes to read-only maps. Verification bypass enables
+    BPF
+
+    programs to write to maps marked as read-only, leading to privilege escalation via crafted BPF programs.
+
+    '
+- cve_id: CVE-2024-41010
+  cvss_score: 7.8
+  detector_file: cve_2024_41010.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_41010.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-41010_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Network qdisc use-after-free in ingress management across namespaces. Improper lifetime management
+
+    of ingress qdisc when moving devices between network namespaces leads to UAF and local privilege escalation.
+
+    '
+- cve_id: CVE-2024-41009
+  cvss_score: 7.8
+  detector_file: cve_2024_41009.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_41009.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-41009_lts_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'BPF ring buffer reservation overrun. Insufficient boundary check in bpf_ringbuf_reserve allows
+
+    writing beyond allocated ring buffer space, enabling heap corruption and local privilege escalation.
+
+    '
+- cve_id: CVE-2024-39503
+  cvss_score: 7.8
+  detector_file: cve_2024_39503.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_39503.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-39503_lts_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Netfilter ipset race between namespace cleanup and garbage collection in list:set type. Concurrent
+
+    GC and netns destruction leads to UAF of set elements, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2024-36972
+  cvss_score: 7.8
+  detector_file: cve_2024_36972.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_36972.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-36972_lts_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'AF_UNIX race condition updating oob_skb without sk_receive_queue lock. Concurrent access to
+
+    out-of-band socket buffer without proper locking leads to use-after-free and local privilege escalation.
+
+    '
+- cve_id: CVE-2024-27397
+  cvss_score: 7.8
+  detector_file: cve_2024_27397.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_27397.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-27397_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Netfilter nft_set timer race condition use-after-free. Race between set element timeout and
+
+    concurrent set element operations leads to UAF, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2024-26925
+  cvss_score: 7.8
+  detector_file: cve_2024_26925.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_26925.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-26925_lts_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Netfilter nf_tables mutex release timing issue in GC sequence. Race condition between garbage
+
+    collection and rule modification due to improper mutex ordering enables use-after-free.
+
+    '
+- cve_id: CVE-2024-26824
+  cvss_score: 7.8
+  detector_file: cve_2024_26824.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_26824.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-26824_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Crypto algif_hash bogus SGL free on zero-length input. Improper handling of zero-length
+
+    scatter-gather list in hash algorithm interface leads to memory corruption and privilege escalation.
+
+    '
+- cve_id: CVE-2024-26809
+  cvss_score: 7.8
+  detector_file: cve_2024_26809.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_26809.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-26809_lts_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Netfilter nft_pipapo improper element cleanup in clone destroy path. Double-free of set elements
+
+    when destroying cloned pipapo sets leads to memory corruption and local privilege escalation.
+
+    '
+- cve_id: CVE-2024-26808
+  cvss_score: 7.8
+  detector_file: cve_2024_26808.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_26808.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-26808_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Netfilter stale reference in NETDEV_UNREGISTER handling for inet/ingress basechain. Device
+
+    unregistration leaves dangling pointer in basechain, enabling use-after-free.
+
+    '
+- cve_id: CVE-2024-26642
+  cvss_score: 7.8
+  detector_file: cve_2024_26642.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_26642.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-26642_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Netfilter nf_tables anonymous set with timeout flag mishandling. Improper validation of timeout
+
+    flags on anonymous sets allows resource exhaustion and potential privilege escalation.
+
+    '
+- cve_id: CVE-2024-26585
+  cvss_score: 7.8
+  detector_file: cve_2024_26585.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_26585.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-26585_lts_cos
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'TLS race condition between tx work scheduling and socket close. Concurrent access to socket
+
+    resources during TLS transmission work and socket teardown leads to use-after-free.
+
+    '
+- cve_id: CVE-2024-26582
+  cvss_score: 7.8
+  detector_file: cve_2024_26582.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_26582.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-26582_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'TLS use-after-free in process_rx_list with partial reads and async decrypt. Improper reference
+
+    counting during TLS record processing allows UAF when partial reads trigger async decryption.
+
+    '
+- cve_id: CVE-2024-26581
+  cvss_score: 7.8
+  detector_file: cve_2024_26581.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_26581.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-26581_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Netfilter nft_set_pipapo walkthrough stack overflow. Incorrect boundary check in pipapo set
+
+    walk function allows stack buffer overflow during element enumeration, enabling privilege escalation.
+
+    '
+- cve_id: CVE-2024-1085
+  cvss_score: 7.8
+  detector_file: cve_2024_1085.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_1085.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-1085_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'nf_tables nft_setelem_catchall use-after-free. Double deactivation of catchall set elements
+
+    during set destruction leads to UAF, allowing local privilege escalation.
+
+    '
+- cve_id: CVE-2024-0582
+  cvss_score: 7.8
+  detector_file: cve_2024_0582.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2024_0582.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2024-0582_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'io_uring PBUF_RING mmap use-after-free. When a provided buffer ring is unmapped while still
+
+    registered, subsequent io_uring operations access freed pages, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2023-6931
+  cvss_score: 7.8
+  detector_file: cve_2023_6931.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2023_6931.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2023-6931_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'perf_event ring buffer out-of-bounds write. Incorrect size validation in perf_read_group
+
+    allows heap buffer overflow, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2023-6817
+  cvss_score: 7.8
+  detector_file: cve_2023_6817.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2023_6817.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2023-6817_mitigation
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Netfilter nft_set use-after-free on flag update. Updating set element flags with concurrent
+
+    set destruction causes UAF, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2023-4622
+  cvss_score: 7.8
+  detector_file: cve_2023_4622.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2023_4622.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2023-4622_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'af_unix socket race condition use-after-free. Race between unix_stream_sendmsg and garbage
+
+    collection leads to UAF of socket buffer, allowing local privilege escalation.
+
+    '
+- cve_id: CVE-2023-4147
+  cvss_score: 7.8
+  detector_file: cve_2023_4147.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2023_4147.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2023-4147_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'nf_tables chain insertion use-after-free. When adding a rule to a bound chain that fails,
+
+    the chain is freed but the rule still references it, leading to UAF and local privilege escalation.
+
+    '
+- cve_id: CVE-2023-4004
+  cvss_score: 7.8
+  detector_file: cve_2023_4004.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2023_4004.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2023-4004_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'Netfilter nft_pipapo use-after-free. Improper element removal in nft_pipapo set type leads
+
+    to dangling pointer, allowing local privilege escalation via crafted netfilter rules.
+
+    '
+- cve_id: CVE-2023-3390
+  cvss_score: 7.8
+  detector_file: cve_2023_3390.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2023_3390.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2023-3390_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'nf_tables use-after-free in NFT_MSG_NEWRULE handling. Incorrect error path in nft_chain_validate
+
+    allows UAF when rule addition fails, enabling local privilege escalation.
+
+    '
+- cve_id: CVE-2023-0461
+  cvss_score: 7.8
+  detector_file: cve_2023_0461.py
+  enabled: true
+  has_poc: true
+  poc_binary: cve_2023_0461.bin
+  poc_url: https://github.com/google/security-research/tree/master/pocs/linux/kernelctf/CVE-2023-0461_lts
+  retry_count: 3
+  severity: HIGH
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'inet_csk socket use-after-free in TCP/TLS subsystem. Improper cleanup of inet connection socket
+
+    during TLS handshake allows local attacker to escalate privileges.
+
+    '
+- cve_id: CVE-2026-43284
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2026_43284.py
+  poc_binary: cve_2026_43284.bin
+  poc_url: https://github.com/V4bel/dirtyfrag/blob/master/exp.c
+  test_modes:
+  - write_root_file
+  - read_root_file
+  retry_count: 3
+  affected_versions:
+    min: '4.15.0'
+    fixed: '6.12.0'
+  required_config:
+  - CONFIG_INET_ESP
+  required_capabilities:
+  - user_namespaces
+  vulnerability_principle: 'DirtyFrag xfrm-ESP variant: IPsec ESP encryption with ESN causes skb_page_frag_refill
+
+    to reuse page cache pages via splice. Attacker uses xfrm SA with ESN + splice pipe
+
+    to corrupt page cache of root-owned files, achieving unprivileged write.
+
+    '
+- cve_id: CVE-2026-43500
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2026_43500.py
+  poc_binary: cve_2026_43500.bin
+  poc_url: https://github.com/V4bel/dirtyfrag/blob/master/exp.c
+  test_modes:
+  - write_root_file
+  - read_root_file
+  retry_count: 3
+  affected_versions:
+    min: '6.4.0'
+    fixed: '6.12.0'
+  required_config:
+  - CONFIG_AF_RXRPC
+  required_capabilities: []
+  vulnerability_principle: 'DirtyFrag RxRPC variant: AF_RXRPC rxkad security class uses fcrypt encryption
+
+    which triggers skb_page_frag_refill to reuse page cache pages via splice. Attacker
+
+    opens rxrpc socket + splice pipe to corrupt page cache of root-owned files without
+
+    requiring user namespaces.
+
+    '
+- cve_id: CVE-2026-PENDING-FRAGNESIA
+  cvss_score: 7.8
+  detector_file: cve_2026_pending_fragnesia.py
+  enabled: true
+  has_poc: true
+  poc_locked: false
+  poc_binary: cve_2026_pending_fragnesia.bin
+  poc_url: https://github.com/v12-security/pocs/tree/main/fragnesia
+  retry_count: 3
+  severity: CRITICAL
+  test_modes:
+  - write_root_file
+  vulnerability_principle: 'ESP-in-TCP Page Cache Pollution vulnerability (Fragnesia).
+
+    Abuses logic bug in XFRM ESP-in-TCP subsystem where skb_try_coalesce()
+
+    loses SKBFL_SHARED_FRAG marker during TCP coalescing.
+
+    Exploit uses AES-128-GCM keystream lookup table to achieve precise
+
+    single-byte writes into read-only file page cache via splice-then-ULP trigger.
+
+    Requires unshare(CLONE_NEWUSER|CLONE_NEWNET) for XFRM SA creation.
+
+    '
+- cve_id: CVE-2026-PENDING-DIRTYFRAG
+  enabled: true
+  severity: CRITICAL
+  cvss_score: 7.8
+  has_poc: true
+  detector_file: cve_2026_pending_dirtyfrag.py
+  poc_binary: cve_2026_pending_dirtyfrag.bin
+  poc_url: ''
+  test_modes:
+  - write_root_file
+  retry_count: 3
+  affected_versions:
+    min: '4.15.0'
+    fixed: '6.12.0'
+  required_config:
+  - CONFIG_INET_ESP
+  required_capabilities:
+  - user_namespaces
+  vulnerability_principle: 'DirtyFrag page cache pollution via IP fragmentation reassembly.
+
+    Exploits skb_page_frag_refill reuse of page cache pages during IP fragment
+
+    reassembly combined with splice. Attacker triggers fragmentation + splice pipe
+
+    to corrupt page cache of root-owned files, achieving unprivileged write.
+
+    '

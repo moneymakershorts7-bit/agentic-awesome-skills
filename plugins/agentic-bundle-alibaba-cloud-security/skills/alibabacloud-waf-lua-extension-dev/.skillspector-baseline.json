@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:3df74fde6148b8c8b9294b642723e1a0102fd61b053c485944661c898813a845",
+      "rule_id": "AE1",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:d0abe9824cbb465b9e2d3a759bc74dfef3094ec7054a4b8c879b60358f15fb9a",
+      "rule_id": "E2",
+      "file": "references/console-lifecycle.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    }
+  ]
+}

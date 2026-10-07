@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:6bf2f918516ad04d269d10d8a1dd209f91d8fcf2b64020aec81935f92f60494f",
+      "rule_id": "SC2",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:e169840c73b491174299b2e74e819b5afcc098da66fd254e3c087c578304734a",
+      "rule_id": "AE1",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:d5687d4049ffacf0325c2ca4651cb8bd17a61d775557cc86ae5c9cc339408afb",
+      "rule_id": "AE1",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:ecefea0ef662606b8f4857376cb453d110f194d39b66af18cc4b1a38e6816952",
+      "rule_id": "LP1",
+      "file": "scripts/handle_risk.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:c41c63d47fde8b4ece6a3b330c51e7ee0b367b7bc7e3cf141e522240ffcdc93f",
+      "rule_id": "LP1",
+      "file": "scripts/handle_risk.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:40e90e4593415699ead07654c9b81369a0fbb1d567d8358c0fd30e79fca11737",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:c5a436150f22f0dca039617caa332803ca7ef2d7e222034fc2aeaf82f9a0c45c",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:e770c23edd590768d7c102f27a9a1b22ed85aef699ff917607bf5b12b34a8915",
+      "rule_id": "RA2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:7b03f054de81cc576f49b97601dacd674cbfd65569c812a51ecd5c4dc3aae01f",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    }
+  ]
+}

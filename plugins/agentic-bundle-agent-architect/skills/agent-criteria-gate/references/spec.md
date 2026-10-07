@@ -74,7 +74,26 @@ The `/v1/systemone` wire protocol standardizes fast, discriminative, non-autoreg
   }
   ```
 
-## 3. Server Deployment Options
+## 3. Hierarchical Codebase Discovery & AST Gating
+
+The `CodebaseDiscoveryGate` uses multi-stage System One evaluation:
+
+### Stage 1: Directory Pruning Gate
+Evaluates top-level directory names and path semantics before recursing into children. Unrelated modules are pruned without inspecting individual files.
+
+### Stage 2: File Preview Gating & Byte Budget
+Under a configurable byte navigation budget (default 256KB), reads preview headers (first ~30 lines) and scores file relevance.
+
+### Stage 3: AST Declaration Slicing
+Extracts only relevant AST declaration units (functions, classes, interfaces, signatures, docstrings, call graphs) instead of dumping full raw files.
+
+### Stage 4: Dynamic Evidence Retraction
+When stronger cross-file evidence is established, isolated or false-positive matches are dynamically retracted to preserve context headroom.
+
+### Stage 5: Untrusted Data Envelope
+Retrieved code is encapsulated as data with `role: "data_payload"` and security notices, preventing indirect prompt injection attacks from codebase files.
+
+## 4. Server Deployment Options
 
 ### Local Kev Server (`kev-0.8b`)
 - Open-source (Apache 2.0) by Jared Palmer.

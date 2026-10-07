@@ -1,0 +1,161 @@
+# Analyzer 分析器配置
+# 所有字段均有代码内默认值，此文件仅用于覆盖
+# 格式: YAML (由 scripts/thirdparties/yaml 解析，零外部依赖)
+
+# 全局默认配置（各 analyzer 未指定时继承）
+
+version: "1.4.1"
+
+defaults:
+  timeout: 60              # 默认超时(秒)
+  enabled: true            # 是否启用
+  cache_enabled: true      # 是否启用结果缓存
+
+# 全局缓存与性能参数
+cache:
+  shared_cache_max_size: 256       # 共享分析结果缓存最大条目
+  pattern_cache_max_size: 100      # 共享模式缓存最大条目
+
+# 全局内存管理参数
+memory:
+  default_budget_mb: 200           # 默认内存预算(MB)
+  chunk_size: 10000                # 默认流式分块大小
+
+# 负载自适应超时参数
+load_adaptive:
+  extreme_load_timeout_threshold: 30.0   # 极端负载阈值(load/CPU)
+  extreme_load_analyzer_timeout: 3.0     # 极端负载超时(秒)
+  high_load_timeout_threshold: 15.0      # 高负载阈值
+  high_load_analyzer_timeout: 5.0        # 高负载超时(秒)
+  expensive_analyzer_threshold: 10.0     # 慢分析器阈值(秒)
+
+# 通用文件系统路径
+paths:
+  proc_dir: "/proc"
+  tmp_dir: "/tmp"
+  var_tmp_dir: "/var/tmp"
+  dev_shm_dir: "/dev/shm"
+  run_dir: "/run"
+  proc_modules: "/proc/modules"
+  sys_module: "/sys/module"
+  proc_version: "/proc/version"
+  proc_1_cgroup: "/proc/1/cgroup"
+
+# 各 Analyzer 独立配置（仅覆盖需要调整的值）
+analyzers:
+  process_analyzer:
+    timeout: 30
+    paths:
+      proc_dir: "/proc"
+    thresholds:
+      max_package_checks: 5           # dpkg/rpm 包来源验证上限
+      package_check_timeout: 1.0      # 单次包检查超时(秒)
+      hidden_proc_check_limit: 20     # 隐藏进程检查上限
+      max_command_length: 500         # 命令行最大长度
+    risky_paths:
+      - "/tmp/"
+      - "/dev/shm/"
+      - "/var/tmp/"
+      - "/run/"
+    suspicious_download_paths:
+      - "/tmp/"
+      - "/dev/shm/"
+      - "/var/tmp/"
+      - "/run/"
+      - "/.hidden"
+    ai_tool_temp_paths:
+      - "/tmp/.claude-code-"
+      - "/tmp/.qoder-"
+      - "/tmp/.cursor-"
+      - "/tmp/qoder-"
+      - "/tmp/claude-"
+      - "/tmp/cursor-"
+      - "/tmp/npx-cache-"
+      - "/tmp/npm-cache-"
+      - "/tmp/yarn--"
+
+  file_analyzer:
+    timeout: 30
+    thresholds:
+      max_file_list_size: 1000        # 文件列表上限
+    paths:
+      low_confidence_paths: ["/tmp", "/var/tmp", "/dev/shm"]
+      hidden_file_exempt_paths: ["/tmp", "/var/tmp", "/dev/shm"]
+
+  malware_analyzer:
+    timeout: 60
+    thresholds:
+      max_script_size: 1048576        # 脚本文件最大字节(1MB)
+      elf_header_size: 4096           # ELF 头读取大小
+      static_link_check_size: 65536   # 静态链接检查大小
+    scan_paths:
+      suspicious_dirs: ["/tmp", "/var/tmp", "/dev/shm", "/root"]
+      extended_scan_dirs: ["/opt", "/home"]
+      home_dir: "/home"
+    subdir_scan:
+      max_depth: 1                    # 子目录扫描深度
+
+  rootkit_analyzer:
+    timeout: 45
+    thresholds:
+      quick_mode_budget: 0.8          # 快速模式时间预算(秒)
+      hidden_process_threshold: 5     # 隐藏进程告警阈值
+      ephemeral_port_threshold: 32768 # 临时端口过滤阈值
+    paths:
+      service_dirs:
+        - "/etc/systemd/system"
+        - "/usr/lib/systemd/system"
+        - "/run/systemd/system"
+
+  mining_analyzer:
+    timeout: 30
+    thresholds:
+      high_cpu_threshold: 80.0        # 高 CPU 告警阈值(%)
+      min_runtime_seconds: 300        # 最小运行时间(秒)
+      wallet_min_cmdline_len: 30      # 钱包地址最小命令行长度
+
+  webshell_analyzer:
+    timeout: 60
+    web_directories:
+      - "/var/www"
+      - "/usr/share/nginx"
+      - "/opt/nginx"
+    entropy:
+      php:
+        normal_max: 5.5
+        suspicious: 6.0
+        critical: 7.0
+    char_freq:
+      printable_ratio_min: 0.6
+      special_char_ratio_max: 0.3
+      null_byte_ratio_max: 0.05
+    base64:
+      ratio_threshold: 0.5
+      min_length: 100
+      min_occurrences: 3
+
+  network_analyzer:
+    timeout: 30
+    thresholds:
+      port_scan_window: 10            # 端口扫描检测窗口(秒)
+      syn_flood_threshold: 100        # SYN flood 阈值
+
+  persistence_analyzer:
+    timeout: 30
+    thresholds:
+      max_startup_entries: 500
+
+  auth_analyzer:
+    timeout: 30
+    thresholds:
+      brute_force_window: 300         # 暴力破解检测窗口(秒)
+      brute_force_max_attempts: 10    # 最大尝试次数
+
+  lateral_movement_analyzer:
+    timeout: 30
+
+  memory_forensics_analyzer:
+    timeout: 120
+
+  threat_intel_analyzer:
+    timeout: 60

@@ -1,0 +1,85 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:02baf5dba51596f7bd216bfbc16909e6e6a721817976e572244236ed9213b865",
+      "rule_id": "AE1",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:472d5fdec1550cfb0dc96fca8e545a54e8e10836261dd316bc165c3f863b6b01",
+      "rule_id": "AE1",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:994cf05f91efc00c7547a0a3780b480d5b87c21d71d13218e66d1d267fea1f23",
+      "rule_id": "AE1",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:2d1490d7cd9436b73f8abb4c595080e032157f501b1ac98161cefd63f6b2383b",
+      "rule_id": "P6",
+      "file": "references/security_rules.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:02cc978635f20268ea50d0c6c9665b8acffaf8a0d49eb9b0f4f41bcba6d456ba",
+      "rule_id": "LP1",
+      "file": "scripts/rule_matcher.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:78196f6be15943621fa7e05f68e2e2cdec84e6e0a5ac0568472ff6c4ef0d0700",
+      "rule_id": "RA2",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:39a775f87ba7db4ec8d957a683b23b8383725086e1c5b3f022b4bc5e14f6938c",
+      "rule_id": "EA2",
+      "file": "SKILL.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:9a43175a418af3d8444cc36548705a27244374b281011b946561f0554d647618",
+      "rule_id": "RA2",
+      "file": "references/profile_setup_guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:e5b0ebd705a194e10b8e8504137b5ab871f87419ecb7bfc352ffa098d841fda7",
+      "rule_id": "RA2",
+      "file": "references/profile_setup_guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:5b492ac8901666f2e2f98f8907cd5c0e4b577340f7c68e16f9499762a7ba4e17",
+      "rule_id": "PE2",
+      "file": "references/profile_setup_guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:fe7f0e7023f74c47e80df6845563e8f4912be75779ce24e74497cb282b4afc5e",
+      "rule_id": "RA2",
+      "file": "references/profile_setup_guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:e44b11e66478a432fb4b8cfa6ff9144c228cdb42c8f1e26c3c58f3271c1a7a69",
+      "rule_id": "PE2",
+      "file": "references/profile_setup_guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:4fd225b87a4792be2ecf18a68dec4ef87a580924b478ffd6344552ee9685eff8",
+      "rule_id": "RA2",
+      "file": "references/security_rules.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    }
+  ]
+}

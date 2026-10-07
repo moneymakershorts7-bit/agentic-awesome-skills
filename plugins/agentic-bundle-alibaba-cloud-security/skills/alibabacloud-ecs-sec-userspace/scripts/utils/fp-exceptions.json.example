@@ -1,0 +1,135 @@
+{
+  "_comment": "False Positive Exceptions Configuration for sec-userspace",
+  "_version": "1.0",
+  "_description": "Configure patterns to suppress known false positives. Patterns use regex matching.",
+  "_usage": "Copy this file to /etc/sec-userspace/fp-exceptions.json or ~/.sec-userspace/fp-exceptions.json and customize for your environment",
+  
+  "credential_analyzer": {
+    "aws_key": {
+      "patterns": ["dev-environment-.*", "test-.*", "sandbox-.*"],
+      "paths": ["/home/dev/.*", "/tmp/.*"],
+      "context": "Development/test AWS keys - not production credentials"
+    },
+    "azure_key": {
+      "patterns": ["test-subscription-.*", "dev-tenant-.*"],
+      "paths": ["/home/dev/.*"],
+      "context": "Azure development/test subscriptions"
+    },
+    "github_token": {
+      "patterns": ["ghp_test_.*", "ghp_dev_.*"],
+      "context": "GitHub tokens for testing/development"
+    }
+  },
+  
+  "malware_analyzer": {
+    "upx_packed": {
+      "paths": ["/opt/games/.*", "/usr/share/steam/.*"],
+      "context": "Legitimate UPX-packed applications (games, compression tools)"
+    },
+    "elf_section_anomaly": {
+      "paths": ["/usr/local/bin/.*"],
+      "context": "Known stripped binaries in local bin"
+    },
+    "static_binary": {
+      "paths": ["/usr/local/bin/static-tool", "/opt/tools/.*"],
+      "context": "Authorized static-linked utilities"
+    },
+    "remote_code_execution": {
+      "paths": ["/home/deploy/.ansible/.*", "/opt/deployment/.*"],
+      "context": "Legitimate deployment automation scripts"
+    },
+    "reverse_shell": {
+      "paths": ["/opt/monitoring/check_remote.sh"],
+      "context": "Authorized remote monitoring scripts"
+    },
+    "known_malicious_tool": {
+      "processes": ["nmap", "masscan"],
+      "context": "Authorized security scanning tools used by ops team"
+    },
+    "suspicious_tool_pattern": {
+      "processes": ["frpc-dev", "chisel-test"],
+      "context": "Development/testing tunnel tools"
+    },
+    "mining_tool": {
+      "processes": ["legitimate-miner", "approved-crypto-app"],
+      "context": "Authorized cryptocurrency mining applications"
+    },
+    "webshell": {
+      "paths": ["/var/www/html/admin/.*\\.php$"],
+      "context": "Known legitimate admin tools"
+    }
+  },
+  
+  "threat_intel_analyzer": {
+    "c2_port_connection": {
+      "patterns": ["internal-scan-.*", "security-audit-.*"],
+      "context": "Internal security scanning tools using non-standard ports"
+    },
+    "mining_port_connection": {
+      "patterns": ["pool-test-.*"],
+      "context": "Testing connections to mining pools for research"
+    },
+    "mining_pool_domain": {
+      "patterns": ["research-.*"],
+      "context": "Security research on mining pool infrastructure"
+    },
+    "ddns_domain": {
+      "patterns": ["no-ip-.*", "dyndns-.*"],
+      "context": "Legitimate DDNS usage for remote access"
+    },
+    "dga_domain": {
+      "patterns": ["cdn-.*", "api-.*"],
+      "context": "CDN and API domains that may appear random"
+    },
+    "dns_tampering": {
+      "patterns": ["corporate-dns-.*"],
+      "context": "Corporate DNS configuration"
+    },
+    "hosts_hijack": {
+      "patterns": ["adblock-.*", "privacy-.*"],
+      "context": "Ad-blocking or privacy-focused hosts configurations"
+    }
+  },
+  
+  "process_analyzer": {
+    "deleted_binary": {
+      "patterns": ["package-manager-update", "auto-upgrade"],
+      "context": "Expected package manager behavior during updates"
+    },
+    "suspicious_process_name": {
+      "processes": ["admin-tool", "monitoring-agent", ".hidden-service"],
+      "context": "Known legitimate administrative and monitoring tools"
+    },
+    "web_server_shell": {
+      "patterns": ["nginx-php-fpm", "apache-cgi"],
+      "context": "Expected web server CGI/FPM behavior"
+    },
+    "ld_preload": {
+      "patterns": ["libSegFault.so", "libc_malloc_debug.so"],
+      "context": "System debugging and malloc checking libraries"
+    }
+  },
+  
+  "network_analyzer": {
+    "reverse_shell": {
+      "patterns": ["ssh-reverse-tunnel", "autossh"],
+      "context": "Authorized SSH reverse tunnels for remote access"
+    },
+    "suspicious_listening_port": {
+      "processes": ["dev-server", "test-service", "node-dev"],
+      "context": "Development and test services on non-standard ports"
+    },
+    "hidden_connection": {
+      "patterns": ["monitoring-collector", "prometheus-node"],
+      "context": "Legitimate monitoring infrastructure"
+    },
+    "port_scanning": {
+      "patterns": ["nmap-audit", "masscan-internal"],
+      "context": "Authorized internal network scanning"
+    },
+    "data_exfiltration": {
+      "patterns": ["backup-agent", "rsync-backup"],
+      "context": "Legitimate backup data transfers"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:22b3c587bc89810fe758b44b4d32acaa4e48a670b98235dd264f3f99953cab8a",
+      "rule_id": "LP1",
+      "file": "scripts/get_ddos_logs.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:d83b2f0dd5cc97d842b509edf12ea448207214c9ea7e87af5dbcf4000885ca07",
+      "rule_id": "EA2",
+      "file": "references/acceptance-criteria.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:a7332a2c2970bbe51dd64adc579bb93e1abb432d8b4b2f91991788236c71fbc3",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:591ff7b5fec6fed354fa71f26d8051ee4e36723fb07e06bc487ac35688332ca5",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:b4c3885f06c614baef218d1c2fc07b45b079831c6180554ebede9ee20585ac00",
+      "rule_id": "RA2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:e566cb9fb6188e7802c24621c15089116216bc39e9df72402ed6c4b00c03dfad",
+      "rule_id": "RA2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:18322cc4d818f5e829028f4ce7515ecc077a0ffe7a34e6bd73d4db617d36fea2",
+      "rule_id": "PE2",
+      "file": "references/cli-installation-guide.md",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    },
+    {
+      "hash": "sha256:6f929816a7a1554f9a57b42d1b2a249e9b55a77742fbde6c849306f5b77c03c6",
+      "rule_id": "AST4",
+      "file": "scripts/get_ddos_logs.py",
+      "reason": "Official Alibaba Cloud SecOps automation pattern"
+    }
+  ]
+}
