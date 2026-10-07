@@ -3,7 +3,7 @@ const path = require("path");
 
 function isPathInside(basePath, candidatePath) {
   const base = fs.existsSync(basePath) ? getRealPath(basePath) : path.resolve(basePath);
-  const candidate = path.resolve(candidatePath);
+  const candidate = fs.existsSync(candidatePath) ? getRealPath(candidatePath) : path.resolve(candidatePath);
   const relative = path.relative(base, candidate);
   return relative === "" || (!relative.startsWith("..") && !path.isAbsolute(relative));
 }

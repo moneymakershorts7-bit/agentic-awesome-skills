@@ -5,6 +5,19 @@ const path = require("node:path");
 const { transactionError } = require("./errors");
 const { fsyncDirectory } = require("./state");
 
+function isSameDevice(dev, expectedDev, parentPathOrStat) {
+  if (dev === expectedDev) return true;
+  if (!parentPathOrStat) return false;
+  try {
+    const parentStat = typeof parentPathOrStat === "string"
+      ? fs.lstatSync(parentPathOrStat)
+      : parentPathOrStat;
+    return !parentStat.isSymbolicLink() && parentStat.isDirectory() && parentStat.dev === expectedDev;
+  } catch {
+    return false;
+  }
+}
+
 function isContained(root, candidate) {
   const relative = path.relative(root, candidate);
   return relative === "" || (!relative.startsWith(`..${path.sep}`) && relative !== ".." && !path.isAbsolute(relative));
@@ -79,7 +92,7 @@ function inspectLayout(adapter, target) {
   }
   if (fs.existsSync(resolved.stateFile)) {
     const stateStat = fs.lstatSync(resolved.stateFile);
-    if (stateStat.isSymbolicLink() || !stateStat.isFile() || stateStat.nlink !== 1 || stateStat.dev !== rootStat.dev) {
+    if (stateStat.isSymbolicLink() || !stateStat.isFile() || stateStat.nlink !== 1 || !isSameDevice(stateStat.dev, rootStat.dev, path.dirname(resolved.stateFile))) {
       throw transactionError("AAS_TRANSACTION_STATE_UNSAFE", "filesystem", {});
     }
     assertOwned(stateStat);
@@ -309,6 +322,7 @@ module.exports = {
   clearMaterializedMarkers,
   inspectLayout,
   isContained,
+  isSameDevice,
   materializeLayout,
   resolveDestination,
   resolveLayout,
