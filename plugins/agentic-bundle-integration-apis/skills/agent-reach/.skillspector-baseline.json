@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:a6f23948e13872f4a27bd74594ecbad2bd2c1fd2a30d76da9bc519464e4fd631",
+      "rule_id": "AE1",
+      "file": "SKILL.md",
+      "reason": "Legitimate multi-platform web research and public API retrieval"
+    },
+    {
+      "hash": "sha256:63a6abbc0c53cb26ef18688fc23e310fa3b59f0da2a1011315596b3b50faa7a3",
+      "rule_id": "EA2",
+      "file": "SKILL.md",
+      "reason": "Legitimate multi-platform web research and public API retrieval"
+    },
+    {
+      "hash": "sha256:ceb62eec5e2144c66f1859cb84b85c82e225295118b9a31f8acf49a31895fb5b",
+      "rule_id": "E1",
+      "file": "references/video.md",
+      "reason": "Legitimate multi-platform web research and public API retrieval"
+    }
+  ]
+}
