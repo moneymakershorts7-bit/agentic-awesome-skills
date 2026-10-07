@@ -1752,6 +1752,25 @@
       "runtime_files": []
     },
     {
+      "id": "ai-animation-workflow",
+      "path": "skills/ai-animation-workflow",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "ai-code-generation-guardrails",
       "path": "skills/ai-code-generation-guardrails",
       "targets": {
@@ -10792,18 +10811,24 @@
       "id": "claude-video-toolkit",
       "path": "skills/claude-video-toolkit",
       "targets": {
-        "codex": "supported",
-        "claude": "supported"
+        "codex": "blocked",
+        "claude": "blocked"
       },
       "setup": {
         "type": "none",
         "summary": "",
         "docs": null
       },
-      "reasons": [],
+      "reasons": [
+        "escaped_local_reference"
+      ],
       "blocked_reasons": {
-        "codex": [],
-        "claude": []
+        "codex": [
+          "escaped_local_reference"
+        ],
+        "claude": [
+          "escaped_local_reference"
+        ]
       },
       "runtime_files": []
     },
@@ -13386,6 +13411,25 @@
     {
       "id": "course-upskilling-requests",
       "path": "skills/course-upskilling-requests",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "court",
+      "path": "skills/court",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -18434,6 +18478,25 @@
     {
       "id": "email-issue-fixer",
       "path": "skills/email-issue-fixer",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "email-marketing-bible",
+      "path": "skills/email-marketing-bible",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -29054,6 +29117,25 @@
       "runtime_files": []
     },
     {
+      "id": "linkdigest-social-link-reader",
+      "path": "skills/linkdigest-social-link-reader",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "linkedin-automation",
       "path": "skills/linkedin-automation",
       "targets": {
@@ -29856,6 +29938,25 @@
       "runtime_files": []
     },
     {
+      "id": "lognorm",
+      "path": "skills/lognorm",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "logo-image-design",
       "path": "skills/logo-image-design",
       "targets": {
@@ -30539,6 +30640,25 @@
     {
       "id": "make-automation",
       "path": "skills/make-automation",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "make-interfaces-feel-better",
+      "path": "skills/make-interfaces-feel-better",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -41472,6 +41592,25 @@
       "runtime_files": []
     },
     {
+      "id": "scarf-single-cell",
+      "path": "skills/scarf-single-cell",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "schema-markup",
       "path": "skills/schema-markup",
       "targets": {
@@ -43292,6 +43431,25 @@
       "runtime_files": []
     },
     {
+      "id": "shark",
+      "path": "skills/shark",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "sharp-coder",
       "path": "skills/sharp-coder",
       "targets": {
@@ -43351,6 +43509,25 @@
     {
       "id": "shipping-and-launch",
       "path": "skills/shipping-and-launch",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "shipvela-publish",
+      "path": "skills/shipvela-publish",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -52482,14 +52659,14 @@
     }
   ],
   "summary": {
-    "total_skills": 2735,
+    "total_skills": 2744,
     "supported": {
-      "codex": 2644,
-      "claude": 2672
+      "codex": 2652,
+      "claude": 2680
     },
     "blocked": {
-      "codex": 91,
-      "claude": 63
+      "codex": 92,
+      "claude": 64
     },
     "manual_setup": 20
   }
