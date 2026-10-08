@@ -78,16 +78,18 @@ class WikiGenerator:
 
     def generate_home(self) -> str:
         date_str = get_current_date()
-        return f"""# 🧠 Agentic Awesome Skills Wiki
+        return f"""# 🇨🇭 Agentic Awesome Skills Wiki (Swiss Army Knife Edition)
 
-Welcome to the official **Agentic Awesome Skills (AAS)** Knowledge Base and Developer Wiki!
+Welcome to the official **Agentic Awesome Skills — Swiss Army Knife Edition** Knowledge Base and Developer Wiki!
 
-Agentic Awesome Skills is the world's largest open catalog of verified agent skills, Model Context Protocol (MCP) integrations, and autonomous coding patterns.
+The all-in-one **Swiss Army Knife for AI Coding Agents**: 2,764+ verified agent skills, 59 curated domain bundles, 1,321 free developer tools, Model Context Protocol (MCP) integrations, AST malware protection, and autonomous Google Jules maintenance.
+
+*Maintained autonomously by `moneymakershorts7-bit`, continuously synced with upstream `sickn33/agentic-awesome-skills`.*
 
 [![Skills Total](https://img.shields.io/badge/Verified_Skills-{self.total_skills}+-blue.svg)](Skills-Catalog)
 [![Curated Bundles](https://img.shields.io/badge/Curated_Bundles-{len(self.bundles_data)}+-green.svg)](Editorial-Bundles)
 [![Free Dev Tools](https://img.shields.io/badge/Free_Dev_Tools-{len(self.free_for_dev)}+-orange.svg)](Free-For-Dev-Directory)
-[![Version](https://img.shields.io/badge/Release-V{self.version}-purple.svg)](https://github.com/{self.target_repo}/releases)
+[![Version](https://img.shields.io/badge/Edition-Swiss_Army_Knife_V{self.version}-purple.svg)](https://github.com/{self.target_repo}/releases)
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/{self.target_repo}/blob/main/LICENSE)
 
 ---
@@ -161,7 +163,7 @@ npx agentic-awesome-skills bundle install aas-security-operations
 """
 
     def generate_sidebar(self) -> str:
-        return f"""### 🧠 Agentic Awesome Skills
+        return f"""### 🇨🇭 AAS Swiss Army Knife
 * **[🏠 Home](Home)**
 * **[🏗️ Architecture & Principles](Home#%EF%B8%8F-architecture--security-principles)**
 

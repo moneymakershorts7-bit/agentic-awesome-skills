@@ -1,15 +1,16 @@
 <!-- registry-sync: version=18.12.0; skills=2764; stars=47174; updated_at=2026-10-02T09:47:34+00:00 -->
-# AAS Core — Agentic Awesome Skills
+# AAS Core — Agentic Awesome Skills (Swiss Army Knife Edition)
 
-> **Find reusable instructions for your project, inspect their complete files, and keep an exact skill set you can review and reuse.**
+> 🇨🇭 **The all-in-one Swiss Army Knife for AI Coding Agents.**  
+> Find, validate, security-audit, and orchestrate **2,764+** reusable playbooks, MCP integrations, and autonomous sentinels across Claude Code, Google Jules, Gemini CLI, Antigravity, Cursor, and Windsurf.
 
-Agentic Awesome Skills is a library of 2,764+ installable `SKILL.md` playbooks. AAS Core helps Codex or Claude search the complete local catalog, record the skills the agent chooses, and preview a plan you can inspect before changing a target. Core does not rank or recommend skills.
+*An autonomous, hardened distribution maintained by `moneymakershorts7-bit`, continuously synced with upstream `sickn33/agentic-awesome-skills`.*
 
-**Current release: V18.12.0.** AAS Core supports local catalog inspection, agent-owned selection, stack validation, and plan preview. Apply and recovery remain experimental. [Read the AAS Core preview guide](https://github.com/sickn33/agentic-awesome-skills/blob/v18.12.0/docs/users/aas-core.md) for setup and exact trust boundaries.
+**Current release: V18.12.0 (Swiss Army Knife Edition).** AAS Core supports local catalog inspection, agent-owned selection, stack validation, plan preview, AST malware scanning, and autonomous daily Wiki synchronization. [Read the AAS Core preview guide](https://github.com/sickn33/agentic-awesome-skills/blob/v18.12.0/docs/users/aas-core.md) for setup and exact trust boundaries.
 
 This README tracks `main`. Features listed under [Unreleased](CHANGELOG.md#unreleased) require a later release; the versioned guide describes the published package.
 
-This is an independent community project, not affiliated with or endorsed by Google. Google, Antigravity, Gemini, and related names describe compatibility and install targets. The GitHub repository is canonical; the [hosted catalog](https://aaskills.tech/) and browser-local Workbench are companion discovery and review surfaces.
+This is an independent community distribution, not affiliated with or endorsed by Google. Google, Antigravity, Gemini, and related names describe compatibility and install targets. The GitHub repository is canonical; the [hosted catalog](https://aaskills.tech/) and browser-local Workbench are companion discovery and review surfaces.
 
 [![GitHub stars](https://img.shields.io/badge/⭐%2047%2C000%2B%20Stars-gold?style=for-the-badge)](https://github.com/sickn33/agentic-awesome-skills/stargazers)
 [![Follow @AASkills_ on X](https://img.shields.io/badge/Follow-%40AASkills__-black?style=for-the-badge&logo=x)](https://x.com/AASkills_)
