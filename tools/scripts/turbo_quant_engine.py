@@ -295,7 +295,10 @@ class TurboVecSkillRouter:
 
         query_emb = self._text_to_dense_embedding(task_query)
         q_norm = vec_norm(query_emb)
-        q_rot = mat_vec_mul(self.encoder.R, query_emb)
+        if q_norm < 1e-12:
+            return []
+        q_unit = [x / q_norm for x in query_emb]
+        q_rot = mat_vec_mul(self.encoder.R, q_unit)
         sq_proj = mat_vec_mul(self.encoder.S, q_rot)
         scale = math.sqrt(self.dim)
         qjl_scale = math.sqrt(math.pi / 2.0) / math.sqrt(self.encoder.sketch_dim)
