@@ -22,9 +22,9 @@ const { REGISTRY_ORIGIN, fetchBytes, verifySri } = require("./update");
 
 const MAX_RUNTIME_IDENTITY_BYTES = 4 * 1024 * 1024;
 const RUNTIME_ARCHIVE_LIMITS = Object.freeze({
-  maxEntries: 10000,
+  maxEntries: 100000,
   maxSingleFileBytes: 32 * 1024 * 1024,
-  maxExpandedTotalBytes: 160 * 1024 * 1024,
+  maxExpandedTotalBytes: 512 * 1024 * 1024,
   maxCompressionRatio: 128,
 });
 const REQUIRED_RUNTIME_FILES = Object.freeze([

@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2735,
+  "total": 2764,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -1881,6 +1881,40 @@
       "path": "skills/agent-qa-result-triage/SKILL.md"
     },
     {
+      "id": "agent-reels",
+      "canonical_id": "agent-reels",
+      "name": "agent-reels",
+      "description": "Find animation and video references on 1human, consult a human-agent shared library, and contribute public creations only with prior owner permission.",
+      "category": "design",
+      "risk": "critical",
+      "source": "https://github.com/mdagnolops/1human-reels",
+      "source_type": "community",
+      "source_repo": "mdagnolops/1human-reels",
+      "license": "MIT",
+      "license_source": "https://github.com/mdagnolops/1human-reels/blob/717c0a28d9b62182854f832fd1a63dc32775a701/LICENSE",
+      "tags": [
+        "animation",
+        "motion-design",
+        "ai-agents",
+        "references"
+      ],
+      "triggers": [
+        "animation",
+        "motion-design",
+        "ai-agents",
+        "references",
+        "agent",
+        "reels",
+        "find",
+        "video",
+        "1human",
+        "consult",
+        "human",
+        "shared"
+      ],
+      "path": "skills/agent-reels/SKILL.md"
+    },
+    {
       "id": "agent-self-scheduling",
       "canonical_id": "agent-self-scheduling",
       "name": "agent-self-scheduling",
@@ -2729,6 +2763,41 @@
         "analyzer"
       ],
       "path": "skills/ai-analyzer/SKILL.md"
+    },
+    {
+      "id": "ai-animation-workflow",
+      "canonical_id": "ai-animation-workflow",
+      "name": "ai-animation-workflow",
+      "description": "Production-grade 5-stage AI Explainer Animation & Video-As-Code pipeline. Orchestrates script-to-voice narration, word-timed transcript alignment, visual cue storyboard, Remotion/Web scene composition, and verified multi-format MP4 export.",
+      "category": "multimedia",
+      "risk": "safe",
+      "source": "cliefnotes",
+      "source_type": "community",
+      "tags": [
+        "video-as-code",
+        "remotion",
+        "explainer-videos",
+        "animation-pipeline",
+        "tts",
+        "transcript-sync",
+        "motion-design",
+        "storytelling"
+      ],
+      "triggers": [
+        "video-as-code",
+        "remotion",
+        "explainer-videos",
+        "animation-pipeline",
+        "tts",
+        "transcript-sync",
+        "motion-design",
+        "storytelling",
+        "ai",
+        "animation",
+        "grade",
+        "stage"
+      ],
+      "path": "skills/ai-animation-workflow/SKILL.md"
     },
     {
       "id": "ai-code-generation-guardrails",
@@ -6600,6 +6669,42 @@
       "path": "skills/ask-questions-if-underspecified/SKILL.md"
     },
     {
+      "id": "assay",
+      "canonical_id": "assay",
+      "name": "assay",
+      "description": "Run assay on a web page you just wrote or changed. It opens the page in a real browser, drives every control, and reports where the page contradicts itself. Deterministic, no API key, no network.",
+      "category": "testing",
+      "risk": "safe",
+      "source": "https://github.com/awss1i/assay",
+      "source_type": "community",
+      "source_repo": "awss1i/assay",
+      "license": "MIT",
+      "license_source": "https://github.com/awss1i/assay/blob/main/LICENSE",
+      "tags": [
+        "testing",
+        "qa",
+        "web",
+        "browser",
+        "playwright",
+        "html"
+      ],
+      "triggers": [
+        "testing",
+        "qa",
+        "web",
+        "browser",
+        "playwright",
+        "html",
+        "assay",
+        "run",
+        "page",
+        "just",
+        "wrote",
+        "changed"
+      ],
+      "path": "skills/assay/SKILL.md"
+    },
+    {
       "id": "asset-inventory",
       "canonical_id": "asset-inventory",
       "name": "asset-inventory",
@@ -8272,6 +8377,40 @@
         "interest"
       ],
       "path": "skills/axiom/SKILL.md"
+    },
+    {
+      "id": "axonx",
+      "canonical_id": "axonx",
+      "name": "axonx",
+      "description": "Develop AxonX research plugins and operate quantitative research tasks through CLI or MCP, inspecting execution status, logs, artifacts, and lineage.",
+      "category": "finance",
+      "risk": "critical",
+      "source": "https://github.com/FlowLLM-AI/AxonX/tree/862b90da9c49c3bdee4c2ab9ef896c415aee9f45/skills/axonx",
+      "source_type": "community",
+      "source_repo": "FlowLLM-AI/AxonX",
+      "license": "Apache-2.0",
+      "license_source": "https://github.com/FlowLLM-AI/AxonX/blob/862b90da9c49c3bdee4c2ab9ef896c415aee9f45/LICENSE",
+      "tags": [
+        "quantitative-research",
+        "mcp",
+        "backtesting",
+        "python"
+      ],
+      "triggers": [
+        "quantitative-research",
+        "mcp",
+        "backtesting",
+        "python",
+        "axonx",
+        "develop",
+        "research",
+        "plugins",
+        "operate",
+        "quantitative",
+        "tasks",
+        "through"
+      ],
+      "path": "skills/axonx/SKILL.md"
     },
     {
       "id": "azd-deployment",
@@ -12805,6 +12944,43 @@
       "path": "skills/behavioral-modes/SKILL.md"
     },
     {
+      "id": "better-icons",
+      "canonical_id": "better-icons",
+      "name": "better-icons",
+      "description": "Universal agent-agnostic icon search and retrieval for 200,000+ vector icons across 150+ libraries with CLI and MCP server support.",
+      "category": "frontend",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "better-auth/better-icons",
+      "license": "MIT",
+      "tags": [
+        "frontend",
+        "icons",
+        "svg",
+        "ui",
+        "design-systems",
+        "mcp",
+        "cli",
+        "multi-framework"
+      ],
+      "triggers": [
+        "frontend",
+        "icons",
+        "svg",
+        "ui",
+        "design-systems",
+        "mcp",
+        "cli",
+        "multi-framework",
+        "better",
+        "universal",
+        "agent",
+        "agnostic"
+      ],
+      "path": "skills/better-icons/SKILL.md"
+    },
+    {
       "id": "bevy-ecs-expert",
       "canonical_id": "bevy-ecs-expert",
       "name": "bevy-ecs-expert",
@@ -15048,6 +15224,42 @@
         "price"
       ],
       "path": "skills/buywhere-product-catalog/SKILL.md"
+    },
+    {
+      "id": "byagent",
+      "canonical_id": "byagent",
+      "name": "byagent",
+      "description": "Publish agent-written Markdown or HTML as a shareable link with the byagent CLI, then read readers' line comments back, edit, republish to the same link and resolve them.",
+      "category": "productivity",
+      "risk": "critical",
+      "source": "https://github.com/anup-a/agent-artifacts",
+      "source_type": "official",
+      "source_repo": "anup-a/agent-artifacts",
+      "license": "MIT",
+      "license_source": "https://github.com/anup-a/agent-artifacts/blob/main/LICENSE",
+      "tags": [
+        "publish",
+        "markdown",
+        "html",
+        "share",
+        "comments",
+        "review"
+      ],
+      "triggers": [
+        "publish",
+        "markdown",
+        "html",
+        "share",
+        "comments",
+        "review",
+        "byagent",
+        "agent",
+        "written",
+        "shareable",
+        "link",
+        "cli"
+      ],
+      "path": "skills/byagent/SKILL.md"
     },
     {
       "id": "c-pro",
@@ -20803,6 +21015,41 @@
       "path": "skills/course-upskilling-requests/SKILL.md"
     },
     {
+      "id": "court",
+      "canonical_id": "court",
+      "name": "court",
+      "description": "Put an idea on trial: a prosecutor and a defense Claude argue, 12 juror sub-agents vote independently, and a judge reads the verdict and the changes that would flip it.",
+      "category": "productivity",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "alexyc9381/court-skill",
+      "license": "MIT",
+      "license_source": "https://github.com/alexyc9381/court-skill/blob/main/LICENSE",
+      "tags": [
+        "decision-making",
+        "critical-thinking",
+        "feedback",
+        "subagents",
+        "multi-agent"
+      ],
+      "triggers": [
+        "decision-making",
+        "critical-thinking",
+        "feedback",
+        "subagents",
+        "multi-agent",
+        "court",
+        "put",
+        "idea",
+        "trial",
+        "prosecutor",
+        "defense",
+        "claude"
+      ],
+      "path": "skills/court/SKILL.md"
+    },
+    {
       "id": "cowork-to-code-bridge",
       "canonical_id": "cowork-to-code-bridge",
       "name": "cowork-to-code-bridge",
@@ -22211,6 +22458,41 @@
       "path": "skills/dali-short-address-commissioner/SKILL.md"
     },
     {
+      "id": "darkmoon-pentest",
+      "canonical_id": "darkmoon-pentest",
+      "name": "darkmoon-pentest",
+      "description": "Start, follow and triage authorized autonomous AI pentest runs on a self-hosted Darkmoon Pro instance through its MCP server.",
+      "category": "security",
+      "risk": "offensive",
+      "source": "https://github.com/ASCIT31/darkmoon-mcp-server/tree/main/plugins/darkmoon/skills/darkmoon-pentest",
+      "source_type": "community",
+      "source_repo": "ASCIT31/darkmoon-mcp-server",
+      "license": "GPL-3.0-only",
+      "license_source": "https://github.com/ASCIT31/darkmoon-mcp-server/blob/main/LICENSE",
+      "tags": [
+        "pentest",
+        "security",
+        "mcp",
+        "vulnerability-triage",
+        "darkmoon"
+      ],
+      "triggers": [
+        "pentest",
+        "security",
+        "mcp",
+        "vulnerability-triage",
+        "darkmoon",
+        "start",
+        "follow",
+        "triage",
+        "authorized",
+        "autonomous",
+        "ai",
+        "runs"
+      ],
+      "path": "skills/darkmoon-pentest/SKILL.md"
+    },
+    {
       "id": "dast-scanning",
       "canonical_id": "dast-scanning",
       "name": "dast-scanning",
@@ -23553,6 +23835,41 @@
         "register"
       ],
       "path": "skills/defi-yield-strategy-allocator/SKILL.md"
+    },
+    {
+      "id": "define-my-content-pillars",
+      "canonical_id": "define-my-content-pillars",
+      "name": "define-my-content-pillars",
+      "description": "Find the three to five subjects someone can post about repeatedly, from what they have published and know first-hand. Use when someone asks what to post about or has run out of ideas.",
+      "category": "marketing",
+      "risk": "safe",
+      "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/define-my-content-pillars",
+      "source_type": "official",
+      "source_repo": "prateeks367/voicemoat-skills",
+      "license": "MIT",
+      "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+      "tags": [
+        "linkedin",
+        "twitter",
+        "content-strategy",
+        "personal-brand",
+        "social-media"
+      ],
+      "triggers": [
+        "linkedin",
+        "twitter",
+        "content-strategy",
+        "personal-brand",
+        "social-media",
+        "define",
+        "my",
+        "content",
+        "pillars",
+        "find",
+        "three",
+        "five"
+      ],
+      "path": "skills/define-my-content-pillars/SKILL.md"
     },
     {
       "id": "defuddle",
@@ -26313,6 +26630,34 @@
       "path": "skills/diagnosing-bugs/SKILL.md"
     },
     {
+      "id": "diagnosing-superpowers",
+      "canonical_id": "diagnosing-superpowers",
+      "name": "diagnosing-superpowers",
+      "description": "Diagnose failed agent sessions to identify root causes for repeated work, ignored plans, performance regressions, high token costs, or unexpected tool behaviors from session transcripts.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "https://github.com/obra/superpowers",
+      "tags": [
+        "diagnosing",
+        "superpowers"
+      ],
+      "triggers": [
+        "diagnosing",
+        "superpowers",
+        "diagnose",
+        "failed",
+        "agent",
+        "sessions",
+        "identify",
+        "root",
+        "causes",
+        "repeated",
+        "work",
+        "ignored"
+      ],
+      "path": "skills/diagnosing-superpowers/SKILL.md"
+    },
+    {
       "id": "diagram-design",
       "canonical_id": "diagram-design",
       "name": "diagram-design",
@@ -27652,6 +27997,40 @@
       "path": "skills/doubt-driven-development/SKILL.md"
     },
     {
+      "id": "draft-my-comments",
+      "canonical_id": "draft-my-comments",
+      "name": "draft-my-comments",
+      "description": "Write a LinkedIn comment that adds something the post did not have, not agreement. Use when someone asks what to comment, wants to engage with creators, or says their comments go nowhere.",
+      "category": "marketing",
+      "risk": "safe",
+      "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/draft-my-comments",
+      "source_type": "official",
+      "source_repo": "prateeks367/voicemoat-skills",
+      "license": "MIT",
+      "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+      "tags": [
+        "linkedin",
+        "comments",
+        "engagement",
+        "social-media"
+      ],
+      "triggers": [
+        "linkedin",
+        "comments",
+        "engagement",
+        "social-media",
+        "draft",
+        "my",
+        "write",
+        "comment",
+        "adds",
+        "something",
+        "post",
+        "did"
+      ],
+      "path": "skills/draft-my-comments/SKILL.md"
+    },
+    {
       "id": "drawio-skill",
       "canonical_id": "drawio-skill",
       "name": "drawio-skill",
@@ -28612,6 +28991,45 @@
         "writer"
       ],
       "path": "skills/email-issue-fixer/SKILL.md"
+    },
+    {
+      "id": "email-marketing-bible",
+      "canonical_id": "email-marketing-bible",
+      "name": "email-marketing-bible",
+      "description": "Data-backed email marketing for AI agents: automation flows, deliverability triage, copy de-slopping, AI email design, ESP control via MCP with send gates and compliance.",
+      "category": "marketing",
+      "risk": "critical",
+      "source": "https://github.com/CosmoBlk/email-marketing-bible",
+      "source_type": "official",
+      "source_repo": "CosmoBlk/email-marketing-bible",
+      "license": "MIT",
+      "license_source": "https://github.com/CosmoBlk/email-marketing-bible/blob/main/LICENSE",
+      "tags": [
+        "email-marketing",
+        "deliverability",
+        "copywriting",
+        "marketing-automation",
+        "email-design",
+        "ecommerce",
+        "saas",
+        "cold-email",
+        "mcp"
+      ],
+      "triggers": [
+        "email-marketing",
+        "deliverability",
+        "copywriting",
+        "marketing-automation",
+        "email-design",
+        "ecommerce",
+        "saas",
+        "cold-email",
+        "mcp",
+        "email",
+        "marketing",
+        "bible"
+      ],
+      "path": "skills/email-marketing-bible/SKILL.md"
     },
     {
       "id": "email-security",
@@ -33245,6 +33663,39 @@
       "path": "skills/full-stack-orchestration-full-stack-feature/SKILL.md"
     },
     {
+      "id": "fxmacrodata",
+      "canonical_id": "fxmacrodata",
+      "name": "fxmacrodata",
+      "description": "Query FXMacroData for official-source macro indicators, release calendars, central-bank policy rates, FX rates and CFTC positioning across 22 currencies.",
+      "category": "finance",
+      "risk": "safe",
+      "source": "self",
+      "source_type": "self",
+      "tags": [
+        "macroeconomics",
+        "forex",
+        "central-banks",
+        "economic-calendar",
+        "cot",
+        "rest-api"
+      ],
+      "triggers": [
+        "macroeconomics",
+        "forex",
+        "central-banks",
+        "economic-calendar",
+        "cot",
+        "rest-api",
+        "fxmacrodata",
+        "query",
+        "official",
+        "source",
+        "macro",
+        "indicators"
+      ],
+      "path": "skills/fxmacrodata/SKILL.md"
+    },
+    {
       "id": "game-development",
       "canonical_id": "game-development",
       "name": "game-development",
@@ -34777,6 +35228,40 @@
         "learning"
       ],
       "path": "skills/geoffrey-hinton/SKILL.md"
+    },
+    {
+      "id": "get-seen-in-replies",
+      "canonical_id": "get-seen-in-replies",
+      "name": "get-seen-in-replies",
+      "description": "Write a reply to someone else's tweet that is worth reading on its own. Use when someone asks what to reply, wants to grow by replying on Twitter/X, or says their replies go nowhere.",
+      "category": "marketing",
+      "risk": "safe",
+      "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/get-seen-in-replies",
+      "source_type": "official",
+      "source_repo": "prateeks367/voicemoat-skills",
+      "license": "MIT",
+      "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+      "tags": [
+        "twitter",
+        "replies",
+        "engagement",
+        "social-media"
+      ],
+      "triggers": [
+        "twitter",
+        "replies",
+        "engagement",
+        "social-media",
+        "get",
+        "seen",
+        "write",
+        "reply",
+        "someone",
+        "else",
+        "tweet",
+        "worth"
+      ],
+      "path": "skills/get-seen-in-replies/SKILL.md"
     },
     {
       "id": "gh-attach",
@@ -42845,7 +43330,7 @@
       "id": "jobs-to-be-done-analyst",
       "canonical_id": "jobs-to-be-done-analyst",
       "name": "jobs-to-be-done-analyst",
-      "description": "One sentence - what this skill does and when to invoke it",
+      "description": "Uncover the functional, emotional and social jobs a customer hires a product to do: progress state, hiring trigger, alternatives, success criteria, JTBD map. Use when you need to understand why users buy, switch or churn, or to anchor positioning, messaging and onboarding in real jobs.",
       "category": "marketing",
       "risk": "safe",
       "source": "community",
@@ -42862,12 +43347,13 @@
         "be",
         "done",
         "analyst",
-        "one",
-        "sentence",
-        "what",
-        "skill",
-        "does",
-        "invoke"
+        "uncover",
+        "functional",
+        "emotional",
+        "social",
+        "customer",
+        "hires",
+        "product"
       ],
       "path": "skills/jobs-to-be-done-analyst/SKILL.md"
     },
@@ -44900,6 +45386,47 @@
       "path": "skills/linear-claude-skill/SKILL.md"
     },
     {
+      "id": "linkdigest-social-link-reader",
+      "canonical_id": "linkdigest-social-link-reader",
+      "name": "linkdigest-social-link-reader",
+      "description": "Read one public Xiaohongshu, Douyin, TikTok, YouTube, X or WeChat article link into text an agent can use (transcript, image text, key points) via the LinkDigest API or MCP server.",
+      "category": "research",
+      "risk": "safe",
+      "source": "https://github.com/jcaiagent7143-ui/linkdigest-mcp",
+      "source_type": "official",
+      "source_repo": "jcaiagent7143-ui/linkdigest-mcp",
+      "license": "MIT",
+      "license_source": "https://github.com/jcaiagent7143-ui/linkdigest-mcp/blob/main/LICENSE",
+      "tags": [
+        "xiaohongshu",
+        "rednote",
+        "douyin",
+        "tiktok",
+        "youtube",
+        "wechat",
+        "transcript",
+        "ocr",
+        "mcp",
+        "api-integration",
+        "research"
+      ],
+      "triggers": [
+        "xiaohongshu",
+        "rednote",
+        "douyin",
+        "tiktok",
+        "youtube",
+        "wechat",
+        "transcript",
+        "ocr",
+        "mcp",
+        "api-integration",
+        "research",
+        "linkdigest"
+      ],
+      "path": "skills/linkdigest-social-link-reader/SKILL.md"
+    },
+    {
       "id": "linkedin-automation",
       "canonical_id": "linkedin-automation",
       "name": "linkedin-automation",
@@ -46189,6 +46716,42 @@
       "path": "skills/logistics-exception-management/SKILL.md"
     },
     {
+      "id": "lognorm",
+      "canonical_id": "lognorm",
+      "name": "lognorm",
+      "description": "Work a site's SEO and AI-visibility (GEO) backlog through the hosted LogNorm MCP server: audits, fixes, content, AI-answer tracking.",
+      "category": "seo",
+      "risk": "safe",
+      "source": "https://github.com/lognorm/lognorm-mcp/tree/main/skills/lognorm",
+      "source_type": "official",
+      "source_repo": "lognorm/lognorm-mcp",
+      "license": "MIT",
+      "license_source": "https://github.com/lognorm/lognorm-mcp/blob/main/LICENSE",
+      "tags": [
+        "seo",
+        "geo",
+        "ai-visibility",
+        "mcp",
+        "content",
+        "growth"
+      ],
+      "triggers": [
+        "seo",
+        "geo",
+        "ai-visibility",
+        "mcp",
+        "content",
+        "growth",
+        "lognorm",
+        "work",
+        "site",
+        "ai",
+        "visibility",
+        "backlog"
+      ],
+      "path": "skills/lognorm/SKILL.md"
+    },
+    {
       "id": "logo-image-design",
       "canonical_id": "logo-image-design",
       "name": "logo-image-design",
@@ -46568,6 +47131,41 @@
         "model"
       ],
       "path": "skills/lookdev-auto/SKILL.md"
+    },
+    {
+      "id": "looot",
+      "canonical_id": "looot",
+      "name": "looot",
+      "description": "Search, price and run 2,500+ data API endpoints (work emails, company search, SERP, web pages) from one prepaid balance via the looot MCP server.",
+      "category": "data",
+      "risk": "critical",
+      "source": "community",
+      "source_type": "official",
+      "source_repo": "loootai/looot-skills",
+      "license": "MIT",
+      "license_source": "https://github.com/loootai/looot-skills/blob/main/LICENSE",
+      "tags": [
+        "data-api",
+        "enrichment",
+        "email-finder",
+        "seo",
+        "mcp"
+      ],
+      "triggers": [
+        "data-api",
+        "enrichment",
+        "email-finder",
+        "seo",
+        "mcp",
+        "looot",
+        "search",
+        "price",
+        "run",
+        "500",
+        "data",
+        "api"
+      ],
+      "path": "skills/looot/SKILL.md"
     },
     {
       "id": "loop-library",
@@ -47294,6 +47892,43 @@
         "language"
       ],
       "path": "skills/make-automation/SKILL.md"
+    },
+    {
+      "id": "make-interfaces-feel-better",
+      "canonical_id": "make-interfaces-feel-better",
+      "name": "make-interfaces-feel-better",
+      "description": "Design engineering principles for making interfaces feel polished with animation, typography, shadows, border-radius, and micro-interaction details.",
+      "category": "frontend",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "jakubkrehel/make-interfaces-feel-better",
+      "license": "MIT",
+      "tags": [
+        "frontend",
+        "design",
+        "ui",
+        "animation",
+        "typography",
+        "surfaces",
+        "polish",
+        "micro-interactions"
+      ],
+      "triggers": [
+        "frontend",
+        "design",
+        "ui",
+        "animation",
+        "typography",
+        "surfaces",
+        "polish",
+        "micro-interactions",
+        "interfaces",
+        "feel",
+        "better",
+        "engineering"
+      ],
+      "path": "skills/make-interfaces-feel-better/SKILL.md"
     },
     {
       "id": "makepad-2-0-animation",
@@ -54588,7 +55223,7 @@
       "id": "onboarding-psychologist",
       "canonical_id": "onboarding-psychologist",
       "name": "onboarding-psychologist",
-      "description": "One sentence - what this skill does and when to invoke it",
+      "description": "Design first-use and onboarding experiences that bring an early win, cut setup friction, build ownership and form habits through stable cues. Use when onboarding loses users early, time-to-value is long, or the first session should build confidence, momentum and a lasting habit.",
       "category": "marketing",
       "risk": "safe",
       "source": "community",
@@ -54599,12 +55234,16 @@
       "triggers": [
         "onboarding",
         "psychologist",
-        "one",
-        "sentence",
-        "what",
-        "skill",
-        "does",
-        "invoke"
+        "first",
+        "experiences",
+        "bring",
+        "early",
+        "win",
+        "cut",
+        "setup",
+        "friction",
+        "ownership",
+        "form"
       ],
       "path": "skills/onboarding-psychologist/SKILL.md"
     },
@@ -62616,6 +63255,41 @@
       "path": "skills/reports-analytics/SKILL.md"
     },
     {
+      "id": "repurpose-into-a-post",
+      "canonical_id": "repurpose-into-a-post",
+      "name": "repurpose-into-a-post",
+      "description": "Turn an article, newsletter, transcript or video into a Twitter/X or LinkedIn post that stands on its own. Use when someone wants to repurpose, share or promote content they already made.",
+      "category": "marketing",
+      "risk": "critical",
+      "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/repurpose-into-a-post",
+      "source_type": "official",
+      "source_repo": "prateeks367/voicemoat-skills",
+      "license": "MIT",
+      "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+      "tags": [
+        "linkedin",
+        "twitter",
+        "repurposing",
+        "content",
+        "social-media"
+      ],
+      "triggers": [
+        "linkedin",
+        "twitter",
+        "repurposing",
+        "content",
+        "social-media",
+        "repurpose",
+        "post",
+        "turn",
+        "article",
+        "newsletter",
+        "transcript",
+        "video"
+      ],
+      "path": "skills/repurpose-into-a-post/SKILL.md"
+    },
+    {
       "id": "requesting-code-review",
       "canonical_id": "requesting-code-review",
       "name": "requesting-code-review",
@@ -64085,6 +64759,41 @@
       "path": "skills/sam-altman/SKILL.md"
     },
     {
+      "id": "same-idea-both-platforms",
+      "canonical_id": "same-idea-both-platforms",
+      "name": "same-idea-both-platforms",
+      "description": "Write one idea as a Twitter/X post and a LinkedIn post that read as written separately, not pasted twice. Use when someone wants to cross-post or adapt a post for the other platform.",
+      "category": "marketing",
+      "risk": "critical",
+      "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/same-idea-both-platforms",
+      "source_type": "official",
+      "source_repo": "prateeks367/voicemoat-skills",
+      "license": "MIT",
+      "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+      "tags": [
+        "linkedin",
+        "twitter",
+        "cross-posting",
+        "writing",
+        "social-media"
+      ],
+      "triggers": [
+        "linkedin",
+        "twitter",
+        "cross-posting",
+        "writing",
+        "social-media",
+        "same",
+        "idea",
+        "both",
+        "platforms",
+        "write",
+        "one",
+        "post"
+      ],
+      "path": "skills/same-idea-both-platforms/SKILL.md"
+    },
+    {
       "id": "sandbase-mcp",
       "canonical_id": "sandbase-mcp",
       "name": "sandbase-mcp",
@@ -64473,6 +65182,43 @@
         "invoke"
       ],
       "path": "skills/scarcity-urgency-psychologist/SKILL.md"
+    },
+    {
+      "id": "scarf-single-cell",
+      "canonical_id": "scarf-single-cell",
+      "name": "scarf-single-cell",
+      "description": "Analyze single-cell RNA-seq at million-cell scale with Scarf: out-of-core Zarr stores on disk or object storage, provenance-tracked artifacts, audited QC, clustering, markers and donor comparisons.",
+      "category": "science",
+      "risk": "critical",
+      "source": "https://github.com/NygenAnalytics/scarf/tree/master/skills/scarf-single-cell",
+      "source_type": "official",
+      "source_repo": "NygenAnalytics/scarf",
+      "license": "BSD-3-Clause",
+      "license_source": "https://github.com/NygenAnalytics/scarf/blob/master/LICENSE",
+      "tags": [
+        "single-cell",
+        "scrna-seq",
+        "bioinformatics",
+        "genomics",
+        "zarr",
+        "out-of-core",
+        "python"
+      ],
+      "triggers": [
+        "single-cell",
+        "scrna-seq",
+        "bioinformatics",
+        "genomics",
+        "zarr",
+        "out-of-core",
+        "python",
+        "scarf",
+        "single",
+        "cell",
+        "analyze",
+        "rna"
+      ],
+      "path": "skills/scarf-single-cell/SKILL.md"
     },
     {
       "id": "schema-markup",
@@ -67065,6 +67811,40 @@
       "path": "skills/service-mesh-observability/SKILL.md"
     },
     {
+      "id": "session-handoff",
+      "canonical_id": "session-handoff",
+      "name": "session-handoff",
+      "description": "Use when context approaches capacity, before /clear or /compact, when switching tasks, or when ending a coding session: produces a structured handoff artifact for the next session.",
+      "category": "productivity",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "alapha888/session-handoff-kit",
+      "license": "MIT",
+      "license_source": "https://github.com/alapha888/session-handoff-kit/blob/main/LICENSE",
+      "tags": [
+        "context-management",
+        "session-handoff",
+        "coding-agents",
+        "workflow"
+      ],
+      "triggers": [
+        "context-management",
+        "session-handoff",
+        "coding-agents",
+        "workflow",
+        "session",
+        "handoff",
+        "context",
+        "approaches",
+        "capacity",
+        "before",
+        "clear",
+        "compact"
+      ],
+      "path": "skills/session-handoff/SKILL.md"
+    },
+    {
       "id": "setup-help",
       "canonical_id": "setup-help",
       "name": "setup-help",
@@ -67204,6 +67984,42 @@
       "path": "skills/shader-programming-glsl/SKILL.md"
     },
     {
+      "id": "shark",
+      "canonical_id": "shark",
+      "name": "shark",
+      "description": "Pitch a business idea to a Shark Tank-style panel of Claude sub-agent investors who grill it, hear a founder agent answer, and each go IN or OUT with a practice offer.",
+      "category": "business",
+      "risk": "safe",
+      "source": "community",
+      "source_type": "community",
+      "source_repo": "alexyc9381/shark-skill",
+      "license": "MIT",
+      "license_source": "https://github.com/alexyc9381/shark-skill/blob/main/LICENSE",
+      "tags": [
+        "business",
+        "startup",
+        "pitch",
+        "investors",
+        "subagents",
+        "feedback"
+      ],
+      "triggers": [
+        "business",
+        "startup",
+        "pitch",
+        "investors",
+        "subagents",
+        "feedback",
+        "shark",
+        "idea",
+        "tank",
+        "style",
+        "panel",
+        "claude"
+      ],
+      "path": "skills/shark/SKILL.md"
+    },
+    {
       "id": "sharp-coder",
       "canonical_id": "sharp-coder",
       "name": "sharp-coder",
@@ -67310,6 +68126,40 @@
         "monitoring"
       ],
       "path": "skills/shipping-and-launch/SKILL.md"
+    },
+    {
+      "id": "shipvela-publish",
+      "canonical_id": "shipvela-publish",
+      "name": "shipvela-publish",
+      "description": "Publish an explicitly selected website through the user's connected Shipvela MCP account, track the exact deployment, and return its live HTTPS URL after success.",
+      "category": "development",
+      "risk": "critical",
+      "source": "https://github.com/stefanautomateed/shipvela-codex/tree/main/skills/shipvela-publish",
+      "source_type": "community",
+      "source_repo": "stefanautomateed/shipvela-codex",
+      "license": "MIT",
+      "license_source": "https://github.com/stefanautomateed/shipvela-codex/blob/main/LICENSE",
+      "tags": [
+        "deployment",
+        "hosting",
+        "mcp",
+        "static-websites"
+      ],
+      "triggers": [
+        "deployment",
+        "hosting",
+        "mcp",
+        "static-websites",
+        "shipvela",
+        "publish",
+        "explicitly",
+        "selected",
+        "website",
+        "through",
+        "user",
+        "connected"
+      ],
+      "path": "skills/shipvela-publish/SKILL.md"
     },
     {
       "id": "shodan-reconnaissance",
@@ -71171,6 +72021,40 @@
       "path": "skills/super-code/typescript/SKILL.md"
     },
     {
+      "id": "supercov",
+      "canonical_id": "supercov",
+      "name": "supercov",
+      "description": "Measure line, branch and MC/DC coverage of a project's existing tests with the supercov CLI, then write small, focused tests for the code no test reaches.",
+      "category": "testing",
+      "risk": "critical",
+      "source": "https://github.com/supercorp-ai/supercov/tree/main/plugins/supercov/skills/supercov",
+      "source_type": "community",
+      "source_repo": "supercorp-ai/supercov",
+      "license": "MIT",
+      "license_source": "https://github.com/supercorp-ai/supercov/blob/main/LICENSE",
+      "tags": [
+        "testing",
+        "coverage",
+        "mcdc",
+        "test-generation"
+      ],
+      "triggers": [
+        "testing",
+        "coverage",
+        "mcdc",
+        "test-generation",
+        "supercov",
+        "measure",
+        "line",
+        "branch",
+        "mc",
+        "dc",
+        "existing",
+        "tests"
+      ],
+      "path": "skills/supercov/SKILL.md"
+    },
+    {
       "id": "superpowers-lab",
       "canonical_id": "superpowers-lab",
       "name": "superpowers-lab",
@@ -72595,6 +73479,39 @@
         "api"
       ],
       "path": "skills/telegram-bot-messaging/SKILL.md"
+    },
+    {
+      "id": "telegram-channel-ads",
+      "canonical_id": "telegram-channel-ads",
+      "name": "telegram-channel-ads",
+      "description": "Vet and price ad posts in Telegram channels: reach benchmarks by size, topic and language, ad-network and channel-age checks, CPM and deletion-window math.",
+      "category": "marketing",
+      "risk": "safe",
+      "source": "self",
+      "source_type": "self",
+      "tags": [
+        "telegram",
+        "advertising",
+        "influencer-marketing",
+        "media-buying",
+        "cpm",
+        "marketing"
+      ],
+      "triggers": [
+        "telegram",
+        "advertising",
+        "influencer-marketing",
+        "media-buying",
+        "cpm",
+        "marketing",
+        "channel",
+        "ads",
+        "vet",
+        "price",
+        "ad",
+        "posts"
+      ],
+      "path": "skills/telegram-channel-ads/SKILL.md"
     },
     {
       "id": "telegram-mini-app",
@@ -74970,6 +75887,40 @@
         "implementing"
       ],
       "path": "skills/turborepo-caching/SKILL.md"
+    },
+    {
+      "id": "turn-this-into-a-thread",
+      "canonical_id": "turn-this-into-a-thread",
+      "name": "turn-this-into-a-thread",
+      "description": "Turn a long idea, transcript, article or draft into a Twitter/X thread where every tweet stands alone. Use when someone asks for a thread or to break long writing into tweets.",
+      "category": "marketing",
+      "risk": "critical",
+      "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/turn-this-into-a-thread",
+      "source_type": "official",
+      "source_repo": "prateeks367/voicemoat-skills",
+      "license": "MIT",
+      "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+      "tags": [
+        "twitter",
+        "threads",
+        "writing",
+        "social-media"
+      ],
+      "triggers": [
+        "twitter",
+        "threads",
+        "writing",
+        "social-media",
+        "turn",
+        "thread",
+        "long",
+        "idea",
+        "transcript",
+        "article",
+        "draft",
+        "where"
+      ],
+      "path": "skills/turn-this-into-a-thread/SKILL.md"
     },
     {
       "id": "turnstile-spin",
@@ -79321,6 +80272,41 @@
       "path": "skills/whatsapp-cloud-api/SKILL.md"
     },
     {
+      "id": "why-did-this-post-flop",
+      "canonical_id": "why-did-this-post-flop",
+      "name": "why-did-this-post-flop",
+      "description": "Diagnose why one Twitter/X or LinkedIn post underperformed: not seen, seen and skipped, or read and ignored. Use when someone asks why a post did badly or got no engagement.",
+      "category": "marketing",
+      "risk": "safe",
+      "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/why-did-this-post-flop",
+      "source_type": "official",
+      "source_repo": "prateeks367/voicemoat-skills",
+      "license": "MIT",
+      "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+      "tags": [
+        "linkedin",
+        "twitter",
+        "analytics",
+        "post-review",
+        "social-media"
+      ],
+      "triggers": [
+        "linkedin",
+        "twitter",
+        "analytics",
+        "post-review",
+        "social-media",
+        "why",
+        "did",
+        "post",
+        "flop",
+        "diagnose",
+        "one",
+        "underperformed"
+      ],
+      "path": "skills/why-did-this-post-flop/SKILL.md"
+    },
+    {
       "id": "wifi-wireless",
       "canonical_id": "wifi-wireless",
       "name": "wifi-wireless",
@@ -80334,6 +81320,41 @@
         "track"
       ],
       "path": "skills/wrike-automation/SKILL.md"
+    },
+    {
+      "id": "write-in-my-voice",
+      "canonical_id": "write-in-my-voice",
+      "name": "write-in-my-voice",
+      "description": "Draft a Twitter/X or LinkedIn post that sounds like the person asking, from posts they already wrote. Use when someone asks for a post or rewrite in their voice, or asks if text sounds like them.",
+      "category": "marketing",
+      "risk": "critical",
+      "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/write-in-my-voice",
+      "source_type": "official",
+      "source_repo": "prateeks367/voicemoat-skills",
+      "license": "MIT",
+      "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+      "tags": [
+        "linkedin",
+        "twitter",
+        "writing",
+        "voice",
+        "social-media"
+      ],
+      "triggers": [
+        "linkedin",
+        "twitter",
+        "writing",
+        "voice",
+        "social-media",
+        "write",
+        "my",
+        "draft",
+        "post",
+        "sounds",
+        "like",
+        "person"
+      ],
+      "path": "skills/write-in-my-voice/SKILL.md"
     },
     {
       "id": "writing-great-skills",

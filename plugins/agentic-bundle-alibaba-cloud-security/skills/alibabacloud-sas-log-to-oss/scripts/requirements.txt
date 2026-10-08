@@ -1,2 +1,0 @@
-alibabacloud_sls20201230==5.14.0
-alibabacloud_credentials==1.0.10

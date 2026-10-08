@@ -1,3 +1,0 @@
-# sec-kernel dependencies
-# All dependencies are vendored in scripts/thirdparties/
-# No external pip install required (zero-dependency design)
