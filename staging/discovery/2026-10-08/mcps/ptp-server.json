@@ -1,0 +1,22 @@
+{
+  "id": "ptp-server",
+  "name": "ptp-mcp-server",
+  "repository": "https://github.com/redhat-cne/ptp-mcp-server",
+  "description": " PTP MCP Server for OpenShift PTP monitoring and analysis ",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx ptp-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "ptp-server": {
+      "command": "uvx",
+      "args": [
+        "ptp-mcp-server"
+      ]
+    }
+  }
+}

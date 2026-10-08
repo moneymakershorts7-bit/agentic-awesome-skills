@@ -1,0 +1,22 @@
+{
+  "id": "edumints-scorm",
+  "name": "edumints-scorm-mcp",
+  "repository": "https://github.com/kemalyy/edumints-scorm-mcp",
+  "description": "Open-source MCP server that assembles interactive, SCORM-compliant e-learning courses. Self-hostable. By edumints.com.",
+  "language": "Python",
+  "transport": "sse",
+  "install_cmd": "uvx edumints-scorm-mcp",
+  "stars": 8,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "edumints-scorm": {
+      "command": "uvx",
+      "args": [
+        "edumints-scorm-mcp"
+      ]
+    }
+  }
+}

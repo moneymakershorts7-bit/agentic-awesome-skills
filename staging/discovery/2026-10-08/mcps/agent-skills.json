@@ -1,0 +1,23 @@
+{
+  "id": "agent-skills",
+  "name": "agent-skills",
+  "repository": "https://github.com/theyenvychada/agent-skills",
+  "description": "\ud83d\ude80 Enhance AI assistants' capabilities with the AgentSkills plugin for the Trading 212 API, simplifying access to trading functionalities.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y agent-skills",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "agent-skills": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "agent-skills"
+      ]
+    }
+  }
+}

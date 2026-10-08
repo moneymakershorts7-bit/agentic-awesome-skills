@@ -1,0 +1,23 @@
+{
+  "id": "dexto",
+  "name": "dexto",
+  "repository": "https://github.com/truffle-ai/dexto",
+  "description": "Agent harness and tookit for building AI agents and agentic applications. CLI and SDKs included",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y dexto",
+  "stars": 649,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "dexto": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dexto"
+      ]
+    }
+  }
+}

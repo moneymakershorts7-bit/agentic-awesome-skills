@@ -1,0 +1,23 @@
+{
+  "id": "modelcontextprotocol-ext-tasks",
+  "name": "modelcontextprotocol--ext-tasks",
+  "repository": "https://github.com/repolex-forx/modelcontextprotocol--ext-tasks",
+  "description": "RDF parse data for modelcontextprotocol/ext-tasks",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modelcontextprotocol--ext-tasks",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "modelcontextprotocol-ext-tasks": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modelcontextprotocol--ext-tasks"
+      ]
+    }
+  }
+}

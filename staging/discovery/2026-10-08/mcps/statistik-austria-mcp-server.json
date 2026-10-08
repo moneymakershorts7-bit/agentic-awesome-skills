@@ -1,0 +1,22 @@
+{
+  "id": "statistik-austria-mcp-server",
+  "name": "Statistik-Austria-MCP-Server",
+  "repository": "https://github.com/DV155/Statistik-Austria-MCP-Server",
+  "description": "Model Context Protocol (MCP) server for querying Statistik Austria's free OGD datasets.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Statistik-Austria-MCP-Server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "statistik-austria-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "Statistik-Austria-MCP-Server"
+      ]
+    }
+  }
+}

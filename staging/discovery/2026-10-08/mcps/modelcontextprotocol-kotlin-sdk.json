@@ -1,0 +1,23 @@
+{
+  "id": "modelcontextprotocol-kotlin-sdk",
+  "name": "modelcontextprotocol--kotlin-sdk",
+  "repository": "https://github.com/repolex-forx/modelcontextprotocol--kotlin-sdk",
+  "description": "RDF parse data for modelcontextprotocol/kotlin-sdk",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modelcontextprotocol--kotlin-sdk",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "modelcontextprotocol-kotlin-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modelcontextprotocol--kotlin-sdk"
+      ]
+    }
+  }
+}

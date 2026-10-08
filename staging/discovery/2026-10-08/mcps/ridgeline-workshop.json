@@ -1,0 +1,22 @@
+{
+  "id": "ridgeline-workshop",
+  "name": "ridgeline-mcp-workshop",
+  "repository": "https://github.com/peterTrifecta/ridgeline-mcp-workshop",
+  "description": "An example [MCP](https://modelcontextprotocol.io) server over the CRM and ERP of a fictional wholesale outdoor-gear company. It was written for a live walkthrough covering contract pricing, credit, open invoices and discount approvals, and includes what is needed to replay it or to run the finished server.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx ridgeline-mcp-workshop",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "ridgeline-workshop": {
+      "command": "uvx",
+      "args": [
+        "ridgeline-mcp-workshop"
+      ]
+    }
+  }
+}

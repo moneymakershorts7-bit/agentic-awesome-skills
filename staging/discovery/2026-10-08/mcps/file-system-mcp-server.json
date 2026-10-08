@@ -1,0 +1,23 @@
+{
+  "id": "file-system-mcp-server",
+  "name": "File-System-MCP-Server",
+  "repository": "https://github.com/Quicksilver0218/File-System-MCP-Server",
+  "description": "A fork of https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y File-System-MCP-Server",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "file-system-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "File-System-MCP-Server"
+      ]
+    }
+  }
+}

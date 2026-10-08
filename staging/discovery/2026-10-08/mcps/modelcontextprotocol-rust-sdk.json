@@ -1,0 +1,23 @@
+{
+  "id": "modelcontextprotocol-rust-sdk",
+  "name": "modelcontextprotocol--rust-sdk",
+  "repository": "https://github.com/repolex-forx/modelcontextprotocol--rust-sdk",
+  "description": "RDF parse data for modelcontextprotocol/rust-sdk",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modelcontextprotocol--rust-sdk",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "modelcontextprotocol-rust-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modelcontextprotocol--rust-sdk"
+      ]
+    }
+  }
+}

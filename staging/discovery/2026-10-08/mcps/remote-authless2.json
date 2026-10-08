@@ -1,0 +1,23 @@
+{
+  "id": "remote-authless2",
+  "name": "remote-mcp-server-authless2",
+  "repository": "https://github.com/PhilBarnett/remote-mcp-server-authless2",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y remote-mcp-server-authless2",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "remote-authless2": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "remote-mcp-server-authless2"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "arr",
+  "name": "arr-mcp",
+  "repository": "https://github.com/bardesss/arr-mcp",
+  "description": "One MCP server for the whole self-hosted media stack: Radarr, Sonarr, Whisparr, Prowlarr, Bazarr, Jellyfin, Plex, Seerr, SABnzbd, Transmission, qBittorent and Profilarr.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y arr-mcp",
+  "stars": 75,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "arr": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "arr-mcp"
+      ]
+    }
+  }
+}

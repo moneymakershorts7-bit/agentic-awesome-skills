@@ -1,0 +1,22 @@
+{
+  "id": "listingsapi",
+  "name": "listingsapi-mcp",
+  "repository": "https://github.com/listings-api/listingsapi-mcp",
+  "description": "Listings API MCP. Manage business listings, reviews, posts and local analytics across 50 plus directories, maps and search engines from any MCP client.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx listingsapi-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "listingsapi": {
+      "command": "uvx",
+      "args": [
+        "listingsapi-mcp"
+      ]
+    }
+  }
+}

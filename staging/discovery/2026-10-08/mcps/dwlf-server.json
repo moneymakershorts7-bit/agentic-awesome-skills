@@ -1,0 +1,23 @@
+{
+  "id": "dwlf-server",
+  "name": "dwlf-mcp-server",
+  "repository": "https://github.com/andywilliams/dwlf-mcp-server",
+  "description": "MCP server for DWLF market analysis platform \u2014 AI-accessible tools for market data, indicators, signals, strategies and more",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y dwlf-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "dwlf-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dwlf-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "tusk",
+  "name": "tusk",
+  "repository": "https://github.com/germanamz/tusk",
+  "description": "Local-first agent brain \u2014 a markdown vault indexed as a schema-validated, semantically-searchable graph, queryable from the CLI or any MCP-compatible agent.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/germanamz/tusk@latest",
+  "stars": 3,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "tusk": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/germanamz/tusk@latest"
+      ]
+    }
+  }
+}

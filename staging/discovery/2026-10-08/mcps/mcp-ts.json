@@ -1,0 +1,23 @@
+{
+  "id": "mcp-ts",
+  "name": "mcp-ts",
+  "repository": "https://github.com/zonlabs/mcp-ts",
+  "description": "An MCP client library for building conversational AI applications with enhanced control and dynamic tool discovery for context-efficient agents.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-ts",
+  "stars": 23,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "mcp-ts": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-ts"
+      ]
+    }
+  }
+}

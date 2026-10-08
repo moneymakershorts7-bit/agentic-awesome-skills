@@ -1,0 +1,23 @@
+{
+  "id": "webcite-server",
+  "name": "webcite-mcp-server",
+  "repository": "https://github.com/strategyconnect/webcite-mcp-server",
+  "description": "MCP server for fact-checking AI claims against authoritative sources. Works with any MCP-compatible agent \u2014 Claude, Cursor, Continue, Cody, Zed, Windsurf, OpenAI Agents, LangChain, and more.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y webcite-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "webcite-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "webcite-mcp-server"
+      ]
+    }
+  }
+}

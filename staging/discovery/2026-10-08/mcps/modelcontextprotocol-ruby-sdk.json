@@ -1,0 +1,23 @@
+{
+  "id": "modelcontextprotocol-ruby-sdk",
+  "name": "modelcontextprotocol--ruby-sdk",
+  "repository": "https://github.com/repolex-forx/modelcontextprotocol--ruby-sdk",
+  "description": "RDF parse data for modelcontextprotocol/ruby-sdk",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modelcontextprotocol--ruby-sdk",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "modelcontextprotocol-ruby-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modelcontextprotocol--ruby-sdk"
+      ]
+    }
+  }
+}

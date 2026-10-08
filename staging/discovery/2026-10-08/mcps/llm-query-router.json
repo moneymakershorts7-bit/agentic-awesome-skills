@@ -1,0 +1,22 @@
+{
+  "id": "llm-query-router",
+  "name": "LLM-Query-Router",
+  "repository": "https://github.com/Fuddyduddyyakuza218/LLM-Query-Router",
+  "description": "Routes queries to the cheapest tier that answers correctly, cutting inference costs by over 50% while retaining 99.9% quality.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx LLM-Query-Router",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "llm-query-router": {
+      "command": "uvx",
+      "args": [
+        "LLM-Query-Router"
+      ]
+    }
+  }
+}

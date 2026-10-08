@@ -1,0 +1,22 @@
+{
+  "id": "healthlens",
+  "name": "healthlens",
+  "repository": "https://github.com/lm203688/healthlens",
+  "description": "HealthLens \u2014 \u4e2d\u897f\u533b\u878d\u5408\u5065\u5eb7\u7ba1\u7406\u5e73\u53f0 + MCP server (healthlens-mcp). HTTP endpoint https://healthlens.cc/api/v1/mcp",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx healthlens",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "healthlens": {
+      "command": "uvx",
+      "args": [
+        "healthlens"
+      ]
+    }
+  }
+}

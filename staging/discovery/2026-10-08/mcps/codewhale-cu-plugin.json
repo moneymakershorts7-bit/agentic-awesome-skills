@@ -1,0 +1,23 @@
+{
+  "id": "codewhale-cu-plugin",
+  "name": "codewhale-cu-plugin",
+  "repository": "https://github.com/codewhale-hq/codewhale-cu-plugin",
+  "description": "Computer Use for macOS: background app control, native human controls and verified updates over MCP. Windows and Linux ports are experimental.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y codewhale-cu-plugin",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "codewhale-cu-plugin": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "codewhale-cu-plugin"
+      ]
+    }
+  }
+}

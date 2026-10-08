@@ -1,0 +1,23 @@
+{
+  "id": "mcptoolssdkbased",
+  "name": "McpToolsSdkBased",
+  "repository": "https://github.com/srogmann/McpToolsSdkBased",
+  "description": "Some MCP-tools (search files, read file, edit file, ...) based on io.modelcontextprotocol.sdk",
+  "language": "Java",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/srogmann/McpToolsSdkBased",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "mcptoolssdkbased": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/srogmann/McpToolsSdkBased"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "mcp-nomad",
+  "name": "mcp-nomad",
+  "repository": "https://github.com/kocierik/mcp-nomad",
+  "description": " A nomad MCP Server (modelcontextprotocol) ",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/kocierik/mcp-nomad@latest",
+  "stars": 59,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "mcp-nomad": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/kocierik/mcp-nomad@latest"
+      ]
+    }
+  }
+}

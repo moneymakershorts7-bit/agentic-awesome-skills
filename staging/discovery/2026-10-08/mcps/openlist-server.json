@@ -1,0 +1,22 @@
+{
+  "id": "openlist-server",
+  "name": "openlist-mcp-server",
+  "repository": "https://github.com/hbestm/openlist-mcp-server",
+  "description": "MCP Server for OpenList - enables AI agents to manage files via OpenList REST API",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx openlist-mcp-server",
+  "stars": 4,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "openlist-server": {
+      "command": "uvx",
+      "args": [
+        "openlist-mcp-server"
+      ]
+    }
+  }
+}

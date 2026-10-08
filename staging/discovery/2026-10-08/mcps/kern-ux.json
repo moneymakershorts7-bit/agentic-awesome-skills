@@ -1,0 +1,23 @@
+{
+  "id": "kern-ux",
+  "name": "kern-ux-mcp",
+  "repository": "https://github.com/leonio/kern-ux-mcp",
+  "description": "MCP Language Server for KERN-UX using modelcontextprotocol.io and Zod",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y kern-ux-mcp",
+  "stars": 1,
+  "license": "EUPL-1.2",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "kern-ux": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "kern-ux-mcp"
+      ]
+    }
+  }
+}

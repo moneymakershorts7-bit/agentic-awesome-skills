@@ -1,0 +1,23 @@
+{
+  "id": "wordpress",
+  "name": "wordpress-mcp",
+  "repository": "https://github.com/Faneraiy14/wordpress-mcp",
+  "description": "MCP server for WordPress, built on the official modelcontextprotocol/php-sdk",
+  "language": "PHP",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/Faneraiy14/wordpress-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "wordpress": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/Faneraiy14/wordpress-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "brightdata",
+  "name": "brightdata-mcp",
+  "repository": "https://github.com/brightdata/brightdata-mcp",
+  "description": "A powerful Model Context Protocol (MCP) server that provides an all-in-one solution for public web access.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y brightdata-mcp",
+  "stars": 2661,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "brightdata": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "brightdata-mcp"
+      ]
+    }
+  }
+}

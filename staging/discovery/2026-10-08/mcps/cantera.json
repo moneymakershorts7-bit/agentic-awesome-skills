@@ -1,0 +1,22 @@
+{
+  "id": "cantera",
+  "name": "mcp-server-cantera",
+  "repository": "https://github.com/StepFunctionLLC/mcp-server-cantera",
+  "description": "An MCP server wrapped around Cantera to facilitate use by an LLM",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-server-cantera",
+  "stars": 5,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "cantera": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-cantera"
+      ]
+    }
+  }
+}

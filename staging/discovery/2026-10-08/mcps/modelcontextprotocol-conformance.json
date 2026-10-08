@@ -1,0 +1,23 @@
+{
+  "id": "modelcontextprotocol-conformance",
+  "name": "modelcontextprotocol--conformance",
+  "repository": "https://github.com/repolex-forx/modelcontextprotocol--conformance",
+  "description": "RDF parse data for modelcontextprotocol/conformance",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modelcontextprotocol--conformance",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "modelcontextprotocol-conformance": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modelcontextprotocol--conformance"
+      ]
+    }
+  }
+}
