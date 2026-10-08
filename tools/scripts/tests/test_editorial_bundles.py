@@ -71,6 +71,7 @@ class EditorialBundlesTests(unittest.TestCase):
             "lint-and-validate",
             "systematic-debugging",
             "test-driven-development",
+            "tool-first-gate",
         ]
         self.assertEqual(get_bundle_skills.get_bundle_skills(["Essentials"]), expected)
         self.assertEqual(get_bundle_skills.get_bundle_skills(["essentials"]), expected)

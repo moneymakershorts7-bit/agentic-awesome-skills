@@ -5,22 +5,21 @@ const path = require("node:path");
 const { transactionError } = require("./errors");
 const { fsyncDirectory } = require("./state");
 
-function isSameDevice(dev, expectedDev, parentPathOrStat) {
-  if (dev === expectedDev) return true;
-  if (!parentPathOrStat) return false;
-  try {
-    const parentStat = typeof parentPathOrStat === "string"
-      ? fs.lstatSync(parentPathOrStat)
-      : parentPathOrStat;
-    return !parentStat.isSymbolicLink() && parentStat.isDirectory() && parentStat.dev === expectedDev;
-  } catch {
-    return false;
-  }
-}
 
 function isContained(root, candidate) {
   const relative = path.relative(root, candidate);
   return relative === "" || (!relative.startsWith(`..${path.sep}`) && relative !== ".." && !path.isAbsolute(relative));
+}
+
+function isSameDevice(statDev, expectedDevice, filePath) {
+  if (statDev === expectedDevice) return true;
+  if (!filePath) return false;
+  try {
+    const parentStat = fs.statSync(path.dirname(filePath));
+    return parentStat.dev === expectedDevice;
+  } catch {
+    return false;
+  }
 }
 
 function assertRegularDirectory(directory, code = "AAS_TRANSACTION_DIRECTORY_UNSAFE") {
@@ -92,7 +91,7 @@ function inspectLayout(adapter, target) {
   }
   if (fs.existsSync(resolved.stateFile)) {
     const stateStat = fs.lstatSync(resolved.stateFile);
-    if (stateStat.isSymbolicLink() || !stateStat.isFile() || stateStat.nlink !== 1 || !isSameDevice(stateStat.dev, rootStat.dev, path.dirname(resolved.stateFile))) {
+    if (stateStat.isSymbolicLink() || !stateStat.isFile() || stateStat.nlink !== 1 || !isSameDevice(stateStat.dev, rootStat.dev, resolved.stateFile)) {
       throw transactionError("AAS_TRANSACTION_STATE_UNSAFE", "filesystem", {});
     }
     assertOwned(stateStat);
