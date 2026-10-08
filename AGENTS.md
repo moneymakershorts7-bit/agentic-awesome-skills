@@ -132,6 +132,15 @@ When Google Jules (`https://jules.google`) runs autonomously on this repository 
      7. Propose additions on branch `jules/daily-discovery-YYYYMMDD` via Pull Request titled `feat(discovery): daily new skills and MCP servers scout [YYYY-MM-DD]`.
      8. Monthly Maintenance Decision Gate: During the monthly sweep (`skills-maintainer all` / `skills-maintainer review-discovery`), the maintainer or any agent model evaluates candidates, audits security, and decides whether to accept into the active catalog or reject.
 
+   ### G. Issue Auto-Triage & Solution Sentinel (Event-Driven)
+   - **Trigger:** GitHub Issue created or labeled with `jules`, `auto-fix`, or `bug` (via `.github/workflows/jules-issue-resolver.yml`).
+   - **Branch:** `jules/issue-<issue-number>-<issue-slug>`
+   - **Scope:**
+     1. Fetch issue metadata, reproduce reported discrepancies or test failures, and trace root cause.
+     2. Implement minimal targeted fix adhering strictly to Swiss Army Knife repository standards and Conventional Commits (`fix(<scope>): ...`).
+     3. Verify complete pass of verification suite (`npm run validate`, `npm run lint:workflows`, `npm run test`).
+     4. Submit clean Pull Request linking directly to the issue (`Closes #<id>`) in `AUTO_CREATE_PR` mode.
+
 4. **Required Verification Pipeline Before PR Submission:**
    Before finalizing any plan, committing changes, or submitting a Pull Request, Jules MUST execute and pass:
    ```bash

@@ -1,0 +1,63 @@
+name: Google Jules Autonomous Issue Resolver
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  jules-resolve:
+    name: Dispatch Issue to Google Jules
+    runs-on: ubuntu-latest
+    # Run if issue is labeled with jules / auto-fix or opened with bug/enhancement
+    if: >
+      contains(github.event.issue.labels.*.name, 'jules') ||
+      contains(github.event.issue.labels.*.name, 'auto-fix') ||
+      contains(github.event.issue.labels.*.name, 'bug')
+    steps:
+      - name: Harden Runner Security
+        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
+        with:
+          egress-policy: audit
+
+      - name: Checkout Repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Setup Python Runtime
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
+        with:
+          python-version: '3.12'
+
+      - name: Setup Node Runtime
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        with:
+          node-version: '22'
+
+      - name: Dispatch Issue Resolution to Jules Cloud VM
+        id: dispatch
+        env:
+          JULES_API_KEY: ${{ secrets.JULES_API_KEY }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          if [ -z "$JULES_API_KEY" ]; then
+            echo "::warning::JULES_API_KEY secret is not configured in this repository. Skipping Jules cloud dispatch."
+            exit 0
+          fi
+
+          echo "Handing off Issue #$ISSUE_NUMBER to Google Jules..."
+          python3 tools/scripts/jules_maintainer.py resolve-issue "$ISSUE_NUMBER" --repo "${{ github.repository }}"
+
+      - name: Comment on Issue
+        if: env.JULES_API_KEY != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --repo "${{ github.repository }}" \
+            --body "🤖 **Google Jules Autonomous Coding Agent** has been dispatched to investigate and open a resolution Pull Request for this issue. You can track progress in the PR timeline once generated."
