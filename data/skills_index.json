@@ -2236,6 +2236,39 @@
     }
   },
   {
+    "id": "ai-animation-workflow",
+    "path": "skills/ai-animation-workflow",
+    "category": "multimedia",
+    "name": "ai-animation-workflow",
+    "description": "Production-grade 5-stage AI Explainer Animation & Video-As-Code pipeline. Orchestrates script-to-voice narration, word-timed transcript alignment, visual cue storyboard, Remotion/Web scene composition, and verified multi-format MP4 export.",
+    "risk": "safe",
+    "source": "cliefnotes",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "tags": [
+      "video-as-code",
+      "remotion",
+      "explainer-videos",
+      "animation-pipeline",
+      "tts",
+      "transcript-sync",
+      "motion-design",
+      "storytelling"
+    ]
+  },
+  {
     "id": "ai-code-generation-guardrails",
     "path": "skills/ai-code-generation-guardrails",
     "category": "engineering",
@@ -10720,6 +10753,41 @@
     "source_type": "self"
   },
   {
+    "id": "better-icons",
+    "path": "skills/better-icons",
+    "category": "frontend",
+    "name": "better-icons",
+    "description": "Universal agent-agnostic icon search and retrieval for 200,000+ vector icons across 150+ libraries with CLI and MCP server support.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-07",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "better-auth/better-icons",
+    "license": "MIT",
+    "tags": [
+      "frontend",
+      "icons",
+      "svg",
+      "ui",
+      "design-systems",
+      "mcp",
+      "cli",
+      "multi-framework"
+    ]
+  },
+  {
     "id": "bevy-ecs-expert",
     "path": "skills/bevy-ecs-expert",
     "category": "game-development",
@@ -14293,15 +14361,17 @@
     "date_added": "2026-10-06",
     "plugin": {
       "targets": {
-        "codex": "supported",
-        "claude": "supported"
+        "codex": "blocked",
+        "claude": "blocked"
       },
       "setup": {
         "type": "none",
         "summary": "",
         "docs": null
       },
-      "reasons": []
+      "reasons": [
+        "escaped_local_reference"
+      ]
     },
     "source_type": "community",
     "source_repo": "zhuyansen/awesome-claude-video-skills",
@@ -17779,6 +17849,39 @@
       "notion",
       "sql",
       "develop"
+    ]
+  },
+  {
+    "id": "court",
+    "path": "skills/court",
+    "category": "productivity",
+    "name": "court",
+    "description": "Put an idea on trial: a prosecutor and a defense Claude argue, 12 juror sub-agents vote independently, and a judge reads the verdict and the changes that would flip it.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "alexyc9381/court-skill",
+    "license": "MIT",
+    "license_source": "https://github.com/alexyc9381/court-skill/blob/main/LICENSE",
+    "tags": [
+      "decision-making",
+      "critical-thinking",
+      "feedback",
+      "subagents",
+      "multi-agent"
     ]
   },
   {
@@ -21609,6 +21712,28 @@
     ]
   },
   {
+    "id": "diagnosing-superpowers",
+    "path": "skills/diagnosing-superpowers",
+    "category": "uncategorized",
+    "name": "diagnosing-superpowers",
+    "description": "Diagnose failed agent sessions to identify root causes for repeated work, ignored plans, performance regressions, high token costs, or unexpected tool behaviors from session transcripts.",
+    "risk": "safe",
+    "source": "https://github.com/obra/superpowers",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "diagram-design",
     "path": "skills/diagram-design",
     "category": "uncategorized",
@@ -23720,6 +23845,43 @@
       "proofreading",
       "grammar",
       "links"
+    ]
+  },
+  {
+    "id": "email-marketing-bible",
+    "path": "skills/email-marketing-bible",
+    "category": "marketing",
+    "name": "email-marketing-bible",
+    "description": "Data-backed email marketing for AI agents: automation flows, deliverability triage, copy de-slopping, AI email design, ESP control via MCP with send gates and compliance.",
+    "risk": "critical",
+    "source": "https://github.com/CosmoBlk/email-marketing-bible",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "CosmoBlk/email-marketing-bible",
+    "license": "MIT",
+    "license_source": "https://github.com/CosmoBlk/email-marketing-bible/blob/main/LICENSE",
+    "tags": [
+      "email-marketing",
+      "deliverability",
+      "copywriting",
+      "marketing-automation",
+      "email-design",
+      "ecommerce",
+      "saas",
+      "cold-email",
+      "mcp"
     ]
   },
   {
@@ -38081,6 +38243,45 @@
     }
   },
   {
+    "id": "linkdigest-social-link-reader",
+    "path": "skills/linkdigest-social-link-reader",
+    "category": "research",
+    "name": "linkdigest-social-link-reader",
+    "description": "Read one public Xiaohongshu, Douyin, TikTok, YouTube, X or WeChat article link into text an agent can use (transcript, image text, key points) via the LinkDigest API or MCP server.",
+    "risk": "safe",
+    "source": "https://github.com/jcaiagent7143-ui/linkdigest-mcp",
+    "date_added": "2026-10-07",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "jcaiagent7143-ui/linkdigest-mcp",
+    "license": "MIT",
+    "license_source": "https://github.com/jcaiagent7143-ui/linkdigest-mcp/blob/main/LICENSE",
+    "tags": [
+      "xiaohongshu",
+      "rednote",
+      "douyin",
+      "tiktok",
+      "youtube",
+      "wechat",
+      "transcript",
+      "ocr",
+      "mcp",
+      "api-integration",
+      "research"
+    ]
+  },
+  {
     "id": "linkedin-automation",
     "path": "skills/linkedin-automation",
     "category": "marketing",
@@ -39168,6 +39369,40 @@
     }
   },
   {
+    "id": "lognorm",
+    "path": "skills/lognorm",
+    "category": "seo",
+    "name": "lognorm",
+    "description": "Work a site's SEO and AI-visibility (GEO) backlog through the hosted LogNorm MCP server: audits, fixes, content, AI-answer tracking.",
+    "risk": "safe",
+    "source": "https://github.com/lognorm/lognorm-mcp/tree/main/skills/lognorm",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "lognorm/lognorm-mcp",
+    "license": "MIT",
+    "license_source": "https://github.com/lognorm/lognorm-mcp/blob/main/LICENSE",
+    "tags": [
+      "seo",
+      "geo",
+      "ai-visibility",
+      "mcp",
+      "content",
+      "growth"
+    ]
+  },
+  {
     "id": "logo-image-design",
     "path": "skills/logo-image-design",
     "category": "business",
@@ -40138,6 +40373,41 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "make-interfaces-feel-better",
+    "path": "skills/make-interfaces-feel-better",
+    "category": "frontend",
+    "name": "make-interfaces-feel-better",
+    "description": "Design engineering principles for making interfaces feel polished with animation, typography, shadows, border-radius, and micro-interaction details.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-07",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "jakubkrehel/make-interfaces-feel-better",
+    "license": "MIT",
+    "tags": [
+      "frontend",
+      "design",
+      "ui",
+      "animation",
+      "typography",
+      "surfaces",
+      "polish",
+      "micro-interactions"
+    ]
   },
   {
     "id": "makepad-2-0-animation",
@@ -55346,6 +55616,41 @@
     }
   },
   {
+    "id": "scarf-single-cell",
+    "path": "skills/scarf-single-cell",
+    "category": "science",
+    "name": "scarf-single-cell",
+    "description": "Analyze single-cell RNA-seq at million-cell scale with Scarf: out-of-core Zarr stores on disk or object storage, provenance-tracked artifacts, audited QC, clustering, markers and donor comparisons.",
+    "risk": "critical",
+    "source": "https://github.com/NygenAnalytics/scarf/tree/master/skills/scarf-single-cell",
+    "date_added": "2026-10-05",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "NygenAnalytics/scarf",
+    "license": "BSD-3-Clause",
+    "license_source": "https://github.com/NygenAnalytics/scarf/blob/master/LICENSE",
+    "tags": [
+      "single-cell",
+      "scrna-seq",
+      "bioinformatics",
+      "genomics",
+      "zarr",
+      "out-of-core",
+      "python"
+    ]
+  },
+  {
     "id": "schema-markup",
     "path": "skills/schema-markup",
     "category": "marketing",
@@ -57520,6 +57825,40 @@
     }
   },
   {
+    "id": "shark",
+    "path": "skills/shark",
+    "category": "business",
+    "name": "shark",
+    "description": "Pitch a business idea to a Shark Tank-style panel of Claude sub-agent investors who grill it, hear a founder agent answer, and each go IN or OUT with a practice offer.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-03",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "alexyc9381/shark-skill",
+    "license": "MIT",
+    "license_source": "https://github.com/alexyc9381/shark-skill/blob/main/LICENSE",
+    "tags": [
+      "business",
+      "startup",
+      "pitch",
+      "investors",
+      "subagents",
+      "feedback"
+    ]
+  },
+  {
     "id": "sharp-coder",
     "path": "skills/sharp-coder",
     "category": "code-quality",
@@ -57611,6 +57950,38 @@
     "source_repo": "addyosmani/agent-skills",
     "license": "MIT",
     "license_source": "https://github.com/addyosmani/agent-skills/blob/main/LICENSE"
+  },
+  {
+    "id": "shipvela-publish",
+    "path": "skills/shipvela-publish",
+    "category": "development",
+    "name": "shipvela-publish",
+    "description": "Publish an explicitly selected website through the user's connected Shipvela MCP account, track the exact deployment, and return its live HTTPS URL after success.",
+    "risk": "critical",
+    "source": "https://github.com/stefanautomateed/shipvela-codex/tree/main/skills/shipvela-publish",
+    "date_added": "2026-10-06",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "stefanautomateed/shipvela-codex",
+    "license": "MIT",
+    "license_source": "https://github.com/stefanautomateed/shipvela-codex/blob/main/LICENSE",
+    "tags": [
+      "deployment",
+      "hosting",
+      "mcp",
+      "static-websites"
+    ]
   },
   {
     "id": "shodan-reconnaissance",
