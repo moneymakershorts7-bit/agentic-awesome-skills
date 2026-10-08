@@ -7,6 +7,185 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [19.1.0] - 2026-10-08 - "Publishing, Data And QA Skills"
+
+> Adds **7** reviewed skills for website publishing, paid data APIs, social-link reading, email marketing, Telegram ad buying, motion references and local web-page QA. Ships **2,665** skills.
+
+A catalog release for Claude Code, Cursor, Codex CLI, Gemini CLI, and related AI coding assistants. It includes the protected maintainer batch merged after `19.0.1`, plus a web-app dependency upgrade.
+
+### Start here
+
+- Install: `npx agentic-awesome-skills@19.1.0`
+- [Choose your tool](README.md#choose-your-tool)
+- [Best skills by tool](README.md#best-skills-by-tool)
+- [Bundles](docs/users/bundles.md)
+- [Workflows](docs/users/workflows.md)
+
+### Added
+
+- **shipvela-publish** - publish an explicitly selected website through a connected Shipvela MCP account: stage only public build files, hand manifest approval to the owner, track the exact deployment and return the live URL. `risk: critical`, MIT, community source [stefanautomateed/shipvela-codex](https://github.com/stefanautomateed/shipvela-codex).
+- **looot** - search, price and run 2,500+ data API endpoints (work emails, company search, SERP, web pages) from one prepaid balance through the looot MCP server. `risk: critical`, MIT, official source [loootai/looot-skills](https://github.com/loootai/looot-skills).
+- **linkdigest-social-link-reader** - read a public Xiaohongshu, Douyin, TikTok, YouTube, X or WeChat link into text (caption, transcript, image text, key points) through the LinkDigest REST API or MCP server. `risk: safe`, MIT, official source [jcaiagent7143-ui/linkdigest-mcp](https://github.com/jcaiagent7143-ui/linkdigest-mcp).
+- **email-marketing-bible** - data-backed email marketing for agents: automation flows, deliverability triage, copy de-slopping and design direction, with ESP control behind explicit send-approval gates and compliance coverage. `risk: critical`, MIT, official source [CosmoBlk/email-marketing-bible](https://github.com/CosmoBlk/email-marketing-bible).
+- **telegram-channel-ads** - vet and price Telegram channel posts on real views instead of subscriber count, with reach benchmarks by size, topic and language, ad-network checks and CPM math. `risk: safe`, self-authored source.
+- **agent-reels** - find credited animation and video references on 1human and consult a private library shared by a human and their creative agent; publishing and social actions require prior owner authorization. `risk: critical`, MIT, community source [mdagnolops/1human-reels](https://github.com/mdagnolops/1human-reels).
+- **assay** - deterministic local QA for a web page you just wrote: opens it in a real browser, drives every control and reports where the page contradicts itself, with no API key and no network. `risk: safe`, MIT, community source [awss1i/assay](https://github.com/awss1i/assay).
+
+### Changed
+
+- **apps/web-app** - upgrade `react-router` to `8.4.0`. The web-app audit reports 0 vulnerabilities and all 268 web-app tests pass.
+- **Dependencies** - refresh bundled Node example dependency manifests under `skills/loki-mode`, `skills/telegram` and `skills/whatsapp-cloud-api`.
+
+### Credits
+
+- **@stefanautomateed** for `shipvela-publish`
+- **@walidboulanouar** for `looot`
+- **@jcaiagent7143-ui** for `linkdigest-social-link-reader`
+- **@CosmoBlk** for `email-marketing-bible`
+- **@Courier-Britva** for `telegram-channel-ads`
+- **@mdagnolops** for `agent-reels`
+- **@awss1i** for `assay`
+
+## [19.0.1] - 2026-10-06 - "Pages Surface Repair"
+
+> Patch release. Clears two web-app dependency advisories that blocked the `v19.0.0` release-tag Pages deployment. No catalog or skill changes.
+
+### Fixed
+
+- **apps/web-app** - pin `proxy-addr` to `^2.0.8` (critical: IP spoofing via IPv4-mapped IPv6 trust subnet, GHSA-jqcg-44mw-7w3h) and `source-map-js` to `^1.2.2` (high: event-loop denial of service via indexed source-map section offsets, GHSA-68fv-2mgg-jv7q). `npm --prefix apps/web-app audit --audit-level=high` now reports 0 vulnerabilities, and 268 web-app tests pass.
+
+## [19.0.0] - 2026-10-06 - "Security And Community Signals"
+
+> Adds **6** reviewed skills for security triage, single-cell analysis, SEO/AI visibility, session handoff, and structured decision-making. Advances the fourth bundled dependency to the current patch line. Ships **2,658** skills.
+
+A catalog release for Claude Code, Cursor, Codex CLI, Gemini CLI, and related AI coding assistants. It includes the complete protected maintainer batch merged after `18.15.0`, with existing installation interfaces preserved.
+
+### Start here
+
+- Install: `npx agentic-awesome-skills@19.0.0`
+- [Choose your tool](README.md#choose-your-tool)
+- [Best skills by tool](README.md#best-skills-by-tool)
+- [Bundles](docs/users/bundles.md)
+- [Workflows](docs/users/workflows.md)
+
+### Added
+
+- **darkmoon-pentest (#1797)** - start, follow and triage authorized autonomous AI pentest runs on a self-hosted Darkmoon Pro instance through its MCP server. Authorization-first workflow with a mandatory confirmation gate before any probing action. `risk: offensive`, GPL-3.0-only, from [ASCIT31/darkmoon-mcp-server](https://github.com/ASCIT31/darkmoon-mcp-server).
+- **scarf-single-cell (#1798)** - analyze single-cell RNA-seq at million-cell scale with Scarf: out-of-core Zarr stores, provenance-tracked artifacts, audited QC, clustering, markers and donor comparisons. `risk: critical`, BSD-3-Clause, official source [NygenAnalytics/scarf](https://github.com/NygenAnalytics/scarf).
+- **session-handoff (#1796)** - produce a structured handoff artifact (goal state, decisions, files touched, open loops, next action) when a session ends or context approaches capacity. `risk: safe`, MIT, from [alapha888/session-handoff-kit](https://github.com/alapha888/session-handoff-kit).
+- **lognorm (#1774, landed in #1810)** - work a site's SEO and AI-visibility (GEO) backlog through the hosted LogNorm MCP server: audits, fixes, content and AI-answer tracking. `risk: safe`, MIT, official source [lognorm/lognorm-mcp](https://github.com/lognorm/lognorm-mcp).
+- **shark** and **court (#1777, landed in #1812)** - two structured-decision skills: a Shark Tank-style panel of Claude sub-agent investors that each go IN or OUT, and a courtroom where a prosecutor and defense argue and a jury votes. `risk: safe`, MIT, from [alexyc9381/shark-skill](https://github.com/alexyc9381/shark-skill) and [alexyc9381/court-skill](https://github.com/alexyc9381/court-skill).
+
+### Changed
+
+- **yaml 2.9.1 (#1808)** - bump the published installer's bundled `yaml` runtime dependency to 2.9.1 and align the package-contents regression.
+
+### Fixed
+
+- **express 4.22.3 (#1799, #1803, #1804)** - bump the bundled Express boilerplate in `loki-mode`, `telegram` and `whatsapp-cloud-api` to the current patch line.
+- **parallel-search-mcp (#1802)** - document the optional `User-Agent` header so Parallel can attribute traffic set up by this skill; it does not identify users or count installs.
+
+### Documentation and community
+
+- Credits for the new external skill sources are recorded in the README.
+- Thanks to @georgeatparallel, @Gautam8387, @MBK-fr, @alapha888, @dskuldeep, @alexyc9381 and the LogNorm/ASC-IT teams for the contributions in this batch.
+
+## [18.15.0] - 2026-10-05 - "Agent Publishing, Coverage Gaps, and Social Writing"
+
+> Adds **12** reviewed skills for agent-page publishing, coverage-driven test writing, macro/FX data, quantitative research, and Twitter/X and LinkedIn writing. Ships **2,652** skills.
+
+A catalog release for Claude Code, Cursor, Codex CLI, Gemini CLI, and related AI coding assistants. It includes the complete protected maintainer batch merged after `18.14.0`, with existing installation interfaces preserved.
+
+### Start here
+
+- Install: `npx agentic-awesome-skills@18.15.0`
+- [Choose your tool](README.md#choose-your-tool)
+- [Best skills by tool](README.md#best-skills-by-tool)
+- [Bundles](docs/users/bundles.md)
+- [Workflows](docs/users/workflows.md)
+
+### Added
+
+- **byagent (#1788)** - publish agent-written Markdown or HTML as a shareable link with the `byagent` CLI, read readers' line comments back, edit, republish to the same link and resolve them. `risk: critical`, MIT, from [anup-a/agent-artifacts](https://github.com/anup-a/agent-artifacts).
+- **supercov (#1787)** - measure line, branch and MC/DC coverage of a project's existing tests with the `supercov` CLI, then write small, focused tests for the code no test reaches. `risk: critical`, MIT, from [supercorp-ai/supercov](https://github.com/supercorp-ai/supercov).
+- **fxmacrodata (#1786)** - query FXMacroData for official-source macro indicators, release calendars, central-bank policy rates, FX rates and CFTC positioning across 22 currencies. `risk: safe`, official-source REST data.
+- **axonx (#1784)** - develop AxonX research plugins and operate quantitative research tasks through CLI or MCP, inspecting execution status, logs, artifacts and lineage. `risk: critical`, Apache-2.0, from [FlowLLM-AI/AxonX](https://github.com/FlowLLM-AI/AxonX).
+- **write-in-my-voice**, **turn-this-into-a-thread**, **same-idea-both-platforms**, **repurpose-into-a-post**, **define-my-content-pillars**, **why-did-this-post-flop**, **get-seen-in-replies**, **draft-my-comments (#1783)** - eight Twitter/X and LinkedIn writing skills: draft in your own voice, write threads, cross-post, repurpose long content, pick content pillars, diagnose a post that underperformed, and write replies and comments worth reading. An optional paid VoiceMoat connector adds voice scoring and preview-gated publishing. MIT, from [prateeks367/voicemoat-skills](https://github.com/prateeks367/voicemoat-skills).
+
+### Fixed
+
+- **jobs-to-be-done-analyst**, **onboarding-psychologist (#1785)** - replace the placeholder descriptions with real trigger guidance, within the description length limit.
+
+### Documentation and community
+
+- Credits for the new external skill sources are recorded in the README.
+- Thanks to the contributors to #1783, #1784, #1785, #1786, #1787, and #1788.
+
+### Validation scope
+
+Exact-head maintainer review for changed skill content, protected source PRs, repository validation and tests, reference validation, docs security, protected CI and CodeQL, dependency review, canonical synchronization, release preflight, npm publication, and release provenance verification.
+
+## [18.14.0] - 2026-10-04 - "Container Deploys, Browser-Extension Launch, and a Cleaner Web Build"
+
+> Adds **2** reviewed skills for container deployment and end-to-end browser-extension delivery, and replaces a vulnerable web-app build dependency. Ships **2,640** skills.
+
+A catalog release for Claude Code, Cursor, Codex CLI, Gemini CLI, and related AI coding assistants. It includes the complete protected maintainer batch merged after `18.13.0`, with existing installation interfaces preserved.
+
+### Start here
+
+- Install: `npx agentic-awesome-skills@18.14.0`
+- [Choose your tool](README.md#choose-your-tool)
+- [Best skills by tool](README.md#best-skills-by-tool)
+- [Bundles](docs/users/bundles.md)
+- [Workflows](docs/users/workflows.md)
+
+### Added
+
+- **cloudish (#1776)** - deploy a Dockerfile, source folder, or existing image to Cloudish as a running container at a live URL, built server-side with no local Docker, with confirmation before spending credits. `risk: critical`, MIT, from [cloudishai/skills](https://github.com/cloudishai/skills).
+- **browser-extension-launch (#1768)** - turn a plain-language idea into a shipped Chrome Manifest V3 extension: product loop, implementation, diagnosis, real-browser acceptance, packaging, store materials, and submission recovery. `risk: critical`, MIT, from [xiehuan123/browser-extension-launch](https://github.com/xiehuan123/browser-extension-launch).
+
+### Changed
+
+- **Web-app build dependency (#1775)** - removes the vulnerable `vite-plugin-singlefile` (transitively pulling `braces`, which is unpatched) and inlines the Workbench build with a small dependency-free script plus a regression test. The web-app audit is clean again.
+
+### Documentation and community
+
+- Credits for the new external skill sources are recorded in the README.
+- Thanks to the contributors to #1768, #1775, and #1776.
+
+### Validation scope
+
+Exact-head maintainer review for changed skill content, protected source PRs, repository validation and tests, reference validation, docs security, protected CI and CodeQL, dependency review, canonical synchronization, release preflight, npm publication, and release provenance verification.
+
+## [18.13.0] - 2026-10-03 - "Etsy Market Intelligence and Real Phone-Call Automation"
+
+> Adds **3** reviewed skills for Etsy marketplace intelligence and real outbound phone-call automation - live Apify Actor search rows, shop sales-velocity panels, and the official PlaceCall voice API workflow. Ships **2,638** skills.
+
+A catalog release for Claude Code, Cursor, Codex CLI, Gemini CLI, and related AI coding assistants. It includes the complete protected maintainer batch merged after `18.12.0`, with existing installation interfaces preserved.
+
+### Start here
+
+- Install: `npx agentic-awesome-skills@18.13.0`
+- [Choose your tool](README.md#choose-your-tool)
+- [Best skills by tool](README.md#best-skills-by-tool)
+- [Bundles](docs/users/bundles.md)
+- [Workflows](docs/users/workflows.md)
+
+### Added
+
+- **etsy-search-listings (#1767)** - fetch live Etsy search listing rows for a keyword, market phrase, or category through the Apify Actor `publicrecords/etsy-search-scraper`, with rank, price, badge, and shop fields for marketplace research. `risk: critical`, paid API, requires an Apify token.
+- **etsy-shop-sales-history (#1767)** - read Etsy shop sales counters, deltas, and breakout flags from the Apify Actor `publicrecords/etsy-shop-velocity` panel snapshot for growth comparisons across a shop watch list. `risk: critical`, paid API, requires an Apify token.
+- **placecall (#1765)** - drive the official PlaceCall API to place real outbound calls to US businesses, follow the live event stream, answer mid-call questions, and read the structured outcome and transcript. `risk: critical`, MIT, from [voygr-tech/placecall](https://github.com/voygr-tech/placecall).
+
+### Documentation and community
+
+- Credits for the new external PlaceCall source are recorded in the README under **Official Sources**.
+- Thanks to the contributors to #1765 and #1767.
+
+### Validation scope
+
+Exact-head maintainer review for changed skill content, protected source PRs, repository validation and tests, reference validation, docs security, protected CI and CodeQL, dependency review, canonical synchronization, release preflight, npm publication, and release provenance verification.
+
 ## [18.12.0] - 2026-10-02 - "Cline Orchestration, Web3 Engineering, and Safer Release Pipelines"
 
 > Adds **13** reviewed skills for Cline CLI orchestration, Web3 and DeFi engineering, AI agent operations, and secure publishing - tightens reviewed fork bundle handling and removes an obsolete Syria block from a WAF example. Ships **2,632** skills.

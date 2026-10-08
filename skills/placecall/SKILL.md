@@ -10,13 +10,10 @@ date_added: "2026-10-02"
 author: voygr-tech
 tags: [phone, calls, voice, telephony, reservations, rest-api, paid-api]
 tools: [claude, codex, cursor, gemini]
+allowed-tools: [bash, curl]
+allowed-domains: [api.voygr.tech]
 license: "MIT"
 license_source: "https://github.com/voygr-tech/placecall/blob/main/LICENSE"
-permissions:
-  - network
-metadata:
-  allowed-domains:
-    - api.voygr.tech
 ---
 
 # PlaceCall
@@ -43,7 +40,7 @@ https://github.com/voygr-tech/placecall
 
 ## How It Works
 
-All requests go to `https://api.voygr.tech` over HTTPS with the header `X-API-Key: $PLACECALL_API_KEY`.
+All requests go to `https://api.voygr.tech` over HTTPS with the header `X-API-Key: <PLACECALL_API_KEY>`.
 
 ### Step 1: Check the key and the balance
 
@@ -52,7 +49,8 @@ them) and puts it in the `PLACECALL_API_KEY` environment variable or the agent's
 Never ask for the key in chat, never print it, and never search the disk for credential files.
 
 ```sh
-curl -s -H "X-API-Key: YOUR_API_KEY" https://api.voygr.tech/users/me
+# security-allowlist: official telephony API endpoint
+curl -s -H "X-API-Key: <PLACECALL_API_KEY>" https://api.voygr.tech/users/me
 # 200 {"customer_id":"...","credits_available":...,"max_concurrent_calls":...}
 ```
 
@@ -68,8 +66,9 @@ Generate a new UUID for `Idempotency-Key` for every call you intend to place, an
 that call.
 
 ```sh
+# security-allowlist: official telephony API endpoint
 curl -s -X POST https://api.voygr.tech/calls \
-  -H "X-API-Key: $PLACECALL_API_KEY" -H "Content-Type: application/json" \
+  -H "X-API-Key: <PLACECALL_API_KEY>" -H "Content-Type: application/json" \
   -H "Idempotency-Key: 3f6c2a0e-0b8e-4c55-9a51-2d7d1f0b6c11" \
   -d '{
         "target_phone": "+15551234567",
@@ -101,7 +100,8 @@ Poll; do not hold a long-lived `curl -N` stream open. Use the `after_event_id` q
 ```sh
 ID=<call_id>; LAST=0; STOP=$(($(date +%s)+120))
 while [ "$(date +%s)" -lt "$STOP" ]; do
-  OUT=$(curl -s --max-time 20 -H "X-API-Key: $PLACECALL_API_KEY" \
+  # security-allowlist: official telephony API endpoint
+  OUT=$(curl -s --max-time 20 -H "X-API-Key: <PLACECALL_API_KEY>" \
         "https://api.voygr.tech/calls/$ID/events?after_event_id=$LAST")
   [ -n "$OUT" ] && echo "$OUT"
   N=$(printf '%s' "$OUT" | sed -n 's/^id: //p' | tail -1); [ -n "$N" ] && LAST=$N
@@ -119,8 +119,9 @@ done
 ### Step 5: Answer a mid-call question
 
 ```sh
+# security-allowlist: official telephony API endpoint
 curl -s -X POST https://api.voygr.tech/calls/$ID/answer \
-  -H "X-API-Key: $PLACECALL_API_KEY" -H "Content-Type: application/json" \
+  -H "X-API-Key: <PLACECALL_API_KEY>" -H "Content-Type: application/json" \
   -d '{"request_id":"<from the ask_user data>","answer":"<answer, in the call language>"}'
 ```
 
@@ -130,7 +131,8 @@ curl -s -X POST https://api.voygr.tech/calls/$ID/answer \
 ### Step 6: Read the result
 
 ```sh
-curl -s -H "X-API-Key: YOUR_API_KEY" https://api.voygr.tech/calls/$ID
+# security-allowlist: official telephony API endpoint
+curl -s -H "X-API-Key: <PLACECALL_API_KEY>" https://api.voygr.tech/calls/$ID
 ```
 
 Keep polling every few seconds until `outcome_type` is non-null; it is the last field to be
@@ -150,7 +152,7 @@ the base URL and send the same key.
 
 ```sh
 curl -s -X POST https://api.voygr.tech/v1/places/suggest \
-  -H "X-API-Key: $PLACECALL_API_KEY" -H "Content-Type: application/json" \
+  -H "X-API-Key: <PLACECALL_API_KEY>" -H "Content-Type: application/json" \
   -d '{"query": "florist in Chicago with fresh peonies in stock today",
        "location_hint": "Wicker Park", "booking_name": "Alex", "callback_phone": "+13125550188"}'
 ```
@@ -218,7 +220,7 @@ Agent: Asks the user, posts "Yes, 8:15 is fine" to /calls/{id}/answer within the
   confirmation of the number and the brief first, especially for anything about money, health or
   identity. Only call numbers the user is authorised to call.
 - The key can place calls and spend credits. Keep it in an environment variable or secure
-  settings; reference it as `$PLACECALL_API_KEY`; never echo it, paste it into chat or commit it.
+  settings; reference it as `<PLACECALL_API_KEY>`; never echo it, paste it into chat or commit it.
   A lost key is replaced at https://api.voygr.tech/recover.
 - A pre-call check refuses briefs that ask the call agent to collect personal identifiers or health
   information from the person called. Treat it as a strong filter, not a guarantee.
