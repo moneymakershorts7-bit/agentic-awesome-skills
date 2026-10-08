@@ -18,8 +18,7 @@ date_added: "2026-06-19"
 
 **Related skills:** `mailtrap-sending-emails` (live send paths).
 
-## When to use
-
+## When to Use
 - Programmatic contact management (create, update, [bulk import](https://docs.mailtrap.io/developers/promotional/contacts/bulk-import.md))
 - Sync with CRMs or data warehouses
 - Contact list cleanup and CSV import

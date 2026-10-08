@@ -12,7 +12,6 @@ license_source: https://github.com/huggingface/skills/blob/main/LICENSE
 
 # Hugging Face Spaces
 ## When to Use
-
 Use this skill when you need build, deploy, and maintain applications on Hugging Face Spaces — Gradio / Docker / Static SDKs, ZeroGPU and dedicated hardware, model loading, debugging, buckets, inference providers, community grants. Use whenever the user asks to create or host an app on Hugging Face, port code onto...
 
 

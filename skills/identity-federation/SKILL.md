@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # Identity Federation (SAML / OIDC / OAuth)
 ## When to Use
-
 - Testing SSO/federation flows within an approved scope.
 - Hunting signature-validation or audience-confusion flaws.
 

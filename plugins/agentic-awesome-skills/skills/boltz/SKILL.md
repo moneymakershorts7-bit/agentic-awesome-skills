@@ -28,7 +28,6 @@ date_added: "2026-10-03"
 # Boltz-2
 
 ## When to Use
-
 Use this skill whenever the task matches the workflows and capabilities described above.
 
 

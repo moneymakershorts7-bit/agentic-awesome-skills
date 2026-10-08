@@ -22,7 +22,6 @@ metadata:
 Develop and maintain business continuity capabilities including Business Impact Analysis, communication plans, recovery procedures, and testing schedules for organizational resilience.
 
 ## When to Use
-
 - Developing a formal Business Continuity Plan (BCP) for the organization
 - Conducting a Business Impact Analysis (BIA) to prioritize recovery efforts
 - Establishing communication plans for crisis scenarios

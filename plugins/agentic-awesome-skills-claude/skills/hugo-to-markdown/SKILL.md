@@ -12,7 +12,6 @@ license_source: https://github.com/chaunsin/agent-skills/blob/master/LICENSE
 
 # Hugo To Markdown
 ## When to Use
-
 Use this skill when you need convert Hugo documentation sites and Hugo-managed content into standard Markdown. Use when Agent needs to inspect a local Hugo repository, read hugo.toml or config files, content/, archetypes/, layouts/_shortcodes/, layouts/_markup/, and related docs content, then produce Markdown...
 
 

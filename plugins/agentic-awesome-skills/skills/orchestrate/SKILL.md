@@ -20,7 +20,6 @@ Coordinate substantial work across focused subagents while remaining available
 to the user and retaining responsibility for the integrated result.
 
 ## When to Use
-
 - Use when a task has multiple independent research, review, or implementation lanes.
 - Use when parallel work will materially reduce elapsed time or improve coverage.
 - Use when a coordinator must synthesize several bounded outputs into one verified result.

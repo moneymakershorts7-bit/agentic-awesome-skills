@@ -12,7 +12,6 @@ license_source: https://github.com/ChrisWiles/claude-code-showcase/blob/main/LIC
 
 # Systematic Debugging
 ## When to Use
-
 Use this skill when you need four-phase debugging methodology with root cause analysis. Use when investigating bugs, fixing test failures, or troubleshooting unexpected behavior. Emphasizes NO FIXES WITHOUT ROOT CAUSE FIRST.
 
 

@@ -22,7 +22,6 @@ metadata:
 Deploy, manage, and scale Compute Engine virtual machines on Google Cloud Platform.
 
 ## When to Use
-
 - Deploying web servers, application backends, or batch-processing workloads on GCP
 - Running workloads that need full OS-level control (unlike Cloud Run or App Engine)
 - Creating managed instance groups for auto-healing and auto-scaling behind a load balancer

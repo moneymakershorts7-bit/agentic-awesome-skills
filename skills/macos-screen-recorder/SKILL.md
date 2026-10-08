@@ -31,7 +31,6 @@ plugin:
     docs: SKILL.md
 ---
 ## When to Use
-
 Use when you need to script a screen recording WITH system sound on macOS from the CLI (demos, captures, voice-demo recording) — the case QuickTime and `screencapture -v` can't cover without a virtual audio device.
 
 _Source: [connerkward/macos-screen-recorder-system-audio](https://github.com/connerkward/macos-screen-recorder-system-audio) (MIT)._

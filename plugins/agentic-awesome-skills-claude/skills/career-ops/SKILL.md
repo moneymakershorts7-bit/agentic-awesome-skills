@@ -168,7 +168,6 @@ Or paste a JD directly to run the full pipeline.
 Docs-only bundle: do not read `modes/*.md` from disk. Follow the routing table and mode summaries in this skill using general agent capabilities.
 
 ## When to Use
-
 - The user pastes a job URL or description, asks to scan portals, tailor a CV, track applications, prep for interviews, or run another career-ops mode.
 
 ## Limitations

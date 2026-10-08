@@ -29,7 +29,6 @@ tools:
 # Competitor Analysis
 
 ## When to Use
-
 Use when the user needs structured competitor research with Browserbase discovery, enrichment lanes, screenshots, comparison matrices, and a final HTML report.
 
 

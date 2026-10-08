@@ -413,7 +413,6 @@ checkov -d ./terraform \
 - [Best Practices](references/details.md)
 
 ## When to Use
-
 - Enforcing security and compliance policies on infrastructure-as-code changes
 - Preventing misconfigured Kubernetes workloads from deploying
 - Automating guardrails in CI/CD pipelines for Terraform, CloudFormation, or Helm

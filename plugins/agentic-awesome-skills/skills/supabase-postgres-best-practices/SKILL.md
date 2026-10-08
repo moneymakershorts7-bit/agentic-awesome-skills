@@ -12,14 +12,12 @@ license_source: https://github.com/supabase/agent-skills/blob/main/LICENSE
 
 # Supabase Postgres Best Practices
 ## When to Use
-
 Use this skill when you need postgres performance optimization and best practices from Supabase. Use this skill when writing, reviewing, or optimizing Postgres queries, schema designs, or database configurations.
 
 
 Comprehensive performance optimization guide for Postgres, maintained by Supabase. Contains rules across 8 categories, prioritized by impact to guide automated query optimization and schema design.
 
-## When to Apply
-
+## When to Use
 Reference these guidelines when:
 - Writing SQL queries or designing schemas
 - Implementing indexes or query optimization

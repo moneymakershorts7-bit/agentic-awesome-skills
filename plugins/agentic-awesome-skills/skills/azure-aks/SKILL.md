@@ -22,7 +22,6 @@ metadata:
 Deploy and manage production-grade Kubernetes clusters on Azure with AKS. Covers cluster creation, node pool management, networking, ingress controllers, monitoring, security, and Terraform-based provisioning.
 
 ## When to Use
-
 - You need managed Kubernetes without maintaining control plane infrastructure.
 - Your workloads require container orchestration with auto-scaling.
 - You need tight integration with Azure AD, Key Vault, and Container Registry.

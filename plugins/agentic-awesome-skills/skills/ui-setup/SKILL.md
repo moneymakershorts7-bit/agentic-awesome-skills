@@ -12,7 +12,6 @@ license_source: https://github.com/bitjaru/styleseed/blob/main/LICENSE
 
 # Design System Setup Wizard
 ## When to Use
-
 Use this skill when you need interactive setup wizard — guides you step-by-step to configure the design system for your project.
 
 

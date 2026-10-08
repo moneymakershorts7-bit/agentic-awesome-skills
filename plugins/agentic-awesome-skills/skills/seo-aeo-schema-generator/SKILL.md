@@ -334,7 +334,6 @@ replaces all placeholders with the values from `page_data`.
   final step before publish checklist
 
 ## When to Use
-
 Use when adding or validating JSON-LD structured data for a page and the supplied visible content supports the selected schema type.
 
 ## Limitations

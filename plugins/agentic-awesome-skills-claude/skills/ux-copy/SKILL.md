@@ -12,7 +12,6 @@ license_source: https://github.com/bitjaru/styleseed/blob/main/LICENSE
 
 # UX Microcopy Generator
 ## When to Use
-
 Use this skill when you need generate UX microcopy (button labels, error messages, empty states, toasts) following a casual-but-polite voice and tone.
 
 

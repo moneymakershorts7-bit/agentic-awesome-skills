@@ -19,7 +19,6 @@ license_source: https://github.com/addyosmani/agent-skills/blob/main/LICENSE
 Simplify code by reducing complexity while preserving exact behavior. The goal is not fewer lines — it's code that is easier to read, understand, modify, and debug. Every simplification must pass a simple test: "Would a new team member understand this faster than the original?"
 
 ## When to Use
-
 - After a feature is working and tests pass, but the implementation feels heavier than it needs to be
 - During code review when readability or complexity issues are flagged
 - When you encounter deeply nested logic, long functions, or unclear names

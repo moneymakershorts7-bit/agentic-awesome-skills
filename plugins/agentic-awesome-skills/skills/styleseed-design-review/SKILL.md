@@ -22,8 +22,7 @@ fix list. It reviews and recommends; it never edits or deletes without you askin
 
 Full rule set (74 rules) and components: https://github.com/bitjaru/styleseed
 
-## When to use
-
+## When to Use
 - A React / Tailwind / HTML UI "looks off," generic, or unfinished and you can't say why.
 - You want a design score / pre-ship check.
 - The user asks to make UI "look professional / polished / designed, not AI-generated."

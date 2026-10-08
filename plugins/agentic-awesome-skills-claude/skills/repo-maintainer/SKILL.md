@@ -17,7 +17,6 @@ license_source: https://github.com/Wolfe-Jam/faf-skills/blob/main/LICENSE
 Audit repository health, apply authorized repairs narrowly, and finish through the repository's own protected workflow.
 
 ## When to Use
-
 Use when the user asks to maintain, clean, audit, harden, or prepare a repository for release. Use a more specific security, database, deployment, or release skill when that is the dominant task.
 
 ## Repository Policy Gate

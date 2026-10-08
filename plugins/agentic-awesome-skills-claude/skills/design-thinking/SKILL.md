@@ -13,7 +13,6 @@ author: Conner K Ward
 
 # Design thinking
 ## When to Use
-
 Use this skill when you need direction and intent for frontend design. Use with design when defining purpose, tone, domain, color world, and review bar; includes cross-domain lens from cinema, architecture, marketing, UX, automotive, industrial design.
 
 

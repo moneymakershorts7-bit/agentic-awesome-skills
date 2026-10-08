@@ -20,7 +20,6 @@ and show the welcome only after success. Never clone ECC into a temporary
 directory or copy plugin components by hand.
 
 ## When to Use
-
 Use this skill when installing, updating, reconfiguring, or repairing an ECC installation, changing hook profiles, or moving ECC between install scopes.
 
 For a human-operated terminal, the canonical entry points are `ecc setup` and

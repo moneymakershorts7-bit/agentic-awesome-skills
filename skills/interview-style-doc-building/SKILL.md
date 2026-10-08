@@ -19,7 +19,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 The user's preferred mode for creating durable strategic docs. AI does NOT propose content — AI asks one question, the user answers, AI patches the file, AI asks the next question. The file IS the conversation's output, updated incrementally.
 
 ## When to Use
-
 - Building a new SSOT file (life priorities, life vision, principles, frameworks, ranked lists).
 - Filling out a structured doc the user explicitly wants to author themselves.
 - Quarterly/annual reviews where the user's words go into the file.

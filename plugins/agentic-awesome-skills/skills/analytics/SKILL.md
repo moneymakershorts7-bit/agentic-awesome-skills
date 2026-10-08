@@ -12,7 +12,6 @@ license_source: https://github.com/coreyhaines31/marketingskills/blob/main/LICEN
 
 # Analytics Tracking
 ## When to Use
-
 Use this skill when you need when the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions "set up tracking," "GA4," "Google Analytics," "conversion tracking," "event tracking," "UTM parameters," "tag manager," "GTM," "analytics implementation," "tracking...
 
 

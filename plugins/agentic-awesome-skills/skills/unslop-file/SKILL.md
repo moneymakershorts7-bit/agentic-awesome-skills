@@ -12,7 +12,6 @@ license_source: https://github.com/MohamedAbdallah-14/unslop/blob/main/LICENSE
 
 # Unslop Humanize
 ## When to Use
-
 Use this skill when you need humanize natural-language memory files (CLAUDE.md, todos, preferences, docs) by removing AI-isms and adding burstiness while preserving every code block, URL, path, command, and heading exactly. Two modes: --deterministic (fast, regex-based, no API) and LLM (default, calls Claude for...
 
 

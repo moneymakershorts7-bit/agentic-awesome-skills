@@ -38,8 +38,7 @@ If you do not materialize the script, curl the same endpoints in
 [references/meteora-apis.md](references/meteora-apis.md).
 Always send a `User-Agent` — unauthenticated requests without one get `403`.
 
-## When to use
-
+## When to Use
 - User wants a ranked Meteora DLMM candidate list (trending or a token/pair).
 - User asks which bin step / pool to LP for a pair.
 - User wants a fee/TVL screen, not a single-pool deep dive.

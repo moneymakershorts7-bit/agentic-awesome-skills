@@ -16,7 +16,6 @@ date_added: "2026-06-05"
 Reads your opencode prompt history, finds repeated multi-step workflows, and recommends skill-worthy candidates. Saves you from having the same conversation twice.
 
 ## When to Use
-
 Use this skill when the user wants to mine opencode prompt history for repeated workflows, recurring unmet needs, or candidates for new reusable skills.
 
 ## How to invoke

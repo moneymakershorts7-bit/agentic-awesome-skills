@@ -272,7 +272,6 @@ outputs/
 | Structure | `seo-aeo-schema-generator` | Valid structured data for visible content |
 
 ## When to Use
-
 Use when coordinating a complete audit-first SEO/AEO growth engagement across a website or codebase, including authorized implementation, publishing, measurement setup, and optional monitoring.
 
 

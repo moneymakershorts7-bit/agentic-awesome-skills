@@ -24,7 +24,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 > Without that confirmation, remain read-only and provide defensive guidance only. Prefer a sandbox, disposable VM, or controlled lab.
 
 ## When to Use
-
 - A binary vulnerability is understood and needs a reliable exploit.
 - Porting a CTF-style exploit to an authorized real-world target.
 

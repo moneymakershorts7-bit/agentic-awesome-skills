@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # Wi-Fi / Wireless Security
 ## When to Use
-
 - Assessing wireless posture of networks you own or are cleared to test.
 - Studying handshake material captured on your own lab network.
 

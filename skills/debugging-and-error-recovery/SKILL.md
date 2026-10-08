@@ -17,7 +17,6 @@ license_source: https://github.com/addyosmani/agent-skills/blob/main/LICENSE
 Systematic debugging with structured triage. When something breaks, stop adding features, preserve evidence, and follow a structured process to find and fix the root cause. Guessing wastes time. The triage checklist works for test failures, build errors, runtime bugs, and production incidents.
 
 ## When to Use
-
 - Tests fail after a code change
 - The build breaks
 - Runtime behavior doesn't match expectations

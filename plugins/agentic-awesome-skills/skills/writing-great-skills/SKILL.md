@@ -22,7 +22,6 @@ tools:
 ---
 
 ## When to Use
-
 Use when this workflow matches the user request: Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.
 
 

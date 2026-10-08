@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # Browser Extension Reverse Engineering
 ## When to Use
-
 - Auditing a browser extension's behavior and permissions in an authorized review.
 - Investigating how an extension handles credentials or sensitive page data.
 

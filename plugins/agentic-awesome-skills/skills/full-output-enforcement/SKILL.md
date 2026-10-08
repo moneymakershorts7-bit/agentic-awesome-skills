@@ -14,7 +14,6 @@ tools: [claude, cursor, codex, antigravity]
 # Full-Output Enforcement
 
 ## When to Use
-
 - Use when the user explicitly asks for full files, complete implementations, exhaustive lists, or unabridged deliverables.
 - Use when placeholder code, skipped sections, TODO stubs, or descriptions in place of implementation would break the request.
 - Use when a long answer may need clean continuation chunks without losing completeness or structural integrity.

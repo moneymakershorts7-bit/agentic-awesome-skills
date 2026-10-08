@@ -294,7 +294,6 @@ Target: `https://intranet.corp.example` (clearly internal, behind VPN). Type-1 r
 - **`triage-validation`** — Most NTLM info-disclosure findings die at the 7-Question Gate on "is this exploitable" — pure topology disclosure is Low/Informational. Chain primitive: pull every NTLM-info finding through `triage-validation` BEFORE writing it up; only report if (a) leaks UPN format that accelerates spray, or (b) leaks production hostname mapping (`redteam-report-template` for the chain-narrative).
 
 ## When to Use
-
 - You have explicit, written authorization to assess the target in scope, and the task matches this skill's vulnerability class or technique within a bug-bounty or penetration-test engagement.
 - You need the recon, exploitation, or validation workflow described below — executed strictly inside the approved scope.
 

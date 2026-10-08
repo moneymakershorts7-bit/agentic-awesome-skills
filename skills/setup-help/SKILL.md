@@ -18,7 +18,6 @@ disable-model-invocation: true
 # setup-help
 
 ## When to Use
-
 - Use when the user asks to set up, install, configure, or get something working step by step.
 - Use when the setup has multiple steps and benefits from one-at-a-time guidance.
 

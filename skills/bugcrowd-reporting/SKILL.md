@@ -333,7 +333,6 @@ This skill is small and focused. It does NOT duplicate content from `report-writ
 - **`bb-methodology`** — When confirming engagement mode is bug-bounty (not red-team). Workflow primitive: PART 0 of `bb-methodology` answers "bug bounty?"; if yes AND the target is Bugcrowd, this skill becomes the reporting overlay.
 
 ## When to Use
-
 - You need this skill's process guidance (reporting format, evidence handling, detection notes, or scope triage) during an authorized engagement.
 - No active probing is involved in this step.
 

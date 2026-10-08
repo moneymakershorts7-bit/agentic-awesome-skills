@@ -22,7 +22,6 @@ metadata:
 Optimize Linux system performance through kernel parameter tuning, I/O scheduler selection, memory management, CPU governor configuration, and benchmarking. Covers methodology, real sysctl settings, and tool-based validation.
 
 ## When to Use
-
 - Server experiencing high latency, throughput bottlenecks, or resource exhaustion
 - Preparing infrastructure for high-traffic events or load tests
 - Tuning a database server, web server, or application host for production

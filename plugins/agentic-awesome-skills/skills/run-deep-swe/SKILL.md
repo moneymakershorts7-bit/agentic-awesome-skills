@@ -18,7 +18,6 @@ disable-model-invocation: true
 # Run DeepSWE via OpenRouter
 
 ## When to Use
-
 - Use when the user wants to benchmark a model on DeepSWE or mini-swe-agent tasks.
 - Use when you need a reproducible coding-agent evaluation plan and output artifacts.
 

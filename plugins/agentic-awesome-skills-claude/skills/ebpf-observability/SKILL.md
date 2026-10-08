@@ -408,7 +408,6 @@ sudo bpftrace -e 'kprobe:__alloc_pages { @pages[cgroup] = count(); }
 - [10. Troubleshooting](references/details.md)
 
 ## When to Use
-
 Use eBPF-based observability when you need:
 
 - **Deep performance debugging** -- trace kernel-level latency, syscall overhead, and scheduling delays that application-level metrics cannot reveal.

@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 The p5.js Web Editor environment enables rapid scaffolding, testing, live previewing, and asset bundling for creative coding sketches. It supports 2D canvas, WebGL rendering, custom GLSL shaders, sound synthesis (`p5.sound`), and generative drawing libraries.
 
 ## When to Use
-
 - Quickly scaffolding and previewing interactive p5.js sketches in a local dev server.
 - Creating self-contained HTML/JS generative art demos with audio and interactive controls.
 - Porting sketches to and from the official p5.js web editor format.
@@ -90,3 +89,8 @@ function windowResized() {
 ---
 
 For GLSL shader templates, sound synthesis, and instance-mode bundling, see [sketch-templates.md](references/sketch-templates.md).
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

@@ -17,7 +17,6 @@ tools: []
 You are reviewing generated or changed code before it ships. Apply the rules below as a guard pass after the first implementation pass — and once this skill is active, keep applying it to every later code change in the same session, re-running the self-check before delivery after each edit rather than reverting to unguarded output because the skill loaded earlier. If the user explicitly invokes this skill before writing code, use the same rules while writing and still run the self-check before delivery.
 
 ## When to Use
-
 Use this skill when reviewing generated or changed code before it ships. Activate it reactively after an agent writes, edits, or refactors production code — especially after a first implementation pass. Re-run the guard pass before delivery after each edit.
 
 ## Compatibility

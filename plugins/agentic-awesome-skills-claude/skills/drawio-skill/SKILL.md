@@ -13,7 +13,6 @@ date_added: "2026-10-03"
 # Draw.io Architecture Studio
 
 ## When to Use
-
 Use this skill whenever the task matches the workflows and capabilities described above.
 
 

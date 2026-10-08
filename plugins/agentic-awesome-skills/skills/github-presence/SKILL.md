@@ -12,7 +12,6 @@ license_source: https://github.com/jonathimer/devmarketing-skills/blob/main/LICE
 
 # GitHub Presence
 ## When to Use
-
 Use this skill when you need when the user wants to optimize their GitHub profile, README, or project discoverability. Trigger phrases include "GitHub README," "README optimization," "GitHub profile," "GitHub stars," "GitHub discoverability," "awesome lists," or "GitHub marketing.".
 
 

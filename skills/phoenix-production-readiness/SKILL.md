@@ -17,7 +17,6 @@ tools: [Bash, Read, Write]
 The plan is a claim. The commit history is a claim. Only the code, its wiring, its configuration and its behaviour under failure are evidence. This skill performs an adversarial verification pass to determine if a codebase is truly complete and shippable.
 
 ## When to Use
-
 - Evaluating whether a project, feature branch, or PR is ready to merge or deploy.
 - Verifying code against PRDs, implementation plans, and architecture specifications.
 - Pre-release and pre-launch security and quality audits.
@@ -169,3 +168,8 @@ weaken a failing test to make a fix pass — that converts a High into a Critica
 Keep issue IDs stable so a second run reports a delta: fixed, still open, newly introduced.
 Regressions introduced by remediation are reported in their own section, since they are the
 most likely thing a rushed second review misses.
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # 自动化操作 (Desktop & Browser Automation)
 ## When to Use
-
 - Analysis requires scripted interaction with a browser or desktop application.
 - Collecting reproducible UI evidence (screenshots, network traces) during an assessment.
 

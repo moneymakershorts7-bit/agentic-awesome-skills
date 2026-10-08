@@ -462,7 +462,6 @@ Same target. Feeding `Microsoft.SharePoint.WebPartPages.DataFormWebPart` (the ca
 - **`triage-validation`** — SharePoint farms generate a lot of "looks like a finding" hygiene noise (FormDigest issuance, version disclosure, extension blocklist quirks). Chain primitive: run every SP finding through the 7-Question Gate before reporting — most version-disclosure-only findings die at "is this actually exploitable on this farm" without a paired CVE PoC.
 
 ## When to Use
-
 - You have explicit, written authorization to assess the target in scope, and the task matches this skill's vulnerability class or technique within a bug-bounty or penetration-test engagement.
 - You need the recon, exploitation, or validation workflow described below — executed strictly inside the approved scope.
 

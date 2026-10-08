@@ -22,7 +22,6 @@ metadata:
 Deploy, operate, and scale managed Kubernetes clusters on Google Cloud Platform.
 
 ## When to Use
-
 - Running containerized microservices at scale with automatic scaling and healing
 - Workloads requiring fine-grained orchestration, service mesh, or custom scheduling
 - Teams already invested in Kubernetes tooling (Helm, Argo CD, Flux)

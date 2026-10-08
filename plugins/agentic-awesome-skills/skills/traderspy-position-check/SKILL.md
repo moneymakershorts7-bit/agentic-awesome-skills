@@ -23,7 +23,6 @@ facts with numbers. The decision — hold, trim, close, add — belongs to the p
 is.
 
 ## When to Use
-
 - Use when the user asks "how's my position", "am I in trouble", "how far am I from liquidation", "should I hold or close" or "review my trades", or asks what you think of their long or short.
 - Use when the user pastes or describes a position, for example "I'm long ETH from 2,400 at 10x".
 - The skill reports and explains. It never tells the user to close, add, hedge or move a stop, and it cannot trade.

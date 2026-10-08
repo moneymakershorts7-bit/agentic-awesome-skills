@@ -19,7 +19,6 @@ license_source: https://github.com/alapha888/agent-skills-en/blob/main/LICENSE
 One review answers a single question: "Will this code become someone else's problem within three months?" Walk the five axes in order; each axis gets pass / fail / N-A, and every failure must come with a concrete fix.
 
 ## When to Use
-
 - Use when the user asks to review code, a diff, or a pull request.
 - Use when a review should stay actionable and skip style nitpicks.
 

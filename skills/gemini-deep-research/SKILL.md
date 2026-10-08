@@ -17,7 +17,6 @@ license_source: "https://github.com/sanjay3290/ai-skills/blob/main/LICENSE"
 # Gemini Deep Research Skill
 
 ## When to Use
-
 - Use when a question needs autonomous multi-step research with cited sources (market analysis, literature reviews, competitive scans)
 - Use when you want to start a Gemini Deep Research run, poll its progress, and collect the final report
 - Use when a quick web search is not enough and a structured, source-grounded report is required

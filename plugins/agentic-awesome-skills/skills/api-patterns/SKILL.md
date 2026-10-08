@@ -82,7 +82,6 @@ Before designing an API:
 | `scripts/api_validator.py` | Local heuristic source scan (not schema validation) | `python3 skills/api-patterns/scripts/api_validator.py <project_path>` |
 
 ## When to Use
-
 Use when defining a new endpoint contract, selecting REST/GraphQL/tRPC for known consumers, or changing pagination, errors, authentication or compatibility behavior. For a bug inside an existing contract, preserve that contract unless the task authorizes a change.
 
 ## Inputs and procedure

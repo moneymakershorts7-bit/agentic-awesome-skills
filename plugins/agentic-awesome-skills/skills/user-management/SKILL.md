@@ -22,7 +22,6 @@ metadata:
 Manage users, groups, permissions, sudo access, PAM modules, and LDAP integration on Linux systems. Includes practical scripts for bulk user operations and access auditing.
 
 ## When to Use
-
 - Creating and managing local user accounts on Linux servers
 - Configuring sudo access with fine-grained privilege controls
 - Setting up group-based access control for teams

@@ -12,7 +12,6 @@ license_source: https://github.com/supabase/agent-skills/blob/main/LICENSE
 
 # Supabase
 ## When to Use
-
 Use when doing ANY task involving Supabase. Triggers: Supabase products (Database, Auth, Edge Functions, Realtime, Storage, Vectors, Cron, Queues); client libraries and SSR integrations (supabase-js, @supabase/ssr) in Next.js, React, SvelteKit, Astro, Remix; auth issues (login, logout,...
 
 

@@ -19,7 +19,6 @@ metadata:
 ---
 
 ## When to Use
-
 - Provisioning, hardening, or operating the infrastructure described in this skill within an authorized environment.
 
 
@@ -125,7 +124,6 @@ Minimum operational runbook:
 - zero-trust (`zero-trust`) - Private access and identity-aware network controls
 
 ## When to Use
-
 - You are provisioning, configuring, or troubleshooting the infrastructure component covered by this skill (servers, storage, databases, networking, cloud, local AI).
 
 ## Limitations

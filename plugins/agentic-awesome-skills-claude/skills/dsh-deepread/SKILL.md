@@ -23,7 +23,6 @@ DeepRead turns long-form material into an evidence-first reading report. It sepa
 The workflow supports five modes: quick orientation, deep argument analysis, knowledge mapping, Feynman explanation, and whole-book synthesis. Use the host agent's available file, PDF, OCR, and web-reading tools; never invent source content that was not successfully retrieved.
 
 ## When to Use
-
 - Use when a user asks to read, summarize, or critically analyze an article, book, PDF, web page, or document collection.
 - Use when important claims must remain connected to evidence and source locations.
 - Use when the user wants a mind map, concept map, comparison matrix, or structured study notes.

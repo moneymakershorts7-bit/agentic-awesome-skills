@@ -23,7 +23,6 @@ It gives the reader no reason to stop, because the value is all somewhere else.
 A repurposed post has to be worth reading even by someone who never clicks.
 
 ## When to Use
-
 - Use when someone wants to repurpose an article, newsletter, transcript, video or long document as a post.
 - Use when someone wants to share a link or promote a piece they published.
 - Use when someone has a recording or long draft and wants something postable from it.

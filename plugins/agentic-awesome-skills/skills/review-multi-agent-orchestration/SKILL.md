@@ -15,7 +15,6 @@ Review an orchestration as a distributed state machine, not as a list of agent r
 This skill reviews a design or implementation. Do not launch workers, mutate queues, cancel runs, change production configuration, or deploy fixes unless the user separately requests implementation.
 
 ## When to Use
-
 - Reviewing supervisor/worker, planner/executor, debate, swarm, graph, or hierarchical Agent designs.
 - Introducing parallel branches, subagents, MCP tools, durable execution, memory, checkpoints, or human-in-the-loop gates.
 - Diagnosing duplicate work, stale context, deadlocks, livelocks, branch races, runaway retries, or ambiguous ownership.

@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # 跨版本符号迁移 (Binary Diff)
 ## When to Use
-
 - A program updated and old annotations/symbols must be migrated to the new build.
 - Recovering changed functions between two versions of a stripped binary.
 

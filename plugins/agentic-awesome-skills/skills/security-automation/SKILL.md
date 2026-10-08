@@ -128,7 +128,6 @@ class S3Encryption(BaseResourceCheck):
 - policy-as-code (`policy-as-code`) - Policy enforcement
 
 ## When to Use
-
 - You need the security workflow covered by this skill (secrets, scanning, network defense, operations, AI security) inside an authorized scope.
 
 ## Limitations

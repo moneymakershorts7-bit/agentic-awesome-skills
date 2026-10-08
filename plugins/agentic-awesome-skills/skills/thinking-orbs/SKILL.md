@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 `thinking-orbs` provides lightweight, mathematical 2D canvas thought-orb indicators for AI agent user interfaces. It offers 9 distinct animated states representing cognitive agent actions (`working`, `searching`, `solving`, `listening`, `connecting`, `weaving`, `composing`, `breathing`, `shaping`) with zero WebGL overhead and automatic dark/light theme switching.
 
 ## When to Use
-
 - Visualizing agent thought processes, tool executions, reasoning loops, or network fetching in frontend apps.
 - Replacing generic spinners or skeletons in AI chat interfaces with semantic cognitive animations.
 - Building reactive AI status badges at chat-avatar scale (size 64) or inline-text scale (size 20).
@@ -61,3 +60,8 @@ export function AgentStatusBar({ agentState }: { agentState: 'searching' | 'work
 ---
 
 For React Native setup, vanilla Canvas loop implementation, and CSS theme tokens, see [states-and-modes.md](references/states-and-modes.md).
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # API Analyzer
 ## When to Use
-
 Use this skill when you need validates whether an API request is correct based on provided inputs (method, URL, headers, body, auth, query params). Use this skill whenever a user wants to check, validate, debug, or verify an API call — including when they paste a curl command, show endpoint details, ask "is this...
 
 

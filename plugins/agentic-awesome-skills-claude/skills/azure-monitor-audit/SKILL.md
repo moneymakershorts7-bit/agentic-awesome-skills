@@ -22,7 +22,6 @@ metadata:
 Audit Azure activity with Monitor, Activity Logs, and Log Analytics for compliance, security, and operational visibility.
 
 ## When to Use
-
 - Enabling centralized audit logging across Azure subscriptions
 - Meeting compliance requirements for SOC 2, HIPAA, PCI DSS, or ISO 27001
 - Investigating security incidents or unauthorized activity in Azure

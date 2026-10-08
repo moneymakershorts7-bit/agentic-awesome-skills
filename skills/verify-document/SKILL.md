@@ -18,8 +18,7 @@ license_source: "https://github.com/Sketchjar/stipple-agent-skills/blob/main/LIC
 
 Inspect a document for forensic authenticity signals — not a fraud verdict, but a risk band with the evidence behind it. Uses the Stipple API (free anonymous tier, no signup).
 
-## When to use
-
+## When to Use
 - Before onboarding a tenant, contractor, or employee from uploaded documents
 - Before paying an invoice that arrived by email
 - Before relying on a bank statement, payslip, or certificate in any workflow

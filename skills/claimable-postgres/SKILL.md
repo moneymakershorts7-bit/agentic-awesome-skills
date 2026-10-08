@@ -12,7 +12,6 @@ license_source: https://github.com/neondatabase/agent-skills/blob/main/LICENSE
 
 # Claimable Postgres
 ## When to Use
-
 Use this skill when you need provision instant temporary Postgres databases via Claimable Postgres by Neon (neon.new) with no login, signup, or credit card. Supports REST API, CLI, and SDK. Use when users ask for a quick Postgres environment, a throwaway DATABASE_URL for prototyping/tests, or "just give me a DB...
 
 

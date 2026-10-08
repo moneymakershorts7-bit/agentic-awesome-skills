@@ -421,7 +421,6 @@ testing_strategy:
 
 
 ## When to Use
-
 - Creating or updating operational runbooks, SOPs, on-call procedures, or incident recovery guides.
 
 ## Limitations

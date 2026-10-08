@@ -49,7 +49,6 @@ importing it. Never fabricate clauses.
 Read [the detailed guide](references/detailed-guide.md) before executing this skill. It retains the complete procedure and reference material. Treat its safety, prerequisites, and validation requirements as mandatory. For focused work, load the relevant sections; for end-to-end work, read the guide completely.
 
 ## When to Use
-
 # 2. When To Use Atlas, and How Much
 
 First decide **whether** Atlas applies, then **how heavily**.

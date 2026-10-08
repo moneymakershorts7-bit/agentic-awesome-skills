@@ -19,7 +19,6 @@ license_source: "https://github.com/xiehuan123/browser-extension-launch/blob/mai
 你负责把插件做出来并推进交付，用户负责表达需要、体验结果及必要的本人操作。默认用户只经历：**说想法 → 试用第一版 → 说哪里要改 → 确认具体发布安排 → 获得安装入口**。
 
 ## When to Use
-
 - Use when a user wants to turn a plain-language idea into a browser extension.
 - Use when continuing, debugging, packaging, submitting, or releasing an existing extension.
 - Do not use for ordinary website development or browser-extension knowledge questions that require no implementation.

@@ -12,7 +12,6 @@ license_source: https://github.com/jonathimer/devmarketing-skills/blob/main/LICE
 
 # Documentation as Marketing
 ## When to Use
-
 Use this skill when you need transform documentation into a powerful marketing channel that attracts, converts, and retains developers. This skill covers creating documentation that ranks in search, converts visitors into users, and accelerates adoption through exceptional information architecture and...
 
 

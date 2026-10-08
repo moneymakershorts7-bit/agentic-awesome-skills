@@ -12,7 +12,6 @@ license_source: https://github.com/jonathimer/devmarketing-skills/blob/main/LICE
 
 # DevRel Content
 ## When to Use
-
 Use this skill when you need when the user wants to create technical content for developers including blog posts, tutorials, and documentation. Trigger phrases include "write a blog post," "technical article," "developer content," "tutorial," "devrel content," "dev blog," "technical writing," or "content for...
 
 

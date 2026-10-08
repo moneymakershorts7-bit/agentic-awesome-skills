@@ -23,7 +23,6 @@ tools:
 # YouTube Notetaker
 
 ## When to Use
-
 Use when this workflow matches the user request: >
 
 

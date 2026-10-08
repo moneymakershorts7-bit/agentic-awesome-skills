@@ -28,7 +28,6 @@ tools:
 Read [the detailed guide](references/detailed-guide.md) before executing this skill. It retains the complete procedure and reference material. Treat its safety, prerequisites, and validation requirements as mandatory. For focused work, load the relevant sections; for end-to-end work, read the guide completely.
 
 ## When to Use
-
 Use when this workflow matches the user request: Use this skill for its documented workflow.
 
 

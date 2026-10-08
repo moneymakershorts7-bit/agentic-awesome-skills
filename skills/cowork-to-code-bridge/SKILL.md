@@ -24,7 +24,6 @@ does not make a local task safe merely because it opens no inbound port.
 > on the user's real machine.
 
 ## When to Use
-
 Use this skill only when all of the following are true:
 
 - the user explicitly requested work on their own machine;

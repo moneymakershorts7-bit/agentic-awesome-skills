@@ -24,7 +24,6 @@ outcome. Your job is to fetch,
 translate and contextualise them; the decision stays with the user.
 
 ## When to Use
-
 - Use when the user mentions crypto signals, AI alerts, "any setups", "what is the AI seeing", long or short ideas, or TraderSpy alerts, even without the word "signal".
 - Use to explain one signal's entry, take-profit and stop levels and the conditions that triggered it, or whether it still stands at the current price.
 - Use when the user asks how signals have resolved (hits vs stops) over the last 4h to 7d.

@@ -18,7 +18,6 @@ user-invocable: true
 # Folder CLAUDE.md Creation
 
 ## When to Use
-
 - Use when the user asks for folder-specific agent instructions or local context files.
 - Use when a subdirectory needs a CLAUDE.md and AGENTS.md handoff for future agents.
 

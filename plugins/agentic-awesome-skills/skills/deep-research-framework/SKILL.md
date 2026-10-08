@@ -19,7 +19,6 @@ license_source: https://github.com/alapha888/agent-skills-en/blob/main/LICENSE
 Produce a report whose "conclusions are trustworthy, process is traceable, and the unknowns are explicitly marked." The quality floor of research is set by its sources, not its prose.
 
 ## When to Use
-
 - Use when the user asks for a research report, topic investigation, or competitive analysis.
 - Use when sources need tiering and cross-verification before writing conclusions.
 

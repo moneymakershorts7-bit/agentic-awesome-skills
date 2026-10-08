@@ -12,7 +12,6 @@ license_source: https://github.com/hyhmrright/logic-lens/blob/main/LICENSE
 
 # Logic-Lens — Logic Review
 ## When to Use
-
 Use this skill when you need find logic bugs in a single file or function via semi-formal execution tracing (Premises → Trace → Divergence → Trigger → Remedy). Trigger when a user shares code and suspects something is wrong without naming a concrete failure — phrases like "review this", "does this look right",...
 
 

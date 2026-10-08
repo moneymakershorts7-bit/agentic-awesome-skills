@@ -466,7 +466,6 @@ Use these skills **only after the audit is complete** and findings are accepted.
 
 
 ## When to Use
-
 Use for a specific indexing/crawlability issue, a migration check or a scoped organic-performance audit. Start from the declared production URLs and available Search Console/crawl evidence; local source changes do not prove live deployment or indexing.
 
 ## Worked example

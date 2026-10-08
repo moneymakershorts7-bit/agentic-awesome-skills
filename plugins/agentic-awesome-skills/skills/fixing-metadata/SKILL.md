@@ -12,7 +12,6 @@ license_source: https://github.com/ibelick/ui-skills/blob/main/LICENSE
 
 
 ## When to Use
-
 Use this skill when you need audit and fix HTML metadata including page titles, meta descriptions, canonical URLs, Open Graph tags, Twitter cards, favicons, JSON-LD structured data, and robots directives. Use when adding SEO metadata, fixing social share previews, reviewing Open Graph tags, setting up canonical...
 
 ## Workflow
@@ -22,8 +21,7 @@ Use this skill when you need audit and fix HTML metadata including page titles, 
 3. Ensure title, description, canonical, and og:url all agree with each other
 4. Verify social cards render correctly on a real URL, not localhost
 5. Keep diffs minimal and scoped to metadata only — do not refactor unrelated code
-## when to apply
-
+## When to Use
 Reference these guidelines when:
 - adding or changing page titles, descriptions, canonical, robots
 - implementing Open Graph or Twitter card metadata

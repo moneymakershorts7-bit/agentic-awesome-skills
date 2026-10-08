@@ -12,7 +12,6 @@ license_source: https://github.com/bitjaru/styleseed/blob/main/LICENSE
 
 # Design Token Manager
 ## When to Use
-
 Use this skill when you need view, add, or modify design tokens in the StyleSeed design system.
 
 

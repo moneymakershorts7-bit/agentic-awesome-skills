@@ -13542,6 +13542,25 @@
       "runtime_files": []
     },
     {
+      "id": "cove-reasoning",
+      "path": "skills/cove-reasoning",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "cowork-to-code-bridge",
       "path": "skills/cowork-to-code-bridge",
       "targets": {
@@ -14139,6 +14158,25 @@
     {
       "id": "culture-retention",
       "path": "skills/culture-retention",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "cumulative-reasoning",
+      "path": "skills/cumulative-reasoning",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -28771,6 +28809,25 @@
       "runtime_files": []
     },
     {
+      "id": "lats-agent-search",
+      "path": "skills/lats-agent-search",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "launch-strategy",
       "path": "skills/launch-strategy",
       "targets": {
@@ -32155,6 +32212,25 @@
       "runtime_files": []
     },
     {
+      "id": "metacognitive-evaluator",
+      "path": "skills/metacognitive-evaluator",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "metasploit-framework",
       "path": "skills/metasploit-framework",
       "targets": {
@@ -33993,6 +34069,25 @@
     {
       "id": "networkx",
       "path": "skills/networkx",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "neuro-symbolic-verifier",
+      "path": "skills/neuro-symbolic-verifier",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -45217,6 +45312,25 @@
       "runtime_files": []
     },
     {
+      "id": "sprout-backtracking",
+      "path": "skills/sprout-backtracking",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "sql-injection-testing",
       "path": "skills/sql-injection-testing",
       "targets": {
@@ -47684,6 +47798,25 @@
       "runtime_files": []
     },
     {
+      "id": "test-time-budgeting",
+      "path": "skills/test-time-budgeting",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "testdriver-e2e-testing",
       "path": "skills/testdriver-e2e-testing",
       "targets": {
@@ -48819,6 +48952,25 @@
     {
       "id": "tune-monitor",
       "path": "skills/tune-monitor",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "turbo-quant",
+      "path": "skills/turbo-quant",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -53039,10 +53191,10 @@
     }
   ],
   "summary": {
-    "total_skills": 2764,
+    "total_skills": 2772,
     "supported": {
-      "codex": 2672,
-      "claude": 2700
+      "codex": 2680,
+      "claude": 2708
     },
     "blocked": {
       "codex": 92,

@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # IDA Pro 逆向分析技能
 ## When to Use
-
 - Deep static analysis of a compiled target where IDA is available.
 - Tracking data flow or cross-references through large binaries.
 

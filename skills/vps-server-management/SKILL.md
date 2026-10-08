@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # VPS Server Management
 
 ## When to Use
-
 - Use when the user asks to operate an authorized VPS or agent running on a remote host.
 - Use when SSH, deployment, restart, status, or log inspection is needed with explicit permission.
 

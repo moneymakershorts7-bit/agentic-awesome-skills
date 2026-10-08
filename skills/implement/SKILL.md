@@ -12,7 +12,6 @@ license_source: https://github.com/mattpocock/skills/blob/main/LICENSE
 
 
 ## When to Use
-
 Use this skill when you need implement a piece of work based on a PRD or set of issues.
 
 Implement the work described by the user in the PRD or issues.

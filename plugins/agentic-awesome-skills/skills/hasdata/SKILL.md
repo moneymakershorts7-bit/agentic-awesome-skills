@@ -23,7 +23,6 @@ curl -G 'https://api.hasdata.com/scrape/google/serp' \
 `401` invalid key, `403` quota exhausted, `429` concurrency cap, `500` server error (retry).
 
 ## When to Use
-
 Use this skill when:
 
 - The user needs web scraping.

@@ -18,7 +18,6 @@ metadata:
 ---
 
 ## When to Use
-
 - Provisioning, hardening, or operating the infrastructure described in this skill within an authorized environment.
 
 
@@ -115,7 +114,6 @@ terraform destroy
 - aws-iam (`aws-iam`) - IAM policies
 
 ## When to Use
-
 - You are provisioning, configuring, or troubleshooting the infrastructure component covered by this skill (servers, storage, databases, networking, cloud, local AI).
 
 ## Limitations

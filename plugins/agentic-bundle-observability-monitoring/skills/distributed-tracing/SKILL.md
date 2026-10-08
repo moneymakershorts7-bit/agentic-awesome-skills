@@ -10,7 +10,6 @@ metadata:
 # Distributed Tracing
 
 ## When to Use
-
 Trace a request across services, diagnose latency and error propagation, or add observable boundaries to a new integration.
 
 ## Inputs and prerequisites

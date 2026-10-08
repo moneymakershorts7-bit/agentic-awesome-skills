@@ -27,7 +27,6 @@ answer a concrete visual question, not turn every interface task into a research
 project.
 
 ## When to Use
-
 Use this skill when designing, implementing, redesigning, critiquing, or doing a
 pre-ship review of a web or iOS interface.
 

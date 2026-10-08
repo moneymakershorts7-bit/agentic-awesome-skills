@@ -18,7 +18,6 @@ disable-model-invocation: true
 rewrite your last response to be simpler & shorter. do not do anything else.
 
 ## When to Use
-
 - Use when the user asks for a shorter, simpler, or TLDR version of the previous response.
 - Use when the current answer should be compressed without changing the substance.
 

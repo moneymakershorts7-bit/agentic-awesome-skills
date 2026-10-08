@@ -196,7 +196,6 @@ Run YYLO Ledger and workflows from the controller. A task checkout may implement
 $ARGUMENTS
 
 ## When to Use
-
 - You need to interact with the YYLO Ledger task board (create, list, search, get, mark, update, archive, deps, ready, order, merge).
 - You need dependency-aware scheduling (`deps`, `ready`, `order`) or multi-directory consolidation (`merge`).
 - Use the dedicated `wiki-yylo`, `workflow-yylo` and `artifact-yylo` skills for native wiki/workflow/artifact Records instead of guessing their arguments.

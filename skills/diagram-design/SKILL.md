@@ -12,7 +12,6 @@ date_added: "2026-10-03"
 # Diagram Design
 
 ## When to Use
-
 Use this skill whenever the task matches the workflows and capabilities described above.
 
 
@@ -55,8 +54,7 @@ Applied to schematics:
 
 ---
 
-## 2. When to Use
-
+## When to Use
 Use for any of the 42 visual types (§3) when a reader will learn more from a visual than from prose, a table, or a bulleted list.
 
 **Don't use for:**

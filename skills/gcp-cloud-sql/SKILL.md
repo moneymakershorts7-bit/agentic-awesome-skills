@@ -22,7 +22,6 @@ metadata:
 Deploy and manage fully managed relational databases (PostgreSQL, MySQL, SQL Server) on Google Cloud.
 
 ## When to Use
-
 - Running production relational databases without managing replication, patching, or backups
 - Migrating on-premises PostgreSQL or MySQL workloads to a managed service
 - Applications requiring ACID transactions, relational schemas, and SQL query support

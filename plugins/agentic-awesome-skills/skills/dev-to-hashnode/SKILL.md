@@ -12,7 +12,6 @@ license_source: https://github.com/jonathimer/devmarketing-skills/blob/main/LICE
 
 # Dev.to & Hashnode Publishing
 ## When to Use
-
 Use this skill when you need when the user wants to publish on Dev.to, Hashnode, or other developer blogging platforms. Trigger phrases include "Dev.to," "Hashnode," "developer blog," "cross-posting," "technical blogging," "canonical URL," or "developer content platform.".
 
 

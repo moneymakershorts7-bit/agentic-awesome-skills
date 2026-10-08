@@ -17,7 +17,6 @@ license_source: "https://github.com/sanjay3290/ai-skills/blob/main/LICENSE"
 # Grok Build Orchestration
 
 ## When to Use
-
 - Use when delegating a well-specified implementation task to xAI's Grok Build CLI running headlessly
 - Use when executing a Markdown implementation plan task-by-task with a diff review after each task
 - Use when the user says "use grok", "grok build", "have grok implement", or "send to grok"

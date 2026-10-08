@@ -12,7 +12,6 @@ license_source: https://github.com/bitjaru/styleseed/blob/main/LICENSE
 
 # StyleSeed Update Assistant
 ## When to Use
-
 Use this skill when you need update StyleSeed engine in your project — analyzes what's outdated and updates safely.
 
 

@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # Markdown Rendering in cmux
 
 ## When to Use
-
 - Use when opening Markdown in cmux shows a blank pane or wrong layout.
 - Use when you need to display a Markdown file in a stable cmux right pane.
 

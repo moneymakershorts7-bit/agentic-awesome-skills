@@ -27,7 +27,6 @@ between non-warehouse assets, or customers who already have this data and want t
 directly.
 
 ## When to Use
-
 Use this skill when the user needs to collect metadata, lineage, freshness, volume, or query-log data from a warehouse or adjacent system and push it into Monte Carlo through the push-ingestion API.
 
 Push data travels through the integration gateway → dedicated Kinesis streams → thin

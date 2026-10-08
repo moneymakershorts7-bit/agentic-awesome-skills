@@ -22,7 +22,6 @@ metadata:
 Secure SSH server and client configuration for production environments, including key management, hardened sshd settings, bastion host architecture, tunneling, and multiplexing.
 
 ## When to Use
-
 - Setting up secure remote access to Linux or Unix servers
 - Hardening SSH daemon configuration to meet compliance requirements
 - Configuring bastion / jump hosts for private network access

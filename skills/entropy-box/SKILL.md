@@ -54,7 +54,6 @@ vertical topic libraries. These counts evolve; verify the live site before quoti
 them.
 
 ## When to Use
-
 - Use when you need a grounded, source-linked implementation path for an embodied-AI task (manipulation, navigation, perception, control, planning, simulation, and related systems).
 - Use when selecting or comparing methods, capabilities, assets, dependencies, or evidence for a bounded technical requirement.
 - Use when mapping a problem to the embodied-AI field, tracing task chains, or assembling a development workflow from retrieved structure.

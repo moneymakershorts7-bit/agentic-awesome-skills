@@ -17,7 +17,6 @@ license_source: https://github.com/addyosmani/agent-skills/blob/main/LICENSE
 Every framework-specific code decision must be backed by official documentation. Don't implement from memory — verify, cite, and let the user see your sources. Training data goes stale, APIs get deprecated, best practices evolve. This skill ensures the user gets code they can trust because every pattern traces back to an authoritative source they can check.
 
 ## When to Use
-
 - The user wants code that follows current best practices for a given framework
 - Building boilerplate, starter code, or patterns that will be copied across a project
 - The user explicitly asks for documented, verified, or "correct" implementation

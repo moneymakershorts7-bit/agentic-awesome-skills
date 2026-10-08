@@ -439,7 +439,6 @@ istioctl proxy-config cluster deploy/model-server -n ai-inference
 - opentelemetry (`opentelemetry`) - End-to-end tracing and metrics
 
 ## When to Use
-
 - You are provisioning, configuring, or troubleshooting the infrastructure component covered by this skill (servers, storage, databases, networking, cloud, local AI).
 
 ## Limitations

@@ -12,7 +12,6 @@ license_source: https://github.com/bitjaru/styleseed/blob/main/LICENSE
 
 # UX Feedback States Generator
 ## When to Use
-
 Use this skill when you need add appropriate user feedback states (loading, success, error, empty) to a component or page.
 
 

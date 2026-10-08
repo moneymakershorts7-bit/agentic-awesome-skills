@@ -13,7 +13,6 @@ metadata:
 
 # UI Design Review
 ## When to Use
-
 Use this skill when you need review UI code for design system compliance, accessibility, and best practices.
 
 

@@ -152,7 +152,6 @@ Then verify: if the reader reads only the first line and the last line, do they 
 If yes, send.
 
 ## When to Use
-
 - The reader asked for ADHD-friendly output (`/i-have-adhd`) or struggles with verbose, unstructured agent responses.
 - You are presenting multi-step work, status across turns, or time-sensitive next actions.
 

@@ -359,7 +359,6 @@ Cross-references:
 - **`triage-validation`** — Apply the Unique-Marker gate: takeover claim is informational on its own; submit only after publishing a unique HTML marker on the claimed host AND demonstrating a downstream impact (cookie read, OAuth chain, CSP bypass).
 
 ## When to Use
-
 - You have explicit, written authorization to assess the target in scope, and the task matches this skill's vulnerability class or technique within a bug-bounty or penetration-test engagement.
 - You need the recon, exploitation, or validation workflow described below — executed strictly inside the approved scope.
 

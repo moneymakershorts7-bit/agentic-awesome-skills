@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # Diagram Generator
 ## When to Use
-
 - Turning textual analysis into Mermaid/Graphviz/PlantUML visuals.
 - Producing attack-path or architecture diagrams for reports.
 

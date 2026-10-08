@@ -22,7 +22,6 @@ metadata:
 Provision and manage Google Cloud Platform infrastructure using Terraform with the `hashicorp/google` provider.
 
 ## When to Use
-
 - Defining GCP infrastructure as code for repeatable, auditable deployments
 - Managing multi-environment setups (dev, staging, production) from a single codebase
 - Provisioning complex resource graphs (VPC + GKE + Cloud SQL + IAM) in one plan

@@ -23,7 +23,6 @@ Capture a known-good SEO baseline and compare later snapshots against it so regr
 This portable version is adapted from the official [`seo-drift` skill in NotFair](https://github.com/nowork-studio/NotFair/tree/main/seo/seo-drift).
 
 ## When to Use
-
 Use this skill when the user asks to:
 
 - baseline or monitor a site's SEO over time;

@@ -22,7 +22,6 @@ metadata:
 Core Linux system administration skills for managing production servers, development environments, and infrastructure hosts across Debian/Ubuntu and RHEL/CentOS distributions.
 
 ## When to Use
-
 - Provisioning and maintaining Linux servers in any environment
 - Installing, updating, or removing software packages
 - Managing filesystems, disk usage, and mount points

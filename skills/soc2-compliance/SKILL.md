@@ -22,7 +22,6 @@ metadata:
 Implement SOC 2 Trust Services Criteria controls, evidence collection, and continuous compliance monitoring for Type I and Type II audits.
 
 ## When to Use
-
 - Preparing for a SOC 2 Type I or Type II audit
 - Mapping existing controls to Trust Services Criteria
 - Automating evidence collection for auditor requests

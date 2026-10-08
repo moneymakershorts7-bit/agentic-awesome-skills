@@ -14,7 +14,6 @@ license_source: https://github.com/czlonkowski/n8n-skills/blob/main/LICENSE
 # n8n Binary and Data
 
 ## When to Use
-
 Use this skill when an n8n workflow reads, transforms, stores, uploads, downloads, or transmits files and binary fields, including multimodal agent inputs and chat attachments.
 
 Treat uploaded files and generated URLs as potentially sensitive. Obtain approval before sending data to a new external host, use the narrowest retention and access scope available, avoid logging bytes or base64 payloads, and do not embed credentials in URLs or workflow fields.

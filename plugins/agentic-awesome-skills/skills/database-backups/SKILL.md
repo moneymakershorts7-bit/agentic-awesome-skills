@@ -22,7 +22,6 @@ metadata:
 Implement comprehensive, automated database backup strategies with tested recovery procedures.
 
 ## When to Use
-
 - You are deploying a new database and need a backup plan from day one.
 - You need to automate nightly or hourly backups for PostgreSQL, MySQL, or MongoDB.
 - You want to ship backups to S3-compatible object storage with retention policies.

@@ -152,7 +152,6 @@ Do not let the guest own global app routing unless the product *is* a full-scree
 > **Remember:** Browser is the most accessible platform. Respect its constraints.
 
 ## When to Use
-
 Use when building HTML5/WebGL/WebGPU games, choosing a browser runtime, or wiring hybrid DOM+canvas guests.
 
 ## Limitations

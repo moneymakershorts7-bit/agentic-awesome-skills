@@ -21,7 +21,6 @@ license_source: https://github.com/vostride/agent-qa/blob/main/LICENSE.md
 Author Agent QA tests, suites, and hooks without inventing schema fields or identifiers. Prefer Agent QA's MCP tools, use the bundled contract reference for exact fields, and validate every definition before saving or running it.
 
 ## When to Use
-
 - Creating or editing an Agent QA test, suite, or hook.
 - Validating Agent QA YAML or canonical IDs.
 - Running a newly authored Agent QA definition through MCP or CLI.

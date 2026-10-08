@@ -22,7 +22,6 @@ metadata:
 Configure, operate, and optimize Redis for caching, queues, rate limiting, and real-time data storage.
 
 ## When to Use
-
 - You need a low-latency in-memory cache to reduce database load.
 - Your application requires rate limiting, session storage, or leaderboards.
 - You need pub/sub messaging between services.

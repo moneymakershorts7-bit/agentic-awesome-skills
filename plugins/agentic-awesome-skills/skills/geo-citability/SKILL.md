@@ -330,7 +330,6 @@ Generate a file called `GEO-CITABILITY-SCORE.md`:
 | **Copilot (Bing)** | Similar to Gemini. Prefers passages from high-authority domains with clear factual claims. |
 
 ## When to Use
-
 - You need a Generative Engine Optimization task for a website: audit, citability, crawlers, schema, llms.txt, content, platform tuning, or client reporting.
 - Run read-only analysis first; propose site changes before making any.
 

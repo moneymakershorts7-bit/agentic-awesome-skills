@@ -444,7 +444,6 @@ Output the complete `llms.txt` file content, ready to be saved to the site's roo
 10. **Avoid sensitive pages.** Do not include internal tools, admin panels, or pages with sensitive information.
 
 ## When to Use
-
 - You need a Generative Engine Optimization task for a website: audit, citability, crawlers, schema, llms.txt, content, platform tuning, or client reporting.
 - Run read-only analysis first; propose site changes before making any.
 

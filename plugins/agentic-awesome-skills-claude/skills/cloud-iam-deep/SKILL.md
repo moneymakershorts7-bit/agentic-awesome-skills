@@ -30,8 +30,7 @@ report_count: 6
 >
 > Without that confirmation, remain read-only and provide defensive guidance only. Prefer a sandbox, disposable VM, or controlled lab.
 
-## When to use
-
+## When to Use
 Trigger when:
 - A cloud credential surfaces (key, secret, token, JSON file)
 - SSRF chain reaches IMDS / metadata endpoint

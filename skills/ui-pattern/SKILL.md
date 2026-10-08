@@ -12,7 +12,6 @@ license_source: https://github.com/bitjaru/styleseed/blob/main/LICENSE
 
 # UI Pattern Generator
 ## When to Use
-
 Use this skill when you need generate a composed UI pattern (card layout, list, form section, grid, etc.) using design system primitives.
 
 

@@ -14,7 +14,6 @@ tools: [claude, cursor, codex, antigravity]
 # Stitch Design Taste — Semantic Design System Skill
 
 ## When to Use
-
 - Use when the user wants a Google Stitch-compatible DESIGN.md or semantic design system for AI screen generation.
 - Use when translating premium frontend taste rules into Stitch-friendly visual descriptions, color roles, typography specs, and component behavior.
 - Use when the design system must prevent generic AI UI patterns before screens are generated.

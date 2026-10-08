@@ -18,7 +18,6 @@ disable-model-invocation: true
 # Codex CLI as a Subagent
 
 ## When to Use
-
 - Use when a bounded coding, review, or verification task can run in a separate Codex CLI session.
 - Use when parallel work needs explicit file ownership and a clear definition of done.
 

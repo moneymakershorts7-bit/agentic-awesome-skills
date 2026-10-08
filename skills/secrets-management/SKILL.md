@@ -9,7 +9,6 @@ date_added: "2026-02-27"
 # Secrets Management
 
 ## When to Use
-
 Design or repair secret retrieval, CI credentials, workload identity, access policies and rotation for an authorized system.
 
 ## Inputs

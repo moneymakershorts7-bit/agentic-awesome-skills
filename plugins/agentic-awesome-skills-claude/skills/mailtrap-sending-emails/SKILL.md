@@ -13,7 +13,6 @@ date_added: "2026-06-19"
 Mailtrap sends live email over **Email API** (REST) or **SMTP**. Two **streams** apply for API/SMTP: **Transactional** (non-promotional, app-generated) and **Bulk** (**promotional** / marketing volume). **Batch** is not a third stream: it is how you submit **many messages in one request** on whichever stream matches the content. **Campaigns** are a separate product path for promotional mail to **Mailtrap contacts**. Pair this sheet with the [Transactional](https://docs.mailtrap.io/developers/email-sending/transactional.md) / [Bulk](https://docs.mailtrap.io/developers/email-sending/bulk.md) developer pages when building or debugging integrations (including with AI-assisted coding).
 
 ## When to Use
-
 Use when integrating, configuring, or troubleshooting Mailtrap live email sending with Email API, SMTP, transactional streams, bulk streams, or batch requests.
 
 ## How to integrate (preference order)

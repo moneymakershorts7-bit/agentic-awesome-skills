@@ -21,7 +21,6 @@ license_source: https://github.com/vostride/agent-qa/blob/main/LICENSE.md
 Classify a failed Agent QA run from its recorded evidence instead of guessing. Inspect the run, steps, artifacts, and logs; choose one fixed category; and return confidence, likely ownership, and the next evidence-backed action.
 
 ## When to Use
-
 - Investigating a failed or interrupted Agent QA run.
 - Inspecting run artifacts, step results, or execution logs.
 - Comparing recent related runs for recurring failure patterns.

@@ -12,7 +12,6 @@ license_source: https://github.com/expo/skills/blob/main/LICENSE
 
 # Expo Examples
 ## When to Use
-
 Use this skill when you need expo's official example projects — the expo/examples repo of ~70 `with-*` integrations (Stripe, Clerk, Supabase, OpenAI, maps, Reanimated, SQLite, Skia, NativeWind, and more). Use when integrating a third-party library or service into an existing Expo app and you want the canonical,...
 
 

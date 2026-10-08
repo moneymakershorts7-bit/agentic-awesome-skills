@@ -19,7 +19,6 @@ license_source: "https://github.com/Junaid-PK/laravel-development-workflow/blob/
 Make the requested Laravel behavior correct, maintainable within the existing application, and supported by evidence that matches the change's risk.
 
 ## When to Use
-
 - Use when implementing a feature in an existing Laravel application.
 - Use when diagnosing and fixing a Laravel bug at its actionable root cause.
 - Use when a Laravel change needs regression coverage and proportionate verification.

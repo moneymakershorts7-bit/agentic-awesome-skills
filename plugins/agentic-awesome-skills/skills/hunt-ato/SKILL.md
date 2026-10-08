@@ -164,7 +164,6 @@ A passwordless-signup / magic-login / OTP-login endpoint that sets or resets a p
 - **`triage-validation`** — Run the Pre-Severity Gate before claiming Critical on an ATO that needs the victim to click a link AND enter credentials AND pass CAPTCHA. The reproducibility step (10-minute fresh-browser walkthrough taking over test account B from attacker A's session) separates Critical-paid from Self-XSS-tier rejected.
 
 ## When to Use
-
 - You have explicit, written authorization to assess the target in scope, and the task matches this skill's vulnerability class or technique within a bug-bounty or penetration-test engagement.
 - You need the recon, exploitation, or validation workflow described below — executed strictly inside the approved scope.
 

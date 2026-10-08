@@ -361,7 +361,6 @@ async def safe_output(raw_response: str) -> dict:
 - [Related Skills](references/details.md)
 
 ## When to Use
-
 Apply this skill whenever you are building or operating:
 
 - **Customer-facing chatbots** -- support bots, sales assistants, or any conversational UI backed by an LLM.

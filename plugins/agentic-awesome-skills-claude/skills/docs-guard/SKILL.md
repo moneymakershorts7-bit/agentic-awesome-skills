@@ -19,7 +19,6 @@ You are reviewing generated or changed documentation before it ships. Apply the 
 These rules exist because AI agents document from memory of how APIs *usually* look, not from the code in front of them. Published research: half of AI answers to programming questions contain incorrect information, and models produce valid invocations for infrequent APIs barely a third of the time — yet the prose sounds authoritative either way. Readers cannot tell verified docs from hallucinated docs. You can, because you have the source.
 
 ## When to Use
-
 Use this skill when reviewing generated or changed documentation before it ships. Activate it reactively after an agent writes or updates READMEs, API references, docstrings, PHPDoc/JSDoc, changelogs, tutorials, or doc sites.
 
 ## How to use this skill

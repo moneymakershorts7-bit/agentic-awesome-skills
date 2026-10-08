@@ -25,7 +25,6 @@ idea-os is a 5-phase sequential pipeline where each phase's output feeds the nex
 Source: https://github.com/Slashworks-biz/idea-os — full skill, 11 reference files, 4 asset templates, and a 590-line worked example.
 
 ## When to Use
-
 - Use when a user shares a raw product idea or problem statement and wants a structured pipeline from clarifying questions through deep research, PRD, and a phased execution plan.
 - Use when the user says "I have an idea for…", "help me build X", "validate and plan this concept", or "what should I build?" — and wants files they can take forward, not a one-shot answer.
 - Use when a non-technical founder, PM, or hobbyist needs structure to bridge the gap between "idea" and "Monday morning's build queue".

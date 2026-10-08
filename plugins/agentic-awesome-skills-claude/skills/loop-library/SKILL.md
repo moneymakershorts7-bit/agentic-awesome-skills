@@ -32,7 +32,6 @@ loop as a feedback system with terminal states, not as permission for endless
 autonomy.
 
 ## When to Use
-
 Use when the user asks for a loop, recurring agent workflow, automation cadence,
 iterative improvement process, existing Loop Library recommendation, or help
 turning an outcome into a bounded copy-ready loop through a short question-led

@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # Vitest Testing Skill
 ## When to Use
-
 Use this skill when you need generates Vitest tests in JavaScript/TypeScript with Vite-native speed. Jest-compatible API with ESM support and HMR. Use when user mentions "Vitest", "vi.mock", "vitest.config". Triggers on: "Vitest", "vi.mock", "vi.fn", "Vite test", "vitest config".
 
 

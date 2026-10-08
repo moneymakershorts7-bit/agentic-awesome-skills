@@ -18,8 +18,7 @@ license_source: "https://github.com/Sketchjar/stipple-agent-skills/blob/main/LIC
 
 Run an AFP 100-point or AUSTRAC safe-harbour identity check over a document set. Reports the points attained, per-document status, and **exactly what's missing** — so the user can request only the absent documents and re-run. Uses the Stipple API (free anonymous tier).
 
-## When to use
-
+## When to Use
 - Onboarding employees, tenants, contractors, or customers in Australia
 - KYC flows needing AFP 100-point or AUSTRAC safe-harbour compliance
 - "Do these documents satisfy the 100-point check?"

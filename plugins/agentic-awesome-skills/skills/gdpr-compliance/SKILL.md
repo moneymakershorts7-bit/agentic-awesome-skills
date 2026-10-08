@@ -429,7 +429,6 @@ dpa_requirements:
 - [Best Practices](references/details.md)
 
 ## When to Use
-
 - Processing personal data of EU/EEA residents in any capacity
 - Building consent management and preference centers
 - Implementing Data Subject Access Request (DSAR) workflows

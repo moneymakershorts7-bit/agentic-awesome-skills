@@ -17,7 +17,6 @@ license_source: "https://github.com/Pranav-Nexus/antigravity-skill-porter/blob/7
 # Skill Porter for Google Antigravity
 
 ## When to Use
-
 Use when adapting a locally obtained Claude Code, Cursor, Codex, or generic agent
 skill bundle for Google Antigravity. The utility preserves support files and
 previews limited tool-name substitutions; it does not prove client compatibility.

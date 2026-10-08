@@ -22,7 +22,6 @@ metadata:
 Implement effective incident management processes including severity definitions, escalation matrices, war room procedures, and blameless post-mortem templates.
 
 ## When to Use
-
 - Establishing incident management processes for production systems
 - Defining severity levels and escalation procedures
 - Running war rooms and coordinating incident response

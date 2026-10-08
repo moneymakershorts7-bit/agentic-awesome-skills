@@ -19,7 +19,6 @@ Scan installed skills, extract cross-cutting principles that appear in multiple 
 Applies the "deterministic collection + LLM judgment" principle: scripts collect facts exhaustively, then an LLM cross-reads the full context and produces verdicts.
 
 ## When to Use
-
 - Periodic rules maintenance (monthly or after installing new skills)
 - After a skill-stocktake reveals patterns that should be rules
 - When rules feel incomplete relative to the skills being used

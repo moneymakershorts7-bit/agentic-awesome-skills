@@ -87,7 +87,6 @@ never implies merge, release, publication, deployment, or production authority.
 $ARGUMENTS
 
 ## When to Use
-
 - You need to find, create, or revision-safe update validated YYLO Ledger workflow Records.
 - You must keep storage, execution, and run-evidence boundaries explicit.
 

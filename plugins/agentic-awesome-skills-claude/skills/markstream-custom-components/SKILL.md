@@ -21,7 +21,6 @@ license_source: https://github.com/Simon-He95/markstream-vue/blob/main/license
 Customize specific Markstream nodes or trusted custom tags without replacing the parser or leaking global renderer state. Read [references/patterns.md](references/patterns.md) first.
 
 ## When to Use
-
 Use to replace built-ins such as `image`, `link`, `code_block`, `mermaid`, or `inline_code`; render trusted tags such as `thinking`; or scope overrides to one renderer or app. Use parser transforms only when token or AST reshaping is required.
 
 ## Workflow

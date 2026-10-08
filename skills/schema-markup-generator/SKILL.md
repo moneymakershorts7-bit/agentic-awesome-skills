@@ -19,7 +19,6 @@ Add JSON-LD structured data to pages to unlock rich results, improve CTR, and si
 ---
 
 ## When to Use
-
 - Use when adding or auditing JSON-LD schema for websites, SaaS apps, tools, articles, FAQs, breadcrumbs, or organization pages.
 - Use when schema must be implemented in Next.js App Router or validated against Google Rich Results and Schema.org tooling.
 - Use when a page has strong content but lacks structured data for search engines and rich-result eligibility.

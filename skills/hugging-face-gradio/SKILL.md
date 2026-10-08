@@ -12,7 +12,6 @@ license_source: https://github.com/huggingface/skills/blob/main/LICENSE
 
 # Gradio
 ## When to Use
-
 Use this skill when you need build Gradio web UIs and demos in Python. Use when creating or editing Gradio apps, components, event listeners, layouts, or chatbots.
 
 

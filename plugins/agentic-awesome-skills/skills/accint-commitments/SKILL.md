@@ -12,7 +12,6 @@ license_source: https://github.com/maxbaluev/accreted-intelligence/blob/main/LIC
 
 # commitments
 ## When to Use
-
 Use this skill when you need triage acc's open promises and close them with honest real-world verdicts via acc_act(runtime="outcome").
 
 

@@ -12,7 +12,6 @@ license_source: https://github.com/jonathimer/devmarketing-skills/blob/main/LICE
 
 # Free Tier Strategy
 ## When to Use
-
 Use this skill when you need design free tiers that convert to paid without creating resentment or abuse. Trigger phrases: free tier design, freemium model, free trial strategy, free tier limits, developer free plan, open source commercial, feature gating, upgrade triggers, free tier conversion.
 
 

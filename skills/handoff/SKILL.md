@@ -23,7 +23,6 @@ tools:
 ---
 
 ## When to Use
-
 Use when this workflow matches the user request: Compact the current conversation into a handoff document for another agent to pick up.
 
 

@@ -21,7 +21,6 @@ license_source: https://github.com/Simon-He95/markstream-vue/blob/main/license
 Configure the Vue 3 renderer beyond generic installation: surface modes, streaming lifecycle, code rendering, long-message virtualization, and scoped overrides.
 
 ## When to Use
-
 Use for a plain Vue 3 application after the package has been selected. Use `markstream-nuxt` when SSR-specific Nuxt boundaries matter.
 
 ## Workflow

@@ -20,7 +20,6 @@ Use this skill to turn a business question into a careful, reproducible warehous
 The skill defaults to read-only work. It helps identify the data needed, review a proposed query, and communicate results without overstating what the evidence supports.
 
 ## When to Use
-
 - The user wants to answer a business question using an authorized data warehouse.
 - A proposed SQL query needs a review for grain, joins, filters, privacy, or interpretation risks.
 - An analysis needs a clear record of scope, freshness, assumptions, and source tables.

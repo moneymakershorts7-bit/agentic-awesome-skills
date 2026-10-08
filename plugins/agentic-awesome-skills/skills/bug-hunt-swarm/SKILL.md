@@ -12,7 +12,6 @@ license_source: https://github.com/Dimillian/Skills/blob/main/LICENSE
 
 # Bug Hunt Swarm
 ## When to Use
-
 Use this skill when you need parallel read-only multi-agent root-cause investigation for bugs, regressions, crashes, flaky behavior, or unexplained failures. Use when the user asks to investigate a bug, find the root cause, trace a regression, understand why something broke, or wants a ranked diagnosis with the...
 
 

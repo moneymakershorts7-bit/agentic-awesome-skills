@@ -22,8 +22,7 @@ Pulls YouTube transcripts into a markdown vault as queryable typed-memory entrie
 
 Same pattern as ingest-slack, ingest-whatsapp, ingest-notion, ingest-linear, ingest-github, ingest-gmail. Adding YouTube means a new normalizer, not a new architecture.
 
-## When to use
-
+## When to Use
 - User pastes a YouTube URL and asks for a transcript or summary
 - User says `/ingest-youtube <url>` for a single video
 - User asks to capture, sync, ingest, transcribe, or pull a talk/podcast/keynote into the vault

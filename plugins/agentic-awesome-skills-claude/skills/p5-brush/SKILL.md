@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 `p5.brush` is a WebGL-powered drawing engine providing natural media simulation (pencils, charcoal, markers, watercolor bleeding, cross-hatching, and vector flow fields). It runs both as a p5.js WebGL plugin and as a zero-dependency standalone WebGL2 library.
 
 ## When to Use
-
 - Building procedural, organic, or hand-drawn generative art in p5.js or WebGL2.
 - Rendering realistic watercolor washes with edge bleeding, granulation, and layering.
 - Creating cross-hatching, stippling, and textured brush strokes (HB pencil, 2B, marker, charcoal, spray).
@@ -122,3 +121,8 @@ brush.flow({
 - **Media**: `"charcoal"`, `"spray"`, `"oil-pastel"`, `"watercolor"`.
 
 For complete API signatures, custom shader brush authoring, and standalone mode examples, see [api-reference.md](references/api-reference.md).
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

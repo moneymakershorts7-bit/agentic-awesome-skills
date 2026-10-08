@@ -24,7 +24,6 @@ tools:
 # Survey Generator Skill
 
 ## When to Use
-
 Use when this workflow matches the user request: Use this skill for its documented workflow.
 
 

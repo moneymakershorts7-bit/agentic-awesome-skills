@@ -31,7 +31,6 @@ plugin:
     docs: SKILL.md
 ---
 ## When to Use
-
 Use when polishing a screen recording / demo video for sharing, when the user mentions Screen Studio, auto-zoom, idle speed-up, or vertical/social video from a screen capture, and for any social-facing demo (vertical output is the default for those).
 
 _Source: [connerkward/screenstudio-alternative-skill](https://github.com/connerkward/screenstudio-alternative-skill) (MIT)._

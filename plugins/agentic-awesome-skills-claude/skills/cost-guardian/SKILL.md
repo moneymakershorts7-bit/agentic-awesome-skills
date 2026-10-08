@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 Cost Guardian monitors and enforces token budgets for AI agent sessions in real time. It calculates exact USD costs across input tokens, output tokens, cache creation, and prompt cache reads (Opus, Sonnet, Haiku, Gemini, GPT-4o), stores telemetry in a local SQLite database (`~/.cost-guardian/usage.db`), and provides warnings at 80% and safety blocks at 95% budget utilization.
 
 ## When to Use
-
 - Tracking API spending and token consumption across active coding sessions.
 - Generating daily, weekly, or model-specific usage reports with SQL breakdown.
 - Setting hard or soft budget limits on automated agent loops to prevent runaway spend.
@@ -97,3 +96,8 @@ GROUP BY model;
   "currency": "USD"
 }
 ```
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

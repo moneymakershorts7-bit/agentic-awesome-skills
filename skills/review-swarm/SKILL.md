@@ -12,7 +12,6 @@ license_source: https://github.com/Dimillian/Skills/blob/main/LICENSE
 
 # Review Swarm
 ## When to Use
-
 Use this skill when you need parallel read-only multi-agent review of a current git diff or explicit file scope to find behavioral regressions, security or privacy risks, performance or reliability issues, and contract or test coverage gaps. Use when the user asks for a review swarm, parallel review, diff review,...
 
 

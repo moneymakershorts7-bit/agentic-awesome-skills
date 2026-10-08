@@ -16,8 +16,7 @@ date_added: "2026-06-19"
 
 **Related skills:** `mailtrap-sending-emails` (live sending hosts and streams).
 
-## When to use
-
+## When to Use
 - You want **no real delivery**: dev, staging, CI, or demos where mail must stay in a **test inbox**.
 - You need to **inspect** what was sent: bodies, headers, attachments, or basic checks (e.g. spam report) via **Sandbox / Testing API** or the **UI**.
 - You are **automating** tests against captured mail.

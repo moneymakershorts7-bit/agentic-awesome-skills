@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # Mobile Reverse Engineering
 ## When to Use
-
 - Assessing a mobile app's security posture within an approved scope.
 - Instrumenting runtime behavior or bypassing transport protections in tests.
 

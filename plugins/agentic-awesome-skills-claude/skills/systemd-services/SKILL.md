@@ -22,7 +22,6 @@ metadata:
 Create, manage, and monitor systemd services and timers. Covers unit file authoring, dependency management, socket activation, resource limits, journalctl log analysis, and production hardening.
 
 ## When to Use
-
 - Deploying an application as a managed background service
 - Replacing cron jobs with systemd timers for better logging and dependency control
 - Setting up socket activation for on-demand service startup

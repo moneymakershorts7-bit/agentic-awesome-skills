@@ -12,7 +12,6 @@ license_source: https://github.com/microsoft/skills/blob/main/LICENSE
 
 # Azure Queue Storage library for Rust
 ## When to Use
-
 Use this skill when you need azure Queue Storage library for Rust. Send, receive, and manage queue messages. Triggers: "queue storage rust", "QueueClient rust", "send message rust", "receive messages rust", "QueueServiceClient rust", "queue rust".
 
 

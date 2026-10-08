@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # Evidence Graph Review
 ## When to Use
-
 - Before delivering an analysis report, verify traceability and completeness.
 - Auditing whether conclusions are backed by recorded evidence.
 

@@ -12,7 +12,6 @@ license_source: https://github.com/huggingface/skills/blob/main/LICENSE
 
 # Train a sentence-transformers Model
 ## When to Use
-
 Use this skill when you need train or fine-tune sentence-transformers models across `SentenceTransformer` (bi-encoder; dense or static embedding model; for retrieval, similarity, clustering, classification, paraphrase mining, dedup, multimodal), `CrossEncoder` (reranker; pair scoring for two-stage retrieval / pair...
 
 

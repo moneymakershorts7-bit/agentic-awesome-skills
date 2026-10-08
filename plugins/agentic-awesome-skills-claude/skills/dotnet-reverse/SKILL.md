@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # .NET / C# 逆向作业规范
 ## When to Use
-
 - Analyzing a .NET assembly, obfuscated C# product, or native-AOT binary.
 - Understanding the internals of Sharp* red-team tools before use or defense.
 

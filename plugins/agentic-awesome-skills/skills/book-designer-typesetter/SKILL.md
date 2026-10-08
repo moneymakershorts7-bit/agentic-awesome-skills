@@ -34,7 +34,6 @@ Engine for professional book design, typographic typesetting, and publication-re
 ---
 
 ## When to Use
-
 Use this skill when:
 - Transforming a raw or edited Markdown manuscript (`.md`) into a polished, print-ready or digital distribution PDF book (`.pdf`).
 - Designing book aesthetics: selecting font pairings, color palettes, margins, line heights, running headers/footers, and chapter openers.

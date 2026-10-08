@@ -17,7 +17,6 @@ license_source: https://github.com/addyosmani/agent-skills/blob/main/LICENSE
 Decompose work into small, verifiable tasks with explicit acceptance criteria. Good task breakdown is the difference between an agent that completes work reliably and one that produces a tangled mess. Every task should be small enough to implement, test, and verify in a single focused session.
 
 ## When to Use
-
 - You have a spec and need to break it into implementable units
 - A task feels too large or vague to start
 - Work needs to be parallelized across multiple agents or sessions

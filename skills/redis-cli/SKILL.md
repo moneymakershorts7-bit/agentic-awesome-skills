@@ -12,7 +12,6 @@ license_source: https://github.com/chaunsin/agent-skills/blob/master/LICENSE
 
 # redis-cli — Redis Command Line Interface
 ## When to Use
-
 Use this skill when you need redis command-line interface (redis-cli) reference and usage guide. Use this skill whenever the user mentions redis-cli, Redis CLI, or any task involving querying, inspecting, debugging, or managing Redis from the command line. Triggers on key/value reads and writes, SCAN or keyspace...
 
 

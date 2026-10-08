@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # Robot Framework Skill
 ## When to Use
-
 Use this skill when you need generates Robot Framework tests in keyword-driven syntax with Python. Supports SeleniumLibrary, RequestsLibrary, and custom keywords. Use when user mentions "Robot Framework", "*** Test Cases ***", "SeleniumLibrary", ".robot file". Triggers on: "Robot Framework", "*** Test Cases ***",...
 
 

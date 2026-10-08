@@ -37,7 +37,6 @@ for autonomous coding, use the `opencode` skill. Delegate to Nika when the
 work should be *repeatable, budgeted, and auditable*.
 
 ## When to Use
-
 - The user asks to run, check, or author a `*.nika.yaml` workflow
 - A task will be repeated (daily digest, triage, ETL, report, multi-step LLM
   pipeline) — capture it as a workflow instead of re-prompting

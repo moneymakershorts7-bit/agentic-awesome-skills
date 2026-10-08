@@ -23,7 +23,6 @@ A plain fetch of a Xiaohongshu, Douyin or TikTok link returns an app-download pa
 It works through either the REST API (`POST https://linkdigest.dev/api/v1/digest`) or the hosted MCP server (`https://linkdigest.dev/mcp`, one read-only tool `digest_url`). The user brings their own `LINKDIGEST_API_KEY`; the service is pay as you go after 10 free credits.
 
 ## When to Use
-
 - Use when the user pastes a Xiaohongshu / RedNote (`xiaohongshu.com`, `xhslink.com`, `rednote.com`), Douyin (`douyin.com`, `v.douyin.com`), TikTok, YouTube, X or WeChat 公众号 (`mp.weixin.qq.com`) link and asks what it says, wants a summary, a translation, or the text for research.
 - Use when you already tried to fetch such a link and got an app shell, a login wall, or a page with a title and no body.
 - Use when the content of a post is inside the images (Xiaohongshu image notes, WeChat long images) or inside the speech (Douyin, TikTok, YouTube) and you need it as text.

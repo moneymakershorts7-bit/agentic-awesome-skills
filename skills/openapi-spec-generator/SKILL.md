@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # OpenAPI / Swagger Specification Generator
 ## When to Use
-
 Use this skill when you need generate complete, production-ready OpenAPI 3.x and Swagger 2.0 specifications from natural language descriptions, code, or partial specs. Use this skill whenever the user mentions OpenAPI, Swagger, API spec, REST API documentation, YAML/JSON API schema, endpoint documentation, API...
 
 

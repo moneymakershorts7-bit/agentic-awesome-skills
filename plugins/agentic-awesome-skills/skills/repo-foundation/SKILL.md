@@ -20,7 +20,6 @@ metadata:
 # Repo foundation
 
 ## When to Use
-
 - Use when the user asks to add a feature, fix a bug, or start a module in an existing project.
 - Use when establishing the minimum foundation for a new repository or subsystem.
 - Use when requirements authorize a schema, public-contract, ownership, or architecture migration.

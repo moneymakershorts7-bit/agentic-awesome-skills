@@ -12,7 +12,6 @@ license_source: https://github.com/bitjaru/styleseed/blob/main/LICENSE
 
 # Mobile Page Scaffolder
 ## When to Use
-
 Use this skill when you need scaffold a new mobile page/screen using the StyleSeed layout patterns.
 
 

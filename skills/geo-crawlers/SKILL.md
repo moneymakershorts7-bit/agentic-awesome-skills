@@ -388,7 +388,6 @@ The AI Crawler Access Score is calculated as:
 Final score = sum of all weighted components, capped at 100.
 
 ## When to Use
-
 - You need a Generative Engine Optimization task for a website: audit, citability, crawlers, schema, llms.txt, content, platform tuning, or client reporting.
 - Run read-only analysis first; propose site changes before making any.
 

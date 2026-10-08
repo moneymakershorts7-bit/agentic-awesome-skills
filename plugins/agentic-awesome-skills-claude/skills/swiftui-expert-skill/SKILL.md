@@ -12,7 +12,6 @@ license_source: https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/main/LICENSE
 
 # SwiftUI Expert Skill
 ## When to Use
-
 Use when writing, reviewing, or refactoring SwiftUI code for iOS or macOS, including state management and `@Observable` data flow, view composition and invalidation/performance, lists and `ForEach` identity, environment usage, localization, animations, Liquid Glass adoption, migrating...
 
 

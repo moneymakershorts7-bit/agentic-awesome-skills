@@ -117,7 +117,6 @@ Maintain a hardened rollback workflow:
 - sbom-supply-chain (`sbom-supply-chain`) - SBOM, signing, and provenance controls
 
 ## When to Use
-
 - You need the security workflow covered by this skill (secrets, scanning, network defense, operations, AI security) inside an authorized scope.
 
 ## Limitations

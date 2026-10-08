@@ -13,7 +13,6 @@ input, storage and observable response. Preserve the application's actual identi
 provider and data model rather than introducing a second authentication system.
 
 ## When to Use
-
 Use when adding a protected endpoint, reviewing object access, replacing permissive
 request parsing, or investigating an API abuse path. For a concrete defect, start
 with the failing route and its callers; do not deploy unrelated security infrastructure.

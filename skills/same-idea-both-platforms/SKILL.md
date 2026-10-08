@@ -24,7 +24,6 @@ reads as a fragment.
 The idea travels. The writing does not.
 
 ## When to Use
-
 - Use when someone wants to post the same thing on both Twitter/X and LinkedIn.
 - Use when someone asks to adapt a post for the other platform.
 - Use when someone asks how something should differ between Twitter and LinkedIn.

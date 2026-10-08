@@ -13,7 +13,6 @@ author: Conner K Ward
 
 # design-ux — usability audit (heuristic evaluation)
 ## When to Use
-
 Use this skill when you need uX / usability audit — heuristic evaluation of INTERACTIVE UIs (not just visual polish). Load with design when a UI "feels off", "sucks to use", is hard to learn, needs an instruction wall, or before shipping an interactive tool/editor/app. Scores the RENDERED UI against Nielsen's 10 +...
 
 

@@ -21,7 +21,6 @@ license_source: https://github.com/Simon-He95/markstream-vue/blob/main/license
 Handle Vue 2.6/2.7 compatibility decisions that the generic installer cannot resolve safely.
 
 ## When to Use
-
 Use for Vue 2 integration when no bundler-specific edge case dominates. Use `markstream-vue2-cli` for Vue CLI/Webpack 4 and `markstream-vue2-vite` for Vite worker imports.
 
 ## Workflow

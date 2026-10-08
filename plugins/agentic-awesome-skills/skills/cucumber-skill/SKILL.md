@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # Cucumber BDD Skill
 ## When to Use
-
 Use this skill when you need generates Cucumber BDD tests with Gherkin feature files and step definitions in Java, JavaScript, or Ruby. Use when user mentions "Cucumber", "Gherkin", "Feature/Scenario", "Given/When/Then", "BDD". Triggers on: "Cucumber", "Gherkin", "BDD", "Feature file", "Given/When/Then", "step...
 
 

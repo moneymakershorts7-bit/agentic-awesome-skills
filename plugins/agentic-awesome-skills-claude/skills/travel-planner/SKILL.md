@@ -16,7 +16,6 @@ license_source: "https://github.com/saudademjj/luopan/blob/main/LICENSE"
 # 旅行规划 (Travel Planner)
 
 ## When to Use
-
 - 用户提出任何旅行、出游、行程规划相关需求时使用;用户未明说"规划"但请求涉及目的地、天数、路线或行程安排的,同样适用
 - 覆盖自由行、家庭游、亲子游、商务出差、自驾等所有类型
 

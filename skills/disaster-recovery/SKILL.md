@@ -353,7 +353,6 @@ EOF
 - [Best Practices](references/details.md)
 
 ## When to Use
-
 - Defining RTO and RPO targets for critical systems
 - Designing multi-region or multi-cloud disaster recovery architectures
 - Implementing automated failover and failback procedures

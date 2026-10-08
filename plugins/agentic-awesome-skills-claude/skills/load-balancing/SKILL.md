@@ -22,7 +22,6 @@ metadata:
 Distribute traffic across application servers for high availability, scalability, and fault tolerance.
 
 ## When to Use
-
 - Distributing HTTP/HTTPS traffic across multiple backend servers.
 - Implementing health checks to route around unhealthy instances.
 - Terminating TLS at the load balancer for simplified certificate management.

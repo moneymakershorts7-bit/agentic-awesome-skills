@@ -22,7 +22,6 @@ metadata:
 Administer, optimize, and secure MySQL and MariaDB databases in development and production environments.
 
 ## When to Use
-
 - You need a mature, widely supported relational database.
 - Your stack depends on MySQL-specific features or compatibility (WordPress, Magento, many PHP frameworks).
 - You are setting up source-replica replication for read scaling.

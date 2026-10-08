@@ -25,7 +25,6 @@ A thread works when each tweet would be a decent post on its own, and the order
 makes it better.
 
 ## When to Use
-
 - Use when someone asks for a Twitter/X thread.
 - Use when someone asks to break a long idea, transcript, article or rambling draft into tweets.
 - Use when a piece of writing is too long for one post.

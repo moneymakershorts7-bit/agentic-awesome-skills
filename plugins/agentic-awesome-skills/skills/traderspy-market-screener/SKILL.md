@@ -25,7 +25,6 @@ Together they answer the two questions traders actually ask: "what fits this pat
 and "has this pattern meant anything before?"
 
 ## When to Use
-
 - Use when the user wants to find, filter, rank or compare several coins by technical conditions: "which coins are oversold on the 4h", "what is above its 200 EMA with rising volume", "show me Bollinger squeezes", "find me setups".
 - Use for side-by-side comparison tables such as "compare BTC, ETH and SOL".
 - Use when the user asks what happened after a condition in the past: "how did ETH do after RSI dropped below 30", "is a golden cross on BTC daily actually bullish".

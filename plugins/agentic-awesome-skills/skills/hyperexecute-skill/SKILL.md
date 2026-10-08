@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # HyperExecute Operator
 ## When to Use
-
 Use this skill when you need operates HyperExecute end-to-end for TestMu AI/LambdaTest cloud test execution: analyze projects, create YAML, validate locally, run CLI jobs, debug failures, and wire CI. Use when the user mentions HyperExecute, hyperexecute.yaml, HyperExecute CLI, autosplit, matrix execution,...
 
 

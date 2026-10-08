@@ -24,7 +24,6 @@ tools:
 # Improve Codebase Architecture
 
 ## When to Use
-
 Use when this workflow matches the user request: Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.
 
 

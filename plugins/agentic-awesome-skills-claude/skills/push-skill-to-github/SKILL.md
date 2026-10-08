@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # Push Skills to GitHub
 
 ## When to Use
-
 - Use when skill changes are ready to commit and push to the configured skills repo.
 - Use when the user asks to save or publish skill updates after validation.
 

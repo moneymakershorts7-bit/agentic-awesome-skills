@@ -21,7 +21,6 @@ license_source: https://github.com/Simon-He95/markstream-vue/blob/main/license
 Wire the beta React renderer into React 18+ or Next.js without crossing client/server boundaries or reaching for AST control unnecessarily.
 
 ## When to Use
-
 Use for React/Next setup, root/`next`/`server` entrypoints, streaming, component overrides, or migration support. Pair with `markstream-migration` for renderer replacement.
 
 ## Workflow

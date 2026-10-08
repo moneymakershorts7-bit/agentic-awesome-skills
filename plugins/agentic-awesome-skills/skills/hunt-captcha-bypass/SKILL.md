@@ -116,7 +116,6 @@ CAPTCHA bypass + password reset = **token flooding** → chain with `hunt-forgot
 - **`hunt-race-condition`** — race the CAPTCHA validation window (submit before the token is revoked)
 
 ## When to Use
-
 - You have explicit, written authorization to assess the target in scope, and the task matches this skill's vulnerability class or technique within a bug-bounty or penetration-test engagement.
 - You need the recon, exploitation, or validation workflow described below — executed strictly inside the approved scope.
 

@@ -9,7 +9,6 @@ date_added: "2026-02-27"
 # Lint and Validate
 
 ## When to Use
-
 Use after behavior or configuration changes when a repository has relevant lint or type checks. Read the repository's instructions and package scripts first. Run focused checks during development and the required checks before completion.
 
 ## Procedure

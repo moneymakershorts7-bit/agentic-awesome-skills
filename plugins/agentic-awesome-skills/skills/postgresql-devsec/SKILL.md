@@ -22,7 +22,6 @@ metadata:
 Administer, optimize, and secure PostgreSQL databases in development and production environments.
 
 ## When to Use
-
 - You need a reliable, ACID-compliant relational database.
 - Your application requires advanced features such as JSONB, full-text search, or CTEs.
 - You are setting up streaming replication or point-in-time recovery.

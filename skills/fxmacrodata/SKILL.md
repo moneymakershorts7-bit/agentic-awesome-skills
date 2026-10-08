@@ -20,7 +20,6 @@ FXMacroData is a REST API for macroeconomic data taken from official publishers 
 This skill covers discovering indicator slugs, pulling release history, reading the release calendar, comparing policy rates between two currencies, and the access limits that apply without an API key.
 
 ## When to Use
-
 - Use when the user asks for an official macro figure for a country or currency: CPI, core inflation, GDP, unemployment, payrolls, retail sales, business and consumer confidence, trade balance, bond yields.
 - Use when the user asks when the next CPI, payrolls, GDP or central-bank decision is due, or wants the release calendar for a week.
 - Use when comparing central-bank policy rates or yield differentials between two currencies (for example USD vs JPY carry).

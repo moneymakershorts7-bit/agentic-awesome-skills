@@ -12,7 +12,6 @@ license_source: https://github.com/ChrisWiles/claude-code-showcase/blob/main/LIC
 
 # Testing Patterns and Utilities
 ## When to Use
-
 Use this skill when you need jest testing patterns, factory functions, mocking strategies, and TDD workflow. Use when writing unit tests, creating test factories, or following TDD red-green-refactor cycle.
 
 

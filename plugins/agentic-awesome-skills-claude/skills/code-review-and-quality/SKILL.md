@@ -19,7 +19,6 @@ Multi-dimensional code review with quality gates. Every change gets reviewed bef
 **The approval standard:** Approve a change when it definitely improves overall code health, even if it isn't perfect. Perfect code doesn't exist — the goal is continuous improvement. Don't block a change because it isn't exactly how you would have written it. If it improves the codebase and follows the project's conventions, approve it.
 
 ## When to Use
-
 - Before merging any PR or change
 - After completing a feature implementation
 - When another agent or model produced code you need to evaluate

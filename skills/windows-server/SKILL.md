@@ -22,7 +22,6 @@ metadata:
 Windows Server management and PowerShell automation for production workloads including IIS web hosting, Active Directory domain services, and system maintenance.
 
 ## When to Use
-
 - Provisioning or configuring Windows Server 2019/2022 instances
 - Setting up IIS websites, application pools, and bindings
 - Managing Active Directory users, groups, and Group Policy

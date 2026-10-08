@@ -14,7 +14,6 @@ license_source: https://github.com/czlonkowski/n8n-skills/blob/main/LICENSE
 # n8n Custom Code Tool
 
 ## When to Use
-
 Use this skill specifically for code executed by the AI-agent-callable n8n Custom Code Tool. Use the separate JavaScript or Python Code-node skills for ordinary workflow Code nodes.
 
 Do not hardcode secrets or accept arbitrary executable code from untrusted input. Constrain inputs with a schema, validate outputs, allowlist any network destinations, and ask before testing a tool whose code can write data or invoke an external service.

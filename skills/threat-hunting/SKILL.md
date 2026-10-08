@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # Threat Hunting & Detection Engineering
 ## When to Use
-
 - Proactively hunting for adversary activity in telemetry.
 - Writing or validating detection rules mapped to ATT&CK techniques.
 

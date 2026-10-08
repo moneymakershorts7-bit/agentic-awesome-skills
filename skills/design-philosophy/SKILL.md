@@ -13,7 +13,6 @@ author: Conner K Ward
 
 # Design philosophy
 ## When to Use
-
 Use this skill when you need visual philosophy and art-direction for frontend. Use when creating high-concept work, campaigns, or when the user asks for a visual philosophy, manifesto, or unmistakable art-like aesthetic.
 
 

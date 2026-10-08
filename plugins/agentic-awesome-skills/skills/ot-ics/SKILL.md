@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # OT / ICS Security
 ## When to Use
-
 - Passive assessment of industrial networks within an approved scope.
 - Documenting PLC/SCADA exposure and zoning violations.
 

@@ -14,7 +14,6 @@ license_source: https://github.com/czlonkowski/n8n-skills/blob/main/LICENSE
 # n8n Sub-workflows
 
 ## When to Use
-
 Use this skill when shared or multi-step logic should become a typed reusable workflow, when an existing workflow is growing difficult to reason about, or when an agent needs a workflow exposed as a tool.
 
 Preserve authentication and authorization boundaries when extracting logic. Do not place credentials in inputs or returned data, declare state-changing behavior explicitly, and ask before running or activating a sub-workflow that sends, writes, deletes, or calls a billable external service.

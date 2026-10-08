@@ -105,7 +105,6 @@ Editor-first web shells (**Construct**, **GDevelop**) fit visual prototyping; we
 | Optimize for WebGPU on day one | Ship WebGL; add WebGPU + fallback when needed |
 
 ## When to Use
-
 Use when choosing or comparing game engines/frameworks before implementation, especially for hybrid DOM+canvas or narrative-first products.
 
 ## Limitations

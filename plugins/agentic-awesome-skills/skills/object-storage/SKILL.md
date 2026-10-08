@@ -22,7 +22,6 @@ metadata:
 Configure and manage object storage solutions including AWS S3, MinIO (self-hosted), and compatible providers. Covers CLI operations, bucket policies, lifecycle rules, versioning, encryption, and the MinIO client (mc).
 
 ## When to Use
-
 - Storing application assets, backups, logs, or media files
 - Setting up an S3-compatible object store on-premises with MinIO
 - Configuring lifecycle rules to transition or expire objects automatically

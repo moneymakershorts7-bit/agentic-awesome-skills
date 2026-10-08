@@ -20,7 +20,6 @@ Based on the **Clief Notes Video-as-Code Architecture**, this workflow enforces 
 ---
 
 ## When to Use
-
 - Creating code-driven animated explainer videos (Remotion, HTML/CSS Canvas, WebGL).
 - Turning raw text, meeting notes, customer FAQs, or documentation into punchy, narrated visual explainers.
 - Synchronizing word-level spoken timestamps with kinetic typography and paired diagram highlights.
@@ -113,3 +112,8 @@ python3 scripts/audit_scene.py --project my-explainer
 - [Prompt Playbook](references/prompt-playbook.md) - Exact prompts for each stage to instruct AI assistants.
 - [Remotion Video Patterns](references/remotion-patterns.md) - Production-ready React/TypeScript explainer templates.
 - [SVG Asset & Motion Pipeline](references/svg-asset-pipeline.md) - Preparing Illustrator/Figma SVGs, layer naming, and path animation.
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

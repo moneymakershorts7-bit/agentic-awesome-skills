@@ -14,7 +14,6 @@ license_source: https://github.com/czlonkowski/n8n-skills/blob/main/LICENSE
 # Using the n8n-mcp Skills
 
 ## When to Use
-
 Use this router at the start of any n8n MCP workflow design, inspection, edit, validation, test, deployment, credential, execution, or troubleshooting task so the relevant specialist guidance is loaded first.
 
 Begin with read-only discovery and live schema inspection. Never copy secrets into prompts or workflow fields, never infer the target instance, and obtain approval before tests with side effects, activation, deletion, credential mutation, or other externally visible changes.

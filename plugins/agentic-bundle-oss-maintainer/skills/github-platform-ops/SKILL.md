@@ -12,7 +12,6 @@ allowed-tools: bash read grep
 # GitHub Platform Operations: Wiki, Environments, Actions & Workflows
 
 ## When to Use
-
 Utilizar este skill cuando se requiera operar componentes avanzados de la plataforma GitHub:
 - **GitHub Wiki:** Clonar el repositorio Git del wiki, disenar estructuras de navegacion (`_Sidebar.md`, `_Footer.md`, `Home.md`), o automatizar sincronizaciones de documentacion.
 - **GitHub Environments:** Crear y configurar ambientes de despliegue (`production`, `staging`), definir reglas de proteccion (aprobaciones manuales, wait timers, politicas de ramas), y gestionar variables o secretos aislados por ambiente.

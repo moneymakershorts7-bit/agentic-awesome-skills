@@ -22,7 +22,6 @@ Automate quality gates so that no change reaches production without passing test
 **Faster is Safer:** Smaller batches and more frequent releases reduce risk, not increase it. A deployment with 3 changes is easier to debug than one with 30. Frequent releases build confidence in the release process itself.
 
 ## When to Use
-
 - Setting up a new project's CI pipeline
 - Adding or modifying automated checks
 - Configuring deployment pipelines

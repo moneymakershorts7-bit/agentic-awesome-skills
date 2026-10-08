@@ -23,7 +23,6 @@ metadata:
 Implement FedRAMP (Federal Risk and Authorization Management Program) requirements for cloud service providers serving US federal agencies.
 
 ## When to Use
-
 - Pursuing FedRAMP authorization for a cloud service offering
 - Implementing NIST 800-53 security controls for federal workloads
 - Establishing continuous monitoring (ConMon) processes

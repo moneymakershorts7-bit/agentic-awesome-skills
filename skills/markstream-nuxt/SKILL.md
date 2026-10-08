@@ -21,7 +21,6 @@ license_source: https://github.com/Simon-He95/markstream-vue/blob/main/license
 Integrate `markstream-vue` into Nuxt while keeping hydration, browser-only peers, workers, and streaming behavior on the correct side of SSR boundaries.
 
 ## When to Use
-
 Use for Nuxt 3 or 4 pages, components, or plugins. Use `markstream-vue` for non-Nuxt Vue applications and `markstream-install` when the framework is not yet known.
 
 ## Workflow

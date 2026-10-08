@@ -12,7 +12,6 @@ license_source: https://github.com/microsoft/skills/blob/main/LICENSE
 
 # Azure AI Language Conversations for Python
 ## When to Use
-
 Use this skill when you need implement Conversational Language Understanding (CLU) using the azure-ai-language-conversations Python SDK. Use when working with ConversationAnalysisClient to analyze conversation intent and entities, building NLP features, or integrating language understanding into applications.
 
 

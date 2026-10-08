@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # Thick Client Security Testing
 ## When to Use
-
 - Assessing a desktop application's security posture.
 - Checking whether client-side trust decisions can be subverted.
 

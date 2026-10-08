@@ -12,7 +12,6 @@ license_source: https://github.com/stareezy-1/frontend-architecture-skill/blob/m
 
 # Frontend Optimistic Mutations (the write path)
 ## When to Use
-
 Use this skill when you need a portable, framework-agnostic discipline for the write path of any React or React Native app using a query/cache layer. Codifies the optimistic-update lifecycle (cancel in-flight queries → snapshot every affected cache → patch instantly → roll back verbatim on error → invalidate on...
 
 

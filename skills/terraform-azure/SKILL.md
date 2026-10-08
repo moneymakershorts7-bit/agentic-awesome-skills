@@ -401,7 +401,6 @@ resource "azurerm_key_vault_secret" "sql_password" {
 - [Related Skills](references/details.md)
 
 ## When to Use
-
 - You need multi-cloud or cloud-agnostic Infrastructure as Code.
 - Your team standardizes on Terraform across AWS, Azure, and GCP.
 - You need plan/apply workflows with change preview before deployment.

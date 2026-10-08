@@ -417,7 +417,6 @@ jobs:
 - [Best Practices](references/details.md)
 
 ## When to Use
-
 - Establishing change management processes for production environments
 - Implementing change advisory board (CAB) workflows
 - Defining change classification and approval requirements

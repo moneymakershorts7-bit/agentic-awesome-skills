@@ -12,7 +12,6 @@ license_source: https://github.com/huggingface/skills/blob/main/LICENSE
 
 # Hugging Face Dataset Viewer
 ## When to Use
-
 Use this skill when you need hugging Face Dataset Viewer.
 
 

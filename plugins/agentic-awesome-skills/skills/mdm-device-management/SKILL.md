@@ -17,7 +17,6 @@ metadata:
 ---
 
 ## When to Use
-
 - Provisioning, hardening, or operating the infrastructure described in this skill within an authorized environment.
 
 
@@ -394,7 +393,6 @@ New-NetFirewallRule -DisplayName "Allow RDP from VPN" `
 - [Quick Reference](references/details.md)
 
 ## When to Use
-
 - You are provisioning, configuring, or troubleshooting the infrastructure component covered by this skill (servers, storage, databases, networking, cloud, local AI).
 
 ## Limitations

@@ -22,7 +22,6 @@ metadata:
 Secure access to internal services without VPNs using Cloudflare's Zero Trust platform (Access, Tunnel, Gateway, and WARP).
 
 ## When to Use
-
 - Replacing VPN access to internal web applications, SSH, or RDP.
 - Enforcing identity-aware access policies on internal tools (dashboards, admin panels).
 - Exposing on-premises or private-network services securely to remote teams.

@@ -19,7 +19,6 @@ license_source: "https://github.com/mdagnolops/1human-reels/blob/717c0a28d9b6218
 Service origin: https://reels.1human.tech. The HTTP protocol is at this origin's `/skill.md`. The human's instructions and tool permissions remain authoritative.
 
 ## When to Use
-
 Use for an owner-authorized animation, short-video, motion effect or generative-art task where a source or shared favorite can help. Skip unrelated software tasks.
 
 ## How It Works

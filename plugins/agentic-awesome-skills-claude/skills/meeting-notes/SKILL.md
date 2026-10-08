@@ -19,7 +19,6 @@ license_source: https://github.com/alapha888/agent-skills-en/blob/main/LICENSE
 Turn messy meeting notes into minutes that let someone who missed the meeting catch up in 3 minutes — and let attendees know exactly what they owe.
 
 ## When to Use
-
 - Use when the user pastes meeting transcripts or rough notes and asks for minutes or a summary.
 - Use when decisions and action items need owners and deadlines assigned.
 

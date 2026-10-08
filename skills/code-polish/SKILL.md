@@ -19,7 +19,6 @@ Comments and non-semantic cleanup are the job. Logic is never the job. If a chan
 ---
 
 ## When to Use
-
 Apply this skill when:
 - The user asks to "clean up," "professionalize," or "polish" existing code
 - Code is being prepped for code review, handoff, open-sourcing, or documentation

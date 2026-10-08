@@ -13,7 +13,6 @@ metadata:
 # Google Slides Automation
 
 ## When to Use
-
 - Read or prepare authorized edits to a Google presentation.
 - Create or update content through an available, authenticated connector or a reviewed API integration.
 

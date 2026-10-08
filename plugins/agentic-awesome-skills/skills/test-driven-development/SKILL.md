@@ -17,7 +17,6 @@ Write the test first. Watch it fail. Write minimal code to pass.
 **Violating the letter of the rules is violating the spirit of the rules.**
 
 ## When to Use
-
 Use for behavior changes where a repeatable test can demonstrate the requirement or reproduce the bug. Inspect the repository’s test runner and existing coverage first. For copy, generated outputs or low-impact configuration, use the appropriate focused validation rather than manufacturing a unit test.
 
 ## Preserve existing work

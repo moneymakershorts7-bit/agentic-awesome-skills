@@ -18,8 +18,7 @@ license_source: "https://github.com/Sketchjar/stipple-agent-skills/blob/main/LIC
 
 Extract structured JSON from documents with per-value grounding: every extracted value cites where it came from (page number, confidence), and values that aren't clearly present are reported in `not_found` rather than hallucinated. Uses the Stipple API (free anonymous tier).
 
-## When to use
-
+## When to Use
 - Parsing payslips, invoices, bank statements, receipts, or contracts
 - Converting unstructured documents to JSON for downstream systems
 - Any extraction where hallucinated values are worse than missing values (lending, accounting, compliance)

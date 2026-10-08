@@ -24,7 +24,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 > Without that confirmation, remain read-only and provide defensive guidance only. Prefer a sandbox, disposable VM, or controlled lab.
 
 ## When to Use
-
 - Analyzing or modifying an Android APK during an authorized assessment.
 - Hooking runtime behavior of an app you own or are cleared to test.
 

@@ -19,7 +19,6 @@ metadata:
 # Tool-First Gate: Resolucion y Seguridad para Tareas Mecanicas
 
 ## When to Use
-
 Activar este gate **obligatoriamente** ante cualquier tarea **mecanica, algoritmica o deterministica** que **no requiera razonamiento cognitivo** del modelo.
 
 ### Tareas Mecanicas (Activar Gate)

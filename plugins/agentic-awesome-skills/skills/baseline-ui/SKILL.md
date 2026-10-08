@@ -12,7 +12,6 @@ license_source: https://github.com/ibelick/ui-skills/blob/main/LICENSE
 
 # Baseline UI
 ## When to Use
-
 Use this skill when you need quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast cleanup or polish pass.
 
 

@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # Database Security Assessment
 ## When to Use
-
 - Assessing database hardening and exposure within an approved scope.
 - Checking authz boundaries and risky server-side execution features.
 

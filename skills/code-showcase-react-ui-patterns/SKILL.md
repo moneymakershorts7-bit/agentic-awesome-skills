@@ -12,7 +12,6 @@ license_source: https://github.com/ChrisWiles/claude-code-showcase/blob/main/LIC
 
 # React UI Patterns
 ## When to Use
-
 Use this skill when you need modern React UI patterns for loading states, error handling, and data fetching. Use when building UI components, handling async data, or managing UI states.
 
 

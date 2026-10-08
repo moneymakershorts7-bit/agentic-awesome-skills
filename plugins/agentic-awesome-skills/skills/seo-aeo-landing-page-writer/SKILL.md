@@ -128,7 +128,6 @@ A: [standalone answer]
 - Hand off the completed page to `seo-aeo-meta-description-generator`, `seo-aeo-content-quality-auditor`, `seo-aeo-internal-linking`, and `seo-aeo-schema-generator` when available or requested.
 
 ## When to Use
-
 Use when creating or improving a conversion-focused product, service, offer, or homepage while preserving clear search and answer-engine structure.
 
 ## Limitations

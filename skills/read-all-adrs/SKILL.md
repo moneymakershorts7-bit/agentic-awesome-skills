@@ -18,7 +18,6 @@ disable-model-invocation: true
 <!-- TODO(David): write the strong wording here -->
 
 ## When to Use
-
 - Use when the user explicitly asks to load ADR context.
 - Use when architectural decisions must be understood before changing or judging a project.
 

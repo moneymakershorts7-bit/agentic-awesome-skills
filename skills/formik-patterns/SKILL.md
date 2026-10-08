@@ -12,7 +12,6 @@ license_source: https://github.com/ChrisWiles/claude-code-showcase/blob/main/LIC
 
 # Formik Patterns
 ## When to Use
-
 Use this skill when you need formik form handling with validation patterns. Use when building forms, implementing validation, or handling form submission.
 
 

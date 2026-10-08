@@ -9,7 +9,6 @@ date_added: "2026-07-18"
 # Antigravity Maintainer Batch Release
 
 ## When to Use
-
 Use this skill for repository-wide AAS maintenance, maintainer-side PR repair or merge batches, canonical synchronization, AAS Core or Workbench changes, protected releases, and hosted catalog or legacy redirect infrastructure. Do not use it for ordinary contribution work that does not require maintainer privileges or canonical convergence.
 
 ## Protected-Main Contract

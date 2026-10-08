@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # LLM / AI 安全测试
 ## When to Use
-
 - Red-teaming an LLM-based application within an approved scope.
 - Mapping agent tool permissions against abuse scenarios.
 

@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # Anti-Sleep (macOS caffeinate)
 
 ## When to Use
-
 - Use when the user wants the Mac to stay awake during a long supervised task.
 - Use when a build, download, or automation run should not be interrupted by sleep.
 

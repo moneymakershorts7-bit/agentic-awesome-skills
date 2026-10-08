@@ -19,7 +19,6 @@ license_source: https://github.com/alapha888/agent-skills-en/blob/main/LICENSE
 Generate a commit message from the actual staged changes (`git diff --cached`). The message must let a reader know "what changed and why" without opening the diff.
 
 ## When to Use
-
 - Use when the user asks to write, generate, or polish a git commit message.
 - Use when staged changes need a conventional-commit message with a why-focused body.
 

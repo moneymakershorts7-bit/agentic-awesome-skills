@@ -14,7 +14,6 @@ tools: [claude, cursor, codex, antigravity]
 # Agent Skill: Principal UI/UX Architect & Motion Choreographer (Awwwards-Tier)
 
 ## When to Use
-
 - Use when the user wants a high-end agency, Awwwards-tier, Apple-like, Linear-like, luxury, or polished visual design.
 - Use when building a landing page, portfolio, SaaS UI, consumer product page, or app surface that needs premium depth and motion.
 - Use when the design must avoid generic fonts, harsh shadows, static layouts, default navbars, and ordinary Bootstrap-style grids.

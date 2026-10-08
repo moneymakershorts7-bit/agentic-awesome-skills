@@ -134,7 +134,6 @@ scope:
 - vulnerability-scanning (`vulnerability-scanning`) - Vulnerability discovery
 
 ## When to Use
-
 - You have explicit, written authorization to assess the target in scope, and the task matches this skill's active assessment workflow.
 
 ## Limitations

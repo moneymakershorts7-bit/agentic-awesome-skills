@@ -12,7 +12,6 @@ license_source: https://github.com/ChrisWiles/claude-code-showcase/blob/main/LIC
 
 # Core Components
 ## When to Use
-
 Use this skill when you need core component library and design system patterns. Use when building UI, using design tokens, or working with the component library.
 
 

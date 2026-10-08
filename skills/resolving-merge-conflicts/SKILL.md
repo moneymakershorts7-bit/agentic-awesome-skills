@@ -12,7 +12,6 @@ license_source: https://github.com/mattpocock/skills/blob/main/LICENSE
 
 
 ## When to Use
-
 Use when you need to resolve an in-progress git merge/rebase conflict.
 
 1. **See the current state** of the merge/rebase. Check git history, and the conflicting files.

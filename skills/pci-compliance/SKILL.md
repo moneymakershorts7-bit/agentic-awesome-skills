@@ -9,7 +9,6 @@ date_added: "2026-02-27"
 # Payment Data and PCI Evidence Review
 
 ## When to Use
-
 Review payment data flows, prepare engineering controls or collect evidence for a scoped PCI assessment. This skill does not certify compliance or determine assessment eligibility on its own.
 
 ## Inputs and prerequisites

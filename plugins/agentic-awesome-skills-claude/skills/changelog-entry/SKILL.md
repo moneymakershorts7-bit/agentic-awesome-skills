@@ -23,7 +23,6 @@ tools:
 Generate a CHANGELOG.md entry following the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) standard from a commit range or pull request.
 
 ## When to Use
-
 - Before releasing a version: convert the commit log into a clean changelog entry.
 - After merging a PR: document what changed for users and maintainers.
 - When the user says "update changelog", "write changelog entry", "changelog for this release", or "what changed in v…".

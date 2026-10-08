@@ -267,7 +267,6 @@ Before finalizing output:
 ---
 
 ## When to Use
-
 Use for a new page, component or deliberate visual refresh with a known primary user action. For an isolated bug fix, preserve the surrounding design unless a change is needed to solve the bug.
 
 ## Inputs and worked example

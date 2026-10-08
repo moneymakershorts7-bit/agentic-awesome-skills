@@ -18,8 +18,7 @@ license_source: "https://github.com/Sketchjar/stipple-agent-skills/blob/main/LIC
 
 Verify that citations in a document actually resolve and support the claims they're attached to. Uses the Stipple API (free anonymous tier, no signup) for citation resolution, arithmetic recomputation, and unsupported-claim detection.
 
-## When to use
-
+## When to Use
 - Before submitting or publishing a research report, tender response, or whitepaper
 - Reviewing an LLM-generated document (LLM citations are plausibly-formatted and frequently wrong)
 - Due diligence on third-party reports

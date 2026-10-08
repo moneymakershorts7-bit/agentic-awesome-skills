@@ -10,7 +10,6 @@ metadata:
 # GitHub Actions Workflow Patterns
 
 ## When to Use
-
 Implement testing, matrix builds, artifact preparation or an explicitly authorized deployment workflow for an existing repository.
 
 ## Inputs

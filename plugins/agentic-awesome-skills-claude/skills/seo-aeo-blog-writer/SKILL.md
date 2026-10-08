@@ -166,7 +166,6 @@ Every blog post produced by this skill MUST contain:
 - Feeds output to: `seo-aeo-content-quality-auditor`, `seo-aeo-internal-linking`
 
 ## When to Use
-
 Use when creating or revising a long-form article intended to capture a specific search intent and guide readers toward a relevant next step.
 
 ## Limitations

@@ -26,8 +26,7 @@ A Claude Code skill that auto-routes subtasks to the cheapest model that can han
 
 Anthropic's own bug tracker (Issue #27665) reports 93.8% of Max-subscriber Claude Code tokens flow to Opus. Existing routers (claude-router, wshobson, VoltAgent) either pin models statically or route by vibes-based heuristics with no measurement. TokenWise fills the measurement gap.
 
-## When to use
-
+## When to Use
 - Cutting Claude Code token spend without sacrificing output quality
 - Validating whether Haiku/Sonnet is "good enough" for a specific task class before trusting auto-routing
 - Auditing where Opus tokens are actually being burned

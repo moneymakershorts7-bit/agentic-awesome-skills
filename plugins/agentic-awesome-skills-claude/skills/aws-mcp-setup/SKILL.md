@@ -12,7 +12,6 @@ license_source: https://github.com/zxkane/aws-skills/blob/main/LICENSE
 
 # AWS MCP Server Configuration Guide
 ## When to Use
-
 Use this skill when you need configure AWS MCP servers for documentation search and API access. Use when setting up AWS MCP, configuring AWS documentation tools, troubleshooting MCP connectivity, or when user mentions aws-mcp, awsdocs, uvx setup, or MCP server configuration. Covers both Full AWS MCP Server (with...
 
 

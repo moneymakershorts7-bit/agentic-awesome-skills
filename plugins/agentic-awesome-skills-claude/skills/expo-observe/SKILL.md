@@ -12,7 +12,6 @@ license_source: https://github.com/expo/skills/blob/main/LICENSE
 
 # EAS Observe
 ## When to Use
-
 Use this skill when you need use for anything related to EAS Observe — adding `expo-observe` to an Expo project (AppMetricsRoot/ObserveRoot HOC, markInteractive, the useObserve hook, and the Expo Router / React Navigation integrations for per-route metrics), querying via the EAS CLI (`eas observe:metrics-summary`,...
 
 

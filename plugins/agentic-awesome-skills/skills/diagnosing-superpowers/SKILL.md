@@ -134,3 +134,8 @@ yourself in step 3 and which findings to lead with in the verdict.
 | "They want a bug report, so I'll build the bundle now" | The bundle is their session data, packaged. Build it only when they ask for it. |
 | "Small, targeted edit, no restructuring needed" | Not your call, however small. Report the evidence; the triager decides. |
 | "The price per token is well known" | Numbers you did not compute from the transcript are invented. Cite or drop. |
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

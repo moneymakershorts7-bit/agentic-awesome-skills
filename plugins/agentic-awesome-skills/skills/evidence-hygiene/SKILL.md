@@ -386,7 +386,6 @@ This skill covers ONLY the redaction / sanitization / hygiene layer that sits be
 - **`bb-methodology`** — When Phase 5 (Validate & Report) needs evidence captured. Workflow primitive: Phase 5's evidence-capture step routes through this skill before the report is drafted.
 
 ## When to Use
-
 - You need this skill's process guidance (reporting format, evidence handling, detection notes, or scope triage) during an authorized engagement.
 - No active probing is involved in this step.
 

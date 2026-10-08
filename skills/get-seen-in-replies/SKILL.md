@@ -26,7 +26,6 @@ removed, it has a chance. If it only makes sense as a response, it is a
 conversation, which is fine, but it is not distribution.
 
 ## When to Use
-
 - Use when someone asks what to reply to a tweet, or pastes a tweet and asks for a response.
 - Use when someone wants to grow on Twitter/X by engaging with other accounts.
 - Use when someone says their replies go nowhere.

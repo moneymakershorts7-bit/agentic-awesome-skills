@@ -17,7 +17,6 @@ license_source: "https://github.com/sanjay3290/ai-skills/blob/main/LICENSE"
 # PostgreSQL Read-Only Query Skill
 
 ## When to Use
-
 - Use when querying PostgreSQL databases and access must stay strictly read-only
 - Use when exploring schemas, tables, and data across multiple configured connections
 - Use when you want defense-in-depth protection against accidental INSERT/UPDATE/DELETE or DDL

@@ -32,8 +32,7 @@ By default, wikis live under `~/dair-wikis/`. Override the location with the `WI
 
 This skill is intentionally general. Do not hard-code every wiki into the AI papers structure. Use each wiki's `wiki.config.md` as the source of truth for purpose, audience, page types, style rules, and update workflow.
 
-## When To Use
-
+## When to Use
 Use this skill when the user asks to:
 
 - Start a new wiki or knowledge base.

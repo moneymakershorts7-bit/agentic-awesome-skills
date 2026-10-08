@@ -58,7 +58,6 @@ Technical SEO forms the foundation of both traditional search visibility and AI 
 - [Detailed Findings](references/details.md)
 
 ## When to Use
-
 - You need a Generative Engine Optimization task for a website: audit, citability, crawlers, schema, llms.txt, content, platform tuning, or client reporting.
 - Run read-only analysis first; propose site changes before making any.
 

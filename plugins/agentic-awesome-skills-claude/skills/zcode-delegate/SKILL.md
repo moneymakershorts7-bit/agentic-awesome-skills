@@ -21,7 +21,6 @@ metadata:
 # ZCode Delegate
 
 ## When to Use
-
 - You want to delegate a bounded coding task to a separate `zcode` implementer (`Z.AI ZCode`) and then review its diff yourself.
 - The user explicitly asked for delegation to this implementer.
 

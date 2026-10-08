@@ -18,8 +18,7 @@ license_source: "https://github.com/Sketchjar/stipple-agent-skills/blob/main/LIC
 
 Estimate the probability that a document's prose was written by AI, with the specific linguistic tells and an honest abstention when the document isn't prose. Uses the Stipple API (free anonymous tier).
 
-## When to use
-
+## When to Use
 - Educators screening student submissions
 - Publishers and platforms triaging inbound content
 - HR reviewing AI-drafted CVs (flag, don't reject)

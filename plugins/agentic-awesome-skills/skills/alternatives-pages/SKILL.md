@@ -12,7 +12,6 @@ license_source: https://github.com/jonathimer/devmarketing-skills/blob/main/LICE
 
 # Alternatives Pages
 ## When to Use
-
 Use this skill when you need create "[Competitor] alternative" and comparison pages for developer tools. Build honest, high-converting comparison content that ranks for competitive search terms. Trigger phrases: "alternatives page", "comparison page", "vs page", "[competitor] alternative", "competitor comparison",...
 
 

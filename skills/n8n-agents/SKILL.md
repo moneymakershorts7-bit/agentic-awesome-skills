@@ -14,7 +14,6 @@ license_source: https://github.com/czlonkowski/n8n-skills/blob/main/LICENSE
 # n8n Agents
 
 ## When to Use
-
 Use this skill for n8n AI Agent, LangChain, classifier, extractor, memory, RAG, tool-calling, structured-output, or human-review design. Confirm the target n8n instance and inspect the live node schema before applying version-sensitive configuration.
 
 Before activating or testing a workflow that can send messages, write data, make purchases, change accounts, or call external services, show the user the exact effects and obtain approval. Store provider keys and tokens only in n8n credentials; never place them in prompts, Set nodes, workflow JSON, examples, or logs.

@@ -15,7 +15,6 @@ license_source: https://github.com/expo/skills/blob/main/LICENSE
 Complete reference for building native modules and views using the Expo Modules API. Covers Swift (iOS), Kotlin (Android), and TypeScript.
 
 ## When to Use
-
 - Creating a new Expo native module or native view
 - Adding native functionality (camera, sensors, system APIs) to an Expo app
 - Wrapping platform SDKs for React Native consumption

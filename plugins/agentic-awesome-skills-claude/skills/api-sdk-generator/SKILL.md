@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # API SDK & Codegen Skill
 ## When to Use
-
 Use this skill when you need generates client SDK code, API wrapper libraries, request/response models, and language-specific usage patterns for any REST API. Use whenever the user asks to "generate an SDK", "write a client library", "create API wrappers", "generate TypeScript types from my API", "write a Python...
 
 

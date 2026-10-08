@@ -313,7 +313,6 @@ def extract_context_from_request(request_headers: dict):
 - [Related Skills](references/details.md)
 
 ## When to Use
-
 Apply this skill whenever you operate:
 
 - **Autonomous AI agents** that make multi-step tool calls (e.g., coding agents, support agents, data-pipeline agents).

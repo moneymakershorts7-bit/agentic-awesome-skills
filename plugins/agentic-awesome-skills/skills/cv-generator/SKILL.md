@@ -23,7 +23,6 @@ tags:
 Read [the detailed guide](references/detailed-guide.md) before executing this skill. It retains the complete procedure and reference material. Treat its safety, prerequisites, and validation requirements as mandatory. For focused work, load the relevant sections; for end-to-end work, read the guide completely.
 
 ## When to Use
-
 Use this skill when you need to:
 - Generate a professional, ATS-optimized CV from multiple sources (LinkedIn, GitHub, Portfolio).
 - Tailor an existing CV for a specific Job Description (JD).

@@ -19,7 +19,6 @@ A confident answer is not a correct one. Long sessions accumulate context that q
 This is not `/review`. `/review` is a verdict on a finished artifact. This is an in-flight posture: non-trivial decisions get cross-examined while course-correction is still cheap.
 
 ## When to Use
-
 A decision is **non-trivial** when at least one of these is true:
 
 - It introduces or modifies branching logic

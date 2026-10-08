@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # Supply Chain Security Testing
 ## When to Use
-
 - Auditing how software is built, packaged, and depended upon.
 - Verifying whether a disclosed CVE is actually reachable in a project.
 

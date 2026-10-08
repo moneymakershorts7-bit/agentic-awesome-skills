@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # YouTube Transcript (via DeepAPI, yt-dlp fallback)
 
 ## When to Use
-
 - Use when the user asks for a YouTube transcript, captions, subtitles, or spoken-content extraction.
 - Use when DeepAPI or a local fallback can fetch the transcript safely.
 

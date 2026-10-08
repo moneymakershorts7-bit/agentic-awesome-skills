@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # browser-harness
 
 ## When to Use
-
 - Use when a task needs a real logged-in browser, visible interaction, or JS-heavy page control.
 - Use when static fetches are insufficient and CDP browser automation is appropriate.
 

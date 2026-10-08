@@ -21,7 +21,6 @@ license_source: https://github.com/MohammadHijjawi97/since-cutoff/blob/f2108c13c
 A coding model learns each library's API as it was at its training cutoff, but the project's lockfile keeps moving. This skill runs the since-cutoff CLI (MIT, PyPI `since-cutoff`, pinned here to release 0.4.1). For each pinned dependency, the CLI takes the latest release on or before the model's cutoff and compares that release's public API with the pinned release. The comparison is static (griffe), so no package code runs. It then reports the changed APIs that the project's code uses, with the files that use them. If the user agrees, it writes short notes into AGENTS.md or CLAUDE.md, each tagged with the evidence behind it (for example `[diff]`). `scan` makes no model calls and needs no API key. This adapts the [upstream skill](https://github.com/MohammadHijjawi97/since-cutoff/tree/f2108c13c112dce0ca3597b5a2b79ca01afa7b80/skills/since-cutoff) under its [MIT license](https://github.com/MohammadHijjawi97/since-cutoff/blob/f2108c13c112dce0ca3597b5a2b79ca01afa7b80/LICENSE).
 
 ## When to Use
-
 - Use when the user asks whether you know the versions of their Python dependencies, or what changed since your training data.
 - Use when code keeps failing on a renamed, moved or removed function, class or parameter of a pinned library.
 - Use after a dependency upgrade, before writing code against the upgraded library.

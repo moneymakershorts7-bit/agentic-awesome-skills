@@ -23,7 +23,6 @@ Most agents answer a marketing question by reaching for a tactic: a hook templat
 It is a pure reasoning skill. It reads the user's own context (product, offer, audience, budget, channel data) and returns a verdict with the reasoning attached, including the verdict "this is not worth doing". The full version lives at the source repository; this entry is adapted for this catalog.
 
 ## When to Use
-
 - The user asks where their first customers will come from, or how to get client #1
 - The user asks "should I do X to get Y" and wants an opinion rather than a yes
 - The user wants an ad, landing page, or cold outreach sequence written for a real offer

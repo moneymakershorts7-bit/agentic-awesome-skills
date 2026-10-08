@@ -243,7 +243,6 @@ curl -s "https://$TARGET/api/file?path=/proc/self/cwd"       # working directory
 - /proc/self/environ exfil: High (if cloud keys present)
 
 ## When to Use
-
 - You have explicit, written authorization to assess the target in scope, and the task matches this skill's vulnerability class or technique within a bug-bounty or penetration-test engagement.
 - You need the recon, exploitation, or validation workflow described below — executed strictly inside the approved scope.
 

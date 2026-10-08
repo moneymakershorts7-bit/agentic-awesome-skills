@@ -22,7 +22,6 @@ metadata:
 Configure NFS servers and clients for network file sharing across Linux systems. Covers NFSv4 server setup, export options, client mounting, autofs for on-demand mounts, Kerberos security, performance tuning, and Kubernetes integration.
 
 ## When to Use
-
 - Sharing directories between multiple Linux servers (web farms, build clusters)
 - Providing shared storage for containerized workloads (Kubernetes ReadWriteMany)
 - Centralizing home directories or application data across a fleet

@@ -12,7 +12,6 @@ license_source: https://github.com/coreyhaines31/marketingskills/blob/main/LICEN
 
 # Competitor Profiling
 ## When to Use
-
 Use this skill when you need when the user wants to research, profile, or analyze competitors from their URLs. Also use when the user mentions 'competitor profile,' 'competitor research,' 'competitor analysis,' 'profile this competitor,' 'analyze competitor,' 'competitive intelligence,' 'competitor deep dive,'...
 
 

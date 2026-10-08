@@ -12,7 +12,6 @@ license_source: https://github.com/hyhmrright/brooks-lint/blob/main/LICENSE
 
 # Brooks-Lint — PR Review
 ## When to Use
-
 Use this skill when you need pR code review that surfaces decay risks, design smells, and maintainability issues with concrete Symptom → Source → Consequence → Remedy findings, drawing on twelve classic engineering books. Triggers when: user asks to review code, check a PR, shares a diff or pastes code asking...
 
 

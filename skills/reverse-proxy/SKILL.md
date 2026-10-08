@@ -22,7 +22,6 @@ metadata:
 Configure reverse proxies to route traffic, terminate TLS, enforce rate limits, and serve as the gateway between clients and backend services.
 
 ## When to Use
-
 - Routing traffic from a public domain to one or more backend services.
 - Terminating TLS at the edge and forwarding plain HTTP to backends.
 - Adding rate limiting, CORS, security headers, and access control.

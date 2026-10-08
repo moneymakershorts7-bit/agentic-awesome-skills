@@ -23,7 +23,6 @@ Inspired by [lavish-axi](https://github.com/kunchenguid/lavish-axi); rebuilt
 ECC-native around the `/plan` confirmation gate, with zero dependencies.
 
 ## When to Use
-
 - You just wrote a plan artifact (`.claude/plans/*.plan.md` from `/plan`) and
   need the CONFIRM/approve decision — the canvas verdict replaces a typed
   "yes/proceed".

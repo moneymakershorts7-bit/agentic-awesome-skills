@@ -9,7 +9,6 @@ date_added: "2026-10-03"
 # Meta Ads Audit
 
 ## When to Use
-
 Use this skill whenever the task matches the workflows and capabilities described above.
 
 

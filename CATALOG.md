@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2764
+Total skills: 2772
 
 ## agent-behavior (5)
 
@@ -2582,6 +2582,19 @@ Total skills: 2764
 | --- | --- | --- | --- | --- | --- |
 | `axiom` | First-principles assumption auditor. Classifies each hidden assumption (fact / convention / belief / interest-driven), ranks by fragility × impact, and rebui... | safe | community | axiom | axiom, first, principles, assumption, auditor, classifies, each, hidden, fact, convention, belief, interest |
 | `falsify` | The scientific thinking protocol for AI agents. Use when facing complex, ambiguous, or high-stakes questions where guessing is costly: hypothesis → attempt t... | safe | 263311487-ux/falsify | reasoning, falsification, science, thinking, verification, epistemology | reasoning, falsification, science, thinking, verification, epistemology, falsify, scientific, protocol, ai, agents, facing |
+
+## reasoning-and-analysis (8)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `cove-reasoning` | Execute 4-stage Chain-of-Verification (CoVe) to eliminate LLM hallucinations, decouple fact-checking from generation bias, and produce strictly grounded answ... | safe | academic | cove, reasoning | cove, reasoning, execute, stage, chain, verification, eliminate, llm, hallucinations, decouple, fact, checking |
+| `cumulative-reasoning` | Cumulative Reasoning (CR) breaks complex problem solving into a Directed Acyclic Graph (DAG) of verified lemmas and propositions via Proposer, Verifier, and ... | safe | academic | cumulative, reasoning | cumulative, reasoning, cr, breaks, complex, problem, solving, directed, acyclic, graph, dag, verified |
+| `lats-agent-search` | Language Agent Tree Search (LATS) unifies Monte Carlo Tree Search (MCTS), reasoning, action execution, and environmental reflection. Use for complex multi-st... | safe | academic | lats, agent, search | lats, agent, search, language, tree, unifies, monte, carlo, mcts, reasoning, action, execution |
+| `metacognitive-evaluator` | Metacognitive Evaluator computes Semantic Entropy H(S) and calibrates epistemic uncertainty over candidate outputs. Use before making high-consequence assert... | safe | academic | metacognitive, evaluator | metacognitive, evaluator, computes, semantic, entropy, calibrates, epistemic, uncertainty, candidate, outputs, before, making |
+| `neuro-symbolic-verifier` | Neuro-Symbolic Verifier extracts formal Hoare Triple contracts and loop invariants, proving total correctness via SMT solvers (Z3 / Dafny / Lean 4) and extra... | safe | academic | neuro, symbolic, verifier | neuro, symbolic, verifier, extracts, formal, hoare, triple, contracts, loop, invariants, proving, total |
+| `sprout-backtracking` | SPROUT (Snapshot-based Rollout) enables agents to take lightweight filesystem and context checkpoints after every tool step, scoring progress via Process Ver... | safe | academic | sprout, backtracking | sprout, backtracking, snapshot, rollout, enables, agents, take, lightweight, filesystem, context, checkpoints, after |
+| `test-time-budgeting` | Adaptive Test-Time Compute Allocation & Budget Forcing dynamically budgets reasoning tokens based on predicted problem difficulty and enforces self-reflectio... | safe | academic | time, budgeting | time, budgeting, test, adaptive, compute, allocation, budget, forcing, dynamically, budgets, reasoning, tokens |
+| `turbo-quant` | Compress agent episodic memory, KV-cache tensors, and execute sub-millisecond vector routing over 2,700+ skills using Google TurboQuant (PolarQuant + QJL res... | safe | academic | turbo, quant | turbo, quant, compress, agent, episodic, memory, kv, cache, tensors, execute, sub, millisecond |
 
 ## reliability (18)
 

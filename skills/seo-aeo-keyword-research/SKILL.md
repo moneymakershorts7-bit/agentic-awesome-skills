@@ -331,7 +331,6 @@ Do not fill the table with near-duplicates to reach ten. If fewer than five dist
   `seo-aeo-meta-description-generator`
 
 ## When to Use
-
 Use when selecting target queries, understanding search intent, or turning a business goal into a prioritised content map.
 
 ## Limitations

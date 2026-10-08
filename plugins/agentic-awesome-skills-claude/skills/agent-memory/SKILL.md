@@ -12,7 +12,6 @@ license_source: https://github.com/webzler/agentMemory/blob/main/LICENSE
 
 # agentMemory Skill
 ## When to Use
-
 Use this skill when you need a hybrid memory system that provides persistent, searchable knowledge management for AI agents.
 
 

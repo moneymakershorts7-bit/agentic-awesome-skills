@@ -14,7 +14,6 @@ license_source: https://github.com/czlonkowski/n8n-skills/blob/main/LICENSE
 # Working with multiple n8n instances over MCP
 
 ## When to Use
-
 Use this skill whenever one MCP connection can target multiple n8n instances, before instance-specific reads or writes, and whenever results suggest the session is aimed at the wrong environment.
 
 Resolve the target by stable instance ID, verify it with a read-only health check, and state the resolved environment before mutations. Require explicit confirmation for credential create/update/delete operations, never print secret values, and stop on ambiguous targeting rather than guessing.

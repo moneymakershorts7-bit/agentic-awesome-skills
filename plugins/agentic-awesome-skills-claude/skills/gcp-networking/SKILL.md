@@ -22,7 +22,6 @@ metadata:
 Design, implement, and secure network infrastructure on Google Cloud Platform.
 
 ## When to Use
-
 - Building VPC networks for new GCP projects or multi-project architectures
 - Configuring firewall rules to control traffic between services
 - Setting up Cloud NAT for outbound internet access from private instances

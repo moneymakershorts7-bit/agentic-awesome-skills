@@ -102,7 +102,6 @@ execution, and production mutation always require separate authority.
 $ARGUMENTS
 
 ## When to Use
-
 - You need to capture or retrieve durable YYLO Ledger artifact Records (stdout, model-output, report, receipt) with provenance, retention, and immutable payloads.
 - New operational PDRs, contracts, plans, reports, and receipts belong here - not in product docs, task bodies, or new `.juno_task/specs` files.
 

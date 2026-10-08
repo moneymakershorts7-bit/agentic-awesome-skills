@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 Use context-mode tools (`ctx_execute`, `ctx_execute_file`, `ctx_fetch_and_index`) instead of raw Bash/cat when processing large outputs.
 
 ## When to Use
-
 - Processing large CLI outputs (logs, test reports, dependency trees, git histories).
 - Parsing and querying large JSON, YAML, CSV, or XML data files in a sandbox.
 - Handling Playwright browser snapshots, console logs, or network requests without flooding context.
@@ -86,3 +85,8 @@ About to run a command / read a file / call an API?
 4. **For files you need to EDIT**: Use the normal Read tool. context-mode is for analysis, not editing.
 5. **Always use `filename` parameter** on Playwright tools (`browser_snapshot`, `browser_console_messages`, `browser_network_requests`).
 6. **Never use `ctx_index(content: large_data)`.** Use `ctx_index(path: ...)` to read files server-side.
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

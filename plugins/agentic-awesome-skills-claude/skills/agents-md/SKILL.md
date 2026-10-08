@@ -21,7 +21,6 @@ limit, required section list, symlink layout, or commit-attribution policy;
 follow the repository's own needs and maintainer intent.
 
 ## When to Use
-
 - The user asks to create, update, shorten, or audit `AGENTS.md`.
 - A monorepo needs root instructions plus narrower package-level overrides.
 - Existing agent instructions contain stale commands, duplicated policy, or

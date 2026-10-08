@@ -12,7 +12,6 @@ license_source: https://github.com/huggingface/skills/blob/main/LICENSE
 
 # TRL Training Skill
 ## When to Use
-
 Use this skill when you need train and fine-tune transformer language models using TRL (Transformers Reinforcement Learning). Supports SFT, DPO, GRPO, KTO, RLOO and Reward Model training via CLI commands.
 
 

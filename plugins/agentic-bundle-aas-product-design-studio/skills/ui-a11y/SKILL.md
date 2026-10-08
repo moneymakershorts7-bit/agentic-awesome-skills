@@ -13,7 +13,6 @@ metadata:
 
 # Accessibility Audit
 ## When to Use
-
 Use this skill when you need audit a component or page for accessibility issues and fix them.
 
 

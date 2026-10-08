@@ -18,8 +18,7 @@ For step-by-step clicks at common hosts, open the matching guide on [Sending dom
 
 **Related skills:** `mailtrap-sending-emails` (after domain is ready).
 
-## When to use
-
+## When to Use
 - New **Sending Domains** setup, stuck verification, or compliance questions
 - DNS at Cloudflare, AWS, Google, Namecheap, GoDaddy, DigitalOcean, etc.
 

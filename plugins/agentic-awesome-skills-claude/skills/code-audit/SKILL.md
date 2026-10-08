@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # Source Code Security Audit
 ## When to Use
-
 - Reviewing a codebase for security defects with static analysis.
 - Verifying that a vulnerability fix actually removes the flawed pattern.
 

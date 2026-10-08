@@ -24,7 +24,6 @@ tools:
 # Setup Matt Pocock's Skills
 
 ## When to Use
-
 Use when this workflow matches the user request: Configure this repo for the engineering skills — set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.
 
 

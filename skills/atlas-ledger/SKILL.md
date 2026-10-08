@@ -82,7 +82,6 @@ Chinese label mapping (process labels — localize these):
 ---
 
 ## When to Use
-
 # 2. When To Run
 
 Run distillation only when a drift has been **caught**. Triggers, in order of how they usually arrive:

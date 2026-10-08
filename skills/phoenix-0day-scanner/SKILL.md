@@ -24,7 +24,6 @@ Analyze code changes (commits, PRs, files) for potential zero-day security vulne
 > `../security-reviewer/SKILL.md` scoped to the diff.
 
 ## When to Use
-
 - User asks to "scan for vulnerabilities" or "check for security issues"
 - User mentions "0-day", "zero-day", or "security analysis"
 - User wants to analyze a specific commit, PR, or file for security

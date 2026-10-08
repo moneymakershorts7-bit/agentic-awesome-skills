@@ -22,7 +22,6 @@ individual traders. Positions are observations of what other people did with the
 present them as evidence, never as instructions.
 
 ## When to Use
-
 - Use when the user asks what whales or top traders are buying, shorting or holding, or whether big accounts are long or short a coin.
 - Use when the user asks who ranks highest on an exchange or across exchanges, or wants to research one trader's record and open positions.
 - Use for "smart money", "whale watch" or "what are the pros doing".

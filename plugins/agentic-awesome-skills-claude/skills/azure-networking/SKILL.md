@@ -433,7 +433,6 @@ az network application-gateway waf-policy managed-rule rule-set add \
 - [Related Skills](references/details.md)
 
 ## When to Use
-
 - You are designing the network foundation for Azure workloads.
 - You need to isolate environments with VNets and NSGs.
 - You are connecting on-premises networks to Azure via VPN or ExpressRoute.

@@ -12,7 +12,6 @@ license_source: https://github.com/maxbaluev/accreted-intelligence/blob/main/LIC
 
 # solve
 ## When to Use
-
 Use this skill when you need route a goal through acc's scored-memory loop via acc_act(runtime="solve"); deliberate any returned brain_frame and submit via continue.
 
 

@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # Windows / Active Directory Security
 ## When to Use
-
 - Mapping and attacking AD trust paths in an authorized engagement.
 - Researching escalation routes (AD CS, Kerberos delegation) in labs.
 

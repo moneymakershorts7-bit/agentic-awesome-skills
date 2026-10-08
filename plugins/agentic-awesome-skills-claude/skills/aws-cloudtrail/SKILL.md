@@ -22,7 +22,6 @@ metadata:
 Audit AWS account activity with CloudTrail for compliance, security investigation, and operational troubleshooting.
 
 ## When to Use
-
 - Enabling organization-wide audit logging across all AWS accounts
 - Investigating security incidents or unauthorized API activity
 - Meeting compliance requirements for SOC 2, HIPAA, PCI DSS, or FedRAMP

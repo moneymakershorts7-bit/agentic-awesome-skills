@@ -22,7 +22,6 @@ Master advanced Git techniques to maintain clean history, collaborate effectivel
 - Provide actionable steps and verification.
 
 ## When to Use
-
 - Cleaning up commit history before merging
 - Applying specific commits across branches
 - Finding commits that introduced bugs

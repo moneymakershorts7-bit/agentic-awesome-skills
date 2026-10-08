@@ -22,7 +22,6 @@ metadata:
 Administer, optimize, and secure MongoDB NoSQL databases in development and production environments.
 
 ## When to Use
-
 - You need a document-oriented database with flexible schemas.
 - Your data is semi-structured or heavily nested (JSON-like documents).
 - You need horizontal scaling through sharding.

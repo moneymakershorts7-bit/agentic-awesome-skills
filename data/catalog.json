@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2764,
+  "total": 2772,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -21050,6 +21050,34 @@
       "path": "skills/court/SKILL.md"
     },
     {
+      "id": "cove-reasoning",
+      "canonical_id": "cove-reasoning",
+      "name": "cove-reasoning",
+      "description": "Execute 4-stage Chain-of-Verification (CoVe) to eliminate LLM hallucinations, decouple fact-checking from generation bias, and produce strictly grounded answers. Use when synthesizing complex factual analysis, code claims, or historical data.",
+      "category": "reasoning-and-analysis",
+      "risk": "safe",
+      "source": "academic",
+      "tags": [
+        "cove",
+        "reasoning"
+      ],
+      "triggers": [
+        "cove",
+        "reasoning",
+        "execute",
+        "stage",
+        "chain",
+        "verification",
+        "eliminate",
+        "llm",
+        "hallucinations",
+        "decouple",
+        "fact",
+        "checking"
+      ],
+      "path": "skills/cove-reasoning/SKILL.md"
+    },
+    {
       "id": "cowork-to-code-bridge",
       "canonical_id": "cowork-to-code-bridge",
       "name": "cowork-to-code-bridge",
@@ -22097,6 +22125,34 @@
         "survey"
       ],
       "path": "skills/culture-retention/SKILL.md"
+    },
+    {
+      "id": "cumulative-reasoning",
+      "canonical_id": "cumulative-reasoning",
+      "name": "cumulative-reasoning",
+      "description": "Cumulative Reasoning (CR) breaks complex problem solving into a Directed Acyclic Graph (DAG) of verified lemmas and propositions via Proposer, Verifier, and Reporter roles. Use for formal proofs, invariant validation, and algorithmic proofs.",
+      "category": "reasoning-and-analysis",
+      "risk": "safe",
+      "source": "academic",
+      "tags": [
+        "cumulative",
+        "reasoning"
+      ],
+      "triggers": [
+        "cumulative",
+        "reasoning",
+        "cr",
+        "breaks",
+        "complex",
+        "problem",
+        "solving",
+        "directed",
+        "acyclic",
+        "graph",
+        "dag",
+        "verified"
+      ],
+      "path": "skills/cumulative-reasoning/SKILL.md"
     },
     {
       "id": "cursor-delegate",
@@ -44519,6 +44575,35 @@
       "path": "skills/latex-paper-conversion/SKILL.md"
     },
     {
+      "id": "lats-agent-search",
+      "canonical_id": "lats-agent-search",
+      "name": "lats-agent-search",
+      "description": "Language Agent Tree Search (LATS) unifies Monte Carlo Tree Search (MCTS), reasoning, action execution, and environmental reflection. Use for complex multi-step coding, architecture planning, debugging, and combinatorial problem solving.",
+      "category": "reasoning-and-analysis",
+      "risk": "safe",
+      "source": "academic",
+      "tags": [
+        "lats",
+        "agent",
+        "search"
+      ],
+      "triggers": [
+        "lats",
+        "agent",
+        "search",
+        "language",
+        "tree",
+        "unifies",
+        "monte",
+        "carlo",
+        "mcts",
+        "reasoning",
+        "action",
+        "execution"
+      ],
+      "path": "skills/lats-agent-search/SKILL.md"
+    },
+    {
       "id": "launch-strategy",
       "canonical_id": "launch-strategy",
       "name": "launch-strategy",
@@ -49913,6 +49998,34 @@
       "path": "skills/mesh-memory/SKILL.md"
     },
     {
+      "id": "metacognitive-evaluator",
+      "canonical_id": "metacognitive-evaluator",
+      "name": "metacognitive-evaluator",
+      "description": "Metacognitive Evaluator computes Semantic Entropy H(S) and calibrates epistemic uncertainty over candidate outputs. Use before making high-consequence assertions, security decisions, or when hallucination risk must be rigorously quantified.",
+      "category": "reasoning-and-analysis",
+      "risk": "safe",
+      "source": "academic",
+      "tags": [
+        "metacognitive",
+        "evaluator"
+      ],
+      "triggers": [
+        "metacognitive",
+        "evaluator",
+        "computes",
+        "semantic",
+        "entropy",
+        "calibrates",
+        "epistemic",
+        "uncertainty",
+        "candidate",
+        "outputs",
+        "before",
+        "making"
+      ],
+      "path": "skills/metacognitive-evaluator/SKILL.md"
+    },
+    {
       "id": "metasploit-framework",
       "canonical_id": "metasploit-framework",
       "name": "metasploit-framework",
@@ -52806,6 +52919,35 @@
         "graphs"
       ],
       "path": "skills/networkx/SKILL.md"
+    },
+    {
+      "id": "neuro-symbolic-verifier",
+      "canonical_id": "neuro-symbolic-verifier",
+      "name": "neuro-symbolic-verifier",
+      "description": "Neuro-Symbolic Verifier extracts formal Hoare Triple contracts and loop invariants, proving total correctness via SMT solvers (Z3 / Dafny / Lean 4) and extracting concrete failing counterexample unit tests upon contract violation (2025-2026 literature).",
+      "category": "reasoning-and-analysis",
+      "risk": "safe",
+      "source": "academic",
+      "tags": [
+        "neuro",
+        "symbolic",
+        "verifier"
+      ],
+      "triggers": [
+        "neuro",
+        "symbolic",
+        "verifier",
+        "extracts",
+        "formal",
+        "hoare",
+        "triple",
+        "contracts",
+        "loop",
+        "invariants",
+        "proving",
+        "total"
+      ],
+      "path": "skills/neuro-symbolic-verifier/SKILL.md"
     },
     {
       "id": "new-rails-project",
@@ -70331,6 +70473,34 @@
       "path": "skills/spreadsheet-manual-build/SKILL.md"
     },
     {
+      "id": "sprout-backtracking",
+      "canonical_id": "sprout-backtracking",
+      "name": "sprout-backtracking",
+      "description": "SPROUT (Snapshot-based Rollout) enables agents to take lightweight filesystem and context checkpoints after every tool step, scoring progress via Process Verifiers (PRMs) and backtracking to the optimal ancestral state upon test or contract failure. Use for long-horizon coding tasks.",
+      "category": "reasoning-and-analysis",
+      "risk": "safe",
+      "source": "academic",
+      "tags": [
+        "sprout",
+        "backtracking"
+      ],
+      "triggers": [
+        "sprout",
+        "backtracking",
+        "snapshot",
+        "rollout",
+        "enables",
+        "agents",
+        "take",
+        "lightweight",
+        "filesystem",
+        "context",
+        "checkpoints",
+        "after"
+      ],
+      "path": "skills/sprout-backtracking/SKILL.md"
+    },
+    {
       "id": "sql-injection-testing",
       "canonical_id": "sql-injection-testing",
       "name": "sql-injection-testing",
@@ -74019,6 +74189,34 @@
       "path": "skills/test-guard/SKILL.md"
     },
     {
+      "id": "test-time-budgeting",
+      "canonical_id": "test-time-budgeting",
+      "name": "test-time-budgeting",
+      "description": "Adaptive Test-Time Compute Allocation & Budget Forcing dynamically budgets reasoning tokens based on predicted problem difficulty and enforces self-reflection via 'Wait' token injection (s1 / AdaCompute / ZIP-RC 2025-2026). Use for cost-optimal and accuracy-optimal reasoning.",
+      "category": "reasoning-and-analysis",
+      "risk": "safe",
+      "source": "academic",
+      "tags": [
+        "time",
+        "budgeting"
+      ],
+      "triggers": [
+        "time",
+        "budgeting",
+        "test",
+        "adaptive",
+        "compute",
+        "allocation",
+        "budget",
+        "forcing",
+        "dynamically",
+        "budgets",
+        "reasoning",
+        "tokens"
+      ],
+      "path": "skills/test-time-budgeting/SKILL.md"
+    },
+    {
       "id": "testdriver-e2e-testing",
       "canonical_id": "testdriver-e2e-testing",
       "name": "testdriver-e2e-testing",
@@ -75859,6 +76057,34 @@
         "supports"
       ],
       "path": "skills/tune-monitor/SKILL.md"
+    },
+    {
+      "id": "turbo-quant",
+      "canonical_id": "turbo-quant",
+      "name": "turbo-quant",
+      "description": "Compress agent episodic memory, KV-cache tensors, and execute sub-millisecond vector routing over 2,700+ skills using Google TurboQuant (PolarQuant + QJL residual) and TurboVec.",
+      "category": "reasoning-and-analysis",
+      "risk": "safe",
+      "source": "academic",
+      "tags": [
+        "turbo",
+        "quant"
+      ],
+      "triggers": [
+        "turbo",
+        "quant",
+        "compress",
+        "agent",
+        "episodic",
+        "memory",
+        "kv",
+        "cache",
+        "tensors",
+        "execute",
+        "sub",
+        "millisecond"
+      ],
+      "path": "skills/turbo-quant/SKILL.md"
     },
     {
       "id": "turborepo-caching",

@@ -12,7 +12,6 @@ license_source: https://github.com/AvdLee/SwiftUI-Agent-Skill/blob/main/LICENSE
 
 # Update SwiftUI APIs
 ## When to Use
-
 Use this skill when you need scan Apple's SwiftUI documentation for deprecated APIs and update the SwiftUI Expert Skill with modern replacements. Use when asked to "update latest APIs", "refresh deprecated SwiftUI APIs", "check for new SwiftUI deprecations", "scan for API changes", or after a new iOS/Xcode...
 
 

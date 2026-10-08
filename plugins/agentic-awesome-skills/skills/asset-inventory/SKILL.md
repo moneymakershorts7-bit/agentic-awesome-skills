@@ -391,7 +391,6 @@ echo "Discovery complete. Results in $OUTPUT_DIR"
 - [Best Practices](references/details.md)
 
 ## When to Use
-
 - Building or maintaining an IT asset inventory for compliance frameworks (ISO 27001, SOC 2, FedRAMP)
 - Implementing automated cloud resource discovery across accounts and regions
 - Enforcing tagging standards for cost allocation, ownership, and data classification

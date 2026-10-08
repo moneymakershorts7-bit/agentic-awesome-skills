@@ -16,8 +16,7 @@ allowed-tools: Read Grep Glob Bash
 
 Use this skill when a user needs help understanding, navigating, installing, or choosing parts of ECC.
 
-## When To Use
-
+## When to Use
 Use this skill when the user:
 
 - asks what ECC includes

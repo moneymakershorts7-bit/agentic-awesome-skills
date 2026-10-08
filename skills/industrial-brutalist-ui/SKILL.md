@@ -14,7 +14,6 @@ tools: [claude, cursor, codex, antigravity]
 # SKILL: Industrial Brutalism & Tactical Telemetry UI
 
 ## When to Use
-
 - Use when the user wants a brutalist, industrial, Swiss-print, CRT terminal, or tactical telemetry interface.
 - Use when building data-heavy dashboards, portfolios, editorial pages, or command-center UIs that should feel raw and mechanical.
 - Use when a design must reject soft gradients, rounded consumer UI, glassmorphism, and generic SaaS card layouts.

@@ -12,7 +12,6 @@ license_source: https://github.com/Forward-Future/loop-library/blob/main/LICENSE
 
 # Loopy
 ## When to Use
-
 Use this skill when you need discover, find, compare, audit, repair, adapt, craft, run, debrief, and prepare repeatable AI-agent loops for publication. Use when a user asks to analyze code or coding threads for recurring work, find a published loop, interview them to turn a goal into a bounded loop, review a loop...
 
 

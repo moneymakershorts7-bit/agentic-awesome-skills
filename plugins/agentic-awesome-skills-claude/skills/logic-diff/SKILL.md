@@ -12,7 +12,6 @@ license_source: https://github.com/hyhmrright/logic-lens/blob/main/LICENSE
 
 # Logic-Lens — Semantic Diff
 ## When to Use
-
 Use this skill when you need compare two code versions for semantic equivalence via semi-formal tracing of both versions side-by-side. Trigger when the user shares a refactor, rewrite, migration, or A/B implementation and wants to confirm behavior is unchanged — "did I break anything", "is this equivalent", "are...
 
 

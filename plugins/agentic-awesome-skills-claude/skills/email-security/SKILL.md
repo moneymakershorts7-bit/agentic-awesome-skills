@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # Email Security & Phishing Analysis
 ## When to Use
-
 - Analyzing suspicious messages or domain spoofing exposure.
 - Validating a domain's email authentication posture.
 

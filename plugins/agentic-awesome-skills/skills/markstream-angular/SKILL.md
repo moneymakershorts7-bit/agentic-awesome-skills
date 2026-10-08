@@ -21,7 +21,6 @@ license_source: https://github.com/Simon-He95/markstream-vue/blob/main/license
 Add Markstream to Angular 20+ while preserving standalone-component patterns, signal-friendly bindings, safe rendering defaults, and explicit optional dependencies. Use `markstream-install` for framework selection; use this skill once Angular is confirmed.
 
 ## When to Use
-
 Use for Angular-specific standalone imports, CSS, signals, custom tags or components, streaming state, and optional peers. Do not use below Angular 20 or when the application cannot accept an alpha renderer API.
 
 ## Workflow

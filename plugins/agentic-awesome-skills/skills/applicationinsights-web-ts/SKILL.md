@@ -12,7 +12,6 @@ license_source: https://github.com/microsoft/skills/blob/main/LICENSE
 
 # Application Insights JavaScript SDK (Web) for TypeScript
 ## When to Use
-
 Use this skill when you need instrument browser/web apps with the Application Insights JavaScript SDK (@microsoft/applicationinsights-web). Use for Real User Monitoring (RUM) — page views, clicks, AJAX/fetch dependencies, exceptions, custom events, and browser-side GenAI agent traces correlated to backend...
 
 

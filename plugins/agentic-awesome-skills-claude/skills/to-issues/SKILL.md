@@ -24,7 +24,6 @@ tools:
 # To Issues
 
 ## When to Use
-
 Use when this workflow matches the user request: Break a plan, spec, or PRD into independently-grabbable issues on the project issue tracker using tracer-bullet vertical slices.
 
 

@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # Cloud / Container / Kubernetes Security
 ## When to Use
-
 - Assessing cloud workload or Kubernetes cluster security within an approved scope.
 - Reviewing IAM/RBAC configurations for privilege-escalation paths.
 

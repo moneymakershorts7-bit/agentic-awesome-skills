@@ -114,3 +114,8 @@ The compression engine is verified against 6 functional dimensions:
 
 - [`architecture_spec.md`](references/architecture_spec.md) — 3-Layer context assembly and telemetry pruning formulas.
 - [`evaluation_rubric.md`](references/evaluation_rubric.md) — 6-dimension evaluation rubric and probe test cases.
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

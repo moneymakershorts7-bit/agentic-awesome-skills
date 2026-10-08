@@ -12,7 +12,6 @@ license_source: https://github.com/AlmogBaku/debug-skill/blob/master/LICENSE
 
 # Interactive Debugger
 ## When to Use
-
 Use this skill when you need interactively debug source code — set breakpoints, step through execution line by line, inspect live variable state, evaluate expressions against the running program, and navigate the call stack to trace root causes. Use when a program crashes, raises unexpected exceptions, produces...
 
 

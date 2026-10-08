@@ -21,7 +21,6 @@ license_source: "https://github.com/addyosmani/agent-skills/blob/main/LICENSE"
 Use Chrome DevTools MCP to give your agent eyes into the browser. This bridges the gap between static code analysis and live browser execution — the agent can see what the user sees, inspect the DOM, read console logs, analyze network requests, and capture performance data. Instead of guessing what's happening at runtime, verify it.
 
 ## When to Use
-
 - Building or modifying anything that renders in a browser
 - Debugging UI issues (layout, styling, interaction)
 - Diagnosing console errors or warnings

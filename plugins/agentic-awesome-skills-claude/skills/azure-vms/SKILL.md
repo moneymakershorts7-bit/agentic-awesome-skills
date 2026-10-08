@@ -388,7 +388,6 @@ az vm resize \
 - [Related Skills](references/details.md)
 
 ## When to Use
-
 - You need full control over the operating system and runtime environment.
 - Your application requires specific OS configurations or kernel modules.
 - You are running legacy applications that cannot be containerized.

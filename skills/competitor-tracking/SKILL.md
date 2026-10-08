@@ -12,7 +12,6 @@ license_source: https://github.com/jonathimer/devmarketing-skills/blob/main/LICE
 
 # Competitor Tracking
 ## When to Use
-
 Use this skill when you need systematic competitor analysis for developer tools. Track features, pricing, positioning, content strategy, and community sentiment for direct and indirect competitors. Trigger phrases: "competitor analysis", "track competitors", "competitive intelligence", "competitor research", "what...
 
 

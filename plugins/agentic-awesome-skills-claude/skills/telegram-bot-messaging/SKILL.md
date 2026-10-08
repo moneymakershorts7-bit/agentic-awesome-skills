@@ -17,7 +17,6 @@ license_source: "https://github.com/sanjay3290/ai-skills/blob/main/LICENSE"
 # Telegram
 
 ## When to Use
-
 - Use when you need to send a Telegram message, file, or alert from a workflow, hook, cron job, or CI pipeline
 - Use when a long-running task should notify you or ask for approval on your phone (inline-button questions that wait for the answer)
 - Use when wiring "notify me when done" or "ask me before proceeding" behavior into automated sessions

@@ -12,7 +12,6 @@ license_source: https://github.com/addyosmani/agent-skills/blob/main/LICENSE
 
 # Idea Refine
 ## When to Use
-
 Use this skill when you need refines raw ideas into sharp, actionable concepts through structured divergent and convergent thinking. Use when an idea is still vague, when you need to stress-test assumptions before committing to a plan, or when you want to expand options before converging on one. Triggers on...
 
 

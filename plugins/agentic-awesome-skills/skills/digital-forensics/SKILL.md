@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # Digital Forensics & IR Artifacts
 ## When to Use
-
 - Investigating a suspected incident with forensic rigor.
 - Building defensible timelines from disk/memory/network artifacts.
 

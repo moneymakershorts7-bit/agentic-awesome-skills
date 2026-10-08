@@ -22,7 +22,6 @@ metadata:
 Configure and manage DNS zones, records, and resolution for production infrastructure.
 
 ## When to Use
-
 - Setting up domains for web applications, APIs, and email.
 - Migrating DNS providers or consolidating zones.
 - Configuring DNS for CDN, load balancers, and cloud services.

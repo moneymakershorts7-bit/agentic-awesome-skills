@@ -12,7 +12,6 @@ license_source: https://github.com/expo/skills/blob/main/LICENSE
 
 # Expo Brownfield
 ## When to Use
-
 Use this skill when you need integrate Expo and React Native into an existing native iOS or Android app. Use when the user mentions brownfield, embedding React Native in a native app, AAR/XCFramework, or adding Expo to an existing Kotlin/Swift project. Covers both the isolated approach and the integrated approach.
 
 

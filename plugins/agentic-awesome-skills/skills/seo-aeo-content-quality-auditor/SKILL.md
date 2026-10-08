@@ -247,7 +247,6 @@ Work through these in order:
 - Feeds output to: `seo-aeo-internal-linking`, `seo-aeo-schema-generator`
 
 ## When to Use
-
 Use before implementing SEO/AEO changes on a website, codebase, URL, page, or content set, and again when verifying the fixes.
 
 ## Limitations

@@ -30,8 +30,7 @@ report_count: 10
 >
 > Without that confirmation, remain read-only and provide defensive guidance only. Prefer a sandbox, disposable VM, or controlled lab.
 
-## When to use
-
+## When to Use
 Trigger when external recon shows ANY of:
 - Banner: "VMware vCenter Server", "VMware vSphere Client"
 - URL paths: `/ui`, `/ui/login`, `/websso/SAML2/Metadata`, `/sdk`, `/mob` (Managed Object Browser)

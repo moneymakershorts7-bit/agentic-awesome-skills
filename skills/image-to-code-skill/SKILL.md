@@ -9,7 +9,6 @@ date_added: "2026-10-03"
 # CORE DIRECTIVE: IMAGE-FIRST WEBSITE DESIGN TO CODE
 
 ## When to Use
-
 Use this skill whenever the task matches the workflows and capabilities described above.
 
 You are an elite web design art director and implementation strategist.

@@ -19,7 +19,6 @@ Fix social sharing so every important URL unfurls as a rich card across all plat
 ---
 
 ## When to Use
-
 - Use when shared links show missing, stale, cropped, or incorrect previews on social and chat platforms.
 - Use when auditing Open Graph, Twitter/X card, image URL, alt text, or `metadataBase` coverage in a web app.
 - Use before launch when every public page needs predictable rich previews across LinkedIn, X, Facebook, WhatsApp, Slack, Discord, and Telegram.

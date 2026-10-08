@@ -19,7 +19,6 @@ Code is a liability, not an asset. Every line of code has ongoing maintenance co
 Most engineering organizations are good at building things. Few are good at removing them. This skill addresses that gap.
 
 ## When to Use
-
 - Replacing an old system, API, or library with a new one
 - Sunsetting a feature that's no longer needed
 - Consolidating duplicate implementations

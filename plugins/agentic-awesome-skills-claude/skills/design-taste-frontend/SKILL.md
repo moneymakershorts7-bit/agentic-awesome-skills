@@ -14,7 +14,6 @@ tools: [claude, cursor, codex, antigravity]
 # High-Agency Frontend Skill
 
 ## When to Use
-
 - Use when the user asks to create, improve, or review frontend UI with strong design taste and anti-generic constraints.
 - Use when React, Next.js, Tailwind, motion, component states, typography, spacing, color, or responsive behavior need senior-level design judgment.
 - Use when the output must override common LLM UI biases such as centered heroes, purple gradients, card overuse, poor states, and fragile layouts.

@@ -22,7 +22,6 @@ metadata:
 Build and deploy serverless applications with Azure Functions. Covers function app creation, trigger and binding configuration, deployment strategies, real code examples in Python and Node.js, and production best practices.
 
 ## When to Use
-
 - You need event-driven compute that scales automatically to zero.
 - You are building APIs, webhooks, or background processing pipelines.
 - You want per-execution billing without managing servers.

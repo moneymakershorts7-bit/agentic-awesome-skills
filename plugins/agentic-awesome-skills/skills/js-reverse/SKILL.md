@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # MCP 前端 JS 逆向作业规范
 ## When to Use
-
 - Understanding how a web application signs or encrypts API requests.
 - Reproducing client-side crypto locally to validate analysis.
 

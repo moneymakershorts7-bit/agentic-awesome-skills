@@ -22,7 +22,6 @@ metadata:
 Manage block storage volumes including LVM, cloud-based EBS, filesystem creation, snapshots, and RAID configurations. Covers the full lifecycle from provisioning raw disks to extending volumes in production.
 
 ## When to Use
-
 - Adding, partitioning, or formatting new disks on Linux servers
 - Managing LVM logical volumes for flexible storage allocation
 - Provisioning and attaching cloud block storage (AWS EBS)

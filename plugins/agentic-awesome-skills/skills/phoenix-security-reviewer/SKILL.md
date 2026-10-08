@@ -17,7 +17,6 @@ tools: [Bash, Read, Write]
 A pragmatic AppSec review pass for any modern stack. Output is short, severity-ranked findings with file paths, evidence, and a concrete fix — never a 30-page "report".
 
 ## When to Use
-
 Run on any of:
 
 - New HTTP route, RPC handler, or queue consumer
@@ -94,3 +93,8 @@ Subagents that consume this skill should treat the `## SECURITY CONTEXT` block (
 ## Author / provenance
 
 Maintained by Phoenix Security as part of the Phoenix developer-tooling kit. Pairs with `phoenix-final-gate` (spec-pipeline review) and `opengrep-rule-generator` (rule synthesis from findings).
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

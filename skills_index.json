@@ -65277,6 +65277,28 @@
     "license_source": "https://github.com/monte-carlo-data/mc-agent-toolkit/blob/main/LICENSE"
   },
   {
+    "id": "turbo-quant",
+    "path": "skills/turbo-quant",
+    "category": "reasoning-and-analysis",
+    "name": "turbo-quant",
+    "description": "Compress agent episodic memory, KV-cache tensors, and execute sub-millisecond vector routing over 2,700+ skills using Google TurboQuant (PolarQuant + QJL residual) and TurboVec.",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "turborepo-caching",
     "path": "skills/turborepo-caching",
     "category": "development",

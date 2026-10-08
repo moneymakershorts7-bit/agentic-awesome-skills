@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # brain-to-docs
 
 ## When to Use
-
 - Use when the user wants to extract project vision, decisions, or preferences into durable docs.
 - Use when README and ADRs should be built through a back-and-forth interview.
 

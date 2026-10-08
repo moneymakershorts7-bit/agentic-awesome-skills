@@ -17,7 +17,6 @@ This is a preview feature and only available in `us-east-2`. The Neon AI Gateway
 Use this skill to help the user send model calls through the gateway, wire it into the AI SDK or Mastra, and switch providers without rewiring code. Deliver a working inference request, a configured agent, or a precise answer from the official Neon docs.
 
 ## When to Use
-
 Reach for the AI Gateway whenever an app or agent needs to call an LLM and the user would rather not manage model providers themselves:
 
 - **One credential instead of many provider accounts.** A single Neon credential reaches the entire model catalog across seven providers. No separate OpenAI / Anthropic / Google billing, keys, or signups to provision and rotate.

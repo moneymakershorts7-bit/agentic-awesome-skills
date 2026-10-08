@@ -33,7 +33,6 @@ Treat the following as the complete user-assigned request. Preserve task referen
 $ARGUMENTS
 
 ## When to Use
-
 - The user explicitly requests `ralph-loop-yylo` for one already-assigned YYLO Ledger task.
 - You need to implement exactly that task through the validated loop to a queued, review-ready commit.
 

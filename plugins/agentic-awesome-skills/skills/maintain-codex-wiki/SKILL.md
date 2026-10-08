@@ -24,7 +24,6 @@ classes, and require review before wiki conclusions become repository rules,
 skills, or learning material.
 
 ## When to Use
-
 - Query what a repository already knows about a technical decision or practice.
 - Capture a durable lesson from a merged change, incident, review, or experiment.
 - Ingest external research without silently treating it as authoritative.

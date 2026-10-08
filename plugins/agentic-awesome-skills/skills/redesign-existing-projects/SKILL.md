@@ -14,7 +14,6 @@ tools: [claude, cursor, codex, antigravity]
 # Redesign Skill
 
 ## When to Use
-
 - Use when the user asks to redesign, restyle, modernize, polish, or improve an existing website or app UI.
 - Use when the task is to audit current frontend code and make targeted visual improvements without changing the product architecture.
 - Use when the design feels generic, AI-generated, poorly spaced, visually flat, or missing responsive, interactive, loading, empty, or error states.

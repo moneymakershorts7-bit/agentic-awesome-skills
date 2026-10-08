@@ -402,7 +402,6 @@ Analytics that violate trust undermine optimization.
 ---
 
 ## When to Use
-
 Use when adding a decision-relevant event, investigating discrepant conversion counts, or auditing consent, attribution and duplicate firing. Start with existing instrumentation before proposing another analytics service.
 
 ## Worked example

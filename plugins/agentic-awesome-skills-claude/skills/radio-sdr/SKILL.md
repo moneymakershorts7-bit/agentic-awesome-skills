@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # RF / SDR Security Research
 ## When to Use
-
 - Lab study of wireless protocols with your own devices.
 - Feasibility checks for replay attacks in RF-isolated environments.
 

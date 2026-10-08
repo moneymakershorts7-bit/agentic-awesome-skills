@@ -22,7 +22,6 @@ metadata:
 Implement service-to-service communication management with mTLS, traffic shaping, observability, and policy enforcement using Istio or Linkerd.
 
 ## When to Use
-
 - Securing microservice communication with automatic mTLS.
 - Implementing canary deployments, traffic splitting, or A/B testing.
 - Adding circuit breakers, retries, and timeouts without changing application code.

@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # macOS / Mach-O Reverse Engineering
 ## When to Use
-
 - Analyzing macOS binaries or suspected malware samples.
 - Inspecting entitlements, signatures, and ObjC/Swift structures.
 

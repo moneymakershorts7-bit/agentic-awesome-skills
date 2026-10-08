@@ -22,7 +22,6 @@ metadata:
 Implement an Information Security Management System (ISMS) aligned with ISO/IEC 27001:2022.
 
 ## When to Use
-
 - Establishing an ISMS for the first time in an organization
 - Preparing for ISO 27001 certification audit
 - Conducting risk assessments and developing risk treatment plans

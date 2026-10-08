@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # OpenAPI → Postman Collection Converter
 ## When to Use
-
 Use this skill when you need convert OpenAPI 3.x or Swagger 2.0 specs (YAML or JSON) into complete, import-ready Postman Collection v2.1 JSON files. Use this skill whenever the user provides or references an OpenAPI spec, Swagger file, openapi.yaml, swagger.json, or uses phrases like "convert my OpenAPI spec",...
 
 

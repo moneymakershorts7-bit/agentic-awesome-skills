@@ -11,7 +11,6 @@ license_source: https://github.com/huggingface/skills/blob/main/LICENSE
 ---
 
 ## When to Use
-
 Use this skill when you need hugging Face Hub CLI (`hf`) for downloading, uploading, and managing models, datasets, spaces, buckets, repos, papers, jobs, and more on the Hugging Face Hub. Use when: handling authentication; managing local cache; managing Hugging Face Buckets; running or scheduling jobs on Hugging...
 
 Install by downloading the installer script first, reviewing it, and then running it locally:

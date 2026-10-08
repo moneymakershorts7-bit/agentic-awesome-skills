@@ -237,7 +237,6 @@ Explain why and recommend next steps.
 ---
 
 ## When to Use
-
 Use when a product change has enough eligible traffic for a randomized comparison and a measurable outcome. For low-volume launches or qualitative discovery, consider usability research or descriptive measurement instead of claiming causal lift.
 
 ### Sample-size calculation example

@@ -22,7 +22,6 @@ metadata:
 Build and deploy event-driven serverless applications with Google Cloud Functions (Gen1 and Gen2).
 
 ## When to Use
-
 - Processing webhooks, API endpoints, or lightweight HTTP backends
 - Reacting to events from Pub/Sub, Cloud Storage, Firestore, or Eventarc
 - Running scheduled tasks (cron) without maintaining a server

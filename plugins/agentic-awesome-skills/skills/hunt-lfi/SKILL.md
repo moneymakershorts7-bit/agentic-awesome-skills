@@ -291,7 +291,6 @@ C:\Windows\System32\inetsrv\config\applicationHost.config
 - RCE via filter-chain / RFI / log / session / phar / CVE: **Critical**
 
 ## When to Use
-
 - You have explicit, written authorization to assess the target in scope, and the task matches this skill's vulnerability class or technique within a bug-bounty or penetration-test engagement.
 - You need the recon, exploitation, or validation workflow described below — executed strictly inside the approved scope.
 

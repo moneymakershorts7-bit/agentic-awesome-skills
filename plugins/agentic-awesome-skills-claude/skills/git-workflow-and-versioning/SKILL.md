@@ -17,7 +17,6 @@ license_source: https://github.com/addyosmani/agent-skills/blob/main/LICENSE
 Git is your safety net. Treat commits as save points, branches as sandboxes, and history as documentation. With AI agents generating code at high speed, disciplined version control is the mechanism that keeps changes manageable, reviewable, and reversible.
 
 ## When to Use
-
 Always. Every code change flows through git.
 
 ## Core Principles

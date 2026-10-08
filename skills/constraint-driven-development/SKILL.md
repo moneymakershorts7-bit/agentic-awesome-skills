@@ -27,7 +27,6 @@ The reason matters. When you wrote the code, reading it told you whether it was 
 Spec-driven development says what to build. Test-driven development proves it works. Constraint-driven development defines what "good enough to ship" means, before anyone argues about it in a pull request.
 
 ## When to Use
-
 Apply this skill when:
 
 - Starting a project or a significant feature and no quality bar is written down

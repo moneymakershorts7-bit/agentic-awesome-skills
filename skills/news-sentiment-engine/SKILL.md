@@ -20,7 +20,6 @@ plugin:
 Collect and analyze AI/tech news from multiple sources with Claude-powered sentiment analysis. Open source lite version.
 
 ## When to Use
-
 - Use when preparing a concise AI or technology news briefing from multiple RSS sources.
 - Use when you need ranked article summaries with sentiment, tags, and impact scoring.
 - Use when monitoring industry changes across product launches, policy moves, and infrastructure shifts.

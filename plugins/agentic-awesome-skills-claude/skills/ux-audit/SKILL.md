@@ -12,7 +12,6 @@ license_source: https://github.com/bitjaru/styleseed/blob/main/LICENSE
 
 # UX Audit
 ## When to Use
-
 Use this skill when you need audit screens for UX issues using Nielsen's heuristics and modern mobile UX best practices.
 
 

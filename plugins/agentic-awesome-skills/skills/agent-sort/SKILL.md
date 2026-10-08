@@ -19,7 +19,6 @@ Use this skill when a repo needs a project-specific ECC surface instead of the d
 The goal is not to guess what "feels useful." The goal is to classify ECC components with evidence from the actual codebase.
 
 ## When to Use
-
 - A project only needs a subset of ECC and full installs are too noisy
 - The repo stack is clear, but nobody wants to hand-curate skills one by one
 - A team wants a repeatable install decision backed by grep evidence instead of opinion

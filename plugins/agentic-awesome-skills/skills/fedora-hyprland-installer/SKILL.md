@@ -28,7 +28,6 @@ Invoke bundled shell files explicitly with `bash` and a quoted path, for
 example `bash "$SKILL_DIR/scripts/detect-system.sh"`.
 
 ## When to Use
-
 - Use when installing or updating a Fedora-packaged Hyprland desktop stack.
 - Use when verifying a Hyprland session, portals, PipeWire, or WirePlumber on Fedora.
 - Use when diagnosing the limited repair cases documented below or removing the Hyprland-specific packages installed by this workflow.

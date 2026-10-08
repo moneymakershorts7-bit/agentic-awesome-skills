@@ -22,7 +22,6 @@ before re-deriving, use the narrowest plane that answers the task, and preserve
 only verified knowledge worth reusing.
 
 ## When to Use
-
 - Use when project decisions, research, incidents, or verified results should
   remain available across coding-agent sessions.
 - Use when a task needs source-grounded Wiki recall, document relationships, or

@@ -18,7 +18,6 @@ tools: [claude, cursor, gemini, antigravity]
 This skill is designed to act as an expert CI/CD diagnostician. It focuses specifically on reading raw logs from failed GitHub Actions, identifying the root cause of the crash or failure, and outputting the precise YAML or code changes required to fix the pipeline.
 
 ## When to Use
-
 - Use when a GitHub Actions workflow fails unexpectedly and the error log is long, obscure, or misleading.
 - Use when debugging dependency mismatch errors, missing secrets, caching issues, or runner environment problems in CI.
 - Use to optimize slow pipelines by identifying bottlenecks in workflow steps.

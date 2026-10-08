@@ -12,7 +12,6 @@ license_source: https://github.com/expo/skills/blob/main/LICENSE
 
 # Expo UI (`@expo/ui`)
 ## When to Use
-
 Use this skill when you need build native UI with the @expo/ui package: real SwiftUI on iOS and Jetpack Compose on Android rendered from React in an Expo or React Native app. Covers universal cross-platform components (Host, Column, Row, Button, Text, List, and more imported from @expo/ui), drop-in replacements...
 
 

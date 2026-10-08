@@ -18,7 +18,6 @@ metadata:
 # Agent Skills: A Complete Guide
 
 ## When to Use
-
 - Use when creating, editing, reviewing, or debugging an agent SKILL.md file.
 - Use when you need quality guidance for triggers, examples, limitations, and safety notes.
 

@@ -12,7 +12,6 @@ license_source: https://github.com/coreyhaines31/marketingskills/blob/main/LICEN
 
 # Pricing Strategy
 ## When to Use
-
 Use this skill when you need when the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions 'pricing,' 'pricing tiers,' 'freemium,' 'free trial,' 'packaging,' 'price increase,' 'value metric,' 'Van Westendorp,' 'willingness to pay,' 'monetization,' 'how much...
 
 

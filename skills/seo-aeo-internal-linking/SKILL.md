@@ -243,7 +243,6 @@ Cross-links between cluster articles:
 - Feeds output to: `seo-aeo-schema-generator`
 
 ## When to Use
-
 Use when mapping links between existing pages, identifying orphaned content, or improving conversion paths from informational pages.
 
 ## Limitations

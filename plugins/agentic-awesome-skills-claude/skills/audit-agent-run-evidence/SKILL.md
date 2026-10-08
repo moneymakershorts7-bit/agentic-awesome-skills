@@ -15,7 +15,6 @@ Turn an end-to-end success statement into independently decidable claims. Recons
 This is a read-only audit. Do not rerun tools, approve actions, resume workers, deploy artifacts, or modify evidence unless the user separately authorizes those actions.
 
 ## When to Use
-
 - Auditing a completed or interrupted agent run from traces and artifacts.
 - Checking whether an agent's end-to-end success claim is actually supported.
 - Reviewing MCP, gateway, sandbox, checkpoint, retry, memory, approval, or deployment evidence.

@@ -19,7 +19,6 @@ author: Ejentum <info@ejentum.com>
 
 # Anti-Deception Harness
 ## When to Use
-
 Use this skill when you need use BEFORE responding when the user's request shows pressure to validate or agree ("tell them what they want", "make them happy", "convince them"), manufactured urgency (artificial deadline), authority appeals (citing investors, advisors, lawyers, experts), demands to certify without...
 
 

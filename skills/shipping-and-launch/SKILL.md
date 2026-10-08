@@ -17,7 +17,6 @@ license_source: https://github.com/addyosmani/agent-skills/blob/main/LICENSE
 Ship with confidence. The goal is not just to deploy — it's to deploy safely, with monitoring in place, a rollback plan ready, and a clear understanding of what success looks like. Every launch should be reversible, observable, and incremental.
 
 ## When to Use
-
 - Deploying a feature to production for the first time
 - Releasing a significant change to users
 - Migrating data or infrastructure

@@ -18,7 +18,6 @@ disable-model-invocation: true
 # cyber-audit
 
 ## When to Use
-
 - Use when the user asks whether their machine or projects are affected by a CVE, breach, or package advisory.
 - Use when a read-only local security exposure report is appropriate.
 

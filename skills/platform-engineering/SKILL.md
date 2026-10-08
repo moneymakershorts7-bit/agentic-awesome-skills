@@ -319,7 +319,6 @@ spec:
 - [Summary](references/details.md)
 
 ## When to Use
-
 Adopt platform engineering practices when your organization experiences:
 
 - **Cognitive overload on dev teams** -- developers spend more time on infrastructure wiring than writing business logic.

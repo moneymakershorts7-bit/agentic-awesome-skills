@@ -12,7 +12,6 @@ date_added: "2026-09-04"
 # ZipAI: Context & Token Optimizer
 
 ## When to Use
-
 Use this skill when the request needs context-window-aware triage, prompt caching optimizations, concise technical output, ambiguity handling, or selective reading of logs, source files, JSON/YAML payloads, VCS output, or MCP tool results.
 
 ## Rules

@@ -22,7 +22,6 @@ metadata:
 Runbooks for startups and small teams where engineers double as the IT department.
 
 ## When to Use
-
 You are the "accidental IT person." Nobody has IT in their title, but laptops freeze, Wi-Fi drops during investor demos, someone gets locked out of Google Workspace at midnight, and a new hire starts Monday with zero accounts. This skill gives you copy-paste commands to handle it all.
 
 **Priority triage:** (1) Company-wide outages, (2) Executive/customer-facing blockers, (3) Team-wide degradations, (4) Individual workstation issues. Always ask: "How many people are affected?" and "Is revenue impacted?"

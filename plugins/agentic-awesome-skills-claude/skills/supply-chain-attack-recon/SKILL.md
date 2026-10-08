@@ -30,8 +30,7 @@ report_count: 12
 >
 > Without that confirmation, remain read-only and provide defensive guidance only. Prefer a sandbox, disposable VM, or controlled lab.
 
-## When to use
-
+## When to Use
 Trigger when:
 - Target has a public GitHub organization (find via OSINT)
 - JS bundles reference internal-looking package names (`@target-internal/...`, `target-utils`, `target-shared`)

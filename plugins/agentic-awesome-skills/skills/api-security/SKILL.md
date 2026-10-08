@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # API 安全测试
 ## When to Use
-
 - An authorized assessment covers API endpoints and you need a structured discovery-to-report workflow.
 - Testing API authentication, authorization, or rate-limiting behavior within an approved scope.
 

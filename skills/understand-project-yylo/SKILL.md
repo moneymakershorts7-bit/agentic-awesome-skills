@@ -42,7 +42,6 @@ $2
 $ARGUMENTS
 
 ## When to Use
-
 - Before planning or implementing a requested change, when you need current architecture, dependencies, and validation loops.
 - To hand grounded findings to `plan-ledger-tasks-yylo` (planning) or a task worktree (implementation).
 

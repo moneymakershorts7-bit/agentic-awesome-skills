@@ -19,7 +19,6 @@ metadata:
 # Delegate Setup
 
 ## When to Use
-
 - You want to configure which implementer CLI handles which kind of work (fleet lanes).
 - You need to discover installed implementers and write lane config after user approval.
 

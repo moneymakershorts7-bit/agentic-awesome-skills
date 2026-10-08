@@ -418,7 +418,6 @@ class VendorSLAMonitor:
 - [Best Practices](references/details.md)
 
 ## When to Use
-
 - Onboarding new vendors that will access company data or systems
 - Conducting annual vendor risk assessments and reassessments
 - Negotiating security requirements in vendor contracts

@@ -22,7 +22,6 @@ metadata:
 Implement comprehensive audit logging for compliance, security monitoring, and forensic analysis across infrastructure and applications.
 
 ## When to Use
-
 - Setting up centralized logging for compliance frameworks (SOC 2, HIPAA, PCI DSS)
 - Implementing security event monitoring and alerting
 - Building audit trails for regulatory requirements

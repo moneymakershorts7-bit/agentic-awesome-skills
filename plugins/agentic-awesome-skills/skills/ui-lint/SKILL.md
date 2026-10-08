@@ -12,7 +12,6 @@ license_source: https://github.com/bitjaru/styleseed/blob/main/LICENSE
 
 # Design Lint (Quick Check)
 ## When to Use
-
 Use this skill when you need quick automated lint — detects common design system violations in seconds.
 
 

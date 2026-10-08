@@ -25,7 +25,6 @@ the user has the required account access, and keep publishing actions behind an
 explicit confirmation gate.
 
 ## When to Use
-
 - Use when the user wants an agent-assisted workflow for publishing short-form
   videos with Taisly.
 - Use when the user mentions `taisly/agent`, the Taisly MCP server, Taisly CLI,

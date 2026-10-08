@@ -19,7 +19,6 @@ license_source: "https://github.com/lognorm/lognorm-mcp/blob/main/LICENSE"
 LogNorm (https://lognorm.com) is the company's growth engine. It gathers the data (crawl and SEO audit, GEO audit, keyword research, Google Search Console, competitors, and how ChatGPT, Gemini and Google AI Overviews answer their buyers), ranks findings into **moves**, and the team plans the best into a weekly plan. Through the `lognorm` MCP server you join the workspace as a named teammate ("Sam's Panda") with a person's freedom, and the workspace needs no AI key for your work.
 
 ## When to Use
-
 - Use when the user mentions LogNorm, moves, the growth plan, SEO, GEO, AI visibility, keywords, competitors or content for their website.
 - Use when SEO or AI-visibility issues in the codebase should be fixed and validated against LogNorm's audit.
 - Requires a LogNorm account (a free plan is available) and the hosted `lognorm` MCP server connected.

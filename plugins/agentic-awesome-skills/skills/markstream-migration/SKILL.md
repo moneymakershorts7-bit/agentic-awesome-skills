@@ -21,7 +21,6 @@ license_source: https://github.com/Simon-He95/markstream-vue/blob/main/license
 Replace an existing Markdown renderer without silently dropping transforms, custom components, URL policy, raw-HTML behavior, or streaming semantics. Read [references/adoption-checklist.md](references/adoption-checklist.md) first.
 
 ## When to Use
-
 Use when replacing `react-markdown`, `markdown-it`, `marked`, or another renderer; migrating node renderers; or choosing between Markstream `content`, smooth streaming, and `nodes`.
 
 ## Workflow

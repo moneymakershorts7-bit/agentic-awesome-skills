@@ -24,7 +24,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 > Without that confirmation, remain read-only and provide defensive guidance only. Prefer a sandbox, disposable VM, or controlled lab.
 
 ## When to Use
-
 - Studying EDR telemetry surfaces in an authorized red-team lab.
 - Evaluating detection coverage against known bypass technique classes.
 

@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # radare2
 ## When to Use
-
 - Quick terminal-based analysis of a binary without a heavy IDE.
 - Scriptable disassembly, diffing, or small binary patches.
 

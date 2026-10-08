@@ -202,7 +202,6 @@ Not every task needs every skill. A bug fix might only need: `debugging-and-erro
 | Ship | shipping-and-launch | Pre-launch checklist, monitoring, rollback plan |
 
 ## When to Use
-
 - The request matches this skill's engineering workflow (quality constraints, requirements interview, or skill selection).
 - You want portable, tool-agnostic guidance rather than a CLI-specific integration.
 

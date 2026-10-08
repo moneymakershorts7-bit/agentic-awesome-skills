@@ -27,7 +27,6 @@ A long-term knowledge base for a software project, maintained by AI agents. It i
 This knowledge is persisted as **plain Markdown files** in `.lore/` at the project root. Any agent that can read files can consume them.
 
 ## When to Use
-
 The skill uses a **two-tier trigger model**.
 
 ### Tier 1 — Loading the skill

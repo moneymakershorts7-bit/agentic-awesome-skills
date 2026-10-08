@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # Agent Self-Scheduling
 
 ## When to Use
-
 - Use when the user asks for recurring, scheduled, heartbeat, or looped agent work.
 - Use when you need to choose between cron, external schedulers, hooks, or built-in agent scheduling.
 

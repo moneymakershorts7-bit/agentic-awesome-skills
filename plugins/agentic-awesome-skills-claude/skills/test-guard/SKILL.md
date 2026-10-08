@@ -19,7 +19,6 @@ You are reviewing generated or changed test code before it ships. Enforce the ru
 These rules exist because coding agents over-generate tests. The common failure modes: mock-heavy unit tests that assert implementation details, near-duplicate test bodies that differ by one value, and tests that re-verify the framework instead of the project's logic. Each looks productive in a diff and costs maintenance forever.
 
 ## When to Use
-
 Use this skill when reviewing generated or changed test code before it ships. Activate it reactively after an agent writes, edits, generates, or refactors tests — unit tests, integration tests, e2e tests, or snapshot tests in any framework.
 
 ## When this skill activates

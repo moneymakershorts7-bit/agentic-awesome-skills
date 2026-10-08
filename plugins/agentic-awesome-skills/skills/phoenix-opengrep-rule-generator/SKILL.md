@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 Generate valid opengrep/semgrep YAML rules through collaborative dialogue. Supports two workflows: **guided** (interactive Q&A to discover what to detect) and **vulnerability-driven** (given CVEs, OWASP categories, or vulnerability descriptions, generate rules automatically).
 
 ## When to Use
-
 - User says "create a rule", "write a rule", "generate a rule", "detect [vulnerability]"
 - User provides a CVE, CWE, or OWASP reference and wants detection rules
 - User shares code snippets and asks "how do I catch this pattern?"
@@ -484,3 +483,8 @@ custom-rules/
 | Taint without sanitizers | Always ask: what makes this data safe? Add sanitizers. |
 | Hardcoding framework versions | Use `...` for version-agnostic patterns |
 | Not testing negatives | False positives destroy trust — test safe code paths |
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

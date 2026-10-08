@@ -18,7 +18,6 @@ metadata:
 # Babysit a PR
 
 ## When to Use
-
 - A PR/MR has accumulated bot review threads that need verification, fixes, replies, and resolution.
 - You want to drive a PR from 'just opened' to 'nothing left unanswered' across multiple review rounds.
 

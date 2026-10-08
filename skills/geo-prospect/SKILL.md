@@ -205,7 +205,6 @@ Create directory if it does not exist: `mkdir -p ~/.geo-prospects/audits ~/.geo-
 - JSON database is the single source of truth
 
 ## When to Use
-
 - You need a Generative Engine Optimization task for a website: audit, citability, crawlers, schema, llms.txt, content, platform tuning, or client reporting.
 - Run read-only analysis first; propose site changes before making any.
 

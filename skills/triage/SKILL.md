@@ -24,7 +24,6 @@ tools:
 # Triage
 
 ## When to Use
-
 Use when this workflow matches the user request: Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs.
 
 

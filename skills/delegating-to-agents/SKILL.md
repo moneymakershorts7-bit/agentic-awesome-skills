@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # Delegating to Agents
 
 ## When to Use
-
 - Use when work should be handed to another AI agent with a complete prompt and progress checks.
 - Use when you need to relay instructions to terminal or TUI agents without losing context.
 

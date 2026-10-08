@@ -21,7 +21,6 @@ license_source: https://github.com/Simon-He95/markstream-vue/blob/main/license
 Integrate Markstream using Svelte 5 runes and SvelteKit-safe browser boundaries.
 
 ## When to Use
-
 Use for Svelte 5 or SvelteKit package setup, streaming state, workers, or scoped custom components. Svelte 4 is unsupported.
 
 ## Workflow

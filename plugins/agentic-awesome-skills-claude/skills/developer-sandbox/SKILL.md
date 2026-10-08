@@ -17,7 +17,6 @@ license_source: https://github.com/jonathimer/devmarketing-skills/blob/main/LICE
 Read [the detailed guide](references/detailed-guide.md) before executing this skill. It retains the complete procedure and reference material. Treat its safety, prerequisites, and validation requirements as mandatory. For focused work, load the relevant sections; for end-to-end work, read the guide completely.
 
 ## When to Use
-
 Use this skill when you need design and build interactive playgrounds that let developers experience your product without commitment. This skill covers playground architecture, pre-populated examples, embedding strategies, gating decisions, and converting playground users to signups. Trigger phrases: "developer...
 
 

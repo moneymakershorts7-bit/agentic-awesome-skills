@@ -338,7 +338,6 @@ Before accepting any variant, verify:
 - Feeds output to: `seo-aeo-content-quality-auditor`
 
 ## When to Use
-
 Use when writing or revising title tags, meta descriptions, Open Graph metadata, or Twitter Card metadata for a page.
 
 ## Limitations

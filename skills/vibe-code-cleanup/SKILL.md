@@ -18,7 +18,6 @@ A safe, incremental cleanup workflow for AI-generated / vibe-coded fullstack app
 The goal is to make the codebase production-ready **without** breaking anything that already works.
 
 ## When to Use
-
 - Use when a rapidly built app works but has broken imports, duplicated logic, dead code, unclear environment variables, or fragile release hygiene.
 - Use before launch or handoff to convert exploratory code into a maintainable production baseline.
 - Use when cleanup must preserve existing behavior and avoid broad rewrites of routes, APIs, auth, data models, or integrations.

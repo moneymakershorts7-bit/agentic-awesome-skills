@@ -5,7 +5,7 @@
     "includedFromMajor": 15,
     "status": "agent-first-preview"
   },
-  "description": "AAS Core: complete local skill discovery, agent-owned selection, stack validation, and planning, backed by 2,764+ agentic skills.",
+  "description": "AAS Core: complete local skill discovery, agent-owned selection, stack validation, and planning, backed by 2,772+ agentic skills.",
   "license": "MIT",
   "scripts": {
     "validate": "node tools/scripts/run-python.js tools/scripts/validate_skills.py",
@@ -85,6 +85,7 @@
     "reason:sprout": "node tools/scripts/run-python.js tools/scripts/sprout_engine.py",
     "reason:budget": "node tools/scripts/run-python.js tools/scripts/test_time_budgeting.py",
     "reason:neuro": "node tools/scripts/run-python.js tools/scripts/neuro_symbolic_verifier.py",
+    "reason:turboquant": "node tools/scripts/run-python.js tools/scripts/turbo_quant_engine.py",
     "reason:suite": "node tools/scripts/run-python.js tools/scripts/reasoning_suite.py",
     "test": "node tools/scripts/tests/run-test-suite.js",
     "test:aas-v1": "node --test tools/scripts/tests/aas_v1_*.test.js",

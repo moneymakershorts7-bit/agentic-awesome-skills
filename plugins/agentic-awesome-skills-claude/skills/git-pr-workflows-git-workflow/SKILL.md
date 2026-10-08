@@ -11,7 +11,6 @@ date_added: "2026-02-27"
 Move completed changes from local review to a verified pull request without bypassing repository policy or branch protection.
 
 ## When to Use
-
 Use for completed implementation work that must be reviewed, tested, committed, pushed to a topic branch, and opened as a pull request. Use the repository's dedicated maintainer or release workflow instead when one is mandatory.
 
 ## Policy Gate

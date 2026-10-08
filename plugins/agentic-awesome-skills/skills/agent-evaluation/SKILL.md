@@ -11,7 +11,6 @@ date_added: 2026-02-27
 Evaluate observable agent behavior against task-specific cases. Modified by AAS maintainers on 2026-09-05 to remove unsupported benchmark claims, correct uncertainty/error reporting and separate optional architecture sketches from the operating procedure.
 
 ## When to Use
-
 Use when comparing a changed agent, prompt or tool configuration, reproducing an observed failure, or estimating reliability on a declared task distribution. Do not infer product readiness from a public benchmark percentage or a generic score threshold.
 
 ## Prerequisites

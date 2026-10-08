@@ -294,7 +294,6 @@ Status thresholds: Strong = 70+, Moderate = 40-69, Weak = 0-39
 ```
 
 ## When to Use
-
 - You need a Generative Engine Optimization task for a website: audit, citability, crawlers, schema, llms.txt, content, platform tuning, or client reporting.
 - Run read-only analysis first; propose site changes before making any.
 

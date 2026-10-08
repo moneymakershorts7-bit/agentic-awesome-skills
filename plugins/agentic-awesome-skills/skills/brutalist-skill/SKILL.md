@@ -9,7 +9,6 @@ date_added: "2026-10-03"
 # SKILL: Industrial Brutalism & Tactical Telemetry UI
 
 ## When to Use
-
 Use this skill whenever the task matches the workflows and capabilities described above.
 
 

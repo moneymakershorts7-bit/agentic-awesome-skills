@@ -20,7 +20,6 @@ metadata:
 # Repo-native refactor
 
 ## When to Use
-
 - Use when the user asks to review a diff, branch, or PR for correctness, contract breaks, or operational risk.
 - Use when the user authorizes bounded cleanup before opening a PR or asks to consolidate duplicated policy with shared ownership.
 - Use for repository rehabilitation only when the user explicitly requests work across multiple domains.

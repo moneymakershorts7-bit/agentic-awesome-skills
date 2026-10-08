@@ -12,7 +12,6 @@ license_source: https://github.com/jonathimer/devmarketing-skills/blob/main/LICE
 
 # Developer Listening
 ## When to Use
-
 Use this skill when you need monitor what developers say about your brand, competitors, and the problems they're solving. Track mentions and conversations across GitHub, Hacker News, Reddit, Stack Overflow, Twitter, and Discord. Trigger phrases: "developer listening", "monitor developer conversations", "track...
 
 

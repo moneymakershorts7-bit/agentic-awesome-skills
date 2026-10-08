@@ -13,7 +13,6 @@ date_added: "2026-06-05"
 ---
 
 ## When to Use
-
 Use this skill when an AI coding assistant needs to challenge user claims independently, avoid agreement bias, and state evidence before deference.
 
 ## Process

@@ -20,7 +20,6 @@ Two orthogonal layers. Both always active. Neither overrides the other.
 Shared philosophy: **no bloat**. Not in code. Not in words.
 
 ## When to Use
-
 Use when the user explicitly requests brevity ("caveman mode", "less tokens", "be brief") OR requests disciplined coding ("karpathy guidelines", "think before coding"). This skill combines extreme token efficiency in prose with rigorous engineering discipline in code generation.
 
 ---

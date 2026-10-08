@@ -27,7 +27,6 @@ tools:
 # Yao Meta Skill
 
 ## When to Use
-
 Use when this workflow matches the user request: Create, refactor, evaluate, and package agent skills from workflows, prompts, transcripts, docs, or notes. Use for skill creation, reusable workflow packaging, skill improvement, evals, and team-ready distribution.
 
 

@@ -22,7 +22,6 @@ tools:
 ---
 
 ## When to Use
-
 Use when this workflow matches the user request: A relentless interview to sharpen a plan or design.
 
 

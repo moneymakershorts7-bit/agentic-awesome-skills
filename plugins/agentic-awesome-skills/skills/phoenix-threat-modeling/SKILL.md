@@ -17,7 +17,6 @@ tools: [Bash, Read, Write]
 **Purpose:** Automated threat modeling from code analysis using STRIDE/DREAD methodologies.
 
 ## When to Use
-
 - Security assessment, architecture review, and trust-boundary mapping.
 - Compliance documentation and attack scenario planning.
 - Evaluating entry points, unauthenticated RPCs, and data flows.
@@ -578,3 +577,8 @@ Your application has **24 identified threats** with **3 critical** and **8 high-
 **Version:** 1.0  
 **Last Updated:** 2026-02-27  
 **Status:** Planned
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

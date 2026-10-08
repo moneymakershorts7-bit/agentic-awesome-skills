@@ -137,7 +137,6 @@ Tell the user:
 | Fonts not loading | PDF is rendered offline; system fonts are used as fallback — this is expected |
 
 ## When to Use
-
 - You need a Generative Engine Optimization task for a website: audit, citability, crawlers, schema, llms.txt, content, platform tuning, or client reporting.
 - Run read-only analysis first; propose site changes before making any.
 

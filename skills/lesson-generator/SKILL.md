@@ -21,7 +21,6 @@ tools:
 ---
 
 ## When to Use
-
 Use when this workflow matches the user request: Build compact, standalone multi-lesson course artifacts with lesson navigation, objectives, flashcards, quizzes, and source links.
 
 

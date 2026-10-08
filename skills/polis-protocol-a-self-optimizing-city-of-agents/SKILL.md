@@ -12,7 +12,6 @@ license_source: https://github.com/yehudalevy-collab/polis-protocol/blob/main/LI
 
 # Polis Protocol: A Self-Optimizing City of Agents
 ## When to Use
-
 Use this skill when you need polis Protocol: A Self-Optimizing City of Agents.
 
 

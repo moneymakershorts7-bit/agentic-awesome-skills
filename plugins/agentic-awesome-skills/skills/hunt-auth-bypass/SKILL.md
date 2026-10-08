@@ -406,7 +406,6 @@ The following real, verified bug-bounty / coordinated-disclosure cases extend th
 - [Related Skills & Chains](references/details.md)
 
 ## When to Use
-
 - You have explicit, written authorization to assess the target in scope, and the task matches this skill's vulnerability class or technique within a bug-bounty or penetration-test engagement.
 - You need the recon, exploitation, or validation workflow described below — executed strictly inside the approved scope.
 

@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 A structured knowledge base and architectural toolkit for programmatic video generation, Remotion animation, motion graphics design, and AI-driven automated video editing. It routes tasks to optimal rendering frameworks (Remotion, FFmpeg, HyperFrames, Canvas video capture) based on format and delivery requirements.
 
 ## When to Use
-
 - Deciding architecture and rendering pipeline for automated video generation (Remotion vs FFmpeg vs Canvas vs WebGL).
 - Creating code-based product launch films, SaaS feature demos, animated explainers, or viral shorts/reels.
 - Designing motion design templates, kinetic typography, automated captions, and B-roll collage loops.
@@ -79,3 +78,7 @@ ffmpeg -i voiceover.wav -i bgm.mp3 -filter_complex \
 
 For complete framework catalogs, animation patterns, and asset specifications, see [video-frameworks.md](references/video-frameworks.md). For step-by-step explainer builds, load [`ai-animation-workflow`](../ai-animation-workflow/SKILL.md).
 
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # Attack Chain Orchestration Skill
 ## When to Use
-
 - An authorized engagement spans multiple kill-chain phases.
 - Coordinating several specialist skills into one coherent attack path.
 

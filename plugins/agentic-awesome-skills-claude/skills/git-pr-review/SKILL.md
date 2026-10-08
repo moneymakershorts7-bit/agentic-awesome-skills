@@ -15,7 +15,6 @@ Create a clean, objective pull request description by analyzing commit history b
 ---
 
 ## When to Use
-
 Use this skill when you need to generate a structured pull request description based on commit history, especially for maintaining consistency and reducing manual effort.
 
 ---

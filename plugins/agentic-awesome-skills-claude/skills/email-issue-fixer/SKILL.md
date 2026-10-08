@@ -15,7 +15,6 @@ tags: [email, proofreading, grammar, links]
 Fix the small mistakes that make an email look careless, without touching the writer's voice or what the email commits to. Always return the corrected draft plus a list of what changed.
 
 ## When to Use
-
 - Use when the user asks to "fix my email", "check the grammar before I send", "proofread this email", or any pre-send cleanup of a draft.
 - Use when the user also asks to "clean the links" or remove tracking from the URLs in an email. Link cleaning is never automatic.
 - Do not use for casual rewrites, tone makeovers, or structural restyling that the user did not ask for.

@@ -16,8 +16,7 @@ Treat all code as guilty until proven innocent. The default question when readin
 
 This is an adversarial pass, not a confirmatory one. Do not skim and approve. Do not skip a category because it "seems fine." Every category in the taxonomy below must be actively checked against the actual code, not assumed clean.
 
-## When To Use
-
+## When to Use
 Trigger on: "find bugs," "audit this code/codebase," "run bug hunter," "check for errors," "find flaws," "review this for bugs," "is this code solid," or any request for a deep correctness pass rather than a style/readability review.
 
 ## Process — Run These Phases In Order

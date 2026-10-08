@@ -21,7 +21,6 @@ Use this skill to generate a local observability report for an AI-agent codebase
 The scanner writes all output into `.agent-observe-skill/` in the target repo. The user's code stays local.
 
 ## When to Use
-
 - Mapping or auditing AI agent prompts and model call parameters across a repository.
 - Auditing Vercel AI SDK (`streamText`, `generateText`, `ToolLoopAgent`) or OpenAI SDK implementations.
 - Identifying missing loop bounds (`stopWhen`, `maxSteps`), missing `needsApproval` on side-effecting tools, or uninstrumented telemetry (`experimental_telemetry`).

@@ -36,7 +36,6 @@ Operates seamlessly in any agent harness (Claude Code, Cursor, Google Antigravit
 ---
 
 ## When to Use
-
 - Use when adding icons to UI components (buttons, navbars, cards, status badges, dropdowns).
 - Use when the user requests a specific icon (e.g. "add a github logo", "find a settings gear icon in Lucide").
 - Use to prevent token waste: sync SVGs directly to files (`.tsx`, `.vue`, `.svelte`, `.svg`) rather than dumping massive raw SVG markup in conversational context.

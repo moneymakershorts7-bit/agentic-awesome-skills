@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # Go / Rust Binary Reverse Engineering
 ## When to Use
-
 - Analyzing a stripped Go or Rust binary where symbols are absent.
 - Recovering function boundaries and names from language-specific metadata.
 

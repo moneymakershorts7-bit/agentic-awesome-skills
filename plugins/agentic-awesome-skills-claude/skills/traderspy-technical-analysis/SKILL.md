@@ -22,7 +22,6 @@ around it. TraderSpy gives all three in at most two calls. Spend the calls well 
 is finite — and quote the numbers, not adjectives.
 
 ## When to Use
-
 - Use when the user asks about a coin's chart, trend, momentum, support and resistance, or where a level such as the 200 EMA sits.
 - Use for "analyse BTC", "how does SOL look", "is X overbought / oversold", "what do the indicators say" or "is this a good entry", even when the user only names a coin.
 - Use when the question is whether funding is high or open interest is building, or when the user wants price or candle data.

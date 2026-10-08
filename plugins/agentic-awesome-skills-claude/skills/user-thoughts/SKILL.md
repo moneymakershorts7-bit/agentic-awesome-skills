@@ -29,7 +29,6 @@ Across sessions and across agents, project decisions and user constraints are ea
 The skill records user intent. It does not replace normal task execution. If the user says, "make the button red," the agent should both make the change and record the preference when persistent project memory is useful.
 
 ## When to Use
-
 Use this skill when the user states or revises:
 
 - Project rules, constraints, preferences, or requirements.

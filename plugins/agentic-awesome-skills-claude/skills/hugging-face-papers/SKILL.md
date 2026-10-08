@@ -23,7 +23,6 @@ Whenever someone mentions a HF paper or arXiv abstract/PDF URL in a model card, 
 The Hugging Face team has built an easy-to-use API to interact with paper pages. Content of the papers can be fetched as markdown, or structured metadata can be returned such as author names, linked models/datasets/spaces, linked Github repo and project page.
 
 ## When to Use
-
 - User shares a Hugging Face paper page URL (e.g. `https://huggingface.co/papers/2602.08025`)
 - User shares a Hugging Face markdown paper page URL (e.g. `https://huggingface.co/papers/2602.08025.md`)
 - User shares an arXiv URL (e.g. `https://arxiv.org/abs/2602.08025` or  `https://arxiv.org/pdf/2602.08025`)

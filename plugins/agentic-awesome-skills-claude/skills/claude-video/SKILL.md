@@ -15,7 +15,6 @@ tools: [Bash, Read, Write]
 # Claude Video: Multimodal Video Understanding & Frame Inspection
 
 ## When to Use
-
 - When asked to analyze, watch, summarize, or inspect a video URL (YouTube, Vimeo) or local MP4/MKV video file.
 - Answering timestamp-specific visual questions about video scenes, UI walkthroughs, or presentations.
 - Extracting audio transcripts from subtitles or Whisper transcription models.
@@ -180,3 +179,8 @@ For follow-ups, reuse evidence already viewed before rerunning. Remove only the 
 - The managed environment lives at `~/.cache/watch/whisperx-venv`, outside the plugin. Model caches normally live at `~/.cache/huggingface` and `~/.cache/torch/hub`. uv also caches packages and managed Python. Reinstalling the skill does not remove these.
 
 Bundled scripts: `watch.py`, `download.py`, `frames.py`, `transcribe.py`, `whisper.py`, `local_whisperx.py`, `gemini.py`, `config.py`, `runtime.py`, and `setup.py` under `scripts/`. The base runtime uses only Python's standard library; optional WhisperX dependencies remain in its separate process/environment.
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

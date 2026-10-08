@@ -22,7 +22,6 @@ metadata:
 Implement comprehensive backup and recovery strategies using rsync, Restic, and cloud storage backends. Covers the 3-2-1 rule, automated scheduling, S3/B2 backends, encryption, restore procedures, and verification testing.
 
 ## When to Use
-
 - Designing a backup strategy for servers, databases, or application data
 - Setting up Restic for encrypted, deduplicated backups to local or cloud storage
 - Automating backups with systemd timers or cron

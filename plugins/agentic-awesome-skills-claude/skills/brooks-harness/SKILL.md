@@ -12,7 +12,6 @@ license_source: https://github.com/hyhmrright/brooks-lint/blob/main/LICENSE
 
 # brooks-lint — Maintenance Harness (Orchestrator)
 ## When to Use
-
 Use this skill when you need maintenance orchestrator for the brooks-lint plugin itself. Runs a sequential subagent pipeline — author → eval → QA → trigger-audit → release — to add or edit a skill, refresh the eval suite, keep the four manifests + README + CHANGELOG + AGENTS/GEMINI in sync, audit trigger...
 
 

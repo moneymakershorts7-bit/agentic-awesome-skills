@@ -24,7 +24,6 @@ verify website tracking, and review traffic-to-revenue attribution while keeping
 account, website, file, and payment changes behind explicit user consent.
 
 ## When to Use
-
 - Use when the user explicitly asks to set up or verify Talivia revenue analytics.
 - Use when the user mentions the Talivia MCP server, `talivia-group/agent`, or
   `@talivia/agent`.

@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # Newman CI/CD Integration Generator
 ## When to Use
-
 Use this skill when you need generate ready-to-use CI/CD pipeline configurations that install and run Newman for automated API testing. Use this skill whenever the user wants to run Newman in a CI pipeline, integrate Postman collections into automated builds, set up API tests in GitHub Actions, GitLab CI, Jenkins,...
 
 

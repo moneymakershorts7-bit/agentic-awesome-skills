@@ -35,7 +35,6 @@ date_added: "2026-10-03"
 # narrator-ai-cli — AI Video Narration CLI Skill
 
 ## When to Use
-
 Use this skill whenever the task matches the workflows and capabilities described above.
 
 

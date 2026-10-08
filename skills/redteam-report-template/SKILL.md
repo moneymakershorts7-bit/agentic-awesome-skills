@@ -15,8 +15,7 @@ sources: authorized-engagement-deliverable, enterprise-redteam-report-convention
 report_count: 1
 ---
 
-## When to use
-
+## When to Use
 Use this skill for **client-deliverable** reports:
 - External red-team engagements with a signed SOW
 - Pentest reports going to a CISO / IT-Sec team (not a triager)

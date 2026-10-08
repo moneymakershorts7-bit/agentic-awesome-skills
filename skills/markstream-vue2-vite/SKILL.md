@@ -21,7 +21,6 @@ license_source: https://github.com/Simon-He95/markstream-vue/blob/main/license
 Use Vite-native worker bundling while preserving Vue 2 compatibility and rendering safety.
 
 ## When to Use
-
 Use when the host is Vue 2 with Vite and needs bundled Mermaid or KaTeX workers. Use the generic Vue 2 skill when worker/bundler behavior is irrelevant.
 
 ## Workflow

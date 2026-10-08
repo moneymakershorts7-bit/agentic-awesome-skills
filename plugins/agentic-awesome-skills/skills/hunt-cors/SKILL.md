@@ -315,7 +315,6 @@ Every automated hit is a lead, not a finding. Reproduce 5a/5b in a browser.
 - `ACAO: *` only (no creds possible): Informational unless data is secret
 
 ## When to Use
-
 - You have explicit, written authorization to assess the target in scope, and the task matches this skill's vulnerability class or technique within a bug-bounty or penetration-test engagement.
 - You need the recon, exploitation, or validation workflow described below — executed strictly inside the approved scope.
 

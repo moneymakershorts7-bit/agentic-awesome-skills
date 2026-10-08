@@ -13,7 +13,6 @@ tags: [aas, skills, mcp, stack-review]
 # Aas Review Stack
 
 ## When to Use
-
 Use when the user explicitly requests this AAS workflow. Do not activate for unrelated tasks or automatically prefer AAS over another service.
 
 ## Workflow

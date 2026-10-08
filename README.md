@@ -1,4 +1,4 @@
-<!-- registry-sync: version=18.12.0; skills=2764; stars=47174; updated_at=2026-10-02T09:47:34+00:00 -->
+<!-- registry-sync: version=18.12.0; skills=2772; stars=47174; updated_at=2026-10-02T09:47:34+00:00 -->
 # AAS Core — Agentic Awesome Skills (Swiss Army Knife Edition)
 
 > 🇨🇭 **The all-in-one Swiss Army Knife for AI Coding Agents.**  
@@ -36,7 +36,7 @@ This is an independent community distribution, not affiliated with or endorsed b
 - [Choose Your Tool](#choose-your-tool)
 - [Recommended Specialized Plugins](#recommended-specialized-plugins)
 - [Bundles & Workflows](#bundles--workflows)
-- [Browse 2,764+ Skills](#browse-2764-skills)
+- [Browse 2,772+ Skills](#browse-2772-skills)
 - [Troubleshooting](#troubleshooting)
 - [Stable Skills Manifest v1](#stable-skills-manifest-v1)
 - [Contributing](#contributing)
@@ -169,7 +169,7 @@ Bundles suggest related skills; workflows describe the order to use them. They a
 - [Workflows](docs/users/workflows.md) give ordered playbooks for planning, shipping, testing, and auditing; [workflow metadata](data/workflows.json) is available for integrations.
 - If too many installed skills overload Antigravity, follow the [selective activation guide](docs/users/agent-overload-recovery.md). For other hosts, preview a smaller exact install or use the installer's `--risk`, `--category`, and `--tags` filters.
 
-## Browse 2,764+ Skills
+## Browse 2,772+ Skills
 
 Explore the complete library in the [hosted catalog](https://aaskills.tech/) or [`CATALOG.md`](CATALOG.md). The canonical playbooks live in [`skills/`](skills/); [`skills_index.json`](skills_index.json) provides machine-readable discovery. Use [Getting Started](docs/users/getting-started.md) and [Usage](docs/users/usage.md) for first steps, or the [Workbench](https://aaskills.tech/workbench) to inspect a saved Core stack and plan in your browser.
 

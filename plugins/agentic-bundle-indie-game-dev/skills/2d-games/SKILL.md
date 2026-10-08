@@ -120,7 +120,6 @@ metadata:
 > **Remember:** 2D is about clarity. Every pixel should communicate.
 
 ## When to Use
-
 Use for canvas/Phaser/Kaplay/Pixi 2D systems, or guest viewports inside hybrid web apps.
 
 ## Example

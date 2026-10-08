@@ -18,7 +18,6 @@ disable-model-invocation: true
 # Fable-Safe Prompt
 
 ## When to Use
-
 - Use when an allowed prompt appears likely to hit false-positive classifier language.
 - Use when the user asks for prompt wording that keeps benign intent clear and policy-compliant.
 

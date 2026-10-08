@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # Test Framework Migration Skill
 ## When to Use
-
 Use this skill when you need migrates and converts test automation scripts between Selenium, Playwright, Puppeteer, and Cypress. Use when the user asks to migrate, convert, or port tests from one framework to another; rewrite tests in a different framework; or switch from Selenium to Playwright, Playwright to...
 
 

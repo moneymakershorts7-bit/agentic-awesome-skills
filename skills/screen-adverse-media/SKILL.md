@@ -18,8 +18,7 @@ license_source: "https://github.com/Sketchjar/stipple-agent-skills/blob/main/LIC
 
 Screen a person or organisation for adverse media coverage, PEP (Politically Exposed Person) status, and sanctions exposure. Every hit is **corroboration-gated**: the screen returns "review", never "guilty", and "nothing found" is never a clean record. Uses the Stipple API (free anonymous tier).
 
-## When to use
-
+## When to Use
 - AML/CTF onboarding (Tranche 2 reforms make this mandatory for more Australian businesses)
 - Vendor/supplier due diligence before signing
 - Investor or LP vetting

@@ -12,7 +12,6 @@ license_source: https://github.com/neondatabase/agent-skills/blob/main/LICENSE
 
 # Neon Serverless Postgres
 ## When to Use
-
 Use this skill when you need guides and best practices for working with Neon Serverless Postgres. Covers setup, connection methods, branching, autoscaling, scale-to-zero, read replicas, connection pooling, Neon Auth, and the Neon CLI, MCP server, REST API, TypeScript SDK, and Python SDK. Use when users ask about...
 
 

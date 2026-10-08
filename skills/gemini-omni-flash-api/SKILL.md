@@ -12,7 +12,6 @@ license_source: https://github.com/google-gemini/gemini-skills/blob/main/LICENSE
 
 # Gemini Omni Flash Skill
 ## When to Use
-
 Use this skill when you need use this skill for generative video editing, text-to-video, image-referenced video generation, and first-frame-to-video transition animations using the official google-genai SDK. Includes workflows for pre-processing/optimizing high-resolution or long source videos with ffmpeg,...
 
 

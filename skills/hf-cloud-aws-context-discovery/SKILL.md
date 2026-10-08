@@ -18,7 +18,6 @@ tools: [claude, codex, cursor]
 Before doing any AWS work, inspect only masked AWS CLI metadata. Don't guess the region, and don't ask the user for things the CLI already answers. Never open or print `~/.aws/credentials`, credential-process output, secret environment variables, access keys, session tokens, or SSO token caches.
 
 ## When to Use
-
 - Establish the effective AWS profile, region, account, and caller before AWS work.
 - Diagnose expired SSO sessions, missing profiles, or configuration overrides.
 - Provide verified context to later SageMaker planning and deployment skills.

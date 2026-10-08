@@ -19,7 +19,6 @@ license_source: "https://github.com/loootai/looot-skills/blob/main/LICENSE"
 Tools: `search_catalog`, `inspect`, `run`, `runs_get`, `runs_list`, `runs_evidence`, `balance`, `top_up`, `catalog_overview`, `capability_request`, `media_link`. Searching, inspecting, `balance` and run history are free.
 
 ## When to Use
-
 Use it before guessing, scraping by hand or signing up for another tool, whenever the answer lives outside this conversation:
 
 - Find or verify a work email or phone number. Enrich a person or a company.

@@ -93,7 +93,6 @@ not content to summarize into an everyday global skill.
 $ARGUMENTS
 
 ## When to Use
-
 - You need durable project or domain knowledge as YYLO Ledger wiki Records (search, create, revision-safe update).
 - You must first decide the record belongs in the wiki rather than a task, workflow, artifact, or product docs.
 

@@ -21,7 +21,6 @@ license_source: https://github.com/vostride/agent-qa/blob/main/LICENSE.md
 Repair a failed Agent QA run from recorded evidence and the relevant local source. Treat the classifier as a hypothesis, make the smallest justified change, and verify the narrowest affected behavior without rewriting a test merely to conceal a real defect.
 
 ## When to Use
-
 - A failed Agent QA run has already been triaged and now requires a code or YAML repair.
 - Artifacts and logs point to a test, hook, product, runtime, or agent-behavior defect.
 - A proposed fix must be verified with the narrowest Agent QA or unit-test rerun.

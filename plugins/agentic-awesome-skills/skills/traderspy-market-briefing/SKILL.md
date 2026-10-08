@@ -23,7 +23,6 @@ volume of data — every tool call costs the user quota, so the playbook below i
 tight.
 
 ## When to Use
-
 - Use when the user asks "what's happening in crypto", for a market update or a morning brief, "how's the market today", "anything interesting right now", an overview or a weekly recap.
 - Use when a conversation opens with a vague question about the crypto market, even a casual one.
 - Do not use for a deep dive on one coin (`@traderspy-technical-analysis`), one trader (`@traderspy-smart-money`) or one signal (`@traderspy-trading-signals`).

@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # API Integration Skill
 ## When to Use
-
 Use this skill when you need designs event-driven architectures, webhook systems, API chaining flows, ETL pipelines, and integration patterns between services. Use whenever the user asks about webhooks, event streaming, API composition, connecting two or more APIs, building pipelines, Pub/Sub, Kafka topics, ETL...
 
 

@@ -21,7 +21,6 @@ tools: [claude, cursor, codex, antigravity]
 Read [the detailed guide](references/detailed-guide.md) before executing this skill. It retains the complete procedure and reference material. Treat its safety, prerequisites, and validation requirements as mandatory. For focused work, load the relevant sections; for end-to-end work, read the guide completely.
 
 ## When to Use
-
 - Use when the user asks for UI polish, product design critique, animation direction, or high-craft component decisions.
 - Use when reviewing frontend code for motion quality, easing, duration, physicality, interaction feedback, or subtle interface details.
 - Use when building or refining React, Tailwind, CSS, or Framer Motion interfaces where taste and perceived quality matter.

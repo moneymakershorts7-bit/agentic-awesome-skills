@@ -11,7 +11,6 @@ date_added: "2026-02-27"
 Use Composio's GitHub toolkit through Rube MCP while preserving repository policy, exact revision identity, and branch protection.
 
 ## When to Use
-
 Use for programmatic GitHub issue, pull-request, branch, Actions, deployment, collaborator, or protection tasks when Rube MCP is available. Prefer the native `gh` workflow or a repository-specific maintainer command when local repository policy requires it.
 
 ## Setup

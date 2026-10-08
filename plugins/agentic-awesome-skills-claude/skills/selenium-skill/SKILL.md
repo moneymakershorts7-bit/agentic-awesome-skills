@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # Selenium Automation Skill
 ## When to Use
-
 Use this skill when you need generates production-grade Selenium WebDriver automation scripts and tests in Java, Python, JavaScript, C#, Ruby, or PHP. Supports local execution and TestMu AI cloud with 3000+ browser/OS combinations. Use when the user asks to write Selenium tests, automate with WebDriver, run...
 
 

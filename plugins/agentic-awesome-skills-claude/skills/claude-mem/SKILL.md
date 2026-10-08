@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 Claude-Mem captures agent interactions, tool executions, bug resolutions, and codebase patterns into a compressed, persistent SQLite memory layer. It enables instant cross-session recall ("how did we fix auth last week?", "did we already solve this bug?") using a 3-tier progressive disclosure strategy (Index → Metadata → Full Payload) that saves ~90% tokens.
 
 ## When to Use
-
 - Answering questions about historical decisions or previous coding sessions ("Did we already implement X?", "How did we resolve this error last time?").
 - Indexing a new codebase architecture into persistent knowledge nodes (`learn-codebase`).
 - Generating standup summaries or timeline reports across multi-day agent workflows.
@@ -70,3 +69,8 @@ claude-mem standup --since "yesterday"
 ---
 
 For complete database schema, MCP server configuration, and vector similarity settings, see [architecture.md](references/architecture.md).
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

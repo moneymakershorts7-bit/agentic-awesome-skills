@@ -24,7 +24,6 @@ metadata:
 > **[Authorized Use Only]** This skill writes or updates `AGENTS.md`, `.agents/rules/`, optional platform instruction files, and timestamped backups in the target project. Read the detected inputs and proposed outputs first, obtain approval before changing target files, and use it only inside the user's intended project scope.
 
 ## When to Use
-
 Use this skill when the user wants to:
 
 - create a complete, project-specific `AGENTS.md` instead of generic agent rules;

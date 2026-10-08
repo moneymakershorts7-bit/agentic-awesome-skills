@@ -228,3 +228,8 @@ Score top 10 finalists on the 12-point criteria:
 - `@brandkit` — Multi-panel visual brand identity decks, color palettes, and typographic systems.
 - `@brand-growth-system-builder` — Strategic routing across 13 core brand and growth modules.
 - `@brand-guidelines` — Tone of voice, verbal guidelines, and brand copy rules.
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

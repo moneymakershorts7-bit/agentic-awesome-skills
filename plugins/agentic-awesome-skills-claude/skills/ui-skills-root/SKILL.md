@@ -12,7 +12,6 @@ license_source: https://github.com/ibelick/ui-skills/blob/main/LICENSE
 
 # UI Skills Root
 ## When to Use
-
 Use this skill when you need use before UI-related work to select the smallest useful UI Skills context through the ui-skills CLI.
 
 

@@ -27,7 +27,6 @@ This skills-only package does not install or configure the MCP connection. Add t
 If the Famulor MCP server is unavailable in the current client, help the user connect it and stop before claiming to have read or changed their account. Do not substitute an undocumented REST endpoint.
 
 ## When to Use
-
 - Use when a request needs real Famulor workspace data or an authenticated Famulor action.
 - Use when configuring or operating assistants, communication history, campaigns, knowledge, automations, telephony, billing, or workspace settings.
 - Do not use for generic voice-agent advice that does not require Famulor.

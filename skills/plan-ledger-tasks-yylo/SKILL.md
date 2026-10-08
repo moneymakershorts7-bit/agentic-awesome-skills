@@ -32,7 +32,6 @@ Use `--id`, not legacy `--ID`, for Kanban mutations. Return the task IDs and a s
 $ARGUMENTS
 
 ## When to Use
-
 - The user explicitly asks to plan or register work in the YYLO Ledger.
 - You need a concise Product Development Requirement (PDR) plus implementation-sized Ledger tasks with dependencies.
 

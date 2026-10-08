@@ -22,7 +22,6 @@ metadata:
 Implement PCI DSS v4.0 requirements for protecting cardholder data across the Cardholder Data Environment (CDE), including network segmentation, encryption, access controls, and ongoing testing.
 
 ## When to Use
-
 - Processing, storing, or transmitting payment card data
 - Scoping the Cardholder Data Environment for PCI assessment
 - Selecting the appropriate Self-Assessment Questionnaire (SAQ)

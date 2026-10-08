@@ -424,7 +424,6 @@ az deployment group delete \
 - [Related Skills](references/details.md)
 
 ## When to Use
-
 - You need Azure-native Infrastructure as Code without third-party tooling.
 - Your organization standardizes on Azure and wants tight portal integration.
 - You need What-If analysis before deploying changes.

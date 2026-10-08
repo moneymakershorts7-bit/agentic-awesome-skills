@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # Ghidra Reverse Engineering
 ## When to Use
-
 - Static analysis of binaries without an IDA license.
 - Bulk headless decompilation or scripted analysis across many binaries.
 

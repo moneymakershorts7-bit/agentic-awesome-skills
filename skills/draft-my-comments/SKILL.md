@@ -24,7 +24,6 @@ A comment that gets read does one thing: it adds something the post did not
 have. Everything below is about finding that thing.
 
 ## When to Use
-
 - Use when someone asks what to comment on a LinkedIn post, or pastes a post and asks for a reply to it.
 - Use when someone wants to engage with creators in their space.
 - Use when someone says their comments go nowhere.

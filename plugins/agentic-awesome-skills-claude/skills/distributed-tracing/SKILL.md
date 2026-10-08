@@ -9,7 +9,6 @@ date_added: "2026-02-27"
 # Distributed Tracing
 
 ## When to Use
-
 Trace a request across services, diagnose latency and error propagation, or add observable boundaries to a new integration.
 
 ## Inputs and prerequisites

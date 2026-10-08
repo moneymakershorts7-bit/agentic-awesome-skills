@@ -24,7 +24,6 @@ tools:
 # Prototype
 
 ## When to Use
-
 Use when this workflow matches the user request: Build a throwaway prototype to flesh out a design — a runnable terminal app for state/business-logic questions, or several radically different UI variations toggleable from one route.
 
 

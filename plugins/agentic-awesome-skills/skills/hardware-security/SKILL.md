@@ -25,7 +25,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 
 # Hardware / Embedded Interface Security
 ## When to Use
-
 - Physical security review of a device you own or are authorized to test.
 - Locating and documenting exposed debug interfaces.
 

@@ -348,7 +348,6 @@ Generate a file called `GEO-AUDIT-REPORT.md` with the following structure:
 - Key schema: Organization, Service, Person (team), Review
 
 ## When to Use
-
 - You need a Generative Engine Optimization task for a website: audit, citability, crawlers, schema, llms.txt, content, platform tuning, or client reporting.
 - Run read-only analysis first; propose site changes before making any.
 

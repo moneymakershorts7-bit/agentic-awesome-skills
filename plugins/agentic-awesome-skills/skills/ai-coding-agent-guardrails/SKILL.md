@@ -407,7 +407,6 @@ docker run \
 - [Quick Reference](references/details.md)
 
 ## When to Use
-
 Apply these guardrails when:
 
 - Onboarding AI coding agents into an engineering team for the first time

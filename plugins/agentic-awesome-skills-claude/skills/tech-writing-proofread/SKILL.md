@@ -19,7 +19,6 @@ license_source: https://github.com/alapha888/agent-skills-en/blob/main/LICENSE
 Take an English technical document from "understandable" to "publishable." Proofread only — never rewrite content. Flag suspected factual errors; do not silently fix them.
 
 ## When to Use
-
 - Use when the user asks to proofread, polish, or review an English technical doc, README, or blog draft.
 - Use when terminology consistency or jargon needs checking across a document.
 

@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 `lazaro` executes the automated backup and disaster recovery pipeline for the agent's personalized environment. It sanitizes all configs (stripping secrets, keys, and tokens), synchronizes the 4-layer cognitive memory (`~/.agents/memory/`), backs up custom skills (`~/.agents/skills/`), creates local compressed `.tar.gz` / `.zip` archives in `~/backups/`, and pushes the state to the user's private GitHub repository (`moneymakershorts7-bit/lazaro-personalization-backup`).
 
 ## When to Use
-
 - Triggered whenever the user inputs `/lazaro` in chat.
 - When asked to "backup our personalization", "create backup", "take disaster recovery snapshot", or "resurrect environment".
 - Before major system re-installations, migrations to new machines, or destructive operations.
@@ -59,3 +58,8 @@ bash ~/lazaro-backup/restore.sh
 ```
 
 For complete recovery runbook, see [recovery-runbook.md](references/recovery-runbook.md).
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

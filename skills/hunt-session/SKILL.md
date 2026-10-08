@@ -322,7 +322,6 @@ Before claiming ANY session finding:
 - Missing `HttpOnly`/`SameSite` standalone: **Low/Informational** until chained
 
 ## When to Use
-
 - You have explicit, written authorization to assess the target in scope, and the task matches this skill's vulnerability class or technique within a bug-bounty or penetration-test engagement.
 - You need the recon, exploitation, or validation workflow described below — executed strictly inside the approved scope.
 

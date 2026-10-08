@@ -29,7 +29,6 @@ Jules runs tasks inside secure, isolated Ubuntu cloud VMs with preinstalled tool
 ---
 
 ## When to Use
-
 - **Asynchronous Task Delegation**: Hand off long-running maintenance, unit test expansion, or dependency upgrades to run autonomously in Google's cloud.
 - **Offline / Session Handoff**: Dispatch tasks to Jules before ending an interactive coding session or when operating with constrained local resources.
 - **Automated Issue Triage**: Chain `gh issue` with Jules to dispatch and solve GitHub issues into draft PRs.

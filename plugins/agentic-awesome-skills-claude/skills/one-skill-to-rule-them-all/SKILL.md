@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 Skills improve best from friction noticed during real work. The Task Observer monitors multi-step executions, tool errors, retries, and user corrections, logging observations into a structured backlog (`[workspace]/skill-observations/observation-log/`) to iteratively create, refine, and maintain high-grade agent skills.
 
 ## When to Use
-
 - During complex, multi-step tasks to detect repetitive workflow friction or manual tool interventions.
 - When the user corrects an agent approach or provides specific workflow instructions worth persisting.
 - Conducting weekly or milestone skill reviews to synthesize new domain skills from logged observations.
@@ -67,3 +66,8 @@ Create a `csv-analytics` skill using DuckDB stream execution.
 - [observation-log.md](references/observation-log.md) — Backlog schema, lifecycle states, and archive paths.
 - [skill-authoring.md](references/skill-authoring.md) — Converting validated observations into production skills.
 - [weekly-review.md](references/weekly-review.md) — Triage process for distilling candidate skills.
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

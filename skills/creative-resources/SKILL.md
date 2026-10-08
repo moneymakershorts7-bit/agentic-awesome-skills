@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 A curated index of production assets and tools for creators, designers, video editors, and 3D artists. Covers free and open-access royalty-free sound effects, ambient audio, PBR textures, HDRI environments, typography, color palettes, and pre-production templates.
 
 ## When to Use
-
 - Sourcing high-quality free assets for video, 3D (Blender/Three.js), motion design, or game dev projects.
 - Selecting royalty-free background music, foley sound effects, or ambient soundscapes.
 - Discovering open-source software alternatives for editing, rendering, and compositing (DaVinci Resolve, Blender, Krita, Natron).
@@ -48,3 +47,8 @@ A curated index of production assets and tools for creators, designers, video ed
 ---
 
 For complete URLs, licensing specifics, and pre-production templates, see [resource-catalog.md](references/resource-catalog.md).
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

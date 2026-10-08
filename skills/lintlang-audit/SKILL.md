@@ -27,7 +27,6 @@ the Apache-2.0 notice is retained at the pinned
 [upstream LICENSE](https://github.com/hermes-labs-ai/lintlang/blob/c0cab00048220286858f227aaf4b13cc043f718b/LICENSE).
 
 ## When to Use
-
 Use when the user names one or more local `.yaml`, `.yml`, `.json`, `.md`,
 `.txt`, `.prompt`, or `.py` files and asks to audit, lint, scan, or gate agent
 instructions, tool descriptions, or embedded prompts. Ask for a path if none is

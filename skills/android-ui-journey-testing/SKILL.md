@@ -18,7 +18,6 @@ tools: [claude, cursor, gemini, antigravity]
 This skill outlines the standard workflow for running XML-specified User Journey tests on Android applications. A "journey" is a sequenced set of user actions and state assertions designed to verify end-to-end functionality. The journey XML acts as the source of truth for the app's behavior. The executor proceeds sequentially, performing UI interactions, checking state assertions, and writing a standardized JSON outcome report.
 
 ## When to Use
-
 - Use when evaluating an Android application's UI behavior against an XML test specification.
 - Use when automating multi-step user flows (e.g., login, checkout, navigation) and verifying expectations.
 - Use when running verification tests and generating standardized JSON test reports.

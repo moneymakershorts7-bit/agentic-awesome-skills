@@ -73,7 +73,6 @@ await page.locator('[data-v-12345]').click();
 """
 
 ## When to Use
-
 Use to verify a real browser workflow, diagnose a UI timing failure or collect explicitly authorized page data. Inspect the current page and available tool APIs before selecting locators or actions.
 
 ## Worked example and prerequisites

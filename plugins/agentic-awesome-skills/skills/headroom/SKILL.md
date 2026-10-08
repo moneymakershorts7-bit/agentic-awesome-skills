@@ -19,7 +19,6 @@ tools: [Bash, Read, Write]
 Headroom compresses everything an AI agent reads — tool outputs, build logs, RAG chunks, large files, and conversation history — locally on the machine before forwarding to the model. It provides zero-data-leakage compression, reversible original caching (CCR), and cross-agent memory sync across Claude Code, Cursor, Codex, OpenHands, and Gemini.
 
 ## When to Use
-
 - When tool outputs, log dumps, stack traces, or command responses exceed context limits.
 - Wrapping agent CLIs (`claude`, `cursor`, `opencode`, `aider`, `goose`) for transparent token savings.
 - Running as a local proxy (`headroom proxy --port 8787`) for unified multi-agent context compression.
@@ -97,3 +96,8 @@ headroom learn --target AGENTS.md --auto-prune
 ---
 
 For complete CLI flags, CCR cache retrieval patterns, and benchmark results, see [cli-reference.md](references/cli-reference.md).
+
+## Limitations
+- Use this skill only when the task clearly matches the scope described above.
+- Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
+- Stop and ask for clarification if required inputs, permissions, safety boundaries, or success criteria are missing.

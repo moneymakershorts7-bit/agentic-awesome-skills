@@ -18,7 +18,6 @@ disable-model-invocation: true
 # Reviewing Animations
 
 ## When to Use
-
 - Use when the user asks for an animation, motion, or interaction review.
 - Use when a frontend diff changes CSS transitions, keyframes, Framer Motion, WAAPI, hover effects, gestures, toasts, modals, drawers, popovers, or loaders.
 - Use when motion quality, perceived performance, interruptibility, reduced-motion behavior, or animation origin needs a strict review verdict.

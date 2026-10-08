@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # Research Prompt
 
 ## When to Use
-
 - Use when the user wants a deep-research brief or researcher prompt.
 - Use when a vague research question needs to become one precise self-contained paragraph.
 

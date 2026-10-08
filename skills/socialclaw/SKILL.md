@@ -25,7 +25,6 @@ plugin:
 SocialClaw is an agent-first social media publishing skill that lets you schedule and publish posts across 13 platforms using a single workspace API key. No per-platform OAuth setup required — one key covers everything.
 
 ## When to Use
-
 - Use when the user wants to plan, schedule, or publish a social media campaign across multiple platforms.
 - Use when the user has a SocialClaw workspace API key and wants one workflow for X, LinkedIn, Instagram, Facebook, TikTok, Discord, Telegram, YouTube, Reddit, WordPress, or Pinterest.
 - Use when the user asks for social publishing automation that can validate schedules, attach media, and retrieve post performance metrics.

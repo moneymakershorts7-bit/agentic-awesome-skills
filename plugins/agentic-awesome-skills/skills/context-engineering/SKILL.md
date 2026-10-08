@@ -17,7 +17,6 @@ license_source: https://github.com/addyosmani/agent-skills/blob/main/LICENSE
 Feed agents the right information at the right time. Context is the single biggest lever for agent output quality — too little and the agent hallucinates, too much and it loses focus. Context engineering is the practice of deliberately curating what the agent sees, when it sees it, and how it's structured.
 
 ## When to Use
-
 - Starting a new coding session
 - Agent output quality is declining (wrong patterns, hallucinated APIs, ignoring conventions)
 - Switching between different parts of a codebase

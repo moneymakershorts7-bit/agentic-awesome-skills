@@ -241,7 +241,6 @@ Load these resources as needed during development:
   - Running an evaluation with the provided scripts
 
 ## When to Use
-
 Use for a new MCP tool contract, a transport/client compatibility defect, or a review
 of a server's bounded input/output and permission behavior. For an existing server,
 inspect its implementation, lockfile and actual protocol negotiation before changes.

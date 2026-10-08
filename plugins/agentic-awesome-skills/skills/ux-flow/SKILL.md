@@ -12,7 +12,6 @@ license_source: https://github.com/bitjaru/styleseed/blob/main/LICENSE
 
 # UX Flow Designer
 ## When to Use
-
 Use this skill when you need design user flows and navigation structure following proven UX patterns.
 
 

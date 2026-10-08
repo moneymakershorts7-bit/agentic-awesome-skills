@@ -30,7 +30,6 @@ When reviewing, slow the interface down: replay motion at 10% speed in the brows
 ---
 
 ## When to Use
-
 - Use when building or refining UI components, design systems, buttons, modal dialogs, and navigation bars.
 - Use when the user requests interface polish, design detail fixes, tactile press feedback, or asks why a layout "feels off".
 - Use when reviewing frontend code for motion restraint, optical alignment, concentric border radii, tabular numerals, or font smoothing.

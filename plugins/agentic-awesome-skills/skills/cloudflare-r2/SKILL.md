@@ -22,7 +22,6 @@ metadata:
 S3-compatible object storage with zero egress fees, built on Cloudflare's global network.
 
 ## When to Use
-
 - Storing user uploads, media files, backups, or static assets.
 - Replacing AWS S3 to eliminate egress costs for read-heavy workloads.
 - Serving files at the edge via Workers or public bucket access.

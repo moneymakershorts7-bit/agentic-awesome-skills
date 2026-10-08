@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # Threat Intelligence & Public-Source OSINT
 ## When to Use
-
 - Enriching indicators or profiling a threat actor from public data.
 - Investigating impersonation or scam infrastructure.
 

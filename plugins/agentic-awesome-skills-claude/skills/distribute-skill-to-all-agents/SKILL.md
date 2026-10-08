@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # Distribute a Skill Across All Agents
 
 ## When to Use
-
 - Use when a skill should be made available across multiple local agent skill folders.
 - Use when the user asks to sync or distribute skill updates to other agents.
 

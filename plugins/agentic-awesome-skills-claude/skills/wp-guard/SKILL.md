@@ -35,7 +35,6 @@ You are reviewing generated or changed WordPress code before it ships. Apply the
 These rules exist because AI agents produce WordPress code with systematic failures: raw `echo` of request data, AJAX handlers with neither nonce nor capability check, SQL built by string interpolation, English hardcoded into user-facing strings, `posts_per_page => -1` on sites with a million posts, and hand-rolled replacements for APIs core already ships. Each one looks fine in a demo and fails in production.
 
 ## When to Use
-
 Use this skill when reviewing generated or changed WordPress code — plugins, themes, and blocks — before it ships. Activate it reactively after an agent writes, edits, or reviews code touching WordPress APIs: hooks, custom post types, REST endpoints, database queries, and block editor integrations.
 
 ## How to use this skill

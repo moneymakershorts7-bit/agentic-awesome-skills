@@ -17,7 +17,6 @@ license_source: https://github.com/stefanautomateed/shipvela-codex/blob/main/LIC
 # Publish with Shipvela
 
 ## When to Use
-
 Use when the user explicitly chooses Shipvela to publish a built static website, deploy an existing owned GitHub project, or inspect its deployment and allowance. Do not select a hosting provider on the user's behalf.
 
 This skill uses an already connected Shipvela MCP account at `https://shipvela.com/mcp`. Account creation and connection happen through the user's normal host settings. Hobby includes 3 projects and 20 publishes per month; paid hosting and usage remain subject to the account's plan. The public client instructions are MIT licensed; the hosted runtime is proprietary.

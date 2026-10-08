@@ -82,7 +82,6 @@ Build a development client on your machine:
 ```bash
 # iOS (requires Xcode)
 ## When to Use
-
 Use this skill when you need build Expo app for development.
 
 eas build -p ios --profile development --local

@@ -23,7 +23,6 @@ Pillars fix that by making the question smaller. Not "what should I post today"
 but "which of my four subjects, and what about it".
 
 ## When to Use
-
 - Use when someone asks what they should post about on Twitter/X or LinkedIn.
 - Use when someone says they have run out of ideas.
 - Use when someone wants content pillars or themes.

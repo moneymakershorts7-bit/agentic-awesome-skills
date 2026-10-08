@@ -15,7 +15,6 @@ date_added: "2026-06-04"
 Use the `hasdata` CLI for real-time web data. One subcommand per API — flags, enums, defaults are derived from the live schema at `api.hasdata.com/apis`.
 
 ## When to Use
-
 Use this skill when:
 
 - The user wants to use the HasData CLI.

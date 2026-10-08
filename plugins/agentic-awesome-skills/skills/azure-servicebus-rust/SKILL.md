@@ -12,7 +12,6 @@ license_source: https://github.com/microsoft/skills/blob/main/LICENSE
 
 # Azure Service Bus library for Rust
 ## When to Use
-
 Use this skill when you need azure Service Bus library for Rust. Send and receive messages using queues, topics, and subscriptions. Triggers: "service bus rust", "ServiceBusClient rust", "send message servicebus rust", "receive message servicebus rust", "queue rust messaging", "topic subscription rust".
 
 

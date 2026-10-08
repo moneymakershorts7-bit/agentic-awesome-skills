@@ -19,7 +19,6 @@ You are reviewing generated or changed WooCommerce code before it ships. Apply t
 These rules exist because AI agents produce WooCommerce code with systematic failures: order meta read through `get_post_meta()` (broken on HPOS stores), products updated by direct meta writes that skip lookup tables and hooks, checkout validated only in JavaScript, prices computed in floats, and `woocommerce_*` hooks registered before confirming WooCommerce is active.
 
 ## When to Use
-
 Use this skill when reviewing generated or changed WooCommerce code — extensions, payment and shipping integrations, checkout customizations, and order/product logic — before it ships. Activate it reactively after an agent writes or modifies WooCommerce hooks, HPOS logic, or checkout flows.
 
 ## How to use this skill

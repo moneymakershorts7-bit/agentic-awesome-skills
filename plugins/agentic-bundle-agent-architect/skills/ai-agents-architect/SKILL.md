@@ -323,7 +323,6 @@ Robust output handling:
 Works well with: `rag-engineer`, `prompt-engineer`, `backend`, `mcp-builder`
 
 ## When to Use
-
 Use when selecting an agent execution loop, tool boundary, memory lifecycle or recovery strategy for a concrete task. Start with one agent; delegate only when the user’s workflow permits it and the subtasks are independently useful.
 
 ## Inputs and worked example

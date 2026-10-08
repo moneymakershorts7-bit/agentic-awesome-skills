@@ -17,8 +17,7 @@ handles the entire flow: gathering requirements, generating a rich persona from
 even a one-line description, scaffolding the correct folder structure, and
 optionally creating a companion skill that auto-routes tasks to the new agent.
 
-## When to use
-
+## When to Use
 Use this skill whenever you need a dedicated, isolated "brain" to handle a specific repetitive task, or when you find yourself repeatedly pasting the same massive system prompt or constraints into the main chat. Creating a dedicated subagent keeps the main conversation lightweight and focused.
 
 ## Why this exists

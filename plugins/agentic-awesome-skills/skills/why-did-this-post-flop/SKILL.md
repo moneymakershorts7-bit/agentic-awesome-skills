@@ -24,7 +24,6 @@ There are three different failures here and they need different fixes. Separate
 them before saying anything.
 
 ## When to Use
-
 - Use when someone asks why a Twitter/X or LinkedIn post did badly.
 - Use when someone asks why nobody engaged with a post.
 - Use when a post they were proud of went nowhere.

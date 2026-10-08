@@ -373,7 +373,6 @@ def detect_overprivileged_roles():
 - [Best Practices](references/details.md)
 
 ## When to Use
-
 - Conducting quarterly or annual access reviews for compliance (SOC 2, HIPAA, PCI DSS, ISO 27001)
 - Identifying and removing stale accounts and unused credentials
 - Certifying that current access levels match job responsibilities

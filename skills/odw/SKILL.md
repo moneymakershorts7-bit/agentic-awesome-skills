@@ -12,7 +12,6 @@ license_source: https://github.com/Suraj1235/open-dynamic-workflows/blob/main/LI
 
 # Open Dynamic Workflows (Antigravity)
 ## When to Use
-
 Use this skill when you need dynamic multi-agent workflows — plan first, then orchestrate parallel agents with adversarial verification via the local odw daemon. Use when the user asks for a "workflow", says "ultracode", or hands you a task spanning many files/items that benefits from parallel agents.
 
 

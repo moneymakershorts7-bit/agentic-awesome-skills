@@ -25,7 +25,6 @@ execute the upstream browser automation, credential onboarding, report
 renderer, or compiled JavaScript runtime.
 
 ## When to Use
-
 Use this skill when the user wants to:
 
 - check whether an AI answer is factually supported;

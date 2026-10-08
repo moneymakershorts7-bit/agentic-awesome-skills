@@ -14,7 +14,6 @@ license_source: https://github.com/czlonkowski/n8n-skills/blob/main/LICENSE
 # n8n Error Handling
 
 ## When to Use
-
 Use this skill for unattended workflows, webhook/API response contracts, retry design, error outputs, Error Trigger workflows, alerting, or any path where failure must be visible and recoverable.
 
 Make retries bounded and idempotent, especially for sends, payments, and writes. Redact credentials, personal data, request bodies, and stack details from caller-facing responses and alerts; expose only the minimum diagnostic context required.

@@ -22,7 +22,6 @@ metadata:
 # Aider Delegate
 
 ## When to Use
-
 - You want to delegate a bounded coding task to a separate `aider` implementer (`Aider`) and then review its diff yourself.
 - The user explicitly asked for delegation to this implementer.
 

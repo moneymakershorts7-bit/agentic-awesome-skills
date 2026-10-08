@@ -12,7 +12,6 @@ license_source: https://github.com/expo/skills/blob/main/LICENSE
 
 # Tailwind CSS Setup for Expo with react-native-css
 ## When to Use
-
 Use this skill when you need set up Tailwind CSS v4 in Expo with react-native-css and NativeWind v5 for universal styling.
 
 

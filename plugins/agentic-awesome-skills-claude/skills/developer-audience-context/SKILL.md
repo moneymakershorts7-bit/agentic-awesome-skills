@@ -12,7 +12,6 @@ license_source: https://github.com/jonathimer/devmarketing-skills/blob/main/LICE
 
 # Developer Audience Context
 ## When to Use
-
 Use this skill when you need when the user wants to establish or update their developer audience context. Also use when starting any other developer marketing skill to ensure foundational context is loaded. Trigger phrases include "developer persona," "target developers," "who are our developers," "developer...
 
 

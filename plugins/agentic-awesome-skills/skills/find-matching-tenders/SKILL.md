@@ -18,8 +18,7 @@ license_source: "https://github.com/Sketchjar/stipple-agent-skills/blob/main/LIC
 
 Search live AU/NZ government tenders, rank them against what a company actually does (read from its website), and explain why each opportunity is relevant — including the capability gaps to prepare evidence for. Tender search is free forever on the Stipple API; no API key or signup needed.
 
-## When to use
-
+## When to Use
 - Business development: "find tenders we could bid on"
 - Market research: "what government work is out there for cybersecurity firms in NSW?"
 - Bid pipeline maintenance: "check for new construction tenders this week"

@@ -23,7 +23,6 @@ tools:
 # Diagnosing Bugs
 
 ## When to Use
-
 Use when this workflow matches the user request: Use this skill for its documented workflow.
 
 

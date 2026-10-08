@@ -12,7 +12,6 @@ license_source: https://github.com/zxkane/aws-skills/blob/main/LICENSE
 
 # AWS Bedrock AgentCore
 ## When to Use
-
 Use this skill when you need aWS Bedrock AgentCore comprehensive expert for deploying and managing AI agents at scale. Use when working with any AgentCore service including Gateway, Runtime, Memory, Identity, Code Interpreter, Browser, Observability, Agent Registry, or Evaluations. Covers agent deployment, MCP...
 
 

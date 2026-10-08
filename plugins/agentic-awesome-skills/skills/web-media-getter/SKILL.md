@@ -24,7 +24,6 @@ tools:
   - codex-cli
 ---
 ## When to Use
-
 Use when a task needs a REAL or ARCHIVAL photo / clip (hero, texture, reference, historical footage) or a reaction / animated GIF, rather than a generated one — fan out across free image/video/GIF sources in one query and download license-tagged results.
 
 _Source: [connerkward/web-media-getter-skill](https://github.com/connerkward/web-media-getter-skill) (MIT)._

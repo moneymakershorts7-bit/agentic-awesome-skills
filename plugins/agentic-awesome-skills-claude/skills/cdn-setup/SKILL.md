@@ -22,7 +22,6 @@ metadata:
 Configure content delivery networks for fast, reliable global asset delivery with proper caching, invalidation, and security.
 
 ## When to Use
-
 - Serving static assets (JS, CSS, images, fonts) globally with low latency.
 - Offloading traffic from origin servers to reduce compute costs.
 - Adding TLS termination and DDoS protection at the edge.

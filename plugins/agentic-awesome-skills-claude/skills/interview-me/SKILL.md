@@ -24,7 +24,6 @@ The cheapest moment to find this gap is before any plan, spec, or code exists. O
 This skill closes the gap before it costs anything. The other Define-phase skills assume you already know roughly what you want: `idea-refine` generates variations from an idea, `spec-driven-development` writes the requirements down, `doubt-driven-development` stress-tests a plan after you've drafted one. Interview-me is the part before all of those, where you ask one question at a time, with your best guess attached, until you can predict what the user is going to say before they say it.
 
 ## When to Use
-
 Apply this skill when:
 
 - The ask is missing at least one of: **who** the user is, **why** they want it, what **success** looks like, what the binding **constraint** is

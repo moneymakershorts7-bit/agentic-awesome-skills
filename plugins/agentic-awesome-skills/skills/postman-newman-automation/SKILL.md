@@ -12,7 +12,6 @@ license_source: https://github.com/LambdaTest/agent-skills/blob/main/LICENSE
 
 # Postman Newman Automation
 ## When to Use
-
 Use this skill when you need generate Newman CLI commands, configuration files, Jenkins pipeline scripts, and shell automation for running Postman collections in CI/CD or local environments. Use this skill whenever the user wants to run Postman collections from the command line, automate API tests, integrate...
 
 

@@ -22,7 +22,6 @@ metadata:
 Implement HIPAA Security Rule, Privacy Rule, and Breach Notification Rule requirements for systems that create, receive, maintain, or transmit electronic Protected Health Information (ePHI).
 
 ## When to Use
-
 - Building or operating systems that handle electronic Protected Health Information
 - Configuring cloud infrastructure for HIPAA-eligible workloads
 - Establishing Business Associate Agreements with vendors

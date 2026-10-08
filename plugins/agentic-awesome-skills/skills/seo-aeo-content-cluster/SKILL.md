@@ -205,7 +205,6 @@ When assigning content types, use only from this list:
 - Feeds output to: `seo-aeo-blog-writer`, `seo-aeo-internal-linking`
 
 ## When to Use
-
 Use when planning a pillar page, foundational pages, and supporting articles around a product, service, or topic.
 
 ## Limitations

@@ -320,7 +320,6 @@ fresh audit that weren't visible before. Frame declines as "newly discovered opp
 3. Suggest next action: "Share with client or run `/geo report-pdf` for a visual version"
 
 ## When to Use
-
 - You need a Generative Engine Optimization task for a website: audit, citability, crawlers, schema, llms.txt, content, platform tuning, or client reporting.
 - Run read-only analysis first; propose site changes before making any.
 

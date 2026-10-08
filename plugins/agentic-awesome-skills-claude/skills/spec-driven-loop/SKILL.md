@@ -25,7 +25,6 @@ tools:
 Turn an uncertain software request into an approved specification, a controlled implementation, and evidence-backed acceptance. Keep project documents in the repository's established location; otherwise use `docs/spec-driven/<feature-slug>/`.
 
 ## When to Use
-
 Use this skill for new products, medium-to-large features, cross-module changes, or requests that need PRD/technical design, active clarification, multi-agent execution, or a main-agent judge. Do not use it for a small single-file change, a tiny bug fix, code explanation, review-only or diagnostic work, pure research, or a simple task whose specification is already complete.
 
 ## Quick Example

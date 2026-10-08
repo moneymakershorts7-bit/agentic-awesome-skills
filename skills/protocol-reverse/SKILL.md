@@ -11,7 +11,6 @@ license_source: "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
 ---
 # Protocol Reverse Engineering
 ## When to Use
-
 - Documenting an undocumented wire protocol from captures.
 - Decoding structured traffic during an authorized analysis.
 

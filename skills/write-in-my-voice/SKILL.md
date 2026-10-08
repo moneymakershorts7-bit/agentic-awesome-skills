@@ -25,7 +25,6 @@ Never skip to drafting. A post written before you know how this person writes
 is a guess, and it will read like one.
 
 ## When to Use
-
 - Use when someone asks for a Twitter/X or LinkedIn post, a thread, a hook or a rewrite that should sound like them.
 - Use when someone asks whether a piece of text sounds like them.
 - Do not use it for writing that is not going on social media.

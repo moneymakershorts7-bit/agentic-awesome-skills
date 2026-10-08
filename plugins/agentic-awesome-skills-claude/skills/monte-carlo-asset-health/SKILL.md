@@ -10,7 +10,6 @@ license: Apache-2.0
 license_source: https://github.com/monte-carlo-data/mc-agent-toolkit/blob/main/LICENSE
 ---
 ## When to Use
-
 - Use when the user goal matches this upstream workflow.
 
 # Monte Carlo Asset Health Skill

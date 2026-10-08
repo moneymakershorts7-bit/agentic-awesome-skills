@@ -12,7 +12,6 @@ license_source: https://github.com/maxbaluev/accreted-intelligence/blob/main/LIC
 
 # frames
 ## When to Use
-
 Use this skill when you need drain acc's deliberation queue — open/waiting brain_frames checkpointed by headless runs — via acc_act(runtime="continue").
 
 

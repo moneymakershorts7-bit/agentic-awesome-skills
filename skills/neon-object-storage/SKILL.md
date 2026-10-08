@@ -17,7 +17,6 @@ This is a preview feature and only available in `us-east-2`. Neon Object Storage
 Use this skill to help the user store and serve files that branch alongside their database. Deliver a working bucket and upload/download flow, a branch-aware S3 client wired to the injected env vars, or a precise answer from the official Neon docs.
 
 ## When to Use
-
 Reach for Neon Object Storage when the user needs to store files (images, uploads, generated assets, documents, backups) and any of the following are true:
 
 - **They already use Neon Postgres and don't want a second provider.** One backend, one bill, one CLI, one set of branches — instead of standing up and wiring a separate AWS S3 / R2 / Supabase Storage account. The same Neon credential that backs the database backs storage.

@@ -22,7 +22,6 @@ tools:
   - codex-cli
 ---
 ## When to Use
-
 Use whenever "looks/feels right" is the success criterion and there's no cheap numeric metric — animation easing/timing, zoom/camera feel, color grade, layout/spacing, design params, render/encoder settings, prompt params. Use the automated counterpart to lookdev when there's no human to sit the loop.
 
 _Source: [connerkward/lookdev-auto-skill](https://github.com/connerkward/lookdev-auto-skill) (MIT)._

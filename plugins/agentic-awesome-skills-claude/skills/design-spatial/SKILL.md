@@ -12,7 +12,6 @@ license_source: https://github.com/connerkward/ckw-design-skill/blob/main/LICENS
 
 # Design — spatial composition
 ## When to Use
-
 Use this skill when you need design — spatial composition.
 
 

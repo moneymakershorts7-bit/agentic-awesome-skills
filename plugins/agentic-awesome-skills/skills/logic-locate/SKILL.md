@@ -12,7 +12,6 @@ license_source: https://github.com/hyhmrright/logic-lens/blob/main/LICENSE
 
 # Logic-Lens — Fault Locate
 ## When to Use
-
 Use this skill when you need locate the root cause of a CONFIRMED failure via backward-then-forward semi-formal tracing. Trigger when the user provides a stack trace, failing assertion, error message, or specific wrong-value observation — "find the bug", "this test is failing", "track down this crash", "why is...
 
 

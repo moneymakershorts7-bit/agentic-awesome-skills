@@ -20,7 +20,6 @@ metadata:
 # debate-review
 
 ## When to Use
-
 - You have a GitHub PR or GitLab MR that needs a thorough pre-merge review.
 - You want a two-model debate (main reviewer vs. debate reviewer) to catch blind spots before posting inline comments.
 

@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # Web Search
 
 ## When to Use
-
 - Use when a Pi Agent task needs current web information, page fetches, PDFs, YouTube, or GitHub content.
 - Use when Pi should use its own web-access package instead of another agent browser tool.
 

@@ -20,7 +20,6 @@ Jules runs tasks inside secure, isolated Ubuntu cloud VMs with preinstalled tool
 ---
 
 ## When to Use
-
 - **Asynchronous Task Delegation**: Hand off long-running maintenance, unit test expansion, or dependency upgrades to run autonomously in Google's cloud.
 - **Offline / Session Handoff**: Dispatch tasks to Jules before ending an interactive coding session or when operating with constrained local resources.
 - **Automated Issue Triage**: Chain `gh issue` with Jules to dispatch and solve GitHub issues into draft PRs.
@@ -249,7 +248,12 @@ skills-maintainer review-discovery --reject <id> --reason "..." # Reject candida
    - Generates daily scouting report at `docs/discovery/YYYY-MM-DD.md` and appends to `docs/discovery/LEDGER.md`.
    - Opens an atomic PR on branch `jules/daily-discovery-YYYY-MM-DD`.
 
-2. **Monthly Repository Maintenance Decision Gate**:
+2. **Daily GitHub Wiki Synchronizer (Jules Documentation Sentinel)**:
+   - At `06:30 UTC` daily (or triggered on catalog updates), Jules and GitHub Actions execute `tools/scripts/generate_wiki.py --sync` via `.github/workflows/daily-wiki-sync.yml`.
+   - Generates fully indexed `Home.md`, `_Sidebar.md`, `Skills-Catalog.md` (2,764+ skills), `Editorial-Bundles.md` (59 bundles), `Daily-Discovery.md`, and `Free-For-Dev-Directory.md` (1,300+ free tools).
+   - Commits and pushes updates atomically to `https://github.com/<owner>/<repo>.wiki.git`.
+
+3. **Monthly Repository Maintenance Decision Gate**:
    - On the 1st of each month (during `skills-maintainer all`):
    - The maintainer/agent runs `skills-maintainer review-discovery --dossier` to inspect all candidates gathered over the month.
    - Evaluates each candidate against quality, utility, and safety criteria (`skills-maintainer review-discovery --audit`).

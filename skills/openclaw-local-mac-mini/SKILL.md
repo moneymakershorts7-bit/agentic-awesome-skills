@@ -412,7 +412,6 @@ tail -f /var/log/openclaw/stderr.log
 - [Related Skills](references/details.md)
 
 ## When to Use
-
 - Running OpenClaw as a private, always-on local AI agent
 - Setting up a dedicated Mac mini as a home-lab AI server
 - Deploying OpenClaw with Docker Compose for reproducible environments

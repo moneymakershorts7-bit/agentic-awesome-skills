@@ -24,7 +24,6 @@ plugin:
 This skill provides instructions for using the `android` CLI tool. The tool includes various commands for creating projects, running applications, interacting with devices, and managing the CLI environment.
 
 ## When to Use
-
 - Use when you need to create, configure, or analyze Android projects from the command line.
 - Use when interacting with, deploying to, or taking screenshots of running Android devices.
 - Use when managing Android SDK components, versions, or virtual devices (emulators).

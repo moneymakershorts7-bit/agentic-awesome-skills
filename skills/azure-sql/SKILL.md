@@ -399,7 +399,6 @@ az cosmosdb sql container throughput update \
 - [Related Skills](references/details.md)
 
 ## When to Use
-
 - You need a fully managed relational database on Azure.
 - Your application requires geo-replication for disaster recovery.
 - You need elastic scaling across multiple databases with Elastic Pools.

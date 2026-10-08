@@ -20,7 +20,6 @@ The goal is not "extract the most text". The goal is:
 - avoid noisy defaults when a better route exists
 
 ## When to Use
-
 - The user wants a PDF converted into another format.
 - The requested output is `.md`, `.html`, `.txt`, `.json`, `.docx`, or structured notes.
 - The PDF may be scanned, OCR-heavy, table-heavy, slide-based, medical, academic, or multi-column.

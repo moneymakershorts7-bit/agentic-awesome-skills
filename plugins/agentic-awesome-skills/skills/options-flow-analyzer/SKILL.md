@@ -15,7 +15,6 @@ tools: [websearch]
 Analyze options chain data with real vs lottery call separation — the key insight that prevents P/C ratio misinterpretation. Uses Polygon.io API.
 
 ## When to Use
-
 - Use when raw put/call ratios appear bullish or bearish but may be distorted by cheap deep OTM contracts.
 - Use when comparing options flow across watchlists, holdings, sectors, or event-driven names.
 - Use when you need to separate institutional hedging from speculative lottery-ticket activity.

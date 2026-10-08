@@ -23,7 +23,6 @@ Integrate the correct [Markstream](https://github.com/Simon-He95/markstream-vue)
 Read [references/scenarios.md](references/scenarios.md) before selecting packages or optional peers.
 
 ## When to Use
-
 Use this skill when the user asks to:
 
 - add streaming Markdown rendering to an AI chat or document interface;

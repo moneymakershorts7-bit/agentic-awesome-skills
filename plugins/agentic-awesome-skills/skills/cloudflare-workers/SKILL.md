@@ -22,7 +22,6 @@ metadata:
 Deploy JavaScript and TypeScript functions to Cloudflare's global edge network with sub-millisecond cold starts.
 
 ## When to Use
-
 - Building lightweight APIs and microservices at the edge.
 - Adding middleware (auth, rate limiting, header injection) in front of origin servers.
 - Running cron jobs on a schedule without maintaining infrastructure.

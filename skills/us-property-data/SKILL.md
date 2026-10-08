@@ -19,7 +19,6 @@ license_source: "https://github.com/ZeroPointRepo/zillow-skills/blob/main/LICENS
 Gives Copilot a concrete, verifiable way to answer property-data questions in code instead of guessing at them.
 
 ## When to Use
-
 **Activate this skill when:**
 - A task needs a real valuation, rent estimate or comparable for a specific U.S. address
 - Code has to search listings by location, bounding box, price, beds or home type

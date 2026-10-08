@@ -22,7 +22,6 @@ metadata:
 Deploy frontend projects with preview builds, edge functions, and global CDN delivery on Cloudflare's network.
 
 ## When to Use
-
 - Deploying static sites (React, Vue, Astro, Hugo, Next.js static export).
 - Full-stack applications using Pages Functions for server-side logic.
 - Projects that need automatic preview deployments per pull request.

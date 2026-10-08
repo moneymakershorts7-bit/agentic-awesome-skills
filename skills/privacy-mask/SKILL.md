@@ -24,8 +24,7 @@ If it is not available, inform the user that they need to install it first:
 3. Verify installation: `privacy-mask --version`
 4. (Optional) Install NER support: `pip install privacy-mask[ner]`
 
-## When to use
-
+## When to Use
 - User sends a screenshot or image file (`.png`, `.jpg`, `.jpeg`, `.bmp`, `.tiff`) that may contain private data
 - User mentions privacy, masking, redacting, or anonymizing
 - You need to analyze an image but want to redact sensitive info first

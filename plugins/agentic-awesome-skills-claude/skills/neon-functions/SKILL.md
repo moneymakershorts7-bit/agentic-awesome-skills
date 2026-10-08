@@ -17,7 +17,6 @@ This is a preview feature and only available in `us-east-2`. Neon Functions are 
 Use this skill to help the user define, run locally, deploy, and manage functions next to their database. Deliver a deployed function with its invocation URL, a working local `neon dev` loop, or a precise answer from the official Neon docs.
 
 ## When to Use
-
 Reach for Neon Functions when the workload is a request/response handler that benefits from staying alive and staying close to the data:
 
 - **Long-running request/response flows that outlast lambda-style limits.** Agents that make several LLM calls and tool invocations per request, or image/video generation, routinely blow past the ~10–60s execution caps and short streaming windows of traditional serverless functions. Neon Functions are long-running: the handler just needs to _start_ responding within 15 minutes, and an open stream stays alive as long as bytes keep flowing. That's enough headroom for real agent workloads.

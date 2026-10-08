@@ -12,7 +12,6 @@ license_source: https://github.com/jonathimer/devmarketing-skills/blob/main/LICE
 
 # Developer Signup Flow
 ## When to Use
-
 Use this skill when you need design frictionless signup experiences for developers including GitHub OAuth, API key generation, and onboarding personalization. Trigger phrases: developer signup, dev registration, OAuth flow, API key onboarding, reduce signup friction, developer authentication, signup conversion,...
 
 

@@ -20,7 +20,6 @@ Use one skill with two explicit modes, not a generic material library. Preserve 
 Read [style-contract.md](references/style-contract.md) before choosing a mode or changing palette semantics. Read [verification.md](references/verification.md) before claiming visual or screenshot validation.
 
 ## When to Use
-
 - Use when a user names 流光溢彩白 or 五彩斑斓黑, asks for one unified skill covering both, or needs a reusable parameterized starter.
 - Use when the final report must include total color intensity, each color's intensity, OKLCH values, and screenshot measurements.
 - Do not use for a generic theme-token library or an unparameterized visual mockup.

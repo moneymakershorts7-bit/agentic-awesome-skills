@@ -17,7 +17,6 @@ license_source: "https://github.com/davidondrej/skills/blob/main/LICENSE"
 # cmux Control
 
 ## When to Use
-
 - Use when you need to inspect, create, close, or rearrange cmux panes, surfaces, or workspaces.
 - Use when you need to send input to or monitor agents running inside cmux.
 

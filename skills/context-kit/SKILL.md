@@ -15,7 +15,6 @@ tools: [claude, codex, cursor, gemini]
 # Context Kit
 
 ## When to Use
-
 Use this skill when the user wants to:
 
 - Set up durable personal context files for Claude Code or another coding agent

@@ -14,7 +14,6 @@ tools: [claude, cursor, codex, antigravity]
 # Protocol: Premium Utilitarian Minimalism UI Architect
 
 ## When to Use
-
 - Use when the user wants a refined minimalist UI inspired by tools like Notion, Linear, or editorial workspace products.
 - Use when designing warm monochrome interfaces with crisp borders, generous whitespace, muted pastel accents, and quiet motion.
 - Use when the task should avoid gradients, heavy shadows, saturated colors, pill-heavy components, and generic SaaS visuals.

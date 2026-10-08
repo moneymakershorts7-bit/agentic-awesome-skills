@@ -19,7 +19,6 @@ metadata:
 # Codex Delegate
 
 ## When to Use
-
 - You want to delegate a bounded coding task to a separate `codex` implementer (`OpenAI Codex`) and then review its diff yourself.
 - The user explicitly asked for delegation to this implementer.
 

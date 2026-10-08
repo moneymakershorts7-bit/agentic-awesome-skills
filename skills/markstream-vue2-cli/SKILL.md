@@ -21,7 +21,6 @@ license_source: https://github.com/Simon-He95/markstream-vue/blob/main/license
 Handle Vue CLI and Webpack 4 constraints that differ materially from modern Vue 2/Vite setup.
 
 ## When to Use
-
 Use when Vue 2 runs on Vue CLI or Webpack 4 and package export maps or Vite worker imports are unavailable.
 
 ## Workflow

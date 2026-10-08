@@ -22,7 +22,6 @@ metadata:
 Use PlanetScale for serverless MySQL-compatible databases with non-blocking schema change workflows built on Vitess.
 
 ## When to Use
-
 - You need a managed MySQL-compatible database with zero-downtime migrations.
 - Your team wants Git-like branching for schema development.
 - You are building a serverless or edge application that benefits from connection pooling.

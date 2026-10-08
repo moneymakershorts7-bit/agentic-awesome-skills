@@ -17,7 +17,6 @@ license_source: "https://github.com/sanjay3290/ai-skills/blob/main/LICENSE"
 # Apple `container`
 
 ## When to Use
-
 - Use when building, running, or managing OCI/Linux containers on Apple-silicon macOS with Apple's open-source `container` CLI
 - Use when you want lightweight per-container VMs instead of a Docker daemon
 - Use when translating Docker-style workflows (build, run, exec, logs, networking) to Apple's container tooling

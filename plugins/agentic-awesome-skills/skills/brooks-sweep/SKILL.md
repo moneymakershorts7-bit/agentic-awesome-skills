@@ -12,7 +12,6 @@ license_source: https://github.com/hyhmrright/brooks-lint/blob/main/LICENSE
 
 # Brooks-Lint — Full Sweep & Auto-Fix
 ## When to Use
-
 Use this skill when you need full-sweep mode: runs a unified analysis across all quality dimensions — code decay, architecture, tech debt, and test quality — then applies fixes directly to the codebase. Safe changes are auto-applied; risky changes are confirmed before execution. Drawing on twelve classic...
 
 

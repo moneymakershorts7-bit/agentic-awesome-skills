@@ -12,7 +12,6 @@ license_source: https://github.com/stareezy-1/frontend-architecture-skill/blob/m
 
 # Frontend Architecture (portable, module-based)
 ## When to Use
-
 Use this skill when you need a portable, framework-agnostic architecture style for any React or React Native frontend. Organizes apps into feature modules with page/screen directories, a strict server-state vs UI-state split, barrel-only cross-module imports, co-located styles, and clear component-promotion rules....
 
 

@@ -12,7 +12,6 @@ license_source: https://github.com/zxkane/aws-skills/blob/main/LICENSE
 
 # SST v4 for AWS
 ## When to Use
-
 Use this skill when you need sST v4 (Ion) expert for managing AWS resources as code with the Pulumi-backed framework. Use when writing or editing sst.config.ts, building infra/ modules (sst.aws.Function/Bucket/Dynamo/Cron/Service/Router, sst.Secret, sst.Linkable, raw aws.* Pulumi resources), wiring resource links,...
 
 
