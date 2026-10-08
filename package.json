@@ -31,6 +31,8 @@
     "sync:contributors": "node tools/scripts/run-python.js tools/scripts/sync_contributors.py",
     "sync:top-contributors": "node tools/scripts/run-python.js tools/scripts/sync_top_contributors.py",
     "sync:web-assets": "npm run app:setup && cd apps/web-app && npm run generate:sitemap",
+    "wiki:generate": "node tools/scripts/run-python.js tools/scripts/generate_wiki.py",
+    "wiki:sync": "node tools/scripts/run-python.js tools/scripts/generate_wiki.py --sync",
     "chain": "npm run validate && npm run plugin-compat:sync && npm run index && npm run bundles:sync && npm run sync:metadata && npm run catalog && npm run build:aas-v1-catalog",
     "sync:all": "npm run chain",
     "sync:release-state": "npm run chain && npm run sync:web-assets && npm run audit:consistency && npm run check:warning-budget",
