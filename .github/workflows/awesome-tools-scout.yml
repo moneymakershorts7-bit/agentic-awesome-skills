@@ -1,0 +1,106 @@
+name: Daily Awesome Topics & Project Tools Scout
+
+on:
+  schedule:
+    # Run every day at 07:00 UTC
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  awesome-scout:
+    name: GitHub Awesome Topics & Project Tools Scout
+    runs-on: ubuntu-latest
+    steps:
+      - name: Harden Runner Security
+        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
+        with:
+          egress-policy: audit
+
+      - name: Checkout Repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python Runtime
+        uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
+        with:
+          python-version: '3.12'
+
+      - name: Setup Node Runtime
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install Project Dependencies
+        run: |
+          npm ci --ignore-scripts || npm install --no-audit
+
+      - name: Dispatch to Google Jules or Run Awesome Scout (0 Tokens)
+        id: scout
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          JULES_API_KEY: ${{ secrets.JULES_API_KEY }}
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          echo "today=$TODAY" >> "$GITHUB_OUTPUT"
+
+          if [ -n "$JULES_API_KEY" ]; then
+            echo "Dispatching Awesome Scout to Google Jules Cloud..."
+            curl -s -X POST https://jules.googleapis.com/v1alpha/sessions \
+              -H "x-goog-api-key: $JULES_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"prompt\": \"Act as the Daily Awesome Topics & Project Tools Sentinel for agentic-awesome-skills. Execute python3 tools/scripts/awesome_scout.py to search topic:awesome lists for active project stacks. Ensure all proposed tools strictly have permissive or verified FOSS licenses (MIT, Apache, BSD, GPL, Self-Hosted) with zero mandatory cost. Update docs/awesome-proposals/ and data/awesome-proposals/ snapshots. Run npm run validate. Propose atomic tool integrations on branch jules/awesome-tools-$TODAY via Pull Request titled 'feat(awesome): daily free awesome tools proposals [$TODAY]'. DO NOT attempt direct merge to main.\",
+                \"title\": \"Daily Awesome Tools Scout ($TODAY)\",
+                \"sourceContext\": {
+                  \"source\": \"sources/github/${{ github.repository }}\",
+                  \"githubRepoContext\": { \"startingBranch\": \"main\" }
+                },
+                \"automationMode\": \"AUTO_CREATE_PR\"
+              }" || echo "Jules API dispatch finished or deferred."
+          fi
+
+          echo "Running local awesome scout runner..."
+          python3 tools/scripts/awesome_scout.py --limit 15
+
+          echo "Validating repository integrity..."
+          npm run validate || true
+
+      - name: Create Pull Request with Awesome Tool Proposals
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TODAY="${{ steps.scout.outputs.today }}"
+          BRANCH_NAME="awesome-proposals/daily-$TODAY"
+
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No new awesome tools discovered today. Nothing to stage."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b "$BRANCH_NAME"
+          git add docs/awesome-proposals/ data/awesome-proposals/
+          git commit -m "feat(awesome): daily free awesome tools proposals [$TODAY]"
+          git push origin "$BRANCH_NAME" --force
+
+          REPORT_CONTENT="Automated daily discovery of 100% Free & Open-Source tools from GitHub Awesome Topics matched to active project stacks."
+          if [ -f "docs/awesome-proposals/$TODAY.md" ]; then
+            REPORT_CONTENT=$(cat "docs/awesome-proposals/$TODAY.md")
+          fi
+
+          gh pr create \
+            --title "feat(awesome): daily free awesome tools proposals [$TODAY]" \
+            --body "$REPORT_CONTENT" \
+            --head "$BRANCH_NAME" \
+            --base "main" \
+            --label "awesome-tools,automated-scout" || echo "PR already exists or was created."
