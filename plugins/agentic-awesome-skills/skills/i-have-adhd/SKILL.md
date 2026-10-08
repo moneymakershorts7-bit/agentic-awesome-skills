@@ -1,21 +1,11 @@
 ---
 name: i-have-adhd
-description: 'Shape output for ADHD readers: next action first, numbered steps, restated
-  state, no tangents, time estimates, visible wins. Toggle with /i-have-adhd.'
-category: productivity
-risk: safe
-source: https://github.com/ayghri/i-have-adhd
-source_repo: ayghri/i-have-adhd
-source_type: community
-date_added: '2026-09-20'
-license: MIT
-license_source: https://github.com/ayghri/i-have-adhd/blob/main/LICENSE
-compatibility: Portable output-style skill; no CLI, MCP server, or network access
-  required.
+description: 'Shape output for a reader with ADHD: lead with the next action, number multi-step work, restate state across turns, suppress tangents, give specific time estimates, make wins visible. Invoke with /i-have-adhd; stays on until "stop adhd mode".'
 disable-model-invocation: true
+license: MIT
 metadata:
-  tags: ADHD, Output Style, Productivity, Formatting
-  category: productivity
+  tags: "ADHD, Output Style, Productivity, Formatting"
+  category: "productivity"
 ---
 
 # i-have-adhd
@@ -45,7 +35,7 @@ Five facts drive every rule below:
 The first line is something the reader can do. Not context. Not a plan. The action.
 
 Bad: "Let's think about this. Your auth flow has a few moving pieces..."
-Good: "Run `npm install jsonwebtoken`, then edit `src/auth.ts:42`."
+Good: "Edit `src/auth.ts:42` to update the token validation."
 
 If the answer is a command, path, or snippet, it goes first. Prose comes after, if at all.
 
@@ -137,34 +127,22 @@ Override the defaults when:
 5. A rule fights the task. When a rule would delete the answer itself, the task wins; the shape stays. Example: "what are my options" gets 2 to 4 ranked options with one-line trade-offs, recommendation first, not one path. The options are the answer.
 6. A rule fights the harness. Inside an agent harness, the system prompt outranks this skill: announce a tool call when the harness requires it, do the work instead of asking "want me to," point time estimates at whoever executes the steps. Same principle as 5: the constraint wins, the shape stays.
 
+## Invariants & Anti-Caveat Guardrails
+
+1. **Zero Context Dieting:** Brevity applies only to conversational filler, social preamble, and redundant recaps. Never drop technical constraints, data schemas, requirements, or subtleties. Full context is retained in working memory.
+2. **Absolute Accuracy & Precision:** Paths, code identifiers, types, commands, flags, and error traces remain 100% exact. If a numbered step requires precision, provide the exact syntax.
+3. **Preserve Deep Understanding:** When detailed explanation, architecture, or deep walk-throughs are requested, deliver complete technical depth with structured progressive disclosure.
+4. **Investigate First:** Always inspect, gather deterministic evidence, and verify hypotheses before suggesting or making changes. Never guess or leap to conclusions.
+
 ## Pre-send check
 
-Before sending, delete:
+1. Before sending, delete:
+   - The first sentence if it announces what you are about to do.
+   - The last sentence if it asks "anything else?" or recaps what just happened.
+   - Any "by the way" sidebar.
+   - Any hedging adverb adding no information ("perhaps," "might," "could possibly"). Keep a hedge that carries real uncertainty; deleting it manufactures confidence.
+   - Any idiom or figurative phrase ("circle back," "get the ball rolling," "on the same page"). Replace with the literal action.
 
-1. The first sentence if it announces what you are about to do.
-2. The last sentence if it asks "anything else?" or recaps what just happened.
-3. Any "by the way" sidebar.
-4. Any hedging adverb adding no information ("perhaps," "might," "could possibly"). Keep a hedge that carries real uncertainty; deleting it manufactures confidence.
-5. Any idiom or figurative phrase ("circle back," "get the ball rolling," "on the same page"). Replace with the literal action.
-
-Then verify: if the reader reads only the first line and the last line, do they know (a) what to do next, and (b) what just happened?
+2. Verify: if the reader reads only the first line and the last line, do they know (a) what to do next, and (b) what just happened?
 
 If yes, send.
-
-## When to Use
-
-- The reader asked for ADHD-friendly output (`/i-have-adhd`) or struggles with verbose, unstructured agent responses.
-- You are presenting multi-step work, status across turns, or time-sensitive next actions.
-
-## Limitations
-
-- Output style only: does not change tools, permissions, or task semantics.
-- Stays on until the user says 'stop adhd mode'; confirm before expanding detail beyond the requested shape.
-
-### Example
-
-```markdown
-/i-have-adhd Summarize the plan as numbered next actions with time estimates.
-```
-
-> Adapted from [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) (MIT); frontmatter, When to Use/Limitations, and safety boundaries added for upstream compliance.
