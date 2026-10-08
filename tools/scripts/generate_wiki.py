@@ -685,6 +685,9 @@ def sync_to_wiki_git(wiki_dir: Path, target_repo: str, token: Optional[str] = No
     
     try:
         if not is_git:
+            if wiki_dir.exists():
+                import shutil
+                shutil.rmtree(wiki_dir)
             print("  📥 Cloning wiki repository...")
             clone_cmd = ["git", "clone", remote_url, str(wiki_dir)]
             subprocess.run(clone_cmd, check=True, capture_output=True, text=True)
