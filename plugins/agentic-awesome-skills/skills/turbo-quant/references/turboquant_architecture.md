@@ -2,13 +2,15 @@
 
 ## 1. Executive Summary
 
-TurboQuant (ICLR 2026 / Google Research / arXiv:2504.19874) solves the fundamental precision-vs-compression trade-off in dense vector embeddings and key-value cache tensors for Large Language Models and AI Agents.
+TurboQuant (ICLR 2026 / Google Research / arXiv:2504.19874, by Amir Zandieh, Inbar Daliri, Majid Hadian, and Vahab Mirrokni; with PolarQuant at AISTATS 2026) solves the fundamental precision-vs-compression trade-off in dense vector embeddings and key-value cache tensors for Large Language Models and AI Agents.
 
 By combining an orthogonal randomized rotation (**PolarQuant**) with a 1-bit **Quantized Johnson-Lindenstrauss (QJL)** residual sketch, TurboQuant provides:
 1. **Zero-training / data-oblivious quantization** (no expensive codebook clustering or calibration dataset required).
 2. **Strictly unbiased inner-product estimation** ($\mathbb{E}[\widehat{\langle y, x \rangle}] = \langle y, x \rangle$).
-3. **4x to 9x RAM compression** with $>98\%$ cosine similarity accuracy.
+3. **4x to 9x RAM compression** with $>98\%$ cosine similarity accuracy at ~3.5 bits/channel.
 4. **Sub-millisecond latency** on vector routing and memory retrieval.
+
+It is closely related to and builds on lines of research in randomized rotation quantization such as RaBitQ (SIGMOD 2024), DRIVE (NeurIPS 2021), and EDEN (ICML 2022), while specifically targeting LLM KV-cache and dense vector retrieval without codebook drift.
 
 ---
 
@@ -77,7 +79,7 @@ $$\mathbb{E}[\widehat{\langle y, x \rangle}] = \langle y, x \rangle$$
               ▼                                                   ▼
 ┌───────────────────────────┐                       ┌───────────────────────────┐
 │   TurboVec Skill Router   │                       │ Agent Long-Horizon Memory │
-│  (2,771 AAS Skills / 3-bit)│                       │  (KV-Cache & Trajectories)│
+│  (2,772 AAS Skills / 3-bit)│                       │  (KV-Cache & Trajectories)│
 ├───────────────────────────┤                       ├───────────────────────────┤
 │  Top-k tool/skill ranking │                       │  Episodic state recall    │
 │  Latency: < 0.5 ms        │                       │  Memory savings: 7.11x    │
