@@ -84,7 +84,7 @@ Welcome to the official **Agentic Awesome Skills — Swiss Army Knife Edition** 
 
 The all-in-one **Swiss Army Knife for AI Coding Agents**: 2,764+ verified agent skills, 59 curated domain bundles, 1,321 free developer tools, Model Context Protocol (MCP) integrations, AST malware protection, and autonomous Google Jules maintenance.
 
-*Maintained autonomously by `moneymakershorts7-bit`, continuously synced with upstream `sickn33/agentic-awesome-skills`.*
+*An autonomous, hardened distribution modified and maintained by **The Machine** (`moneymakershorts7-bit`), continuously synced with upstream `sickn33/agentic-awesome-skills`.*
 
 [![Skills Total](https://img.shields.io/badge/Verified_Skills-{self.total_skills}+-blue.svg)](Skills-Catalog)
 [![Curated Bundles](https://img.shields.io/badge/Curated_Bundles-{len(self.bundles_data)}+-green.svg)](Editorial-Bundles)
@@ -157,9 +157,7 @@ npx agentic-awesome-skills bundle install aas-security-operations
 3. **Strict Grounding & Veracity**: Zero hallucination, absolute factual verification, and honest error reporting.
 4. **Autonomous Sentinel**: Daily discovery scouts GitHub and Google Jules continuously heals, verifies, and updates documentation.
 
----
-
-> ℹ️ *Wiki synchronized automatically on {date_str} by Google Jules Maintainer Sentinel.*
+> ℹ️ *Wiki synchronized automatically on {date_str} by **The Machine** & Google Jules Maintainer Sentinel.*
 """
 
     def generate_sidebar(self) -> str:
@@ -197,7 +195,7 @@ npx agentic-awesome-skills bundle install aas-security-operations
         timestamp = get_current_timestamp()
         return f"""---
 <div align="center">
-  <sub>Maintained autonomously by <b>Google Jules</b> & <b>Agentic Awesome Skills</b> Maintainers. Last updated: <code>{timestamp}</code></sub>
+  <sub>Maintained and modified autonomously by <b>The Machine</b>, <b>Google Jules</b> & <b>Agentic Awesome Skills</b> Maintainers. Last updated: <code>{timestamp}</code></sub>
 </div>
 """
 

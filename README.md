@@ -4,7 +4,7 @@
 > 🇨🇭 **The all-in-one Swiss Army Knife for AI Coding Agents.**  
 > Find, validate, security-audit, and orchestrate **2,764+** reusable playbooks, MCP integrations, and autonomous sentinels across Claude Code, Google Jules, Gemini CLI, Antigravity, Cursor, and Windsurf.
 
-*An autonomous, hardened distribution maintained by `moneymakershorts7-bit`, continuously synced with upstream `sickn33/agentic-awesome-skills`.*
+*An autonomous, hardened distribution modified and maintained by **The Machine** (`moneymakershorts7-bit`), continuously synced with upstream `sickn33/agentic-awesome-skills`.*
 
 **Current release: V18.12.0 (Swiss Army Knife Edition).** AAS Core supports local catalog inspection, agent-owned selection, stack validation, plan preview, AST malware scanning, and autonomous daily Wiki synchronization. [Read the AAS Core preview guide](https://github.com/sickn33/agentic-awesome-skills/blob/v18.12.0/docs/users/aas-core.md) for setup and exact trust boundaries.
 
