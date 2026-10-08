@@ -45143,6 +45143,28 @@
     "source_type": "self"
   },
   {
+    "id": "neuro-symbolic-verifier",
+    "path": "skills/neuro-symbolic-verifier",
+    "category": "reasoning-and-analysis",
+    "name": "neuro-symbolic-verifier",
+    "description": "Neuro-Symbolic Verifier extracts formal Hoare Triple contracts and loop invariants, proving total correctness via SMT solvers (Z3 / Dafny / Lean 4) and extracting concrete failing counterexample unit tests upon contract violation (2025-2026 literature).",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "new-rails-project",
     "path": "skills/new-rails-project",
     "category": "backend",
@@ -60515,6 +60537,28 @@
     ]
   },
   {
+    "id": "sprout-backtracking",
+    "path": "skills/sprout-backtracking",
+    "category": "reasoning-and-analysis",
+    "name": "sprout-backtracking",
+    "description": "SPROUT (Snapshot-based Rollout) enables agents to take lightweight filesystem and context checkpoints after every tool step, scoring progress via Process Verifiers (PRMs) and backtracking to the optimal ancestral state upon test or contract failure. Use for long-horizon coding tasks.",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "sql-injection-testing",
     "path": "skills/sql-injection-testing",
     "category": "security",
@@ -63542,6 +63586,28 @@
     },
     "source_type": "community",
     "source_repo": "amElnagdy/guard-skills"
+  },
+  {
+    "id": "test-time-budgeting",
+    "path": "skills/test-time-budgeting",
+    "category": "reasoning-and-analysis",
+    "name": "test-time-budgeting",
+    "description": "Adaptive Test-Time Compute Allocation & Budget Forcing dynamically budgets reasoning tokens based on predicted problem difficulty and enforces self-reflection via 'Wait' token injection (s1 / AdaCompute / ZIP-RC 2025-2026). Use for cost-optimal and accuracy-optimal reasoning.",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
   },
   {
     "id": "testdriver-e2e-testing",
