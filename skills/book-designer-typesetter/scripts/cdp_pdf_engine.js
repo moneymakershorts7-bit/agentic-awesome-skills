@@ -107,10 +107,13 @@ async function main() {
 
   await new Promise(r => ws.onopen = r);
 
-  const dim = PAGE_DIMENSIONS[opts.size] || PAGE_DIMENSIONS["A4"];
-
-  const target = await sendCmd("Target.createTarget", { url: `file://${opts.input}` });
-  const pageWs = new WebSocket(`ws://127.0.0.1:${port}/devtools/page/${target.targetId}`);
+  const inputPath = path.resolve(opts.input);
+  if (!fs.existsSync(inputPath)) {
+    throw new Error(`Input HTML file not found: ${inputPath}`);
+  }
+  const target = await sendCmd("Target.createTarget", { url: `file://${inputPath}` });
+  const sanitizedTargetId = encodeURIComponent(String(target.targetId).replace(/[^a-zA-Z0-9_-]/g, ""));
+  const pageWs = new WebSocket(`ws://127.0.0.1:${port}/devtools/page/${sanitizedTargetId}`);
   await new Promise(r => pageWs.onopen = r);
 
   function sendPageCmd(method, params = {}) {

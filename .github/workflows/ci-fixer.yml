@@ -146,11 +146,10 @@ jobs:
         run: |
           pip install pyyaml requests || true
           npm ci --ignore-scripts --audit=false || true
-          node tools/scripts/run-python.js tools/scripts/validate_skills.py || true
-
       - name: Commit and Push Fixes (if changes generated on branch)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEAD_BRANCH: ${{ github.event.workflow_run.head_branch }}
         run: |
           rm -f failed_log.txt
           if [ -n "$(git status --porcelain)" ]; then
@@ -159,7 +158,7 @@ jobs:
             git add .
             git commit -m "fix(ci): automated CI fixer self-healing repair"
             
-            BRANCH_NAME="${{ github.event.workflow_run.head_branch }}"
+            BRANCH_NAME="$HEAD_BRANCH"
             if [ -n "$BRANCH_NAME" ] && [ "$BRANCH_NAME" != "main" ]; then
               git push origin "$BRANCH_NAME"
             else

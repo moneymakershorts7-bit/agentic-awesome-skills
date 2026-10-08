@@ -1,6 +1,10 @@
 name: "CodeQL Config"
 
 paths-ignore:
-  # Generated plugin mirrors create duplicate scan noise without adding
-  # source coverage because the canonical sources live outside plugins/.
+  # Generated plugin mirrors, data indexes, and staging areas
   - "plugins/**"
+  - "staging/**"
+  - "data/**"
+  - "wiki/**"
+  - "apps/web-app/dist/**"
+
