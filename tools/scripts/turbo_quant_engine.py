@@ -14,7 +14,8 @@ Mathematical Formulation:
   x_mse = LloydMaxQuantize(x_rot, bits=b)
 - Stage 2 (QJL Residual): r = x_rot - x_mse; z = sign(S @ r) where S ~ N(0, 1)^{m x d}
 - Unbiased Inner Product Estimator:
-  <y, x> ~= <R @ y, x_mse> + sqrt(pi/2) * (||r||_2 / d) * (R @ y)^T @ S^T @ z
+  <y, x> ~= <R @ y, x_mse> + sqrt(pi/2) * (||r||_2 / sqrt(m)) * (R @ y)^T @ S^T @ z
+  (where S has rows scaled by 1/sqrt(m), giving an exact 1/m expectation denominator)
 
 Zero-dependency standard library implementation with optional NumPy acceleration.
 """
