@@ -1670,6 +1670,38 @@
     ]
   },
   {
+    "id": "agent-reels",
+    "path": "skills/agent-reels",
+    "category": "design",
+    "name": "agent-reels",
+    "description": "Find animation and video references on 1human, consult a human-agent shared library, and contribute public creations only with prior owner permission.",
+    "risk": "critical",
+    "source": "https://github.com/mdagnolops/1human-reels",
+    "date_added": "2026-10-07",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "mdagnolops/1human-reels",
+    "license": "MIT",
+    "license_source": "https://github.com/mdagnolops/1human-reels/blob/717c0a28d9b62182854f832fd1a63dc32775a701/LICENSE",
+    "tags": [
+      "animation",
+      "motion-design",
+      "ai-agents",
+      "references"
+    ]
+  },
+  {
     "id": "agent-self-scheduling",
     "path": "skills/agent-self-scheduling",
     "category": "agent-orchestration",
@@ -5613,6 +5645,40 @@
     }
   },
   {
+    "id": "assay",
+    "path": "skills/assay",
+    "category": "testing",
+    "name": "assay",
+    "description": "Run assay on a web page you just wrote or changed. It opens the page in a real browser, drives every control, and reports where the page contradicts itself. Deterministic, no API key, no network.",
+    "risk": "safe",
+    "source": "https://github.com/awss1i/assay",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "awss1i/assay",
+    "license": "MIT",
+    "license_source": "https://github.com/awss1i/assay/blob/main/LICENSE",
+    "tags": [
+      "testing",
+      "qa",
+      "web",
+      "browser",
+      "playwright",
+      "html"
+    ]
+  },
+  {
     "id": "asset-inventory",
     "path": "skills/asset-inventory",
     "category": "security",
@@ -7180,6 +7246,38 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "axonx",
+    "path": "skills/axonx",
+    "category": "finance",
+    "name": "axonx",
+    "description": "Develop AxonX research plugins and operate quantitative research tasks through CLI or MCP, inspecting execution status, logs, artifacts, and lineage.",
+    "risk": "critical",
+    "source": "https://github.com/FlowLLM-AI/AxonX/tree/862b90da9c49c3bdee4c2ab9ef896c415aee9f45/skills/axonx",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "FlowLLM-AI/AxonX",
+    "license": "Apache-2.0",
+    "license_source": "https://github.com/FlowLLM-AI/AxonX/blob/862b90da9c49c3bdee4c2ab9ef896c415aee9f45/LICENSE",
+    "tags": [
+      "quantitative-research",
+      "mcp",
+      "backtesting",
+      "python"
+    ]
   },
   {
     "id": "azd-deployment",
@@ -12808,6 +12906,40 @@
     ]
   },
   {
+    "id": "byagent",
+    "path": "skills/byagent",
+    "category": "productivity",
+    "name": "byagent",
+    "description": "Publish agent-written Markdown or HTML as a shareable link with the byagent CLI, then read readers' line comments back, edit, republish to the same link and resolve them.",
+    "risk": "critical",
+    "source": "https://github.com/anup-a/agent-artifacts",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "anup-a/agent-artifacts",
+    "license": "MIT",
+    "license_source": "https://github.com/anup-a/agent-artifacts/blob/main/LICENSE",
+    "tags": [
+      "publish",
+      "markdown",
+      "html",
+      "share",
+      "comments",
+      "review"
+    ]
+  },
+  {
     "id": "c",
     "path": "skills/super-code/c",
     "category": "super-code",
@@ -17885,6 +18017,28 @@
     ]
   },
   {
+    "id": "cove-reasoning",
+    "path": "skills/cove-reasoning",
+    "category": "reasoning-and-analysis",
+    "name": "cove-reasoning",
+    "description": "Execute 4-stage Chain-of-Verification (CoVe) to eliminate LLM hallucinations, decouple fact-checking from generation bias, and produce strictly grounded answers. Use when synthesizing complex factual analysis, code claims, or historical data.",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "cowork-to-code-bridge",
     "path": "skills/cowork-to-code-bridge",
     "category": "mcp",
@@ -18869,6 +19023,28 @@
     ]
   },
   {
+    "id": "cumulative-reasoning",
+    "path": "skills/cumulative-reasoning",
+    "category": "reasoning-and-analysis",
+    "name": "cumulative-reasoning",
+    "description": "Cumulative Reasoning (CR) breaks complex problem solving into a Directed Acyclic Graph (DAG) of verified lemmas and propositions via Proposer, Verifier, and Reporter roles. Use for formal proofs, invariant validation, and algorithmic proofs.",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "cursor-delegate",
     "path": "skills/cursor-delegate",
     "category": "agent-orchestration",
@@ -19255,6 +19431,39 @@
       "reasons": []
     },
     "source_type": "self"
+  },
+  {
+    "id": "darkmoon-pentest",
+    "path": "skills/darkmoon-pentest",
+    "category": "security",
+    "name": "darkmoon-pentest",
+    "description": "Start, follow and triage authorized autonomous AI pentest runs on a self-hosted Darkmoon Pro instance through its MCP server.",
+    "risk": "offensive",
+    "source": "https://github.com/ASCIT31/darkmoon-mcp-server/tree/main/plugins/darkmoon/skills/darkmoon-pentest",
+    "date_added": "2026-10-05",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "ASCIT31/darkmoon-mcp-server",
+    "license": "GPL-3.0-only",
+    "license_source": "https://github.com/ASCIT31/darkmoon-mcp-server/blob/main/LICENSE",
+    "tags": [
+      "pentest",
+      "security",
+      "mcp",
+      "vulnerability-triage",
+      "darkmoon"
+    ]
   },
   {
     "id": "dart",
@@ -20475,6 +20684,39 @@
       "liquidity",
       "finance",
       "stellar"
+    ]
+  },
+  {
+    "id": "define-my-content-pillars",
+    "path": "skills/define-my-content-pillars",
+    "category": "marketing",
+    "name": "define-my-content-pillars",
+    "description": "Find the three to five subjects someone can post about repeatedly, from what they have published and know first-hand. Use when someone asks what to post about or has run out of ideas.",
+    "risk": "safe",
+    "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/define-my-content-pillars",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "prateeks367/voicemoat-skills",
+    "license": "MIT",
+    "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+    "tags": [
+      "linkedin",
+      "twitter",
+      "content-strategy",
+      "personal-brand",
+      "social-media"
     ]
   },
   {
@@ -22884,6 +23126,38 @@
     "source_repo": "addyosmani/agent-skills",
     "license": "MIT",
     "license_source": "https://github.com/addyosmani/agent-skills/blob/main/LICENSE"
+  },
+  {
+    "id": "draft-my-comments",
+    "path": "skills/draft-my-comments",
+    "category": "marketing",
+    "name": "draft-my-comments",
+    "description": "Write a LinkedIn comment that adds something the post did not have, not agreement. Use when someone asks what to comment, wants to engage with creators, or says their comments go nowhere.",
+    "risk": "safe",
+    "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/draft-my-comments",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "prateeks367/voicemoat-skills",
+    "license": "MIT",
+    "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+    "tags": [
+      "linkedin",
+      "comments",
+      "engagement",
+      "social-media"
+    ]
   },
   {
     "id": "draw",
@@ -28026,6 +28300,37 @@
     }
   },
   {
+    "id": "fxmacrodata",
+    "path": "skills/fxmacrodata",
+    "category": "finance",
+    "name": "fxmacrodata",
+    "description": "Query FXMacroData for official-source macro indicators, release calendars, central-bank policy rates, FX rates and CFTC positioning across 22 currencies.",
+    "risk": "safe",
+    "source": "self",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "self",
+    "tags": [
+      "macroeconomics",
+      "forex",
+      "central-banks",
+      "economic-calendar",
+      "cot",
+      "rest-api"
+    ]
+  },
+  {
     "id": "game-art",
     "path": "skills/game-development/game-art",
     "category": "game-development",
@@ -29185,6 +29490,38 @@
       "deep-learning",
       "ai-safety",
       "neural-networks"
+    ]
+  },
+  {
+    "id": "get-seen-in-replies",
+    "path": "skills/get-seen-in-replies",
+    "category": "marketing",
+    "name": "get-seen-in-replies",
+    "description": "Write a reply to someone else's tweet that is worth reading on its own. Use when someone asks what to reply, wants to grow by replying on Twitter/X, or says their replies go nowhere.",
+    "risk": "safe",
+    "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/get-seen-in-replies",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "prateeks367/voicemoat-skills",
+    "license": "MIT",
+    "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+    "tags": [
+      "twitter",
+      "replies",
+      "engagement",
+      "social-media"
     ]
   },
   {
@@ -36511,7 +36848,7 @@
     "path": "skills/jobs-to-be-done-analyst",
     "category": "marketing",
     "name": "jobs-to-be-done-analyst",
-    "description": "One sentence - what this skill does and when to invoke it",
+    "description": "Uncover the functional, emotional and social jobs a customer hires a product to do: progress state, hiring trigger, alternatives, success criteria, JTBD map. Use when you need to understand why users buy, switch or churn, or to anchor positioning, messaging and onboarding in real jobs.",
     "risk": "safe",
     "source": "community",
     "date_added": "2026-04-04",
@@ -37551,6 +37888,28 @@
     "risk": "safe",
     "source": "community",
     "date_added": "2026-03-14",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "lats-agent-search",
+    "path": "skills/lats-agent-search",
+    "category": "reasoning-and-analysis",
+    "name": "lats-agent-search",
+    "description": "Language Agent Tree Search (LATS) unifies Monte Carlo Tree Search (MCTS), reasoning, action execution, and environmental reflection. Use for complex multi-step coding, architecture planning, debugging, and combinatorial problem solving.",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -39745,6 +40104,39 @@
       "tuning",
       "automation",
       "render-loop"
+    ]
+  },
+  {
+    "id": "looot",
+    "path": "skills/looot",
+    "category": "data",
+    "name": "looot",
+    "description": "Search, price and run 2,500+ data API endpoints (work emails, company search, SERP, web pages) from one prepaid balance via the looot MCP server.",
+    "risk": "critical",
+    "source": "community",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "loootai/looot-skills",
+    "license": "MIT",
+    "license_source": "https://github.com/loootai/looot-skills/blob/main/LICENSE",
+    "tags": [
+      "data-api",
+      "enrichment",
+      "email-finder",
+      "seo",
+      "mcp"
     ]
   },
   {
@@ -42226,6 +42618,28 @@
     "risk": "safe",
     "source": "dklymentiev/mesh-memory (MIT)",
     "date_added": "2026-05-23",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "metacognitive-evaluator",
+    "path": "skills/metacognitive-evaluator",
+    "category": "reasoning-and-analysis",
+    "name": "metacognitive-evaluator",
+    "description": "Metacognitive Evaluator computes Semantic Entropy H(S) and calibrates epistemic uncertainty over candidate outputs. Use before making high-consequence assertions, security decisions, or when hallucination risk must be rigorously quantified.",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -46767,7 +47181,7 @@
     "path": "skills/onboarding-psychologist",
     "category": "marketing",
     "name": "onboarding-psychologist",
-    "description": "One sentence - what this skill does and when to invoke it",
+    "description": "Design first-use and onboarding experiences that bring an early win, cut setup friction, build ownership and form habits through stable cues. Use when onboarding loses users early, time-to-value is long, or the first session should build confidence, momentum and a lasting habit.",
     "risk": "safe",
     "source": "community",
     "date_added": "2026-04-04",
@@ -53895,6 +54309,39 @@
     ]
   },
   {
+    "id": "repurpose-into-a-post",
+    "path": "skills/repurpose-into-a-post",
+    "category": "marketing",
+    "name": "repurpose-into-a-post",
+    "description": "Turn an article, newsletter, transcript or video into a Twitter/X or LinkedIn post that stands on its own. Use when someone wants to repurpose, share or promote content they already made.",
+    "risk": "critical",
+    "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/repurpose-into-a-post",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "prateeks367/voicemoat-skills",
+    "license": "MIT",
+    "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+    "tags": [
+      "linkedin",
+      "twitter",
+      "repurposing",
+      "content",
+      "social-media"
+    ]
+  },
+  {
     "id": "requesting-code-review",
     "path": "skills/requesting-code-review",
     "category": "workflow",
@@ -55237,6 +55684,39 @@
       "agi",
       "yc",
       "fundraising"
+    ]
+  },
+  {
+    "id": "same-idea-both-platforms",
+    "path": "skills/same-idea-both-platforms",
+    "category": "marketing",
+    "name": "same-idea-both-platforms",
+    "description": "Write one idea as a Twitter/X post and a LinkedIn post that read as written separately, not pasted twice. Use when someone wants to cross-post or adapt a post for the other platform.",
+    "risk": "critical",
+    "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/same-idea-both-platforms",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "prateeks367/voicemoat-skills",
+    "license": "MIT",
+    "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+    "tags": [
+      "linkedin",
+      "twitter",
+      "cross-posting",
+      "writing",
+      "social-media"
     ]
   },
   {
@@ -57695,6 +58175,38 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "session-handoff",
+    "path": "skills/session-handoff",
+    "category": "productivity",
+    "name": "session-handoff",
+    "description": "Use when context approaches capacity, before /clear or /compact, when switching tasks, or when ending a coding session: produces a structured handoff artifact for the next session.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-05",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "alapha888/session-handoff-kit",
+    "license": "MIT",
+    "license_source": "https://github.com/alapha888/session-handoff-kit/blob/main/LICENSE",
+    "tags": [
+      "context-management",
+      "session-handoff",
+      "coding-agents",
+      "workflow"
+    ]
   },
   {
     "id": "setup-help",
@@ -61162,6 +61674,38 @@
     }
   },
   {
+    "id": "supercov",
+    "path": "skills/supercov",
+    "category": "testing",
+    "name": "supercov",
+    "description": "Measure line, branch and MC/DC coverage of a project's existing tests with the supercov CLI, then write small, focused tests for the code no test reaches.",
+    "risk": "critical",
+    "source": "https://github.com/supercorp-ai/supercov/tree/main/plugins/supercov/skills/supercov",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "community",
+    "source_repo": "supercorp-ai/supercov",
+    "license": "MIT",
+    "license_source": "https://github.com/supercorp-ai/supercov/blob/main/LICENSE",
+    "tags": [
+      "testing",
+      "coverage",
+      "mcdc",
+      "test-generation"
+    ]
+  },
+  {
     "id": "superpowers-lab",
     "path": "skills/superpowers-lab",
     "category": "ai-agents",
@@ -62518,6 +63062,37 @@
       "notifications",
       "bots",
       "approvals"
+    ]
+  },
+  {
+    "id": "telegram-channel-ads",
+    "path": "skills/telegram-channel-ads",
+    "category": "marketing",
+    "name": "telegram-channel-ads",
+    "description": "Vet and price ad posts in Telegram channels: reach benchmarks by size, topic and language, ad-network and channel-age checks, CPM and deletion-window math.",
+    "risk": "safe",
+    "source": "self",
+    "date_added": "2026-10-07",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "self",
+    "tags": [
+      "telegram",
+      "advertising",
+      "influencer-marketing",
+      "media-buying",
+      "cpm",
+      "marketing"
     ]
   },
   {
@@ -64656,6 +65231,38 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "turn-this-into-a-thread",
+    "path": "skills/turn-this-into-a-thread",
+    "category": "marketing",
+    "name": "turn-this-into-a-thread",
+    "description": "Turn a long idea, transcript, article or draft into a Twitter/X thread where every tweet stands alone. Use when someone asks for a thread or to break long writing into tweets.",
+    "risk": "critical",
+    "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/turn-this-into-a-thread",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "prateeks367/voicemoat-skills",
+    "license": "MIT",
+    "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+    "tags": [
+      "twitter",
+      "threads",
+      "writing",
+      "social-media"
+    ]
   },
   {
     "id": "turnstile-spin",
@@ -68604,6 +69211,39 @@
     ]
   },
   {
+    "id": "why-did-this-post-flop",
+    "path": "skills/why-did-this-post-flop",
+    "category": "marketing",
+    "name": "why-did-this-post-flop",
+    "description": "Diagnose why one Twitter/X or LinkedIn post underperformed: not seen, seen and skipped, or read and ignored. Use when someone asks why a post did badly or got no engagement.",
+    "risk": "safe",
+    "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/why-did-this-post-flop",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "prateeks367/voicemoat-skills",
+    "license": "MIT",
+    "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+    "tags": [
+      "linkedin",
+      "twitter",
+      "analytics",
+      "post-review",
+      "social-media"
+    ]
+  },
+  {
     "id": "widget-based-design",
     "path": "skills/design-it/widget-based-design",
     "category": "design-it",
@@ -69473,6 +70113,39 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "write-in-my-voice",
+    "path": "skills/write-in-my-voice",
+    "category": "marketing",
+    "name": "write-in-my-voice",
+    "description": "Draft a Twitter/X or LinkedIn post that sounds like the person asking, from posts they already wrote. Use when someone asks for a post or rewrite in their voice, or asks if text sounds like them.",
+    "risk": "critical",
+    "source": "https://github.com/prateeks367/voicemoat-skills/tree/7623a3effbee426554e8c5df55e77f3479fd0ec0/skills/write-in-my-voice",
+    "date_added": "2026-10-04",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "prateeks367/voicemoat-skills",
+    "license": "MIT",
+    "license_source": "https://github.com/prateeks367/voicemoat-skills/blob/7623a3effbee426554e8c5df55e77f3479fd0ec0/LICENSE",
+    "tags": [
+      "linkedin",
+      "twitter",
+      "writing",
+      "voice",
+      "social-media"
+    ]
   },
   {
     "id": "writer",

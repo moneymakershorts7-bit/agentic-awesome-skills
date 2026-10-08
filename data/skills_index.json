@@ -18017,6 +18017,28 @@
     ]
   },
   {
+    "id": "cove-reasoning",
+    "path": "skills/cove-reasoning",
+    "category": "reasoning-and-analysis",
+    "name": "cove-reasoning",
+    "description": "Execute 4-stage Chain-of-Verification (CoVe) to eliminate LLM hallucinations, decouple fact-checking from generation bias, and produce strictly grounded answers. Use when synthesizing complex factual analysis, code claims, or historical data.",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "cowork-to-code-bridge",
     "path": "skills/cowork-to-code-bridge",
     "category": "mcp",
@@ -18999,6 +19021,28 @@
       "sql",
       "engage"
     ]
+  },
+  {
+    "id": "cumulative-reasoning",
+    "path": "skills/cumulative-reasoning",
+    "category": "reasoning-and-analysis",
+    "name": "cumulative-reasoning",
+    "description": "Cumulative Reasoning (CR) breaks complex problem solving into a Directed Acyclic Graph (DAG) of verified lemmas and propositions via Proposer, Verifier, and Reporter roles. Use for formal proofs, invariant validation, and algorithmic proofs.",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
   },
   {
     "id": "cursor-delegate",
@@ -37858,6 +37902,28 @@
     }
   },
   {
+    "id": "lats-agent-search",
+    "path": "skills/lats-agent-search",
+    "category": "reasoning-and-analysis",
+    "name": "lats-agent-search",
+    "description": "Language Agent Tree Search (LATS) unifies Monte Carlo Tree Search (MCTS), reasoning, action execution, and environmental reflection. Use for complex multi-step coding, architecture planning, debugging, and combinatorial problem solving.",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "launch-strategy",
     "path": "skills/launch-strategy",
     "category": "marketing",
@@ -42552,6 +42618,28 @@
     "risk": "safe",
     "source": "dklymentiev/mesh-memory (MIT)",
     "date_added": "2026-05-23",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
+    "id": "metacognitive-evaluator",
+    "path": "skills/metacognitive-evaluator",
+    "category": "reasoning-and-analysis",
+    "name": "metacognitive-evaluator",
+    "description": "Metacognitive Evaluator computes Semantic Entropy H(S) and calibrates epistemic uncertainty over candidate outputs. Use before making high-consequence assertions, security decisions, or when hallucination risk must be rigorously quantified.",
+    "risk": "safe",
+    "source": "academic",
+    "date_added": "2026-10-08",
     "plugin": {
       "targets": {
         "codex": "supported",
