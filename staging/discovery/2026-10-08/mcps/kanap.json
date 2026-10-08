@@ -1,0 +1,23 @@
+{
+  "id": "kanap",
+  "name": "KANAP",
+  "repository": "https://github.com/kanap-hq/KANAP",
+  "description": "KANAP, the open source IT governance platform: IT budget (OPEX/CAPEX), application landscape, project portfolio, tasks and documentation in one governed record, with Plaid, a built-in AI agent. AGPL v3. Self-host free, or hosted.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y KANAP",
+  "stars": 6,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "kanap": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "KANAP"
+      ]
+    }
+  }
+}

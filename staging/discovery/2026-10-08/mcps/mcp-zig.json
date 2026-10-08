@@ -1,0 +1,23 @@
+{
+  "id": "mcp-zig",
+  "name": "mcp.zig",
+  "repository": "https://github.com/nobita5609/mcp.zig",
+  "description": "\ud83d\udee0\ufe0f Build efficient Zig-based tools with MCP.zig, focusing on modularity and performance for streamlined software development.",
+  "language": "Zig",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/nobita5609/mcp.zig",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "mcp-zig": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/nobita5609/mcp.zig"
+      ]
+    }
+  }
+}

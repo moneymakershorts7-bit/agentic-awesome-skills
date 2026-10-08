@@ -1,0 +1,23 @@
+{
+  "id": "free-proxy-list",
+  "name": "free-proxy-list",
+  "repository": "https://github.com/hproxy-com/free-proxy-list",
+  "description": "Free proxy list, verified around the clock: HTTP, HTTPS, SOCKS4 and SOCKS5 proxies with country, anonymity, latency and uptime on every row, updated several times a day. Live list, proxy checker, keyless API and MCP server at hproxy.com.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y free-proxy-list",
+  "stars": 74,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "free-proxy-list": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "free-proxy-list"
+      ]
+    }
+  }
+}

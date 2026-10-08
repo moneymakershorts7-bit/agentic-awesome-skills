@@ -1,0 +1,22 @@
+{
+  "id": "precis",
+  "name": "precis-mcp",
+  "repository": "https://github.com/retospect/precis-mcp",
+  "description": "MCP server giving LLM agents a seven-verb API over papers, documents, code, state, patents, and cached web/Wolfram/YouTube tool calls",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx precis-mcp",
+  "stars": 4,
+  "license": "GPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "precis": {
+      "command": "uvx",
+      "args": [
+        "precis-mcp"
+      ]
+    }
+  }
+}

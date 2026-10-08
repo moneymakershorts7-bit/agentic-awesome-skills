@@ -1,0 +1,23 @@
+{
+  "id": "modelcontextprotocol-go-sdk",
+  "name": "modelcontextprotocol--go-sdk",
+  "repository": "https://github.com/repolex-forx/modelcontextprotocol--go-sdk",
+  "description": "RDF parse data for modelcontextprotocol/go-sdk",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modelcontextprotocol--go-sdk",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "modelcontextprotocol-go-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modelcontextprotocol--go-sdk"
+      ]
+    }
+  }
+}

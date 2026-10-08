@@ -1,0 +1,22 @@
+{
+  "id": "awesome-mcp",
+  "name": "Awesome-MCP",
+  "repository": "https://github.com/AlexMili/Awesome-MCP",
+  "description": "Awesome ModelContextProtocol resources - A curated list of MCP resources",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Awesome-MCP",
+  "stars": 150,
+  "license": "CC0-1.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "awesome-mcp": {
+      "command": "uvx",
+      "args": [
+        "Awesome-MCP"
+      ]
+    }
+  }
+}

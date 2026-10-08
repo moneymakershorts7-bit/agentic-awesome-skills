@@ -1,0 +1,23 @@
+{
+  "id": "mcp-auth-kit",
+  "name": "mcp-auth-kit",
+  "repository": "https://github.com/Karlangas12/mcp-auth-kit",
+  "description": "Drop-in OAuthClientProvider wrapper for @modelcontextprotocol/sdk: proactive token refresh, retried dynamic client registration, issuer-bound refresh, and resource normalization for real MCP client OAuth bugs.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-auth-kit",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "mcp-auth-kit": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-auth-kit"
+      ]
+    }
+  }
+}

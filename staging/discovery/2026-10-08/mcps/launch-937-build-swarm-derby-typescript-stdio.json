@@ -1,0 +1,23 @@
+{
+  "id": "launch-937-build-swarm-derby-typescript-stdio",
+  "name": "launch-937-build-swarm-derby-mcp-typescript-stdio",
+  "repository": "https://github.com/identity-md-launches/launch-937-build-swarm-derby-mcp-typescript-stdio",
+  "description": "Build swarm-derby-mcp: a TypeScript stdio MCP server (@modelcontextprotocol/sdk) that lets any MCP client play the Agent league of Swarm Derby, a live game on Robinhood Chain mainnet, with a hard IMD spending cap. Follow the swarm toolkit skill build-mcp-server (not in the IMD catalog yet) as your own skill: read https://raw.githubusercontent.co...",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y launch-937-build-swarm-derby-mcp-typescript-stdio",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "launch-937-build-swarm-derby-typescript-stdio": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "launch-937-build-swarm-derby-mcp-typescript-stdio"
+      ]
+    }
+  }
+}

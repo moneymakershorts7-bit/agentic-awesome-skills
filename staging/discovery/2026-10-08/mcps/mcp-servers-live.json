@@ -1,0 +1,23 @@
+{
+  "id": "mcp-servers-live",
+  "name": "mcp-servers-live",
+  "repository": "https://github.com/linny006/mcp-servers-live",
+  "description": "Auto-updated index of MCP servers shipping on GitHub, refreshed every 15 minutes",
+  "language": "HTML",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/linny006/mcp-servers-live",
+  "stars": 12,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "mcp-servers-live": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/linny006/mcp-servers-live"
+      ]
+    }
+  }
+}

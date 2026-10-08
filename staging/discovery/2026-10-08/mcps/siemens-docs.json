@@ -1,0 +1,22 @@
+{
+  "id": "siemens-docs",
+  "name": "siemens-docs-mcp",
+  "repository": "https://github.com/Czarnak/siemens-docs-mcp",
+  "description": "An MCP server that lets an AI assistant search and read Siemens documentation live.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx siemens-docs-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "siemens-docs": {
+      "command": "uvx",
+      "args": [
+        "siemens-docs-mcp"
+      ]
+    }
+  }
+}

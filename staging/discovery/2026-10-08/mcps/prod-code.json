@@ -1,0 +1,23 @@
+{
+  "id": "prod-code",
+  "name": "prod-code",
+  "repository": "https://github.com/alex09x/prod-code",
+  "description": "Remote code intelligence server for AI coding agents (MCP): rust-analyzer, gopls, clangd, pyright and TypeScript run on a LAN build node \u2014 semantic navigation, safe refactoring, edit validation, builds and tests without burning the laptop.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install prod-code",
+  "stars": 4,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "prod-code": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "prod-code"
+      ]
+    }
+  }
+}

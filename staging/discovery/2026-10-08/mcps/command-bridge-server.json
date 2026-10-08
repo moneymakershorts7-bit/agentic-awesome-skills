@@ -1,0 +1,23 @@
+{
+  "id": "command-bridge-server",
+  "name": "command-bridge-mcp-server",
+  "repository": "https://github.com/HsinPu/command-bridge-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y command-bridge-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "command-bridge-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "command-bridge-mcp-server"
+      ]
+    }
+  }
+}

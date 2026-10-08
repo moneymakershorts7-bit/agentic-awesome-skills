@@ -1,0 +1,23 @@
+{
+  "id": "mcp-servers",
+  "name": "mcp-servers",
+  "repository": "https://github.com/stigenai/mcp-servers",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Shell",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/stigenai/mcp-servers",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "mcp-servers": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/stigenai/mcp-servers"
+      ]
+    }
+  }
+}

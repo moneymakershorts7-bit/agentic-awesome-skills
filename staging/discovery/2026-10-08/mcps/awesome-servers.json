@@ -1,0 +1,23 @@
+{
+  "id": "awesome-servers",
+  "name": "awesome-mcp-servers",
+  "repository": "https://github.com/punkpeye/awesome-mcp-servers",
+  "description": "A collection of MCP servers.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y awesome-mcp-servers",
+  "stars": 95924,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "awesome-servers": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "awesome-mcp-servers"
+      ]
+    }
+  }
+}

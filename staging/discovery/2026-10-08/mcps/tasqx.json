@@ -1,0 +1,23 @@
+{
+  "id": "tasqx",
+  "name": "tasqx",
+  "repository": "https://github.com/dimitritholen/tasqx",
+  "description": "The organiser for your AI. A backlog, a memory and a brief for your coding agent.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install tasqx",
+  "stars": 2,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "tasqx": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "tasqx"
+      ]
+    }
+  }
+}

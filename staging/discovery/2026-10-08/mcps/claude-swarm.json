@@ -1,0 +1,23 @@
+{
+  "id": "claude-swarm",
+  "name": "claude-swarm",
+  "repository": "https://github.com/AudiRamadyan/claude-swarm",
+  "description": "\ud83d\ude80 Orchestrate parallel Claude Code workers with persistent state and behavioral governance for efficient, autonomous coding sessions.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y claude-swarm",
+  "stars": 1,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "claude-swarm": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claude-swarm"
+      ]
+    }
+  }
+}

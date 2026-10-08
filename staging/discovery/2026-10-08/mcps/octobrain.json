@@ -1,0 +1,23 @@
+{
+  "id": "octobrain",
+  "name": "octobrain",
+  "repository": "https://github.com/Muvon/octobrain",
+  "description": "Persistent memory for AI assistants \u2014 semantic search, knowledge graph, and MCP server integration. Built in Rust.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install octobrain",
+  "stars": 15,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "octobrain": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "octobrain"
+      ]
+    }
+  }
+}

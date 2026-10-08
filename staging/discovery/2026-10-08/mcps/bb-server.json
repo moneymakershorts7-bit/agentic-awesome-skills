@@ -1,0 +1,22 @@
+{
+  "id": "bb-server",
+  "name": "bb-mcp-server",
+  "repository": "https://github.com/D24yK4r4/bb-mcp-server",
+  "description": "A privacy-first MCP server for bug bounty hunting with Claude Code. Sensitive data never reaches the AI.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx bb-mcp-server",
+  "stars": 3,
+  "license": "EUPL-1.2",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "bb-server": {
+      "command": "uvx",
+      "args": [
+        "bb-mcp-server"
+      ]
+    }
+  }
+}

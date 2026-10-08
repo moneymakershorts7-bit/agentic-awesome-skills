@@ -1,0 +1,23 @@
+{
+  "id": "repopilot",
+  "name": "repopilot",
+  "repository": "https://github.com/azen07508-debug/repopilot",
+  "description": "Release gate for public GitHub repositories. Give it a repo URL and it returns a ship-or-block verdict with file-and-line evidence, the fixes that clear the gate, and the deployment plan and launch copy you ship with. HTTP + MCP. Static analysis only; no code execution.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y repopilot",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "repopilot": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "repopilot"
+      ]
+    }
+  }
+}

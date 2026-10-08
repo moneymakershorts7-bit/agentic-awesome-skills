@@ -1,0 +1,23 @@
+{
+  "id": "skybridge",
+  "name": "skybridge",
+  "repository": "https://github.com/alpic-ai/skybridge",
+  "description": "Skybridge is a full-stack TypeScript framework for MCP Apps and ChatGPT Apps. Type-safe. React-powered. Platform-agnostic.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y skybridge",
+  "stars": 2151,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "skybridge": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "skybridge"
+      ]
+    }
+  }
+}

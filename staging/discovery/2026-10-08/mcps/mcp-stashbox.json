@@ -1,0 +1,23 @@
+{
+  "id": "mcp-stashbox",
+  "name": "mcp-stashbox",
+  "repository": "https://github.com/smeet666/mcp-stashbox",
+  "description": "MCP server for the public stash-box metadata catalogues. Search scenes and performers, read one record, and identify a file by its fingerprint.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-stashbox",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "mcp-stashbox": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-stashbox"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "gwi",
+  "name": "gwi",
+  "repository": "https://github.com/rust-works/gwi",
+  "description": "Google Workspace Interface: Gmail, Drive, Docs, Sheets and Slides from the command line and MCP.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install gwi",
+  "stars": 0,
+  "license": "BSD-3-Clause",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-08",
+  "mcpConfigSnippet": {
+    "gwi": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "gwi"
+      ]
+    }
+  }
+}
