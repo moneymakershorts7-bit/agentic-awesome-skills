@@ -82,6 +82,15 @@ When executing any cut or timeline decision, prioritize criteria in this exact o
 - **Look Emulation:** Kodak 2383 film print, Teal & Orange blockbuster, Bleach Bypass gritty doc, Clean Minimalist modern tech.
 - **Film Grain & Halation:** 35mm organic grain overlay on midtones and highlights.
 
+### 5. Empirical Broadcast Standards & 3D Vector Geometry (Lab-Verified)
+- **Crown Color Harmonies:**
+  - **Preset A (Imperial Compute):** Imperial Gold `rgb(212, 175, 55)` + Platinum White `rgb(226, 232, 240)` over dark slate `rgb(10, 10, 14)` ($\sigma = 42.9$).
+  - **Preset B (Bio-Phosphor AGI):** Platinum White `rgb(226, 232, 240)` + Bio-Phosphor Teal `rgb(20, 240, 180)` over deep cyan-slate `rgb(6, 12, 14)` ($\sigma = 45.0$ all-time peak).
+- **3D Wireframe Perspective Engine:** Compute rotating 3D polyhedra, cubes, and lattices in real-time with continuous rotation matrix transformations and perspective projection ($fov / (fov + z)$).
+- **Zero-Clipping Dynamic Typography:** Always calculate headline and badge boundaries with `font.getbbox(text)` and apply $+40\text{px}$ dynamic horizontal padding.
+- **Directorial Visual Critique:** Evaluate rendered frame contrast standard deviation ($\sigma \ge 35$ required, $\sigma \ge 40$ broadcast gold) and mean luminescence ($15 \le \mu \le 80$).
+- **Audio Ducking Filtergraph:** Duck background ambient beds by $-18\text{dB}$ under voiceover with `amix` and normalize to `-14 LUFS` EBU R128 (`loudnorm=I=-14:TP=-1.0:LRA=11`).
+
 ---
 
 ## 🚀 Multi-Format Rendering & Production Pipelines

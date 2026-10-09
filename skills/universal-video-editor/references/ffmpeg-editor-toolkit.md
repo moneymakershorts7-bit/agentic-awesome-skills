@@ -66,3 +66,60 @@ ffmpeg -i voiceover.wav -i bg_music.wav -i sfx_whoosh.wav -filter_complex \
 ```bash
 ffmpeg -i video.mp4 -vf "ass=subtitles.ass" -c:v libx264 -crf 18 -c:a copy output_subtitled.mp4
 ```
+
+---
+
+## 6. Real-Time RawVideo In-Memory Pipe (Zero Temp Disk I/O)
+
+Stream 1080p 30 FPS RGB/RGBA raw frame bytes directly from Python/Node into FFmpeg stdin:
+
+```python
+import subprocess
+
+ffmpeg_cmd = [
+    "ffmpeg", "-y",
+    "-f", "rawvideo",
+    "-vcodec", "rawvideo",
+    "-s", "1920x1080",
+    "-pix_fmt", "rgba",
+    "-r", "30",
+    "-i", "-",
+    "-i", "voiceover.mp3",
+    "-c:v", "libx264",
+    "-preset", "ultrafast",
+    "-crf", "18",
+    "-pix_fmt", "yuv420p",
+    "-c:a", "aac",
+    "-b:a", "192k",
+    "-shortest",
+    "output_streamed.mp4"
+]
+
+proc = subprocess.Popen(ffmpeg_cmd, stdin=subprocess.PIPE)
+for frame_img in frame_generator():
+    proc.stdin.write(frame_img.tobytes())
+proc.stdin.close()
+proc.wait()
+```
+
+---
+
+## 7. Multi-Clip Concat with Music Bed Ducking & EBU R128 Mastering
+
+```bash
+ffmpeg -y \
+  -i clip1.mp4 -i clip2.mp4 -i clip3.mp4 -i music_bed.wav \
+  -filter_complex "\
+    [0:v]scale=1920:1080,setsar=1[v0]; \
+    [1:v]scale=1920:1080,setsar=1[v1]; \
+    [2:v]scale=1920:1080,setsar=1[v2]; \
+    [v0][v1][v2]concat=n=3:v=1:a=0[v_cat]; \
+    [0:a][1:a][2:a]concat=n=3:v=0:a=1[a_cat]; \
+    [3:a]volume=0.20[bg_duck]; \
+    [a_cat][bg_duck]amix=inputs=2:duration=first[a_mix]; \
+    [a_mix]loudnorm=I=-14:TP=-1.0:LRA=11[a_master]" \
+  -map "[v_cat]" -map "[a_master]" \
+  -c:v libx264 -preset fast -crf 18 -pix_fmt yuv420p \
+  -c:a aac -b:a 192k -ar 48000 master_output.mp4
+```
+

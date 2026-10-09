@@ -37,3 +37,17 @@ The comprehensive manual on transition logic, rhythmic cutting, dialogue pacing,
 - **Rhythmic Montage:** Cuts that match physical tempo within the frame (walking speed, heartbeat, cars passing).
 - **Tonal Montage:** Cuts governed by emotional atmosphere, light qualities, and textures.
 - **Intellectual / Associative Montage:** Juxtaposing two unrelated ideas to create a third concept (e.g., politician speaking $\to$ herd of sheep).
+
+---
+
+## 4. High-Retention Digital Video & Shorts Pacing Architecture
+
+### A. The 0–3s Hook Discipline
+- **Frame 0:** High-contrast graphic badge + provocative hook headline (e.g., `⚡ QUANTUM SUPREMACY`).
+- **Frame 15–30 (0.5s–1.0s):** Animated highlight pill expansion to lock reading focus.
+- **Frame 45–90 (1.5s–3.0s):** Vector motion graphic (3D rotating wireframe or audio spectrum) triggers pattern interrupt before viewer thumb swipes.
+
+### B. Average Shot Length (ASL) Benchmarks
+- **Vertical Shorts (9:16):** Target $ASL = 1.2\text{s} - 2.2\text{s}$. Never exceed $3.5\text{s}$ on a single static frame.
+- **Documentary Essays (16:9):** Target $ASL = 3.0\text{s} - 4.5\text{s}$ with continuous dynamic B-roll, document reveals, or telemetry overlays.
+- **Hook Transition Velocity:** Execute scene transition on strong audio punctuation (e.g., downward pitch swoop, sub-bass hit, or riser).
