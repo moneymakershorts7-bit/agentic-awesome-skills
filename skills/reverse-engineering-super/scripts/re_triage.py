@@ -216,7 +216,85 @@ class BinaryTriager:
                 self.compiler_runtime = "Bash"
                 return
 
+        # HTTP Archive (HAR) or JSON Traffic Dump
+        if h.lstrip().startswith(b"{") or self.filename.endswith(".har"):
+            sample = (self.full_data if self.full_data else self.header)[:32768].decode("utf-8", errors="ignore")
+            if '"log"' in sample and ('"entries"' in sample or '"version"' in sample):
+                self.format = "HAR_ARCHIVE"
+                self.subformat = "HTTP_Archive"
+                self.arch = "Network_HTTP_REST"
+                self.compiler_runtime = "Web_Mobile_API"
+                self._parse_har()
+                return
+
+        # mitmproxy Flow Dump or Proxy Stream
+        if self.filename.endswith(".flows") or self.filename.endswith(".dump") or b"mitmproxy" in (self.header[:512]):
+            self.format = "MITMPROXY_FLOW"
+            self.subformat = "mitmproxy_Stream"
+            self.arch = "Network_HTTP_WSS"
+            self.compiler_runtime = "Mobile_Web_App"
+            self.indicators.append("Captured mitmproxy serialized traffic stream")
+            return
+
+        # cURL Script Batch
+        if b"curl " in self.header or b"curl -X" in self.header or b"curl --location" in self.header:
+            self.format = "CURL_SCRIPT"
+            self.subformat = "cURL_Batch"
+            self.arch = "HTTP_cURL"
+            self.compiler_runtime = "Shell/REST"
+            self.indicators.append("Exported cURL command sequence")
+            return
+
+    def _parse_har(self):
+        try:
+            raw_text = (self.full_data if self.full_data else self.header).decode("utf-8", errors="ignore")
+            har_json = json.loads(raw_text)
+            entries = har_json.get("log", {}).get("entries", [])
+            hosts = set()
+            methods = {}
+            auth_schemes = set()
+            endpoints = []
+
+            for entry in entries:
+                req = entry.get("request", {})
+                url = req.get("url", "")
+                method = req.get("method", "UNKNOWN")
+                methods[method] = methods.get(method, 0) + 1
+                
+                if "://" in url:
+                    domain = url.split("://")[1].split("/")[0]
+                    hosts.add(domain)
+                
+                for header in req.get("headers", []):
+                    h_name = header.get("name", "").lower()
+                    h_val = header.get("value", "")
+                    if h_name == "authorization":
+                        scheme = h_val.split()[0] if " " in h_val else "Custom-Auth"
+                        auth_schemes.add(f"Authorization: {scheme}")
+                    elif "api-key" in h_name or "apikey" in h_name:
+                        auth_schemes.add(f"API-Key Header: {header.get('name')}")
+                    elif h_name == "cookie" and any(k in h_val.lower() for k in ["token", "session", "auth"]):
+                        auth_schemes.add("Session-Cookie")
+
+                if len(endpoints) < 15 and url:
+                    endpoints.append(f"{method} {url.split('?')[0]}")
+
+            self.indicators.append(f"Target Domains: {', '.join(sorted(hosts)) if hosts else 'None'}")
+            self.indicators.append(f"Total Requests: {len(entries)} (Methods: {methods})")
+            if auth_schemes:
+                self.indicators.append(f"Detected Auth: {', '.join(sorted(auth_schemes))}")
+
+            self.sections = [{
+                "name": f"endpoint_{idx}",
+                "size": len(ep),
+                "entropy": 0.0,
+                "flags": ep
+            } for idx, ep in enumerate(endpoints)]
+        except Exception as e:
+            self.indicators.append(f"HAR parsing notice: {str(e)[:100]}")
+
     def _parse_elf_sections(self):
+
         if not self.full_data:
             return
         try:
@@ -500,6 +578,17 @@ class BinaryTriager:
                 "cli_recipe": [
                     f"npx prettier@3.3.3 --write {self.filepath}",
                     f"# Trace in Node: node --inspect-brk {self.filepath}"
+                ]
+            }
+        elif f in ["HAR_ARCHIVE", "MITMPROXY_FLOW", "CURL_SCRIPT"]:
+            self.tool_recommendations = {
+                "primary_tool": "Mimic CLI (uvx mimic==0.1.0) / mitmproxy",
+                "decompilation_target": "Typed Python Client SDK (httpx + Pydantic v2)",
+                "synthesis_pipeline": "Traffic Ingestion -> Endpoint Deduplication -> Pydantic Schema Deduction -> Typed Client Generation",
+                "cli_recipe": [
+                    f"# 1. Synthesize typed Python SDK with Mimic from HAR\nuvx mimic==0.1.0 generate --har {self.filepath} -o ./client_sdk/",
+                    f"# 2. Live interception with mitmproxy\nmitmweb -p 8080 -w app_traffic.flows",
+                    f"# 3. Run Mimic live capture\nuvx mimic==0.1.0 capture --mitmproxy"
                 ]
             }
         else:

@@ -122,3 +122,35 @@ This reference catalogs the 7 canonical reversing target classes, their binary s
   tshark -r capture.pcap -Y "tcp.payload" -T fields -e tcp.payload > payloads.hex
   ```
 - **Kaitai Struct (.ksy):** Formal declarative parsing into Python/C++ dissecting classes.
+
+---
+
+## 8. Application & Private API Reversing (The Mimic Pattern)
+
+### Concept & Reversing Paradigm
+Reversing proprietary mobile (iOS/Android), desktop (Electron/Qt), and single-page web applications by intercepting live API traffic, isolating undocumented endpoints, and programmatically reconstructing fully-typed, idiomatic client SDKs.
+
+### Signatures & Input Formats
+- **HAR (HTTP Archive):** JSON specification with root `{"log": {"version": ..., "entries": [...]}}` containing synchronized request/response headers, cookies, query strings, and postData bodies.
+- **mitmproxy Flow Dumps:** Serialized HTTP/2, WebSocket, and HTTP/1.1 transaction stream records captured via `mitmproxy -w flows.dump`.
+- **cURL Batches:** Raw cURL command strings copied from browser network tabs or proxy logs.
+
+### Toolchain & Automated Synthesis
+- **Mimic CLI (`littledivy/mimic`):**
+  ```bash
+  # Intercept and generate from mitmproxy flows
+  uvx mimic==0.1.0 capture --mitmproxy
+  # Synthesize clean Python client SDK from exported HAR archive
+  uvx mimic==0.1.0 generate --har session.har -o ./client_sdk/
+  ```
+- **mitmproxy Interception:**
+  ```bash
+  mitmweb -p 8080 --web-port 8081 --ssl-insecure -w app_traffic.flows
+  ```
+- **Pinned Certificate Defeat (Phase 3 Integration):**
+  - Android: `frida -U -f com.example.app -l frida-scripts/android-ssl-bypass.js`
+  - iOS: `frida -U -f com.example.app -l frida-scripts/ios-ssl-bypass.js`
+- **Output Artifact:**
+  - Type-safe Python client library with `httpx` / `pydantic` models.
+  - Automated authentication lifecycle management (token extraction, Bearer header injection, session refresh).
+
