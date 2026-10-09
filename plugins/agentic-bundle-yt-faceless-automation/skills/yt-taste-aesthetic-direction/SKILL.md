@@ -137,3 +137,4 @@ Before finalizing any video packaging, thumbnail, or visual sequence, evaluate a
 - [`references/typography_pairing_matrix.md`](references/typography_pairing_matrix.md): Font pairings, Bringhurst proportions, and layout scales.
 - [`references/color_grading_palettes.md`](references/color_grading_palettes.md): Color tokens, Albers relativity formulas, and LUT grading notes.
 - [`references/anti_slop_checklist.md`](references/anti_slop_checklist.md): 12-point pre-flight checklist for thumbnail and video assets.
+- [`references/golden_ratio_and_fibonacci_matrix.md`](references/golden_ratio_and_fibonacci_matrix.md): Mathematical foundations, Phi Grid coordinates, Bringhurst scale, and Fibonacci pacing curves.
