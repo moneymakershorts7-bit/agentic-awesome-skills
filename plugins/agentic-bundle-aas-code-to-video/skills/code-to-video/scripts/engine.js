@@ -101,7 +101,20 @@ const DETERMINISTIC_CLOCK_SCRIPT = `
       }
     }
 
-    // 4. Custom hook for WebGL / Canvas runners
+    // 4. Advance HTMLMediaElement (<video>) currentTime deterministically
+    try {
+      const vids = document.querySelectorAll('video');
+      const timeSec = timeMs / 1000;
+      for (let i = 0; i < vids.length; i++) {
+        const v = vids[i];
+        if (v && Number.isFinite(v.duration)) {
+          v.pause();
+          v.currentTime = timeSec % (v.duration || 1);
+        }
+      }
+    } catch(e) {}
+
+    // 5. Custom hook for WebGL / Canvas runners
     if (typeof window.__onFrameUpdate === 'function') {
       try {
         window.__onFrameUpdate(frameIndex, timeMs);
@@ -168,9 +181,7 @@ async function renderHtmlToVideo(options) {
       '--font-render-hinting=medium',
       '--force-color-profile=srgb',
       '--disable-threaded-animation',
-      '--disable-threaded-scrolling',
-      '--run-all-compositor-stages-before-draw',
-      '--enable-begin-frame-control'
+      '--disable-threaded-scrolling'
     ]
   });
 
