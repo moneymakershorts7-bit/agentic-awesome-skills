@@ -20,6 +20,9 @@ function App(): React.ReactElement {
   return (
     <Router basename={import.meta.env.BASE_URL.replace(/\/$/, '') || '/'}>
       <div className="app-shell min-h-screen bg-[var(--surface-canvas)] text-[var(--text-primary)]">
+        <a href="#main-content" className="skip-link">
+          Skip to main content
+        </a>
         <header className="app-header">
           <div className="app-header__inner">
             <Link to="/" className="brand-link" aria-label="Agentic Awesome Skills home">
@@ -90,7 +93,7 @@ function App(): React.ReactElement {
           </div>
         </header>
 
-        <main className="app-main">
+        <main id="main-content" tabIndex={-1} className="app-main">
           <Suspense
             fallback={
               <div className="flex min-h-[40vh] items-center justify-center text-sm text-[var(--text-muted)]">

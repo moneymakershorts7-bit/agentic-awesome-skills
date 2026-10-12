@@ -395,6 +395,22 @@ export function Home(): React.ReactElement {
               <h3>No skills found</h3>
               <p>Try a broader search or another category.</p>
               <button type="button" onClick={clearFilters}>Clear filters</button>
+              <div className="catalog-empty__suggestions" role="group" aria-label="Suggested search terms">
+                <span>Try searching:</span>
+                {['docker', 'security', 'mcp', 'react', 'git'].map((term) => (
+                  <button
+                    key={term}
+                    type="button"
+                    className="catalog-empty__chip"
+                    onClick={() => {
+                      clearFilters();
+                      setSearch(term);
+                    }}
+                  >
+                    {term}
+                  </button>
+                ))}
+              </div>
             </div>
           ) : (
             <VirtuosoGrid
