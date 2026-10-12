@@ -52,7 +52,7 @@ class PipelineIntegrityVerifier:
 
                 for line_no, line in enumerate(content.splitlines(), start=1):
                     line_str = line.strip()
-                    if line_str.startswith("#") or "uses:" not in line_str:
+                    if line_str.startswith("#") or not re.match(r"^(-\s+)?uses:\s+", line_str):
                         continue
 
                     # Ignore local composite actions and docker protocol

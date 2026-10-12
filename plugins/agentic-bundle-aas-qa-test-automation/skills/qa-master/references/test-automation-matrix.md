@@ -167,3 +167,80 @@ test('Homepage conforms to WCAG 2.2 AA accessibility standards', async ({ page }
   2. Mask dynamic elements: timestamps, random avatars, transaction IDs.
   3. Force subpixel font-smoothing and lock viewport dimensions.
   4. Always generate baselines in containerized headless Chromium to avoid cross-OS font rendering variations.
+
+---
+
+## 6. AI-Driven Hybrid E2E Testing (`tester-army/e2e` Pattern)
+
+Next-generation E2E testing marries high-level natural language agent guidance with deterministic, zero-cost CI replay and standard xUnit locators:
+
+```typescript
+import { test, expect } from 'e2e';
+
+test('New user completes workspace onboarding', async ({ app, agent, screen }) => {
+  await app.open('/onboarding');
+
+  // Agent drives high-level goal navigation
+  await agent.act('select the Growth plan and configure 5 team seats');
+
+  // Independent Judge verifies visual state without actor bias
+  await agent.assert('the order summary displays 5 seats with volume discount applied');
+
+  // Grounded xUnit assertion confirms deterministic DOM state
+  await expect(screen.getByRole('button', { name: /continue to payment/i })).toBeEnabled();
+});
+```
+
+### Deterministic Replay & Strict Cache Rules
+1. **Committed Replay Cache:** Record user journey steps into `.e2e/cache/` during development.
+2. **Deterministic CI Execution:** In CI, steps replay from cache without LLM model invocations at near-native Playwright execution speeds.
+3. **Strict Cache Enforcement (`--strict-cache`):** If a UI change invalidates the recorded steps, the CI gate fails immediately with `REPLAY_STALE` rather than silently spending tokens, notifying developers that re-recording is required.
+
+---
+
+## 7. Frontend Chaos Monkey & Resilience Testing (`marmelab/gremlins.js`)
+
+Simulate erratic real-user behavior (rapid clicking, furious typing, random scrolling) inside Playwright to expose memory leaks, race conditions, and uncaught exceptions:
+
+```typescript
+import { test, expect } from '@playwright/test';
+
+test('Checkout UI survives 1,000 chaotic user interactions without unhandled errors', async ({ page }) => {
+  const uncaughtErrors: string[] = [];
+  page.on('pageerror', (err) => uncaughtErrors.push(err.message));
+
+  await page.goto('/checkout');
+  await page.waitForLoadState('networkidle');
+
+  // Inject gremlins.js bundle
+  await page.addScriptTag({
+    url: 'https://unpkg.com/gremlins.js@2.2.0/dist/gremlins.min.js'
+  });
+
+  // Unleash a 1,000-action chaos horde
+  await page.evaluate(() => {
+    return new Promise((resolve) => {
+      // @ts-ignore
+      const horde = window.gremlins.createHorde({
+        species: [
+          // @ts-ignore
+          window.gremlins.species.clicker({ clickTypes: ['click'] }),
+          // @ts-ignore
+          window.gremlins.species.formFiller(),
+          // @ts-ignore
+          window.gremlins.species.scroller()
+        ],
+        strategies: [
+          // @ts-ignore
+          window.gremlins.strategies.allTogether({ nb: 1000, delay: 5 })
+        ]
+      });
+      horde.after(() => resolve(true));
+      horde.unleash();
+    });
+  });
+
+  // Verify zero critical client crashes
+  expect(uncaughtErrors.filter(e => !e.includes('ResizeObserver'))).toEqual([]);
+});
+```

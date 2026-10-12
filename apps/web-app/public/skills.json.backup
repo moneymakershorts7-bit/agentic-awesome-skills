@@ -26305,6 +26305,150 @@
     "license_source": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/main/LICENSE"
   },
   {
+    "id": "ffmpeg",
+    "path": "skills/ffmpeg",
+    "category": "video",
+    "name": "ffmpeg",
+    "description": "Provides FFmpeg commands and filter recipes for video automation pipelines - format conversion, resizing, trimming, audio mixing, subtitles and overlays, slideshows, thumbnails, and encoding tuning.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null,
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "n0an/ffmpeg-skill",
+    "license": "MIT"
+  },
+  {
+    "id": "ffmpeg-audio-processing",
+    "path": "skills/ffmpeg-audio-processing",
+    "category": "audio",
+    "name": "ffmpeg-audio-processing",
+    "description": "Extract, normalize, mix, and process audio tracks - audio manipulation and analysis",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null,
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "benchflow-ai/skillsbench",
+    "license": "MIT"
+  },
+  {
+    "id": "ffmpeg-format-conversion",
+    "path": "skills/ffmpeg-format-conversion",
+    "category": "video",
+    "name": "ffmpeg-format-conversion",
+    "description": "Convert media files between formats - video containers, audio formats, and codec transcoding",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null,
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "benchflow-ai/skillsbench",
+    "license": "MIT"
+  },
+  {
+    "id": "ffmpeg-media-info",
+    "path": "skills/ffmpeg-media-info",
+    "category": "video",
+    "name": "ffmpeg-media-info",
+    "description": "Analyze media file properties - duration, resolution, bitrate, codecs, and stream information",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null,
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "benchflow-ai/skillsbench",
+    "license": "MIT"
+  },
+  {
+    "id": "ffmpeg-video-editing",
+    "path": "skills/ffmpeg-video-editing",
+    "category": "video",
+    "name": "ffmpeg-video-editing",
+    "description": "Cut, trim, concatenate, and split video files - basic video editing operations",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null,
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "benchflow-ai/skillsbench",
+    "license": "MIT"
+  },
+  {
+    "id": "ffmpeg-video-filters",
+    "path": "skills/ffmpeg-video-filters",
+    "category": "video",
+    "name": "ffmpeg-video-filters",
+    "description": "Apply video filters - scale, crop, watermark, speed, blur, and visual effects",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null,
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "benchflow-ai/skillsbench",
+    "license": "MIT"
+  },
+  {
     "id": "ffuf-claude-skill",
     "path": "skills/ffuf-claude-skill",
     "category": "security",
@@ -26489,6 +26633,41 @@
       "shot-list",
       "prompting",
       "film"
+    ]
+  },
+  {
+    "id": "film-making-director",
+    "path": "skills/film-making-director",
+    "category": "media",
+    "name": "film-making-director",
+    "description": "Master filmmaker and creative director for cinema, documentary, and viral video. Directs visual blocking, camera grammar, lighting, pacing, and AI prompts.",
+    "risk": "safe",
+    "source": "https://github.com/agentic-awesome-skills/film-making-director",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "license": "MIT",
+    "tags": [
+      "filmmaking",
+      "cinema",
+      "director",
+      "documentary",
+      "cinematography",
+      "camera-direction",
+      "shot-list",
+      "visual-storytelling",
+      "youtube"
     ]
   },
   {
@@ -54615,6 +54794,28 @@
     "license_source": "https://github.com/zhaoxuya520/reverse-skill/blob/main/LICENSE"
   },
   {
+    "id": "reverse-engineering-super",
+    "path": "skills/reverse-engineering-super",
+    "category": "security-defensive",
+    "name": "reverse-engineering-super",
+    "description": "Unified master reverse engineering framework for compiled binaries (ELF/PE/Mach-O), .NET, DEX, WASM, stripped Go/Rust, protocols, and apps/APIs via Mimic SDK synthesis with automated triage.",
+    "risk": "safe",
+    "source": "official",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "reverse-proxy",
     "path": "skills/reverse-proxy",
     "category": "devops",
@@ -63713,6 +63914,30 @@
     "license_source": "https://github.com/LambdaTest/agent-skills/blob/main/LICENSE"
   },
   {
+    "id": "text-to-speech",
+    "path": "skills/text-to-speech",
+    "category": "audio",
+    "name": "text-to-speech",
+    "description": "Practical mastering steps for TTS audio: cleanup, loudness normalization, alignment, and delivery specs.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": null,
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "benchflow-ai/skillsbench",
+    "license": "MIT"
+  },
+  {
     "id": "textme",
     "path": "skills/sendblue/textme",
     "category": "automation",
@@ -66185,6 +66410,43 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "universal-video-editor",
+    "path": "skills/universal-video-editor",
+    "category": "media",
+    "name": "universal-video-editor",
+    "description": "Master multi-format film, documentary, and YouTube video editor. Directs timeline assembly, J/L cuts, rhythm pacing, sound design (-14 LUFS), and color grading.",
+    "risk": "safe",
+    "source": "https://github.com/agentic-awesome-skills/universal-video-editor",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "license": "MIT",
+    "tags": [
+      "video-editing",
+      "film-editor",
+      "documentary-editing",
+      "youtube-editor",
+      "nle",
+      "sound-design",
+      "color-grading",
+      "ffmpeg",
+      "davinci-resolve",
+      "premiere",
+      "remotion"
+    ]
   },
   {
     "id": "unreal-engine-cpp-pro",

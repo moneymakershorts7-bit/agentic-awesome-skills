@@ -13,6 +13,11 @@ on:
   schedule:
     - cron: '36 0 * * 6'
 
+permissions:
+  actions: read
+  contents: read
+  security-events: write
+
 jobs:
   lint:
     name: DevSkim

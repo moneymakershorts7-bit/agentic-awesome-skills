@@ -6,6 +6,7 @@ risk: safe
 source: community
 source_repo: n0an/ffmpeg-skill
 license: MIT
+date_added: "2026-10-09"
 tools: [claude, cursor, codex, antigravity, opencode, windsurf, jules, vscode]
 allowed-tools:
   - Bash

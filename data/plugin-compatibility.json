@@ -20300,6 +20300,120 @@
       "runtime_files": []
     },
     {
+      "id": "ffmpeg",
+      "path": "skills/ffmpeg",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "ffmpeg-audio-processing",
+      "path": "skills/ffmpeg-audio-processing",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "ffmpeg-format-conversion",
+      "path": "skills/ffmpeg-format-conversion",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "ffmpeg-media-info",
+      "path": "skills/ffmpeg-media-info",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "ffmpeg-video-editing",
+      "path": "skills/ffmpeg-video-editing",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "ffmpeg-video-filters",
+      "path": "skills/ffmpeg-video-filters",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "ffuf-claude-skill",
       "path": "skills/ffuf-claude-skill",
       "targets": {
@@ -20435,6 +20549,25 @@
     {
       "id": "film-crew",
       "path": "skills/film-crew",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "film-making-director",
+      "path": "skills/film-making-director",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -40942,6 +41075,25 @@
       "runtime_files": []
     },
     {
+      "id": "reverse-engineering-super",
+      "path": "skills/reverse-engineering-super",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "reverse-proxy",
       "path": "skills/reverse-proxy",
       "targets": {
@@ -47893,6 +48045,25 @@
       "runtime_files": []
     },
     {
+      "id": "text-to-speech",
+      "path": "skills/text-to-speech",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
       "id": "the-honoured-one",
       "path": "skills/the-honoured-one",
       "targets": {
@@ -49617,6 +49788,25 @@
     {
       "id": "unity-ecs-patterns",
       "path": "skills/unity-ecs-patterns",
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [],
+      "blocked_reasons": {
+        "codex": [],
+        "claude": []
+      },
+      "runtime_files": []
+    },
+    {
+      "id": "universal-video-editor",
+      "path": "skills/universal-video-editor",
       "targets": {
         "codex": "supported",
         "claude": "supported"
@@ -53191,10 +53381,10 @@
     }
   ],
   "summary": {
-    "total_skills": 2772,
+    "total_skills": 2782,
     "supported": {
-      "codex": 2680,
-      "claude": 2708
+      "codex": 2690,
+      "claude": 2718
     },
     "blocked": {
       "codex": 92,

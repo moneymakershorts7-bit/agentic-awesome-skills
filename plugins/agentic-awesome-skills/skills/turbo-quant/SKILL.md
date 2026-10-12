@@ -40,7 +40,7 @@ flowchart TD
 - Eliminates out-of-memory bottlenecks during long autonomous agent workflows.
 
 ### 2. Sub-Millisecond Skill & Tool Selection
-- Indexes the entire catalog of **2,771 AAS skills** into a compressed in-memory TurboQuant matrix.
+- Indexes the entire catalog of **2,772 AAS skills** into a compressed in-memory TurboQuant matrix.
 - Executes sub-millisecond semantic routing across the catalog with zero retrieval degradation.
 
 ### 3. Fast MCTS State-Space Reasoning & Trajectory Deduplication
