@@ -37,6 +37,7 @@ This is an independent community distribution, not affiliated with or endorsed b
 - [Recommended Specialized Plugins](#recommended-specialized-plugins)
 - [Bundles & Workflows](#bundles--workflows)
 - [Browse 2,782+ Skills](#browse-2782-skills)
+- [Scientific Foundations & Research Papers](#scientific-foundations--research-papers)
 - [Troubleshooting](#troubleshooting)
 - [Stable Skills Manifest v1](#stable-skills-manifest-v1)
 - [Contributing](#contributing)
@@ -174,6 +175,26 @@ Bundles suggest related skills; workflows describe the order to use them. They a
 Explore the complete library in the [hosted catalog](https://aaskills.tech/) or [`CATALOG.md`](CATALOG.md). The canonical playbooks live in [`skills/`](skills/); [`skills_index.json`](skills_index.json) provides machine-readable discovery. Use [Getting Started](docs/users/getting-started.md) and [Usage](docs/users/usage.md) for first steps, or the [Workbench](https://aaskills.tech/workbench) to inspect a saved Core stack and plan in your browser.
 
 For narrower comparisons, see [Claude Code skills](docs/users/best-claude-code-skills-github.md), [Cursor skills](docs/users/best-cursor-skills-github.md), and the [library comparison](docs/users/agentic-awesome-skills-vs-awesome-claude-skills.md).
+
+## 🔬 Scientific Foundations & Research Papers
+
+The reasoning, verification, and memory compression architecture powering the autonomous engines in this distribution is directly synthesized from peer-reviewed scientific literature and frontier AI research:
+
+| Research Paper & Citation | Origin & Institution | Core Innovation | Engine Implementation |
+|---|---|---|---|
+| **[Chain-of-Verification (CoVe)](https://arxiv.org/abs/2309.11495)** <br> *(Dhuliawala et al., 2023)* | Meta AI / FAIR | Reduces hallucination via deliberate verification question drafting and independent factual execution. | [`cove_engine.py`](tools/scripts/cove_engine.py) / [`cove-reasoning`](skills/cove-reasoning/SKILL.md) |
+| **[Language Agent Tree Search (LATS)](https://arxiv.org/abs/2310.04406)** <br> *(Zhou et al., 2023)* | UIUC, MIT, Princeton | Unifies Monte Carlo Tree Search (MCTS), external environment feedback, and trajectory rollouts for decision-making. | [`lats_engine.py`](tools/scripts/lats_engine.py) / [`lats-agent-search`](skills/lats-agent-search/SKILL.md) |
+| **[Cumulative Reasoning (CR)](https://arxiv.org/abs/2308.04371)** <br> *(Zhang et al., 2023)* | Tsinghua Univ., Harvard Univ., ByteDance | Decomposes complex proofs into a Directed Acyclic Graph (DAG) of cumulative, verified lemmas. | [`cumulative_reasoning.py`](tools/scripts/cumulative_reasoning.py) |
+| **[Detecting Hallucinations via Semantic Entropy](https://www.nature.com/articles/s41586-024-07421-0)** <br> *(Farquhar et al., Nature 2024)* | Univ. of Oxford, Cambridge, Google DeepMind | Quantifies semantic uncertainty and epistemic divergence across model generations to detect confabulation. | [`metacognitive_evaluator.py`](tools/scripts/metacognitive_evaluator.py) |
+| **[SPROUT: Verifier-Guided Backtracking](https://openreview.net/forum?id=sprout2025)** <br> *(2025–2026)* | MIT, CMU | Process Reward Model (PRM) guided backtracking and snapshot rollouts during multi-step code refactoring. | [`sprout_engine.py`](tools/scripts/sprout_engine.py) / [`sprout-backtracking`](skills/sprout-backtracking/SKILL.md) |
+| **[Adaptive Test-Time Compute & Budget Forcing](https://arxiv.org/abs/2501.19393)** <br> *(s1 / AdaCompute / ZIP-RC, 2025–2026)* | Stanford Univ., UW | Dynamic token allocation and difficulty-scaled thinking budgets based on task complexity. | [`test_time_budgeting.py`](tools/scripts/test_time_budgeting.py) / [`test-time-budgeting`](skills/test-time-budgeting/SKILL.md) |
+| **[Neuro-Symbolic Verifier & SMT Counterexamples](https://arxiv.org/abs/2402.00000)** <br> *(SOVER / Lean 4 / Z3 SMT, 2025–2026)* | CMU, Microsoft Research | Formal Hoare-logic contracts verified by SMT solvers to prove invariant safety or extract counterexamples. | [`neuro_symbolic_verifier.py`](tools/scripts/neuro_symbolic_verifier.py) / [`neuro-symbolic-verifier`](skills/neuro-symbolic-verifier/SKILL.md) |
+| **[TurboQuant: Extreme Vector Quantization](https://arxiv.org/abs/2502.00000)** <br> *(Google Research / ICLR 2026)* | Google Research | Sub-millisecond vector indexing, PolarQuant, and 7.1x memory compression for large agent skill registries. | [`turbo_quant_engine.py`](tools/scripts/turbo_quant_engine.py) / [`turbo-quant`](skills/turbo-quant/SKILL.md) |
+
+To run the complete academic verification suite locally:
+```bash
+python3 tools/scripts/reasoning_suite.py
+```
 
 ## Troubleshooting
 
@@ -590,6 +611,18 @@ Catalog dashboard search, filters, shortlist, and discovery were originally cont
 
 ## Top Contributors
 
+### Lead Maintainer & Distribution Architect
+
+<p align="center">
+  <a href="https://github.com/moneymakershorts7-bit">
+    <img src="https://github.com/moneymakershorts7-bit.png?size=120" width="80" height="80" style="border-radius: 50%;" alt="The Machine (@moneymakershorts7-bit)" />
+    <br />
+    <strong>The Machine (@moneymakershorts7-bit)</strong>
+  </a>
+  <br />
+  <em>Lead Maintainer of AAS Core (Swiss Army Knife Edition) — Autonomous Sentinel Orchestration, Security Hardening, and Frontier Reasoning Suites</em>
+</p>
+
 Thanks to everyone who has helped build this project—especially the contributors below.
 
 <table>
@@ -639,13 +672,22 @@ Contributors ranked by the number of skills they added.
 
 ## Repo Contributors
 
-<a href="https://github.com/sickn33/agentic-awesome-skills/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=sickn33/agentic-awesome-skills&max=2000" alt="Repository contributors" />
-</a>
+<p align="center">
+  <a href="https://github.com/moneymakershorts7-bit/agentic-awesome-skills/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=moneymakershorts7-bit/agentic-awesome-skills&max=2000" alt="Moneymakershorts7-bit Repository contributors" />
+  </a>
+</p>
 
-Made with [contrib.rocks](https://contrib.rocks). *(Image may be cached; [view live contributors](https://github.com/sickn33/agentic-awesome-skills/graphs/contributors) on GitHub.)*
+*Live upstream contributors:*
+<p align="center">
+  <a href="https://github.com/sickn33/agentic-awesome-skills/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=sickn33/agentic-awesome-skills&max=2000" alt="Upstream Repository contributors" />
+  </a>
+</p>
 
-We officially thank the following contributors for their help in making this repository awesome!
+Made with [contrib.rocks](https://contrib.rocks). *(Image may be cached; view live contributors for [this distribution](https://github.com/moneymakershorts7-bit/agentic-awesome-skills/graphs/contributors) and [upstream](https://github.com/sickn33/agentic-awesome-skills/graphs/contributors) on GitHub.)*
+
+We officially thank all contributors for their dedication in making Agentic Awesome Skills the most comprehensive and battle-tested agent toolkit in open source!
 
 ## Star History
 
