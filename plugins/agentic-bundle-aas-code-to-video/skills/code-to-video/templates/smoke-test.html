@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Code to Video Smoke Test</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: radial-gradient(circle at center, #111827 0%, #030712 100%);
+      color: #f9fafb;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      height: 1080px;
+      width: 1920px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .badge {
+      padding: 8px 24px;
+      background: rgba(99, 102, 241, 0.15);
+      border: 1px solid rgba(129, 140, 248, 0.4);
+      border-radius: 9999px;
+      color: #818cf8;
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      animation: fadeInDown 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    h1 {
+      font-size: 72px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #64748b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+      animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    p {
+      font-size: 28px;
+      color: #94a3b8;
+      max-width: 900px;
+      text-align: center;
+      line-height: 1.5;
+      animation: fadeIn 1.8s ease forwards;
+    }
+    .terminal {
+      margin-top: 48px;
+      width: 800px;
+      background: #090d16;
+      border: 1px solid #1e293b;
+      border-radius: 12px;
+      padding: 24px;
+      font-family: "SF Mono", Monaco, "Cascadia Code", monospace;
+      font-size: 20px;
+      color: #38bdf8;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      animation: zoomIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .dots {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .red { background: #ef4444; }
+    .yellow { background: #f59e0b; }
+    .green { background: #10b981; }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes zoomIn {
+      0% { opacity: 0; transform: scale(0.92); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="badge">Deterministic Motion Engine</div>
+  <h1>Code-to-Video Master Engine</h1>
+  <p>Deterministic 60fps frame rasterization powered by headless virtual time progression.</p>
+
+  <div class="terminal">
+    <div class="dots">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+    </div>
+    <code>$ code-to-video render --fps 60 --duration 2.5</code>
+  </div>
+</body>
+</html>

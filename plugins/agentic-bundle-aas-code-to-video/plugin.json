@@ -1,0 +1,8 @@
+{
+  "name": "agentic-bundle-aas-code-to-video",
+  "description": "Deterministic Code-to-Video and HTML-to-Video Master Skill Suite",
+  "version": "1.0.0",
+  "skills": [
+    "skills/code-to-video"
+  ]
+}
