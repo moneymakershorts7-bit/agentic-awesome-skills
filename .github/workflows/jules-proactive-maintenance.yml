@@ -47,7 +47,7 @@ jobs:
           TODAY=$(date +%Y-%m-%d)
           PROMPT="Act as the Principal Maintainer for ${{ github.repository }}. Perform a comprehensive repository maintenance sweep:
           1. Review root AGENTS.md directives and coding standards.
-          2. Inspect skills/ and tools/ for unresolved #TODO comments, dead reference links, and optimization opportunities.
+          2. Inspect skills/ and tools/ for unresolved pending action item comments, dead reference links, and optimization opportunities.
           3. Validate that all 2,764+ skills conform strictly to frontmatter standards.
           4. Run \`npm run validate:strict\` and verify test suites pass.
           5. Propose clean, atomic improvements on a PR titled 'chore(maintenance): automated Jules repository sweep [$TODAY]'."
