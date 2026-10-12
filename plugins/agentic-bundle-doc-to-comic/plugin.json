@@ -1,0 +1,8 @@
+{
+  "name": "agentic-bundle-doc-to-comic",
+  "description": "Transforms books, novels, academic papers, and technical documents into episodic, sequentially structured comic books and historietas using multimodal visual grammar.",
+  "version": "1.0.0",
+  "skills": [
+    "doc-to-comic"
+  ]
+}
