@@ -263,9 +263,10 @@ class SecSDLCAuditor:
                 if perm_regex.search(content):
                     has_permissions += 1
                 for line in content.splitlines():
-                    if ("uses:" in line and not line.strip().startswith("#")
-                            and "./" not in line and "docker://" not in line
-                            and not sha_regex.search(line)):
+                    line_s = line.strip()
+                    if (re.match(r"^(-\s+)?uses:\s+", line_s) and not line_s.startswith("#")
+                            and "./" not in line_s and "docker://" not in line_s
+                            and not sha_regex.search(line_s)):
                         unpinned += 1
             except OSError:
                 pass
@@ -305,6 +306,8 @@ class SecSDLCAuditor:
         sensitive_pattern = re.compile(r"^\.e" + r"nv(?:\..+)?$|^id_[a-z0-9]+$")
         exposed = []
         for p in self.indexed_files:
+            if p.name.endswith(".example") or p.name.endswith(".sample") or p.name.endswith(".template"):
+                continue
             if sensitive_pattern.match(p.name) or p.suffix in dangerous_suffixes:
                 exposed.append(str(p.relative_to(self.root)))
 

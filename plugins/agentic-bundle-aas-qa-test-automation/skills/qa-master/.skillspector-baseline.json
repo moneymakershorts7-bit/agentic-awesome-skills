@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "bea89afc65d606c1d9add1a63259eaeb5bd162db7a759ebe1e2ade518493d0da",
+      "rule_id": "AST4",
+      "file": "scripts/flaky_detector.py",
+      "reason": "Legitimate local test execution runner for flaky test variance detection"
+    },
+    {
+      "hash": "8d8f74275bf69914fb31b14eb7cf93cce21d9292e5edfafac98a94eb98db6dd9",
+      "rule_id": "AST4",
+      "file": "scripts/mutation_check.py",
+      "reason": "Legitimate local test execution runner for mutation score index validation"
+    },
+    {
+      "hash": "d5c7a817db48c1b852c92acf214c029c46cf7916a4c1973d734d45d2ccc4fa85",
+      "rule_id": "AST4",
+      "file": "scripts/qa_orchestrator.py",
+      "reason": "Legitimate local python test framework version probe"
+    },
+    {
+      "hash": "5dbb8e3f03ccbe620aaa18ed7cbbd582048ea36b60fd7dbd804101791c2f2a15",
+      "rule_id": "AST4",
+      "file": "scripts/qa_orchestrator.py",
+      "reason": "Legitimate local test suite execution across detected frameworks"
+    }
+  ]
+}
