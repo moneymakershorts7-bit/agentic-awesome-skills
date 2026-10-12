@@ -102,9 +102,26 @@ Detrás de cámaras... los gestos en los entrenamientos dicen otra cosa.
 ¿Tú qué opinas? ¡Déjalo en los comentarios y suscríbete!
 ```
 
+### Automated Locution & Diction Compiler (`scripts/locution_processor.py`)
+Converts raw, dry prose into spoken phonic breath groups with number expansion, acronym phonetization, and multi-engine export:
+
+```bash
+python3 ~/.agents/skills/edge-tts-narrator/scripts/locution_processor.py \
+  --text "En 2026, el Dr. García reveló que el 45% de los fondos fueron transferidos al FBI." \
+  --engine edge_tts \
+  --emotion HYPE \
+  --voice es-MX-JorgeNeural
+```
+
 ---
 
 ## 📚 References & Deep Dives
 
-- [prosody_matrix.md](references/prosody_matrix.md): Complete voice catalog, rate/pitch coordinates, and international voice pairings.
-- [cadence_formatting_rules.md](references/cadence_formatting_rules.md): In-depth linguistic and acoustic trigger guidelines for high-retention narration.
+- **Master Locution & Diction Handbook:** [locucion_diccion_master_guide.md](references/locucion_diccion_master_guide.md) — The vocal coach blueprint: breath phrasing (5–8 words), intonation arches (anticadence/suspension/cadence), and phonetic normalization.
+- **Edge-TTS Deep Engine Spec:** [edge_tts_deep_engine_guide.md](references/edge_tts_deep_engine_guide.md) — Protocol internals, safe rate/pitch boundaries, curated elite voices, silence padding, and EBU R128 (-14.0 LUFS) mastering.
+- **Kokoro-82M Local Neural Guide:** [model_guides/kokoro_tts_guide.md](references/model_guides/kokoro_tts_guide.md) — Real-time CPU inference, StyleTTS 2 architecture, IPA phonemes, and voice tensor blending.
+- **ElevenLabs v2 & v3 Production Guide:** [model_guides/elevenlabs_v2_v3_guide.md](references/model_guides/elevenlabs_v2_v3_guide.md) — Stability vs. emotion trade-offs, similarity sliders, style exaggeration, and audio prompt tags.
+- **Google Gemini 3.8 Flash TTS Guide:** [model_guides/gemini_3_8_tts_guide.md](references/model_guides/gemini_3_8_tts_guide.md) — Strict scope partitioning, `speech_metadata.style`, inline non-speech tags (`<gasp>`, `<sigh>`), and multi-speaker overlapping backchannels.
+- **ChatTTS Conversational Disfluency Guide:** [model_guides/chattts_conversational_guide.md](references/model_guides/chattts_conversational_guide.md) — Conversational laughter tokens (`[laugh]`), micro-breaks (`[break]`), oral fillers, and seed stability.
+- **Acoustic Cadence & Punctuation Rules:** [cadence_formatting_rules.md](references/cadence_formatting_rules.md) — Punctuation-as-acoustic-code triggers.
+- **Prosody Modulation Matrix:** [prosody_matrix.md](references/prosody_matrix.md) — Exact numerical rate/pitch/volume presets.
