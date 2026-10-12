@@ -319,7 +319,8 @@ const main = async () => {
       try {
         reply(200, { ok: true, result: await handler(parsed.args ?? {}) })
       } catch (e) {
-        reply(200, { ok: false, error: e?.message ?? String(e) })
+        log(`Error executing ${parsed.command}: ${e?.stack || e}`)
+        reply(200, { ok: false, error: e?.message || 'Internal command execution error' })
       }
     })
   })
