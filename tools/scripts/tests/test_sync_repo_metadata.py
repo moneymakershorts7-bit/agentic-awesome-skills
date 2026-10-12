@@ -173,7 +173,13 @@ The 1,273+ reusable `SKILL.md` playbooks, specialized plugins, bundles, workflow
             self.assertNotIn("1,1", jetski_cortex)
 
     def test_compact_readme_sync_keeps_video_and_updates_all_counts(self):
-        current = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+        base_readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+        current = (
+            base_readme
+            + "\nAgentic Awesome Skills is a library of 2,400+ installable skills.\n"
+            + "--package=agentic-awesome-skills@18.0.0\n"
+            + "--release 18.0.0\n"
+        )
         metadata = {
             "version": "19.1.0",
             "core_included": True,
