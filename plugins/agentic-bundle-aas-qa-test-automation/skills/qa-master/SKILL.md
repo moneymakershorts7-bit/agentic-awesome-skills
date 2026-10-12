@@ -168,3 +168,4 @@ python3 ~/.agents/skills/qa-master/scripts/qa_reporter.py --qa-results reports/q
 - [`exploratory-heuristics-and-oracles.md`](references/exploratory-heuristics-and-oracles.md): SFDIPOT product breakdown, FEW HICCUPPS oracles, defect severity taxonomy.
 - [`decimo-hombre-adversarial.md`](references/decimo-hombre-adversarial.md): Adversarial stress-testing, the 5 false QA illusions, and pre-AAR scenarios.
 - [`unified-test-report-schema.md`](references/unified-test-report-schema.md): Machine-readable JSON schema specification for CI/CD gates.
+- [`5-investigation-angles-lifecycle-qa.md`](references/5-investigation-angles-lifecycle-qa.md): 5 strategic investigation angles across Plan, Refine, Test, Fix, Implement, and Install.
