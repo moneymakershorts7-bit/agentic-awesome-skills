@@ -1,0 +1,29 @@
+# SkillSpector baseline — findings listed here are suppressed on future scans.
+# Edit 'reason' fields and add glob 'rules' as needed. See docs/SUPPRESSION.md.
+version: 2
+scanner_version: 2.12.0
+rules:
+- rule_id: RA2
+  file: references/native-and-artifacts.md
+  reason: Apple property list (plist) metadata format documentation, not persistence mechanism
+fingerprints:
+- hash: sha256:6fb7624b70db11aa4a59c73f76d9defc4c72a46492f5be70d0d361d66a43224b
+  rule_id: P9
+  file: references/connection-and-recovery.md
+  reason: Accepted finding (auto-generated baseline)
+- hash: sha256:0dc8c52cff7060eaf8763cab81625f7fdd2b431fa027cce81ef9880d0e94046a
+  rule_id: P9
+  file: references/connection-and-recovery.md
+  reason: Accepted finding (auto-generated baseline)
+- hash: sha256:a3a6a04b4210301218fbf8b6147333dbd6496d9a4e43c047c9dd1af9181a6239
+  rule_id: P9
+  file: references/connection-and-recovery.md
+  reason: Accepted finding (auto-generated baseline)
+- hash: sha256:2797594aa84078b39950e2c4cf114fd521d08d2b37e21903c079d8b7c52c8061
+  rule_id: RA2
+  file: references/native-and-artifacts.md
+  reason: Accepted finding (auto-generated baseline)
+- hash: sha256:00f0374158ab883cdd01e9c39423019b3536b9cb0039deb662b7af52df5bb7de
+  rule_id: EA2
+  file: references/native-and-artifacts.md
+  reason: Accepted finding (auto-generated baseline)
