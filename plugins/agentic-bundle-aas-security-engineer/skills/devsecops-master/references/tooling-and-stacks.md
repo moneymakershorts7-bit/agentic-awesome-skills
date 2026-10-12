@@ -105,3 +105,36 @@ The audit engine examines project root markers to automatically activate the rel
   ```bash
   skillspector scan --path ./skills --format sarif --output skillspector.sarif
   ```
+
+### 2.8 Host, Cluster & Runtime Auditing (from Awesome DevSecOps)
+* **kube-bench (CIS Kubernetes Benchmark):**
+  ```bash
+  kube-bench run --targets master,node --json | jq .
+  ```
+* **kube-hunter (Kubernetes Penetration Testing):**
+  ```bash
+  kube-hunter --remote <cluster-ip>
+  ```
+* **osquery (SQL-powered endpoint telemetry):**
+  ```bash
+  osqueryi --json "SELECT * FROM listening_ports WHERE port IN (22, 80, 443);"
+  ```
+* **Lynis (Host & System Hardening Auditing):**
+  ```bash
+  lynis audit system --quick
+  ```
+
+### 2.9 Threat Modeling Taxonomies & Tools
+* **OWASP Threat Dragon / Microsoft Threat Modeling Tool:** Desktop and web-based DFD threat modeling adhering to STRIDE.
+* **CAPEC (Common Attack Pattern Enumerations and Classifications):** Taxonomy mapping threat actions to weaknesses (CWE) and CVEs.
+* **IriusRisk & SeaSponge:** Automated architecture diagram-to-threat engines.
+
+### 2.10 Secret Management & Dynamic Brokers
+* **HashiCorp Vault / Mozilla SOPS:**
+  - Dynamic, time-limited credentials per build runner (AWS STS, GCP IAM Tokens, Vault AppRole).
+  - Encrypted file-level storage with age/PGP/KMS envelopes for GitOps repositories.
+
+### 2.11 Security Automation & ChatOps (SOAR)
+* **StackStorm (Event-driven remediation):** Automatically isolate compromised containers upon alerts.
+* **Demisto / Shuffle:** Open-source SOAR pipelines for triage and notification.
+* **Alerta / Elastalert:** Forward critical pipeline gate failures directly to squad incident channels.

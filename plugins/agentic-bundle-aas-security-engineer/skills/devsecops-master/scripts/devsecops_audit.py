@@ -70,6 +70,7 @@ class SecSDLCAuditor:
             "Terraform/IaC": [".tf", "terragrunt.hcl"],
             "Kubernetes": ["Chart.yaml"],
             "Agent Skill": ["SKILL.md"],
+            "Threat Model": ["threat-model.md", "THREAT_MODEL.md", "threat-model.json", "threat-dragon.json"],
         }
 
         file_names = {p.name for p in self.indexed_files}
