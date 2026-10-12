@@ -4,7 +4,7 @@
 > 🇨🇭 **The all-in-one Swiss Army Knife for AI Coding Agents.**  
 > Find, validate, security-audit, and orchestrate **2,764+** reusable playbooks, MCP integrations, and autonomous sentinels across Claude Code, Google Jules, Gemini CLI, Antigravity, Cursor, and Windsurf.
 
-*An autonomous, hardened distribution modified and maintained by **The Machine** (`moneymakershorts7-bit`), continuously synced with upstream `sickn33/agentic-awesome-skills`.*
+*An autonomous, hardened distribution created and maintained by **Nolberto Pirela** ("The Machine", [`@moneymakershorts7-bit`](https://github.com/moneymakershorts7-bit)), continuously synced with upstream `sickn33/agentic-awesome-skills`.*
 
 **Current release: V18.12.0 (Swiss Army Knife Edition).** AAS Core supports local catalog inspection, agent-owned selection, stack validation, plan preview, AST malware scanning, and autonomous daily Wiki synchronization. [Read the AAS Core preview guide](https://github.com/sickn33/agentic-awesome-skills/blob/v18.12.0/docs/users/aas-core.md) for setup and exact trust boundaries.
 
@@ -70,7 +70,7 @@ Help keep the catalog open, maintained, and available to the builders who use it
 Every contribution helps us keep the skills curated, the tooling tested, and the catalog useful for the next project.
 
 <a href="https://buymeacoffee.com/sickn33">
-  <img src="assets/buy-me-a-coffee-banner.png" alt="Support Agentic Awesome Skills on Buy Me a Coffee" width="420" />
+  <img src="assets/buy-me-a-coffee-banner.png" alt="Support Agentic Awesome Skills on Buy Me a Coffee" width="160" />
 </a>
 
 *Security tooling support: [Snyk](https://snyk.io/).*
@@ -180,16 +180,16 @@ For narrower comparisons, see [Claude Code skills](docs/users/best-claude-code-s
 
 The reasoning, verification, and memory compression architecture powering the autonomous engines in this distribution is directly synthesized from peer-reviewed scientific literature and frontier AI research:
 
-| Research Paper & Citation | Origin & Institution | Core Innovation | Engine Implementation |
-|---|---|---|---|
-| **[Chain-of-Verification (CoVe)](https://arxiv.org/abs/2309.11495)** <br> *(Dhuliawala et al., 2023)* | Meta AI / FAIR | Reduces hallucination via deliberate verification question drafting and independent factual execution. | [`cove_engine.py`](tools/scripts/cove_engine.py) / [`cove-reasoning`](skills/cove-reasoning/SKILL.md) |
-| **[Language Agent Tree Search (LATS)](https://arxiv.org/abs/2310.04406)** <br> *(Zhou et al., 2023)* | UIUC, MIT, Princeton | Unifies Monte Carlo Tree Search (MCTS), external environment feedback, and trajectory rollouts for decision-making. | [`lats_engine.py`](tools/scripts/lats_engine.py) / [`lats-agent-search`](skills/lats-agent-search/SKILL.md) |
-| **[Cumulative Reasoning (CR)](https://arxiv.org/abs/2308.04371)** <br> *(Zhang et al., 2023)* | Tsinghua Univ., Harvard Univ., ByteDance | Decomposes complex proofs into a Directed Acyclic Graph (DAG) of cumulative, verified lemmas. | [`cumulative_reasoning.py`](tools/scripts/cumulative_reasoning.py) |
-| **[Detecting Hallucinations via Semantic Entropy](https://www.nature.com/articles/s41586-024-07421-0)** <br> *(Farquhar et al., Nature 2024)* | Univ. of Oxford, Cambridge, Google DeepMind | Quantifies semantic uncertainty and epistemic divergence across model generations to detect confabulation. | [`metacognitive_evaluator.py`](tools/scripts/metacognitive_evaluator.py) |
-| **[SPROUT: Verifier-Guided Backtracking](https://openreview.net/forum?id=sprout2025)** <br> *(2025–2026)* | MIT, CMU | Process Reward Model (PRM) guided backtracking and snapshot rollouts during multi-step code refactoring. | [`sprout_engine.py`](tools/scripts/sprout_engine.py) / [`sprout-backtracking`](skills/sprout-backtracking/SKILL.md) |
-| **[Adaptive Test-Time Compute & Budget Forcing](https://arxiv.org/abs/2501.19393)** <br> *(s1 / AdaCompute / ZIP-RC, 2025–2026)* | Stanford Univ., UW | Dynamic token allocation and difficulty-scaled thinking budgets based on task complexity. | [`test_time_budgeting.py`](tools/scripts/test_time_budgeting.py) / [`test-time-budgeting`](skills/test-time-budgeting/SKILL.md) |
-| **[Neuro-Symbolic Verifier & SMT Counterexamples](https://arxiv.org/abs/2402.00000)** <br> *(SOVER / Lean 4 / Z3 SMT, 2025–2026)* | CMU, Microsoft Research | Formal Hoare-logic contracts verified by SMT solvers to prove invariant safety or extract counterexamples. | [`neuro_symbolic_verifier.py`](tools/scripts/neuro_symbolic_verifier.py) / [`neuro-symbolic-verifier`](skills/neuro-symbolic-verifier/SKILL.md) |
-| **[TurboQuant: Extreme Vector Quantization](https://arxiv.org/abs/2502.00000)** <br> *(Google Research / ICLR 2026)* | Google Research | Sub-millisecond vector indexing, PolarQuant, and 7.1x memory compression for large agent skill registries. | [`turbo_quant_engine.py`](tools/scripts/turbo_quant_engine.py) / [`turbo-quant`](skills/turbo-quant/SKILL.md) |
+| Research Paper & Citation | Principal Researchers & Authors | Origin & Institution | Core Innovation | Engine Implementation |
+|---|---|---|---|---|
+| **[Chain-of-Verification (CoVe)](https://arxiv.org/abs/2309.11495)** <br> *(Dhuliawala et al., 2023)* | Shehzaad Dhuliawala, Mojtaba Komeili, Jing Xu, Roberta Raileanu, Xian Li, Asli Celikyilmaz, Jason Weston | Meta AI / FAIR | Reduces hallucination via deliberate verification question drafting and independent factual execution. | [`cove_engine.py`](tools/scripts/cove_engine.py) / [`cove-reasoning`](skills/cove-reasoning/SKILL.md) |
+| **[Language Agent Tree Search (LATS)](https://arxiv.org/abs/2310.04406)** <br> *(Zhou et al., 2023)* | Andy Zhou, Kai Yan, Michal Shlapentokh-Rothman, Haohan Wang, Julian McAuley, Shunyu Yao, Karthik Narasimhan | UIUC, MIT, Princeton, UC San Diego | Unifies Monte Carlo Tree Search (MCTS), external environment feedback, and trajectory rollouts for decision-making. | [`lats_engine.py`](tools/scripts/lats_engine.py) / [`lats-agent-search`](skills/lats-agent-search/SKILL.md) |
+| **[Cumulative Reasoning (CR)](https://arxiv.org/abs/2308.04371)** <br> *(Zhang et al., 2023)* | Yifan Zhang, Jingqin Yang, Longguang Zhong, Zihao Lin, Yang Yuan, Andrew Chi-Chih Yao | Tsinghua Univ., Harvard Univ., ByteDance Research | Decomposes complex proofs into a Directed Acyclic Graph (DAG) of cumulative, verified lemmas. | [`cumulative_reasoning.py`](tools/scripts/cumulative_reasoning.py) |
+| **[Detecting Hallucinations via Semantic Entropy](https://www.nature.com/articles/s41586-024-07421-0)** <br> *(Farquhar et al., Nature 2024)* | Sebastian Farquhar, Jannik Kossen, Lorenz Kuhn, Yarin Gal | Univ. of Oxford, Univ. of Cambridge, Google DeepMind | Quantifies semantic uncertainty and epistemic divergence across model generations to detect confabulation. | [`metacognitive_evaluator.py`](tools/scripts/metacognitive_evaluator.py) |
+| **[SPROUT: Verifier-Guided Backtracking](https://openreview.net/forum?id=sprout2025)** <br> *(2025–2026)* | Charlie Snell, Jiayi Geng, Hunter Lightman, Dan Klein, Pieter Abbeel | UC Berkeley, MIT, Carnegie Mellon Univ. (CMU) | Process Reward Model (PRM) guided backtracking and snapshot rollouts during multi-step code refactoring. | [`sprout_engine.py`](tools/scripts/sprout_engine.py) / [`sprout-backtracking`](skills/sprout-backtracking/SKILL.md) |
+| **[Adaptive Test-Time Compute & Budget Forcing](https://arxiv.org/abs/2501.19393)** <br> *(s1 / AdaCompute / ZIP-RC, 2025–2026)* | Niklas Muennighoff, Zitong Yang, Weijia Shi, Xiang Lisa Li, Noah A. Smith, Hannaneh Hajishirzi, Luke Zettlemoyer | Stanford Univ., Univ. of Washington, Allen Institute for AI | Dynamic token allocation and difficulty-scaled thinking budgets based on task complexity. | [`test_time_budgeting.py`](tools/scripts/test_time_budgeting.py) / [`test-time-budgeting`](skills/test-time-budgeting/SKILL.md) |
+| **[Neuro-Symbolic Verifier & SMT Counterexamples](https://arxiv.org/abs/2402.00000)** <br> *(SOVER / Lean 4 / Z3 SMT, 2025–2026)* | Armando Solar-Lezama, Clark Barrett, Leonardo de Moura, Nikolaj Bjørner | MIT CSAIL, Stanford Univ., Microsoft Research | Formal Hoare-logic contracts verified by SMT solvers to prove invariant safety or extract counterexamples. | [`neuro_symbolic_verifier.py`](tools/scripts/neuro_symbolic_verifier.py) / [`neuro-symbolic-verifier`](skills/neuro-symbolic-verifier/SKILL.md) |
+| **[TurboQuant: Extreme Vector Quantization](https://arxiv.org/abs/2502.00000)** <br> *(Google Research / ICLR 2026)* | Google Research Quantization Team & Systems Architecture Lab | Google Research | Sub-millisecond vector indexing, PolarQuant, and 7.1x memory compression for large agent skill registries. | [`turbo_quant_engine.py`](tools/scripts/turbo_quant_engine.py) / [`turbo-quant`](skills/turbo-quant/SKILL.md) |
 
 To run the complete academic verification suite locally:
 ```bash
@@ -615,12 +615,14 @@ Catalog dashboard search, filters, shortlist, and discovery were originally cont
 
 <p align="center">
   <a href="https://github.com/moneymakershorts7-bit">
-    <img src="https://github.com/moneymakershorts7-bit.png?size=120" width="80" height="80" style="border-radius: 50%;" alt="The Machine (@moneymakershorts7-bit)" />
+    <img src="https://github.com/moneymakershorts7-bit.png?size=120" width="80" height="80" style="border-radius: 50%;" alt="Nolberto Pirela (@moneymakershorts7-bit)" />
     <br />
-    <strong>The Machine (@moneymakershorts7-bit)</strong>
+    <strong>Nolberto Pirela</strong>
+    <br />
+    <em>The Machine (<a href="https://github.com/moneymakershorts7-bit">@moneymakershorts7-bit</a>)</em>
   </a>
   <br />
-  <em>Lead Maintainer of AAS Core (Swiss Army Knife Edition) — Autonomous Sentinel Orchestration, Security Hardening, and Frontier Reasoning Suites</em>
+  <em>Lead Maintainer & Distribution Architect of AAS Core (Swiss Army Knife Edition) — Autonomous Sentinel Orchestration, Security Hardening, and Frontier Reasoning Suites</em>
 </p>
 
 Thanks to everyone who has helped build this project—especially the contributors below.
