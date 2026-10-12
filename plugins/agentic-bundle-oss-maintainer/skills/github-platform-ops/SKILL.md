@@ -1,6 +1,6 @@
 ---
 name: github-platform-ops
-description: Master GitHub Repository Settings, Modern Rulesets, Environments, OpenSSF Scorecard Hardening, Actions, and Git Plumbing via gh CLI, Git, and REST/GraphQL APIs.
+description: Master GitHub Repository Settings, Modern Rulesets, Deployment Environments, Ephemeral Previews, CI/CD Testing Frameworks, Actions Governance, and Git Plumbing via gh CLI, Git, and REST/GraphQL APIs.
 license: MIT
 risk: safe
 source: internal
@@ -11,58 +11,120 @@ allowed-tools:
   - grep
 ---
 
-# GitHub Platform Operations & Git Mastery Engine
+# GitHub Platform Operations & CI/CD Environment Mastery Engine
 
-Complete operational manual and declarative configuration suite for GitHub repository administration, branch governance, supply chain security, and advanced Git plumbing.
+Complete operational manual and declarative configuration suite for GitHub repository administration, CI/CD environment creation, pipeline testing frameworks, branch governance, supply chain security, and advanced Git plumbing.
 
 ---
 
 ## When to Use
 
 Use this skill when you need programmatic, deterministic control over:
-1. **Repository Settings & Merge Policies:** Default branches, visibility, issues/wiki/discussions toggles, squash/merge/rebase configurations, commit title/body formatting, and auto-merge automation.
-2. **Branch & Tag Rulesets (Modern GitHub Governance):** Enforcing linear history, commit signatures (GPG/SSH), pull request approval gates (code owners, stale dismissal, thread resolution), strict status checks, and release tag immutability.
-3. **Supply Chain Security & OpenSSF Scorecard:** Token permissions (`permissions: read-all`), Dependabot alerts, Secret Scanning with Push Protection, CodeQL default setup, and Private Vulnerability Reporting (PVR).
-4. **Deploy Environments & Secrets:** Environments, protection rules (reviewers, wait timers, branch policies), and NaCl-encrypted secrets/variables across environment, repository, and organization scopes.
-5. **Actions Governance & CI/CD Debugging:** Allowed actions restrictions, fork pull request policies, runner groups, and targeted log debugging (`gh run view --log-failed`).
-6. **Advanced Git Internals & Plumbing:** Scripting with `git hash-object`/`write-tree`/`commit-tree`/`update-ref`, parallel development with `git worktree`, conflict resolution caching with `git rerere`, and binary search debugging with `git bisect run`.
+1. **CI/CD Environments & Deployment Protection:** Creating environments, setting manual approvals (`reviewers`), canary delays (`wait_timer`), deployment branch policies, isolated secrets/variables, and tracking deployments via the Deployments API.
+2. **Ephemeral / Preview Environments:** Automating isolated PR preview stacks, emitting native GitHub Deployment Status events (`in_progress`, `success`, `inactive`), and triggering teardown hooks on PR closure.
+3. **CI/CD Testing & Local Simulation:** Local execution with `act`, programmable pipelines with Dagger/Earthly, test matrix pruning, Vitest/Jest test sharding, and security linting (`actionlint`, `shellcheck`, `zizmor`).
+4. **Repository Settings & Merge Strategies:** Default branches, visibility, issues/wiki/discussions toggles, squash/merge/rebase configurations, commit title/body formatting, and auto-merge automation.
+5. **Branch & Tag Rulesets (Modern Governance):** Enforcing linear history, commit signatures (GPG/SSH), pull request approval gates (code owners, stale dismissal, thread resolution), strict status checks, and release tag immutability.
+6. **Actions Governance & Infrastructure Administration:** Actions Runner Groups, ephemeral autoscaling (ARC), workflow token permissions (`permissions: read-all`), Actions cache inspection/purging (`/actions/caches`), Pages configuration, and Autolink ticketing integrations.
+7. **Advanced Git Internals & Plumbing:** Scripting with `git hash-object`/`write-tree`/`commit-tree`/`update-ref`, parallel development with `git worktree`, conflict resolution caching with `git rerere`, and binary search debugging with `git bisect run`.
 
 ---
 
-## 1. Repository Settings & Merge Strategies
+## 1. CI/CD Deployment Environments & Protection Rules
 
-Execute declarative configuration using `gh repo edit` or direct REST API payloads (`gh api -X PATCH /repos/:owner/:repo`):
+Provision environments and enforce deployment gates using the REST API:
 
 ```bash
-# 1. Apply standardized PR and merge policies
-gh repo edit :owner/:repo \
-  --enable-squash-merge=true \
-  --enable-merge-commit=false \
-  --enable-rebase-merge=false \
-  --squash-merge-commit-message pr-title-description \
-  --enable-auto-merge=true \
-  --delete-branch-on-merge=true \
-  --allow-update-branch=true
+# 1. Create protected environment with required reviewer and wait timer
+gh api -X PUT /repos/:owner/:repo/environments/production --input - << 'EOF'
+{
+  "wait_timer": 15,
+  "prevent_self_review": true,
+  "reviewers": [
+    { "type": "User", "id": 272625412 }
+  ],
+  "deployment_branch_policy": {
+    "protected_branches": false,
+    "custom_branch_policies": true
+  }
+}
+EOF
 
-# 2. Audit current configuration posture
-gh api /repos/:owner/:repo --jq '{
-  name: .name,
-  visibility: .visibility,
-  default_branch: .default_branch,
-  features: { issues: .has_issues, wiki: .has_wiki, discussions: .has_discussions },
-  pr_policy: { squash: .allow_squash_merge, merge: .allow_merge_commit, rebase: .allow_rebase_merge, auto_merge: .allow_auto_merge, delete_on_merge: .delete_branch_on_merge }
-}'
+# 2. Add custom branch and tag deployment policies
+gh api -X POST /repos/:owner/:repo/environments/production/deployment-branch-policies -f name="main" -f type="branch"
+gh api -X POST /repos/:owner/:repo/environments/production/deployment-branch-policies -f name="v*.*.*" -f type="tag"
+
+# 3. Manage environment-scoped secrets and variables
+gh secret set DB_PASSWORD --env production --body "$DB_PASSWORD_VAL"
+gh variable set API_BASE_URL --env production --body "https://api.internal"
 ```
 
-Detailed payloads and options: [references/repo_settings_matrix.md](references/repo_settings_matrix.md).
+Detailed payloads and options: [references/environments_guide.md](references/environments_guide.md).
 
 ---
 
-## 2. Modern Branch & Tag Rulesets
+## 2. Ephemeral Preview Environments & GitHub Deployments API
 
-Rulesets replace legacy branch protection with declarative, composable policy objects.
+Manage the lifecycle of temporary PR environments directly through GitHub's Deployments API:
 
-### Production Trunk Ruleset (SLSA Level 2+ Baseline)
+```bash
+# 1. Register an ephemeral deployment for PR #42
+gh api -X POST /repos/:owner/:repo/deployments --input - << 'EOF'
+{
+  "ref": "refs/pull/42/head",
+  "task": "deploy",
+  "auto_merge": false,
+  "environment": "preview-pr-42",
+  "transient_environment": true,
+  "production_environment": false
+}
+EOF
+
+# 2. Publish deployment success with live preview URL
+gh api -X POST /repos/:owner/:repo/deployments/:deployment_id/statuses --input - << 'EOF'
+{
+  "state": "success",
+  "environment_url": "https://preview-pr-42.apps.domain.com",
+  "auto_inactive": true
+}
+EOF
+
+# 3. Teardown on PR closure (mark inactive & delete environment)
+gh api -X POST /repos/:owner/:repo/deployments/:deployment_id/statuses -f state="inactive"
+gh api -X DELETE /repos/:owner/:repo/environments/preview-pr-42
+```
+
+Complete workflow implementations: [references/ephemeral_preview_environments.md](references/ephemeral_preview_environments.md).
+
+---
+
+## 3. CI/CD Testing Frameworks, Local Emulation & Linters
+
+Run deterministic local pipelines and static security verification:
+
+```bash
+# 1. Local GitHub Actions simulation with act
+act push -j test
+act pull_request -s GITHUB_TOKEN="mock_token"
+
+# 2. Pipeline syntax, shell and security audits
+actionlint .github/workflows/*.yml
+shellcheck -s bash .github/scripts/*.sh
+zizmor .github/workflows/
+
+# 3. Cache inspection and cleanup via gh API
+gh api /repos/:owner/:repo/actions/caches --jq '.actions_caches[] | {id: .id, key: .key, size_mb: (.size_in_bytes / 1048576 | floor)}'
+gh api -X DELETE /repos/:owner/:repo/actions/caches/:cache_id
+```
+
+Matrix sharding and caching guides: [references/cicd_testing_frameworks.md](references/cicd_testing_frameworks.md).
+
+---
+
+## 4. Modern Branch & Tag Rulesets
+
+Deploy composable, declarative rulesets across branches and release tags:
+
 ```bash
 gh api -X POST /repos/:owner/:repo/rulesets --input - << 'EOF'
 {
@@ -70,10 +132,7 @@ gh api -X POST /repos/:owner/:repo/rulesets --input - << 'EOF'
   "target": "branch",
   "enforcement": "active",
   "conditions": {
-    "ref_name": {
-      "include": ["~DEFAULT_BRANCH"],
-      "exclude": []
-    }
+    "ref_name": { "include": ["~DEFAULT_BRANCH"], "exclude": [] }
   },
   "rules": [
     { "type": "deletion" },
@@ -94,10 +153,7 @@ gh api -X POST /repos/:owner/:repo/rulesets --input - << 'EOF'
       "type": "required_status_checks",
       "parameters": {
         "strict_required_status_checks_policy": true,
-        "required_status_checks": [
-          { "context": "test" },
-          { "context": "security-scan" }
-        ]
+        "required_status_checks": [{ "context": "test" }, { "context": "security-scan" }]
       }
     }
   ],
@@ -106,94 +162,45 @@ gh api -X POST /repos/:owner/:repo/rulesets --input - << 'EOF'
 EOF
 ```
 
-Complete rule catalog and tag rulesets: [references/rulesets_governance.md](references/rulesets_governance.md).
+Complete ruleset catalog (23 rule types): [references/rulesets_governance.md](references/rulesets_governance.md).
 
 ---
 
-## 3. Supply Chain Security & OpenSSF Hardening
-
-Align repository configurations with OpenSSF Scorecard and SLSA recommendations:
+## 5. Granular Infrastructure: Runner Groups, Pages & Autolinks
 
 ```bash
-# 1. Enforce least privilege for GITHUB_TOKEN (Read-Only)
-gh api -X PUT /repos/:owner/:repo/actions/permissions/workflow \
-  -F default_workflow_permissions="read" \
-  -F can_approve_pull_request_reviews=false
+# 1. Configure Actions Runner Group for isolated compute
+gh api -X POST /orgs/:org/actions/runner-groups \
+  -f name="isolated-production-runners" -f visibility="selected"
 
-# 2. Enable Dependabot alerts and automated patch PRs
-gh api -X PUT /repos/:owner/:repo/vulnerability-alerts
-gh api -X PUT /repos/:owner/:repo/automated-security-fixes
+# 2. Configure GitHub Pages in workflow-driven mode
+gh api -X POST /repos/:owner/:repo/pages -f build_type="workflow"
 
-# 3. Enable Secret Scanning & Push Protection
-gh repo edit :owner/:repo --enable-secret-scanning --enable-secret-scanning-push-protection
-
-# 4. Enable Private Vulnerability Reporting
-gh api -X PUT /repos/:owner/:repo/private-vulnerability-reporting
+# 3. Register ticketing autolink (Jira / Linear)
+gh api -X POST /repos/:owner/:repo/autolinks \
+  -f key_prefix="PROJ-" -f url_template="https://jira.internal/browse/PROJ-<num>"
 ```
 
-Detailed Scorecard checks: [references/ossf_scorecard_hardening.md](references/ossf_scorecard_hardening.md).
-
----
-
-## 4. Deploy Environments, Secrets & Variables
-
-```bash
-# 1. Create protected environment with approval timers
-gh api -X PUT /repos/:owner/:repo/environments/production \
-  -f wait_timer=10 \
-  -F prevent_self_review=true
-
-# 2. Restrict deployments to protected branches
-gh api -X PUT /repos/:owner/:repo/environments/production \
-  --input - <<< '{"deployment_branch_policy":{"protected_branches":true,"custom_branch_policies":false}}'
-
-# 3. Manage environment-scoped secrets and variables
-gh secret set DB_PASSWORD --env production --body "$DB_PASSWORD_VAL"
-gh variable set API_BASE_URL --env production --body "https://api.internal"
-```
-
-Environment architecture guide: [references/environments_guide.md](references/environments_guide.md).
-
----
-
-## 5. Actions Governance & Log Debugging
-
-```bash
-# 1. List recent runs
-gh run list --limit 10
-
-# 2. Extract only failed logs (massive token saving)
-gh run view <run-id> --log-failed
-
-# 3. Re-run only failed jobs
-gh run rerun <run-id> --failed
-
-# 4. Restrict allowed Actions to verified publishers
-gh api -X PUT /repos/:owner/:repo/actions/permissions -f allowed_actions="selected"
-```
-
-Workflow design patterns: [references/workflows_mastery.md](references/workflows_mastery.md).
+Granular settings specifications: [references/granular_github_administration.md](references/granular_github_administration.md).
 
 ---
 
 ## 6. Advanced Git Plumbing & Diagnostics
 
-Use deterministic Git plumbing for scripting and parallel maintenance:
-
 ```bash
-# 1. Parallel work with worktrees
-git worktree add ../feature-branch -b feat/service
+# 1. Parallel branch isolation with git worktree
+git worktree add ../feature-auth -b feat/auth
 git worktree list
-git worktree remove ../feature-branch
+git worktree remove ../feature-auth
 
-# 2. Automate regression hunting with bisect run
+# 2. Automated regression pinpointing with git bisect run
 git bisect start
 git bisect bad HEAD
 git bisect good v1.0.0
 git bisect run npm test
 git bisect reset
 
-# 3. Enable conflict resolution reuse (rerere)
+# 3. Reusable conflict resolution with rerere
 git config --global rerere.enabled true
 git config --global rerere.autoUpdate true
 ```
@@ -204,10 +211,13 @@ Plumbing recipes & DAG internals: [references/git_plumbing_mastery.md](reference
 
 ## Reference Documentation Index
 
+- [references/environments_guide.md](references/environments_guide.md): Deployment environments, wait timers, reviewers, and secret scoping.
+- [references/ephemeral_preview_environments.md](references/ephemeral_preview_environments.md): PR preview lifecycle, Deployments API, and automated teardown.
+- [references/cicd_testing_frameworks.md](references/cicd_testing_frameworks.md): Local emulation (`act`), test sharding, caching, and security linters (`zizmor`, `actionlint`).
+- [references/granular_github_administration.md](references/granular_github_administration.md): Runner groups, ephemeral ARC runners, Pages, autolinks, and custom properties.
 - [references/repo_settings_matrix.md](references/repo_settings_matrix.md): Repository settings, merge policies, and topics.
 - [references/rulesets_governance.md](references/rulesets_governance.md): GitHub Ruleset schema, 23 rule types, and production templates.
 - [references/ossf_scorecard_hardening.md](references/ossf_scorecard_hardening.md): OpenSSF Scorecard 18 checks, SLSA provenance, and token permissions.
 - [references/git_plumbing_mastery.md](references/git_plumbing_mastery.md): Git plumbing primitives, worktree workflows, rerere, and bisect run.
-- [references/environments_guide.md](references/environments_guide.md): Deployment environments, protection gates, and secret scoping.
 - [references/workflows_mastery.md](references/workflows_mastery.md): Actions matrix, concurrency control, and logging.
 - [references/wiki_management.md](references/wiki_management.md): Dedicated Git wiki repository operations.

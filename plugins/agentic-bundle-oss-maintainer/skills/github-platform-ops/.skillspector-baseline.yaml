@@ -4,6 +4,18 @@ version: 2
 scanner_version: 2.12.0
 rules: []
 fingerprints:
+- hash: sha256:0352d2373b6dcab87b646630cf26c87cf0edbc44119b8700ecc3a1e903403a00
+  rule_id: TM1
+  file: SKILL.md
+  reason: Accepted finding (auto-generated baseline)
+- hash: sha256:279fc9744afbab1be16408d3e19ecc91891ca0283c0e61fe011b70ec677fca84
+  rule_id: TM1
+  file: SKILL.md
+  reason: Accepted finding (auto-generated baseline)
+- hash: sha256:91a99510c488ab912afce855053aef5df8fa47e9feb855c3c33da8066246c73e
+  rule_id: TM1
+  file: references/granular_github_administration.md
+  reason: Accepted finding (auto-generated baseline)
 - hash: sha256:83e87cd15db5847f77aeef21c52c4e5cf9e35e84d7cf0ae07af513972536510f
   rule_id: TM1
   file: references/repo_settings_matrix.md
@@ -19,6 +31,10 @@ fingerprints:
 - hash: sha256:bf02b85a8725fd97289c5998a91a626ce283d984d2be3b2eaf49b85984a645de
   rule_id: TM1
   file: references/rulesets_governance.md
+  reason: Accepted finding (auto-generated baseline)
+- hash: sha256:4c604e8ff089603eab5912a023323afdfc8a572b9aeb0d72a5fab1e4651f21d2
+  rule_id: RP1
+  file: references/cicd_testing_frameworks.md
   reason: Accepted finding (auto-generated baseline)
 - hash: sha256:b2f460e44231f537b8692fc3522bc2dafa77c9b44d11e8b5ee576f407fd3528f
   rule_id: EA2
