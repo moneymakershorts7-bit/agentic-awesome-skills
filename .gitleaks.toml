@@ -1,0 +1,18 @@
+# Gitleaks Configuration for Agentic Awesome Skills
+[extend]
+# Inherits default base config if present
+
+[allowlist]
+description = "Global allowlists for educational examples, mock tokens, and documentation"
+paths = [
+  '''^\.env.*\.example$''',
+  '''^docs/''',
+  '''^wiki/''',
+  '''^references/''',
+  '''^tests/'''
+]
+regexes = [
+  '''(?i)example[_-]?key''',
+  '''(?i)dummy[_-]?token''',
+  '''(?i)test[_-]?secret'''
+]
