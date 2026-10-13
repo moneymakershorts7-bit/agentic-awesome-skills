@@ -1,0 +1,23 @@
+{
+  "id": "sheriff-server",
+  "name": "sheriff-mcp-server",
+  "repository": "https://github.com/kaizten/sheriff-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Java",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/kaizten/sheriff-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "sheriff-server": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/kaizten/sheriff-mcp-server"
+      ]
+    }
+  }
+}

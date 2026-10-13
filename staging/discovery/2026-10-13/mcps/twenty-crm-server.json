@@ -1,0 +1,23 @@
+{
+  "id": "twenty-crm-server",
+  "name": "twenty-crm-mcp-server",
+  "repository": "https://github.com/growsontrees/twenty-crm-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y twenty-crm-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "twenty-crm-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "twenty-crm-mcp-server"
+      ]
+    }
+  }
+}

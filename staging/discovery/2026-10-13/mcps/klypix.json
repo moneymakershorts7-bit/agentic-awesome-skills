@@ -1,0 +1,23 @@
+{
+  "id": "klypix",
+  "name": "klypix-mcp",
+  "repository": "https://github.com/dahshanlabs/klypix-mcp",
+  "description": "Shared project memory for Claude Code, Codex, Cursor and other MCP coding tools \u2014 one brain.klypix file committed with your code.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y klypix-mcp",
+  "stars": 10,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "klypix": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "klypix-mcp"
+      ]
+    }
+  }
+}

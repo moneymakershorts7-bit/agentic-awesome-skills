@@ -1,0 +1,23 @@
+{
+  "id": "openclaw-power-skills",
+  "name": "openclaw-power-skills",
+  "repository": "https://github.com/Marcel98717/openclaw-power-skills",
+  "description": "Provide a comprehensive set of production-ready OpenClaw skills covering 100+ use cases with simple installation and zero configuration drift.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y openclaw-power-skills",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "openclaw-power-skills": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "openclaw-power-skills"
+      ]
+    }
+  }
+}

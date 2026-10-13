@@ -1,0 +1,23 @@
+{
+  "id": "brightspace-server",
+  "name": "brightspace-mcp-server",
+  "repository": "https://github.com/RohanMuppa/brightspace-mcp-server",
+  "description": "MCP server for Brightspace (D2L). Check grades, due dates, assignments, announcements, rosters, syllabus & course content via Claude, ChatGPT, Cursor, Windsurf, or any MCP client. Works with any school. npm: npx brightspace-mcp-server@latest",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y brightspace-mcp-server",
+  "stars": 56,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "brightspace-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "brightspace-mcp-server"
+      ]
+    }
+  }
+}

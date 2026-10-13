@@ -1,0 +1,23 @@
+{
+  "id": "cmssy",
+  "name": "cmssy-mcp",
+  "repository": "https://github.com/cmssy-io/cmssy-mcp",
+  "description": "MCP server for Cmssy, a hosted headless CMS with native commerce: pages, records, media, forms, products, orders, refunds and discounts.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y cmssy-mcp",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "cmssy": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "cmssy-mcp"
+      ]
+    }
+  }
+}

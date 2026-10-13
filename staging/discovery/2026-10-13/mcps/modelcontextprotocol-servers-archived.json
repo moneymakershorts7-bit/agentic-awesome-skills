@@ -1,0 +1,23 @@
+{
+  "id": "modelcontextprotocol-servers-archived",
+  "name": "modelcontextprotocol--servers-archived",
+  "repository": "https://github.com/repolex-forx/modelcontextprotocol--servers-archived",
+  "description": "RDF parse data for modelcontextprotocol/servers-archived",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modelcontextprotocol--servers-archived",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "modelcontextprotocol-servers-archived": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modelcontextprotocol--servers-archived"
+      ]
+    }
+  }
+}

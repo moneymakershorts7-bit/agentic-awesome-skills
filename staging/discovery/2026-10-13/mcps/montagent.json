@@ -1,0 +1,23 @@
+{
+  "id": "montagent",
+  "name": "Montagent",
+  "repository": "https://github.com/MBehtemam/Montagent",
+  "description": "Agentic, MCP-native video editor for the command line. Cut, trim, and compose video through CLI commands or AI agent tool calls.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install Montagent",
+  "stars": 2,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "montagent": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "Montagent"
+      ]
+    }
+  }
+}

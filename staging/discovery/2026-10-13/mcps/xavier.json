@@ -1,0 +1,23 @@
+{
+  "id": "xavier",
+  "name": "xavier",
+  "repository": "https://github.com/iberi22/xavier",
+  "description": "Xavier \u2014 Rust vector memory & knowledge graph for AI agents (HTTP/CLI/MCP). Powers SWAL communal context",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install xavier",
+  "stars": 1,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "xavier": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "xavier"
+      ]
+    }
+  }
+}

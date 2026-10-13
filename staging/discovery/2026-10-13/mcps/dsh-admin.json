@@ -1,0 +1,23 @@
+{
+  "id": "dsh-admin",
+  "name": "dsh-mcp-admin",
+  "repository": "https://github.com/6aemi/dsh-mcp-admin",
+  "description": "Inspect MCP status with /mcp and manage MCP servers via Settings, with changes written to cordis.patch.yml.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y dsh-mcp-admin",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "dsh-admin": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dsh-mcp-admin"
+      ]
+    }
+  }
+}

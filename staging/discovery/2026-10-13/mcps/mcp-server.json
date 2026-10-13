@@ -1,0 +1,22 @@
+{
+  "id": "mcp-server",
+  "name": "mcp-server",
+  "repository": "https://github.com/volcengine/mcp-server",
+  "description": "Volcengine MCP Servers",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-server",
+  "stars": 328,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "mcp-server": {
+      "command": "uvx",
+      "args": [
+        "mcp-server"
+      ]
+    }
+  }
+}

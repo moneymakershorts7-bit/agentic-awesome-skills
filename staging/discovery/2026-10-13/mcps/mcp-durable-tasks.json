@@ -1,0 +1,23 @@
+{
+  "id": "mcp-durable-tasks",
+  "name": "mcp-durable-tasks",
+  "repository": "https://github.com/AndresSaa/mcp-durable-tasks",
+  "description": "Durable task state machine for the MCP Tasks extension (io.modelcontextprotocol/tasks, SEP-2663). A zero-dependency TypeScript library you import into an MCP server \u2014 not a to-do manager.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-durable-tasks",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "mcp-durable-tasks": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-durable-tasks"
+      ]
+    }
+  }
+}

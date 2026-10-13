@@ -1,0 +1,22 @@
+{
+  "id": "compare",
+  "name": "compare-mcp",
+  "repository": "https://github.com/Cristophereasygoing927/compare-mcp",
+  "description": "Compare code reviews across models in Claude Code with ranked todos and subagent dispatch via MCP.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx compare-mcp",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "compare": {
+      "command": "uvx",
+      "args": [
+        "compare-mcp"
+      ]
+    }
+  }
+}

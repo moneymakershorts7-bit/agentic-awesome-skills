@@ -1,0 +1,23 @@
+{
+  "id": "imessage",
+  "name": "imessage-mcp",
+  "repository": "https://github.com/anipotts/imessage-mcp",
+  "description": "Search and read your Messages history from Claude, Codex, Cursor, VS Code, and any other MCP client.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y imessage-mcp",
+  "stars": 27,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "imessage": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "imessage-mcp"
+      ]
+    }
+  }
+}

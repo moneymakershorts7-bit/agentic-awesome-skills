@@ -1,0 +1,23 @@
+{
+  "id": "mcpgateway",
+  "name": "MCPGateway",
+  "repository": "https://github.com/pokshiu/MCPGateway",
+  "description": "Unify local AITool instances and remote MCP servers into a single, searchable execution surface with a .NET 10 library.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/pokshiu/MCPGateway",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "mcpgateway": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/pokshiu/MCPGateway"
+      ]
+    }
+  }
+}

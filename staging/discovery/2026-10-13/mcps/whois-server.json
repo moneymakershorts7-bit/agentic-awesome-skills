@@ -1,0 +1,23 @@
+{
+  "id": "whois-server",
+  "name": "whois-mcp-server",
+  "repository": "https://github.com/cyanheads/whois-mcp-server",
+  "description": "Look up domain registration, check registry record status, fetch DNS records, and resolve IPs and ASNs over RDAP and DNS-over-HTTPS via MCP. STDIO or Streamable HTTP.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y whois-mcp-server",
+  "stars": 1,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "whois-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "whois-mcp-server"
+      ]
+    }
+  }
+}

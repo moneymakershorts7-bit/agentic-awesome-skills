@@ -1,0 +1,23 @@
+{
+  "id": "modelcontextprotocol-php-sdk",
+  "name": "modelcontextprotocol--php-sdk",
+  "repository": "https://github.com/repolex-forx/modelcontextprotocol--php-sdk",
+  "description": "RDF parse data for modelcontextprotocol/php-sdk",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modelcontextprotocol--php-sdk",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "modelcontextprotocol-php-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modelcontextprotocol--php-sdk"
+      ]
+    }
+  }
+}

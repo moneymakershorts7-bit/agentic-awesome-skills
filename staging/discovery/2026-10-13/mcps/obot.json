@@ -1,0 +1,23 @@
+{
+  "id": "obot",
+  "name": "obot",
+  "repository": "https://github.com/obot-platform/obot",
+  "description": "Complete AI Governance Platform from Obot AI",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/obot-platform/obot@latest",
+  "stars": 1102,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "obot": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/obot-platform/obot@latest"
+      ]
+    }
+  }
+}

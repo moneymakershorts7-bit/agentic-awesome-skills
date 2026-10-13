@@ -1,0 +1,23 @@
+{
+  "id": "zoekt",
+  "name": "zoekt-mcp",
+  "repository": "https://github.com/itaymendel/zoekt-mcp",
+  "description": "MCP server to centralize AI agent access to a Zoekt instance",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y zoekt-mcp",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "zoekt": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "zoekt-mcp"
+      ]
+    }
+  }
+}

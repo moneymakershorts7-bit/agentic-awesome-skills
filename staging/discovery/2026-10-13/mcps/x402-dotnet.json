@@ -1,0 +1,23 @@
+{
+  "id": "x402-dotnet",
+  "name": "x402-mcp-dotnet",
+  "repository": "https://github.com/Egoushka/x402-mcp-dotnet",
+  "description": "Paid MCP tools for .NET: x402 v2 MCP transport for the ModelContextProtocol C# SDK. [PaidTool] on a tool, agents pay per call in USDC.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/Egoushka/x402-mcp-dotnet",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "x402-dotnet": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/Egoushka/x402-mcp-dotnet"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "tiaportal",
+  "name": "tiaportal-mcp",
+  "repository": "https://github.com/Biz2k/tiaportal-mcp",
+  "description": "A specialized MCP bridge that empowers AI models to analyze and develop PLC, HMI, and SCADA projects directly in Siemens TIA Portal.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/Biz2k/tiaportal-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "tiaportal": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/Biz2k/tiaportal-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "mcp-netdiag-rs",
+  "name": "mcp-netdiag-rs",
+  "repository": "https://github.com/umair-as/mcp-netdiag-rs",
+  "description": "Stateless MCP server for Linux network & system diagnostics over stdio \u2014 default-closed gate for privileged probes (rmcp SDK).",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install mcp-netdiag-rs",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "mcp-netdiag-rs": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "mcp-netdiag-rs"
+      ]
+    }
+  }
+}

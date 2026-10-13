@@ -1,0 +1,22 @@
+{
+  "id": "iitm-server",
+  "name": "iitm-mcp-server",
+  "repository": "https://github.com/vaibhavknight26-cmd/iitm-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx iitm-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "iitm-server": {
+      "command": "uvx",
+      "args": [
+        "iitm-mcp-server"
+      ]
+    }
+  }
+}

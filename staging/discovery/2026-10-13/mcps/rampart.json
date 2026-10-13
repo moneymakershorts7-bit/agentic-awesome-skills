@@ -1,0 +1,23 @@
+{
+  "id": "rampart",
+  "name": "rampart",
+  "repository": "https://github.com/kerriesingle633/rampart",
+  "description": "Define OT zones to generate ready-to-deploy, deny-by-default firewall segmentation policies based on the Purdue model and IEC 62443.",
+  "language": "HTML",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/kerriesingle633/rampart",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "rampart": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/kerriesingle633/rampart"
+      ]
+    }
+  }
+}

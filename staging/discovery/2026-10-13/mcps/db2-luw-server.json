@@ -1,0 +1,23 @@
+{
+  "id": "db2-luw-server",
+  "name": "db2-luw-mcp-server",
+  "repository": "https://github.com/gord888/db2-luw-mcp-server",
+  "description": "An MCP server for DB2 LUW that enables AIs to leverage capabilities in DB2.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y db2-luw-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-13",
+  "mcpConfigSnippet": {
+    "db2-luw-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "db2-luw-mcp-server"
+      ]
+    }
+  }
+}
