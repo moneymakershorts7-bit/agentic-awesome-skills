@@ -1,0 +1,22 @@
+{
+  "id": "telegram-ai-cli",
+  "name": "telegram-ai-cli-mcp",
+  "repository": "https://github.com/stufently/telegram-ai-cli-mcp",
+  "description": "CLI and MCP server for AI agents to read and act on a personal Telegram account over MTProto, with plan-and-apply approval.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx telegram-ai-cli-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "telegram-ai-cli": {
+      "command": "uvx",
+      "args": [
+        "telegram-ai-cli-mcp"
+      ]
+    }
+  }
+}

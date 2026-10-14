@@ -1,0 +1,23 @@
+{
+  "id": "qamcp-cli",
+  "name": "qamcp-cli",
+  "repository": "https://github.com/abhiramreddykalluru01-debug/qamcp-cli",
+  "description": "Test any MCP server in one command: tools, safety labels, hidden instructions, bad inputs, leaked secrets, OAuth login setup, resources and prompts. Hard facts, no AI judging. CLI + GitHub Action.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y qamcp-cli",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "qamcp-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "qamcp-cli"
+      ]
+    }
+  }
+}

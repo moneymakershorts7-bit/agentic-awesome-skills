@@ -1,0 +1,29 @@
+---
+name: mcp-builder-kit
+description: "Production Toolkit & Scaffolding Engine for Model Context Protocol (MCP) Servers. Scaffold typed TS/Python servers, generate tools from OpenAPI, inspect conformance, audit security & containerize in seconds."
+license: NOASSERTION
+risk: safe
+source: community
+date_added: '2026-10-14'
+allowed-tools:
+  - Read
+  - Grep
+  - Bash
+metadata:
+  repository: "https://github.com/RitualDev-Lab/mcp-builder-kit"
+  stars: 0
+  score: 2/5
+---
+
+# mcp-builder-kit
+
+Candidate agent skill discovered on GitHub from [RitualDev-Lab/mcp-builder-kit](https://github.com/RitualDev-Lab/mcp-builder-kit).
+
+## Overview
+Production Toolkit & Scaffolding Engine for Model Context Protocol (MCP) Servers. Scaffold typed TS/Python servers, generate tools from OpenAPI, inspect conformance, audit security & containerize in seconds.
+
+## Instructions & Usage
+Refer to upstream repository documentation: [https://github.com/RitualDev-Lab/mcp-builder-kit](https://github.com/RitualDev-Lab/mcp-builder-kit)
+
+## Limitations
+- Staged candidate awaiting monthly repository maintenance triage and verification.

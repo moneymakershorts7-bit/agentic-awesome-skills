@@ -1,0 +1,23 @@
+{
+  "id": "modelcontextprotocol-swift-sdk",
+  "name": "modelcontextprotocol--swift-sdk",
+  "repository": "https://github.com/repolex-forx/modelcontextprotocol--swift-sdk",
+  "description": "RDF parse data for modelcontextprotocol/swift-sdk",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modelcontextprotocol--swift-sdk",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "modelcontextprotocol-swift-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modelcontextprotocol--swift-sdk"
+      ]
+    }
+  }
+}

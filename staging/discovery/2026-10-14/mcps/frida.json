@@ -1,0 +1,22 @@
+{
+  "id": "frida",
+  "name": "frida-mcp",
+  "repository": "https://github.com/Gindhar2112/frida-mcp",
+  "description": "Enable AI-driven automated Android dynamic analysis by controlling Frida through the Model Context Protocol for streamlined reverse engineering.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx frida-mcp",
+  "stars": 18,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "frida": {
+      "command": "uvx",
+      "args": [
+        "frida-mcp"
+      ]
+    }
+  }
+}

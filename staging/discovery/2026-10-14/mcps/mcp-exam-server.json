@@ -1,0 +1,23 @@
+{
+  "id": "mcp-exam-server",
+  "name": "mcp-exam-server",
+  "repository": "https://github.com/abhi963411-ops/mcp-exam-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-exam-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "mcp-exam-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-exam-server"
+      ]
+    }
+  }
+}

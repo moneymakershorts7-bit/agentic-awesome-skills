@@ -1,0 +1,22 @@
+{
+  "id": "ptpge-server",
+  "name": "ptpge-mcp-server",
+  "repository": "https://github.com/ptpge/ptpge-mcp-server",
+  "description": "PTPGE specification \u2014 MCP server for AI agents. Read-only access to the print vocabulary at api.ptpge.org.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx ptpge-mcp-server",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "ptpge-server": {
+      "command": "uvx",
+      "args": [
+        "ptpge-mcp-server"
+      ]
+    }
+  }
+}

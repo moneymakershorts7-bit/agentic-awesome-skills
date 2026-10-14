@@ -1,0 +1,23 @@
+{
+  "id": "iris-server",
+  "name": "iris-mcp-server",
+  "repository": "https://github.com/Peter-Ufens/iris-mcp-server",
+  "description": "Serveur MCP TypeScript (29 outils, 333 tests) : Ollama, Git, APIs, web, actu RSS/Bing, RAG. Projet perso reconversion IA - Peter UFENS.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y iris-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "iris-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "iris-mcp-server"
+      ]
+    }
+  }
+}

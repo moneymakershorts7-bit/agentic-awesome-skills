@@ -1,0 +1,23 @@
+{
+  "id": "yandex",
+  "name": "yandex-mcp",
+  "repository": "https://github.com/stufently/yandex-mcp",
+  "description": "MCP servers for Yandex APIs \u2014 Search, Wordstat, Webmaster, Metrika, Direct. 94 tools, Claude Code plugin included.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y yandex-mcp",
+  "stars": 18,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "yandex": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "yandex-mcp"
+      ]
+    }
+  }
+}

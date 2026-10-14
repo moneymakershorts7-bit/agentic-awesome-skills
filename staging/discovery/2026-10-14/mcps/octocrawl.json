@@ -1,0 +1,23 @@
+{
+  "id": "octocrawl",
+  "name": "Octocrawl",
+  "repository": "https://github.com/77777R7/Octocrawl",
+  "description": "Octocrawl: readable Markdown and checked fields from public web pages, for AI agents, RAG and research. Failures come back with a reason. Self-host with REST, SDK or MCP.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y Octocrawl",
+  "stars": 0,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "octocrawl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "Octocrawl"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "signal8",
+  "name": "signal8-mcp",
+  "repository": "https://github.com/signal8ai/signal8-mcp",
+  "description": "Signal8 MCP Server - SEC filing intelligence for AI agents",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y signal8-mcp",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "signal8": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "signal8-mcp"
+      ]
+    }
+  }
+}

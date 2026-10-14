@@ -1,0 +1,23 @@
+{
+  "id": "labview-mcp-server-toolkit",
+  "name": "LabVIEW-MCP-Server-Toolkit",
+  "repository": "https://github.com/JanGoebel/LabVIEW-MCP-Server-Toolkit",
+  "description": "a toolkit to host mcp servers from LabVIEW.",
+  "language": "LabVIEW",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/JanGoebel/LabVIEW-MCP-Server-Toolkit",
+  "stars": 60,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "labview-mcp-server-toolkit": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/JanGoebel/LabVIEW-MCP-Server-Toolkit"
+      ]
+    }
+  }
+}

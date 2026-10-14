@@ -1,0 +1,23 @@
+{
+  "id": "centreon-go",
+  "name": "centreon-mcp-go",
+  "repository": "https://github.com/tphakala/centreon-mcp-go",
+  "description": "MCP server for Centreon monitoring \u2014 73 tools for hosts, services, downtimes, acknowledgements, and platform administration",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/tphakala/centreon-mcp-go@latest",
+  "stars": 1,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "centreon-go": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/tphakala/centreon-mcp-go@latest"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "modelcontextprotocol-create-typescript-server",
+  "name": "modelcontextprotocol--create-typescript-server",
+  "repository": "https://github.com/repolex-forx/modelcontextprotocol--create-typescript-server",
+  "description": "RDF parse data for modelcontextprotocol/create-typescript-server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modelcontextprotocol--create-typescript-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "modelcontextprotocol-create-typescript-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modelcontextprotocol--create-typescript-server"
+      ]
+    }
+  }
+}

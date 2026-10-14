@@ -1,0 +1,23 @@
+{
+  "id": "xmcp",
+  "name": "xmcp",
+  "repository": "https://github.com/basementstudio/xmcp",
+  "description": "The TypeScript MCP framework",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y xmcp",
+  "stars": 1338,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "xmcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "xmcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "agent-plugin",
+  "name": "agent-plugin",
+  "repository": "https://github.com/RoxyAPI/agent-plugin",
+  "description": "Astrology API plugin for Claude Code, Cursor and Agent Plugins clients: a skill plus the keyless docs MCP across 18+ domains. One install, one key.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y agent-plugin",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "agent-plugin": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "agent-plugin"
+      ]
+    }
+  }
+}

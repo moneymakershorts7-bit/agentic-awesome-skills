@@ -1,0 +1,23 @@
+{
+  "id": "modelcontextprotocol-csharp-sdk",
+  "name": "modelcontextprotocol--csharp-sdk",
+  "repository": "https://github.com/repolex-forx/modelcontextprotocol--csharp-sdk",
+  "description": "RDF parse data for modelcontextprotocol/csharp-sdk",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modelcontextprotocol--csharp-sdk",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "modelcontextprotocol-csharp-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modelcontextprotocol--csharp-sdk"
+      ]
+    }
+  }
+}

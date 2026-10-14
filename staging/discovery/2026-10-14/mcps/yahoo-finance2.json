@@ -1,0 +1,23 @@
+{
+  "id": "yahoo-finance2",
+  "name": "yahoo-finance2",
+  "repository": "https://github.com/gadicc/yahoo-finance2",
+  "description": "Unofficial API for Yahoo Finance with CLI, MCP and Agent Skill",
+  "language": "HTML",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/gadicc/yahoo-finance2",
+  "stars": 803,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "yahoo-finance2": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/gadicc/yahoo-finance2"
+      ]
+    }
+  }
+}

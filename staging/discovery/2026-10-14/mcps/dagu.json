@@ -1,0 +1,23 @@
+{
+  "id": "dagu",
+  "name": "dagu",
+  "repository": "https://github.com/dagucloud/dagu",
+  "description": "Self-hostable workflow orchestrator for teams whose main work isn't orchestration. Declarative YAML over your scripts, SSH commands, containers, etc; keep workflows separate from business logic. One binary, no database, runs on limited H/W resources. Alternative to Airflow / Cron / Job Scheduler.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/dagucloud/dagu@latest",
+  "stars": 4347,
+  "license": "GPL-3.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "dagu": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/dagucloud/dagu@latest"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "biomcp",
+  "name": "biomcp",
+  "repository": "https://github.com/genomoncology/biomcp",
+  "description": "BioMCP: Biomedical Model Context Protocol",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install biomcp",
+  "stars": 654,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "biomcp": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "biomcp"
+      ]
+    }
+  }
+}

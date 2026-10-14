@@ -1,0 +1,23 @@
+{
+  "id": "video-extract",
+  "name": "video-extract-mcp",
+  "repository": "https://github.com/synovial-lionfish82/video-extract-mcp",
+  "description": "Turn any video URL into an AI-ready transcript and keyframe images via a local MCP server, no cloud or API keys.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y video-extract-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "video-extract": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "video-extract-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "oas-agents-server",
+  "name": "oas-agents-mcp-server",
+  "repository": "https://github.com/alex-kzr/oas-agents-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx oas-agents-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "oas-agents-server": {
+      "command": "uvx",
+      "args": [
+        "oas-agents-mcp-server"
+      ]
+    }
+  }
+}

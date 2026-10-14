@@ -1,0 +1,22 @@
+{
+  "id": "cuttlely",
+  "name": "cuttlely",
+  "repository": "https://github.com/cuttlely/cuttlely",
+  "description": "The open-source agent platform for applications.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx cuttlely",
+  "stars": 3,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "cuttlely": {
+      "command": "uvx",
+      "args": [
+        "cuttlely"
+      ]
+    }
+  }
+}

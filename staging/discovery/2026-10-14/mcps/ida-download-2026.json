@@ -1,0 +1,23 @@
+{
+  "id": "ida-download-2026",
+  "name": "ida-download-2026",
+  "repository": "https://github.com/a0168627/ida-download-2026",
+  "description": "Download, install, and accelerate file downloads on Windows with multi-threaded support and browser integration.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y ida-download-2026",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "ida-download-2026": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ida-download-2026"
+      ]
+    }
+  }
+}

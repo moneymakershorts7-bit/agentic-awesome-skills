@@ -1,0 +1,22 @@
+{
+  "id": "agent-scan",
+  "name": "agent-scan",
+  "repository": "https://github.com/snyk/agent-scan",
+  "description": "Security scanner for AI agents, MCP servers and agent skills.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx agent-scan",
+  "stars": 3137,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "agent-scan": {
+      "command": "uvx",
+      "args": [
+        "agent-scan"
+      ]
+    }
+  }
+}

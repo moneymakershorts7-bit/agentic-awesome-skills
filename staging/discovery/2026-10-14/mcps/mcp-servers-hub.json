@@ -1,0 +1,23 @@
+{
+  "id": "mcp-servers-hub",
+  "name": "mcp-servers-hub",
+  "repository": "https://github.com/haniamkhan5-coder/mcp-servers-hub",
+  "description": "Provide access to 50+ verified MCP servers with install guides and config snippets for quick AI agent integration with databases, APIs, and tools.",
+  "language": "TypeScript",
+  "transport": "sse",
+  "install_cmd": "npx -y mcp-servers-hub",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "mcp-servers-hub": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-servers-hub"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "radio",
+  "name": "mcp-server-radio",
+  "repository": "https://github.com/lucasjct/mcp-server-radio",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-server-radio",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "radio": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-radio"
+      ]
+    }
+  }
+}

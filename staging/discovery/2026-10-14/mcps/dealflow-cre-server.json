@@ -1,0 +1,23 @@
+{
+  "id": "dealflow-cre-server",
+  "name": "dealflow-cre-mcp-server",
+  "repository": "https://github.com/maxev-digital/dealflow-cre-mcp-server",
+  "description": "Production MCP server for commercial real estate \u2014 9 tools (deals, properties, contacts, pipeline, risk analytics). Built with @modelcontextprotocol/sdk, Zod, TypeScript strict.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y dealflow-cre-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "dealflow-cre-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dealflow-cre-mcp-server"
+      ]
+    }
+  }
+}

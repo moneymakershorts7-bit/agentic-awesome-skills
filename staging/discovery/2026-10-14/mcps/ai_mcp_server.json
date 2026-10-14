@@ -1,0 +1,22 @@
+{
+  "id": "ai_mcp_server",
+  "name": "ai_mcp_server",
+  "repository": "https://github.com/Mohamed8Ebrahim/ai_mcp_server",
+  "description": "AI MCP Server for Odoo 17 \u2014 connect Claude & AI assistants to your Odoo database securely.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx ai_mcp_server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "ai_mcp_server": {
+      "command": "uvx",
+      "args": [
+        "ai_mcp_server"
+      ]
+    }
+  }
+}

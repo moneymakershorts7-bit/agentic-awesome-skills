@@ -1,0 +1,23 @@
+{
+  "id": "staqly",
+  "name": "staqly",
+  "repository": "https://github.com/staqly/staqly",
+  "description": "Local-first workspace for everything your AI agents create. Agents and n8n save images, video, text and JSON into collections; you approve, reject or regenerate from a fast inbox on desktop or phone. MCP + REST + signed webhooks, SQLite, one Docker command. Self-hosted (Apache-2.0).",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y staqly",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-14",
+  "mcpConfigSnippet": {
+    "staqly": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "staqly"
+      ]
+    }
+  }
+}
