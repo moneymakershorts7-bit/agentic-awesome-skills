@@ -15,3 +15,11 @@ Continuous audit trail of free tools and services discovered by the autonomous s
 | 2026-10-07 | **Pharos email** | `2ae7382` | Merge pull request #4945 from pharos-email/patch-1 |
 | 2026-10-07 | **Cabin** | `47f386d` | Merge pull request #4946 from mulhoon/patch-1 |
 | 2026-10-07 | **Everframe** | `5d6da81` | Merge pull request #4936 from Robk4/patch-2 |
+| 2026-10-14 | **flagpool** | `11383aa` | Merge pull request #4993 from flagpool/master |
+| 2026-10-14 | **Staxa** | `da7a283` | Merge pull request #4994 from xxJoJoxx/add-staxa |
+| 2026-10-14 | **SubdomainWatch** | `6bf28c4` | Merge pull request #4991 from tdaeche-gif/add-subdomainwatch |
+| 2026-10-14 | **Jsonpage** | `3703b18` | Merge pull request #4988 from jsonpage/patch-1 |
+| 2026-10-14 | **localscreenshot** | `7ca4d80` | Merge pull request #4983 from Sambel/patch-1 |
+| 2026-10-14 | **ntail.io** | `1656892` | Merge pull request #4982 from NSjogren/ntail |
+| 2026-10-14 | **Relvato** | `69fbc9d` | Merge pull request #4980 from dsdev-d/patch-1 |
+| 2026-10-14 | **HeyDeer** | `71c485e` | Merge pull request #4981 from luin/codex/add-heydeer |
