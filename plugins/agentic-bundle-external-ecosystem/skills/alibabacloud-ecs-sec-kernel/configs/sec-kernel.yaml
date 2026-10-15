@@ -1,0 +1,7 @@
+# sec-kernel 运行配置
+
+version: "1.4.1"
+
+poc:
+  # Phase 2 PoC binary 执行超时时间（秒）
+  timeout: 30

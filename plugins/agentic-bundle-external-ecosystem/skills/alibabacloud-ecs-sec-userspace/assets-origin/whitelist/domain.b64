@@ -1,0 +1,3 @@
+# Whitelisted domains - line-based-b64 v1
+# Format: base64([tag]value)
+# Example: base64([cdn]cdn.example.com)

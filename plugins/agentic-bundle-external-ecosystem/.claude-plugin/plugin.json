@@ -1,0 +1,19 @@
+{
+  "name": "agentic-bundle-external-ecosystem",
+  "version": "18.12.0",
+  "description": "External third-party ecosystem skill bundle (529 verified safe skills) for Claude Code from Agentic Awesome Skills.",
+  "author": {
+    "name": "Ecosystem Contributors & Vendors",
+    "url": "https://github.com/sickn33/agentic-awesome-skills"
+  },
+  "homepage": "https://github.com/sickn33/agentic-awesome-skills",
+  "repository": "https://github.com/sickn33/agentic-awesome-skills",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "skills",
+    "bundle",
+    "external-ecosystem",
+    "agentic-awesome-skills"
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spider CLI Extraction"
+  short_description: "Spider CLI crawl and scrape workflows"
+  default_prompt: "Use $spider-cli-extraction to run Spider CLI crawl or scrape commands and verify headless support for this build."

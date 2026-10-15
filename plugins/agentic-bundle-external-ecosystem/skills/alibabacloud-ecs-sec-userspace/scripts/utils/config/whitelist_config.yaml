@@ -1,0 +1,95 @@
+# Whitelist Configuration
+# Controls whitelist behavior for sec-userspace analyzers
+
+whitelist:
+  # Global whitelist enable/disable switch
+  enabled: true
+  
+  # Module-level whitelist control
+  # Set enabled: false to temporarily disable whitelist matching for specific analyzers
+  modules:
+    process_analyzer:
+      enabled: true
+      description: "Process anomaly detection"
+    
+    network_analyzer:
+      enabled: true
+      description: "Network connection analysis"
+    
+    file_analyzer:
+      enabled: true
+      description: "File system anomaly detection"
+    
+    credential_analyzer:
+      enabled: true
+      description: "Credential and authentication analysis"
+    
+    auth_analyzer:
+      enabled: true
+      description: "Authentication log analysis"
+    
+    persistence_analyzer:
+      enabled: true
+      description: "Persistence mechanism detection"
+    
+    rootkit_analyzer:
+      enabled: true
+      description: "Rootkit detection"
+    
+    malware_analyzer:
+      enabled: true
+      description: "Malware detection"
+    
+    mining_analyzer:
+      enabled: true
+      description: "Cryptocurrency mining detection"
+    
+    log_analyzer:
+      enabled: true
+      description: "Log integrity analysis"
+    
+    agent_source_analyzer:
+      enabled: true
+      description: "AI agent source verification"
+    
+    skill_verification:
+      enabled: true
+      description: "Skill plugin verification"
+    
+    mcp_supply_chain_analyzer:
+      enabled: true
+      description: "MCP supply chain analysis"
+    
+    ai_agent_analyzer:
+      enabled: true
+      description: "AI agent behavior analysis"
+    
+    threat_intel_analyzer:
+      enabled: true
+      description: "Threat intelligence correlation"
+  
+  # Global bypass - emergency override (use with caution)
+  # When true, all whitelist checks are bypassed
+  global_bypass: false
+
+# Auto-cleanup settings
+auto_cleanup:
+  # Automatically clean expired entries on scan start
+  enabled: true
+  
+  # Log cleanup actions
+  log_actions: true
+
+# Audit logging settings
+audit:
+  # Enable audit logging
+  enabled: true
+  
+  # Audit log file path
+  log_file: "/var/log/sec-userspace/whitelist-audit.log"
+  
+  # Maximum log file size (MB) before rotation
+  max_size_mb: 10
+  
+  # Number of rotated logs to keep
+  backup_count: 5

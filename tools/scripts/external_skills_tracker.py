@@ -155,7 +155,13 @@ def main():
     parser.add_argument("--limit", type=int, default=30, help="Max repositories to query (default: 30)")
     parser.add_argument("--all", action="store_true", help="Check all repositories without limit")
     parser.add_argument("--verbose", "-v", action="store_true", help="Verbose per-repo output")
+    parser.add_argument("--ingest", action="store_true", help="Ingest local external skills into dedicated bundle")
     args = parser.parse_args()
+
+    if args.ingest:
+        from ingest_external_skills import ingest_all
+        ingest_all()
+        return
 
     if args.scan:
         prov = extract_provenance()

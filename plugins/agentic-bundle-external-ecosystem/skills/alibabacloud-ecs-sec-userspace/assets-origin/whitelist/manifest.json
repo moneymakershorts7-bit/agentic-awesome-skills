@@ -1,0 +1,39 @@
+{
+  "version": "5.0.0",
+  "format": "line-based-b64",
+  "format_version": 1,
+  "created": "2026-04-24",
+  "types": {
+    "domain": {
+      "file": "domain.b64",
+      "count": 0,
+      "tags": ["cdn", "cloud", "internal", "agent-dependency"],
+      "description": "Whitelisted domains"
+    },
+    "ip_port": {
+      "file": "ip_port.b64",
+      "count": 0,
+      "tags": ["cloud_metadata", "internal", "monitoring"],
+      "description": "Whitelisted IP addresses and ports"
+    },
+    "url": {
+      "file": "url.b64",
+      "count": 0,
+      "tags": [],
+      "description": "Whitelisted URLs"
+    },
+    "hash": {
+      "file": "hash.b64",
+      "count": 0,
+      "tags": [],
+      "description": "Whitelisted file hashes"
+    },
+    "analyzer_rules": {
+      "file": "analyzer_rules.b64",
+      "count": 31,
+      "tags": ["default", "agent-dependency", "cloud-environment", "dev-environment"],
+      "description": "Analyzer-level whitelist rules (JSON objects)"
+    }
+  },
+  "total_entries": 31
+}

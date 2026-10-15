@@ -1,0 +1,155 @@
+---
+# CronJob for sec-userspace periodic security scanning
+# 
+# Per-node execution strategy:
+# - Each Job triggered by this CronJob creates ONE pod per node
+# - Use kubectl to create a Job from CronJob with --parallelism=N for N nodes
+# - Or use the k8s-deploy CLI command which handles this automatically
+#
+# For true per-node DaemonSet-style execution, consider:
+#   kubectl create job --from=cronjob/sec-userspace sec-userspace-$(date +%s) -n security-system
+#   kubectl scale job/sec-userspace-<ts> --parallelism=<node-count> -n security-system
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: sec-userspace
+  namespace: security-system
+  labels:
+    app: sec-userspace
+    component: periodic-scanner
+spec:
+  # Run daily at 2:00 AM
+  schedule: "0 2 * * *"
+  # Keep last 3 successful jobs, 1 failed job
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 1
+  # Prevent overlapping runs
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      # parallelism and completions should match node count (set dynamically via kubectl)
+      parallelism: 1
+      completions: 1
+      template:
+        metadata:
+          labels:
+            app: sec-userspace
+            component: periodic-scanner
+          annotations:
+            seccomp.security.alpha.kubernetes.io/pod: runtime/default
+            apparmor.security.beta.kubernetes.io/pod: runtime/default
+        spec:
+          hostPID: true
+          hostNetwork: true
+          hostIPC: false
+
+          # Run on all Linux nodes
+          nodeSelector:
+            kubernetes.io/os: linux
+
+          # Spread pods across nodes (anti-affinity)
+          affinity:
+            podAntiAffinity:
+              preferredDuringSchedulingIgnoredDuringExecution:
+                - weight: 100
+                  podAffinityTerm:
+                    labelSelector:
+                      matchExpressions:
+                        - key: app
+                          operator: In
+                          values:
+                            - sec-userspace
+                    topologyKey: kubernetes.io/hostname
+
+          serviceAccountName: sec-userspace
+          restartPolicy: Never
+
+          containers:
+            - name: sec-userspace
+              image: registry.example.com/security/sec-userspace:latest
+              imagePullPolicy: Always
+
+              securityContext:
+                privileged: false
+                runAsUser: 0
+                runAsGroup: 0
+                runAsNonRoot: false
+                capabilities:
+                  add:
+                    - SYS_ADMIN
+                    - SYS_PTRACE
+                    - NET_ADMIN
+                    - SYS_RESOURCE
+                  drop:
+                    - ALL
+
+              args:
+                - "--quiet"
+                - "--output-dir"
+                - "/var/lib/sec-userspace/output"
+                - "--config"
+                - "/etc/sec-userspace/config.yaml"
+
+              env:
+                - name: NODE_NAME
+                  valueFrom:
+                    fieldRef:
+                      fieldPath: spec.nodeName
+                - name: POD_NAME
+                  valueFrom:
+                    fieldRef:
+                      fieldPath: metadata.name
+                - name: POD_NAMESPACE
+                  valueFrom:
+                    fieldRef:
+                      fieldPath: metadata.namespace
+                - name: SEC_SERVER_ENDPOINT
+                  value: "http://sec-server.security-system:8080"
+                - name: PYTHONUNBUFFERED
+                  value: "1"
+
+              volumeMounts:
+                - name: host-root
+                  mountPath: /host
+                  readOnly: true
+                  mountPropagation: HostToContainer
+                - name: containerd-sock
+                  mountPath: /run/containerd/containerd.sock
+                  readOnly: true
+                - name: docker-sock
+                  mountPath: /var/run/docker.sock
+                  readOnly: true
+                - name: config
+                  mountPath: /etc/sec-userspace
+                - name: output
+                  mountPath: /var/lib/sec-userspace/output
+
+              resources:
+                requests:
+                  cpu: 100m
+                  memory: 256Mi
+                limits:
+                  cpu: 500m
+                  memory: 512Mi
+
+          volumes:
+            - name: host-root
+              hostPath:
+                path: /
+                type: Directory
+            - name: containerd-sock
+              hostPath:
+                path: /run/containerd/containerd.sock
+                type: Socket
+            - name: docker-sock
+              hostPath:
+                path: /var/run/docker.sock
+                type: Socket
+            - name: config
+              configMap:
+                name: sec-userspace-config
+                defaultMode: 0644
+            - name: output
+              hostPath:
+                path: /var/lib/sec-userspace/output
+                type: DirectoryOrCreate

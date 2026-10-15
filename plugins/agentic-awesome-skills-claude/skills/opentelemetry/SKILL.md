@@ -407,12 +407,13 @@ metadata:
 ```
 
 
-## Contents
+## Deep References & Production Runbooks
 
-- [Sampling Strategies](references/details.md)
-- [Best Practices](references/details.md)
-- [Troubleshooting](references/details.md)
-- [Related Skills](references/details.md)
+- [Collector Pipelines & Architecture](references/collector_pipelines.md): Complete runnable `otel-collector-config.yaml` for traces, metrics, logs, memory limiter, and batching.
+- [Kubernetes & Helm Deployment Runbook](references/kubernetes_helm_deployment.md): Helm values, DaemonSet vs Deployment modes, RBAC, and ServiceMonitor definitions.
+- [Sampling Strategies & PII Redaction](references/sampling_and_security.md): Tail-based/head-based sampling, OTTL transform processors, and regex masking for sensitive data.
+- [SDK Instrumentation Recipes (Node.js & Go)](references/sdk_instrumentation.md): Concrete SDK code examples, TracerProvider, MeterProvider, and W3C context propagation.
+- [Semantic Conventions & Production Checklist](references/semantic_conventions_and_best_practices.md): Standard attribute namespaces, cardinality control, and Prometheus backend integration.
 
 ## When to Use This Skill
 

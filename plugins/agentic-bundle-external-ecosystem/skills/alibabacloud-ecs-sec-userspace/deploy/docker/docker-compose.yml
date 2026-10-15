@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  sec-userspace:
+    build:
+      context: ../..
+      dockerfile: deploy/docker/Dockerfile
+    container_name: sec-userspace
+    volumes:
+      # 挂载主机信息（只读）
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /etc:/host/etc:ro
+      - /var/log:/host/var/log:ro
+      # 输出目录
+      - ./output:/data/sec-userspace/workspace
+      # 自定义配置（可选）
+      # - ./custom-configs:/data/sec-userspace/configs:ro
+    environment:
+      - SEC_INSPECT_HOST_PROC=/host/proc
+      - SEC_INSPECT_HOST_SYS=/host/sys
+      - SEC_INSPECT_HOST_ETC=/host/etc
+    pid: host
+    network_mode: host
+    read_only: true
+    tmpfs:
+      - /tmp
+    command: ["--quiet", "--output", "/data/sec-userspace/workspace"]

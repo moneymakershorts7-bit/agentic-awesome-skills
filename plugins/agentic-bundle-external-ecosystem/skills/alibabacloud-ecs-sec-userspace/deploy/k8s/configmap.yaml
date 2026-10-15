@@ -1,0 +1,51 @@
+---
+# ConfigMap for sec-userspace K8s Job/CronJob configuration
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sec-userspace-config
+  namespace: security-system
+  labels:
+    app: sec-userspace
+    component: node-scanner
+data:
+  config.yaml: |
+    # sec-userspace K8s Configuration (Job/CronJob mode)
+    # Note: No interval - runs once per Job execution
+
+    # Detection settings
+    detection:
+      # Enabled analyzers
+      analyzers:
+        - privileged_container
+        - sensitive_mount
+        - container_escape
+        - sa_token_abuse
+        - network_anomaly
+        - malicious_process
+        - kubernetes_analyzer
+        - k8s_workload_identity
+
+      # Exclude namespaces from scanning
+      exclude_namespaces:
+        - kube-system
+        - kube-public
+        - kube-node-lease
+
+    # Resource limits
+    resources:
+      max_scan_concurrency: 4
+      scan_timeout: 60s
+      memory_limit: 512Mi
+
+    # Whitelist settings
+    whitelist:
+      enabled: true
+      paths:
+        - /etc/sec-userspace/whitelist-custom.json
+
+    # Logging settings
+    logging:
+      level: INFO
+      format: json
+      output: stdout

@@ -1,0 +1,37 @@
+{
+  "name": "aasb-external-ecosystem",
+  "version": "18.12.0",
+  "description": "Install the external ecosystem skill bundle (529 verified safe skills) from Agentic Awesome Skills.",
+  "author": {
+    "name": "Ecosystem Contributors & Vendors",
+    "url": "https://github.com/sickn33/agentic-awesome-skills"
+  },
+  "homepage": "https://github.com/sickn33/agentic-awesome-skills",
+  "repository": "https://github.com/sickn33/agentic-awesome-skills",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "skills",
+    "bundle",
+    "external-ecosystem"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "External Ecosystem Skills",
+    "shortDescription": "External Ecosystem \u00b7 529 curated external skills",
+    "longDescription": "Curated collection of 529 external third-party agent skills and vendor integrations from 280+ repositories across the broader open-source ecosystem, audited via Cisco AI Defense.",
+    "developerName": "Ecosystem Contributors & Vendors",
+    "category": "External Ecosystem",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://aaskills.tech/",
+    "privacyPolicyURL": "https://github.com/sickn33/agentic-awesome-skills/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/sickn33/agentic-awesome-skills/blob/main/TERMS.md",
+    "brandColor": "#2563EB",
+    "defaultPrompt": [
+      "Use the external ecosystem skills to complete this task."
+    ]
+  }
+}

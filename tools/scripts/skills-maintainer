@@ -597,7 +597,7 @@ case "${1:-all}" in
     echo "Opciones:"
     echo "  all                                         Ejecutar rutina mensual completa [Default]"
     echo "  upstream                                    Sincronizar e inspeccionar cambios de upstream/main"
-    echo "  external [--check|--scan|--limit N|--all]   Rastrear y comprobar actualizaciones en 280+ repositorios externos"
+    echo "  external [--check|--scan|--ingest|--limit N] Rastrear, comprobar o ingerir 560+ repositorios externos"
     echo "  prs                                         Revisar y arbitrar PRs (Protección anti-borrado y Dependabot)"
     echo "  awesome [--recommend|--search|--jules]      Explorar GitHub Awesome topics y proponer herramientas FOSS por proyecto"
     echo "  free-for-dev [--update|search|recommend]    Explorar, indexar y recomendar herramientas gratuitas de desarrollo"

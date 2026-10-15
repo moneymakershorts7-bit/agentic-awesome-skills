@@ -1,0 +1,146 @@
+---
+# Job for sec-userspace Node Security Scan (one-time execution)
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: sec-userspace
+  namespace: security-system
+  labels:
+    app: sec-userspace
+    component: node-scanner
+spec:
+  template:
+    metadata:
+      labels:
+        app: sec-userspace
+        component: node-scanner
+      annotations:
+        seccomp.security.alpha.kubernetes.io/pod: runtime/default
+        apparmor.security.beta.kubernetes.io/pod: runtime/default
+    spec:
+      # Required for accessing host resources
+      hostPID: true      # Access to host PID namespace for process detection
+      hostNetwork: true  # Access to host network for network analysis
+      hostIPC: false     # Don't need IPC namespace
+
+      # Run only on Linux nodes
+      nodeSelector:
+        kubernetes.io/os: linux
+
+      # ServiceAccount with necessary RBAC permissions
+      serviceAccountName: sec-userspace
+
+      # Do not restart on failure (one-time scan)
+      restartPolicy: Never
+
+      containers:
+        - name: sec-userspace
+          image: registry.example.com/security/sec-userspace:latest
+          imagePullPolicy: Always
+
+          # Security context - requires elevated privileges for detection
+          securityContext:
+            privileged: false  # Not running privileged for security
+            runAsUser: 0       # Run as root for access to /proc, /sys
+            runAsGroup: 0
+            runAsNonRoot: false
+            capabilities:
+              add:
+                - SYS_ADMIN      # Required for some detection operations
+                - SYS_PTRACE     # Required for process inspection
+                - NET_ADMIN      # Required for network analysis
+                - SYS_RESOURCE   # Required for resource limits inspection
+              drop:
+                - ALL            # Drop all other capabilities
+
+          # Command-line arguments (one-time scan, no interval)
+          args:
+            - "--quiet"
+            - "--output-dir"
+            - "/var/lib/sec-userspace/output"
+            - "--config"
+            - "/etc/sec-userspace/config.yaml"
+
+          # Environment variables
+          env:
+            - name: NODE_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: spec.nodeName
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: POD_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: SEC_SERVER_ENDPOINT
+              value: "http://sec-server.security-system:8080"
+            - name: PYTHONUNBUFFERED
+              value: "1"
+
+          # Volume mounts
+          volumeMounts:
+            # Host root filesystem (read-only for safety)
+            - name: host-root
+              mountPath: /host
+              readOnly: true
+              mountPropagation: HostToContainer
+
+            # Container runtime sockets
+            - name: containerd-sock
+              mountPath: /run/containerd/containerd.sock
+              readOnly: true
+            - name: docker-sock
+              mountPath: /var/run/docker.sock
+              readOnly: true
+
+            # Configuration
+            - name: config
+              mountPath: /etc/sec-userspace
+
+            # Output directory
+            - name: output
+              mountPath: /var/lib/sec-userspace/output
+
+          # Resource requests and limits
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+
+      # Volumes
+      volumes:
+        # Host root filesystem
+        - name: host-root
+          hostPath:
+            path: /
+            type: Directory
+
+        # Containerd socket
+        - name: containerd-sock
+          hostPath:
+            path: /run/containerd/containerd.sock
+            type: Socket
+
+        # Docker socket
+        - name: docker-sock
+          hostPath:
+            path: /var/run/docker.sock
+            type: Socket
+
+        # ConfigMap volume
+        - name: config
+          configMap:
+            name: sec-userspace-config
+            defaultMode: 0644
+
+        # Output directory
+        - name: output
+          hostPath:
+            path: /var/lib/sec-userspace/output
+            type: DirectoryOrCreate

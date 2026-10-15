@@ -1,0 +1,34 @@
+{
+  "version": "4.0.0",
+  "format": "line-based-b64",
+  "format_version": 1,
+  "created": "2026-04-24",
+  "updated": "2026-04-24",
+  "types": {
+    "ip_port": {
+      "file": "ip_port.b64",
+      "count": 90,
+      "tags": ["c2", "mining", "whitelist", "cloud_metadata"],
+      "description": "IP addresses and ports"
+    },
+    "domain": {
+      "file": "domain.b64",
+      "count": 162,
+      "tags": ["c2", "mining", "ddns"],
+      "description": "Domain names with wildcard support"
+    },
+    "url": {
+      "file": "url.b64",
+      "count": 0,
+      "tags": ["webshell", "backdoor", "malware"],
+      "description": "URLs, local paths, and filenames"
+    },
+    "hash": {
+      "file": "hash.b64",
+      "count": 20,
+      "tags": ["hash", "cve", "package"],
+      "description": "File hashes, CVEs, and package identifiers"
+    }
+  },
+  "total_entries": 272
+}
