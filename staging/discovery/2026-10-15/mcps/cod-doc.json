@@ -1,0 +1,22 @@
+{
+  "id": "cod-doc",
+  "name": "cod-doc",
+  "repository": "https://github.com/Orange-hanter/cod-doc",
+  "description": "Context Orchestrator for Documentation \u2014 MCP server + autonomous agent that keeps project docs honest. Docs, tasks, plans, stories, links, revisions in SQLite; markdown is a hash-verified projection, not the source of truth.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx cod-doc",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "cod-doc": {
+      "command": "uvx",
+      "args": [
+        "cod-doc"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "server-memory",
+  "name": "server-memory",
+  "repository": "https://github.com/agentage/server-memory",
+  "description": "MCP server for agentage Memory: exposes @agentage/memory-core vaults as the frozen 6 memory__* tools over stdio. Open counterpart to @modelcontextprotocol/server-memory",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y server-memory",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "server-memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "server-memory"
+      ]
+    }
+  }
+}

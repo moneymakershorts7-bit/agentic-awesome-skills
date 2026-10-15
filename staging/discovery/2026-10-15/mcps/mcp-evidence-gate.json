@@ -1,0 +1,23 @@
+{
+  "id": "mcp-evidence-gate",
+  "name": "mcp-evidence-gate",
+  "repository": "https://github.com/Xander-Xai/mcp-evidence-gate",
+  "description": "Experimental downstream verifier and CI policy gate for evidence-scoped MCP security receipts; initially compatible with modelcontextprotocol/registry#1404.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-evidence-gate",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "mcp-evidence-gate": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-evidence-gate"
+      ]
+    }
+  }
+}

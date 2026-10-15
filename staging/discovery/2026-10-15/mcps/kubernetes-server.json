@@ -1,0 +1,23 @@
+{
+  "id": "kubernetes-server",
+  "name": "kubernetes-mcp-server",
+  "repository": "https://github.com/containers/kubernetes-mcp-server",
+  "description": "Model Context Protocol (MCP) server for Kubernetes and OpenShift",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/containers/kubernetes-mcp-server@latest",
+  "stars": 2161,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "kubernetes-server": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/containers/kubernetes-mcp-server@latest"
+      ]
+    }
+  }
+}

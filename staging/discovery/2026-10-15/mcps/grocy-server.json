@@ -1,0 +1,22 @@
+{
+  "id": "grocy-server",
+  "name": "grocy-mcp-server",
+  "repository": "https://github.com/darkvadehors/grocy-mcp-server",
+  "description": "Serveur MCP avec OAuth 2.1 pour Grocy (Claude, ChatGPT)",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx grocy-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "grocy-server": {
+      "command": "uvx",
+      "args": [
+        "grocy-mcp-server"
+      ]
+    }
+  }
+}

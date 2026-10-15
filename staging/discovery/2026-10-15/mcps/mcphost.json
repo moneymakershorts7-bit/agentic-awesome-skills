@@ -1,0 +1,23 @@
+{
+  "id": "mcphost",
+  "name": "mcphost",
+  "repository": "https://github.com/j0yen/mcphost",
+  "description": "Hosted MCP runtime where the agent is the operator: sign up by tool call, publish your own tools.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install mcphost",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "mcphost": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "mcphost"
+      ]
+    }
+  }
+}

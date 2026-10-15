@@ -1,0 +1,23 @@
+{
+  "id": "mcp_server_shop",
+  "name": "mcp_server_shop",
+  "repository": "https://github.com/OleksUMD/mcp_server_shop",
+  "description": "Test project is about creating MCP server.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/OleksUMD/mcp_server_shop@latest",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "mcp_server_shop": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/OleksUMD/mcp_server_shop@latest"
+      ]
+    }
+  }
+}

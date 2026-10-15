@@ -1,0 +1,22 @@
+{
+  "id": "trending-claude-skills",
+  "name": "trending-claude-skills",
+  "repository": "https://github.com/linny006/trending-claude-skills",
+  "description": "Auto-updated leaderboard of trending claude-skills and AI agent repos, refreshed every 15 minutes",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx trending-claude-skills",
+  "stars": 127,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "trending-claude-skills": {
+      "command": "uvx",
+      "args": [
+        "trending-claude-skills"
+      ]
+    }
+  }
+}

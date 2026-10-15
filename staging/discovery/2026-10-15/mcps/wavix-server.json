@@ -1,0 +1,22 @@
+{
+  "id": "wavix-server",
+  "name": "wavix-mcp-server",
+  "repository": "https://github.com/Wavix/wavix-mcp-server",
+  "description": "Official MCP server for the Wavix communications API: voice, SMS, 2FA, and more for AI agents.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx wavix-mcp-server",
+  "stars": 4,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "wavix-server": {
+      "command": "uvx",
+      "args": [
+        "wavix-mcp-server"
+      ]
+    }
+  }
+}

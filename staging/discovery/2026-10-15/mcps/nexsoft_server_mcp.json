@@ -1,0 +1,23 @@
+{
+  "id": "nexsoft_server_mcp",
+  "name": "nexsoft_server_mcp",
+  "repository": "https://github.com/dyno-nexsoft/nexsoft_server_mcp",
+  "description": "A Model Context Protocol (MCP) server for the nexsoft_server CI/build REST API.",
+  "language": "Dart",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/dyno-nexsoft/nexsoft_server_mcp",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "nexsoft_server_mcp": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/dyno-nexsoft/nexsoft_server_mcp"
+      ]
+    }
+  }
+}

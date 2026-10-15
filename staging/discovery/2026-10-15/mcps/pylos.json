@@ -1,0 +1,23 @@
+{
+  "id": "pylos",
+  "name": "pylos-mcp",
+  "repository": "https://github.com/adamVass/pylos-mcp",
+  "description": "Email MCP server for Gmail, Outlook and any IMAP mailbox, hardened against prompt injection",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y pylos-mcp",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "pylos": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "pylos-mcp"
+      ]
+    }
+  }
+}

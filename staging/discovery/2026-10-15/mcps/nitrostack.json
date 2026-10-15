@@ -1,0 +1,23 @@
+{
+  "id": "nitrostack",
+  "name": "nitrostack",
+  "repository": "https://github.com/nitrocloudofficial/nitrostack",
+  "description": "The full-stack TypeScript framework to build, test, and deploy production-ready MCP servers and AI-native apps.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y nitrostack",
+  "stars": 2458,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "nitrostack": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "nitrostack"
+      ]
+    }
+  }
+}

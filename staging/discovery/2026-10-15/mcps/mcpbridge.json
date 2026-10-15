@@ -1,0 +1,23 @@
+{
+  "id": "mcpbridge",
+  "name": "mcpbridge",
+  "repository": "https://github.com/CarlxsMG/mcpbridge",
+  "description": "Self-hosted MCP gateway that turns any REST, GraphQL, or MCP server into secure, governed AI tools \u2014 OpenAPI auto-discovery, per-tool guardrails, RBAC, circuit breaking, and a real admin UI.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcpbridge",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "mcpbridge": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcpbridge"
+      ]
+    }
+  }
+}

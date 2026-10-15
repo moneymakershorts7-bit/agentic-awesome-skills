@@ -1,0 +1,23 @@
+{
+  "id": "agenthydra",
+  "name": "AgentHydra",
+  "repository": "https://github.com/LunarWerxs/AgentHydra",
+  "description": "Every local AI coding session in one tab: Claude Code, Codex and OpenCode in a single list, with a queue you can schedule and isolated Claude Desktop instances kept apart. Local, private, MCP-native.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y AgentHydra",
+  "stars": 43,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "agenthydra": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "AgentHydra"
+      ]
+    }
+  }
+}

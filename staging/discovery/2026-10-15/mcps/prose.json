@@ -1,0 +1,23 @@
+{
+  "id": "prose",
+  "name": "Prose",
+  "repository": "https://github.com/mindattic/Prose",
+  "description": "A local novel-writing engine: SQL Server canon for whole fictional universes, a desktop Writer, and a CLI and MCP server so Claude can draft, read and repair books against that canon.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/mindattic/Prose",
+  "stars": 3,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "prose": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/mindattic/Prose"
+      ]
+    }
+  }
+}

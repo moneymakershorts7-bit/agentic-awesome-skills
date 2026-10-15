@@ -1,0 +1,23 @@
+{
+  "id": "nexul",
+  "name": "nexul",
+  "repository": "https://github.com/otal-labs/nexul",
+  "description": "Self-hosted platform for project management, docs, CI runners, and deployment to your own servers, with a first-class MCP server so coding agents work through the same tools people do.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/otal-labs/nexul@latest",
+  "stars": 5,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "nexul": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/otal-labs/nexul@latest"
+      ]
+    }
+  }
+}

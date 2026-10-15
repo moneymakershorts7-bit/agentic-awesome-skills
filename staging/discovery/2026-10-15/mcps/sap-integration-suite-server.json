@@ -1,0 +1,23 @@
+{
+  "id": "sap-integration-suite-server",
+  "name": "sap-integration-suite-mcp-server",
+  "repository": "https://github.com/ridvanpolat/sap-integration-suite-mcp-server",
+  "description": "An enterprise-grade MCP server for SAP Integration Suite, built on @modelcontextprotocol/sdk. Unifying access to six SAP IS components, its decoupled architecture supports STDIO, SSE, and HTTP transports. This enables AI agents (like Claude, Cursor, etc.) to securely monitor, diagnose, and manage mission-critical SAP integration landscapes.",
+  "language": "TypeScript",
+  "transport": "sse",
+  "install_cmd": "npx -y sap-integration-suite-mcp-server",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "sap-integration-suite-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sap-integration-suite-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ghost",
+  "name": "ghost",
+  "repository": "https://github.com/wcatz/ghost",
+  "description": "GhostMem \u2014 a local-first MCP memory server for Claude Code, opencode, Cursor, and other MCP clients.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/wcatz/ghost@latest",
+  "stars": 2,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "ghost": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/wcatz/ghost@latest"
+      ]
+    }
+  }
+}

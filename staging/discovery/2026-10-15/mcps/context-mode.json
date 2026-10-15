@@ -1,0 +1,23 @@
+{
+  "id": "context-mode",
+  "name": "context-mode",
+  "repository": "https://github.com/mksglu/context-mode",
+  "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y context-mode",
+  "stars": 29547,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "context-mode": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "context-mode"
+      ]
+    }
+  }
+}

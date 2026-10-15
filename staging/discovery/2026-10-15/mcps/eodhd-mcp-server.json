@@ -1,0 +1,22 @@
+{
+  "id": "eodhd-mcp-server",
+  "name": "EODHD-MCP-Server",
+  "repository": "https://github.com/EodHistoricalData/EODHD-MCP-Server",
+  "description": "EODHD MCP Server for AI assistants",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx EODHD-MCP-Server",
+  "stars": 23,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "eodhd-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "EODHD-MCP-Server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "windows-server",
+  "name": "windows-mcp-server",
+  "repository": "https://github.com/deploymenttheory/windows-mcp-server",
+  "description": "A MCP server that bridges AI agents to the Windows desktop. UI Automation, synthetic mouse/keyboard input, screenshots, window and application control, PowerShell, the registry, processes, the filesystem, and web scraping. No computer-vision model is required: the agent perceives the UI through the Windows accessibility tree.",
+  "language": "Go",
+  "transport": "sse",
+  "install_cmd": "go install github.com/deploymenttheory/windows-mcp-server@latest",
+  "stars": 9,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "windows-server": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/deploymenttheory/windows-mcp-server@latest"
+      ]
+    }
+  }
+}

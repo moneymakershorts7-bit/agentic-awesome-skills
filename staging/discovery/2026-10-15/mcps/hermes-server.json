@@ -1,0 +1,22 @@
+{
+  "id": "hermes-server",
+  "name": "hermes-mcp-server",
+  "repository": "https://github.com/youbenben07-dev/hermes-mcp-server",
+  "description": "Hermes MCP Server: stdio MCP \u2192 Streamable HTTP + OAuth 2.1, ChatGPT/Claude remote connect",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx hermes-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "hermes-server": {
+      "command": "uvx",
+      "args": [
+        "hermes-mcp-server"
+      ]
+    }
+  }
+}

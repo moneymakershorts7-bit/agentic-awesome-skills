@@ -1,0 +1,23 @@
+{
+  "id": "design-os-studio",
+  "name": "design-os-studio",
+  "repository": "https://github.com/jangtrinh/design-os-studio",
+  "description": "DESIGN:OS Studio \u2014 Native GPU-accelerated interface design & Figma engine built in Rust",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install design-os-studio",
+  "stars": 1,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "design-os-studio": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "design-os-studio"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "jarvis-assistant-vocal",
+  "name": "jarvis-assistant-vocal",
+  "repository": "https://github.com/sosoj92/jarvis-assistant-vocal",
+  "description": "Assistant vocal local en francais : Claude ou Ollama (offline), domotique Hue, OBS, agenda, navigateur, appels Twilio, serveur MCP. Python.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx jarvis-assistant-vocal",
+  "stars": 467,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "jarvis-assistant-vocal": {
+      "command": "uvx",
+      "args": [
+        "jarvis-assistant-vocal"
+      ]
+    }
+  }
+}

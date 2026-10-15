@@ -1,0 +1,23 @@
+{
+  "id": "windows-server-search",
+  "name": "windows-server-search-mcp",
+  "repository": "https://github.com/VictorW96/windows-server-search-mcp",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "PowerShell",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/VictorW96/windows-server-search-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "windows-server-search": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/VictorW96/windows-server-search-mcp"
+      ]
+    }
+  }
+}

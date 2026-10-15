@@ -1,0 +1,22 @@
+{
+  "id": "faxbot",
+  "name": "Faxbot",
+  "repository": "https://github.com/DMontgomery40/Faxbot",
+  "description": "Self-hosted, open source, fax-sending API.\u00a0HIPAA compliant. This fax API includes MCP (Model Context Protocol) support for AI assistant integration.",
+  "language": "Python",
+  "transport": "sse",
+  "install_cmd": "uvx Faxbot",
+  "stars": 2,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "faxbot": {
+      "command": "uvx",
+      "args": [
+        "Faxbot"
+      ]
+    }
+  }
+}

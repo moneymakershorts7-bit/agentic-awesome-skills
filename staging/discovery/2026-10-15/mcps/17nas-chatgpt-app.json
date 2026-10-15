@@ -1,0 +1,23 @@
+{
+  "id": "17nas-chatgpt-app",
+  "name": "17nas-chatgpt-app",
+  "repository": "https://github.com/AmigaMeow/17nas-chatgpt-app",
+  "description": "Privacy-preserving IPv6 & network connectivity checker for ChatGPT (MCP Apps) with APNIC Labs rankings and zero-IP tracking.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y 17nas-chatgpt-app",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "17nas-chatgpt-app": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "17nas-chatgpt-app"
+      ]
+    }
+  }
+}

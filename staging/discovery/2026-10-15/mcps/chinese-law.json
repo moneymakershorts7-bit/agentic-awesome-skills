@@ -1,0 +1,23 @@
+{
+  "id": "chinese-law",
+  "name": "chinese-law-mcp",
+  "repository": "https://github.com/lttxzmj/chinese-law-mcp",
+  "description": "\u4e2d\u56fd\u6cd5\u5f8b\u6cd5\u89c4 MCP \u670d\u52a1\u5668\uff1aAI \u52a9\u624b\u9010\u6761\u67e5\u8be2 500+ \u90e8\u73b0\u884c\u6cd5\u5f8b\u3001\u53f8\u6cd5\u89e3\u91ca\u4e0e\u884c\u653f\u6cd5\u89c4 | MCP server for Chinese statutes",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y chinese-law-mcp",
+  "stars": 2,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "chinese-law": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "chinese-law-mcp"
+      ]
+    }
+  }
+}

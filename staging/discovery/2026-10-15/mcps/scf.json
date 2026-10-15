@@ -1,0 +1,23 @@
+{
+  "id": "scf",
+  "name": "mcp-server-scf",
+  "repository": "https://github.com/MarkAC007/mcp-server-scf",
+  "description": "MCP server for SCF Controls Platform \u2014 security compliance controls, frameworks, evidence, and risk management for AI agents",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-scf",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-15",
+  "mcpConfigSnippet": {
+    "scf": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-scf"
+      ]
+    }
+  }
+}
