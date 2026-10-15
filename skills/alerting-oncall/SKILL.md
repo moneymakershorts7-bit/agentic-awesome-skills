@@ -443,6 +443,17 @@ Use this skill when:
 - Reducing alert fatigue
 - Managing incident response workflows
 
+
+
+## Production Runbooks & Architecture References
+
+Detailed engineering runbooks distilled from production guides (Better Stack Community):
+- [SRE Incident Triage Playbook & Severity Response Operations](references/incident_triage_playbook.md)
+- [Alert Fatigue Reduction, Noise Suppression & On-Call Hygiene](references/alert_fatigue_reduction.md)
+- [SLO/SLA Error Budget Alerting & Multiwindow Multi-Burn-Rate Rules](references/slo_sla_alerting.md)
+- [Blameless Post-Mortem Writing Guide, Templates & MTTR Reduction](references/postmortem_template.md)
+- [SRE On-Call Rotation Design, Scheduling & Sustainability Runbook](references/oncall_rotation_design.md)
+
 ## Limitations
 
 - Guidance executes against real environments: confirm target, blast radius, and rollback plan before applying anything.

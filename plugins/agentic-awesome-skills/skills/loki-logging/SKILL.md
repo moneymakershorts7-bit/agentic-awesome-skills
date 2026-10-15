@@ -464,6 +464,17 @@ groups:
 - elk-stack (`elk-stack`) - Alternative logging
 - alerting-oncall (`alerting-oncall`) - Alert management
 
+
+
+## Production Runbooks & Architecture References
+
+Detailed engineering runbooks distilled from production guides (Better Stack Community):
+- [Vector Observability Pipelines, VRL Transforms & Loki Ingestion](references/vector_pipelines.md)
+- [Fluent Bit Configuration, Parsing & Loki Forwarding](references/fluentbit_recipes.md)
+- [Promtail Scraping Pipelines & Loki Production Architecture](references/promtail_loki.md)
+- [Structured JSON Logging Patterns (Pino, Winston, structlog)](references/structured_logging_patterns.md)
+- [Multi-Line Stack Traces & Linux Logrotate Automation](references/multiline_and_logrotate.md)
+
 ## Limitations
 
 - Guidance executes against real environments: confirm target, blast radius, and rollback plan before applying anything.

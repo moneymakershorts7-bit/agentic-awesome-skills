@@ -454,6 +454,16 @@ app.get('/metrics', async (req, res) => {
 - loki-logging (`loki-logging`) - Log aggregation
 - kubernetes-ops (`kubernetes-ops`) - K8s monitoring
 
+
+
+## Production Runbooks & Architecture References
+
+Detailed engineering runbooks distilled from production guides (Better Stack Community):
+- [PromQL Production Cheat Sheet & Query Recipes](references/promql_recipes.md)
+- [Alertmanager Routing, Deduplication & High-Fidelity Alert Rules](references/alertmanager_rules.md)
+- [Prometheus Custom Exporters & Scrape Target Architecture](references/custom_exporters.md)
+- [Grafana Dashboard Provisioning, Dynamic Templating & Visualization](references/grafana_dashboards.md)
+
 ## Limitations
 
 - Guidance executes against real environments: confirm target, blast radius, and rollback plan before applying anything.

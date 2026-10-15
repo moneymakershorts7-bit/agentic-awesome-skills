@@ -411,6 +411,15 @@ docker run -d \
 - container-scanning (`container-scanning`) - Security scanning
 - container-hardening (`container-hardening`) - Security hardening
 
+
+
+## Production Runbooks & Architecture References
+
+Detailed engineering runbooks distilled from production guides (Better Stack Community):
+- [Advanced Dockerfile Optimization, Multi-Stage Builds & Image Minimization](references/dockerfile_optimization.md)
+- [Docker Rootless Daemon & Podman Isolation Runbook](references/rootless_containers.md)
+- [Container Performance Tuning, Cgroups Limits & Non-Exec Debugging](references/container_performance_tuning.md)
+
 ## Limitations
 
 - Guidance executes against real environments: confirm target, blast radius, and rollback plan before applying anything.

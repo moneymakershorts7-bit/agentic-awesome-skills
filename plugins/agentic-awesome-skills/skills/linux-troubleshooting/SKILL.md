@@ -219,6 +219,15 @@ Use @incident-responder to implement resolution
 - `bash-scripting` - Bash scripting
 - `cloud-devops` - DevOps
 
+
+
+## Production Runbooks & Architecture References
+
+Detailed engineering runbooks distilled from production guides (Better Stack Community):
+- [Linux Kernel Diagnostics, Resource Bottlenecks & Sysctl Tuning](references/kernel_diagnostics.md)
+- [Linux Deep Performance Tracing with eBPF, perf & strace](references/ebpf_perf_tracing.md)
+- [Linux Network & Socket Exhaustion Debugging (ss, tcpdump & firewalls)](references/network_io_debugging.md)
+
 ## Limitations
 - Use this skill only when the task clearly matches the scope described above.
 - Do not treat the output as a substitute for environment-specific validation, testing, or expert review.
