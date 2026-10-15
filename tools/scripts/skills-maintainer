@@ -1,0 +1,622 @@
+#!/usr/bin/env bash
+# ==============================================================================
+# skills-maintainer: Rutina Mensual y a Demanda de Mantenimiento de Skills
+# Sincronización Upstream • Triage y Merge de PRs • Fix CI Actions • Jules Cloud
+# ==============================================================================
+set -eo pipefail
+
+REPO_DIR="/home/npirela/agentic-awesome-skills"
+UPSTREAM_URL="https://github.com/sickn33/agentic-awesome-skills.git"
+UPSTREAM_REPO="sickn33/agentic-awesome-skills"
+ORIGIN_REPO="moneymakershorts7-bit/agentic-awesome-skills"
+JULES_ENV="/home/npirela/.config/jules/env"
+LOG_DIR="/home/npirela/.agents/memory/working"
+mkdir -p "$LOG_DIR"
+LOG_FILE="$LOG_DIR/skills_maintainer_$(date +%Y%m%d_%H%M%S).log"
+
+# Colores para salida interactiva
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+log() {
+  local timestamp
+  timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
+  echo -e "${BLUE}[$timestamp]${NC} $1" | tee -a "$LOG_FILE"
+}
+
+success() {
+  local timestamp
+  timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
+  echo -e "${GREEN}[$timestamp] ✅${NC} $1" | tee -a "$LOG_FILE"
+}
+
+warn() {
+  local timestamp
+  timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
+  echo -e "${YELLOW}[$timestamp] ⚠️${NC} $1" | tee -a "$LOG_FILE"
+}
+
+error() {
+  local timestamp
+  timestamp="$(date '+%Y-%m-%d %H:%M:%S')"
+  echo -e "${RED}[$timestamp] ❌${NC} $1" | tee -a "$LOG_FILE"
+}
+
+# Cargar variables locales de Jules de forma segura
+if [ -f "$JULES_ENV" ]; then
+  # shellcheck source=/dev/null
+  source "$JULES_ENV"
+fi
+
+cd "$REPO_DIR"
+
+log "Iniciando mantenimiento integral de repositorio de habilidades..."
+log "Repositorio: $REPO_DIR"
+log "Registro de ejecución: $LOG_FILE"
+
+# ------------------------------------------------------------------------------
+# 1. SINCRONIZACIÓN Y REVISIÓN DE COMMITS UPSTREAM
+# ------------------------------------------------------------------------------
+sync_upstream() {
+  log "--- [Paso 1/5] Comprobando sincronización con Upstream ($UPSTREAM_REPO) ---"
+  
+  if ! git remote | grep -q "^upstream$"; then
+    git remote add upstream "$UPSTREAM_URL"
+    log "Remoto 'upstream' agregado: $UPSTREAM_URL"
+  fi
+
+  git fetch upstream main --quiet || warn "No se pudo hacer fetch de upstream/main"
+
+  local ahead_upstream
+  local behind_upstream
+  ahead_upstream=$(git rev-list --count upstream/main..main 2>/dev/null || echo "0")
+  behind_upstream=$(git rev-list --count main..upstream/main 2>/dev/null || echo "0")
+
+  log "Estado frente a upstream/main: +$ahead_upstream / -$behind_upstream commits"
+
+  if [ "$behind_upstream" -gt 0 ]; then
+    log "Hay $behind_upstream commits en upstream. Inspeccionando los 5 más recientes:"
+    git log -n 5 --oneline main..upstream/main | tee -a "$LOG_FILE"
+    
+    # Intentar rebase automático de upstream si no hay cambios sin comitear
+    if git diff-index --quiet HEAD --; then
+      log "Intentando sincronizar upstream/main limpiamente..."
+      if git merge --ff-only upstream/main 2>/dev/null; then
+        success "Sincronizado upstream por fast-forward exitosamente."
+      else
+        warn "Upstream tiene divergencias. Se requiere rebase o cherry-pick selectivo de skills."
+      fi
+    else
+      warn "Hay cambios locales pendientes en el working tree; rebase pospuesto."
+    fi
+  else
+    success "Repositorio completamente al día con upstream/main."
+  fi
+}
+
+# ------------------------------------------------------------------------------
+# 1b. RASTREO Y SINCRONIZACIÓN DE REPOSITORIOS EXTERNOS DE TERCEROS
+# ------------------------------------------------------------------------------
+sync_external_skills() {
+  log "--- [Paso 1b/5] Comprobando actualizaciones en 280+ repositorios externos de GitHub ---"
+  python3 "$REPO_DIR/tools/scripts/external_skills_tracker.py" "$@" | tee -a "$LOG_FILE"
+}
+
+# ------------------------------------------------------------------------------
+# 2. REVISIÓN Y TRIAGE DE PULL REQUESTS
+# ------------------------------------------------------------------------------
+review_and_merge_prs() {
+  log "--- [Paso 2/5] Revisando Pull Requests abiertos en $ORIGIN_REPO ---"
+  
+  if ! command -v gh &>/dev/null; then
+    warn "GitHub CLI ('gh') no está disponible; omitiendo gestión de PRs."
+    return 0
+  fi
+
+  local open_prs
+  open_prs=$(gh pr list --repo "$ORIGIN_REPO" --json number,title,author,headRefName,mergeable --limit 20)
+  local pr_count
+  pr_count=$(echo "$open_prs" | jq '. | length' 2>/dev/null || echo "0")
+
+  log "Total de PRs abiertos detectados: $pr_count"
+
+  if [ "$pr_count" -eq 0 ]; then
+    success "No hay Pull Requests pendientes de revisión."
+    return 0
+  fi
+
+  echo "$open_prs" | jq -c '.[]' | while IFS= read -r pr; do
+    local pr_num
+    local pr_title
+    local pr_author
+    local pr_mergeable
+    pr_num=$(echo "$pr" | jq -r '.number')
+    pr_title=$(echo "$pr" | jq -r '.title')
+    pr_author=$(echo "$pr" | jq -r '.author.login')
+    pr_mergeable=$(echo "$pr" | jq -r '.mergeable')
+
+    log "Evaluando PR #$pr_num: '$pr_title' (Autor: @$pr_author, Mergeable: $pr_mergeable)"
+
+    # Comprobar checks de CI
+    local checks_status
+    checks_status=$(gh pr checks "$pr_num" --repo "$ORIGIN_REPO" 2>&1 || true)
+    
+    if echo "$checks_status" | grep -q "Some checks were not successful"; then
+      warn "PR #$pr_num tiene verificaciones fallidas. Analizando detalle..."
+      
+      # Si es el PR #7 de DevSkim o similar con etiquetas mutables en actions, intentar parchear
+      if echo "$pr_title" | grep -iq "devskim"; then
+        log "Detectado PR de integración DevSkim (#$pr_num). Fijando SHAs inmutables..."
+      fi
+    elif echo "$pr_mergeable" | grep -q "MERGEABLE"; then
+      log "PR #$pr_num con checks aprobados y mergeable."
+      
+      # Protocolo de arbitraje maestro para PRs de Google Jules
+      local pr_branch
+      pr_branch=$(echo "$pr" | jq -r '.headRefName')
+      if [[ "$pr_author" == *"jules"* || "$pr_branch" == jules/* ]]; then
+        log "Analizando PR de Google Jules (#$pr_num, rama '$pr_branch') bajo protocolo de arbitraje..."
+        local diff_stats
+        diff_stats=$(gh pr diff "$pr_num" --repo "$ORIGIN_REPO" --stat 2>/dev/null || true)
+        if echo "$diff_stats" | grep -E -q "deleted file mode.*skills/|([0-9]+)\s+files? changed,\s+([0-9]+)\s+insertions?\(\+\),\s+([0-9]{3,})\s+deletions?\(-\)"; then
+          error "PR #$pr_num de Jules detectado con eliminaciones masivas o de skills. Rechazando por protección de catálogo."
+          gh pr comment "$pr_num" --repo "$ORIGIN_REPO" --body "❌ PR rechazado: Protección de catálogo activa. No se autoriza eliminación de skills." || true
+          gh pr close "$pr_num" --repo "$ORIGIN_REPO" || true
+          continue
+        fi
+
+        log "Auditoría de Jules #$pr_num validada y segura. Ejecutando squash merge autorizado..."
+        if gh pr merge "$pr_num" --repo "$ORIGIN_REPO" --squash --delete-branch; then
+          success "PR #$pr_num de Jules integrado exitosamente a main."
+        else
+          warn "Fallo al realizar merge de PR #$pr_num."
+        fi
+        continue
+      fi
+
+      if [[ "$pr_author" == "dependabot" || "$pr_author" == "app/dependabot" || "$pr_author" == "github-actions" ]]; then
+        log "Mergeando automáticamente PR automatizado #$pr_num..."
+        gh pr merge "$pr_num" --repo "$ORIGIN_REPO" --squash --delete-branch || warn "No se pudo automergear PR #$pr_num"
+      fi
+    fi
+  done
+}
+
+# ------------------------------------------------------------------------------
+# 3. VERIFICACIÓN Y MANTENIMIENTO DEL CATÁLOGO DE SKILLS
+# ------------------------------------------------------------------------------
+validate_skills_catalog() {
+  log "--- [Paso 3/5] Ejecutando validación estricta de skills y enlaces ---"
+  
+  if [ -f "package.json" ]; then
+    log "Ejecutando suite de validación de skills (npm run validate)..."
+    if npm run validate >> "$LOG_FILE" 2>&1; then
+      success "Validación de sintaxis, frontmatter y esquemas de skills: PASSED."
+    else
+      warn "Fallo en npm run validate. Revisar logs para identificar skills afectados."
+    fi
+
+    log "Ejecutando comprobación de seguridad de documentación (npm run security:docs)..."
+    if npm run security:docs >> "$LOG_FILE" 2>&1; then
+      success "Comprobación de directivas de seguridad y credenciales: PASSED."
+    else
+      warn "Fallo en npm run security:docs."
+    fi
+
+    log "Ejecutando tests de plataforma (npm run test)..."
+    if npm run test >> "$LOG_FILE" 2>&1; then
+      success "Tests unitarios de la plataforma: PASSED."
+    else
+      warn "Fallo en tests de la plataforma."
+    fi
+
+    log "Comprobando consistencia del repositorio (npm run audit:consistency)..."
+    if npm run audit:consistency >> "$LOG_FILE" 2>&1; then
+      success "Auditoría de consistencia del catálogo: PASSED."
+    else
+      warn "Fallo en audit:consistency. Ejecutando npm run update:skills para resincronizar..."
+      npm run update:skills >> "$LOG_FILE" 2>&1 || true
+    fi
+  else
+    warn "package.json no encontrado en $REPO_DIR."
+  fi
+}
+
+# ------------------------------------------------------------------------------
+# 4. DIAGNÓSTICO Y REPARACIÓN DE ERRORES EN GITHUB ACTIONS
+# ------------------------------------------------------------------------------
+fix_github_actions() {
+  log "--- [Paso 4/5] Analizando estado de GitHub Actions en $ORIGIN_REPO ---"
+  
+  if ! command -v gh &>/dev/null; then
+    warn "GitHub CLI ('gh') no disponible; omitiendo análisis de Actions."
+    return 0
+  fi
+
+  local recent_runs
+  recent_runs=$(gh run list --repo "$ORIGIN_REPO" --limit 10 --json databaseId,conclusion,workflowName,headBranch 2>/dev/null || echo "[]")
+  
+  local failed_count=0
+  echo "$recent_runs" | jq -c '.[]' | while IFS= read -r run; do
+    local conclusion
+    conclusion=$(echo "$run" | jq -r '.conclusion')
+    local run_id
+    run_id=$(echo "$run" | jq -r '.databaseId')
+    local workflow
+    workflow=$(echo "$run" | jq -r '.workflowName')
+    local branch
+    branch=$(echo "$run" | jq -r '.headBranch')
+
+    if [ "$conclusion" == "failure" ]; then
+      warn "Ejecución fallida detectada: $workflow (ID: $run_id, Rama: $branch)"
+      failed_count=$((failed_count + 1))
+      
+      # Si la rama principal falló o si es un fallo intermitente, reintentar los jobs fallidos
+      if [ "$branch" == "main" ]; then
+        log "Reintentando jobs fallidos en rama 'main' (gh run rerun $run_id --failed)..."
+        gh run rerun "$run_id" --repo "$ORIGIN_REPO" --failed 2>/dev/null || true
+      fi
+    fi
+  done
+
+  if [ "$failed_count" -eq 0 ]; then
+    success "Todas las ejecuciones recientes de GitHub Actions están en verde o superadas."
+  fi
+}
+
+# ------------------------------------------------------------------------------
+# 5. ORQUESTACIÓN Y DESPACHO DE AUDITORÍA CON GOOGLE JULES
+# ------------------------------------------------------------------------------
+dispatch_jules_audit() {
+  local mode="${1:-all}"
+  log "--- [Paso 5/5] Despachando auditoría con Google Jules (Modo: $mode) ---"
+  
+  if [ -z "${JULES_API_KEY:-}" ]; then
+    warn "JULES_API_KEY no configurada. Omitiendo despacho a Google Jules."
+    return 0
+  fi
+
+  local prompt=""
+  local title=""
+
+  case "$mode" in
+    security)
+      title="Daily Multi-Engine Security Sentinel (Cisco AI, Inspector, Cloudflare)"
+      prompt="Act as the Daily Multi-Engine Security & Hardening Auditor for agentic-awesome-skills.
+Execute security checks:
+1) Run skill-scanner / Cisco AI Defense across skills to detect tainted data flows, AST exfiltration, and undeclared network sinks.
+2) Run npx skill-inspector across modified skills for spec compliance.
+3) Apply Cloudflare Security Audit patterns to evaluate script boundaries and injection risks.
+4) Run npm run security:docs and npm run validate. Never commit secrets.
+Propose atomic security fixes on branch jules/security-hardening-patch via Pull Request. DO NOT attempt direct merge to main."
+      ;;
+    docs)
+      title="Daily Documentation & Wiki Synchronizer"
+      prompt="Act as the Daily Documentation & Wiki Synchronizer for agentic-awesome-skills.
+Tasks:
+1) Update repository metrics, badge counts, and table of contents in README.md.
+2) Run npm run update:skills and npm run audit:consistency to align catalog.
+3) Prepare and verify Wiki synchronization for the GitHub Wiki repository (moneymakershorts7-bit/agentic-awesome-skills.wiki.git) keeping Home.md and _Sidebar.md aligned.
+Propose documentation changes on branch jules/daily-docs-wiki-sync via Pull Request. DO NOT attempt direct merge to main."
+      ;;
+    optimize)
+      title="Weekly Quality & Performance Optimization Sentinel"
+      prompt="Act as the Weekly Quality & Performance Optimization Sentinel for agentic-awesome-skills.
+Tasks:
+1) Enforce Progressive Disclosure on skills (ensure SKILL.md is concise <300 lines, moving extensive reference guides to references/ and helper utilities to scripts/).
+2) Align bundle definitions (npm run bundles:sync and npm run plugin-compat:sync).
+3) Run npm run validate, npm run audit:consistency, and npm run test.
+Propose atomic optimization improvements on branch jules/weekly-optimization-audit via Pull Request. DO NOT attempt direct merge to main."
+      ;;
+    ci-fix|cifix)
+      title="CI/CD Build & Workflow Auto-Fixer Sentinel"
+      prompt="Act as the CI/CD Workflow & Build Auto-Fixer Sentinel for agentic-awesome-skills.
+Inspect and resolve CI/CD and workflow failures:
+1) Ensure immutable 40-character commit SHAs on all action tags across .github/workflows/*.yml.
+2) Resolve test and specification discrepancies (e.g. missing '## Limitations' sections in SKILL.md, broken relative links in references/, or schema mismatches).
+3) Fix Dependabot lockfile or peer dependency conflicts (such as major TypeScript vs. typescript-eslint mismatches).
+4) Run npm run validate, npm run security:docs, and npm run test.
+Propose atomic fixes on branch jules/ci-fix-patches via Pull Request. DO NOT attempt direct merge to main."
+      ;;
+    malware|threats)
+      title="Daily Malware & Supply-Chain Defense Sentinel"
+      prompt="Act as the Daily Malware & Supply-Chain Defense Sentinel for agentic-awesome-skills.
+Execute malware and threat detection:
+1) Run python3 tools/scripts/malware_scanner.py --strict . (or npm run scan:malware).
+2) Scan for reverse shell signatures (/dev/tcp, nc -e, pty.spawn), base64 execution pipelines, LD_PRELOAD hijacking, and credential dumping sinks.
+3) Verify absence of disguised binary payloads (ELF/PE/Mach-O magic bytes) in text files.
+4) Audit external dependencies for supply chain tampering.
+Propose atomic defensive mitigations on branch jules/malware-defense-patch via Pull Request. DO NOT attempt direct merge to main."
+      ;;
+    discovery|scout)
+      title="Daily Agent Skills & MCP Discovery Scout"
+      prompt="Act as the Daily Agent Skills & Model Context Protocol (MCP) Discovery Scout Sentinel for agentic-awesome-skills.
+Execute discovery and staging:
+1) Run python3 tools/scripts/discovery_scout.py --limit 15 to search GitHub for newly released agent skills and MCP servers.
+2) De-duplicate against the existing catalog in skills/ and skills_index.json.
+3) Stage candidates in staging/discovery/YYYY-MM-DD/skills/ and staging/discovery/YYYY-MM-DD/mcps/, and update docs/discovery/YYYY-MM-DD.md and docs/discovery/LEDGER.md.
+4) Run npm run validate to guarantee complete specification compliance. Never commit secrets or credentials.
+Propose discoveries on branch jules/daily-discovery-$(date +%Y%m%d) via Pull Request titled 'feat(discovery): daily new skills and MCP servers scout [$(date +%Y-%m-%d)]'. DO NOT attempt direct merge to main."
+      ;;
+    free-for-dev|free-dev|free-tools)
+      title="Daily Free-For-Dev Tools & Services Scout Sentinel"
+      prompt="Act as the Daily Free-For-Dev Tools & Services Sentinel for agentic-awesome-skills.
+Execute daily monitoring and indexing:
+1) Run python3 tools/scripts/free_for_dev_scout.py --sentinel to fetch newly merged tools from ripienaar/free-for-dev and GitHub free tech repositories.
+2) Update data/free_for_dev_index.json and docs/free_for_dev/CATALOG.md using python3 tools/scripts/free_for_dev_indexer.py --update.
+3) Generate daily discovery dossier under docs/free_for_dev/daily/YYYY-MM-DD.md and append discoveries to docs/free_for_dev/LEDGER.md.
+4) Formulate actionable project integration recipes for serverless, edge, AI agents, and database stacks.
+5) Run npm run validate to ensure spec hygiene.
+Propose daily index update on branch jules/free-for-dev-$(date +%Y%m%d) via Pull Request titled 'feat(free-for-dev): daily free developer tools and services index [$(date +%Y-%m-%d)]'. DO NOT attempt direct merge to main."
+      ;;
+    awesome|awesome-tools|awesome-scout)
+      title="Daily Awesome Topics & Project Tools Sentinel (100% Free & FOSS)"
+      prompt="Act as the Daily Awesome Topics & Project Tools Sentinel for agentic-awesome-skills.
+Execute autonomous zero-token awesome discovery:
+1) Run python3 tools/scripts/awesome_scout.py to search topic:awesome lists for active project stacks.
+2) Ensure all proposed tools strictly have permissive or verified FOSS licenses (MIT, Apache, BSD, GPL, Self-Hosted) with zero mandatory cost.
+3) Update docs/awesome-proposals/ and data/awesome-proposals/ snapshots.
+4) Propose atomic tool integrations on branch jules/awesome-tools-$(date +%Y%m%d) via Pull Request titled 'feat(awesome): daily free awesome tools proposals [$(date +%Y-%m-%d)]'. DO NOT attempt direct merge to main."
+      ;;
+    all|*)
+      title="Monthly Sentinel Maintenance Sweep"
+      prompt="Act as the Multi-Agent Maintenance Sentinel for agentic-awesome-skills.
+Conduct comprehensive audit:
+1) Security scans (Cisco AI Defense / skill-scanner, skill-inspector, Cloudflare security harness, malware scanner, npm run security:docs).
+2) Documentation and catalog consistency (npm run validate, npm run audit:consistency, npm run test).
+3) Fix broken reference links, syntax errors, or schema misalignments.
+Propose fixes on branch jules/sentinel-maintenance via Pull Request. DO NOT attempt direct merge to main."
+      ;;
+  esac
+
+  dispatch_jules_task "$prompt" "$title" "$ORIGIN_REPO"
+}
+
+is_jules_cli_authenticated() {
+  if ! command -v jules &>/dev/null; then
+    return 1
+  fi
+  local check_out
+  check_out=$(jules remote list --session 2>&1 || true)
+  if [[ "$check_out" == *"did you forget to login"* || "$check_out" == *"failed to list"* || "$check_out" == *"without a valid client"* ]]; then
+    return 1
+  fi
+  return 0
+}
+
+jules_remote_list() {
+  local target="${1:---session}"
+  if is_jules_cli_authenticated; then
+    log "Consultando Jules en la nube vía Jules CLI (jules remote list $target)..."
+    jules remote list "$target"
+  else
+    log "Jules CLI no autenticado vía OAuth. Consultando mediante Jules REST API v1alpha..."
+    if [ -z "${JULES_API_KEY:-}" ]; then
+      warn "Ni Jules CLI ni JULES_API_KEY están disponibles. Ejecuta 'jules login' o configura JULES_API_KEY."
+      return 1
+    fi
+    if [[ "$target" == "--repo" || "$target" == "repo" || "$target" == "repos" ]]; then
+      curl -s -H "x-goog-api-key: $JULES_API_KEY" https://jules.googleapis.com/v1alpha/sources | jq .
+    else
+      curl -s -H "x-goog-api-key: $JULES_API_KEY" https://jules.googleapis.com/v1alpha/sessions | jq .
+    fi
+  fi
+}
+
+jules_remote_pull() {
+  local session_id="$1"
+  shift || true
+  if [ -z "$session_id" ]; then
+    error "Uso: skills-maintainer jules pull <SESSION_ID> [--apply]"
+    return 1
+  fi
+  if is_jules_cli_authenticated; then
+    log "Descargando resultados de sesión Jules #$session_id vía Jules CLI..."
+    jules remote pull --session "$session_id" "$@"
+  else
+    log "Jules CLI no autenticado. Consultando detalles de sesión #$session_id vía REST API..."
+    if [ -z "${JULES_API_KEY:-}" ]; then
+      error "JULES_API_KEY no configurada. Ejecuta 'jules login' o configura JULES_API_KEY."
+      return 1
+    fi
+    curl -s -H "x-goog-api-key: $JULES_API_KEY" "https://jules.googleapis.com/v1alpha/sessions/$session_id" | jq .
+  fi
+}
+
+dispatch_jules_task() {
+  local prompt="$1"
+  local title="${2:-Custom Jules Task}"
+  local repo="${3:-$ORIGIN_REPO}"
+
+  log "Despachando tarea a Google Jules: '$title'..."
+
+  if is_jules_cli_authenticated; then
+    log "Modo de Despacho: Jules CLI oficial ('jules remote new')..."
+    if jules remote new --repo "$repo" --session "$prompt"; then
+      success "Sesión iniciada con éxito en Google Jules mediante CLI!"
+      return 0
+    else
+      warn "Fallo en 'jules remote new'. Intentando fallback a REST API v1alpha..."
+    fi
+  fi
+
+  if [ -z "${JULES_API_KEY:-}" ]; then
+    error "No se puede despachar a Jules: Jules CLI no autenticado y JULES_API_KEY no configurada."
+    return 1
+  fi
+
+  log "Modo de Despacho: Jules REST API v1alpha ($JULES_API_KEY)..."
+  local jules_response
+  jules_response=$(curl -s -X POST https://jules.googleapis.com/v1alpha/sessions \
+    -H "x-goog-api-key: $JULES_API_KEY" \
+    -H "Content-Type: application/json" \
+    -d "$(jq -n \
+      --arg prompt "$prompt" \
+      --arg title "$title" \
+      --arg repo "sources/github/$repo" \
+      '{
+        prompt: $prompt,
+        title: $title,
+        sourceContext: {
+          source: $repo,
+          githubRepoContext: { startingBranch: "main" }
+        }
+      }')")
+
+  local session_id
+  session_id=$(echo "$jules_response" | jq -r '.id // empty' 2>/dev/null || true)
+  local session_url
+  session_url=$(echo "$jules_response" | jq -r '.url // empty' 2>/dev/null || true)
+
+  if [ -n "$session_id" ]; then
+    success "Sesión de Google Jules iniciada con éxito! ($title)"
+    log "ID de Sesión: $session_id"
+    log "URL de Seguimiento: $session_url"
+  else
+    warn "Respuesta de Jules: $jules_response"
+  fi
+}
+
+# ------------------------------------------------------------------------------
+# MODO DE EJECUCIÓN
+# ------------------------------------------------------------------------------
+case "${1:-all}" in
+  upstream)
+    sync_upstream
+    ;;
+  external|external-sync)
+    sync_external_skills "${@:2}"
+    ;;
+  prs)
+    review_and_merge_prs
+    ;;
+  validate)
+    validate_skills_catalog
+    ;;
+  actions|ci)
+    fix_github_actions
+    if [[ "${2:-}" == "--fix" || "${2:-}" == "fix" ]]; then
+      dispatch_jules_audit "ci-fix"
+    fi
+    ;;
+  discovery)
+    log "Iniciando explorador de skills y servidores MCP..."
+    if [[ "${2:-}" == "jules" || "${2:-}" == "--jules" ]]; then
+      dispatch_jules_audit "discovery"
+    else
+      python3 "$REPO_DIR/tools/scripts/discovery_scout.py" "${@:2}"
+    fi
+    ;;
+  free-for-dev|free-tools|free-dev)
+    log "Iniciando explorador e indexador de herramientas gratuitas (Free-For-Dev)..."
+    if [[ "${2:-}" == "jules" || "${2:-}" == "--jules" ]]; then
+      dispatch_jules_audit "free-for-dev"
+    elif [[ "${2:-}" == "search" || "${2:-}" == "-s" ]]; then
+      python3 "$REPO_DIR/tools/scripts/free_for_dev_indexer.py" --search "${3:-}" "${@:4}"
+    elif [[ "${2:-}" == "recommend" || "${2:-}" == "-r" ]]; then
+      python3 "$REPO_DIR/tools/scripts/free_for_dev_indexer.py" --recommend "${3:-}" "${@:4}"
+    elif [[ "${2:-}" == "category" || "${2:-}" == "-c" ]]; then
+      python3 "$REPO_DIR/tools/scripts/free_for_dev_indexer.py" --category "${3:-}" "${@:4}"
+    elif [[ "${2:-}" == "stats" ]]; then
+      python3 "$REPO_DIR/tools/scripts/free_for_dev_indexer.py" --stats
+    elif [[ "${2:-}" == "update" || "${2:-}" == "--update" ]]; then
+      python3 "$REPO_DIR/tools/scripts/free_for_dev_indexer.py" --update
+    else
+      python3 "$REPO_DIR/tools/scripts/free_for_dev_scout.py" --notify "${@:2}"
+    fi
+    ;;
+  awesome|awesome-tools|awesome-scout)
+    log "Iniciando explorador de GitHub Awesome Topics y herramientas FOSS por proyecto..."
+    if [[ "${2:-}" == "jules" || "${2:-}" == "--jules" ]]; then
+      dispatch_jules_audit "awesome"
+    elif [[ "${2:-}" == "search" || "${2:-}" == "-s" ]]; then
+      python3 "$REPO_DIR/tools/scripts/awesome_scout.py" --search "${3:-}" "${@:4}"
+    elif [[ "${2:-}" == "recommend" || "${2:-}" == "-r" ]]; then
+      python3 "$REPO_DIR/tools/scripts/awesome_scout.py" --recommend "${3:-}" "${@:4}"
+    elif [[ "${2:-}" == "dry-run" || "${2:-}" == "--dry-run" ]]; then
+      python3 "$REPO_DIR/tools/scripts/awesome_scout.py" --dry-run "${@:3}"
+    else
+      python3 "$REPO_DIR/tools/scripts/awesome_scout.py" "${@:2}"
+    fi
+    ;;
+  review-discovery|review)
+    log "Iniciando motor de revisión y triaje de candidatos descubiertos..."
+    python3 "$REPO_DIR/tools/scripts/review_discovery.py" "${@:2}"
+    ;;
+  jules)
+    case "${2:-all}" in
+      version|-v|--version)
+        if command -v jules &>/dev/null; then
+          jules version
+        else
+          echo "Jules CLI (@google/jules) no encontrado en PATH."
+        fi
+        ;;
+      list|ls)
+        jules_remote_list "${3:---session}"
+        ;;
+      pull)
+        jules_remote_pull "$3" "${@:4}"
+        ;;
+      new)
+        dispatch_jules_task "$3" "Ad-hoc Jules CLI Task" "${4:-$ORIGIN_REPO}"
+        ;;
+      login)
+        echo "Iniciando login guiado de Jules CLI..."
+        jules login --no-launch-browser
+        ;;
+      security|docs|optimize|ci-fix|cifix|malware|threats|discovery|scout|free-for-dev|free-dev|awesome|awesome-tools|all)
+        dispatch_jules_audit "$2"
+        ;;
+      *)
+        dispatch_jules_audit "${2:-all}"
+        ;;
+    esac
+    ;;
+  malware)
+    log "Ejecutando escáner local de malware y backdoors..."
+    python3 "$REPO_DIR/tools/scripts/malware_scanner.py" --strict "$REPO_DIR"
+    ;;
+  all|--all)
+    sync_upstream
+    sync_external_skills --limit 30
+    review_and_merge_prs
+    validate_skills_catalog
+    fix_github_actions
+    log "Mostrando estado del dossier mensual de descubrimientos para triaje..."
+    python3 "$REPO_DIR/tools/scripts/review_discovery.py" --dossier || true
+    dispatch_jules_audit "all"
+    success "Rutina mensual completada con éxito. Detalles en: $LOG_FILE"
+    ;;
+  -h|--help|help)
+    echo "Uso: skills-maintainer [opción] [sub-opción]"
+    echo ""
+    echo "Opciones:"
+    echo "  all                                         Ejecutar rutina mensual completa [Default]"
+    echo "  upstream                                    Sincronizar e inspeccionar cambios de upstream/main"
+    echo "  external [--check|--scan|--limit N|--all]   Rastrear y comprobar actualizaciones en 280+ repositorios externos"
+    echo "  prs                                         Revisar y arbitrar PRs (Protección anti-borrado y Dependabot)"
+    echo "  awesome [--recommend|--search|--jules]      Explorar GitHub Awesome topics y proponer herramientas FOSS por proyecto"
+    echo "  free-for-dev [--update|search|recommend]    Explorar, indexar y recomendar herramientas gratuitas de desarrollo"
+    echo "  discovery [--jules|--dry-run|--limit N]     Explorar GitHub en busca de nuevos skills y MCPs (local o Jules)"
+    echo "  review-discovery [--list|--audit|--accept]  Revisar y arbitrar candidatos descubiertos en el barrido mensual"
+    echo "  validate                                    Ejecutar validadores de skills, seguridad de docs y tests"
+    echo "  ci [--fix]                                  Inspeccionar y re-ejecutar CI fallido (o auto-fix con Jules)"
+    echo "  malware                                     Ejecutar escaneo local de malware y amenazas de cadena de suministro"
+    echo "  jules [awesome|free-for-dev|security|all]   Despachar auditoría/centinela específico a Google Jules"
+    echo "  jules version                               Mostrar la versión del CLI oficial de Jules"
+    echo "  jules list [--repo|--session]               Listar repositorios o sesiones remotas activas de Jules"
+    echo "  jules pull <session_id> [--apply]           Descargar o inspeccionar el diff de una sesión de Jules"
+    echo "  jules new \"<prompt>\" [repo]                 Crear una sesión ad-hoc en Jules"
+    echo "  jules login                                 Autenticar Jules CLI mediante flujo headless"
+    echo "  --help                                      Mostrar esta ayuda"
+    exit 0
+    ;;
+  *)
+    error "Opción no reconocida: $1. Usa 'skills-maintainer --help' para ver opciones."
+    exit 1
+    ;;
+esac
