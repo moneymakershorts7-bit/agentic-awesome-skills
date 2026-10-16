@@ -1,0 +1,23 @@
+{
+  "id": "ads",
+  "name": "ads-mcp",
+  "repository": "https://github.com/Lombardi36/ads-mcp",
+  "description": "MCP server for managing ad campaigns across Google Ads, Meta Ads, LinkedIn Ads, and TikTok Ads. 100+ tools for campaign creation, performance analysis, keyword research, and budget optimization. Works with ChatGPT, Claude, Gemini CLI, Cursor, Codex, and Windsurf.",
+  "language": "Jupyter Notebook",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/Lombardi36/ads-mcp",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "ads": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/Lombardi36/ads-mcp"
+      ]
+    }
+  }
+}

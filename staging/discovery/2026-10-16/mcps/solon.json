@@ -1,0 +1,23 @@
+{
+  "id": "solon",
+  "name": "solon",
+  "repository": "https://github.com/opensolon/solon",
+  "description": "\ud83d\udd25 Java enterprise application development framework for full scenario: Restrained, Efficient, Open, Ecologicalll!!! 700% higher concurrency 50% memory savings Startup is 10 times faster. Packing 90% smaller; Compatible with java8 ~ java26; Supports LTS. (Replaceable spring)",
+  "language": "Java",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/opensolon/solon",
+  "stars": 2796,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "solon": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/opensolon/solon"
+      ]
+    }
+  }
+}

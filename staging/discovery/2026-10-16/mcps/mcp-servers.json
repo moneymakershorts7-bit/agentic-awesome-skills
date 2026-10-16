@@ -1,0 +1,23 @@
+{
+  "id": "mcp-servers",
+  "name": "mcp-servers",
+  "repository": "https://github.com/theluckystrike/mcp-servers",
+  "description": "42 local-first MCP servers for back-office work: invoices, VAT, PDFs, spreadsheets, time tracking, expenses. Free tier, one-time Pro (no subscription, no account). Hosted, no-install endpoints: https://mcp.zovo.one",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-servers",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "mcp-servers": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-servers"
+      ]
+    }
+  }
+}

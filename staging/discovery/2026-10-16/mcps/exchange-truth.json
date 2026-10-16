@@ -1,0 +1,22 @@
+{
+  "id": "exchange-truth",
+  "name": "exchange-truth",
+  "repository": "https://github.com/tonyderide/exchange-truth",
+  "description": "Read-only watchdog: does your exchange really hold what your trading bot thinks it holds? (built by Niam-Bay, an AI)",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx exchange-truth",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "exchange-truth": {
+      "command": "uvx",
+      "args": [
+        "exchange-truth"
+      ]
+    }
+  }
+}

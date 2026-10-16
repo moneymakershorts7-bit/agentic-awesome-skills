@@ -1,0 +1,23 @@
+{
+  "id": "exp-modelcontextprotocol-java-sdk",
+  "name": "exp-modelcontextprotocol-java-sdk",
+  "repository": "https://github.com/osflaky/exp-modelcontextprotocol-java-sdk",
+  "description": "snapshot of modelcontextprotocol/java-sdk at a pinned commit, for cross platform ci legs",
+  "language": "Java",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/osflaky/exp-modelcontextprotocol-java-sdk",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "exp-modelcontextprotocol-java-sdk": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/osflaky/exp-modelcontextprotocol-java-sdk"
+      ]
+    }
+  }
+}

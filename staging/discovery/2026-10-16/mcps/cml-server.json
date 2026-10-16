@@ -1,0 +1,22 @@
+{
+  "id": "cml-server",
+  "name": "cml-mcp-server",
+  "repository": "https://github.com/dr-stutters/cml-mcp-server",
+  "description": "FastMCP server for Cisco Modeling Labs (CML)",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx cml-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "cml-server": {
+      "command": "uvx",
+      "args": [
+        "cml-mcp-server"
+      ]
+    }
+  }
+}

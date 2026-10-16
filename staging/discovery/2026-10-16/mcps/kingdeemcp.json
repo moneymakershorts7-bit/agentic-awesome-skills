@@ -1,0 +1,22 @@
+{
+  "id": "kingdeemcp",
+  "name": "KingdeeMCP",
+  "repository": "https://github.com/kacpergomes34237/KingdeeMCP",
+  "description": "\u91d1\u8776\u4e91\u661f\u7a7a MCP Server\uff1a\u8ba9 Claude/Cursor \u7b49 AI \u52a9\u624b\u7528\u81ea\u7136\u8bed\u8a00\u76f4\u63a5\u67e5\u8be2\u3001\u64cd\u4f5c ERP\uff08\u91c7\u8d2d/\u9500\u552e/\u5e93\u5b58/\u8d22\u52a1\u7b49 97 \u4e2a\u5de5\u5177\uff09",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx KingdeeMCP",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "kingdeemcp": {
+      "command": "uvx",
+      "args": [
+        "KingdeeMCP"
+      ]
+    }
+  }
+}

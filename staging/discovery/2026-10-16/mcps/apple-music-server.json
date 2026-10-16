@@ -1,0 +1,22 @@
+{
+  "id": "apple-music-server",
+  "name": "apple-music-mcp-server",
+  "repository": "https://github.com/TomerBenShimol/apple-music-mcp-server",
+  "description": "Apple Music MCP Server \u2014 Python and FastMCP tools for searching music, managing your library and playlists, and connecting Hermes or ChatGPT.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx apple-music-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "apple-music-server": {
+      "command": "uvx",
+      "args": [
+        "apple-music-mcp-server"
+      ]
+    }
+  }
+}

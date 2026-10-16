@@ -1,0 +1,23 @@
+{
+  "id": "financial-modeling-prep-mcp-server",
+  "name": "Financial-Modeling-Prep-MCP-Server",
+  "repository": "https://github.com/swalker21/Financial-Modeling-Prep-MCP-Server",
+  "description": "A Model Context Protocol (MCP) implementation for Financial Modeling Prep, enabling AI assistants to access and analyze financial data, stock information, company fundamentals, and market insights.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y Financial-Modeling-Prep-MCP-Server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "financial-modeling-prep-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "Financial-Modeling-Prep-MCP-Server"
+      ]
+    }
+  }
+}

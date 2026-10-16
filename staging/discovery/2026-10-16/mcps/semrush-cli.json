@@ -1,0 +1,23 @@
+{
+  "id": "semrush-cli",
+  "name": "semrush-cli",
+  "repository": "https://github.com/Microck/semrush-cli",
+  "description": "terminal CLI for keyword research, rankings, backlinks, competitor analysis, projects, and site audits",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y semrush-cli",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "semrush-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "semrush-cli"
+      ]
+    }
+  }
+}

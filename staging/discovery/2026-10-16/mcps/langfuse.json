@@ -1,0 +1,23 @@
+{
+  "id": "langfuse",
+  "name": "mcp-server-langfuse",
+  "repository": "https://github.com/mohammedvasiliev62/mcp-server-langfuse",
+  "description": "Model Context Protocol (MCP) Server for Langfuse Prompt Management. This server allows you to access and manage your Langfuse prompts through the Model Context Protocol.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-langfuse",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "langfuse": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-langfuse"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "zotero",
+  "name": "zotero-mcp",
+  "repository": "https://github.com/BrendaTokugawa24/zotero-mcp",
+  "description": "Lightweight Model Context Protocol (MCP) server for the Zotero API, in Python",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx zotero-mcp",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "zotero": {
+      "command": "uvx",
+      "args": [
+        "zotero-mcp"
+      ]
+    }
+  }
+}

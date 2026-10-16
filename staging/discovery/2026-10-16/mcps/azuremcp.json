@@ -1,0 +1,23 @@
+{
+  "id": "azuremcp",
+  "name": "AzureMCP",
+  "repository": "https://github.com/eXoz00rd/AzureMCP",
+  "description": "MCP server for Azure DevOps Server (on-premises) - .NET 10, official ModelContextProtocol SDK, PAT auth, shipped as NuGet package",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/eXoz00rd/AzureMCP",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "azuremcp": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/eXoz00rd/AzureMCP"
+      ]
+    }
+  }
+}

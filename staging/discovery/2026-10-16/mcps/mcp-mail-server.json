@@ -1,0 +1,23 @@
+{
+  "id": "mcp-mail-server",
+  "name": "mcp-mail-server",
+  "repository": "https://github.com/yunfeizhu/mcp-mail-server",
+  "description": "A lightweight Model Context Protocol (MCP) server that provides IMAP and SMTP email functionality for AI assistants like Claude in Cursor IDE. Built with TypeScript and optimized for easy deployment via npm/npx.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-mail-server",
+  "stars": 51,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "mcp-mail-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-mail-server"
+      ]
+    }
+  }
+}

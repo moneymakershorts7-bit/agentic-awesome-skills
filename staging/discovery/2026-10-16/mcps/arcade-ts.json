@@ -1,0 +1,23 @@
+{
+  "id": "arcade-ts",
+  "name": "arcade-mcp-ts",
+  "repository": "https://github.com/ArcadeAI/arcade-mcp-ts",
+  "description": "TypeScript framework for building MCP servers with built-in OAuth (21 providers), secret injection, middleware, multi-user JWT auth, and worker routes. Wraps @modelcontextprotocol/sdk.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y arcade-mcp-ts",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "arcade-ts": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "arcade-mcp-ts"
+      ]
+    }
+  }
+}

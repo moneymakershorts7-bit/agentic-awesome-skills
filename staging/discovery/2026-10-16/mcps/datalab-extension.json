@@ -1,0 +1,23 @@
+{
+  "id": "datalab-extension",
+  "name": "datalab-extension-mcp",
+  "repository": "https://github.com/modootoday/datalab-extension-mcp",
+  "description": "Local MCP server that exposes the DataLab Tools browser extension's read-only tools to an MCP host. Holds no credentials; every call runs inside your own browser session.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y datalab-extension-mcp",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "datalab-extension": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "datalab-extension-mcp"
+      ]
+    }
+  }
+}

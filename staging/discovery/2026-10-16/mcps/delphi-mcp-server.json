@@ -1,0 +1,23 @@
+{
+  "id": "delphi-mcp-server",
+  "name": "Delphi-MCP-Server",
+  "repository": "https://github.com/burke279/Delphi-MCP-Server",
+  "description": "Native Delphi Server implementation of the Model Context Protocol (MCP)",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y Delphi-MCP-Server",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "delphi-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "Delphi-MCP-Server"
+      ]
+    }
+  }
+}

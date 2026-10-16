@@ -1,0 +1,23 @@
+{
+  "id": "mcp-dap-server",
+  "name": "mcp-dap-server",
+  "repository": "https://github.com/isabeller6959/mcp-dap-server",
+  "description": "MCP server to communicate with DAP servers allowing AI Agents the ability to debug live programs.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-dap-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "mcp-dap-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-dap-server"
+      ]
+    }
+  }
+}

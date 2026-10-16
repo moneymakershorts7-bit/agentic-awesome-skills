@@ -1,0 +1,23 @@
+{
+  "id": "express-rest-api-and-mcp-server-framework",
+  "name": "Express-REST-API-and-MCP-Server-Framework",
+  "repository": "https://github.com/SamanthaKilic/Express-REST-API-and-MCP-Server-Framework",
+  "description": "Express REST API and MCP Server Framework is a comprehensive development framework for building RESTful APIs and MCP servers with Express.js. It provides a complete template for creating production-ready APIs using Node.js, Express, Mongoose (MongoDB), and Sequelize (SQL databases).",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y Express-REST-API-and-MCP-Server-Framework",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "express-rest-api-and-mcp-server-framework": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "Express-REST-API-and-MCP-Server-Framework"
+      ]
+    }
+  }
+}

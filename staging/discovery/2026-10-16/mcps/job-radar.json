@@ -1,0 +1,22 @@
+{
+  "id": "job-radar",
+  "name": "job-radar",
+  "repository": "https://github.com/ssarunic/job-radar",
+  "description": "Scans company career pages daily and tracks senior PM roles \u2014 because building an app to search for jobs is more fun than actually searching for jobs.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx job-radar",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-16",
+  "mcpConfigSnippet": {
+    "job-radar": {
+      "command": "uvx",
+      "args": [
+        "job-radar"
+      ]
+    }
+  }
+}
