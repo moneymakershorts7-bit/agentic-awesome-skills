@@ -1,0 +1,22 @@
+{
+  "name": "agentic-bundle-herk-edit-kit",
+  "description": "Herk Edit Kit Master Suite: Transcript-driven video cutting, short-form viral editing, beat-synced motion showreels, and HyperFrames HTML/GSAP motion graphics components",
+  "version": "2.0.0",
+  "skills": [
+    "skills/cut-mistakes",
+    "skills/cut-silences",
+    "skills/edit-video",
+    "skills/gsap",
+    "skills/hyperframes",
+    "skills/hyperframes-cli",
+    "skills/hyperframes-registry",
+    "skills/hyperframes-video-beats",
+    "skills/make-a-video",
+    "skills/motion-showreel",
+    "skills/short-form-edit",
+    "skills/short-form-video",
+    "skills/style-library",
+    "skills/video-storytelling",
+    "skills/website-to-hyperframes"
+  ]
+}

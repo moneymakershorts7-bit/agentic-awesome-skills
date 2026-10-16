@@ -78,4 +78,7 @@ suppressions:
   - rule_id: COMMAND_INJECTION_JS_CHILD_PROCESS
     skills:
       - "code-to-video"
-    reason: "Legitimate local child_process spawn of FFmpeg and edge-tts CLI binaries for video encoding and audio synthesis"
+      - "cut-silences"
+      - "cut-mistakes"
+      - "motion-showreel"
+    reason: "Legitimate local child_process spawn of FFmpeg, ffprobe, and audio/video tools for video cutting and media rendering"
