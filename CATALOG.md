@@ -2,7 +2,7 @@
 
 Generated at: 2026-10-02T09:47:34.000Z
 
-Total skills: 2798
+Total skills: 2868
 
 ## agent-behavior (5)
 
@@ -21,7 +21,7 @@ Total skills: 2798
 | `agent-evaluation-reporting` | Use when summarizing agent evaluations where autonomous, assisted, failed, timed-out, or invalid outcomes must remain distinct and comparable. | none | self | agent-evaluation, metrics, reporting, reliability, benchmarking | agent-evaluation, metrics, reporting, reliability, benchmarking, agent, evaluation, summarizing, evaluations, where, autonomous, assisted |
 | `run-deep-swe` | Run reproducible DeepSWE coding-agent benchmark evaluations through OpenRouter and mini-swe-agent. | critical | davidondrej/skills | benchmark, deepswe, openrouter, evaluation | benchmark, deepswe, openrouter, evaluation, run, deep, swe, reproducible, coding, agent, evaluations, through |
 
-## agent-orchestration (36)
+## agent-orchestration (37)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -56,6 +56,7 @@ Total skills: 2798
 | `qoder-delegate` | Delegate coding tasks to the Qoder CLI (`qodercli`) only when the user explicitly requests it, while the orchestrator retains review and landing responsibility. | critical | amElnagdy/delegate-skills | qoder, delegate | qoder, delegate, coding, tasks, cli, qodercli, user, explicitly, requests, while, orchestrator, retains |
 | `ralph-loop-yylo` | Execute exactly one explicitly assigned YYLO Ledger task through the Ralph loop to a validated queued commit. Use only when the user explicitly requests ralp... | critical | yylo-dev/yylo-skills | ralph, loop, yylo | ralph, loop, yylo, execute, exactly, one, explicitly, assigned, ledger, task, through, validated |
 | `review-multi-agent-orchestration` | Use when a supervisor, swarm, graph, planner-worker system, or parallel agent workflow needs review for task boundaries, shared state, branch joins, retries,... | safe | self | multi, agent | multi, agent, review, orchestration, supervisor, swarm, graph, planner, worker, parallel, task, boundaries |
+| `skill-router` | Hierarchical intent router and capability discovery engine for agent skills and MCP tools. Use when unsure which skill or tool to invoke, or to dynamically r... | safe | self | skill, router | skill, router, hierarchical, intent, capability, discovery, engine, agent, skills, mcp, unsure, which |
 | `stitch-loop` | Teaches agents to iteratively build websites using Stitch with an autonomous baton-passing loop pattern | critical | community | stitch, loop | stitch, loop, teaches, agents, iteratively, websites, autonomous, baton, passing |
 | `subagent-orchestrator` | Coordinate quota-aware parallel subagents for large, multi-file Antigravity tasks. | safe | community | subagents, orchestration, quota, parallel, multi-agent | subagents, orchestration, quota, parallel, multi-agent, subagent, orchestrator, coordinate, aware, large, multi, file |
 | `vibe-delegate` | Delegate coding tasks to the Mistral Vibe CLI (`vibe`) only when the user explicitly requests it, while the orchestrator retains review and landing responsib... | critical | amElnagdy/delegate-skills | vibe, delegate | vibe, delegate, coding, tasks, mistral, cli, user, explicitly, requests, while, orchestrator, retains |
@@ -104,10 +105,14 @@ Total skills: 2798
 | `lazaro` | Automated agent personalization backup, 0-secret sanitizer, and 1-click disaster recovery system with private GitHub syncing and local archive generation. | safe | moneymakershorts7-bit/lazaro-personalization-backup | lazaro, backup, disaster-recovery, state-snapshot, personalization, secrets-free, memory, resurrection | lazaro, backup, disaster-recovery, state-snapshot, personalization, secrets-free, memory, resurrection, automated, agent, secret, sanitizer |
 | `one-skill-to-rule-them-all` | Meta-skill and continuous friction observer that detects workflow patterns, user corrections, and tool gaps to distill reusable agent skills autonomously. | safe | rebelytics/one-skill-to-rule-them-all | meta-skill, task-observer, skill-improvement, continuous-learning, friction-log, agentic, orchestration | meta-skill, task-observer, skill-improvement, continuous-learning, friction-log, agentic, orchestration, one, skill, rule, them, all |
 
-## ai (1)
+## ai (5)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
+| `building-agents-with-eve` | Companion skill for the Building Agents with Eve course on Vercel Academy. Build autonomous agents with approval workflows. | safe | vercel-labs/academy-skills | building, agents, with, eve | building, agents, with, eve, companion, skill, course, vercel, academy, autonomous, approval |
+| `filesystem-agents` | Companion skill for the Building Filesystem Agents course on Vercel Academy. Implement persistent filesystem memory for AI agents. | safe | vercel-labs/academy-skills | filesystem, agents | filesystem, agents, companion, skill, building, course, vercel, academy, persistent, memory, ai |
+| `slack-agents` | Companion skill for the Building Slack Agents course on Vercel Academy. Scaffold, test, and deploy Slack AI bots. | safe | vercel-labs/academy-skills | slack, agents | slack, agents, companion, skill, building, course, vercel, academy, scaffold, test, deploy, ai |
+| `two-tier-extraction` | Tiered LLM extraction pattern for large corpus processing (email archives, document dumps, transcript libraries). A utility-tier model triages and classifies... | safe | gbrain | cost-optimization, extraction, tiered-llm | cost-optimization, extraction, tiered-llm, two, tier, tiered, llm, large, corpus, processing, email, archives |
 | `weaviate-cookbooks` | Build Weaviate AI apps from official cookbook blueprints for RAG, agentic RAG, data exploration, multimodal PDF search, async clients, and frontends. | safe | weaviate/agent-skills | weaviate, rag, agents, vector-database, ai-apps | weaviate, rag, agents, vector-database, ai-apps, cookbooks, ai, apps, official, cookbook, blueprints, agentic |
 
 ## ai-agents (24)
@@ -311,6 +316,12 @@ Total skills: 2798
 | `00-andruia-consultant` | Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traza la hoja de ruta óptima para proyectos de IA en español. | safe | personal | 00, andruia, consultant | 00, andruia, consultant, arquitecto, de, soluciones, principal, consultor, tecnol, gico, andru, ia |
 | `10-andruia-skill-smith` | Ingeniero de Sistemas de Andru.ia. Diseña, redacta y despliega nuevas habilidades (skills) dentro del repositorio siguiendo el Estándar de Diamante. | safe | personal | 10, andruia, skill, smith | 10, andruia, skill, smith, ingeniero, de, sistemas, andru, ia, dise, redacta, despliega |
 | `20-andruia-niche-intelligence` | Estratega de Inteligencia de Dominio de Andru.ia. Analiza el nicho específico de un proyecto para inyectar conocimientos, regulaciones y estándares únicos de... | safe | personal | 20, andruia, niche, intelligence | 20, andruia, niche, intelligence, estratega, de, inteligencia, dominio, andru, ia, analiza, el |
+
+## api (1)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `agent-friendly-apis` | Companion skill for the Agent-Friendly APIs course on Vercel Academy. Design APIs optimized for LLM agent calling. | safe | vercel-labs/academy-skills | agent, friendly, apis | agent, friendly, apis, companion, skill, course, vercel, academy, optimized, llm, calling |
 
 ## api-integration (42)
 
@@ -562,6 +573,13 @@ Total skills: 2798
 | `meteora-dlmm-pool-screening` | Screen and rank Meteora DLMM pools for LP quality using public Meteora APIs (fee/TVL, bin step, organic score). Read-only: never deploys, swaps, or signs. | safe | romankurnovskii/etemaro | meteora, dlmm, pool, screening | meteora, dlmm, pool, screening, screen, rank, pools, lp, quality, public, apis, fee |
 | `nft-standards` | Master ERC-721 and ERC-1155 NFT standards, metadata best practices, and advanced NFT features. | critical | community | nft, standards | nft, standards, erc, 721, 1155, metadata, features |
 | `web3-testing` | Master comprehensive testing strategies for smart contracts using Hardhat, Foundry, and advanced testing patterns. | critical | community | web3 | web3, testing, smart, contracts, hardhat, foundry |
+
+## browser (2)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `browse` | Drive a real browser through Aside: open a page, read it, click through a flow, take screenshots, check console errors. (gstack) | safe | gstack | automation, browser, cdp, chromium | automation, browser, cdp, chromium, browse, drive, real, through, aside, open, page, read |
+| `scrape` | Pull data from a web page through the Aside browser — your real, already signed-in sessions. (gstack) | safe | gstack | browser, data, extraction, scraping | browser, data, extraction, scraping, scrape, pull, web, page, through, aside, real, already |
 
 ## browser-automation (7)
 
@@ -1166,25 +1184,21 @@ Total skills: 2798
 | `web-scraper` | Web scraping inteligente multi-estrategia. Extrai dados estruturados de paginas web (tabelas, listas, precos). Paginacao, monitoramento e export CSV/JSON. | safe | community | scraping, data-extraction, automation, csv | scraping, data-extraction, automation, csv, web, scraper, inteligente, multi, estrategia, extrai, dados, estruturados |
 | `x-twitter-scraper` | Use Xquik for X data workflows: tweet search, user lookup, follower export, media downloads, monitors, webhooks, REST API, MCP, SDK setup, and approval-gated... | critical | Xquik-dev/x-twitter-scraper | twitter, x, social-media, x-api, tweet-search, follower-export, automation, mcp, sdk, webhooks | twitter, x, social-media, x-api, tweet-search, follower-export, automation, mcp, sdk, webhooks, scraper, xquik |
 
-## data-ai (18)
+## data-ai (14)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
-| `agent-friendly-apis` | Companion skill for the Agent-Friendly APIs course on Vercel Academy. Design APIs optimized for LLM agent calling. | safe | vercel-labs/academy-skills | agent, friendly, apis | agent, friendly, apis, companion, skill, course, vercel, academy, optimized, llm, calling |
 | `ai-engineering-toolkit` | 6 production-ready AI engineering workflows: prompt evaluation (8-dimension scoring), context budget planning, RAG pipeline design, agent security audit (65-... | offensive | community | prompt-engineering, rag, security, evaluation, ai-engineering, llm | prompt-engineering, rag, security, evaluation, ai-engineering, llm, ai, engineering, toolkit, prompt, dimension, scoring |
 | `clarity-gate` | Pre-ingestion verification for epistemic quality in RAG systems. Ensures documents are properly qualified before entering knowledge bases. Produces CGD (Clar... | critical | community | clarity, gate | clarity, gate, pre, ingestion, verification, epistemic, quality, rag, ensures, documents, properly, qualified |
 | `embedding-strategies` | Guide to selecting and optimizing embedding models for vector search applications. | critical | community | embedding, strategies | embedding, strategies, selecting, optimizing, models, vector, search, applications |
 | `exa-search` | Semantic search, similar content discovery, and structured research using Exa API. Use when you need semantic/embeddings-based search, finding similar conten... | critical | community | exa, search | exa, search, semantic, similar, content, discovery, structured, research, api, embeddings, finding, searching |
-| `filesystem-agents` | Companion skill for the Building Filesystem Agents course on Vercel Academy. Implement persistent filesystem memory for AI agents. | safe | vercel-labs/academy-skills | filesystem, agents | filesystem, agents, companion, skill, building, course, vercel, academy, persistent, memory, ai |
 | `llm-app-patterns` | Architecture and integration sketches for LLM applications, with explicit retrieval, tool, privacy and verification boundaries. | critical | community | llm, app | llm, app, architecture, integration, sketches, applications, explicit, retrieval, privacy, verification, boundaries |
 | `local-llm-expert` | Master local LLM inference, model selection, VRAM optimization, and local deployment using Ollama, llama.cpp, vLLM, and LM Studio. Expert in quantization for... | safe | community | local, llm | local, llm, inference, model, selection, vram, optimization, deployment, ollama, llama, cpp, vllm |
-| `next-cache-components-adoption` | Adopt Next.js 16.3+ Cache Components and use-cache directive across pages and data access layers. | safe | vercel/next.js | next, cache, components, adoption | next, cache, components, adoption, adopt, js, 16, directive, pages, data, access, layers |
 | `notebooklm` | Interact with Google NotebookLM to query documentation with Gemini's source-grounded answers. Each question opens a fresh browser session, retrieves the answ... | critical | community | notebooklm | notebooklm, interact, google, query, documentation, gemini, source, grounded, answers, each, question, opens |
 | `rag-engineer` | Expert in building Retrieval-Augmented Generation systems. Masters embedding models, vector databases, chunking strategies, and retrieval optimization for LL... | critical | vibeship-spawner-skills (Apache 2.0) | rag | rag, engineer, building, retrieval, augmented, generation, masters, embedding, models, vector, databases, chunking |
 | `recsys-pipeline-architect` | Designs composable recommendation, ranking, and feed pipelines using the six-stage Source→Hydrator→Filter→Scorer→Selector→SideEffect framework | safe | mturac/recsys-pipeline-architect | recommender-system, ranking, feed-algorithm, recsys, personalization, for-you-feed, rag-reranker, pipeline-architecture | recommender-system, ranking, feed-algorithm, recsys, personalization, for-you-feed, rag-reranker, pipeline-architecture, pipeline, architect, designs, composable |
 | `seek-and-analyze-video` | Seek and analyze video content using Memories.ai Large Visual Memory Model for persistent video intelligence | safe | https://github.com/kennyzheng-builds/seek-and-analyze-video | video, ai, memories, social-media, youtube, tiktok, analysis | video, ai, memories, social-media, youtube, tiktok, analysis, seek, analyze, content, large, visual |
 | `similarity-search-patterns` | Implement efficient similarity search with vector databases. Use when building semantic search, implementing nearest neighbor queries, or optimizing retrieva... | safe | community | similarity, search | similarity, search, efficient, vector, databases, building, semantic, implementing, nearest, neighbor, queries, optimizing |
-| `slack-agents` | Companion skill for the Building Slack Agents course on Vercel Academy. Scaffold, test, and deploy Slack AI bots. | safe | vercel-labs/academy-skills | slack, agents | slack, agents, companion, skill, building, course, vercel, academy, scaffold, test, deploy, ai |
 | `tavily-web` | Web search, content extraction, crawling, and research capabilities using Tavily API. Use when you need to search the web for current information, extracting... | critical | community | tavily, web | tavily, web, search, content, extraction, crawling, research, capabilities, api, current, information, extracting |
 | `vector-database-engineer` | Expert in vector databases, embedding strategies, and semantic search implementation. Masters Pinecone, Weaviate, Qdrant, Milvus, and pgvector for RAG applic... | critical | community | vector, database | vector, database, engineer, databases, embedding, semantic, search, masters, pinecone, weaviate, qdrant, milvus |
 | `vector-index-tuning` | Optimize vector index performance for latency, recall, and memory. Use when tuning HNSW parameters, selecting quantization strategies, or scaling vector sear... | safe | community | vector, index, tuning | vector, index, tuning, optimize, performance, latency, recall, memory, hnsw, parameters, selecting, quantization |
@@ -1261,7 +1275,13 @@ Total skills: 2798
 | `logic-locate` | Locate the root cause of a CONFIRMED failure via backward-then-forward semi-formal tracing. | safe | hyhmrright/logic-lens | logic, locate | logic, locate, root, cause, confirmed, failure, via, backward, then, forward, semi, formal |
 | `phase-gated-debugging` | Use when debugging any bug. Enforces a 5-phase protocol where code edits are blocked until root cause is confirmed. Prevents premature fix attempts. | safe | community | phase, gated, debugging | phase, gated, debugging, any, bug, enforces, protocol, where, code, edits, blocked, until |
 
-## design (42)
+## deployment (1)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `python-on-vercel` | Companion skill for the Python on Vercel course on Vercel Academy. Deploy FastAPI backend and Next.js frontend on a single domain. | safe | vercel-labs/academy-skills | python, on, vercel | python, on, vercel, companion, skill, course, academy, deploy, fastapi, backend, next, js |
+
+## design (48)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -1273,13 +1293,18 @@ Total skills: 2798
 | `antigravity-design-expert` | Core UI/UX engineering skill for building highly interactive, spatial, weightless, and glassmorphism-based web interfaces using GSAP and 3D CSS. | safe | community | antigravity | antigravity, core, ui, ux, engineering, skill, building, highly, interactive, spatial, weightless, glassmorphism |
 | `baseline-ui` | Quickly deslop UI code by fixing spacing, hierarchy, typography, and small layout issues. Use when the interface needs a fast cleanup or polish pass. | critical | ibelick/ui-skills | baseline, ui | baseline, ui, quickly, deslop, code, fixing, spacing, hierarchy, typography, small, layout, issues |
 | `canva-automation` | Automate Canva tasks via Rube MCP (Composio): designs, exports, folders, brand templates, autofill. Always search tools first for current schemas. | critical | community | canva | canva, automation, automate, tasks, via, rube, mcp, composio, designs, exports, folders, brand |
+| `design-consultation` | Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic, typography, color, layout, spacing, mo... | safe | gstack | branding, consultation, ui, ux | branding, consultation, ui, ux, understands, product, researches, landscape, proposes, complete, aesthetic, typography |
+| `design-html` | Design finalization: generates production-quality Pretext-native HTML/CSS. (gstack) | safe | gstack | css, html, production-ui, styling | css, html, production-ui, styling, finalization, generates, quality, pretext, native, gstack |
 | `design-md` | Analyze Stitch projects and synthesize a semantic design system into DESIGN.md files | safe | https://github.com/google-labs-code/stitch-skills/tree/main/skills/design-md | md | md, analyze, stitch, synthesize, semantic, files |
 | `design-orchestration` | Orchestrates design workflows by routing work through brainstorming, multi-agent review, and execution readiness in the correct order. | none | community |  | orchestration, orchestrates, routing, work, through, brainstorming, multi, agent, review, execution, readiness, correct |
 | `design-philosophy` | Visual philosophy and art-direction for frontend. Use when creating high-concept work, campaigns, or when the user asks for a visual philosophy, manifesto, o... | none | connerkward/ckw-design-skill | philosophy | philosophy, visual, art, direction, frontend, creating, high, concept, work, campaigns, user, asks |
+| `design-review` | Designer's eye QA: finds visual inconsistency, spacing issues, hierarchy problems, AI slop patterns, and slow interactions — then fixes them. (gstack) | safe | gstack | anti-slop, design-qa, visual-hierarchy | anti-slop, design-qa, visual-hierarchy, review, designer, eye, qa, finds, visual, inconsistency, spacing, issues |
+| `design-shotgun` | Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate. (gstack) | safe | gstack | ideation, variants, wireframing | ideation, variants, wireframing, shotgun, generate, multiple, ai, open, comparison, board, collect, structured |
 | `design-spatial` | Design — spatial composition | critical | connerkward/ckw-design-skill | spatial | spatial, composition |
 | `design-spells` | Curated micro-interactions and design details that add "magic" and personality to websites and apps. | safe | community | spells | spells, curated, micro, interactions, details, add, magic, personality, websites, apps |
 | `design-thinking` | Direction and intent for frontend design. Use with design when defining purpose, tone, domain, color world, and review bar; includes cross-domain lens from c... | critical | connerkward/ckw-design-skill | thinking | thinking, direction, intent, frontend, defining, purpose, tone, domain, color, world, review, bar |
 | `deterministic-design` | Render the UI and prove it's balanced + usable: a deterministic layout audit (centroid / optical-center / pixel-oracle balance via explicit math + annotated ... | safe | connerkward/deterministic-design-skill | design, layout, usability, audit, verification, vision | design, layout, usability, audit, verification, vision, deterministic, render, ui, prove, balanced, usable |
+| `diagram` | Turn an English description (or mermaid source) into a diagram triplet: the source, an editable .excalidraw file you can open on excalidraw.com, and rendered... | safe | gstack | diagram, excalidraw, mermaid, visual | diagram, excalidraw, mermaid, visual, turn, english, description, source, triplet, editable, file, open |
 | `diagram-generator` | Generate, refine, validate, and render diagrams from natural language, notes, code, schemas, or existing diagram sources: flowcharts, swimlanes, attack-path ... | safe | zhaoxuya520/reverse-skill | diagram, generator | diagram, generator, generate, refine, validate, render, diagrams, natural, language, notes, code, schemas |
 | `favicon` | Generate favicons from a source image | critical | community | favicon | favicon, generate, favicons, source, image |
 | `figma-automation` | Automate Figma tasks via Rube MCP (Composio): files, components, design tokens, comments, exports. Always search tools first for current schemas. | safe | community | figma | figma, automation, automate, tasks, via, rube, mcp, composio, files, components, tokens, comments |
@@ -1287,6 +1312,7 @@ Total skills: 2798
 | `lookdev` | Human-in-the-loop web studio to tune AI-generated output by eye. Stand up a local interactive studio (sliders, pickers, drag handles) or an inline edit/highl... | safe | connerkward/lookdev-studio-skill | lookdev, design, ui, tuning, studio, visual-eval, annotation | lookdev, design, ui, tuning, studio, visual-eval, annotation, human, loop, web, tune, ai |
 | `lookdev-auto` | Automated visual tuning: a vision or video model rates rendered variants in a loop. Render several labeled variants into one artifact, ask the model to rate ... | safe | connerkward/lookdev-auto-skill | visual-eval, vision-model, tuning, automation, render-loop | visual-eval, vision-model, tuning, automation, render-loop, lookdev, auto, automated, visual, vision, video, model |
 | `loss-aversion-designer` | One sentence - what this skill does and when to invoke it | safe | community | loss, aversion, designer | loss, aversion, designer, one, sentence, what, skill, does, invoke |
+| `plan-design-review` | Designer's eye plan review — interactive, like CEO and Eng review. (gstack) | safe | gstack | design-review, plan, ui, ux | design-review, plan, ui, ux, review, designer, eye, interactive, like, ceo, eng, gstack |
 | `rayden-use` | Build and maintain Rayden UI components and screens in Figma via Figma MCP with full design token enforcement | safe | https://github.com/playbookTV/rayden-ui-design-skill | figma, design-system, ui, components, mcp, rayden, rayna-ui | figma, design-system, ui, components, mcp, rayden, rayna-ui, maintain, screens, via, full, token |
 | `stitch-ui-design` | Expert guidance for crafting effective prompts in Google Stitch, the AI-powered UI design tool by Google Labs. This skill helps create precise, actionable pr... | safe | self | stitch, ui | stitch, ui, guidance, crafting, effective, prompts, google, ai, powered, labs, skill, helps |
 | `theme-factory` | This skill provides a curated collection of professional font and color themes themes, each with carefully selected color palettes and font pairings. Once a ... | critical | community | theme, factory | theme, factory, skill, provides, curated, collection, professional, font, color, themes, each, carefully |
@@ -1373,7 +1399,7 @@ Total skills: 2798
 | `skill-porter` | Preview conservative tool-name translations and copy complete local skill bundles for manual adaptation to Google Antigravity. | critical | Pranav-Nexus/antigravity-skill-porter | antigravity, claude, skills, migration, agent | antigravity, claude, skills, migration, agent, skill, porter, preview, conservative, name, translations, copy |
 | `tokenwise` | Measurement-driven model router for Claude Code. Routes Haiku/Sonnet/Opus per task class, logs every routed task with real $ numbers, and A/B tests cheaper t... | critical | CodeShuX/tokenwise | model-routing, token-optimization, cost-reduction, anthropic, haiku, sonnet, opus, claude-code, ab-testing, measurement | model-routing, token-optimization, cost-reduction, anthropic, haiku, sonnet, opus, claude-code, ab-testing, measurement, tokenwise, driven |
 
-## development (222)
+## development (221)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -1439,7 +1465,6 @@ Total skills: 2798
 | `ecl-harness-engineer` | Create or audit ECL Agent Harness infrastructure: AGENTS.md, change tracking, repository guidance, lint checks, CI gates, and agent handoff docs. | safe | qinghui316/ecl-harness-engineer | codex, agent-harness, ecl, workflow, ci | codex, agent-harness, ecl, workflow, ci, harness, engineer, audit, agent, infrastructure, agents, md |
 | `effective-agent-skills` | Author and review high-quality agent skills with triggers, progressive disclosure, and safety notes. | safe | davidondrej/skills | skills, authoring, quality | skills, authoring, quality, effective, agent, author, review, high, triggers, progressive, disclosure, safety |
 | `electron-development` | Master Electron desktop app development with secure IPC, contextIsolation, preload scripts, multi-process architecture, electron-builder packaging, code sign... | safe | community | electron | electron, development, desktop, app, secure, ipc, contextisolation, preload, scripts, multi, process, architecture |
-| `emulate` | Local drop-in API emulator for Vercel, GitHub, Google, Slack, Stripe, and Twilio webhooks and OAuth. | safe | vercel-labs/emulate | emulate | emulate, local, drop, api, emulator, vercel, github, google, slack, stripe, twilio, webhooks |
 | `environment-setup-guide` | Guide developers through setting up development environments with proper tools, dependencies, and configurations | critical | community | environment, setup | environment, setup, developers, through, setting, up, development, environments, proper, dependencies, configurations |
 | `error-debugging-error-analysis` | You are an expert error analysis specialist with deep expertise in debugging distributed systems, analyzing production incidents, and implementing comprehens... | safe | community | error, debugging | error, debugging, analysis, deep, expertise, distributed, analyzing, incidents, implementing, observability, solutions |
 | `error-debugging-error-trace` | You are an error tracking and observability expert specializing in implementing comprehensive error monitoring solutions. Set up error tracking systems, conf... | safe | community | error, debugging, trace | error, debugging, trace, tracking, observability, specializing, implementing, monitoring, solutions, set, up, configure |
@@ -1538,6 +1563,7 @@ Total skills: 2798
 | `native-data-fetching` | Use when implementing or debugging ANY network request, API call, or data fetching. Covers fetch API, React Query, SWR, error handling, caching, offline supp... | critical | expo/skills | native, data, fetching | native, data, fetching, implementing, debugging, any, network, request, api, call, covers, fetch |
 | `nerdzao-elite` | Senior Elite Software Engineer (15+) and Senior Product Designer. Full workflow with planning, architecture, TDD, clean code, and pixel-perfect UX validation. | safe | community | nerdzao, elite | nerdzao, elite, senior, software, engineer, 15, product, designer, full, planning, architecture, tdd |
 | `nerdzao-elite-gemini-high` | Modo Elite Coder + UX Pixel-Perfect otimizado especificamente para Gemini 3.1 Pro High. Workflow completo com foco em qualidade máxima e eficiência de tokens. | safe | community | nerdzao, elite, gemini, high | nerdzao, elite, gemini, high, modo, coder, ux, pixel, perfect, otimizado, especificamente, para |
+| `next-dev-loop` | Verify Next.js runtime behavior after editing code using Turbopack, Fast Refresh, and runtime assertion. | safe | vercel/next.js | next, dev, loop | next, dev, loop, verify, js, runtime, behavior, after, editing, code, turbopack, fast |
 | `nx-workspace-patterns` | Configure and optimize Nx monorepo workspaces. Use when setting up Nx, configuring project boundaries, optimizing build caching, or implementing affected com... | critical | community | nx, workspace | nx, workspace, configure, optimize, monorepo, workspaces, setting, up, configuring, boundaries, optimizing, caching |
 | `ontoly-software-graph` | Use Ontoly's deterministic Software Graph, MCP server, and agent skills for architecture review, request tracing, impact analysis, and dependency analysis. | critical | 0xsarwagya/ontoly | software-graph, codebase-analysis, mcp, typescript, architecture, impact-analysis | software-graph, codebase-analysis, mcp, typescript, architecture, impact-analysis, ontoly, software, graph, deterministic, server, agent |
 | `orca-replay` | Answers questions about a past agent run from its recording rather than from memory, and replays or forks that run. Use when asked why an earlier run did som... | critical | Continuum-AI-Corp/OrcaReplay | debugging, replay, trace, root-cause, agent-runs, mcp | debugging, replay, trace, root-cause, agent-runs, mcp, orca, answers, questions, about, past, agent |
@@ -1555,7 +1581,6 @@ Total skills: 2798
 | `pydantic-models-py` | Create Pydantic models following the multi-model pattern for clean API contracts. | critical | community | pydantic, models, py | pydantic, models, py, following, multi, model, clean, api, contracts |
 | `python-development` | You are a Python project architecture expert specializing in scaffolding production-ready Python applications. Generate complete project structures with mode... | critical | alias | python | python, development, architecture, specializing, scaffolding, applications, generate, complete, structures, tooling, uv, fastapi |
 | `python-development-python-scaffold` | You are a Python project architecture expert specializing in scaffolding production-ready Python applications. Generate complete project structures with mode... | critical | community | python | python, development, scaffold, architecture, specializing, scaffolding, applications, generate, complete, structures, tooling, uv |
-| `python-on-vercel` | Companion skill for the Python on Vercel course on Vercel Academy. Deploy FastAPI backend and Next.js frontend on a single domain. | safe | vercel-labs/academy-skills | python, on, vercel | python, on, vercel, companion, skill, course, academy, deploy, fastapi, backend, next, js |
 | `python-packaging` | Comprehensive guide to creating, structuring, and distributing Python packages using modern packaging tools, pyproject.toml, and publishing to PyPI. | safe | community | python, packaging | python, packaging, creating, structuring, distributing, packages, pyproject, toml, publishing, pypi |
 | `python-patterns` | Python development principles and decision-making. Framework selection, async patterns, type hints, project structure. Teaches thinking, not copying. | critical | community | python | python, development, principles, decision, making, framework, selection, async, type, hints, structure, teaches |
 | `python-performance-optimization` | Profile and optimize Python code using cProfile, memory profilers, and performance best practices. Use when debugging slow Python code, optimizing bottleneck... | safe | community | python, performance, optimization | python, performance, optimization, profile, optimize, code, cprofile, memory, profilers, debugging, slow, optimizing |
@@ -1611,7 +1636,7 @@ Total skills: 2798
 | `systematic-debugging` | Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes | critical | community | systematic, debugging | systematic, debugging, encountering, any, bug, test, failure, unexpected, behavior, before, proposing, fixes |
 | `test-fixing` | Systematically identify and fix all failing tests using smart grouping strategies. Use when explicitly asks to fix tests ("fix these tests", "make tests pass... | safe | community | fixing | fixing, test, systematically, identify, fix, all, failing, tests, smart, grouping, explicitly, asks |
 
-## devops (167)
+## devops (168)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -1644,6 +1669,7 @@ Total skills: 2798
 | `block-storage` | Manage block storage volumes and LVM. Configure cloud block storage and local disks. Use when managing disk storage. | critical | BagelHole/DevOps-Security-Agent-Skills | block, storage | block, storage, volumes, lvm, configure, cloud, local, disks, managing, disk |
 | `blue-green-deploy` | Configure zero-downtime deployment strategies including blue-green, canary, and rolling deployments. | critical | BagelHole/DevOps-Security-Agent-Skills | blue, green, deploy | blue, green, deploy, configure, zero, downtime, deployment, including, canary, rolling, deployments |
 | `brendangregg-use-tsa` | Methodical performance troubleshooting and root-cause analysis with Brendan Gregg's USE and TSA methods, plus evidence-backed RCA and postmortem reports. | safe | thecsdoctor/brendangregg-use-tsa-skill | performance, troubleshooting, root-cause-analysis, linux, observability, sre, postmortem | performance, troubleshooting, root-cause-analysis, linux, observability, sre, postmortem, brendangregg, tsa, methodical, root, cause |
+| `canary` | Post-deploy canary monitoring. (gstack) | safe | gstack | canary, monitoring, post-deploy, sre | canary, monitoring, post-deploy, sre, post, deploy, gstack |
 | `cdn-setup` | Configure CDNs for content delivery. Set up CloudFront, Cloudflare, and Fastly. Use when optimizing global content delivery. | critical | BagelHole/DevOps-Security-Agent-Skills | cdn, setup | cdn, setup, configure, cdns, content, delivery, set, up, cloudfront, cloudflare, fastly, optimizing |
 | `ci-cd-and-automation` | Automates CI/CD pipeline setup. Use when setting up or modifying build and deployment pipelines. Use when you need to automate quality gates, configure test ... | critical | addyosmani/agent-skills | ci, cd, and | ci, cd, and, automation, automates, pipeline, setup, setting, up, modifying, deployment, pipelines |
 | `circleci` | Configure CircleCI workflows and orbs for continuous integration and deployment. | critical | BagelHole/DevOps-Security-Agent-Skills | circleci | circleci, configure, orbs, continuous, integration, deployment |
@@ -1783,6 +1809,12 @@ Total skills: 2798
 | `vllm-server` | Deploy and manage vLLM for high-throughput LLM inference. Configure continuous batching, tensor parallelism, quantization, and OpenAI-compatible API endpoint... | critical | BagelHole/DevOps-Security-Agent-Skills | vllm, server | vllm, server, deploy, high, throughput, llm, inference, configure, continuous, batching, tensor, parallelism |
 | `windows-server` | Administer Windows Server systems. Manage IIS, Active Directory, and PowerShell automation. Use when administering Windows infrastructure. | critical | BagelHole/DevOps-Security-Agent-Skills | windows, server | windows, server, administer, iis, active, directory, powershell, automation, administering, infrastructure |
 
+## discovery (1)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `find-skills` | Helps users discover and install agent skills when asking how to accomplish tasks or find specialized tools. | safe | vercel-labs/skills | find, skills | find, skills, helps, users, discover, install, agent, asking, how, accomplish, tasks, specialized |
+
 ## document-processing (6)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
@@ -1806,6 +1838,13 @@ Total skills: 2798
 | `verify-citations` | Verify citations and references in a document, report, or article against real sources. Use when the user asks to fact-check, verify references, check citati... | critical | Sketchjar/stipple-agent-skills | document-verification, fact-checking, stipple, authenticity | document-verification, fact-checking, stipple, authenticity, verify, citations, references, document, report, article, against, real |
 | `verify-document` | Check whether a document (PDF or image) shows signs of tampering or forgery before you rely on it. Use when the user asks to verify a payslip, invoice, bank ... | critical | Sketchjar/stipple-agent-skills | document-verification, fact-checking, stipple, authenticity | document-verification, fact-checking, stipple, authenticity, verify, document, check, whether, pdf, image, shows, signs |
 
+## documentation (2)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `document-generate` | Generate missing documentation from scratch for a feature, module, or entire project. (gstack) | safe | gstack | diataxis, docs-generator, reference | diataxis, docs-generator, reference, document, generate, missing, documentation, scratch, feature, module, entire, gstack |
+| `document-release` | Release documentation audit. (gstack) | safe | gstack | audit, docs, release-notes | audit, docs, release-notes, document, release, documentation, gstack |
+
 ## documents-presentations (2)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
@@ -1813,27 +1852,27 @@ Total skills: 2798
 | `book-designer-typesetter` | Professional book layout, typographic design, and PDF compilation engine from Markdown manuscripts. | safe | moneymakershorts7-bit/agentic-awesome-skills | books, pdf, typography, publishing | books, pdf, typography, publishing, book, designer, typesetter, professional, layout, typographic, compilation, engine |
 | `book-editor-writer` | Transform research documents, manuscripts, raw notes, and PDFs into publication-grade, bestselling books with executive-level editing, rigorous fact-checking... | safe | moneymakershorts7-bit/agentic-awesome-skills | books, editorial, writing, fact-checking, authoring | books, editorial, writing, fact-checking, authoring, book, editor, writer, transform, research, documents, manuscripts |
 
-## ecommerce (4)
+## ecommerce (5)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `buywhere-product-catalog` | Use BuyWhere's MCP and API surfaces to add product search, price comparison, and deal discovery to AI shopping agents. | safe | BuyWhere/buywhere-mcp | buywhere, ecommerce, shopping, mcp, api, product-catalog | buywhere, ecommerce, shopping, mcp, api, product-catalog, product, catalog, surfaces, add, search, price |
 | `etsy-search-listings` | Fetch live Etsy search listing rows for a keyword, market phrase, or category via Apify Actor publicrecords/etsy-search-scraper (MCP). Needs an Apify token; ... | critical | self | etsy, ecommerce, search, listings, apify, mcp | etsy, ecommerce, search, listings, apify, mcp, fetch, live, listing, rows, keyword, market |
 | `etsy-shop-sales-history` | Read Etsy shop sales counters, deltas, and breakout flags from Apify Actor publicrecords/etsy-shop-velocity (MCP panel snapshot). Needs an Apify token; Actor... | critical | self | etsy, ecommerce, shop, sales, velocity, apify, mcp | etsy, ecommerce, shop, sales, velocity, apify, mcp, history, read, counters, deltas, breakout |
+| `subscription-store` | Companion skill for the Launch a Subscription Store course on Vercel Academy. Build Stripe subscription storefronts with Next.js. | safe | vercel-labs/academy-skills | subscription, store | subscription, store, companion, skill, launch, course, vercel, academy, stripe, storefronts, next, js |
 | `woo-guard` | Review generated or changed WooCommerce extensions, payment and shipping integrations, checkout customizations, and order or product logic. | critical | amElnagdy/guard-skills | woo, guard | woo, guard, review, generated, changed, woocommerce, extensions, payment, shipping, integrations, checkout, customizations |
 
-## education (6)
+## education (5)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
-| `academy` | Interactive learning companion and curriculum guide for Vercel Academy courses and agent architectures. | safe | vercel-labs/academy-skills | academy | academy, interactive, learning, companion, curriculum, vercel, courses, agent, architectures |
 | `examprep-ai` | Exam preparation assistant that converts syllabi, past papers, or notes into a ranked High Score Roadmap. Covers theory, numericals, MCQs, coding, and lab pr... | safe | community | education, exam-prep, study-guide, question-prediction, syllabus-analysis, revision, students | education, exam-prep, study-guide, question-prediction, syllabus-analysis, revision, students, examprep, ai, exam, preparation, assistant |
 | `learn` | Help a user learn a topic through adaptive tutoring, lesson planning, practice, retrieval checks, explanations, study guides, or exercises. Use when the user... | safe | dair-ai/dair-academy-plugins | dair-academy, ai, workflow | dair-academy, ai, workflow, learn, user, topic, through, adaptive, tutoring, lesson, planning, retrieval |
 | `lesson-generator` | Build compact, standalone multi-lesson course artifacts with lesson navigation, objectives, flashcards, quizzes, and source links. | safe | dair-ai/dair-academy-plugins | dair-academy, ai, workflow | dair-academy, ai, workflow, lesson, generator, compact, standalone, multi, course, artifacts, navigation, objectives |
 | `puzzle-activity-planner` | Plan puzzle-based activities for classrooms, parties, and events with pre-configured generator links | safe | fruitwyatt/puzzle-activity-planner | education, puzzle, classroom, activity-planning, event | education, puzzle, classroom, activity-planning, event, activity, planner, plan, activities, classrooms, parties, events |
 | `teach` | Teach the user a new skill or concept, within this workspace. | safe | mattpocock/skills | education, workflow, coding-agents | education, workflow, coding-agents, teach, user, new, skill, concept, within, workspace |
 
-## engineering (21)
+## engineering (26)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -1843,7 +1882,12 @@ Total skills: 2798
 | `ai-prompt-regression-testing` | Prompt engineering regression test matrix register: baseline outputs, semantic drift thresholds, judge evaluations, and golden dataset. | safe | Ranjeet2063/agentic-awesome-skills | ai, prompt-engineering, testing, evaluation, llm, benchmarking | ai, prompt-engineering, testing, evaluation, llm, benchmarking, prompt, regression, engineering, test, matrix, register |
 | `cross-chain-relayer-audit` | Cross-chain relayer bridge audit register: message hash verifications, replay protection nonces, validator quorum, and withdrawal proofs. | safe | Ranjeet2063/agentic-awesome-skills | cross-chain, bridge, relayer, security, cryptography, web3, stellar | cross-chain, bridge, relayer, security, cryptography, web3, stellar, cross, chain, audit, register, message |
 | `defi-yield-strategy-allocator` | Multi-vault automated yield strategy allocation register: APY benchmarks, impermanent loss risk tiers, and rebalancing triggers. | safe | Ranjeet2063/agentic-awesome-skills | defi, yield, soroban, vault, liquidity, finance, stellar | defi, yield, soroban, vault, liquidity, finance, stellar, allocator, multi, automated, allocation, register |
+| `deslop-shared-libs` | Find worthwhile shared-code extractions in recent work. (gstack) | safe | gstack | clean-code, refactor, shared-libs | clean-code, refactor, shared-libs, deslop, shared, libs, find, worthwhile, code, extractions, recent, work |
+| `investigate` | Systematic debugging with root cause investigation. (gstack) | safe | gstack | debugging, diagnostics, rca, root-cause | debugging, diagnostics, rca, root-cause, investigate, systematic, root, cause, investigation, gstack |
 | `observability-cloud-planning` | Build a cloud, SLO, and incident-readiness register after intake. Use when an SME needs monitoring scope, alert ownership, cost limits, or service planning. | safe | WHOISABHISHEKADHIKARI/sme-ops-system-builder | sme, observability, monitoring, slo, sli, alerting, cloud-cost, uptime, incident, reliability, csv, sql, notion | sme, observability, monitoring, slo, sli, alerting, cloud-cost, uptime, incident, reliability, csv, sql |
+| `plan-devex-review` | Interactive developer experience plan review. (gstack) | safe | gstack | api-design, devex, ergonomics, plan | api-design, devex, ergonomics, plan, review, interactive, developer, experience, gstack |
+| `plan-eng-review` | Eng manager-mode plan review. (gstack) | safe | gstack | architecture, invariants, plan, tech-lead | architecture, invariants, plan, tech-lead, eng, review, manager, mode, gstack |
+| `review` | Pre-landing PR review. (gstack) | safe | gstack | code-review, greptile, pr, triage | code-review, greptile, pr, triage, review, pre, landing, gstack |
 | `smart-contract-formal-verification` | Foundry and Soroban formal invariant verification register: state transition rules, boundary invariant properties, and symbolic execution checks. | safe | Ranjeet2063/agentic-awesome-skills | formal-verification, invariants, foundry, soroban, security, math | formal-verification, invariants, foundry, soroban, security, math, smart, contract, formal, verification, invariant, register |
 | `smart-contract-upgrade-governance` | Soroban WASM upgrade governance register: executable bytecode hash, timelocked migration delays, and multi-sig authorization quorum. | safe | Ranjeet2063/agentic-awesome-skills | soroban, upgrade, governance, security, wasm, stellar | soroban, upgrade, governance, security, wasm, stellar, smart, contract, register, executable, bytecode, hash |
 | `soroban-contract-audit` | Soroban smart contract security audit register: authorization checks, panic pathways, integer overflows, and storage footprint verification for Stellar. | safe | Ranjeet2063/agentic-awesome-skills | stellar, soroban, rust, smart-contracts, security, audit, web3 | stellar, soroban, rust, smart-contracts, security, audit, web3, contract, smart, register, authorization, checks |
@@ -1858,6 +1902,12 @@ Total skills: 2798
 | `web3-rate-limiting-circuit-breaker` | On-chain and relayer rate-limiting circuit breaker register: throughput thresholds, emergency pause triggers, and multi-sig recovery. | safe | Ranjeet2063/agentic-awesome-skills | security, rate-limiting, circuit-breaker, defi, infrastructure, web3 | security, rate-limiting, circuit-breaker, defi, infrastructure, web3, rate, limiting, circuit, breaker, chain, relayer |
 | `web3-transaction-relayer-pool` | Gasless transaction relayer node pool register: fee sponsorship limits, nonce synchronization, and balance replenishment alerts. | safe | Ranjeet2063/agentic-awesome-skills | web3, relayer, gasless, meta-transactions, stellar, infrastructure | web3, relayer, gasless, meta-transactions, stellar, infrastructure, transaction, pool, node, register, fee, sponsorship |
 | `zk-proof-verification-pipeline` | Zero-knowledge cryptographic verification pipeline register: proving system, circuit verification keys, public inputs, and gas costs. | safe | Ranjeet2063/agentic-awesome-skills | zk, zero-knowledge, snark, cryptography, privacy, soroban, web3 | zk, zero-knowledge, snark, cryptography, privacy, soroban, web3, proof, verification, pipeline, zero, knowledge |
+
+## evaluation (1)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `eval-plan` | Preregister a paid eval (bars, arms, decoys, stop rules), dry-run it at zero cost, then run a three-item priced pilot whose spend table gates approval. (gstack) | safe | gstack | budget, evals, llm-benchmarking, pricing | budget, evals, llm-benchmarking, pricing, eval, plan, preregister, paid, bars, arms, decoys, stop |
 
 ## finance (18)
 
@@ -1919,7 +1969,7 @@ Total skills: 2798
 | `ui-ux-pro-max` | Comprehensive design guide for web and mobile applications. Use when designing new UI components or pages, choosing color palettes and typography, or reviewi... | critical | community | ui, ux, max | ui, ux, max, pro, web, mobile, applications, designing, new, components, pages, choosing |
 | `web-performance-optimization` | Optimize website and web application performance including loading speed, Core Web Vitals, bundle size, caching strategies, and runtime performance | critical | community | web, performance, optimization | web, performance, optimization, optimize, website, application, including, loading, speed, core, vitals, bundle |
 
-## frontend (37)
+## frontend (38)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -1938,6 +1988,7 @@ Total skills: 2798
 | `gpt-taste` | Use when generating elite GSAP-heavy frontend pages with strict AIDA structure, wide hero typography, and gapless bento grids. | safe | Leonxlnx/taste-skill | frontend, design, gsap, motion | frontend, design, gsap, motion, gpt, taste, generating, elite, heavy, pages, strict, aida |
 | `high-end-visual-design` | Use when designing expensive agency-grade interfaces with premium fonts, spatial rhythm, soft depth, and fluid microinteractions. | safe | Leonxlnx/taste-skill | frontend, visual-design, motion, ui | frontend, visual-design, motion, ui, high, visual, designing, expensive, agency, grade, interfaces, premium |
 | `industrial-brutalist-ui` | Use when creating raw industrial or tactical telemetry UIs with rigid grids, stark typography, CRT effects, and high-density data. | safe | Leonxlnx/taste-skill | frontend, design, brutalism, ui | frontend, design, brutalism, ui, industrial, brutalist, creating, raw, tactical, telemetry, uis, rigid |
+| `json-render` | Core framework for defining generative UI schemas, component catalogs, and structured prompt generation from Vercel Labs. | safe | vercel-labs/json-render | json, render | json, render, core, framework, defining, generative, ui, schemas, component, catalogs, structured, prompt |
 | `make-interfaces-feel-better` | Design engineering principles for making interfaces feel polished with animation, typography, shadows, border-radius, and micro-interaction details. | safe | jakubkrehel/make-interfaces-feel-better | frontend, design, ui, animation, typography, surfaces, polish, micro-interactions | frontend, design, ui, animation, typography, surfaces, polish, micro-interactions, interfaces, feel, better, engineering |
 | `markstream-angular` | Integrate the alpha markstream-angular renderer into Angular 20+ applications with standalone components, signals, safe HTML defaults, and optional peer feat... | critical | Simon-He95/markstream-vue | angular, markdown, streaming, ai-chat, frontend | angular, markdown, streaming, ai-chat, frontend, markstream, integrate, alpha, renderer, 20, applications, standalone |
 | `markstream-custom-components` | Override Markstream node renderers and add trusted custom tags across Vue, React, Svelte, and Angular using scoped or renderer-local mappings. | critical | Simon-He95/markstream-vue | markdown, components, vue, react, svelte, angular | markdown, components, vue, react, svelte, angular, markstream, custom, override, node, renderers, add |
@@ -1992,19 +2043,11 @@ Total skills: 2798
 | `unity-developer` | Build Unity games with optimized C# scripts, efficient rendering, and proper asset management. Masters Unity 6 LTS, URP/HDRP pipelines, and cross-platform de... | critical | community | unity | unity, developer, games, optimized, scripts, efficient, rendering, proper, asset, masters, lts, urp |
 | `unity-ecs-patterns` | Production patterns for Unity's Data-Oriented Technology Stack (DOTS) including Entity Component System, Job System, and Burst Compiler. | safe | community | unity, ecs | unity, ecs, data, oriented, technology, stack, dots, including, entity, component, job, burst |
 
-## general (9)
+## general (1)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `antigravity-agent-manager` | Configure and orchestrate parallel agents using the standalone Antigravity 2.0 Agent Manager and Antigravity IDE. | critical | self | agent-manager, orchestration, multi-agent, setup | agent-manager, orchestration, multi-agent, setup, antigravity, agent, manager, configure, orchestrate, parallel, agents, standalone |
-| `building-agents-with-eve` | Companion skill for the Building Agents with Eve course on Vercel Academy. Build autonomous agents with approval workflows. | safe | vercel-labs/academy-skills | building, agents, with, eve | building, agents, with, eve, companion, skill, course, vercel, academy, autonomous, approval |
-| `json-render` | Core framework for defining generative UI schemas, component catalogs, and structured prompt generation from Vercel Labs. | safe | vercel-labs/json-render | json, render | json, render, core, framework, defining, generative, ui, schemas, component, catalogs, structured, prompt |
-| `next-bundle-optimizer` | Audit and reduce Next.js browser initial-load bundle work, code-splitting, dynamic imports, and package deduplication. | safe | vercel/next.js | next, bundle, optimizer | next, bundle, optimizer, audit, reduce, js, browser, initial, load, work, code, splitting |
-| `next-cache-components-optimizer` | Optimize cache keys, cache boundaries, tags, and revalidation strategies for Next.js Cache Components. | safe | vercel/next.js | next, cache, components, optimizer | next, cache, components, optimizer, optimize, keys, boundaries, tags, revalidation, js |
-| `next-dev-loop` | Verify Next.js runtime behavior after editing code using Turbopack, Fast Refresh, and runtime assertion. | safe | vercel/next.js | next, dev, loop | next, dev, loop, verify, js, runtime, behavior, after, editing, code, turbopack, fast |
-| `next-partial-prefetching-adoption` | Enable and configure Next.js Partial Prefetching (PPR) for instant shell rendering and streaming dynamic content. | safe | vercel/next.js | next, partial, prefetching, adoption | next, partial, prefetching, adoption, enable, configure, js, ppr, instant, shell, rendering, streaming |
-| `next-partial-prefetching-optimizer` | Fine-tune Suspense boundaries, static shells, and prefetch hit rates in Next.js applications. | safe | vercel/next.js | next, partial, prefetching, optimizer | next, partial, prefetching, optimizer, fine, tune, suspense, boundaries, static, shells, prefetch, hit |
-| `subscription-store` | Companion skill for the Launch a Subscription Store course on Vercel Academy. Build Stripe subscription storefronts with Next.js. | safe | vercel-labs/academy-skills | subscription, store | subscription, store, companion, skill, launch, course, vercel, academy, stripe, storefronts, next, js |
 
 ## granular-workflow-bundle (16)
 
@@ -2068,12 +2111,24 @@ Total skills: 2798
 | `weightloss-analyzer` | 分析减肥数据、计算代谢率、追踪能量缺口、管理减肥阶段 | safe | community | weightloss, analyzer | weightloss, analyzer |
 | `wellally-tech` | Integrate multiple digital health data sources, connect to [WellAlly.tech](https://www.wellally.tech/) knowledge base, providing data import and knowledge re... | critical | community | wellally, tech | wellally, tech, integrate, multiple, digital, health, data, sources, connect, https, www, knowledge |
 
+## image (1)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `ffmpeg-image-processing` | Image format conversion, animated GIF creation with two-pass color palette generation, thumbnail extraction, and sprite sheets. | safe | chunpu/ffmpeg-skills | ffmpeg, image, processing | ffmpeg, image, processing, format, conversion, animated, gif, creation, two, pass, color, palette |
+
 ## knowledge-management (2)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `maintain-codex-wiki` | Maintain a review-first engineering wiki with provenance, citation-aware queries, explicit capture and promotion, and deterministic checks. | critical | Phelan164/codex-howto | codex, wiki, knowledge-management, provenance, engineering | codex, wiki, knowledge-management, provenance, engineering, maintain, review, first, citation, aware, queries, explicit |
 | `wiki-builder` | Create and maintain reusable research wikis with source provenance, configurable structure, and local markdown outputs. | safe | dair-ai/dair-academy-plugins | dair-academy, ai, workflow | dair-academy, ai, workflow, wiki, builder, maintain, reusable, research, wikis, source, provenance, configurable |
+
+## learning (1)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `academy` | Interactive learning companion and curriculum guide for Vercel Academy courses and agent architectures. | safe | vercel-labs/academy-skills | academy | academy, interactive, learning, companion, curriculum, vercel, courses, agent, architectures |
 
 ## legal (9)
 
@@ -2099,6 +2154,13 @@ Total skills: 2798
 | `leiloeiro-juridico` | Analise juridica de leiloes: nulidades, bem de familia, alienacao fiduciaria, CPC arts 829-903, Lei 9514/97, onus reais, embargos e jurisprudencia. | safe | community | legal, auction-law, brazilian, judicial | legal, auction-law, brazilian, judicial, leiloeiro, juridico, analise, juridica, de, leiloes, nulidades, bem |
 | `leiloeiro-mercado` | Analise de mercado imobiliario para leiloes. Liquidez, desagio tipico, ROI, estrategias de saida (flip/reforma/renda), Selic 2025 e benchmark CDI/FII. | safe | community | market-analysis, real-estate, roi, brazilian | market-analysis, real-estate, roi, brazilian, leiloeiro, mercado, analise, de, imobiliario, para, leiloes, liquidez |
 | `leiloeiro-risco` | Analise de risco em leiloes de imoveis. Score 36 pontos, riscos juridicos/financeiros/operacionais, stress test 4 cenarios e ROI ponderado por risco. | safe | community | risk-analysis, scoring, stress-test, brazilian | risk-analysis, scoring, stress-test, brazilian, leiloeiro, risco, analise, de, em, leiloes, imoveis, score |
+
+## management (2)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `briefing` | Compile daily briefing with meeting context, active deals, and citation tracking | safe | gbrain | briefing, dossier, meeting-prep, synthesis | briefing, dossier, meeting-prep, synthesis, compile, daily, meeting, context, active, deals, citation, tracking |
+| `retro` | Weekly engineering retrospective. (gstack) | safe | gstack | engineering-management, metrics, retrospective | engineering-management, metrics, retrospective, retro, weekly, engineering, gstack |
 
 ## marketing (114)
 
@@ -2289,19 +2351,34 @@ Total skills: 2798
 | --- | --- | --- | --- | --- | --- |
 | `video-content-extractor` | Extract key frames from MP4 videos at configurable intervals, run Tesseract OCR, and generate structured Markdown reports with video metadata and timestamped... | safe | 274326424/video-content-extractor | video, ocr, ffmpeg, tesseract, frame-extraction, media | video, ocr, ffmpeg, tesseract, frame-extraction, media, content, extractor, extract, key, frames, mp4 |
 
-## memory (7)
+## memory (22)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `agent-memory-discipline` | Rules for when an agent should recall from long-term memory before acting and when it should save decisions, corrections and failures afterwards. Works with ... | safe | mnemoverse/agent-memory-discipline | agent-memory, long-term-memory, context-engineering, mcp, agent-skills | agent-memory, long-term-memory, context-engineering, mcp, agent-skills, agent, memory, discipline, rules, should, recall, long |
 | `agent-memory-systems` | Memory is the cornerstone of intelligent agents. Without it, every interaction starts from zero. This skill covers the architecture of agent memory: short-te... | safe | vibeship-spawner-skills (Apache 2.0) | agent, memory | agent, memory, cornerstone, intelligent, agents, without, every, interaction, starts, zero, skill, covers |
+| `brain-ingest-gate` | Pre-write quality gate for content entering the brain. No raw copies: a bare cp/mv into the brain repo is a bug. Before any new page lands, resolve named ent... | safe | gbrain | data-quality, deduplication, ingest-gate | data-quality, deduplication, ingest-gate, brain, ingest, gate, pre, write, quality, content, entering, no |
+| `brain-link-discipline` | When you report a brain page to the user — created, edited, committed, or relayed from a subagent — a working link is part of the deliverable, in the SAME me... | safe | gbrain | bidirectional-links, graph, linking | bidirectional-links, graph, linking, brain, link, discipline, report, page, user, created, edited, committed |
+| `brain-ops` | Brain knowledge base operations. The core read/write cycle: brain-first lookup, read-enrich-write loop, source attribution, ambient enrichment, back-linking.... | safe | gbrain | enrichment, knowledge-base, memory, read-write | enrichment, knowledge-base, memory, read-write, brain, ops, knowledge, base, operations, core, read, write |
+| `brain-taxonomist` | Filing gate for ALL brain writes. Consulted before creating any new brain page to determine the correct path. Reads the ACTIVE schema pack via `gbrain schema... | safe | gbrain | classification, ontology, taxonomy | classification, ontology, taxonomy, brain, taxonomist, filing, gate, all, writes, consulted, before, creating |
+| `capture` | Save any thought or content into the brain via one CLI command. The single human-facing entrypoint that replaces "put_page vs commit-then-sync vs autopilot-w... | safe | gbrain | capture, inbox, memory, quick-note | capture, inbox, memory, quick-note, save, any, thought, content, brain, via, one, cli |
+| `citation-fixer` | Audit and fix citation formatting across brain pages. Ensures every fact has an inline [Source: ...] citation matching the standard format. Extended in v0.25... | safe | gbrain | accuracy, citations, provenance, verification | accuracy, citations, provenance, verification, citation, fixer, audit, fix, formatting, brain, pages, ensures |
+| `company-brainify` | Extract a sanitized shared team/company brain from a personal brain. Strips internal ratings, compensation, performance assessments, retention and political ... | safe | gbrain | company-brain, sanitization, shared-memory | company-brain, sanitization, shared-memory, company, brainify, extract, sanitized, shared, team, brain, personal, strips |
+| `concept-synthesis` | Deduplicate and synthesize raw concept stubs into a tiered intellectual map (T1 Canon to T4 Riff), tracing idea evolution across sources over time. Transform... | safe | gbrain | canon, concepts, intellectual-map, synthesis | canon, concepts, intellectual-map, synthesis, concept, deduplicate, synthesize, raw, stubs, tiered, intellectual, map |
+| `context-audit` | Token-hygiene audit of the always-loaded context stack — CLAUDE.md, AGENTS.md, auto-memory MEMORY.md, and the bootstrap-rendered identity files (SOUL.md, USE... | safe | gbrain | context-audit, memory-audit, token-efficiency | context-audit, memory-audit, token-efficiency, context, audit, token, hygiene, always, loaded, stack, claude, md |
 | `context-window-management` | Strategies for managing LLM context windows including summarization, trimming, routing, and avoiding context rot | critical | vibeship-spawner-skills (Apache 2.0) | window | window, context, managing, llm, windows, including, summarization, trimming, routing, avoiding, rot |
 | `conversation-memory` | Persistent memory systems for LLM conversations including short-term, long-term, and entity-based memory | critical | vibeship-spawner-skills (Apache 2.0) | conversation, memory | conversation, memory, persistent, llm, conversations, including, short, term, long, entity |
+| `correction-pipeline` | When the user corrects a factual error, root-cause it immediately. Don't just note the correction — trace the error to its source, fix the source, and preven... | safe | gbrain | error-correction, fact-fixing, root-cause | error-correction, fact-fixing, root-cause, correction, pipeline, user, corrects, factual, error, root, cause, immediately |
+| `gstack-learn` | Manage project learnings. | safe | gstack | codebase-memory, context-compounding, learnings | codebase-memory, context-compounding, learnings, gstack, learn |
 | `hierarchical-agent-memory` | Scoped CLAUDE.md memory system that reduces context token spend. Creates directory-level context files, tracks savings via dashboard, and routes agents to th... | safe | https://github.com/kromahlusenii-ops/ham | hierarchical, agent, memory | hierarchical, agent, memory, scoped, claude, md, reduces, context, token, spend, creates, directory |
+| `idea-lineage` | Trace one idea's evolution through the brain: first mention, best articulation, related concepts, reversals, contradictions, abandoned branches, and the curr... | safe | gbrain | evolution, ideas, lineage, reversals | evolution, ideas, lineage, reversals, idea, trace, one, through, brain, first, mention, articulation |
 | `memory-systems` | Design short-term, long-term, and graph-based memory architectures. Use when building agents that must persist across sessions, needing to maintain entity co... | safe | https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering/tree/main/skills/memory-systems | memory | memory, short, term, long, graph, architectures, building, agents, must, persist, sessions, needing |
 | `recallmax` | FREE — God-tier long-context memory for AI agents. Injects 500K-1M clean tokens, auto-summarizes with tone/intent preservation, compresses 14-turn history in... | safe | community | memory, context, rag, summarization, compression, long-context, agent-infrastructure | memory, context, rag, summarization, compression, long-context, agent-infrastructure, recallmax, free, god, tier, long |
+| `setup-gbrain` | Set up gbrain for this coding agent: install the CLI, initialize a local PGLite or Supabase brain, register MCP, capture per-remote trust policy. (gstack) | safe | gstack | gbrain, knowledge-base, memory, setup | gbrain, knowledge-base, memory, setup, set, up, coding, agent, install, cli, initialize, local |
+| `sync-gbrain` | Keep gbrain current with this repo's code and refresh agent search guidance in CLAUDE.md. (gstack) | safe | gstack | gbrain, memory, synchronization | gbrain, memory, synchronization, sync, keep, current, repo, code, refresh, agent, search, guidance |
+| `voice-note-ingest` | Ingest a voice note with exact-phrasing preservation (never paraphrased). Routes content to originals/, concepts/, people/, companies/, ideas/, personal/, or... | safe | gbrain | audio, exact-words, transcription, voice-notes | audio, exact-words, transcription, voice-notes, voice, note, ingest, exact, phrasing, preservation, never, paraphrased |
 
-## meta (38)
+## meta (37)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -2332,7 +2409,6 @@ Total skills: 2798
 | `skill-issue` | Find out why a coding-agent skill won't fire — grade each SKILL.md A–F on activation, simulate which skill a prompt triggers, and flag collisions where one s... | safe | mishanefedov/skill-issue | skills, linter, activation, meta, ci | skills, linter, activation, meta, ci, skill, issue, find, why, coding, agent, won |
 | `skill-optimizer` | Diagnose and optimize Agent Skills (SKILL.md) with real session data and research-backed static analysis. Works with Claude Code, Codex, and any Agent Skills... | safe | hqhq1025/skill-optimizer (MIT) | skill, optimizer | skill, optimizer, diagnose, optimize, agent, skills, md, real, session, data, research, backed |
 | `skill-rails-upgrade` | Analyze Rails apps and provide upgrade assessments | safe | https://github.com/robzolkos/skill-rails-upgrade | skill, rails, upgrade | skill, rails, upgrade, analyze, apps, provide, assessments |
-| `skill-router` | Use when the user is unsure which skill to use or where to start. Interviews the user with targeted questions and recommends the best skill(s) from the insta... | safe | self | skill, router | skill, router, user, unsure, which, where, start, interviews, targeted, questions, recommends, installed |
 | `skill-scanner` | Security scanner for AI Agent Skills packages. Detects prompt injection, data exfiltration, and malicious code patterns with AST, YARA-X, and CEL policies. | safe | community | skill, scanner | skill, scanner, security, ai, agent, skills, packages, detects, prompt, injection, data, exfiltration |
 | `skill-seekers` | Automatically detect source types and build AI skills from documentation websites, GitHub repositories, PDFs, or local codebases using Skill Seekers CLI and ... | safe | community | skill, seekers | skill, seekers, automatically, detect, source, types, ai, skills, documentation, websites, github, repositories |
 | `skill-sentinel` | Auditoria e evolucao do ecossistema de skills. Qualidade de codigo, seguranca, custos, gaps, duplicacoes, dependencias e relatorios de saude. | safe | community | governance, audit, quality, skill-health | governance, audit, quality, skill-health, skill, sentinel, auditoria, evolucao, do, ecossistema, de, skills |
@@ -2350,7 +2426,7 @@ Total skills: 2798
 | --- | --- | --- | --- | --- | --- |
 | `remote-gpu-trainer` | Deploy, monitor, and debug long GPU jobs on RENTED/remote instances (AutoDL, RunPod, vast.ai, Lambda, Slurm, K8s): teardown/billing safety, spot resilience, ... | safe | Hanyuyuan6/remote-gpu-trainer | remote, gpu, trainer | remote, gpu, trainer, deploy, monitor, debug, long, jobs, rented, instances, autodl, runpod |
 
-## mobile (38)
+## mobile (43)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -2378,8 +2454,13 @@ Total skills: 2798
 | `expo-ui-jetpack-compose` | expo-ui-jetpack-compose | critical | community | expo, ui, jetpack, compose | expo, ui, jetpack, compose |
 | `expo-ui-swift-ui` | expo-ui-swift-ui | critical | community | expo, ui, swift | expo, ui, swift |
 | `flutter-expert` | Master Flutter development with Dart 3, advanced widgets, and multi-platform deployment. | safe | community | flutter, dart, mobile, cross-platform, riverpod | flutter, dart, mobile, cross-platform, riverpod, development, widgets, multi, platform, deployment |
+| `ios-clean` | Remove the DebugBridge SPM package and all #if DEBUG wiring from an iOS app. (gstack) | safe | gstack | cleanup, debug-bridge, ios | cleanup, debug-bridge, ios, clean, remove, debugbridge, spm, package, all, debug, wiring, app |
 | `ios-debugger-agent` | Debug the current iOS project on a booted simulator with XcodeBuildMCP. | safe | Dimillian/Skills (MIT) | ios, debugger, agent | ios, debugger, agent, debug, current, booted, simulator, xcodebuildmcp |
+| `ios-design-review` | Visual design audit for iOS apps on real hardware. (gstack) | safe | gstack | apple, design-review, hig, ios | apple, design-review, hig, ios, review, visual, audit, apps, real, hardware, gstack |
 | `ios-developer` | Develop native iOS applications with Swift/SwiftUI. Masters iOS 18, SwiftUI, UIKit integration, Core Data, networking, and App Store optimization. | critical | community | ios | ios, developer, develop, native, applications, swift, swiftui, masters, 18, uikit, integration, core |
+| `ios-fix` | Autonomous iOS bug fixer. (gstack) | safe | gstack | bug-fix, ios, regression, snapshot-test | bug-fix, ios, regression, snapshot-test, fix, autonomous, bug, fixer, gstack |
+| `ios-qa` | Live-device iOS QA for SwiftUI apps. (gstack) | safe | gstack | coredevice, device-qa, ios, swiftui | coredevice, device-qa, ios, swiftui, qa, live, device, apps, gstack |
+| `ios-sync` | Regenerate the iOS debug bridge against the latest upstream gstack templates. (gstack) | safe | gstack | debug-bridge, ios, swiftpm | debug-bridge, ios, swiftpm, sync, regenerate, debug, bridge, against, latest, upstream, gstack |
 | `mobile-design` | (Mobile-First · Touch-First · Platform-Respectful) | critical | community | mobile | mobile, first, touch, platform, respectful |
 | `mobile-developer` | Develop React Native, Flutter, or native mobile apps with modern architecture patterns. Masters cross-platform development, native integrations, offline sync... | critical | community | mobile | mobile, developer, develop, react, native, flutter, apps, architecture, masters, cross, platform, development |
 | `mobile-reverse` | Authorized Android/iOS application reverse engineering and security testing: APK/IPA analysis, runtime instrumentation (Frida/Objection), SSL-pinning and jai... | offensive | zhaoxuya520/reverse-skill | mobile, reverse | mobile, reverse, authorized, android, ios, application, engineering, security, testing, apk, ipa, analysis |
@@ -2435,10 +2516,12 @@ Total skills: 2798
 | `pre-release-review` | Run a read-only pre-release review for deploy readiness, migrations, config, secrets, rollout order, rollback risk, and launch blockers. | safe | chaunsin/agent-skills | release, deploy-readiness, ci-cd, rollback, production | release, deploy-readiness, ci-cd, rollback, production, pre, review, run, read, deploy, readiness, migrations |
 | `vps-server-management` | Manage authorized VPS hosts and server-side agents through cautious SSH and operations workflows. | critical | davidondrej/skills | vps, ssh, server-management | vps, ssh, server-management, server, authorized, hosts, side, agents, through, cautious, operations |
 
-## orchestration (1)
+## orchestration (3)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
+| `autoplan` | Auto-review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with auto-decisions using 6 decision princi... | safe | gstack | automation, pipeline, planning, review | automation, pipeline, planning, review, autoplan, auto, reads, full, ceo, eng, dx, skills |
+| `minion-orchestrator` | Unified Minions skill for both deterministic shell jobs and LLM subagent orchestration. Replaces the older `gbrain-jobs` routing intent. Use when: submitting... | safe | gbrain | delegation, minions, parallel, subagents | delegation, minions, parallel, subagents, minion, orchestrator, unified, skill, both, deterministic, shell, jobs |
 | `polis-protocol` | Coordinate multi-vendor AI agents as a self-improving team — a learning router assigns work by track record and citizens can amend the protocol's own rules. | critical | yehudalevy-collab/polis-protocol | multi-agent, coordination, routing, orchestration, governance, vendor-agnostic | multi-agent, coordination, routing, orchestration, governance, vendor-agnostic, polis, protocol, coordinate, multi, vendor, ai |
 
 ## pentest-tools (1)
@@ -2446,6 +2529,17 @@ Total skills: 2798
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `pentest-tools/src-hunter` | Bug-bounty/SRC vulnerability-hunting workflow: five-phase methodology (intake, recon, enumeration, hunt, report) with attack playbooks for SQLi, XSS, RCE, SS... | offensive | zhaoxuya520/reverse-skill | pentest, tools/src, hunter | pentest, tools/src, hunter, src, bug, bounty, vulnerability, hunting, five, phase, methodology, intake |
+
+## performance (6)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `benchmark` | Web performance regression detection. (gstack) | safe | gstack | benchmarking, core-web-vitals, performance | benchmarking, core-web-vitals, performance, benchmark, web, regression, detection, gstack |
+| `next-bundle-optimizer` | Audit and reduce Next.js browser initial-load bundle work, code-splitting, dynamic imports, and package deduplication. | safe | vercel/next.js | next, bundle, optimizer | next, bundle, optimizer, audit, reduce, js, browser, initial, load, work, code, splitting |
+| `next-cache-components-adoption` | Adopt Next.js 16.3+ Cache Components and use-cache directive across pages and data access layers. | safe | vercel/next.js | next, cache, components, adoption | next, cache, components, adoption, adopt, js, 16, directive, pages, data, access, layers |
+| `next-cache-components-optimizer` | Optimize cache keys, cache boundaries, tags, and revalidation strategies for Next.js Cache Components. | safe | vercel/next.js | next, cache, components, optimizer | next, cache, components, optimizer, optimize, keys, boundaries, tags, revalidation, js |
+| `next-partial-prefetching-adoption` | Enable and configure Next.js Partial Prefetching (PPR) for instant shell rendering and streaming dynamic content. | safe | vercel/next.js | next, partial, prefetching, adoption | next, partial, prefetching, adoption, enable, configure, js, ppr, instant, shell, rendering, streaming |
+| `next-partial-prefetching-optimizer` | Fine-tune Suspense boundaries, static shells, and prefetch hit rates in Next.js applications. | safe | vercel/next.js | next, partial, prefetching, optimizer | next, partial, prefetching, optimizer, fine, tune, suspense, boundaries, static, shells, prefetch, hit |
 
 ## personal-development (2)
 
@@ -2481,14 +2575,17 @@ Total skills: 2798
 | `nanobanana-ppt-skills` | AI-powered PPT generation with document analysis and styled images | safe | https://github.com/op7418/NanoBanana-PPT-Skills | nanobanana, ppt, skills | nanobanana, ppt, skills, ai, powered, generation, document, analysis, styled, images |
 | `pptx-official` | A user may ask you to create, edit, or analyze the contents of a .pptx file. A .pptx file is essentially a ZIP archive containing XML files and other resourc... | critical | community | pptx, official | pptx, official, user, may, ask, edit, analyze, contents, file, essentially, zip, archive |
 
-## product (4)
+## product (7)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `before-you-build` | Review product risk before coding by checking demand, alternatives, channels, switching costs, and failure signals. | safe | bin1874/before-you-build-skill | product-validation, planning, ai-coding, risk-review | product-validation, planning, ai-coding, risk-review, before, review, product, risk, coding, checking, demand, alternatives |
 | `idea-autopsy` | Autopsy a business idea before you build it: kill-list check, five hard filters, a free-AI one-prompt test, live ad-market verification, and a verdict with a... | critical | hafiz-actyte/idea-autopsy | business-ideas, idea-validation, market-research, startup, founders | business-ideas, idea-validation, market-research, startup, founders, idea, autopsy, business, before, kill, list, check |
+| `office-hours` | YC Office Hours — two modes. (gstack) | safe | gstack | founder, ideation, interrogation, yc | founder, ideation, interrogation, yc, office, hours, two, modes, gstack |
+| `plan-ceo-review` | CEO/founder-mode plan review. (gstack) | safe | gstack | ceo, plan, roadmap, strategy | ceo, plan, roadmap, strategy, review, founder, mode, gstack |
 | `product-decision-agent` | 中文产品决策 Agent。用于需求优先级、Roadmap、增长、留存、运营、数据异常、A/B Test、项目延期和跨团队协作；先判断事实、阶段、核心阻塞与主导机制，再给出下一步、停止清单和切换条件。默认中文，不引用原文或讲历史。 | safe | atdy/maoxuan-product-agent | product-management, decision-making, growth, operations, chinese | product-management, decision-making, growth, operations, chinese, product, decision, agent, roadmap, test |
 | `shopify-review-triage` | Turn public 1-3-star Shopify App Store review rows into a P0-P3 triage brief: incident risk, repeated friction, pricing confusion, feature requests, and an e... | none | alfredtech2026/shopify-app-review-brief | shopify, app-store-reviews, customer-feedback, triage, product-management, support | shopify, app-store-reviews, customer-feedback, triage, product-management, support, review, turn, public, star, app, store |
+| `spec` | Turn vague intent into a precise, executable spec in five phases. (gstack) | safe | gstack | architecture, prd, requirements, specification | architecture, prd, requirements, specification, spec, turn, vague, intent, precise, executable, five, phases |
 
 ## product-management (1)
 
@@ -2593,6 +2690,20 @@ Total skills: 2798
 | --- | --- | --- | --- | --- | --- |
 | `recursive-context-pruning-token-budgeting` | Optimizes AI agent performance by pruning redundant context, managing token usage, and enforcing ultra-concise, direct-to-value responses. | safe | Kench001/antigravity-awesome-skills | efficiency, token-optimization, brevity, context-management | efficiency, token-optimization, brevity, context-management, recursive, context, pruning, token, budgeting, optimizes, ai, agent |
 
+## publishing (1)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `make-pdf` | Turn any markdown file into a publication-quality PDF. (gstack) | safe | gstack | markdown-to-pdf, mermaid, offline, pdf | markdown-to-pdf, mermaid, offline, pdf, turn, any, markdown, file, publication, quality, gstack |
+
+## qa (3)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `qa` | Fix browser/API/CLI/job/worker/webhook bugs. (gstack) | safe | gstack | autonomous-qa, browser-qa, regression, testing | autonomous-qa, browser-qa, regression, testing, qa, fix, browser, api, cli, job, worker, webhook |
+| `qa-only` | Report browser/API/CLI/job/worker/webhook bugs. (gstack) | safe | gstack | inspection, qa-report, smoke-test, testing | inspection, qa-report, smoke-test, testing, qa, report, browser, api, cli, job, worker, webhook |
+| `test-audit` | Find low-value or duplicate tests and the test-only code they keep alive. (gstack) | safe | gstack | audit, coverage, debt, tests | audit, coverage, debt, tests, test, find, low, value, duplicate, code, keep, alive |
+
 ## quality (2)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
@@ -2620,6 +2731,13 @@ Total skills: 2798
 | `test-time-budgeting` | Adaptive Test-Time Compute Allocation & Budget Forcing dynamically budgets reasoning tokens based on predicted problem difficulty and enforces self-reflectio... | safe | academic | time, budgeting | time, budgeting, test, adaptive, compute, allocation, budget, forcing, dynamically, budgets, reasoning, tokens |
 | `turbo-quant` | Compress agent episodic memory, KV-cache tensors, and execute sub-millisecond vector routing over 2,700+ skills using Google TurboQuant (PolarQuant + QJL res... | safe | academic | turbo, quant | turbo, quant, compress, agent, episodic, memory, kv, cache, tensors, execute, sub, millisecond |
 
+## release (2)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `land-and-deploy` | Land and deploy workflow. (gstack) | safe | gstack | ci-cd, deployment, verification | ci-cd, deployment, verification, land, deploy, gstack |
+| `ship` | Ship workflow: detect + merge base branch, run tests, review diff, bump VERSION, update CHANGELOG, commit, push, create PR. (gstack) | safe | gstack | changelog, git, pr, release, ship | changelog, git, pr, release, ship, detect, merge, base, branch, run, tests, review |
+
 ## reliability (18)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
@@ -2643,10 +2761,11 @@ Total skills: 2798
 | `tune-monitor` | Analyze a Monte Carlo monitor and recommend config changes to reduce alert noise. Supports metric, custom SQL, validation, and table monitors. Fetches the re... | critical | monte-carlo-data/mc-agent-toolkit | tune, monitor | tune, monitor, analyze, monte, carlo, recommend, config, changes, reduce, alert, noise, supports |
 | `windows-shell-reliability` | Reliable command execution on Windows: paths, encoding, and common binary pitfalls. | safe | community | windows, shell, reliability | windows, shell, reliability, reliable, command, execution, paths, encoding, common, binary, pitfalls |
 
-## research (23)
+## research (25)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
+| `citation-graph-ingest` | Build a TYPED citation/reference graph over an ingested corpus — not just embeddings. Flat similarity retrieval cannot tell you that document A *overrules* B... | safe | gbrain | academic, citation-graph, papers | academic, citation-graph, papers, citation, graph, ingest, typed, reference, ingested, corpus, just, embeddings |
 | `deep-research-framework` | Framework for deep research reports: define the question and tier sources first, cross-verify, then write conclusion-first reports with explicit uncertainty ... | safe | alapha888/agent-skills-en | research-reports, source-verification, analysis | research-reports, source-verification, analysis, deep, research, framework, reports, define, question, tier, sources, first |
 | `deepapi` | Use DeepAPI for supported scraping, research, and email workflows with explicit credentials and approval. | critical | davidondrej/skills | deepapi, scraping, email, api | deepapi, scraping, email, api, supported, research, explicit, credentials, approval |
 | `dsh-deepread` | Use for evidence-first reading of articles, books, PDFs, web pages, or document sets, with knowledge maps and Feynman checks. | safe | xiehuan123/dsh-deepread | deep-reading, evidence, knowledge-map, feynman, document-analysis | deep-reading, evidence, knowledge-map, feynman, document-analysis, dsh, deepread, first, reading, articles, books, pdfs |
@@ -2667,6 +2786,7 @@ Total skills: 2798
 | `people-data` | Research LinkedIn professional profiles and public business-contact data, including email/phone lookup, people search, and YouTube channel business-email dis... | safe | agentbody/skills | linkedin, youtube, people-search, business-contacts, research | linkedin, youtube, people-search, business-contacts, research, people, data, professional, profiles, public, business, contact |
 | `pi-web-search` | Give Pi Agents a safe web-search and fetch workflow using the installed pi-web-access package. | safe | davidondrej/skills | web-search, pi-agent, research | web-search, pi-agent, research, pi, web, search, give, agents, safe, fetch, installed, access |
 | `research-prompt` | Turn vague research needs into one precise deep-research prompt with context and output criteria. | safe | davidondrej/skills | research, prompting, briefs | research, prompting, briefs, prompt, turn, vague, one, precise, deep, context, output, criteria |
+| `strategic-reading` | Read a book, article, transcript, or case study through the lens of a specific strategic problem you're facing. Produces an applied playbook that maps the so... | safe | gbrain | applied-learning, playbook, reading, strategy | applied-learning, playbook, reading, strategy, strategic, read, book, article, transcript, case, study, through |
 | `survey-generator` | Generate source-backed AI/ML survey paper artifacts with curated bibliographies and Fireworks/Kimi HTML rendering. | safe | dair-ai/dair-academy-plugins | dair-academy, ai, workflow | dair-academy, ai, workflow, survey, generator, generate, source, backed, ml, paper, artifacts, curated |
 | `system-prompt-lookup` | Checks what a shipped AI product's system prompt and tool schema actually say, by reading a dated archive of captured prompts instead of recalling them. Use ... | safe | Continuum-AI-Corp/OrcaPromptVault | system-prompts, tool-schemas, provenance, verification, agent-behaviour | system-prompts, tool-schemas, provenance, verification, agent-behaviour, prompt, lookup, checks, what, shipped, ai, product |
 | `youtube-transcript` | Fetch YouTube transcripts through DeepAPI or local fallback tooling and save clean text output. | safe | davidondrej/skills | youtube, transcripts, research | youtube, transcripts, research, transcript, fetch, through, deepapi, local, fallback, tooling, save, clean |
@@ -2676,6 +2796,16 @@ Total skills: 2798
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `reverse-engineering/dsl-vm-reverse` | Reverse JavaScript-based custom DSL/VM interpreters and risk-control engines: identify IIFE/switch-based opcode dispatch, extract opcode tables, and capture ... | safe | zhaoxuya520/reverse-skill | reverse, engineering/dsl, vm | reverse, engineering/dsl, vm, dsl, javascript, custom, interpreters, risk, control, engines, identify, iife |
+
+## safety (5)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `careful` | Safety guardrails for destructive commands. (gstack) | safe | gstack | guards, read-only, safety, sandbox | guards, read-only, safety, sandbox, careful, guardrails, destructive, commands, gstack |
+| `data-loss-gate` | Confirmation gate before any bulk delete, cleanup, or destructive operation that could result in data loss — shell-level (rm -rf, git rm, bulk sed) or brain-... | safe | gbrain | data-protection, recoverability, safety-gate | data-protection, recoverability, safety-gate, data, loss, gate, confirmation, before, any, bulk, delete, cleanup |
+| `freeze` | Restrict file edits to a specific directory for the session. (gstack) | safe | gstack | boundary, freeze, isolation, safety | boundary, freeze, isolation, safety, restrict, file, edits, specific, directory, session, gstack |
+| `guard` | Full safety mode: destructive command warnings + directory-scoped edits. (gstack) | safe | gstack | destructive-protection, guards, safety | destructive-protection, guards, safety, guard, full, mode, destructive, command, warnings, directory, scoped, edits |
+| `unfreeze` | Clear the freeze boundary set by /freeze, allowing edits to all directories again. (gstack) | safe | gstack | boundary, safety, unfreeze | boundary, safety, unfreeze, clear, freeze, set, allowing, edits, all, directories, again, gstack |
 
 ## science (14)
 
@@ -2696,7 +2826,7 @@ Total skills: 2798
 | `statsmodels` | Statsmodels is Python's premier library for statistical modeling, providing tools for estimation, inference, and diagnostics across a wide range of statistic... | safe | community | statsmodels | statsmodels, python, premier, library, statistical, modeling, providing, estimation, inference, diagnostics, wide, range |
 | `sympy` | SymPy is a Python library for symbolic mathematics that enables exact computation using mathematical symbols rather than numerical approximations. | safe | https://github.com/sympy/sympy | sympy | sympy, python, library, symbolic, mathematics, enables, exact, computation, mathematical, symbols, rather, than |
 
-## security (270)
+## security (271)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -2745,6 +2875,7 @@ Total skills: 2798
 | `container-scanning` | Scan container images for vulnerabilities using Trivy, Grype, and cloud-native tools. | safe | BagelHole/DevOps-Security-Agent-Skills | container, scanning | container, scanning, scan, images, vulnerabilities, trivy, grype, cloud, native |
 | `container-security-hardening` | Harden Docker/container images and runtime deployments with secure base images, non-root users, CVE scanning, SBOM/signing, seccomp/AppArmor, and Kubernetes ... | safe | community | container, security, hardening | container, security, hardening, harden, docker, images, runtime, deployments, secure, base, non, root |
 | `cred-omega` | CISO operacional enterprise para gestao total de credenciais e segredos. | critical | community | credentials, secrets, security, api-keys, vault | credentials, secrets, security, api-keys, vault, cred, omega, ciso, operacional, enterprise, para, gestao |
+| `cso` | Security audit: supported static findings; qualified profiles add reproduction and repair candidates. (gstack) | safe | gstack | cso, owasp, security-audit, stride | cso, owasp, security-audit, stride, security, audit, supported, static, findings, qualified, profiles, add |
 | `cyber-audit` | Run read-only exposure checks for security advisories and write a structured local audit report. | safe | davidondrej/skills | security, audit, read-only | security, audit, read-only, cyber, run, read, exposure, checks, advisories, write, structured, local |
 | `darkmoon-pentest` | Start, follow and triage authorized autonomous AI pentest runs on a self-hosted Darkmoon Pro instance through its MCP server. | offensive | ASCIT31/darkmoon-mcp-server | pentest, security, mcp, vulnerability-triage, darkmoon | pentest, security, mcp, vulnerability-triage, darkmoon, start, follow, triage, authorized, autonomous, ai, runs |
 | `dast-scanning` | Perform dynamic application security testing with OWASP ZAP, Burp Suite, and Nikto. | offensive | BagelHole/DevOps-Security-Agent-Skills | dast, scanning | dast, scanning, perform, dynamic, application, security, testing, owasp, zap, burp, suite, nikto |
@@ -3066,7 +3197,7 @@ Total skills: 2798
 | `test-automator` | Master AI-powered test automation with modern frameworks, self-healing tests, and comprehensive quality engineering. Build scalable testing strategies with a... | critical | community | automator | automator, test, ai, powered, automation, frameworks, self, healing, tests, quality, engineering, scalable |
 | `webapp-testing` | To test local web applications, write native Python Playwright scripts. | critical | community | webapp | webapp, testing, test, local, web, applications, write, native, python, playwright, scripts |
 
-## testing (47)
+## testing (49)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -3082,6 +3213,7 @@ Total skills: 2798
 | `cucumber-skill` | Generates Cucumber BDD tests with Gherkin feature files and step definitions in Java, JavaScript, or Ruby. Use when user mentions "Cucumber", "Gherkin", "Fea... | critical | LambdaTest/agent-skills | cucumber, skill | cucumber, skill, generates, bdd, tests, gherkin, feature, files, step, definitions, java, javascript |
 | `cypress-skill` | Generates production-grade Cypress E2E and component tests in JavaScript or TypeScript. Supports local execution and TestMu AI cloud. Use when the user asks ... | critical | LambdaTest/agent-skills | cypress, skill | cypress, skill, generates, grade, e2e, component, tests, javascript, typescript, supports, local, execution |
 | `electron-drive-skill` | Launch the project's Electron app on a scratch profile and drive it: click, type, screenshot, run renderer or main-process code, read logs. Use to verify UI ... | critical | Search-3D/electron-drive-skill | electron, playwright, desktop, e2e, testing, automation | electron, playwright, desktop, e2e, testing, automation, drive, skill, launch, app, scratch, profile |
+| `emulate` | Local drop-in API emulator for Vercel, GitHub, Google, Slack, Stripe, and Twilio webhooks and OAuth. | safe | vercel-labs/emulate | emulate | emulate, local, drop, api, emulator, vercel, github, google, slack, stripe, twilio, webhooks |
 | `huggingface-community-evals` | Curated upstream guidance for Huggingface Community Evals; use when the workflow matches the user goal. | unknown | huggingface/skills | huggingface, community, evals | huggingface, community, evals, curated, upstream, guidance, matches, user, goal |
 | `hyperexecute-skill` | Operates HyperExecute end-to-end for TestMu AI/LambdaTest cloud test execution: analyze projects, create YAML, validate locally, run CLI jobs, debug failures... | critical | LambdaTest/agent-skills | hyperexecute, skill | hyperexecute, skill, operates, testmu, ai, lambdatest, cloud, test, execution, analyze, yaml, validate |
 | `junit-5-skill` | Generates production-grade JUnit 5 unit and integration tests in Java. Covers assertions, parameterized tests, lifecycle hooks, mocking with Mockito, and nes... | critical | LambdaTest/agent-skills | junit, 5, skill | junit, 5, skill, generates, grade, unit, integration, tests, java, covers, assertions, parameterized |
@@ -3094,6 +3226,7 @@ Total skills: 2798
 | `postman-newman-automation` | Generate Newman CLI commands, configuration files, Jenkins pipeline scripts, and shell automation for running Postman collections in CI/CD or local environme... | critical | LambdaTest/agent-skills | postman, newman | postman, newman, automation, generate, cli, commands, configuration, files, jenkins, pipeline, scripts, shell |
 | `pypict-skill` | Pairwise test generation | safe | https://github.com/omkamal/pypict-claude-skill/blob/main/SKILL.md | pypict, skill | pypict, skill, pairwise, test, generation |
 | `pytest-skill` | Generates production-grade pytest tests in Python with fixtures, parametrize, markers, mocking, and conftest patterns. Use when user mentions "pytest", "conf... | critical | LambdaTest/agent-skills | pytest, skill | pytest, skill, generates, grade, tests, python, fixtures, parametrize, markers, mocking, conftest, user |
+| `qa-master` | Master QA orchestrator for automated & manual testing, test pyramid execution, flaky test quarantine, exploratory charters, and CI/CD quality gates. | safe | self | qa, master | qa, master, orchestrator, automated, manual, testing, test, pyramid, execution, flaky, quarantine, exploratory |
 | `robot-framework-skill` | Generates Robot Framework tests in keyword-driven syntax with Python. Supports SeleniumLibrary, RequestsLibrary, and custom keywords. Use when user mentions ... | critical | LambdaTest/agent-skills | robot, framework, skill | robot, framework, skill, generates, tests, keyword, driven, syntax, python, supports, seleniumlibrary, requestslibrary |
 | `score-eval` | Imported skill `score-eval` from upstream source. | unknown | neondatabase/agent-skills | score, eval | score, eval, imported, skill, upstream, source |
 | `screen-reader-testing` | Practical guide to testing web applications with screen readers for comprehensive accessibility validation. | safe | community | screen, reader | screen, reader, testing, practical, web, applications, readers, accessibility, validation |
@@ -3124,6 +3257,12 @@ Total skills: 2798
 | --- | --- | --- | --- | --- | --- |
 | `clarvia-aeo-check` | Score any MCP server, API, or CLI for agent-readiness using Clarvia AEO (Agent Experience Optimization). Search 15,400+ indexed tools before adding them to y... | safe | community | mcp, aeo, tool-quality, agent-readiness, api-scoring, clarvia | mcp, aeo, tool-quality, agent-readiness, api-scoring, clarvia, check, score, any, server, api, cli |
 
+## tooling (1)
+
+| Skill | Description | Risk | Source | Tags | Triggers |
+| --- | --- | --- | --- | --- | --- |
+| `frontmatter-guard` | Validate and auto-repair YAML frontmatter on brain pages. Catches malformed pages before they enter the brain (missing closing ---, nested quotes, slug misma... | safe | gbrain | frontmatter, linting, metadata, validation | frontmatter, linting, metadata, validation, guard, validate, auto, repair, yaml, brain, pages, catches |
+
 ## tools (1)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
@@ -3142,7 +3281,7 @@ Total skills: 2798
 | --- | --- | --- | --- | --- | --- |
 | `thinking-orbs` | Dotted thought-orb loading indicators for AI & agent UIs with 9 animated cognitive states rendered on 2D canvas for React, React Native, and Vanilla JS. | safe | Jakubantalik/thinking-orbs | thinking-orbs, agent-ui, loading-indicator, react, canvas, animation, motion, design, ui-ux | thinking-orbs, agent-ui, loading-indicator, react, canvas, animation, motion, design, ui-ux, thinking, orbs, dotted |
 
-## uncategorized (55)
+## uncategorized (58)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
@@ -3163,6 +3302,7 @@ Total skills: 2798
 | `cloudflare-one-migrations` | Assess and plan migrations from existing VPN, SWG, or SASE platforms to Cloudflare One, including policy mapping, parity gaps, and rollout. | safe | cloudflare/skills | cloudflare, one, migrations | cloudflare, one, migrations, assess, plan, existing, vpn, swg, sase, platforms, including, policy |
 | `configure-ecc` | Run the conversational ECC setup wizard to inventory, configure, preview, and verify ECC installation scopes and hook modes across supported agent harnesses. | safe | affaan-m/ecc | configure, ecc | configure, ecc, run, conversational, setup, wizard, inventory, preview, verify, installation, scopes, hook |
 | `crafting-effective-readmes` | Use when writing or improving README files. Not all READMEs are the same — provides templates and guidance matched to your audience and project type. | safe | community | crafting, effective, readmes | crafting, effective, readmes, writing, improving, readme, files, all, same, provides, guidance, matched |
+| `devsecops-master` | Master-grade DevSecOps and SecSDLC orchestrator integrating NIST SSDF, OWASP SAMM, SLSA L1-L3, threat modeling, CI/CD quality gates, and adversarial defense ... | safe | self | devsecops, master | devsecops, master, grade, secsdlc, orchestrator, integrating, nist, ssdf, owasp, samm, slsa, l1 |
 | `diagnosing-superpowers` | Diagnose failed agent sessions to identify root causes for repeated work, ignored plans, performance regressions, high token costs, or unexpected tool behavi... | safe | https://github.com/obra/superpowers | diagnosing, superpowers | diagnosing, superpowers, diagnose, failed, agent, sessions, identify, root, causes, repeated, work, ignored |
 | `diagram-design` | Create branded architecture, architecture delta, IT current-state, flowchart, sequence, state machine, ER/data model, timeline, swimlane, quadrant, radar/spi... | safe | community | diagram | diagram, branded, architecture, delta, current, state, flowchart, sequence, machine, er, data, model |
 | `difyctl` | Base skill for the difyctl CLI: find any command or Dify operation through help and run it as a command. Use when the task involves difyctl or a Dify server ... | safe | community | difyctl | difyctl, base, skill, cli, find, any, command, dify, operation, through, run, task |
@@ -3197,20 +3337,24 @@ Total skills: 2798
 | `sandbox-stable` | Build or maintain Cloudflare Sandbox apps on the stable @cloudflare/sandbox package. Use sandbox-next for preview apps and sandbox-migrate-to-next for stable... | safe | cloudflare/skills | sandbox, stable | sandbox, stable, maintain, cloudflare, apps, package, next, preview, migrate, migrations |
 | `think` | Apply the Fable-derived 10-stage OBSERVE, OBSERVE, LISTEN, THINK, CONNECT, CONNECT, FEEL, ACCEPT, CREATE, GROW loop to consequential or ambiguous reasoning a... | safe | community | think | think, apply, fable, derived, 10, stage, observe, listen, connect, feel, accept, grow |
 | `tool-first-gate` | Mandatory pre-execution gate for mechanical tasks (file conversions, media transcoding, data restructuring, OCR, archiving). Discovers the best CLI tool, aud... | safe | internal | first, gate | first, gate, mandatory, pre, execution, mechanical, tasks, file, conversions, media, transcoding, data |
+| `trends` | Real-time Google Trends and social media trending topic discovery across Google Search, X/Twitter, and viral platforms with zero API key dependencies. | unknown | unknown | trends | trends, real, time, google, social, media, trending, topic, discovery, search, twitter, viral |
 | `twitter-algorithm-optimizer` | Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit user tweets to improve engagement and visibili... | safe | community | twitter, algorithm, optimizer | twitter, algorithm, optimizer, analyze, optimize, tweets, maximum, reach, open, source, insights, rewrite |
+| `virality-architect` | Master skill for behavioral psychology, algorithmic retention engineering, and adversarial virality architecture across short-form (Shorts, Reels, TikTok), l... | unknown | unknown | virality | virality, architect, skill, behavioral, psychology, algorithmic, retention, engineering, adversarial, architecture, short, form |
 | `web-perf` | Audit, diagnose, or optimize website loading and interaction performance, Core Web Vitals, and Lighthouse performance scores. | safe | cloudflare/skills | web, perf | web, perf, audit, diagnose, optimize, website, loading, interaction, performance, core, vitals, lighthouse |
 | `workers-best-practices` | Cloudflare Workers best practices for production applications. Use when writing, reviewing, or configuring Workers. | safe | cloudflare/skills | workers, best, practices | workers, best, practices, cloudflare, applications, writing, reviewing, configuring |
 | `wrangler` | Run or troubleshoot Wrangler CLI commands and configure Worker projects for local development, Previews, deployment, and Cloudflare resource management. | safe | cloudflare/skills | wrangler | wrangler, run, troubleshoot, cli, commands, configure, worker, local, development, previews, deployment, cloudflare |
 
-## video (6)
+## video (8)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `ffmpeg` | Provides FFmpeg commands and filter recipes for video automation pipelines - format conversion, resizing, trimming, audio mixing, subtitles and overlays, sli... | safe | n0an/ffmpeg-skill | ffmpeg | ffmpeg, provides, commands, filter, recipes, video, automation, pipelines, format, conversion, resizing, trimming |
 | `ffmpeg-format-conversion` | Convert media files between formats - video containers, audio formats, and codec transcoding | safe | benchflow-ai/skillsbench | ffmpeg, format, conversion | ffmpeg, format, conversion, convert, media, files, between, formats, video, containers, audio, codec |
 | `ffmpeg-media-info` | Analyze media file properties - duration, resolution, bitrate, codecs, and stream information | safe | benchflow-ai/skillsbench | ffmpeg, media, info | ffmpeg, media, info, analyze, file, properties, duration, resolution, bitrate, codecs, stream, information |
+| `ffmpeg-toolkit` | Advanced local FFmpeg editing suite with 42 Python tools: cut, join, fit, caption, loudness, color/LUT, sync, silence removal, look sheets, and render. | safe | kajisho5/ffmpeg-skill | ffmpeg | ffmpeg, toolkit, local, editing, suite, 42, python, cut, join, fit, caption, loudness |
 | `ffmpeg-video-editing` | Cut, trim, concatenate, and split video files - basic video editing operations | safe | benchflow-ai/skillsbench | ffmpeg, video, editing | ffmpeg, video, editing, cut, trim, concatenate, split, files, basic, operations |
 | `ffmpeg-video-filters` | Apply video filters - scale, crop, watermark, speed, blur, and visual effects | safe | benchflow-ai/skillsbench | ffmpeg, video, filters | ffmpeg, video, filters, apply, scale, crop, watermark, speed, blur, visual, effects |
+| `ffmpeg-video-processing` | Comprehensive video manipulation recipes: aspect ratio conversion, letterbox padding, subtitle embedding/burning, and audio track replacement. | safe | chunpu/ffmpeg-skills | ffmpeg, video, processing | ffmpeg, video, processing, manipulation, recipes, aspect, ratio, conversion, letterbox, padding, subtitle, embedding |
 | `youtube-notetaker` | Turn YouTube talks into local study notes with slides, transcripts, editable annotations, and a markdown-backed viewer. | safe | dair-ai/dair-academy-plugins | dair-academy, ai, workflow | dair-academy, ai, workflow, youtube, notetaker, turn, talks, local, study, notes, slides, transcripts |
 
 ## voice-agents (5)
@@ -3387,11 +3531,12 @@ Total skills: 2798
 | `testing-qa` | Comprehensive testing and QA workflow covering unit testing, integration testing, E2E testing, browser automation, and quality assurance. | safe | personal | qa | qa, testing, covering, unit, integration, e2e, browser, automation, quality, assurance |
 | `wordpress` | Complete WordPress development workflow covering theme development, plugin creation, WooCommerce integration, performance optimization, and security hardenin... | safe | personal | wordpress | wordpress, complete, development, covering, theme, plugin, creation, woocommerce, integration, performance, optimization, security |
 
-## writing (5)
+## writing (6)
 
 | Skill | Description | Risk | Source | Tags | Triggers |
 | --- | --- | --- | --- | --- | --- |
 | `bulletmind` | Convert input into clean, structured, hierarchical bullet points for summarization, note-taking, and structured thinking. | safe | community | writing, summarization, note-taking, formatting, structured-output | writing, summarization, note-taking, formatting, structured-output, bulletmind, convert, input, clean, structured, hierarchical, bullet |
+| `draft-in-voice` | Ghostwrite content in a specific person's voice from a VALIDATED voice profile — tweets, replies, short posts, launch copy, recruiting blurbs, emails. Loads ... | safe | gbrain | authoring, drafting, style-matching, voice | authoring, drafting, style-matching, voice, draft, ghostwrite, content, specific, person, validated, profile, tweets |
 | `email-issue-fixer` | Fix small email mistakes without touching the writer's voice, and strip tracking parameters from links on request. Always returns the corrected draft plus a ... | safe | self | email, proofreading, grammar, links | email, proofreading, grammar, links, issue, fixer, fix, small, mistakes, without, touching, writer |
 | `short` | Rewrite the previous response more briefly while preserving the substance. | safe | davidondrej/skills | writing, editing, concise | writing, editing, concise, short, rewrite, previous, response, briefly, while, preserving, substance |
 | `tech-writing-proofread` | Proofreads English technical writing for typos, grammar, punctuation, terminology consistency, jargon, and structure; returns an itemized Original → Suggesti... | safe | alapha888/agent-skills-en | proofreading, technical-writing, editing | proofreading, technical-writing, editing, tech, writing, proofread, proofreads, english, technical, typos, grammar, punctuation |

@@ -388,6 +388,30 @@
     "license_source": "https://github.com/coreyhaines31/marketingskills/blob/main/LICENSE"
   },
   {
+    "id": "academy",
+    "path": "skills/academy",
+    "category": "learning",
+    "name": "academy",
+    "description": "Interactive learning companion and curriculum guide for Vercel Academy courses and agent architectures.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel-labs/academy-skills",
+    "license": "MIT"
+  },
+  {
     "id": "academy-guide",
     "path": "skills/academy-guide",
     "category": "uncategorized",
@@ -1278,6 +1302,30 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "agent-friendly-apis",
+    "path": "skills/agent-friendly-apis",
+    "category": "api",
+    "name": "agent-friendly-apis",
+    "description": "Companion skill for the Agent-Friendly APIs course on Vercel Academy. Design APIs optimized for LLM agent calling.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel-labs/academy-skills",
+    "license": "MIT"
   },
   {
     "id": "agent-harness-fault-injection",
@@ -6393,6 +6441,36 @@
     }
   },
   {
+    "id": "autoplan",
+    "path": "skills/autoplan",
+    "category": "orchestration",
+    "name": "autoplan",
+    "description": "Auto-review pipeline \u2014 reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with auto-decisions using 6 decision principles. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "automation",
+      "pipeline",
+      "planning",
+      "review"
+    ]
+  },
+  {
     "id": "autoresearch",
     "path": "skills/autoresearch",
     "category": "uncategorized",
@@ -10828,6 +10906,35 @@
     }
   },
   {
+    "id": "benchmark",
+    "path": "skills/benchmark",
+    "category": "performance",
+    "name": "benchmark",
+    "description": "Web performance regression detection. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "benchmarking",
+      "core-web-vitals",
+      "performance"
+    ]
+  },
+  {
     "id": "bento-ui",
     "path": "skills/design-it/bento-ui",
     "category": "design-it",
@@ -11425,6 +11532,117 @@
     }
   },
   {
+    "id": "brain-ingest-gate",
+    "path": "skills/brain-ingest-gate",
+    "category": "memory",
+    "name": "brain-ingest-gate",
+    "description": "Pre-write quality gate for content entering the brain. No raw copies: a bare cp/mv into the brain repo is a bug. Before any new page lands, resolve named entities registry-first (a vector score is a floor for prose, never a gate for named.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "blocked"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "escaped_local_reference"
+      ]
+    },
+    "tags": [
+      "data-quality",
+      "deduplication",
+      "ingest-gate"
+    ]
+  },
+  {
+    "id": "brain-link-discipline",
+    "path": "skills/brain-link-discipline",
+    "category": "memory",
+    "name": "brain-link-discipline",
+    "description": "When you report a brain page to the user \u2014 created, edited, committed, or relayed from a subagent \u2014 a working link is part of the deliverable, in the SAME message. Derive the path mechanically (git ls-files --full-name), push BEFORE.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "bidirectional-links",
+      "graph",
+      "linking"
+    ]
+  },
+  {
+    "id": "brain-ops",
+    "path": "skills/brain-ops",
+    "category": "memory",
+    "name": "brain-ops",
+    "description": "Brain knowledge base operations. The core read/write cycle: brain-first lookup, read-enrich-write loop, source attribution, ambient enrichment, back-linking. Read this before any brain interaction.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "enrichment",
+      "knowledge-base",
+      "memory",
+      "read-write"
+    ]
+  },
+  {
+    "id": "brain-taxonomist",
+    "path": "skills/brain-taxonomist",
+    "category": "memory",
+    "name": "brain-taxonomist",
+    "description": "Filing gate for ALL brain writes. Consulted before creating any new brain page to determine the correct path. Reads the ACTIVE schema pack via `gbrain schema show --json` \u2014 no hardcoded directory table. Also runs periodic taxonomy drift.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "classification",
+      "ontology",
+      "taxonomy"
+    ]
+  },
+  {
     "id": "brain-to-docs",
     "path": "skills/brain-to-docs",
     "category": "productivity",
@@ -11820,6 +12038,34 @@
     }
   },
   {
+    "id": "briefing",
+    "path": "skills/briefing",
+    "category": "management",
+    "name": "briefing",
+    "description": "Compile daily briefing with meeting context, active deals, and citation tracking",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "briefing",
+      "dossier",
+      "meeting-prep",
+      "synthesis"
+    ]
+  },
+  {
     "id": "broken-authentication",
     "path": "skills/broken-authentication",
     "category": "security",
@@ -12029,6 +12275,36 @@
     "source_repo": "hyhmrright/brooks-lint",
     "license": "MIT",
     "license_source": "https://github.com/hyhmrright/brooks-lint/blob/main/LICENSE"
+  },
+  {
+    "id": "browse",
+    "path": "skills/browse",
+    "category": "browser",
+    "name": "browse",
+    "description": "Drive a real browser through Aside: open a page, read it, click through a flow, take screenshots, check console errors. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "automation",
+      "browser",
+      "cdp",
+      "chromium"
+    ]
   },
   {
     "id": "browser-act",
@@ -12510,6 +12786,30 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "building-agents-with-eve",
+    "path": "skills/building-agents-with-eve",
+    "category": "ai",
+    "name": "building-agents-with-eve",
+    "description": "Companion skill for the Building Agents with Eve course on Vercel Academy. Build autonomous agents with approval workflows.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel-labs/academy-skills",
+    "license": "MIT"
   },
   {
     "id": "building-native-ui",
@@ -13182,6 +13482,36 @@
     }
   },
   {
+    "id": "canary",
+    "path": "skills/canary",
+    "category": "devops",
+    "name": "canary",
+    "description": "Post-deploy canary monitoring. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "canary",
+      "monitoring",
+      "post-deploy",
+      "sre"
+    ]
+  },
+  {
     "id": "candidate-talent-pool",
     "path": "skills/candidate-talent-pool",
     "category": "business",
@@ -13294,6 +13624,36 @@
     ]
   },
   {
+    "id": "capture",
+    "path": "skills/capture",
+    "category": "memory",
+    "name": "capture",
+    "description": "Save any thought or content into the brain via one CLI command. The single human-facing entrypoint that replaces \"put_page vs commit-then-sync vs autopilot-wait\" with one command that just works.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "blocked"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "absolute_host_path"
+      ]
+    },
+    "tags": [
+      "capture",
+      "inbox",
+      "memory",
+      "quick-note"
+    ]
+  },
+  {
     "id": "card-based-design",
     "path": "skills/design-it/card-based-design",
     "category": "design-it",
@@ -13341,6 +13701,36 @@
     "source_repo": "career-ops-hq/career-ops",
     "license": "MIT",
     "license_source": "https://github.com/career-ops-hq/career-ops/blob/main/LICENSE"
+  },
+  {
+    "id": "careful",
+    "path": "skills/careful",
+    "category": "safety",
+    "name": "careful",
+    "description": "Safety guardrails for destructive commands. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "guards",
+      "read-only",
+      "safety",
+      "sandbox"
+    ]
   },
   {
     "id": "carrier-relationship-management",
@@ -14013,6 +14403,61 @@
     "source_repo": "BagelHole/DevOps-Security-Agent-Skills",
     "license": "MIT",
     "license_source": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/main/LICENSE"
+  },
+  {
+    "id": "citation-fixer",
+    "path": "skills/citation-fixer",
+    "category": "memory",
+    "name": "citation-fixer",
+    "description": "Audit and fix citation formatting across brain pages. Ensures every fact has an inline [Source: ...] citation matching the standard format. Extended in v0.25.1: scans for broken tweet/post references that lack actual URLs and resolves them.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "accuracy",
+      "citations",
+      "provenance",
+      "verification"
+    ]
+  },
+  {
+    "id": "citation-graph-ingest",
+    "path": "skills/citation-graph-ingest",
+    "category": "research",
+    "name": "citation-graph-ingest",
+    "description": "Build a TYPED citation/reference graph over an ingested corpus \u2014 not just embeddings. Flat similarity retrieval cannot tell you that document A *overrules* B, *distinguishes* C, or *relies_on* D. This skill extracts every inter-document.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "academic",
+      "citation-graph",
+      "papers"
+    ]
   },
   {
     "id": "citation-management",
@@ -16363,6 +16808,35 @@
     "license_source": "https://github.com/jonathimer/devmarketing-skills/blob/main/LICENSE"
   },
   {
+    "id": "company-brainify",
+    "path": "skills/company-brainify",
+    "category": "memory",
+    "name": "company-brainify",
+    "description": "Extract a sanitized shared team/company brain from a personal brain. Strips internal ratings, compensation, performance assessments, retention and political dynamics from pages, takes, and facts across the full scan scope (people.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "blocked"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "escaped_local_reference"
+      ]
+    },
+    "tags": [
+      "company-brain",
+      "sanitization",
+      "shared-memory"
+    ]
+  },
+  {
     "id": "company-email-accounts",
     "path": "skills/company-email-accounts",
     "category": "business",
@@ -16769,6 +17243,34 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "concept-synthesis",
+    "path": "skills/concept-synthesis",
+    "category": "memory",
+    "name": "concept-synthesis",
+    "description": "Deduplicate and synthesize raw concept stubs into a tiered intellectual map (T1 Canon to T4 Riff), tracing idea evolution across sources over time. Transforms thousands of raw concept pages into a curated intellectual fingerprint. Includes.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "canon",
+      "concepts",
+      "intellectual-map",
+      "synthesis"
+    ]
   },
   {
     "id": "concise-planning",
@@ -17256,6 +17758,33 @@
       "session-management",
       "continuity",
       "memory"
+    ]
+  },
+  {
+    "id": "context-audit",
+    "path": "skills/context-audit",
+    "category": "memory",
+    "name": "context-audit",
+    "description": "Token-hygiene audit of the always-loaded context stack \u2014 CLAUDE.md, AGENTS.md, auto-memory MEMORY.md, and the bootstrap-rendered identity files (SOUL.md, USER.md, ACCESS_POLICY.md, HEARTBEAT.md) or their harness equivalents. Finds.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "context-audit",
+      "memory-audit",
+      "token-efficiency"
     ]
   },
   {
@@ -17891,6 +18420,33 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "correction-pipeline",
+    "path": "skills/correction-pipeline",
+    "category": "memory",
+    "name": "correction-pipeline",
+    "description": "When the user corrects a factual error, root-cause it immediately. Don't just note the correction \u2014 trace the error to its source, fix the source, and prevent recurrence. Every factual error is either a data error (bad brain page, bad.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "error-correction",
+      "fact-fixing",
+      "root-cause"
+    ]
   },
   {
     "id": "cost-guardian",
@@ -18930,6 +19486,36 @@
     }
   },
   {
+    "id": "cso",
+    "path": "skills/cso",
+    "category": "security",
+    "name": "cso",
+    "description": "Security audit: supported static findings; qualified profiles add reproduction and repair candidates. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "cso",
+      "owasp",
+      "security-audit",
+      "stride"
+    ]
+  },
+  {
     "id": "csv-manual-export",
     "path": "skills/csv-manual-export",
     "category": "business",
@@ -19657,6 +20243,33 @@
       "notion",
       "sql",
       "analyze"
+    ]
+  },
+  {
+    "id": "data-loss-gate",
+    "path": "skills/data-loss-gate",
+    "category": "safety",
+    "name": "data-loss-gate",
+    "description": "Confirmation gate before any bulk delete, cleanup, or destructive operation that could result in data loss \u2014 shell-level (rm -rf, git rm, bulk sed) or brain-level (bulk forget, delete sweeps, purge-deleted, source removal, raw-SQL.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "data-protection",
+      "recoverability",
+      "safety-gate"
     ]
   },
   {
@@ -20632,6 +21245,30 @@
     ]
   },
   {
+    "id": "deepsec",
+    "path": "skills/deepsec",
+    "category": "security",
+    "name": "deepsec",
+    "description": "Automated security vulnerability detection and remediation harness powered by AI coding agents on Vercel.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel-labs/deepsec",
+    "license": "MIT"
+  },
+  {
     "id": "defi-protocol-templates",
     "path": "skills/defi-protocol-templates",
     "category": "blockchain",
@@ -21090,6 +21727,66 @@
     "license_source": "https://github.com/addyosmani/agent-skills/blob/main/LICENSE"
   },
   {
+    "id": "design-consultation",
+    "path": "skills/design-consultation",
+    "category": "design",
+    "name": "design-consultation",
+    "description": "Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic, typography, color, layout, spacing, motion), and generates font+color preview... (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "branding",
+      "consultation",
+      "ui",
+      "ux"
+    ]
+  },
+  {
+    "id": "design-html",
+    "path": "skills/design-html",
+    "category": "design",
+    "name": "design-html",
+    "description": "Design finalization: generates production-quality Pretext-native HTML/CSS. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "css",
+      "html",
+      "production-ui",
+      "styling"
+    ]
+  },
+  {
     "id": "design-it",
     "path": "skills/design-it",
     "category": "frontend",
@@ -21186,6 +21883,64 @@
     "source_repo": "connerkward/ckw-design-skill",
     "license": "MIT",
     "license_source": "https://github.com/connerkward/ckw-design-skill/blob/main/LICENSE"
+  },
+  {
+    "id": "design-review",
+    "path": "skills/design-review",
+    "category": "design",
+    "name": "design-review",
+    "description": "Designer's eye QA: finds visual inconsistency, spacing issues, hierarchy problems, AI slop patterns, and slow interactions \u2014 then fixes them. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "anti-slop",
+      "design-qa",
+      "visual-hierarchy"
+    ]
+  },
+  {
+    "id": "design-shotgun",
+    "path": "skills/design-shotgun",
+    "category": "design",
+    "name": "design-shotgun",
+    "description": "Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "ideation",
+      "variants",
+      "wireframing"
+    ]
   },
   {
     "id": "design-spatial",
@@ -21385,6 +22140,35 @@
     "source_repo": "connerkward/ckw-design-skill",
     "license": "MIT",
     "license_source": "https://github.com/connerkward/ckw-design-skill/blob/main/LICENSE"
+  },
+  {
+    "id": "deslop-shared-libs",
+    "path": "skills/deslop-shared-libs",
+    "category": "engineering",
+    "name": "deslop-shared-libs",
+    "description": "Find worthwhile shared-code extractions in recent work. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "clean-code",
+      "refactor",
+      "shared-libs"
+    ]
   },
   {
     "id": "detect-ai-text",
@@ -21892,6 +22676,30 @@
     "license_source": "https://github.com/jonathimer/devmarketing-skills/blob/main/LICENSE"
   },
   {
+    "id": "devsecops-master",
+    "path": "skills/devsecops-master",
+    "category": "uncategorized",
+    "name": "devsecops-master",
+    "description": "Master-grade DevSecOps and SecSDLC orchestrator integrating NIST SSDF, OWASP SAMM, SLSA L1-L3, threat modeling, CI/CD quality gates, and adversarial defense across all tech stacks.",
+    "risk": "safe",
+    "source": "self",
+    "date_added": "2026-10-12",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "self",
+    "license": "MIT"
+  },
+  {
     "id": "diagnose-android-overheating",
     "path": "skills/diagnose-android-overheating",
     "category": "debugging",
@@ -21974,6 +22782,36 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "diagram",
+    "path": "skills/diagram",
+    "category": "design",
+    "name": "diagram",
+    "description": "Turn an English description (or mermaid source) into a diagram triplet: the source, an editable .excalidraw file you can open on excalidraw.com, and rendered SVG + PNG. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "diagram",
+      "excalidraw",
+      "mermaid",
+      "visual"
+    ]
   },
   {
     "id": "diagram-design",
@@ -22746,6 +23584,35 @@
     "source_repo": "amElnagdy/guard-skills"
   },
   {
+    "id": "document-generate",
+    "path": "skills/document-generate",
+    "category": "documentation",
+    "name": "document-generate",
+    "description": "Generate missing documentation from scratch for a feature, module, or entire project. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "diataxis",
+      "docs-generator",
+      "reference"
+    ]
+  },
+  {
     "id": "document-management-system",
     "path": "skills/document-management-system",
     "category": "business",
@@ -22777,6 +23644,35 @@
       "notion",
       "sql",
       "protect"
+    ]
+  },
+  {
+    "id": "document-release",
+    "path": "skills/document-release",
+    "category": "documentation",
+    "name": "document-release",
+    "description": "Release documentation audit. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "audit",
+      "docs",
+      "release-notes"
     ]
   },
   {
@@ -23126,6 +24022,34 @@
     "source_repo": "addyosmani/agent-skills",
     "license": "MIT",
     "license_source": "https://github.com/addyosmani/agent-skills/blob/main/LICENSE"
+  },
+  {
+    "id": "draft-in-voice",
+    "path": "skills/draft-in-voice",
+    "category": "writing",
+    "name": "draft-in-voice",
+    "description": "Ghostwrite content in a specific person's voice from a VALIDATED voice profile \u2014 tweets, replies, short posts, launch copy, recruiting blurbs, emails. Loads the subject's voice profile (people/<slug>-voice) plus first-party context from.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "authoring",
+      "drafting",
+      "style-matching",
+      "voice"
+    ]
   },
   {
     "id": "draft-my-comments",
@@ -24406,6 +25330,30 @@
     }
   },
   {
+    "id": "emulate",
+    "path": "skills/emulate",
+    "category": "testing",
+    "name": "emulate",
+    "description": "Local drop-in API emulator for Vercel, GitHub, Google, Slack, Stripe, and Twilio webhooks and OAuth.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel-labs/emulate",
+    "license": "MIT"
+  },
+  {
     "id": "energy-procurement",
     "path": "skills/energy-procurement",
     "category": "business",
@@ -24911,6 +25859,36 @@
       "velocity",
       "apify",
       "mcp"
+    ]
+  },
+  {
+    "id": "eval-plan",
+    "path": "skills/eval-plan",
+    "category": "evaluation",
+    "name": "eval-plan",
+    "description": "Preregister a paid eval (bars, arms, decoys, stop rules), dry-run it at zero cost, then run a three-item priced pilot whose spend table gates approval. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "budget",
+      "evals",
+      "llm-benchmarking",
+      "pricing"
     ]
   },
   {
@@ -26312,7 +27290,7 @@
     "description": "Provides FFmpeg commands and filter recipes for video automation pipelines - format conversion, resizing, trimming, audio mixing, subtitles and overlays, slideshows, thumbnails, and encoding tuning.",
     "risk": "safe",
     "source": "community",
-    "date_added": null,
+    "date_added": "2026-10-09",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -26377,6 +27355,30 @@
     "license": "MIT"
   },
   {
+    "id": "ffmpeg-image-processing",
+    "path": "skills/ffmpeg-image-processing",
+    "category": "image",
+    "name": "ffmpeg-image-processing",
+    "description": "Image format conversion, animated GIF creation with two-pass color palette generation, thumbnail extraction, and sprite sheets.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "chunpu/ffmpeg-skills",
+    "license": "MIT"
+  },
+  {
     "id": "ffmpeg-media-info",
     "path": "skills/ffmpeg-media-info",
     "category": "video",
@@ -26398,6 +27400,30 @@
       "reasons": []
     },
     "source_repo": "benchflow-ai/skillsbench",
+    "license": "MIT"
+  },
+  {
+    "id": "ffmpeg-toolkit",
+    "path": "skills/ffmpeg-toolkit",
+    "category": "video",
+    "name": "ffmpeg-toolkit",
+    "description": "Advanced local FFmpeg editing suite with 42 Python tools: cut, join, fit, caption, loudness, color/LUT, sync, silence removal, look sheets, and render.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "kajisho5/ffmpeg-skill",
     "license": "MIT"
   },
   {
@@ -26446,6 +27472,30 @@
       "reasons": []
     },
     "source_repo": "benchflow-ai/skillsbench",
+    "license": "MIT"
+  },
+  {
+    "id": "ffmpeg-video-processing",
+    "path": "skills/ffmpeg-video-processing",
+    "category": "video",
+    "name": "ffmpeg-video-processing",
+    "description": "Comprehensive video manipulation recipes: aspect ratio conversion, letterbox padding, subtitle embedding/burning, and audio track replacement.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "chunpu/ffmpeg-skills",
     "license": "MIT"
   },
   {
@@ -26579,6 +27629,30 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "filesystem-agents",
+    "path": "skills/filesystem-agents",
+    "category": "ai",
+    "name": "filesystem-agents",
+    "description": "Companion skill for the Building Filesystem Agents course on Vercel Academy. Implement persistent filesystem memory for AI agents.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel-labs/academy-skills",
+    "license": "MIT"
   },
   {
     "id": "filesystem-context",
@@ -26756,6 +27830,31 @@
       "stipple",
       "authenticity"
     ]
+  },
+  {
+    "id": "find-skills",
+    "path": "skills/find-skills",
+    "category": "discovery",
+    "name": "find-skills",
+    "description": "Helps users discover and install agent skills when asking how to accomplish tasks or find specialized tools.",
+    "risk": "safe",
+    "source": "official",
+    "date_added": "2026-10-16",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "official",
+    "source_repo": "vercel-labs/skills",
+    "license": "MIT"
   },
   {
     "id": "finishing-a-development-branch",
@@ -27903,6 +29002,36 @@
     }
   },
   {
+    "id": "freeze",
+    "path": "skills/freeze",
+    "category": "safety",
+    "name": "freeze",
+    "description": "Restrict file edits to a specific directory for the session. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "boundary",
+      "freeze",
+      "isolation",
+      "safety"
+    ]
+  },
+  {
     "id": "freshdesk-automation",
     "path": "skills/freshdesk-automation",
     "category": "automation",
@@ -28367,6 +29496,36 @@
     "source_repo": "addyosmani/agent-skills",
     "license": "MIT",
     "license_source": "https://github.com/addyosmani/agent-skills/blob/main/LICENSE"
+  },
+  {
+    "id": "frontmatter-guard",
+    "path": "skills/frontmatter-guard",
+    "category": "tooling",
+    "name": "frontmatter-guard",
+    "description": "Validate and auto-repair YAML frontmatter on brain pages. Catches malformed pages before they enter the brain (missing closing ---, nested quotes, slug mismatches, null bytes, empty frontmatter, YAML parse failures), explains files sync.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "blocked"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "absolute_host_path"
+      ]
+    },
+    "tags": [
+      "frontmatter",
+      "linting",
+      "metadata",
+      "validation"
+    ]
   },
   {
     "id": "frutiger-aero",
@@ -31587,6 +32746,64 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "gstack-learn",
+    "path": "skills/gstack-learn",
+    "category": "memory",
+    "name": "gstack-learn",
+    "description": "Manage project learnings.",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "codebase-memory",
+      "context-compounding",
+      "learnings"
+    ]
+  },
+  {
+    "id": "guard",
+    "path": "skills/guard",
+    "category": "safety",
+    "name": "guard",
+    "description": "Full safety mode: destructive command warnings + directory-scoped edits. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "destructive-protection",
+      "guards",
+      "safety"
+    ]
   },
   {
     "id": "gws-calendar",
@@ -35209,6 +36426,34 @@
     ]
   },
   {
+    "id": "idea-lineage",
+    "path": "skills/idea-lineage",
+    "category": "memory",
+    "name": "idea-lineage",
+    "description": "Trace one idea's evolution through the brain: first mention, best articulation, related concepts, reversals, contradictions, abandoned branches, and the current live version. Use for single-idea conceptual lineage, not broad concept-map.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "evolution",
+      "ideas",
+      "lineage",
+      "reversals"
+    ]
+  },
+  {
     "id": "idea-os",
     "path": "skills/idea-os",
     "category": "product-management",
@@ -36408,6 +37653,36 @@
     ]
   },
   {
+    "id": "investigate",
+    "path": "skills/investigate",
+    "category": "engineering",
+    "name": "investigate",
+    "description": "Systematic debugging with root cause investigation. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "debugging",
+      "diagnostics",
+      "rca",
+      "root-cause"
+    ]
+  },
+  {
     "id": "invoices-billing",
     "path": "skills/invoices-billing",
     "category": "business",
@@ -36442,6 +37717,35 @@
     ]
   },
   {
+    "id": "ios-clean",
+    "path": "skills/ios-clean",
+    "category": "mobile",
+    "name": "ios-clean",
+    "description": "Remove the DebugBridge SPM package and all #if DEBUG wiring from an iOS app. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "cleanup",
+      "debug-bridge",
+      "ios"
+    ]
+  },
+  {
     "id": "ios-debugger-agent",
     "path": "skills/ios-debugger-agent",
     "category": "mobile",
@@ -36464,6 +37768,36 @@
     }
   },
   {
+    "id": "ios-design-review",
+    "path": "skills/ios-design-review",
+    "category": "mobile",
+    "name": "ios-design-review",
+    "description": "Visual design audit for iOS apps on real hardware. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "apple",
+      "design-review",
+      "hig",
+      "ios"
+    ]
+  },
+  {
     "id": "ios-developer",
     "path": "skills/ios-developer",
     "category": "mobile",
@@ -36484,6 +37818,66 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "ios-fix",
+    "path": "skills/ios-fix",
+    "category": "mobile",
+    "name": "ios-fix",
+    "description": "Autonomous iOS bug fixer. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "bug-fix",
+      "ios",
+      "regression",
+      "snapshot-test"
+    ]
+  },
+  {
+    "id": "ios-qa",
+    "path": "skills/ios-qa",
+    "category": "mobile",
+    "name": "ios-qa",
+    "description": "Live-device iOS QA for SwiftUI apps. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "coredevice",
+      "device-qa",
+      "ios",
+      "swiftui"
+    ]
   },
   {
     "id": "ios-redteam-pipeline",
@@ -36510,6 +37904,35 @@
     "source_repo": "elementalsouls/Claude-BugHunter",
     "license": "MIT",
     "license_source": "https://github.com/elementalsouls/Claude-BugHunter/blob/main/LICENSE"
+  },
+  {
+    "id": "ios-sync",
+    "path": "skills/ios-sync",
+    "category": "mobile",
+    "name": "ios-sync",
+    "description": "Regenerate the iOS debug bridge against the latest upstream gstack templates. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "debug-bridge",
+      "ios",
+      "swiftpm"
+    ]
   },
   {
     "id": "iso27001-compliance",
@@ -37121,6 +38544,30 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "json-render",
+    "path": "skills/json-render",
+    "category": "frontend",
+    "name": "json-render",
+    "description": "Core framework for defining generative UI schemas, component catalogs, and structured prompt generation from Vercel Labs.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel-labs/json-render",
+    "license": "MIT"
   },
   {
     "id": "json-schema-manual",
@@ -37858,6 +39305,35 @@
       "pytest",
       "appium",
       "lambdatest"
+    ]
+  },
+  {
+    "id": "land-and-deploy",
+    "path": "skills/land-and-deploy",
+    "category": "release",
+    "name": "land-and-deploy",
+    "description": "Land and deploy workflow. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "ci-cd",
+      "deployment",
+      "verification"
     ]
   },
   {
@@ -40981,6 +42457,36 @@
     ]
   },
   {
+    "id": "make-pdf",
+    "path": "skills/make-pdf",
+    "category": "publishing",
+    "name": "make-pdf",
+    "description": "Turn any markdown file into a publication-quality PDF. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "markdown-to-pdf",
+      "mermaid",
+      "offline",
+      "pdf"
+    ]
+  },
+  {
     "id": "makepad-2-0-animation",
     "path": "skills/makepad-2-0-animation",
     "category": "development",
@@ -43088,6 +44594,34 @@
       "design",
       "minimalism",
       "ui"
+    ]
+  },
+  {
+    "id": "minion-orchestrator",
+    "path": "skills/minion-orchestrator",
+    "category": "orchestration",
+    "name": "minion-orchestrator",
+    "description": "Unified Minions skill for both deterministic shell jobs and LLM subagent orchestration. Replaces the older `gbrain-jobs` routing intent. Use when: submitting gbrain jobs, shell/background tasks, spawning subagents, checking progress.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "delegation",
+      "minions",
+      "parallel",
+      "subagents"
     ]
   },
   {
@@ -45582,6 +47116,150 @@
     ]
   },
   {
+    "id": "next-bundle-optimizer",
+    "path": "skills/next-bundle-optimizer",
+    "category": "performance",
+    "name": "next-bundle-optimizer",
+    "description": "Audit and reduce Next.js browser initial-load bundle work, code-splitting, dynamic imports, and package deduplication.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel/next.js",
+    "license": "MIT"
+  },
+  {
+    "id": "next-cache-components-adoption",
+    "path": "skills/next-cache-components-adoption",
+    "category": "performance",
+    "name": "next-cache-components-adoption",
+    "description": "Adopt Next.js 16.3+ Cache Components and use-cache directive across pages and data access layers.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel/next.js",
+    "license": "MIT"
+  },
+  {
+    "id": "next-cache-components-optimizer",
+    "path": "skills/next-cache-components-optimizer",
+    "category": "performance",
+    "name": "next-cache-components-optimizer",
+    "description": "Optimize cache keys, cache boundaries, tags, and revalidation strategies for Next.js Cache Components.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel/next.js",
+    "license": "MIT"
+  },
+  {
+    "id": "next-dev-loop",
+    "path": "skills/next-dev-loop",
+    "category": "development",
+    "name": "next-dev-loop",
+    "description": "Verify Next.js runtime behavior after editing code using Turbopack, Fast Refresh, and runtime assertion.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel/next.js",
+    "license": "MIT"
+  },
+  {
+    "id": "next-partial-prefetching-adoption",
+    "path": "skills/next-partial-prefetching-adoption",
+    "category": "performance",
+    "name": "next-partial-prefetching-adoption",
+    "description": "Enable and configure Next.js Partial Prefetching (PPR) for instant shell rendering and streaming dynamic content.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel/next.js",
+    "license": "MIT"
+  },
+  {
+    "id": "next-partial-prefetching-optimizer",
+    "path": "skills/next-partial-prefetching-optimizer",
+    "category": "performance",
+    "name": "next-partial-prefetching-optimizer",
+    "description": "Fine-tune Suspense boundaries, static shells, and prefetch hit rates in Next.js applications.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel/next.js",
+    "license": "MIT"
+  },
+  {
     "id": "nextjs-app-router-patterns",
     "path": "skills/nextjs-app-router-patterns",
     "category": "framework",
@@ -47104,6 +48782,36 @@
     "source_repo": "coreyhaines31/marketingskills",
     "license": "MIT",
     "license_source": "https://github.com/coreyhaines31/marketingskills/blob/main/LICENSE"
+  },
+  {
+    "id": "office-hours",
+    "path": "skills/office-hours",
+    "category": "product",
+    "name": "office-hours",
+    "description": "YC Office Hours \u2014 two modes. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "founder",
+      "ideation",
+      "interrogation",
+      "yc"
+    ]
   },
   {
     "id": "office-productivity",
@@ -49938,6 +51646,126 @@
     "license": "MIT"
   },
   {
+    "id": "plan-ceo-review",
+    "path": "skills/plan-ceo-review",
+    "category": "product",
+    "name": "plan-ceo-review",
+    "description": "CEO/founder-mode plan review. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "ceo",
+      "plan",
+      "roadmap",
+      "strategy"
+    ]
+  },
+  {
+    "id": "plan-design-review",
+    "path": "skills/plan-design-review",
+    "category": "design",
+    "name": "plan-design-review",
+    "description": "Designer's eye plan review \u2014 interactive, like CEO and Eng review. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "design-review",
+      "plan",
+      "ui",
+      "ux"
+    ]
+  },
+  {
+    "id": "plan-devex-review",
+    "path": "skills/plan-devex-review",
+    "category": "engineering",
+    "name": "plan-devex-review",
+    "description": "Interactive developer experience plan review. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "api-design",
+      "devex",
+      "ergonomics",
+      "plan"
+    ]
+  },
+  {
+    "id": "plan-eng-review",
+    "path": "skills/plan-eng-review",
+    "category": "engineering",
+    "name": "plan-eng-review",
+    "description": "Eng manager-mode plan review. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "architecture",
+      "invariants",
+      "plan",
+      "tech-lead"
+    ]
+  },
+  {
     "id": "plan-ledger-tasks-yylo",
     "path": "skills/plan-ledger-tasks-yylo",
     "category": "project-management",
@@ -50532,15 +52360,17 @@
     "date_added": "2026-02-27",
     "plugin": {
       "targets": {
-        "codex": "supported",
-        "claude": "supported"
+        "codex": "blocked",
+        "claude": "blocked"
       },
       "setup": {
         "type": "none",
         "summary": "",
         "docs": null
       },
-      "reasons": []
+      "reasons": [
+        "broken_local_reference"
+      ]
     }
   },
   {
@@ -52661,6 +54491,30 @@
     }
   },
   {
+    "id": "python-on-vercel",
+    "path": "skills/python-on-vercel",
+    "category": "deployment",
+    "name": "python-on-vercel",
+    "description": "Companion skill for the Python on Vercel course on Vercel Academy. Deploy FastAPI backend and Next.js frontend on a single domain.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel-labs/academy-skills",
+    "license": "MIT"
+  },
+  {
     "id": "python-packaging",
     "path": "skills/python-packaging",
     "category": "development",
@@ -52799,6 +54653,90 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "qa",
+    "path": "skills/qa",
+    "category": "qa",
+    "name": "qa",
+    "description": "Fix browser/API/CLI/job/worker/webhook bugs. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "autonomous-qa",
+      "browser-qa",
+      "regression",
+      "testing"
+    ]
+  },
+  {
+    "id": "qa-master",
+    "path": "skills/qa-master",
+    "category": "testing",
+    "name": "qa-master",
+    "description": "Master QA orchestrator for automated & manual testing, test pyramid execution, flaky test quarantine, exploratory charters, and CI/CD quality gates.",
+    "risk": "safe",
+    "source": "self",
+    "date_added": "2026-10-12",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_type": "self",
+    "license": "MIT"
+  },
+  {
+    "id": "qa-only",
+    "path": "skills/qa-only",
+    "category": "qa",
+    "name": "qa-only",
+    "description": "Report browser/API/CLI/job/worker/webhook bugs. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "inspection",
+      "qa-report",
+      "smoke-test",
+      "testing"
+    ]
   },
   {
     "id": "qiskit",
@@ -54652,6 +56590,35 @@
     ]
   },
   {
+    "id": "retro",
+    "path": "skills/retro",
+    "category": "management",
+    "name": "retro",
+    "description": "Weekly engineering retrospective. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "engineering-management",
+      "metrics",
+      "retrospective"
+    ]
+  },
+  {
     "id": "retro-design",
     "path": "skills/design-it/retro-design",
     "category": "design-it",
@@ -54840,6 +56807,36 @@
     "source_repo": "BagelHole/DevOps-Security-Agent-Skills",
     "license": "MIT",
     "license_source": "https://github.com/BagelHole/DevOps-Security-Agent-Skills/blob/main/LICENSE"
+  },
+  {
+    "id": "review",
+    "path": "skills/review",
+    "category": "engineering",
+    "name": "review",
+    "description": "Pre-landing PR review. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "code-review",
+      "greptile",
+      "pr",
+      "triage"
+    ]
   },
   {
     "id": "review-and-simplify-changes",
@@ -56499,6 +58496,36 @@
     },
     "source_type": "official",
     "source_repo": "neondatabase/agent-skills"
+  },
+  {
+    "id": "scrape",
+    "path": "skills/scrape",
+    "category": "browser",
+    "name": "scrape",
+    "description": "Pull data from a web page through the Aside browser \u2014 your real, already signed-in sessions. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "browser",
+      "data",
+      "extraction",
+      "scraping"
+    ]
   },
   {
     "id": "screen-adverse-media",
@@ -58432,6 +60459,36 @@
     ]
   },
   {
+    "id": "setup-gbrain",
+    "path": "skills/setup-gbrain",
+    "category": "memory",
+    "name": "setup-gbrain",
+    "description": "Set up gbrain for this coding agent: install the CLI, initialize a local PGLite or Supabase brain, register MCP, capture per-remote trust policy. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "gbrain",
+      "knowledge-base",
+      "memory",
+      "setup"
+    ]
+  },
+  {
     "id": "setup-help",
     "path": "skills/setup-help",
     "category": "productivity",
@@ -58659,6 +60716,37 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "ship",
+    "path": "skills/ship",
+    "category": "release",
+    "name": "ship",
+    "description": "Ship workflow: detect + merge base branch, run tests, review diff, bump VERSION, update CHANGELOG, commit, push, create PR. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "changelog",
+      "git",
+      "pr",
+      "release",
+      "ship"
+    ]
   },
   {
     "id": "shipping-and-launch",
@@ -59354,12 +61442,12 @@
   {
     "id": "skill-router",
     "path": "skills/skill-router",
-    "category": "meta",
+    "category": "agent-orchestration",
     "name": "skill-router",
-    "description": "Use when the user is unsure which skill to use or where to start. Interviews the user with targeted questions and recommends the best skill(s) from the installed library for their goal.",
+    "description": "Hierarchical intent router and capability discovery engine for agent skills and MCP tools. Use when unsure which skill or tool to invoke, or to dynamically resolve capabilities with zero prompt token bloat.",
     "risk": "safe",
     "source": "self",
-    "date_added": "2026-09-04",
+    "date_added": "2026-10-15",
     "plugin": {
       "targets": {
         "codex": "supported",
@@ -59581,6 +61669,30 @@
       "ai-agents",
       "workflow-automation"
     ]
+  },
+  {
+    "id": "slack-agents",
+    "path": "skills/slack-agents",
+    "category": "ai",
+    "name": "slack-agents",
+    "description": "Companion skill for the Building Slack Agents course on Vercel Academy. Scaffold, test, and deploy Slack AI bots.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel-labs/academy-skills",
+    "license": "MIT"
   },
   {
     "id": "slack-automation",
@@ -60553,6 +62665,36 @@
       "reasons": []
     },
     "source_type": "self"
+  },
+  {
+    "id": "spec",
+    "path": "skills/spec",
+    "category": "product",
+    "name": "spec",
+    "description": "Turn vague intent into a precise, executable spec in five phases. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "architecture",
+      "prd",
+      "requirements",
+      "specification"
+    ]
   },
   {
     "id": "spec-driven-development",
@@ -61625,6 +63767,34 @@
     }
   },
   {
+    "id": "strategic-reading",
+    "path": "skills/strategic-reading",
+    "category": "research",
+    "name": "strategic-reading",
+    "description": "Read a book, article, transcript, or case study through the lens of a specific strategic problem you're facing. Produces an applied playbook that maps the source onto the problem and gives short/medium/long-term recommendations. NOT for.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "applied-learning",
+      "playbook",
+      "reading",
+      "strategy"
+    ]
+  },
+  {
     "id": "stride-analysis-patterns",
     "path": "skills/stride-analysis-patterns",
     "category": "security",
@@ -61788,6 +63958,30 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "subscription-store",
+    "path": "skills/subscription-store",
+    "category": "ecommerce",
+    "name": "subscription-store",
+    "description": "Companion skill for the Launch a Subscription Store course on Vercel Academy. Build Stripe subscription storefronts with Next.js.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-10-09",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "source_repo": "vercel-labs/academy-skills",
+    "license": "MIT"
   },
   {
     "id": "suno-lyrics-to-song",
@@ -62336,6 +64530,35 @@
       "reasons": []
     },
     "license": "https://github.com/sympy/sympy/blob/master/LICENSE"
+  },
+  {
+    "id": "sync-gbrain",
+    "path": "skills/sync-gbrain",
+    "category": "memory",
+    "name": "sync-gbrain",
+    "description": "Keep gbrain current with this repo's code and refresh agent search guidance in CLAUDE.md. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "gbrain",
+      "memory",
+      "synchronization"
+    ]
   },
   {
     "id": "synthwave",
@@ -63671,6 +65894,36 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "test-audit",
+    "path": "skills/test-audit",
+    "category": "qa",
+    "name": "test-audit",
+    "description": "Find low-value or duplicate tests and the test-only code they keep alive. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "audit",
+      "coverage",
+      "debt",
+      "tests"
+    ]
   },
   {
     "id": "test-automator",
@@ -65285,6 +67538,28 @@
     }
   },
   {
+    "id": "trends",
+    "path": "skills/trends",
+    "category": "uncategorized",
+    "name": "trends",
+    "description": "Real-time Google Trends and social media trending topic discovery across Google Search, X/Twitter, and viral platforms with zero API key dependencies.",
+    "risk": "unknown",
+    "source": "unknown",
+    "date_added": null,
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "triage",
     "path": "skills/triage",
     "category": "development",
@@ -65689,6 +67964,33 @@
       },
       "reasons": []
     }
+  },
+  {
+    "id": "two-tier-extraction",
+    "path": "skills/two-tier-extraction",
+    "category": "ai",
+    "name": "two-tier-extraction",
+    "description": "Tiered LLM extraction pattern for large corpus processing (email archives, document dumps, transcript libraries). A utility-tier model triages and classifies at speed; the reasoning tier does the default deep read; the deep tier is the.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "cost-optimization",
+      "extraction",
+      "tiered-llm"
+    ]
   },
   {
     "id": "typescript",
@@ -66256,6 +68558,35 @@
     "source_repo": "yylo-dev/yylo-skills",
     "license": "MIT",
     "license_source": "https://github.com/yylo-dev/yylo-skills/blob/main/LICENSE"
+  },
+  {
+    "id": "unfreeze",
+    "path": "skills/unfreeze",
+    "category": "safety",
+    "name": "unfreeze",
+    "description": "Clear the freeze boundary set by /freeze, allowing edits to all directories again. (gstack)",
+    "risk": "safe",
+    "source": "gstack",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "blocked",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": [
+        "target_specific_home_path"
+      ]
+    },
+    "tags": [
+      "boundary",
+      "safety",
+      "unfreeze"
+    ]
   },
   {
     "id": "unified-ai-gateway",
@@ -68172,6 +70503,28 @@
     ]
   },
   {
+    "id": "virality-architect",
+    "path": "skills/virality-architect",
+    "category": "uncategorized",
+    "name": "virality-architect",
+    "description": "Master skill for behavioral psychology, algorithmic retention engineering, and adversarial virality architecture across short-form (Shorts, Reels, TikTok), long-form YouTube, and automated video clipping.",
+    "risk": "unknown",
+    "source": "unknown",
+    "date_added": null,
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    }
+  },
+  {
     "id": "visual-emotion-engineer",
     "path": "skills/visual-emotion-engineer",
     "category": "design",
@@ -68390,6 +70743,34 @@
       "mcp",
       "paid-api",
       "beatra"
+    ]
+  },
+  {
+    "id": "voice-note-ingest",
+    "path": "skills/voice-note-ingest",
+    "category": "memory",
+    "name": "voice-note-ingest",
+    "description": "Ingest a voice note with exact-phrasing preservation (never paraphrased). Routes content to originals/, concepts/, people/, companies/, ideas/, personal/, or voice-notes/ based on a decision tree. The user's exact words are the signal.",
+    "risk": "safe",
+    "source": "gbrain",
+    "date_added": "2026-10-15",
+    "plugin": {
+      "targets": {
+        "codex": "supported",
+        "claude": "supported"
+      },
+      "setup": {
+        "type": "none",
+        "summary": "",
+        "docs": null
+      },
+      "reasons": []
+    },
+    "tags": [
+      "audio",
+      "exact-words",
+      "transcription",
+      "voice-notes"
     ]
   },
   {

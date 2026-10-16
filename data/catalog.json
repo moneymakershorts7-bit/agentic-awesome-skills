@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-10-02T09:47:34.000Z",
-  "total": 2798,
+  "total": 2868,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -379,7 +379,7 @@
       "canonical_id": "academy",
       "name": "academy",
       "description": "Interactive learning companion and curriculum guide for Vercel Academy courses and agent architectures.",
-      "category": "education",
+      "category": "learning",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel-labs/academy-skills",
@@ -1465,7 +1465,7 @@
       "canonical_id": "agent-friendly-apis",
       "name": "agent-friendly-apis",
       "description": "Companion skill for the Agent-Friendly APIs course on Vercel Academy. Design APIs optimized for LLM agent calling.",
-      "category": "data-ai",
+      "category": "api",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel-labs/academy-skills",
@@ -7549,6 +7549,36 @@
       "path": "skills/autonomous-agents/SKILL.md"
     },
     {
+      "id": "autoplan",
+      "canonical_id": "autoplan",
+      "name": "autoplan",
+      "description": "Auto-review pipeline — reads the full CEO, design, eng, and DX review skills from disk and runs them sequentially with auto-decisions using 6 decision principles. (gstack)",
+      "category": "orchestration",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "automation",
+        "pipeline",
+        "planning",
+        "review"
+      ],
+      "triggers": [
+        "automation",
+        "pipeline",
+        "planning",
+        "review",
+        "autoplan",
+        "auto",
+        "reads",
+        "full",
+        "ceo",
+        "eng",
+        "dx",
+        "skills"
+      ],
+      "path": "skills/autoplan/SKILL.md"
+    },
+    {
       "id": "autoresearch",
       "canonical_id": "autoresearch",
       "name": "autoresearch",
@@ -13000,6 +13030,31 @@
       "path": "skills/behavioral-modes/SKILL.md"
     },
     {
+      "id": "benchmark",
+      "canonical_id": "benchmark",
+      "name": "benchmark",
+      "description": "Web performance regression detection. (gstack)",
+      "category": "performance",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "benchmarking",
+        "core-web-vitals",
+        "performance"
+      ],
+      "triggers": [
+        "benchmarking",
+        "core-web-vitals",
+        "performance",
+        "benchmark",
+        "web",
+        "regression",
+        "detection",
+        "gstack"
+      ],
+      "path": "skills/benchmark/SKILL.md"
+    },
+    {
       "id": "better-icons",
       "canonical_id": "better-icons",
       "name": "better-icons",
@@ -13651,6 +13706,123 @@
       "path": "skills/brag/SKILL.md"
     },
     {
+      "id": "brain-ingest-gate",
+      "canonical_id": "brain-ingest-gate",
+      "name": "brain-ingest-gate",
+      "description": "Pre-write quality gate for content entering the brain. No raw copies: a bare cp/mv into the brain repo is a bug. Before any new page lands, resolve named entities registry-first (a vector score is a floor for prose, never a gate for named.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "data-quality",
+        "deduplication",
+        "ingest-gate"
+      ],
+      "triggers": [
+        "data-quality",
+        "deduplication",
+        "ingest-gate",
+        "brain",
+        "ingest",
+        "gate",
+        "pre",
+        "write",
+        "quality",
+        "content",
+        "entering",
+        "no"
+      ],
+      "path": "skills/brain-ingest-gate/SKILL.md"
+    },
+    {
+      "id": "brain-link-discipline",
+      "canonical_id": "brain-link-discipline",
+      "name": "brain-link-discipline",
+      "description": "When you report a brain page to the user — created, edited, committed, or relayed from a subagent — a working link is part of the deliverable, in the SAME message. Derive the path mechanically (git ls-files --full-name), push BEFORE.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "bidirectional-links",
+        "graph",
+        "linking"
+      ],
+      "triggers": [
+        "bidirectional-links",
+        "graph",
+        "linking",
+        "brain",
+        "link",
+        "discipline",
+        "report",
+        "page",
+        "user",
+        "created",
+        "edited",
+        "committed"
+      ],
+      "path": "skills/brain-link-discipline/SKILL.md"
+    },
+    {
+      "id": "brain-ops",
+      "canonical_id": "brain-ops",
+      "name": "brain-ops",
+      "description": "Brain knowledge base operations. The core read/write cycle: brain-first lookup, read-enrich-write loop, source attribution, ambient enrichment, back-linking. Read this before any brain interaction.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "enrichment",
+        "knowledge-base",
+        "memory",
+        "read-write"
+      ],
+      "triggers": [
+        "enrichment",
+        "knowledge-base",
+        "memory",
+        "read-write",
+        "brain",
+        "ops",
+        "knowledge",
+        "base",
+        "operations",
+        "core",
+        "read",
+        "write"
+      ],
+      "path": "skills/brain-ops/SKILL.md"
+    },
+    {
+      "id": "brain-taxonomist",
+      "canonical_id": "brain-taxonomist",
+      "name": "brain-taxonomist",
+      "description": "Filing gate for ALL brain writes. Consulted before creating any new brain page to determine the correct path. Reads the ACTIVE schema pack via `gbrain schema show --json` — no hardcoded directory table. Also runs periodic taxonomy drift.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "classification",
+        "ontology",
+        "taxonomy"
+      ],
+      "triggers": [
+        "classification",
+        "ontology",
+        "taxonomy",
+        "brain",
+        "taxonomist",
+        "filing",
+        "gate",
+        "all",
+        "writes",
+        "consulted",
+        "before",
+        "creating"
+      ],
+      "path": "skills/brain-taxonomist/SKILL.md"
+    },
+    {
       "id": "brain-to-docs",
       "canonical_id": "brain-to-docs",
       "name": "brain-to-docs",
@@ -14097,6 +14269,36 @@
       "path": "skills/brevo-automation/SKILL.md"
     },
     {
+      "id": "briefing",
+      "canonical_id": "briefing",
+      "name": "briefing",
+      "description": "Compile daily briefing with meeting context, active deals, and citation tracking",
+      "category": "management",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "briefing",
+        "dossier",
+        "meeting-prep",
+        "synthesis"
+      ],
+      "triggers": [
+        "briefing",
+        "dossier",
+        "meeting-prep",
+        "synthesis",
+        "compile",
+        "daily",
+        "meeting",
+        "context",
+        "active",
+        "deals",
+        "citation",
+        "tracking"
+      ],
+      "path": "skills/briefing/SKILL.md"
+    },
+    {
       "id": "broken-authentication",
       "canonical_id": "broken-authentication",
       "name": "broken-authentication",
@@ -14343,6 +14545,36 @@
         "abuse"
       ],
       "path": "skills/brooks-test/SKILL.md"
+    },
+    {
+      "id": "browse",
+      "canonical_id": "browse",
+      "name": "browse",
+      "description": "Drive a real browser through Aside: open a page, read it, click through a flow, take screenshots, check console errors. (gstack)",
+      "category": "browser",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "automation",
+        "browser",
+        "cdp",
+        "chromium"
+      ],
+      "triggers": [
+        "automation",
+        "browser",
+        "cdp",
+        "chromium",
+        "browse",
+        "drive",
+        "real",
+        "through",
+        "aside",
+        "open",
+        "page",
+        "read"
+      ],
+      "path": "skills/browse/SKILL.md"
     },
     {
       "id": "browser-act",
@@ -14833,7 +15065,7 @@
       "canonical_id": "building-agents-with-eve",
       "name": "building-agents-with-eve",
       "description": "Companion skill for the Building Agents with Eve course on Vercel Academy. Build autonomous agents with approval workflows.",
-      "category": "general",
+      "category": "ai",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel-labs/academy-skills",
@@ -15584,6 +15816,31 @@
       "path": "skills/calendly-automation/SKILL.md"
     },
     {
+      "id": "canary",
+      "canonical_id": "canary",
+      "name": "canary",
+      "description": "Post-deploy canary monitoring. (gstack)",
+      "category": "devops",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "canary",
+        "monitoring",
+        "post-deploy",
+        "sre"
+      ],
+      "triggers": [
+        "canary",
+        "monitoring",
+        "post-deploy",
+        "sre",
+        "post",
+        "deploy",
+        "gstack"
+      ],
+      "path": "skills/canary/SKILL.md"
+    },
+    {
       "id": "candidate-talent-pool",
       "canonical_id": "candidate-talent-pool",
       "name": "candidate-talent-pool",
@@ -15710,6 +15967,36 @@
       "path": "skills/capacity-workload-planner/SKILL.md"
     },
     {
+      "id": "capture",
+      "canonical_id": "capture",
+      "name": "capture",
+      "description": "Save any thought or content into the brain via one CLI command. The single human-facing entrypoint that replaces \"put_page vs commit-then-sync vs autopilot-wait\" with one command that just works.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "capture",
+        "inbox",
+        "memory",
+        "quick-note"
+      ],
+      "triggers": [
+        "capture",
+        "inbox",
+        "memory",
+        "quick-note",
+        "save",
+        "any",
+        "thought",
+        "content",
+        "brain",
+        "via",
+        "one",
+        "cli"
+      ],
+      "path": "skills/capture/SKILL.md"
+    },
+    {
       "id": "career-ops",
       "canonical_id": "career-ops",
       "name": "career-ops",
@@ -15740,6 +16027,33 @@
         "portals"
       ],
       "path": "skills/career-ops/SKILL.md"
+    },
+    {
+      "id": "careful",
+      "canonical_id": "careful",
+      "name": "careful",
+      "description": "Safety guardrails for destructive commands. (gstack)",
+      "category": "safety",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "guards",
+        "read-only",
+        "safety",
+        "sandbox"
+      ],
+      "triggers": [
+        "guards",
+        "read-only",
+        "safety",
+        "sandbox",
+        "careful",
+        "guardrails",
+        "destructive",
+        "commands",
+        "gstack"
+      ],
+      "path": "skills/careful/SKILL.md"
     },
     {
       "id": "carrier-relationship-management",
@@ -16551,6 +16865,65 @@
         "violations"
       ],
       "path": "skills/cis-benchmarks/SKILL.md"
+    },
+    {
+      "id": "citation-fixer",
+      "canonical_id": "citation-fixer",
+      "name": "citation-fixer",
+      "description": "Audit and fix citation formatting across brain pages. Ensures every fact has an inline [Source: ...] citation matching the standard format. Extended in v0.25.1: scans for broken tweet/post references that lack actual URLs and resolves them.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "accuracy",
+        "citations",
+        "provenance",
+        "verification"
+      ],
+      "triggers": [
+        "accuracy",
+        "citations",
+        "provenance",
+        "verification",
+        "citation",
+        "fixer",
+        "audit",
+        "fix",
+        "formatting",
+        "brain",
+        "pages",
+        "ensures"
+      ],
+      "path": "skills/citation-fixer/SKILL.md"
+    },
+    {
+      "id": "citation-graph-ingest",
+      "canonical_id": "citation-graph-ingest",
+      "name": "citation-graph-ingest",
+      "description": "Build a TYPED citation/reference graph over an ingested corpus — not just embeddings. Flat similarity retrieval cannot tell you that document A *overrules* B, *distinguishes* C, or *relies_on* D. This skill extracts every inter-document.",
+      "category": "research",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "academic",
+        "citation-graph",
+        "papers"
+      ],
+      "triggers": [
+        "academic",
+        "citation-graph",
+        "papers",
+        "citation",
+        "graph",
+        "ingest",
+        "typed",
+        "reference",
+        "ingested",
+        "corpus",
+        "just",
+        "embeddings"
+      ],
+      "path": "skills/citation-graph-ingest/SKILL.md"
     },
     {
       "id": "citation-management",
@@ -19251,6 +19624,35 @@
       "path": "skills/community-building/SKILL.md"
     },
     {
+      "id": "company-brainify",
+      "canonical_id": "company-brainify",
+      "name": "company-brainify",
+      "description": "Extract a sanitized shared team/company brain from a personal brain. Strips internal ratings, compensation, performance assessments, retention and political dynamics from pages, takes, and facts across the full scan scope (people.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "company-brain",
+        "sanitization",
+        "shared-memory"
+      ],
+      "triggers": [
+        "company-brain",
+        "sanitization",
+        "shared-memory",
+        "company",
+        "brainify",
+        "extract",
+        "sanitized",
+        "shared",
+        "team",
+        "brain",
+        "personal",
+        "strips"
+      ],
+      "path": "skills/company-brainify/SKILL.md"
+    },
+    {
       "id": "company-email-accounts",
       "canonical_id": "company-email-accounts",
       "name": "company-email-accounts",
@@ -19702,6 +20104,36 @@
         "real"
       ],
       "path": "skills/computer-vision-expert/SKILL.md"
+    },
+    {
+      "id": "concept-synthesis",
+      "canonical_id": "concept-synthesis",
+      "name": "concept-synthesis",
+      "description": "Deduplicate and synthesize raw concept stubs into a tiered intellectual map (T1 Canon to T4 Riff), tracing idea evolution across sources over time. Transforms thousands of raw concept pages into a curated intellectual fingerprint. Includes.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "canon",
+        "concepts",
+        "intellectual-map",
+        "synthesis"
+      ],
+      "triggers": [
+        "canon",
+        "concepts",
+        "intellectual-map",
+        "synthesis",
+        "concept",
+        "deduplicate",
+        "synthesize",
+        "raw",
+        "stubs",
+        "tiered",
+        "intellectual",
+        "map"
+      ],
+      "path": "skills/concept-synthesis/SKILL.md"
     },
     {
       "id": "concise-planning",
@@ -20278,6 +20710,35 @@
         "sessoes"
       ],
       "path": "skills/context-agent/SKILL.md"
+    },
+    {
+      "id": "context-audit",
+      "canonical_id": "context-audit",
+      "name": "context-audit",
+      "description": "Token-hygiene audit of the always-loaded context stack — CLAUDE.md, AGENTS.md, auto-memory MEMORY.md, and the bootstrap-rendered identity files (SOUL.md, USER.md, ACCESS_POLICY.md, HEARTBEAT.md) or their harness equivalents. Finds.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "context-audit",
+        "memory-audit",
+        "token-efficiency"
+      ],
+      "triggers": [
+        "context-audit",
+        "memory-audit",
+        "token-efficiency",
+        "context",
+        "audit",
+        "token",
+        "hygiene",
+        "always",
+        "loaded",
+        "stack",
+        "claude",
+        "md"
+      ],
+      "path": "skills/context-audit/SKILL.md"
     },
     {
       "id": "context-compression",
@@ -21005,6 +21466,35 @@
         "working"
       ],
       "path": "skills/core-components/SKILL.md"
+    },
+    {
+      "id": "correction-pipeline",
+      "canonical_id": "correction-pipeline",
+      "name": "correction-pipeline",
+      "description": "When the user corrects a factual error, root-cause it immediately. Don't just note the correction — trace the error to its source, fix the source, and prevent recurrence. Every factual error is either a data error (bad brain page, bad.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "error-correction",
+        "fact-fixing",
+        "root-cause"
+      ],
+      "triggers": [
+        "error-correction",
+        "fact-fixing",
+        "root-cause",
+        "correction",
+        "pipeline",
+        "user",
+        "corrects",
+        "factual",
+        "error",
+        "root",
+        "cause",
+        "immediately"
+      ],
+      "path": "skills/correction-pipeline/SKILL.md"
     },
     {
       "id": "cost-guardian",
@@ -22111,6 +22601,36 @@
       "path": "skills/csharp-pro/SKILL.md"
     },
     {
+      "id": "cso",
+      "canonical_id": "cso",
+      "name": "cso",
+      "description": "Security audit: supported static findings; qualified profiles add reproduction and repair candidates. (gstack)",
+      "category": "security",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "cso",
+        "owasp",
+        "security-audit",
+        "stride"
+      ],
+      "triggers": [
+        "cso",
+        "owasp",
+        "security-audit",
+        "stride",
+        "security",
+        "audit",
+        "supported",
+        "static",
+        "findings",
+        "qualified",
+        "profiles",
+        "add"
+      ],
+      "path": "skills/cso/SKILL.md"
+    },
+    {
       "id": "csv-manual-export",
       "canonical_id": "csv-manual-export",
       "name": "csv-manual-export",
@@ -22787,6 +23307,35 @@
         "log"
       ],
       "path": "skills/data-export-engine/SKILL.md"
+    },
+    {
+      "id": "data-loss-gate",
+      "canonical_id": "data-loss-gate",
+      "name": "data-loss-gate",
+      "description": "Confirmation gate before any bulk delete, cleanup, or destructive operation that could result in data loss — shell-level (rm -rf, git rm, bulk sed) or brain-level (bulk forget, delete sweeps, purge-deleted, source removal, raw-SQL.",
+      "category": "safety",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "data-protection",
+        "recoverability",
+        "safety-gate"
+      ],
+      "triggers": [
+        "data-protection",
+        "recoverability",
+        "safety-gate",
+        "data",
+        "loss",
+        "gate",
+        "confirmation",
+        "before",
+        "any",
+        "bulk",
+        "delete",
+        "cleanup"
+      ],
+      "path": "skills/data-loss-gate/SKILL.md"
     },
     {
       "id": "data-privacy-controls",
@@ -24456,6 +25005,64 @@
       "path": "skills/deprecation-and-migration/SKILL.md"
     },
     {
+      "id": "design-consultation",
+      "canonical_id": "design-consultation",
+      "name": "design-consultation",
+      "description": "Design consultation: understands your product, researches the landscape, proposes a complete design system (aesthetic, typography, color, layout, spacing, motion), and generates font+color preview... (gstack)",
+      "category": "design",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "branding",
+        "consultation",
+        "ui",
+        "ux"
+      ],
+      "triggers": [
+        "branding",
+        "consultation",
+        "ui",
+        "ux",
+        "understands",
+        "product",
+        "researches",
+        "landscape",
+        "proposes",
+        "complete",
+        "aesthetic",
+        "typography"
+      ],
+      "path": "skills/design-consultation/SKILL.md"
+    },
+    {
+      "id": "design-html",
+      "canonical_id": "design-html",
+      "name": "design-html",
+      "description": "Design finalization: generates production-quality Pretext-native HTML/CSS. (gstack)",
+      "category": "design",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "css",
+        "html",
+        "production-ui",
+        "styling"
+      ],
+      "triggers": [
+        "css",
+        "html",
+        "production-ui",
+        "styling",
+        "finalization",
+        "generates",
+        "quality",
+        "pretext",
+        "native",
+        "gstack"
+      ],
+      "path": "skills/design-html/SKILL.md"
+    },
+    {
       "id": "design-it",
       "canonical_id": "design-it",
       "name": "design-it",
@@ -25937,6 +26544,64 @@
       "path": "skills/design-philosophy/SKILL.md"
     },
     {
+      "id": "design-review",
+      "canonical_id": "design-review",
+      "name": "design-review",
+      "description": "Designer's eye QA: finds visual inconsistency, spacing issues, hierarchy problems, AI slop patterns, and slow interactions — then fixes them. (gstack)",
+      "category": "design",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "anti-slop",
+        "design-qa",
+        "visual-hierarchy"
+      ],
+      "triggers": [
+        "anti-slop",
+        "design-qa",
+        "visual-hierarchy",
+        "review",
+        "designer",
+        "eye",
+        "qa",
+        "finds",
+        "visual",
+        "inconsistency",
+        "spacing",
+        "issues"
+      ],
+      "path": "skills/design-review/SKILL.md"
+    },
+    {
+      "id": "design-shotgun",
+      "canonical_id": "design-shotgun",
+      "name": "design-shotgun",
+      "description": "Design shotgun: generate multiple AI design variants, open a comparison board, collect structured feedback, and iterate. (gstack)",
+      "category": "design",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "ideation",
+        "variants",
+        "wireframing"
+      ],
+      "triggers": [
+        "ideation",
+        "variants",
+        "wireframing",
+        "shotgun",
+        "generate",
+        "multiple",
+        "ai",
+        "open",
+        "comparison",
+        "board",
+        "collect",
+        "structured"
+      ],
+      "path": "skills/design-shotgun/SKILL.md"
+    },
+    {
       "id": "design-spatial",
       "canonical_id": "design-spatial",
       "name": "design-spatial",
@@ -26147,6 +26812,35 @@
         "ui"
       ],
       "path": "skills/design-ux/SKILL.md"
+    },
+    {
+      "id": "deslop-shared-libs",
+      "canonical_id": "deslop-shared-libs",
+      "name": "deslop-shared-libs",
+      "description": "Find worthwhile shared-code extractions in recent work. (gstack)",
+      "category": "engineering",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "clean-code",
+        "refactor",
+        "shared-libs"
+      ],
+      "triggers": [
+        "clean-code",
+        "refactor",
+        "shared-libs",
+        "deslop",
+        "shared",
+        "libs",
+        "find",
+        "worthwhile",
+        "code",
+        "extractions",
+        "recent",
+        "work"
+      ],
+      "path": "skills/deslop-shared-libs/SKILL.md"
     },
     {
       "id": "detect-ai-text",
@@ -26736,6 +27430,36 @@
       "path": "skills/devrel-content/SKILL.md"
     },
     {
+      "id": "devsecops-master",
+      "canonical_id": "devsecops-master",
+      "name": "devsecops-master",
+      "description": "Master-grade DevSecOps and SecSDLC orchestrator integrating NIST SSDF, OWASP SAMM, SLSA L1-L3, threat modeling, CI/CD quality gates, and adversarial defense across all tech stacks.",
+      "category": "uncategorized",
+      "risk": "safe",
+      "source": "self",
+      "source_type": "self",
+      "license": "MIT",
+      "tags": [
+        "devsecops",
+        "master"
+      ],
+      "triggers": [
+        "devsecops",
+        "master",
+        "grade",
+        "secsdlc",
+        "orchestrator",
+        "integrating",
+        "nist",
+        "ssdf",
+        "owasp",
+        "samm",
+        "slsa",
+        "l1"
+      ],
+      "path": "skills/devsecops-master/SKILL.md"
+    },
+    {
       "id": "diagnose-android-overheating",
       "canonical_id": "diagnose-android-overheating",
       "name": "diagnose-android-overheating",
@@ -26828,6 +27552,36 @@
         "ignored"
       ],
       "path": "skills/diagnosing-superpowers/SKILL.md"
+    },
+    {
+      "id": "diagram",
+      "canonical_id": "diagram",
+      "name": "diagram",
+      "description": "Turn an English description (or mermaid source) into a diagram triplet: the source, an editable .excalidraw file you can open on excalidraw.com, and rendered SVG + PNG. (gstack)",
+      "category": "design",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "diagram",
+        "excalidraw",
+        "mermaid",
+        "visual"
+      ],
+      "triggers": [
+        "diagram",
+        "excalidraw",
+        "mermaid",
+        "visual",
+        "turn",
+        "english",
+        "description",
+        "source",
+        "triplet",
+        "editable",
+        "file",
+        "open"
+      ],
+      "path": "skills/diagram/SKILL.md"
     },
     {
       "id": "diagram-design",
@@ -27720,6 +28474,35 @@
       "path": "skills/docs-guard/SKILL.md"
     },
     {
+      "id": "document-generate",
+      "canonical_id": "document-generate",
+      "name": "document-generate",
+      "description": "Generate missing documentation from scratch for a feature, module, or entire project. (gstack)",
+      "category": "documentation",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "diataxis",
+        "docs-generator",
+        "reference"
+      ],
+      "triggers": [
+        "diataxis",
+        "docs-generator",
+        "reference",
+        "document",
+        "generate",
+        "missing",
+        "documentation",
+        "scratch",
+        "feature",
+        "module",
+        "entire",
+        "gstack"
+      ],
+      "path": "skills/document-generate/SKILL.md"
+    },
+    {
       "id": "document-management-system",
       "canonical_id": "document-management-system",
       "name": "document-management-system",
@@ -27754,6 +28537,30 @@
         "owner"
       ],
       "path": "skills/document-management-system/SKILL.md"
+    },
+    {
+      "id": "document-release",
+      "canonical_id": "document-release",
+      "name": "document-release",
+      "description": "Release documentation audit. (gstack)",
+      "category": "documentation",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "audit",
+        "docs",
+        "release-notes"
+      ],
+      "triggers": [
+        "audit",
+        "docs",
+        "release-notes",
+        "document",
+        "release",
+        "documentation",
+        "gstack"
+      ],
+      "path": "skills/document-release/SKILL.md"
     },
     {
       "id": "documentation",
@@ -28167,6 +28974,36 @@
         "review"
       ],
       "path": "skills/doubt-driven-development/SKILL.md"
+    },
+    {
+      "id": "draft-in-voice",
+      "canonical_id": "draft-in-voice",
+      "name": "draft-in-voice",
+      "description": "Ghostwrite content in a specific person's voice from a VALIDATED voice profile — tweets, replies, short posts, launch copy, recruiting blurbs, emails. Loads the subject's voice profile (people/<slug>-voice) plus first-party context from.",
+      "category": "writing",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "authoring",
+        "drafting",
+        "style-matching",
+        "voice"
+      ],
+      "triggers": [
+        "authoring",
+        "drafting",
+        "style-matching",
+        "voice",
+        "draft",
+        "ghostwrite",
+        "content",
+        "specific",
+        "person",
+        "validated",
+        "profile",
+        "tweets"
+      ],
+      "path": "skills/draft-in-voice/SKILL.md"
     },
     {
       "id": "draft-my-comments",
@@ -29492,7 +30329,7 @@
       "canonical_id": "emulate",
       "name": "emulate",
       "description": "Local drop-in API emulator for Vercel, GitHub, Google, Slack, Stripe, and Twilio webhooks and OAuth.",
-      "category": "development",
+      "category": "testing",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel-labs/emulate",
@@ -30080,6 +30917,36 @@
         "breakout"
       ],
       "path": "skills/etsy-shop-sales-history/SKILL.md"
+    },
+    {
+      "id": "eval-plan",
+      "canonical_id": "eval-plan",
+      "name": "eval-plan",
+      "description": "Preregister a paid eval (bars, arms, decoys, stop rules), dry-run it at zero cost, then run a three-item priced pilot whose spend table gates approval. (gstack)",
+      "category": "evaluation",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "budget",
+        "evals",
+        "llm-benchmarking",
+        "pricing"
+      ],
+      "triggers": [
+        "budget",
+        "evals",
+        "llm-benchmarking",
+        "pricing",
+        "eval",
+        "plan",
+        "preregister",
+        "paid",
+        "bars",
+        "arms",
+        "decoys",
+        "stop"
+      ],
+      "path": "skills/eval-plan/SKILL.md"
     },
     {
       "id": "evaluation",
@@ -31746,6 +32613,37 @@
       "path": "skills/ffmpeg-format-conversion/SKILL.md"
     },
     {
+      "id": "ffmpeg-image-processing",
+      "canonical_id": "ffmpeg-image-processing",
+      "name": "ffmpeg-image-processing",
+      "description": "Image format conversion, animated GIF creation with two-pass color palette generation, thumbnail extraction, and sprite sheets.",
+      "category": "image",
+      "risk": "safe",
+      "source": "community",
+      "source_repo": "chunpu/ffmpeg-skills",
+      "license": "MIT",
+      "tags": [
+        "ffmpeg",
+        "image",
+        "processing"
+      ],
+      "triggers": [
+        "ffmpeg",
+        "image",
+        "processing",
+        "format",
+        "conversion",
+        "animated",
+        "gif",
+        "creation",
+        "two",
+        "pass",
+        "color",
+        "palette"
+      ],
+      "path": "skills/ffmpeg-image-processing/SKILL.md"
+    },
+    {
       "id": "ffmpeg-media-info",
       "canonical_id": "ffmpeg-media-info",
       "name": "ffmpeg-media-info",
@@ -31775,6 +32673,35 @@
         "information"
       ],
       "path": "skills/ffmpeg-media-info/SKILL.md"
+    },
+    {
+      "id": "ffmpeg-toolkit",
+      "canonical_id": "ffmpeg-toolkit",
+      "name": "ffmpeg-toolkit",
+      "description": "Advanced local FFmpeg editing suite with 42 Python tools: cut, join, fit, caption, loudness, color/LUT, sync, silence removal, look sheets, and render.",
+      "category": "video",
+      "risk": "safe",
+      "source": "community",
+      "source_repo": "kajisho5/ffmpeg-skill",
+      "license": "MIT",
+      "tags": [
+        "ffmpeg"
+      ],
+      "triggers": [
+        "ffmpeg",
+        "toolkit",
+        "local",
+        "editing",
+        "suite",
+        "42",
+        "python",
+        "cut",
+        "join",
+        "fit",
+        "caption",
+        "loudness"
+      ],
+      "path": "skills/ffmpeg-toolkit/SKILL.md"
     },
     {
       "id": "ffmpeg-video-editing",
@@ -31834,6 +32761,37 @@
         "effects"
       ],
       "path": "skills/ffmpeg-video-filters/SKILL.md"
+    },
+    {
+      "id": "ffmpeg-video-processing",
+      "canonical_id": "ffmpeg-video-processing",
+      "name": "ffmpeg-video-processing",
+      "description": "Comprehensive video manipulation recipes: aspect ratio conversion, letterbox padding, subtitle embedding/burning, and audio track replacement.",
+      "category": "video",
+      "risk": "safe",
+      "source": "community",
+      "source_repo": "chunpu/ffmpeg-skills",
+      "license": "MIT",
+      "tags": [
+        "ffmpeg",
+        "video",
+        "processing"
+      ],
+      "triggers": [
+        "ffmpeg",
+        "video",
+        "processing",
+        "manipulation",
+        "recipes",
+        "aspect",
+        "ratio",
+        "conversion",
+        "letterbox",
+        "padding",
+        "subtitle",
+        "embedding"
+      ],
+      "path": "skills/ffmpeg-video-processing/SKILL.md"
     },
     {
       "id": "ffuf-claude-skill",
@@ -32001,7 +32959,7 @@
       "canonical_id": "filesystem-agents",
       "name": "filesystem-agents",
       "description": "Companion skill for the Building Filesystem Agents course on Vercel Academy. Implement persistent filesystem memory for AI agents.",
-      "category": "data-ai",
+      "category": "ai",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel-labs/academy-skills",
@@ -32220,6 +33178,37 @@
         "what"
       ],
       "path": "skills/find-matching-tenders/SKILL.md"
+    },
+    {
+      "id": "find-skills",
+      "canonical_id": "find-skills",
+      "name": "find-skills",
+      "description": "Helps users discover and install agent skills when asking how to accomplish tasks or find specialized tools.",
+      "category": "discovery",
+      "risk": "safe",
+      "source": "official",
+      "source_type": "official",
+      "source_repo": "vercel-labs/skills",
+      "license": "MIT",
+      "tags": [
+        "find",
+        "skills"
+      ],
+      "triggers": [
+        "find",
+        "skills",
+        "helps",
+        "users",
+        "discover",
+        "install",
+        "agent",
+        "asking",
+        "how",
+        "accomplish",
+        "tasks",
+        "specialized"
+      ],
+      "path": "skills/find-skills/SKILL.md"
     },
     {
       "id": "finishing-a-development-branch",
@@ -33449,6 +34438,35 @@
       "path": "skills/free-tool-strategy/SKILL.md"
     },
     {
+      "id": "freeze",
+      "canonical_id": "freeze",
+      "name": "freeze",
+      "description": "Restrict file edits to a specific directory for the session. (gstack)",
+      "category": "safety",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "boundary",
+        "freeze",
+        "isolation",
+        "safety"
+      ],
+      "triggers": [
+        "boundary",
+        "freeze",
+        "isolation",
+        "safety",
+        "restrict",
+        "file",
+        "edits",
+        "specific",
+        "directory",
+        "session",
+        "gstack"
+      ],
+      "path": "skills/freeze/SKILL.md"
+    },
+    {
       "id": "freshdesk-automation",
       "canonical_id": "freshdesk-automation",
       "name": "freshdesk-automation",
@@ -34017,6 +35035,36 @@
         "components"
       ],
       "path": "skills/frontend-ui-engineering/SKILL.md"
+    },
+    {
+      "id": "frontmatter-guard",
+      "canonical_id": "frontmatter-guard",
+      "name": "frontmatter-guard",
+      "description": "Validate and auto-repair YAML frontmatter on brain pages. Catches malformed pages before they enter the brain (missing closing ---, nested quotes, slug mismatches, null bytes, empty frontmatter, YAML parse failures), explains files sync.",
+      "category": "tooling",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "frontmatter",
+        "linting",
+        "metadata",
+        "validation"
+      ],
+      "triggers": [
+        "frontmatter",
+        "linting",
+        "metadata",
+        "validation",
+        "guard",
+        "validate",
+        "auto",
+        "repair",
+        "yaml",
+        "brain",
+        "pages",
+        "catches"
+      ],
+      "path": "skills/frontmatter-guard/SKILL.md"
     },
     {
       "id": "fsi-compliance-checker",
@@ -37826,6 +38874,57 @@
         "secure"
       ],
       "path": "skills/grpc-golang/SKILL.md"
+    },
+    {
+      "id": "gstack-learn",
+      "canonical_id": "gstack-learn",
+      "name": "gstack-learn",
+      "description": "Manage project learnings.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "codebase-memory",
+        "context-compounding",
+        "learnings"
+      ],
+      "triggers": [
+        "codebase-memory",
+        "context-compounding",
+        "learnings",
+        "gstack",
+        "learn"
+      ],
+      "path": "skills/gstack-learn/SKILL.md"
+    },
+    {
+      "id": "guard",
+      "canonical_id": "guard",
+      "name": "guard",
+      "description": "Full safety mode: destructive command warnings + directory-scoped edits. (gstack)",
+      "category": "safety",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "destructive-protection",
+        "guards",
+        "safety"
+      ],
+      "triggers": [
+        "destructive-protection",
+        "guards",
+        "safety",
+        "guard",
+        "full",
+        "mode",
+        "destructive",
+        "command",
+        "warnings",
+        "directory",
+        "scoped",
+        "edits"
+      ],
+      "path": "skills/guard/SKILL.md"
     },
     {
       "id": "gws-calendar",
@@ -41782,6 +42881,36 @@
       "path": "skills/idea-evaluator/idea-evaluator-pro/SKILL.md"
     },
     {
+      "id": "idea-lineage",
+      "canonical_id": "idea-lineage",
+      "name": "idea-lineage",
+      "description": "Trace one idea's evolution through the brain: first mention, best articulation, related concepts, reversals, contradictions, abandoned branches, and the current live version. Use for single-idea conceptual lineage, not broad concept-map.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "evolution",
+        "ideas",
+        "lineage",
+        "reversals"
+      ],
+      "triggers": [
+        "evolution",
+        "ideas",
+        "lineage",
+        "reversals",
+        "idea",
+        "trace",
+        "one",
+        "through",
+        "brain",
+        "first",
+        "mention",
+        "articulation"
+      ],
+      "path": "skills/idea-lineage/SKILL.md"
+    },
+    {
       "id": "idea-os",
       "canonical_id": "idea-os",
       "name": "idea-os",
@@ -43122,6 +44251,34 @@
       "path": "skills/inventory-stock-reconciliation/SKILL.md"
     },
     {
+      "id": "investigate",
+      "canonical_id": "investigate",
+      "name": "investigate",
+      "description": "Systematic debugging with root cause investigation. (gstack)",
+      "category": "engineering",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "debugging",
+        "diagnostics",
+        "rca",
+        "root-cause"
+      ],
+      "triggers": [
+        "debugging",
+        "diagnostics",
+        "rca",
+        "root-cause",
+        "investigate",
+        "systematic",
+        "root",
+        "cause",
+        "investigation",
+        "gstack"
+      ],
+      "path": "skills/investigate/SKILL.md"
+    },
+    {
       "id": "invoices-billing",
       "canonical_id": "invoices-billing",
       "name": "invoices-billing",
@@ -43158,6 +44315,35 @@
       "path": "skills/invoices-billing/SKILL.md"
     },
     {
+      "id": "ios-clean",
+      "canonical_id": "ios-clean",
+      "name": "ios-clean",
+      "description": "Remove the DebugBridge SPM package and all #if DEBUG wiring from an iOS app. (gstack)",
+      "category": "mobile",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "cleanup",
+        "debug-bridge",
+        "ios"
+      ],
+      "triggers": [
+        "cleanup",
+        "debug-bridge",
+        "ios",
+        "clean",
+        "remove",
+        "debugbridge",
+        "spm",
+        "package",
+        "all",
+        "debug",
+        "wiring",
+        "app"
+      ],
+      "path": "skills/ios-clean/SKILL.md"
+    },
+    {
       "id": "ios-debugger-agent",
       "canonical_id": "ios-debugger-agent",
       "name": "ios-debugger-agent",
@@ -43181,6 +44367,35 @@
         "xcodebuildmcp"
       ],
       "path": "skills/ios-debugger-agent/SKILL.md"
+    },
+    {
+      "id": "ios-design-review",
+      "canonical_id": "ios-design-review",
+      "name": "ios-design-review",
+      "description": "Visual design audit for iOS apps on real hardware. (gstack)",
+      "category": "mobile",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "apple",
+        "design-review",
+        "hig",
+        "ios"
+      ],
+      "triggers": [
+        "apple",
+        "design-review",
+        "hig",
+        "ios",
+        "review",
+        "visual",
+        "audit",
+        "apps",
+        "real",
+        "hardware",
+        "gstack"
+      ],
+      "path": "skills/ios-design-review/SKILL.md"
     },
     {
       "id": "ios-developer",
@@ -43210,6 +44425,60 @@
       "path": "skills/ios-developer/SKILL.md"
     },
     {
+      "id": "ios-fix",
+      "canonical_id": "ios-fix",
+      "name": "ios-fix",
+      "description": "Autonomous iOS bug fixer. (gstack)",
+      "category": "mobile",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "bug-fix",
+        "ios",
+        "regression",
+        "snapshot-test"
+      ],
+      "triggers": [
+        "bug-fix",
+        "ios",
+        "regression",
+        "snapshot-test",
+        "fix",
+        "autonomous",
+        "bug",
+        "fixer",
+        "gstack"
+      ],
+      "path": "skills/ios-fix/SKILL.md"
+    },
+    {
+      "id": "ios-qa",
+      "canonical_id": "ios-qa",
+      "name": "ios-qa",
+      "description": "Live-device iOS QA for SwiftUI apps. (gstack)",
+      "category": "mobile",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "coredevice",
+        "device-qa",
+        "ios",
+        "swiftui"
+      ],
+      "triggers": [
+        "coredevice",
+        "device-qa",
+        "ios",
+        "swiftui",
+        "qa",
+        "live",
+        "device",
+        "apps",
+        "gstack"
+      ],
+      "path": "skills/ios-qa/SKILL.md"
+    },
+    {
       "id": "ios-redteam-pipeline",
       "canonical_id": "ios-redteam-pipeline",
       "name": "ios-redteam-pipeline",
@@ -43234,6 +44503,34 @@
         "team"
       ],
       "path": "skills/ios-redteam-pipeline/SKILL.md"
+    },
+    {
+      "id": "ios-sync",
+      "canonical_id": "ios-sync",
+      "name": "ios-sync",
+      "description": "Regenerate the iOS debug bridge against the latest upstream gstack templates. (gstack)",
+      "category": "mobile",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "debug-bridge",
+        "ios",
+        "swiftpm"
+      ],
+      "triggers": [
+        "debug-bridge",
+        "ios",
+        "swiftpm",
+        "sync",
+        "regenerate",
+        "debug",
+        "bridge",
+        "against",
+        "latest",
+        "upstream",
+        "gstack"
+      ],
+      "path": "skills/ios-sync/SKILL.md"
     },
     {
       "id": "iso27001-compliance",
@@ -43900,7 +45197,7 @@
       "canonical_id": "json-render",
       "name": "json-render",
       "description": "Core framework for defining generative UI schemas, component catalogs, and structured prompt generation from Vercel Labs.",
-      "category": "general",
+      "category": "frontend",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel-labs/json-render",
@@ -44732,6 +46029,29 @@
         "appium"
       ],
       "path": "skills/lambdatest-agent-skills/SKILL.md"
+    },
+    {
+      "id": "land-and-deploy",
+      "canonical_id": "land-and-deploy",
+      "name": "land-and-deploy",
+      "description": "Land and deploy workflow. (gstack)",
+      "category": "release",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "ci-cd",
+        "deployment",
+        "verification"
+      ],
+      "triggers": [
+        "ci-cd",
+        "deployment",
+        "verification",
+        "land",
+        "deploy",
+        "gstack"
+      ],
+      "path": "skills/land-and-deploy/SKILL.md"
     },
     {
       "id": "landing-page-generator",
@@ -48436,6 +49756,35 @@
       "path": "skills/make-interfaces-feel-better/SKILL.md"
     },
     {
+      "id": "make-pdf",
+      "canonical_id": "make-pdf",
+      "name": "make-pdf",
+      "description": "Turn any markdown file into a publication-quality PDF. (gstack)",
+      "category": "publishing",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "markdown-to-pdf",
+        "mermaid",
+        "offline",
+        "pdf"
+      ],
+      "triggers": [
+        "markdown-to-pdf",
+        "mermaid",
+        "offline",
+        "pdf",
+        "turn",
+        "any",
+        "markdown",
+        "file",
+        "publication",
+        "quality",
+        "gstack"
+      ],
+      "path": "skills/make-pdf/SKILL.md"
+    },
+    {
       "id": "makepad-2-0-animation",
       "canonical_id": "makepad-2-0-animation",
       "name": "makepad-2-0-animation",
@@ -50739,6 +52088,36 @@
         "palettes"
       ],
       "path": "skills/minimalist-ui/SKILL.md"
+    },
+    {
+      "id": "minion-orchestrator",
+      "canonical_id": "minion-orchestrator",
+      "name": "minion-orchestrator",
+      "description": "Unified Minions skill for both deterministic shell jobs and LLM subagent orchestration. Replaces the older `gbrain-jobs` routing intent. Use when: submitting gbrain jobs, shell/background tasks, spawning subagents, checking progress.",
+      "category": "orchestration",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "delegation",
+        "minions",
+        "parallel",
+        "subagents"
+      ],
+      "triggers": [
+        "delegation",
+        "minions",
+        "parallel",
+        "subagents",
+        "minion",
+        "orchestrator",
+        "unified",
+        "skill",
+        "both",
+        "deterministic",
+        "shell",
+        "jobs"
+      ],
+      "path": "skills/minion-orchestrator/SKILL.md"
     },
     {
       "id": "miro-automation",
@@ -53625,7 +55004,7 @@
       "canonical_id": "next-bundle-optimizer",
       "name": "next-bundle-optimizer",
       "description": "Audit and reduce Next.js browser initial-load bundle work, code-splitting, dynamic imports, and package deduplication.",
-      "category": "general",
+      "category": "performance",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel/next.js",
@@ -53656,7 +55035,7 @@
       "canonical_id": "next-cache-components-adoption",
       "name": "next-cache-components-adoption",
       "description": "Adopt Next.js 16.3+ Cache Components and use-cache directive across pages and data access layers.",
-      "category": "data-ai",
+      "category": "performance",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel/next.js",
@@ -53688,7 +55067,7 @@
       "canonical_id": "next-cache-components-optimizer",
       "name": "next-cache-components-optimizer",
       "description": "Optimize cache keys, cache boundaries, tags, and revalidation strategies for Next.js Cache Components.",
-      "category": "general",
+      "category": "performance",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel/next.js",
@@ -53718,7 +55097,7 @@
       "canonical_id": "next-dev-loop",
       "name": "next-dev-loop",
       "description": "Verify Next.js runtime behavior after editing code using Turbopack, Fast Refresh, and runtime assertion.",
-      "category": "general",
+      "category": "development",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel/next.js",
@@ -53749,7 +55128,7 @@
       "canonical_id": "next-partial-prefetching-adoption",
       "name": "next-partial-prefetching-adoption",
       "description": "Enable and configure Next.js Partial Prefetching (PPR) for instant shell rendering and streaming dynamic content.",
-      "category": "general",
+      "category": "performance",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel/next.js",
@@ -53781,7 +55160,7 @@
       "canonical_id": "next-partial-prefetching-optimizer",
       "name": "next-partial-prefetching-optimizer",
       "description": "Fine-tune Suspense boundaries, static shells, and prefetch hit rates in Next.js applications.",
-      "category": "general",
+      "category": "performance",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel/next.js",
@@ -55654,6 +57033,33 @@
         "framing"
       ],
       "path": "skills/offers/SKILL.md"
+    },
+    {
+      "id": "office-hours",
+      "canonical_id": "office-hours",
+      "name": "office-hours",
+      "description": "YC Office Hours — two modes. (gstack)",
+      "category": "product",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "founder",
+        "ideation",
+        "interrogation",
+        "yc"
+      ],
+      "triggers": [
+        "founder",
+        "ideation",
+        "interrogation",
+        "yc",
+        "office",
+        "hours",
+        "two",
+        "modes",
+        "gstack"
+      ],
+      "path": "skills/office-hours/SKILL.md"
     },
     {
       "id": "office-productivity",
@@ -58845,6 +60251,116 @@
       "path": "skills/plan-canvas/SKILL.md"
     },
     {
+      "id": "plan-ceo-review",
+      "canonical_id": "plan-ceo-review",
+      "name": "plan-ceo-review",
+      "description": "CEO/founder-mode plan review. (gstack)",
+      "category": "product",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "ceo",
+        "plan",
+        "roadmap",
+        "strategy"
+      ],
+      "triggers": [
+        "ceo",
+        "plan",
+        "roadmap",
+        "strategy",
+        "review",
+        "founder",
+        "mode",
+        "gstack"
+      ],
+      "path": "skills/plan-ceo-review/SKILL.md"
+    },
+    {
+      "id": "plan-design-review",
+      "canonical_id": "plan-design-review",
+      "name": "plan-design-review",
+      "description": "Designer's eye plan review — interactive, like CEO and Eng review. (gstack)",
+      "category": "design",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "design-review",
+        "plan",
+        "ui",
+        "ux"
+      ],
+      "triggers": [
+        "design-review",
+        "plan",
+        "ui",
+        "ux",
+        "review",
+        "designer",
+        "eye",
+        "interactive",
+        "like",
+        "ceo",
+        "eng",
+        "gstack"
+      ],
+      "path": "skills/plan-design-review/SKILL.md"
+    },
+    {
+      "id": "plan-devex-review",
+      "canonical_id": "plan-devex-review",
+      "name": "plan-devex-review",
+      "description": "Interactive developer experience plan review. (gstack)",
+      "category": "engineering",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "api-design",
+        "devex",
+        "ergonomics",
+        "plan"
+      ],
+      "triggers": [
+        "api-design",
+        "devex",
+        "ergonomics",
+        "plan",
+        "review",
+        "interactive",
+        "developer",
+        "experience",
+        "gstack"
+      ],
+      "path": "skills/plan-devex-review/SKILL.md"
+    },
+    {
+      "id": "plan-eng-review",
+      "canonical_id": "plan-eng-review",
+      "name": "plan-eng-review",
+      "description": "Eng manager-mode plan review. (gstack)",
+      "category": "engineering",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "architecture",
+        "invariants",
+        "plan",
+        "tech-lead"
+      ],
+      "triggers": [
+        "architecture",
+        "invariants",
+        "plan",
+        "tech-lead",
+        "eng",
+        "review",
+        "manager",
+        "mode",
+        "gstack"
+      ],
+      "path": "skills/plan-eng-review/SKILL.md"
+    },
+    {
       "id": "plan-ledger-tasks-yylo",
       "canonical_id": "plan-ledger-tasks-yylo",
       "name": "plan-ledger-tasks-yylo",
@@ -61932,7 +63448,7 @@
       "canonical_id": "python-on-vercel",
       "name": "python-on-vercel",
       "description": "Companion skill for the Python on Vercel course on Vercel Academy. Deploy FastAPI backend and Next.js frontend on a single domain.",
-      "category": "development",
+      "category": "deployment",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel-labs/academy-skills",
@@ -62125,6 +63641,96 @@
         "up"
       ],
       "path": "skills/python-testing-patterns/SKILL.md"
+    },
+    {
+      "id": "qa",
+      "canonical_id": "qa",
+      "name": "qa",
+      "description": "Fix browser/API/CLI/job/worker/webhook bugs. (gstack)",
+      "category": "qa",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "autonomous-qa",
+        "browser-qa",
+        "regression",
+        "testing"
+      ],
+      "triggers": [
+        "autonomous-qa",
+        "browser-qa",
+        "regression",
+        "testing",
+        "qa",
+        "fix",
+        "browser",
+        "api",
+        "cli",
+        "job",
+        "worker",
+        "webhook"
+      ],
+      "path": "skills/qa/SKILL.md"
+    },
+    {
+      "id": "qa-master",
+      "canonical_id": "qa-master",
+      "name": "qa-master",
+      "description": "Master QA orchestrator for automated & manual testing, test pyramid execution, flaky test quarantine, exploratory charters, and CI/CD quality gates.",
+      "category": "testing",
+      "risk": "safe",
+      "source": "self",
+      "source_type": "self",
+      "license": "MIT",
+      "tags": [
+        "qa",
+        "master"
+      ],
+      "triggers": [
+        "qa",
+        "master",
+        "orchestrator",
+        "automated",
+        "manual",
+        "testing",
+        "test",
+        "pyramid",
+        "execution",
+        "flaky",
+        "quarantine",
+        "exploratory"
+      ],
+      "path": "skills/qa-master/SKILL.md"
+    },
+    {
+      "id": "qa-only",
+      "canonical_id": "qa-only",
+      "name": "qa-only",
+      "description": "Report browser/API/CLI/job/worker/webhook bugs. (gstack)",
+      "category": "qa",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "inspection",
+        "qa-report",
+        "smoke-test",
+        "testing"
+      ],
+      "triggers": [
+        "inspection",
+        "qa-report",
+        "smoke-test",
+        "testing",
+        "qa",
+        "report",
+        "browser",
+        "api",
+        "cli",
+        "job",
+        "worker",
+        "webhook"
+      ],
+      "path": "skills/qa-only/SKILL.md"
     },
     {
       "id": "qiskit",
@@ -64193,6 +65799,30 @@
       "path": "skills/resumable-implementation-contracts/SKILL.md"
     },
     {
+      "id": "retro",
+      "canonical_id": "retro",
+      "name": "retro",
+      "description": "Weekly engineering retrospective. (gstack)",
+      "category": "management",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "engineering-management",
+        "metrics",
+        "retrospective"
+      ],
+      "triggers": [
+        "engineering-management",
+        "metrics",
+        "retrospective",
+        "retro",
+        "weekly",
+        "engineering",
+        "gstack"
+      ],
+      "path": "skills/retro/SKILL.md"
+    },
+    {
       "id": "returns-reverse-logistics",
       "canonical_id": "returns-reverse-logistics",
       "name": "returns-reverse-logistics",
@@ -64405,6 +66035,32 @@
         "application"
       ],
       "path": "skills/reverse-proxy/SKILL.md"
+    },
+    {
+      "id": "review",
+      "canonical_id": "review",
+      "name": "review",
+      "description": "Pre-landing PR review. (gstack)",
+      "category": "engineering",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "code-review",
+        "greptile",
+        "pr",
+        "triage"
+      ],
+      "triggers": [
+        "code-review",
+        "greptile",
+        "pr",
+        "triage",
+        "review",
+        "pre",
+        "landing",
+        "gstack"
+      ],
+      "path": "skills/review/SKILL.md"
     },
     {
       "id": "review-and-simplify-changes",
@@ -66173,6 +67829,36 @@
         "source"
       ],
       "path": "skills/score-eval/SKILL.md"
+    },
+    {
+      "id": "scrape",
+      "canonical_id": "scrape",
+      "name": "scrape",
+      "description": "Pull data from a web page through the Aside browser — your real, already signed-in sessions. (gstack)",
+      "category": "browser",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "browser",
+        "data",
+        "extraction",
+        "scraping"
+      ],
+      "triggers": [
+        "browser",
+        "data",
+        "extraction",
+        "scraping",
+        "scrape",
+        "pull",
+        "web",
+        "page",
+        "through",
+        "aside",
+        "real",
+        "already"
+      ],
+      "path": "skills/scrape/SKILL.md"
     },
     {
       "id": "screen-adverse-media",
@@ -68655,6 +70341,36 @@
       "path": "skills/session-handoff/SKILL.md"
     },
     {
+      "id": "setup-gbrain",
+      "canonical_id": "setup-gbrain",
+      "name": "setup-gbrain",
+      "description": "Set up gbrain for this coding agent: install the CLI, initialize a local PGLite or Supabase brain, register MCP, capture per-remote trust policy. (gstack)",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "gbrain",
+        "knowledge-base",
+        "memory",
+        "setup"
+      ],
+      "triggers": [
+        "gbrain",
+        "knowledge-base",
+        "memory",
+        "setup",
+        "set",
+        "up",
+        "coding",
+        "agent",
+        "install",
+        "cli",
+        "initialize",
+        "local"
+      ],
+      "path": "skills/setup-gbrain/SKILL.md"
+    },
+    {
       "id": "setup-help",
       "canonical_id": "setup-help",
       "name": "setup-help",
@@ -68903,6 +70619,37 @@
         "infrastructure"
       ],
       "path": "skills/shellcheck-configuration/SKILL.md"
+    },
+    {
+      "id": "ship",
+      "canonical_id": "ship",
+      "name": "ship",
+      "description": "Ship workflow: detect + merge base branch, run tests, review diff, bump VERSION, update CHANGELOG, commit, push, create PR. (gstack)",
+      "category": "release",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "changelog",
+        "git",
+        "pr",
+        "release",
+        "ship"
+      ],
+      "triggers": [
+        "changelog",
+        "git",
+        "pr",
+        "release",
+        "ship",
+        "detect",
+        "merge",
+        "base",
+        "branch",
+        "run",
+        "tests",
+        "review"
+      ],
+      "path": "skills/ship/SKILL.md"
     },
     {
       "id": "shipping-and-launch",
@@ -69669,8 +71416,8 @@
       "id": "skill-router",
       "canonical_id": "skill-router",
       "name": "skill-router",
-      "description": "Use when the user is unsure which skill to use or where to start. Interviews the user with targeted questions and recommends the best skill(s) from the installed library for their goal.",
-      "category": "meta",
+      "description": "Hierarchical intent router and capability discovery engine for agent skills and MCP tools. Use when unsure which skill or tool to invoke, or to dynamically resolve capabilities with zero prompt token bloat.",
+      "category": "agent-orchestration",
       "risk": "safe",
       "source": "self",
       "tags": [
@@ -69680,16 +71427,16 @@
       "triggers": [
         "skill",
         "router",
-        "user",
+        "hierarchical",
+        "intent",
+        "capability",
+        "discovery",
+        "engine",
+        "agent",
+        "skills",
+        "mcp",
         "unsure",
-        "which",
-        "where",
-        "start",
-        "interviews",
-        "targeted",
-        "questions",
-        "recommends",
-        "installed"
+        "which"
       ],
       "path": "skills/skill-router/SKILL.md"
     },
@@ -69942,7 +71689,7 @@
       "canonical_id": "slack-agents",
       "name": "slack-agents",
       "description": "Companion skill for the Building Slack Agents course on Vercel Academy. Scaffold, test, and deploy Slack AI bots.",
-      "category": "data-ai",
+      "category": "ai",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel-labs/academy-skills",
@@ -70967,6 +72714,36 @@
         "performance"
       ],
       "path": "skills/spark-optimization/SKILL.md"
+    },
+    {
+      "id": "spec",
+      "canonical_id": "spec",
+      "name": "spec",
+      "description": "Turn vague intent into a precise, executable spec in five phases. (gstack)",
+      "category": "product",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "architecture",
+        "prd",
+        "requirements",
+        "specification"
+      ],
+      "triggers": [
+        "architecture",
+        "prd",
+        "requirements",
+        "specification",
+        "spec",
+        "turn",
+        "vague",
+        "intent",
+        "precise",
+        "executable",
+        "five",
+        "phases"
+      ],
+      "path": "skills/spec/SKILL.md"
     },
     {
       "id": "spec-driven-development",
@@ -72179,6 +73956,36 @@
       "path": "skills/stitch-ui-design/SKILL.md"
     },
     {
+      "id": "strategic-reading",
+      "canonical_id": "strategic-reading",
+      "name": "strategic-reading",
+      "description": "Read a book, article, transcript, or case study through the lens of a specific strategic problem you're facing. Produces an applied playbook that maps the source onto the problem and gives short/medium/long-term recommendations. NOT for.",
+      "category": "research",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "applied-learning",
+        "playbook",
+        "reading",
+        "strategy"
+      ],
+      "triggers": [
+        "applied-learning",
+        "playbook",
+        "reading",
+        "strategy",
+        "strategic",
+        "read",
+        "book",
+        "article",
+        "transcript",
+        "case",
+        "study",
+        "through"
+      ],
+      "path": "skills/strategic-reading/SKILL.md"
+    },
+    {
       "id": "stride-analysis-patterns",
       "canonical_id": "stride-analysis-patterns",
       "name": "stride-analysis-patterns",
@@ -72378,7 +74185,7 @@
       "canonical_id": "subscription-store",
       "name": "subscription-store",
       "description": "Companion skill for the Launch a Subscription Store course on Vercel Academy. Build Stripe subscription storefronts with Next.js.",
-      "category": "general",
+      "category": "ecommerce",
       "risk": "safe",
       "source": "community",
       "source_repo": "vercel-labs/academy-skills",
@@ -73352,6 +75159,35 @@
         "than"
       ],
       "path": "skills/sympy/SKILL.md"
+    },
+    {
+      "id": "sync-gbrain",
+      "canonical_id": "sync-gbrain",
+      "name": "sync-gbrain",
+      "description": "Keep gbrain current with this repo's code and refresh agent search guidance in CLAUDE.md. (gstack)",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "gbrain",
+        "memory",
+        "synchronization"
+      ],
+      "triggers": [
+        "gbrain",
+        "memory",
+        "synchronization",
+        "sync",
+        "keep",
+        "current",
+        "repo",
+        "code",
+        "refresh",
+        "agent",
+        "search",
+        "guidance"
+      ],
+      "path": "skills/sync-gbrain/SKILL.md"
     },
     {
       "id": "system-prompt-lookup",
@@ -74772,6 +76608,36 @@
         "infrastructure"
       ],
       "path": "skills/terraform-specialist/SKILL.md"
+    },
+    {
+      "id": "test-audit",
+      "canonical_id": "test-audit",
+      "name": "test-audit",
+      "description": "Find low-value or duplicate tests and the test-only code they keep alive. (gstack)",
+      "category": "qa",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "audit",
+        "coverage",
+        "debt",
+        "tests"
+      ],
+      "triggers": [
+        "audit",
+        "coverage",
+        "debt",
+        "tests",
+        "test",
+        "find",
+        "low",
+        "value",
+        "duplicate",
+        "code",
+        "keep",
+        "alive"
+      ],
+      "path": "skills/test-audit/SKILL.md"
     },
     {
       "id": "test-automator",
@@ -76574,6 +78440,33 @@
       "path": "skills/trello-automation/SKILL.md"
     },
     {
+      "id": "trends",
+      "canonical_id": "trends",
+      "name": "trends",
+      "description": "Real-time Google Trends and social media trending topic discovery across Google Search, X/Twitter, and viral platforms with zero API key dependencies.",
+      "category": "uncategorized",
+      "risk": "unknown",
+      "source": "unknown",
+      "tags": [
+        "trends"
+      ],
+      "triggers": [
+        "trends",
+        "real",
+        "time",
+        "google",
+        "social",
+        "media",
+        "trending",
+        "topic",
+        "discovery",
+        "search",
+        "twitter",
+        "viral"
+      ],
+      "path": "skills/trends/SKILL.md"
+    },
+    {
       "id": "triage",
       "canonical_id": "triage",
       "name": "triage",
@@ -77048,6 +78941,35 @@
         "bookmarks"
       ],
       "path": "skills/twitter-automation/SKILL.md"
+    },
+    {
+      "id": "two-tier-extraction",
+      "canonical_id": "two-tier-extraction",
+      "name": "two-tier-extraction",
+      "description": "Tiered LLM extraction pattern for large corpus processing (email archives, document dumps, transcript libraries). A utility-tier model triages and classifies at speed; the reasoning tier does the default deep read; the deep tier is the.",
+      "category": "ai",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "cost-optimization",
+        "extraction",
+        "tiered-llm"
+      ],
+      "triggers": [
+        "cost-optimization",
+        "extraction",
+        "tiered-llm",
+        "two",
+        "tier",
+        "tiered",
+        "llm",
+        "large",
+        "corpus",
+        "processing",
+        "email",
+        "archives"
+      ],
+      "path": "skills/two-tier-extraction/SKILL.md"
     },
     {
       "id": "typescript-advanced-types",
@@ -77647,6 +79569,35 @@
         "implementing"
       ],
       "path": "skills/understand-project-yylo/SKILL.md"
+    },
+    {
+      "id": "unfreeze",
+      "canonical_id": "unfreeze",
+      "name": "unfreeze",
+      "description": "Clear the freeze boundary set by /freeze, allowing edits to all directories again. (gstack)",
+      "category": "safety",
+      "risk": "safe",
+      "source": "gstack",
+      "tags": [
+        "boundary",
+        "safety",
+        "unfreeze"
+      ],
+      "triggers": [
+        "boundary",
+        "safety",
+        "unfreeze",
+        "clear",
+        "freeze",
+        "set",
+        "allowing",
+        "edits",
+        "all",
+        "directories",
+        "again",
+        "gstack"
+      ],
+      "path": "skills/unfreeze/SKILL.md"
     },
     {
       "id": "unified-ai-gateway",
@@ -79804,6 +81755,33 @@
       "path": "skills/viral-video-teardown-remake/SKILL.md"
     },
     {
+      "id": "virality-architect",
+      "canonical_id": "virality-architect",
+      "name": "virality-architect",
+      "description": "Master skill for behavioral psychology, algorithmic retention engineering, and adversarial virality architecture across short-form (Shorts, Reels, TikTok), long-form YouTube, and automated video clipping.",
+      "category": "uncategorized",
+      "risk": "unknown",
+      "source": "unknown",
+      "tags": [
+        "virality"
+      ],
+      "triggers": [
+        "virality",
+        "architect",
+        "skill",
+        "behavioral",
+        "psychology",
+        "algorithmic",
+        "retention",
+        "engineering",
+        "adversarial",
+        "architecture",
+        "short",
+        "form"
+      ],
+      "path": "skills/virality-architect/SKILL.md"
+    },
+    {
       "id": "visual-emotion-engineer",
       "canonical_id": "visual-emotion-engineer",
       "name": "visual-emotion-engineer",
@@ -80061,6 +82039,36 @@
         "package"
       ],
       "path": "skills/voice-cloning-studio/SKILL.md"
+    },
+    {
+      "id": "voice-note-ingest",
+      "canonical_id": "voice-note-ingest",
+      "name": "voice-note-ingest",
+      "description": "Ingest a voice note with exact-phrasing preservation (never paraphrased). Routes content to originals/, concepts/, people/, companies/, ideas/, personal/, or voice-notes/ based on a decision tree. The user's exact words are the signal.",
+      "category": "memory",
+      "risk": "safe",
+      "source": "gbrain",
+      "tags": [
+        "audio",
+        "exact-words",
+        "transcription",
+        "voice-notes"
+      ],
+      "triggers": [
+        "audio",
+        "exact-words",
+        "transcription",
+        "voice-notes",
+        "voice",
+        "note",
+        "ingest",
+        "exact",
+        "phrasing",
+        "preservation",
+        "never",
+        "paraphrased"
+      ],
+      "path": "skills/voice-note-ingest/SKILL.md"
     },
     {
       "id": "voiceover-narration-studio",
