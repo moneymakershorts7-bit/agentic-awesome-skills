@@ -70,6 +70,7 @@ class SecSDLCAuditor:
             "Terraform/IaC": [".tf", "terragrunt.hcl"],
             "Kubernetes": ["Chart.yaml"],
             "Agent Skill": ["SKILL.md"],
+            "Python Master": [".python-master", "python-master.toml", "src/python_master", "python_master"],
             "Threat Model": ["threat-model.md", "THREAT_MODEL.md", "threat-model.json", "threat-dragon.json"],
         }
 
@@ -155,12 +156,20 @@ class SecSDLCAuditor:
                 "message": "No standard static analysis or linter configuration detected."
             })
 
+        if "Python Master" in self.detected_stacks or (self.root / "src" / "python_master").exists():
+            score += 30.0
+            self.findings.append({
+                "category": "SAST",
+                "status": "PASS",
+                "message": "Python Master autonomous SecSDLC battery integrated (Ruff, Bandit, Mypy Strict, Radon, Vulture)."
+            })
+
         self.scores["SAST"] = min(score, 100.0)
 
     def _audit_dependencies_sca(self):
         score = 0.0
         lockfiles = {"package-lock.json", "pnpm-lock.yaml", "yarn.lock", "bun.lock",
-                     "poetry.lock", "Cargo.lock", "go.sum", "Pipfile.lock"}
+                     "poetry.lock", "Cargo.lock", "go.sum", "Pipfile.lock", "uv.lock"}
         indexed_names = {p.name for p in self.indexed_files}
         has_lockfile = bool(lockfiles.intersection(indexed_names))
 

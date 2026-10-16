@@ -134,6 +134,10 @@ This skill includes zero-dependency automation scripts in `scripts/`:
   ```bash
   python3 scripts/sarif_aggregator.py --inputs semgrep.sarif trivy.sarif --output scorecard.json
   ```
+* **`python_master_gate.py`**: Executes the deterministic Python Master SecSDLC quality gate (Bandit SAST, pip-audit SCA, Mypy Strict, Ruff, Radon CC <= 10, Vulture):
+  ```bash
+  python3 scripts/python_master_gate.py /path/to/project --format markdown
+  ```
 
 ---
 
@@ -145,6 +149,7 @@ Step-by-step operational workflows:
 - [03: CI/CD Pipeline Gating Setup](playbooks/03-pipeline-gating-setup.md)
 - [04: Risk-Weighted Vulnerability Triage](playbooks/04-vulnerability-triage.md)
 - [05: Incident Feedback Loop Closure](playbooks/05-incident-feedback-loop.md)
+- [06: Python Master Autonomous SecSDLC Quality Gate](playbooks/06-python-master-secsdlc.md)
 
 ---
 
