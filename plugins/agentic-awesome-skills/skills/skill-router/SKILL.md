@@ -60,16 +60,25 @@ for rec in result["recommendations"]:
 
 ---
 
-## Architecture
+## Architecture & Routing Engines
 
-The engine uses a 3-tier progressive disclosure model:
-1. **Layer 0 (Root Index):** 10 canonical domains (~754 tokens) embedded in base prompt context.
-2. **Layer 1 (Subcategory Branch):** Dynamic exploration of functional branches on demand.
-3. **Layer 2 (Leaf Activation):** Direct loading of the exact `SKILL.md` or MCP tool schema.
+The skill router supports two complementary routing paradigms:
 
-Features:
-- **Inverted Posting Index:** Sub-millisecond sparse lookup (< 4ms latency).
+### 1. Hierarchical Production Engine (3-Layer Taxonomy)
+Uses a 3-tier progressive disclosure model based on AnyTool and ToolRerank:
+- **Layer 0 (Root Index):** 10 canonical domains (~754 tokens) embedded in base prompt context.
+- **Layer 1 (Subcategory Branch):** Dynamic exploration of functional branches on demand.
+- **Layer 2 (Leaf Activation):** Direct loading of the exact `SKILL.md` or MCP tool schema.
 - **MMR Diversity Re-ranking:** Submodular penalty ($\lambda=0.65$, max 2 items per family) preventing verb swarming.
-- **Two-Tier Namespace Aggregation:** Deterministic MCP server clustering.
-- **Multi-Domain Union:** Activates secondary domain candidates when top score differential $< 25\%$.
-- **Synonym Expansion:** Normalizes colloquial developer phrasing to formal taxonomy terms.
+
+### 2. Adaptive MirrorMoE Engine (`adaptive_mirrormoe_skill_router.py`)
+Inspired by *MirrorMoE* (arXiv:2610.22353, Li et al., ETH Zurich / HKU / MPI-IS / WU Vienna):
+- **Stage 1 (Lexical Retrieval Beam):** SQLite FTS5 BM25 candidate filtering evaluating top $N=30$ candidate skills in $<1$ ms.
+- **Stage 2 (Dual-Head Attention & Mirroring):** Multi-representation scaled dot-product attention across Domain, Functionality, and Context orthogonal heads. Computes standard softmax ($\xi_i$) and sign-negated mirrored routing ($\zeta_i \propto 1/\xi_i$).
+- **Stage 3 (Dynamic Effective Capacity & Token Pruning):** Evaluates exponential Shannon entropy:
+  $$K_{\mathsf{eff}} = \exp\left(-\sum_{i \in \mathcal{A}} \bar{\xi}_i \ln \bar{\xi}_i\right)$$
+  Enforces dynamic pruning threshold $T_{\text{prune}} = \gamma / K_{\mathsf{eff}}$. Simple tasks automatically collapse to 1 expert (saving 80% prompt tokens and eliminating distractor noise), while multi-domain compositions preserve 3–5 experts.
+- **CLI Usage:**
+  ```bash
+  python3 scripts/adaptive_mirrormoe_skill_router.py "<task query>" --top-k 5
+  ```
