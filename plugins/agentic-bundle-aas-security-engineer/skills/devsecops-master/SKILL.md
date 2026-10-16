@@ -138,6 +138,10 @@ This skill includes zero-dependency automation scripts in `scripts/`:
   ```bash
   python3 scripts/python_master_gate.py /path/to/project --format markdown
   ```
+* **`rust_master_gate.py`**: Executes the deterministic Rust Master SecSDLC quality gate (Clippy Pedantic SAST, Cargo Audit SCA, rust-master AST Safety Invariants, Cargo Test):
+  ```bash
+  python3 scripts/rust_master_gate.py /path/to/project --format markdown
+  ```
 
 ---
 
@@ -150,6 +154,7 @@ Step-by-step operational workflows:
 - [04: Risk-Weighted Vulnerability Triage](playbooks/04-vulnerability-triage.md)
 - [05: Incident Feedback Loop Closure](playbooks/05-incident-feedback-loop.md)
 - [06: Python Master Autonomous SecSDLC Quality Gate](playbooks/06-python-master-secsdlc.md)
+- [07: Rust Master Autonomous SecSDLC Quality Gate](playbooks/07-rust-master-secsdlc.md)
 
 ---
 

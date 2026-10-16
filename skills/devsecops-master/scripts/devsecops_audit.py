@@ -71,6 +71,7 @@ class SecSDLCAuditor:
             "Kubernetes": ["Chart.yaml"],
             "Agent Skill": ["SKILL.md"],
             "Python Master": [".python-master", "python-master.toml", "src/python_master", "python_master"],
+            "Rust Master": [".rust-master", "rust-master.toml", "src/core/orchestrator.rs", "CURRENT_TASK.md"],
             "Threat Model": ["threat-model.md", "THREAT_MODEL.md", "threat-model.json", "threat-dragon.json"],
         }
 
@@ -162,6 +163,14 @@ class SecSDLCAuditor:
                 "category": "SAST",
                 "status": "PASS",
                 "message": "Python Master autonomous SecSDLC battery integrated (Ruff, Bandit, Mypy Strict, Radon, Vulture)."
+            })
+
+        if "Rust Master" in self.detected_stacks or (self.root / "src" / "core" / "orchestrator.rs").exists():
+            score += 30.0
+            self.findings.append({
+                "category": "SAST",
+                "status": "PASS",
+                "message": "Rust Master autonomous SecSDLC battery integrated (Clippy Pedantic, Miri, Loom, AstAnalyzer, MutationRunner, Cargo Test)."
             })
 
         self.scores["SAST"] = min(score, 100.0)
