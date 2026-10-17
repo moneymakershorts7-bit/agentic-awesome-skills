@@ -1,0 +1,23 @@
+{
+  "id": "modex",
+  "name": "modex",
+  "repository": "https://github.com/GiuseppeMalik24/modex",
+  "description": "Modex is a Clojure MCP Library to augment your AI models with Tools, Resources & Prompts using Clojure (Model Context Protocol). Implements MCP Server & Client.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y modex",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "modex": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "modex"
+      ]
+    }
+  }
+}

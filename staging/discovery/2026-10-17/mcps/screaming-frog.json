@@ -1,0 +1,22 @@
+{
+  "id": "screaming-frog",
+  "name": "screaming-frog-mcp",
+  "repository": "https://github.com/bzsasson/screaming-frog-mcp",
+  "description": "Headless MCP server for Screaming Frog SEO Spider \u2013 run crawls, export and analyze crawl data via the CLI. Small locked-down tool surface for scheduled audits, CI, and unattended AI agents.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx screaming-frog-mcp",
+  "stars": 93,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "screaming-frog": {
+      "command": "uvx",
+      "args": [
+        "screaming-frog-mcp"
+      ]
+    }
+  }
+}

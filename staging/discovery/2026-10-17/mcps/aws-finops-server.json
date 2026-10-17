@@ -1,0 +1,22 @@
+{
+  "id": "aws-finops-server",
+  "name": "aws-finops-mcp-server",
+  "repository": "https://github.com/sebastienl40/aws-finops-mcp-server",
+  "description": "An MCP (Model Context Protocol) server that brings powerful AWS FinOps capabilities directly into your AI assistant. Analyze cloud costs, audit for waste, and get budget insights using natural language, all while keeping your credentials secure on your local machine.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx aws-finops-mcp-server",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "aws-finops-server": {
+      "command": "uvx",
+      "args": [
+        "aws-finops-mcp-server"
+      ]
+    }
+  }
+}

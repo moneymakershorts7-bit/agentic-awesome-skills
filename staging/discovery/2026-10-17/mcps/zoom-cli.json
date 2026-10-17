@@ -1,0 +1,23 @@
+{
+  "id": "zoom-cli",
+  "name": "zoom-cli",
+  "repository": "https://github.com/WireCatLabs/zoom-cli",
+  "description": "Zoom meetings and transcripts for your AI agent: local archive, source-backed search, read-only MCP. Part of WireCat.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y zoom-cli",
+  "stars": 1,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "zoom-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "zoom-cli"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "loci",
+  "name": "loci",
+  "repository": "https://github.com/hanselliott/loci",
+  "description": "A queryable second brain over your scattered notes and docs - hybrid retrieval (vector + BM25), section-level citations, and an MCP server so AI agents can use it. ~300 lines, no LangChain.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx loci",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "loci": {
+      "command": "uvx",
+      "args": [
+        "loci"
+      ]
+    }
+  }
+}

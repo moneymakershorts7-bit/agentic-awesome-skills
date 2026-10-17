@@ -1,0 +1,23 @@
+{
+  "id": "seo-skills",
+  "name": "seo-skills",
+  "repository": "https://github.com/aPersson94/seo-skills",
+  "description": "Claude SEO Skills \u2014 production Claude Agent Skills for the SE Ranking MCP server. Content briefs, AI Search share of voice, audits, backlink gaps, keyword clusters, schema, sitemap, GEO, and more.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y seo-skills",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "seo-skills": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "seo-skills"
+      ]
+    }
+  }
+}

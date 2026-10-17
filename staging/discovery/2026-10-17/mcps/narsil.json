@@ -1,0 +1,23 @@
+{
+  "id": "narsil",
+  "name": "narsil-mcp",
+  "repository": "https://github.com/Jisung63340/narsil-mcp",
+  "description": "Rust MCP server for comprehensive code intelligence - 90 tools, 32 languages, security scanning, call graphs, and more",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y narsil-mcp",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "narsil": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "narsil-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "postgres-hardened",
+  "name": "postgres-mcp-hardened",
+  "repository": "https://github.com/Eszetael/postgres-mcp-hardened",
+  "description": "Secure read-only PostgreSQL MCP server in Rust \u2014 a hardened alternative to the deprecated @modelcontextprotocol/server-postgres.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install postgres-mcp-hardened",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "postgres-hardened": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "postgres-mcp-hardened"
+      ]
+    }
+  }
+}

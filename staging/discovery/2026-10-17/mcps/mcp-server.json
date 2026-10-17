@@ -1,0 +1,23 @@
+{
+  "id": "mcp-server",
+  "name": "mcp-server",
+  "repository": "https://github.com/pokemontcgapi/mcp-server",
+  "description": "MCP server for the Pok\u00e9mon TCG API: eight read-only tools for cards, sets, illustrators and prices that carry their source, basis and date (Cardmarket EUR, TCGplayer USD), Japanese and Chinese lines included.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server"
+      ]
+    }
+  }
+}

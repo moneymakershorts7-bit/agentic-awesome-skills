@@ -1,0 +1,22 @@
+{
+  "id": "tradingview-chart",
+  "name": "tradingview-chart-mcp",
+  "repository": "https://github.com/Shreya79849/tradingview-chart-mcp",
+  "description": "MCP server that captures TradingView chart images via Selenium \u2014 supports any ticker/interval with browser pooling for concurrent performance",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx tradingview-chart-mcp",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "tradingview-chart": {
+      "command": "uvx",
+      "args": [
+        "tradingview-chart-mcp"
+      ]
+    }
+  }
+}

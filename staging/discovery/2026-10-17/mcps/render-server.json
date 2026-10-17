@@ -1,0 +1,23 @@
+{
+  "id": "render-server",
+  "name": "render-mcp-server",
+  "repository": "https://github.com/render-oss/render-mcp-server",
+  "description": "The Official Render MCP Server",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/render-oss/render-mcp-server@latest",
+  "stars": 180,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "render-server": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/render-oss/render-mcp-server@latest"
+      ]
+    }
+  }
+}

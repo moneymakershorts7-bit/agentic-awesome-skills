@@ -1,0 +1,22 @@
+{
+  "id": "pfsense-server",
+  "name": "pfsense-mcp-server",
+  "repository": "https://github.com/nAksoy11462/pfsense-mcp-server",
+  "description": "Model Context Protocol (MCP) server for pfSense firewall management. Control firewall rules, VPNs, DNS, DHCP and diagnostics in natural language from Claude Desktop, Claude Code or any MCP client \u2014 333 wire-format-verified tools for the pfSense REST API, with safety guardrails, config backup and rol",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx pfsense-mcp-server",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "pfsense-server": {
+      "command": "uvx",
+      "args": [
+        "pfsense-mcp-server"
+      ]
+    }
+  }
+}

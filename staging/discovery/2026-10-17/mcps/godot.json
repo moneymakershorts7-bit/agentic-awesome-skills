@@ -1,0 +1,23 @@
+{
+  "id": "godot",
+  "name": "godot-mcp",
+  "repository": "https://github.com/tberg56/godot-mcp",
+  "description": "Give your AI assistant eyes and hands in the Godot editor: scene editing, input injection, deterministic playtesting, and live game state for agents",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y godot-mcp",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "godot": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "godot-mcp"
+      ]
+    }
+  }
+}

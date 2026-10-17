@@ -1,0 +1,23 @@
+{
+  "id": "octagon-server",
+  "name": "octagon-mcp-server",
+  "repository": "https://github.com/helmutoda7880/octagon-mcp-server",
+  "description": "An MCP server for public & prediction markets research. Ask natural-language questions and get structured, source-backed answers across SEC filings, earnings transcripts, company financials, stock & crypto market data, and prediction markets news & research. Built for investors, analysts, and resear",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y octagon-mcp-server",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "octagon-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "octagon-mcp-server"
+      ]
+    }
+  }
+}

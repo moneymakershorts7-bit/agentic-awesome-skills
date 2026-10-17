@@ -1,0 +1,23 @@
+{
+  "id": "agent-toolkit",
+  "name": "agent-toolkit",
+  "repository": "https://github.com/maryamgarnier28/agent-toolkit",
+  "description": "Collection of resources to help AI agents build better with Sanity.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y agent-toolkit",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "agent-toolkit": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "agent-toolkit"
+      ]
+    }
+  }
+}

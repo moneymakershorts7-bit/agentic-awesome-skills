@@ -1,0 +1,23 @@
+{
+  "id": "mcp",
+  "name": "mcp",
+  "repository": "https://github.com/xp-forge/mcp",
+  "description": "Model Context Protocol",
+  "language": "PHP",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/xp-forge/mcp",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "mcp": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/xp-forge/mcp"
+      ]
+    }
+  }
+}

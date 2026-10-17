@@ -1,0 +1,22 @@
+{
+  "id": "starrocks",
+  "name": "mcp-server-starrocks",
+  "repository": "https://github.com/Gabrielem17077/mcp-server-starrocks",
+  "description": "StarRocks MCP (Model Context Protocol) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-server-starrocks",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "starrocks": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-starrocks"
+      ]
+    }
+  }
+}

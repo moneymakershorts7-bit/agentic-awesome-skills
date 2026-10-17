@@ -1,0 +1,23 @@
+{
+  "id": "posy",
+  "name": "posy",
+  "repository": "https://github.com/Himanshu-Sangshetti/posy",
+  "description": "A link-in-bio page that looks hand-made. Pick a look, add your links, publish. Edit it yourself or let your AI do it.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y posy",
+  "stars": 4,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "posy": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "posy"
+      ]
+    }
+  }
+}

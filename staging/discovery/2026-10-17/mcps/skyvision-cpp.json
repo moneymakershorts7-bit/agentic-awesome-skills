@@ -1,0 +1,23 @@
+{
+  "id": "skyvision-cpp",
+  "name": "SkyVision.cpp",
+  "repository": "https://github.com/SkYContact/SkyVision.cpp",
+  "description": "Multi-backend GGUF vision-language inference engine (moondream3.1 \u00b7 VideoChat3 \u00b7 Qwen2.5-VL \u00b7 MOSS-VL \u00b7 VideoMAE/ViViT \u00b7 SmolVLM) with a unified CLI, Web UI and an MCP server for agents.",
+  "language": "C++",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/SkYContact/SkyVision.cpp",
+  "stars": 2,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "skyvision-cpp": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/SkYContact/SkyVision.cpp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "custom-mcp-server",
+  "name": "Custom-MCP-Server",
+  "repository": "https://github.com/stijnahmed18039/Custom-MCP-Server",
+  "description": "MCP server for scraping LinkedIn, Facebook, Instagram profiles and Google search.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Custom-MCP-Server",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "custom-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "Custom-MCP-Server"
+      ]
+    }
+  }
+}

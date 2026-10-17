@@ -1,0 +1,23 @@
+{
+  "id": "documcp",
+  "name": "documcp",
+  "repository": "https://github.com/c-premus/documcp",
+  "description": "MCP server for document management \u2014 search, read, and manage docs via Model Context Protocol",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/c-premus/documcp@latest",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "documcp": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/c-premus/documcp@latest"
+      ]
+    }
+  }
+}

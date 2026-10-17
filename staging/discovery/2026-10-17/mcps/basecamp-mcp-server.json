@@ -1,0 +1,22 @@
+{
+  "id": "basecamp-mcp-server",
+  "name": "Basecamp-MCP-Server",
+  "repository": "https://github.com/watson34657/Basecamp-MCP-Server",
+  "description": "MCP server for Basecamp 3 with OAuth, FastMCP, and 75 tools for projects, todos, messages, card tables, docs, uploads, and search.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Basecamp-MCP-Server",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "basecamp-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "Basecamp-MCP-Server"
+      ]
+    }
+  }
+}

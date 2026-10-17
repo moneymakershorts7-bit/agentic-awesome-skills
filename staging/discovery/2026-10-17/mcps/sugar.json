@@ -1,0 +1,23 @@
+{
+  "id": "sugar",
+  "name": "sugar",
+  "repository": "https://github.com/gita80/sugar",
+  "description": "Persistent memory for AI coding agents. Local-first, cross-session context, global knowledge, and optional autonomous task execution.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y sugar",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-17",
+  "mcpConfigSnippet": {
+    "sugar": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sugar"
+      ]
+    }
+  }
+}
