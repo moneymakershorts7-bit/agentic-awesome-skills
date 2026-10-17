@@ -1,6 +1,6 @@
 ---
 name: csharp-master
-description: Autonomous enterprise C# / .NET engineering platform and agent orchestrator specialized in modern high-performance C# (.NET 8 LTS / .NET 9 LTS / C# 12+), 4 domain enterprise workers, and 1 independent adversarial verification agent.
+description: Autonomous enterprise C# / .NET engineering platform, MCP server, and agent orchestrator specialized in modern high-performance C# (.NET 8 LTS / .NET 9 LTS / C# 12+), 4 domain enterprise workers, and 1 independent adversarial verification agent.
 allowed-tools:
   - run_command
   - view_file
@@ -12,7 +12,7 @@ allowed-tools:
 
 # csharp-master
 
-`csharp-master` is an enterprise-grade autonomous C# and .NET engineering platform and agent orchestrator. The platform specializes in modern, high-performance C# (.NET 8 LTS / .NET 9 LTS / C# 12+), featuring 4 domain-specialized C# enterprise workers and 1 independent adversarial verification agent.
+`csharp-master` is an enterprise-grade autonomous C# and .NET engineering platform, MCP server, and agent orchestrator. The platform specializes in modern, high-performance C# (.NET 8 LTS / .NET 9 LTS / C# 12+), featuring 4 domain-specialized C# enterprise workers, 1 independent adversarial verification agent, and native Model Context Protocol (MCP) server integration.
 
 ## Core Capabilities & Operational Modes
 
@@ -28,8 +28,14 @@ allowed-tools:
    - `security-auditor` (Agent 4): Central Package Management (`Directory.Packages.props`), authenticated cryptography (AES-256-GCM, ChaCha20-Poly1305), deserialization defense (ban `BinaryFormatter`), rootless container hardening (`USER app` / UID 1654).
    - `verifier-qa` (Agent 5): Independent adversarial verifier with unconditional veto power; Roslyn compiler gate (`TreatWarningsAsErrors=true`, 0 warnings); Stryker mutation testing >= 80%; BenchmarkDotNet zero regression enforcement; automated self-healing runbooks.
 
-3. **Canonical Literature Ingestion (Zero Hallucination Grounding)**:
-   - 7 authoritative specifications and architectural treatises indexed with vectorless BM25/TF-IDF search:
+3. **Model Context Protocol (MCP) Server Integration**:
+   - High-performance JSON-RPC 2.0 stdio MCP server compatible with any host (Antigravity CLI, VS Code Copilot, Claude Desktop).
+   - Exposes 6 enterprise tools (`csharp_master_search_corpus`, `csharp_master_verify_slice`, `csharp_master_audit_toolchain`, `csharp_master_check_docs_cadence`, `csharp_master_decompose_task`, `csharp_master_agent_invariants`).
+   - Exposes resources (`csharp-master://manifest`, `csharp-master://cadence`, `csharp-master://toolchain`) and prompts (`csharp-code-review`, `zero-alloc-audit`, `async-deadlock-check`).
+   - Stderr-only logging isolation guaranteeing zero stdout JSON-RPC stream pollution.
+
+4. **Canonical Literature Ingestion (Zero Hallucination Grounding)**:
+   - 8 authoritative specifications and architectural treatises indexed with vectorless BM25/TF-IDF search:
      - `csharp_spec.md`: The C# Language Specification (C# 12/13 Edition)
      - `framework_design_guidelines.md`: Conventions, Idioms, Patterns for Reusable .NET Libraries
      - `dotnet_memory_management.md`: Pro .NET Memory Management (Konrad Kokosa)
@@ -37,32 +43,36 @@ allowed-tools:
      - `dotnet_async_guidelines.md`: Microsoft .NET Async Guidance (David Fowler)
      - `dotnet_security.md`: Microsoft .NET Secure Coding Guidelines & Cryptography Architecture
      - `dotnet_clean_arch.md`: Clean Architecture & Domain-Driven Design in .NET
+     - `dotnet_mcp_spec.md`: Microsoft .NET AI and Model Context Protocol (MCP) Architecture & Implementation Specification
 
-4. **Exhaustive 38+ FOSS Toolchain Matrix**:
+5. **Exhaustive 38+ FOSS Toolchain Matrix**:
    - 40 canonical FOSS .NET tools across Compilers, Architecture, Testing, Performance, Security, and Formatting.
 
-5. **30-Day Freshness Cadence Governance**:
+6. **30-Day Freshness Cadence Governance**:
    - State manifest `.docs_manifest.json` with cryptographic SHA256 hashes and monthly automated audit triggers (`0 0 1 * *`).
 
 ## Quick Start & CLI Workflows
 
 ```bash
-# 1. Search authoritative corpus
-csharp-master search-corpus --query "Span ValueTask"
+# 1. Search authoritative corpus with BM25
+csharp-master search-corpus --query "Model Context Protocol Span"
 
-# 2. Check 30-day documentation freshness cadence
+# 2. Start MCP server over stdio for AI hosts
+csharp-master serve-mcp
+
+# 3. Check 30-day documentation freshness cadence
 csharp-master check-docs-cadence
 
-# 3. Force documentation manifest refresh
+# 4. Force documentation manifest refresh
 csharp-master update-docs --force
 
-# 4. Audit 38+ FOSS .NET toolchain matrix
+# 5. Audit 38+ FOSS .NET toolchain matrix
 csharp-master audit-toolchain
 
-# 5. Verify sample slice contract execution
+# 6. Verify sample slice contract execution
 csharp-master verify-slice
 
-# 6. Execute DevSecOps SecSDLC quality gate
+# 7. Execute DevSecOps SecSDLC quality gate
 python3 ~/.agents/skills/devsecops-master/scripts/dotnet_master_gate.py <project_path>
 ```
 
