@@ -1,0 +1,22 @@
+{
+  "id": "twincat-server",
+  "name": "twincat-mcp-server",
+  "repository": "https://github.com/Disectron/twincat-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx twincat-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "twincat-server": {
+      "command": "uvx",
+      "args": [
+        "twincat-mcp-server"
+      ]
+    }
+  }
+}

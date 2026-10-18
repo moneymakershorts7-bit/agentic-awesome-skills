@@ -1,0 +1,23 @@
+{
+  "id": "oauth2-authorization-server",
+  "name": "oauth2-authorization-server",
+  "repository": "https://github.com/musabbozkurt/oauth2-authorization-server",
+  "description": "OAuth2 Authorization Server with MariaDB, Docker OpenTelemetry LGTM, and Redis Integrations with Spring Boot 4, Java 25 and Docker. Integration Tests with Testcontainers and unit Tests with Junit 5, and Mockito",
+  "language": "Java",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/musabbozkurt/oauth2-authorization-server",
+  "stars": 6,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "oauth2-authorization-server": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/musabbozkurt/oauth2-authorization-server"
+      ]
+    }
+  }
+}

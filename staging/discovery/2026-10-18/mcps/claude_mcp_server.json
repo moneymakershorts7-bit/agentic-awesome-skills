@@ -1,0 +1,22 @@
+{
+  "id": "claude_mcp_server",
+  "name": "claude_mcp_server",
+  "repository": "https://github.com/miam-bonbon/claude_mcp_server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx claude_mcp_server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "claude_mcp_server": {
+      "command": "uvx",
+      "args": [
+        "claude_mcp_server"
+      ]
+    }
+  }
+}

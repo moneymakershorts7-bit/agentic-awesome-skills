@@ -1,0 +1,23 @@
+{
+  "id": "dsh-cert",
+  "name": "dsh-cert-mcp",
+  "repository": "https://github.com/PerryLink/dsh-cert-mcp",
+  "description": "Read-only MCP server over the dsh-plugin-certification registry: get_certification, list_certified, certification_spec.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y dsh-cert-mcp",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "dsh-cert": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dsh-cert-mcp"
+      ]
+    }
+  }
+}

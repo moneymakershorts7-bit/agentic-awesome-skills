@@ -1,0 +1,23 @@
+{
+  "id": "tedix",
+  "name": "tedix",
+  "repository": "https://github.com/tedix-hq/tedix",
+  "description": "Open-source AI coworkers for your team. They do recurring work, ask before risky steps, and show you exactly what they did.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y tedix",
+  "stars": 17,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "tedix": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tedix"
+      ]
+    }
+  }
+}

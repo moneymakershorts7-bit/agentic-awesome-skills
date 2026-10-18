@@ -1,0 +1,22 @@
+{
+  "id": "astra-mcp",
+  "name": "Astra-MCP",
+  "repository": "https://github.com/s-r-e-e-r-a-j/Astra-MCP",
+  "description": "ASTRA is an MCP server. It lets an AI assistant run command-line programs that you choose on your Linux computer.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Astra-MCP",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "astra-mcp": {
+      "command": "uvx",
+      "args": [
+        "Astra-MCP"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dustplanner",
+  "name": "DustPlanner",
+  "repository": "https://github.com/facusantillo/DustPlanner",
+  "description": "Read-only dust planner for Hearthstone inside Hearthstone Deck Tracker: missing cards, the least painful disenchant plan, match history, OBS overlay.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/facusantillo/DustPlanner",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "dustplanner": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/facusantillo/DustPlanner"
+      ]
+    }
+  }
+}

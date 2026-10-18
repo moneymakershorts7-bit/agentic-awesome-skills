@@ -1,0 +1,23 @@
+{
+  "id": "codex-supervisor",
+  "name": "codex-supervisor-mcp",
+  "repository": "https://github.com/zriyox/codex-supervisor-mcp",
+  "description": "Codex MCP server: run parallel Codex CLI workers in isolated git worktrees, state on disk, web dashboard, auto-update.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y codex-supervisor-mcp",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "codex-supervisor": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "codex-supervisor-mcp"
+      ]
+    }
+  }
+}

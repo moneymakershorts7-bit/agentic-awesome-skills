@@ -1,0 +1,23 @@
+{
+  "id": "carbure",
+  "name": "Carbure",
+  "repository": "https://github.com/ltoinel/Carbure",
+  "description": "Self-hosted household budget app: automatic bank sync (woob), auto-categorization, monthly budgets, trends, iPhone push alerts and a read-only MCP server for AI agents. Logiciel gestion budget familial gratuit",
+  "language": "PHP",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/ltoinel/Carbure",
+  "stars": 22,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "carbure": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/ltoinel/Carbure"
+      ]
+    }
+  }
+}

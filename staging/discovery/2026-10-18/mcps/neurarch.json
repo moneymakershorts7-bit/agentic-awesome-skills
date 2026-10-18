@@ -1,0 +1,23 @@
+{
+  "id": "neurarch",
+  "name": "neurarch-mcp",
+  "repository": "https://github.com/neurarch-ai/neurarch-mcp",
+  "description": "MCP server exposing a Neurarch model graph to Claude Code, Cursor, Windsurf, and other MCP-aware AI agents.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y neurarch-mcp",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "neurarch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "neurarch-mcp"
+      ]
+    }
+  }
+}

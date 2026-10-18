@@ -1,0 +1,23 @@
+{
+  "id": "tidal-cycles-server",
+  "name": "tidal-cycles-mcp-server",
+  "repository": "https://github.com/Benedict/tidal-cycles-mcp-server",
+  "description": "An MCP Server for Tidal Cycles - http://tidalcycles.org/",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y tidal-cycles-mcp-server",
+  "stars": 17,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "tidal-cycles-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tidal-cycles-mcp-server"
+      ]
+    }
+  }
+}

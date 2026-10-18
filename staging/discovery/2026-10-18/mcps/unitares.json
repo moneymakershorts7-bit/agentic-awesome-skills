@@ -1,0 +1,22 @@
+{
+  "id": "unitares",
+  "name": "unitares",
+  "repository": "https://github.com/cirwel/unitares",
+  "description": "Accountability infrastructure for long-running AI agents. Self-hosted MCP server: identity, claims and evidence, review, outcomes, and reconstruction across agent runtimes.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx unitares",
+  "stars": 5,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "unitares": {
+      "command": "uvx",
+      "args": [
+        "unitares"
+      ]
+    }
+  }
+}

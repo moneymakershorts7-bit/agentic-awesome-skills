@@ -1,0 +1,22 @@
+{
+  "id": "new-servers",
+  "name": "new-mcp-servers",
+  "repository": "https://github.com/GHLists/new-mcp-servers",
+  "description": "List of newly created MCP Servers. Automatically updating hourly.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx new-mcp-servers",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "new-servers": {
+      "command": "uvx",
+      "args": [
+        "new-mcp-servers"
+      ]
+    }
+  }
+}

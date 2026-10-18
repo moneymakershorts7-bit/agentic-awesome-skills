@@ -1,0 +1,23 @@
+{
+  "id": "mediawiki-mcp-server",
+  "name": "MediaWiki-MCP-Server",
+  "repository": "https://github.com/Baran1228/MediaWiki-MCP-Server",
+  "description": "Model Context Protocol (MCP) Server to connect your AI with any MediaWiki",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y MediaWiki-MCP-Server",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "mediawiki-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "MediaWiki-MCP-Server"
+      ]
+    }
+  }
+}

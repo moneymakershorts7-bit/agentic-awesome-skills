@@ -1,0 +1,22 @@
+{
+  "id": "chinook-server",
+  "name": "chinook-mcp-server",
+  "repository": "https://github.com/arslanmunawar0/chinook-mcp-server",
+  "description": "Read-only MCP server in Python that lets AI assistants (Cursor, Claude) explore and query a SQLite database. Ships with the Chinook sample DB.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx chinook-mcp-server",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "chinook-server": {
+      "command": "uvx",
+      "args": [
+        "chinook-mcp-server"
+      ]
+    }
+  }
+}

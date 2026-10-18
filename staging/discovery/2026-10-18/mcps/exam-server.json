@@ -1,0 +1,22 @@
+{
+  "id": "exam-server",
+  "name": "exam-mcp-server",
+  "repository": "https://github.com/24f2004250/exam-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx exam-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "exam-server": {
+      "command": "uvx",
+      "args": [
+        "exam-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dompruner",
+  "name": "dompruner-mcp",
+  "repository": "https://github.com/dong7812/dompruner-mcp",
+  "description": "MCP server \u2014 97\u201399% HTML token reduction via DOM AST extraction. No API key, no Vector DB.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y dompruner-mcp",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "dompruner": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dompruner-mcp"
+      ]
+    }
+  }
+}

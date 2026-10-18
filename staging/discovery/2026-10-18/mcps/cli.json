@@ -1,0 +1,23 @@
+{
+  "id": "cli",
+  "name": "cli",
+  "repository": "https://github.com/oscar84703/cli",
+  "description": "Fine-grained control over model context protocol (MCP) clients, servers, and tools. Context is God.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y cli",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "cli"
+      ]
+    }
+  }
+}

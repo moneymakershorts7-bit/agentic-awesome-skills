@@ -1,0 +1,23 @@
+{
+  "id": "trckable",
+  "name": "trckable",
+  "repository": "https://github.com/trckable/trckable",
+  "description": "The only web analytics you'll need. Open source, privacy-first (no cookies, no IP stored, no banner), every feature free. Self-host with one docker run or use trckable Cloud.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y trckable",
+  "stars": 0,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "trckable": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "trckable"
+      ]
+    }
+  }
+}

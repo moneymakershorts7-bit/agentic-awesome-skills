@@ -1,0 +1,23 @@
+{
+  "id": "mysql-server",
+  "name": "mysql-mcp-server",
+  "repository": "https://github.com/askdba/mysql-mcp-server",
+  "description": "MySQL Server implementation for Model Context Protocol (MCP) written in Go.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/askdba/mysql-mcp-server@latest",
+  "stars": 44,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "mysql-server": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/askdba/mysql-mcp-server@latest"
+      ]
+    }
+  }
+}

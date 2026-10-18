@@ -1,0 +1,23 @@
+{
+  "id": "open-servers",
+  "name": "open-mcp-servers",
+  "repository": "https://github.com/open-work-org/open-mcp-servers",
+  "description": "A meta MCP server based on oliverames/meta-mcp-server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y open-mcp-servers",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "open-servers": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "open-mcp-servers"
+      ]
+    }
+  }
+}

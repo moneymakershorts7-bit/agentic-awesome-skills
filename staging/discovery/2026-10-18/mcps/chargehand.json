@@ -1,0 +1,23 @@
+{
+  "id": "chargehand",
+  "name": "chargehand",
+  "repository": "https://github.com/Egoushka/chargehand",
+  "description": "Runs your request on coding agents (Claude Code, OpenCode) and returns an answer whose every citation is checked against a pinned commit. CLI, HTTP and MCP.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/Egoushka/chargehand",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-18",
+  "mcpConfigSnippet": {
+    "chargehand": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/Egoushka/chargehand"
+      ]
+    }
+  }
+}
