@@ -156,3 +156,14 @@ When verification commands fail during the `VERIFYING` phase, `bash-worker` trig
 3. Executes corresponding `playbook.diagnostic_recipes.corrective_action`.
 4. Re-enters `VERIFYING` state.
 5. If after 3 healing attempts tests do not pass, transitions to `FAILED_HEALING_LOOP` and halts execution cleanly with full diagnostic telemetry.
+
+---
+
+## 4. Security, Sandbox & Execution Boundary Guardrails
+
+To prevent unintended side effects, command injection, and unauthorized actions during autonomous contract execution:
+1. **Bounded Shell Command Execution**: All `execution_steps`, `verification_commands`, and diagnostic `corrective_action` entries execute strictly within user-approved workspace boundaries.
+2. **Deterministic Argument Passing**: Never interpolate unsanitized strings or user input directly into subshells. Use pipeline streaming (`printf '%s\n' "${cmd}" | bash`) or explicit argument arrays.
+3. **Restricted Privileges**: All contracts must execute as an unprivileged user (UID 1000 / `USER bashdev`). Root execution (`UID 0`) is strictly blocked by `lib/core/env.sh`.
+4. **Environment Sanitization**: Standard environment variables (`PATH`, `IFS`, `umask 077`) are cleansed before running any playbook step, preventing `LD_PRELOAD`, `PYTHONPATH`, or `CDPATH` hijacking.
+5. **No Network Exfiltration**: Contract verification commands are restricted to local deterministic test suites (Bats, ShellCheck, shfmt). Outbound external network connections during verification are prohibited.
