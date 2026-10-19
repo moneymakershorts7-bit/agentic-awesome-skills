@@ -1,0 +1,23 @@
+{
+  "id": "formhaus",
+  "name": "formhaus",
+  "repository": "https://github.com/formhaus-dev/formhaus",
+  "description": "JSON form definition for React, Vue, Figma and AI agents: validation, conditional fields, multi-step and branching in one file. Zero-dependency core, MCP server, JSON Schema.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y formhaus",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "formhaus": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "formhaus"
+      ]
+    }
+  }
+}

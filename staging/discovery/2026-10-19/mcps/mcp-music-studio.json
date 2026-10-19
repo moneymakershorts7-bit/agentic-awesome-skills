@@ -1,0 +1,23 @@
+{
+  "id": "mcp-music-studio",
+  "name": "mcp-music-studio",
+  "repository": "https://github.com/linxule/mcp-music-studio",
+  "description": "Two-mode MCP music studio: scored composition (ABC notation) and live performance (Strudel). Interactive ext-apps UI with sheet music rendering, 30+ instruments, style presets, and live coding REPL.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-music-studio",
+  "stars": 74,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "mcp-music-studio": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-music-studio"
+      ]
+    }
+  }
+}

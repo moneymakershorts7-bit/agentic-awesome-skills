@@ -1,0 +1,23 @@
+{
+  "id": "x402-data-api",
+  "name": "x402-data-api",
+  "repository": "https://github.com/rezearcher/x402-data-api",
+  "description": "Agent-native x402 pay-per-call data & security APIs on Base (crypto, DeFi, on-chain, Polymarket, MCP security scan)",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y x402-data-api",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "x402-data-api": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "x402-data-api"
+      ]
+    }
+  }
+}

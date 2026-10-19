@@ -1,0 +1,22 @@
+{
+  "id": "mcp-ops-server",
+  "name": "mcp-ops-server",
+  "repository": "https://github.com/nikhilll30/mcp-ops-server",
+  "description": "Production-hardened MCP server with trajectory-level agent evals, scoped auth, sandboxed tools, and a CI eval gate.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-ops-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "mcp-ops-server": {
+      "command": "uvx",
+      "args": [
+        "mcp-ops-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ai-canvas-tauri",
+  "name": "AI-Canvas-tauri",
+  "repository": "https://github.com/Tenney95/AI-Canvas-tauri",
+  "description": "Local-first AI canvas for visual workflows, AI short drama, image/video generation, storyboarding and asset management. ComfyUI, AI agents, MCP & Blender. \u672c\u5730\u4f18\u5148 AI \u753b\u5e03\uff1aAI\u77ed\u5267\u3001AI\u8d44\u4ea7\u7ba1\u7406\u3001\u56fe\u50cf/\u89c6\u9891\u751f\u6210\u3001\u5206\u955c\u5236\u4f5c\u4e0e\u89c6\u9891\u526a\u8f91\u3002",
+  "language": "TypeScript",
+  "transport": "sse",
+  "install_cmd": "npx -y AI-Canvas-tauri",
+  "stars": 240,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "ai-canvas-tauri": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "AI-Canvas-tauri"
+      ]
+    }
+  }
+}

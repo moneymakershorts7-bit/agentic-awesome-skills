@@ -1,0 +1,23 @@
+{
+  "id": "fantommcpserver",
+  "name": "FantomMcpServer",
+  "repository": "https://github.com/Project-SandStar/FantomMcpServer",
+  "description": "MCP server giving AI assistants semantic search, a call graph and Axon parsing over a Fantom / Haxall / SkySpark codebase",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y FantomMcpServer",
+  "stars": 2,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "fantommcpserver": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "FantomMcpServer"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "openroles",
+  "name": "openroles",
+  "repository": "https://github.com/aranculleton/openroles",
+  "description": "Every open job role, straight from an employer\u2019s own hiring system (Greenhouse, Lever, Ashby, Workday). No API key, no dependencies. CLI, Python API and MCP server.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx openroles",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "openroles": {
+      "command": "uvx",
+      "args": [
+        "openroles"
+      ]
+    }
+  }
+}

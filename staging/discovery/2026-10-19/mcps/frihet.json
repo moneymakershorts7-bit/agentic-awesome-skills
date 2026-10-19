@@ -1,0 +1,23 @@
+{
+  "id": "frihet",
+  "name": "frihet-mcp",
+  "repository": "https://github.com/Frihet-io/frihet-mcp",
+  "description": "Official MCP server for Frihet ERP \u2014 157 tools for AI-powered invoicing, tax & e-invoicing compliance (VeriFactu, TicketBAI, Facturae), banking, CRM, HR/payroll & POS. Works with Claude, ChatGPT, Cursor, Windsurf, Cline, Antigravity, Codex, Copilot, Gemini CLI \u2014 and any MCP-compatible client.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y frihet-mcp",
+  "stars": 12,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "frihet": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "frihet-mcp"
+      ]
+    }
+  }
+}

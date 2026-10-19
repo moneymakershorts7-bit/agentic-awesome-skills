@@ -1,0 +1,22 @@
+{
+  "id": "mcp-stolperfalle",
+  "name": "mcp-stolperfalle",
+  "repository": "https://github.com/CaseyRo/mcp-stolperfalle",
+  "description": "FastMCP server that captures and recalls experiential knowledge (Knowledge Units) for AI coding agents \u2014 a superset of the mozilla-ai/cq schema with strict-mode interop",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-stolperfalle",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "mcp-stolperfalle": {
+      "command": "uvx",
+      "args": [
+        "mcp-stolperfalle"
+      ]
+    }
+  }
+}

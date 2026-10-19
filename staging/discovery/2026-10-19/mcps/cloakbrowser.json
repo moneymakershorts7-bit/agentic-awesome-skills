@@ -1,0 +1,23 @@
+{
+  "id": "cloakbrowser",
+  "name": "cloakbrowser-mcp",
+  "repository": "https://github.com/HinataTrivedi/cloakbrowser-mcp",
+  "description": "\u26a1 CloakBrowser MCP server for AI agents: Playwright-powered browsing, clean tool forwarding, Docker support, and multi-session HTTP transport.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y cloakbrowser-mcp",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "cloakbrowser": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "cloakbrowser-mcp"
+      ]
+    }
+  }
+}

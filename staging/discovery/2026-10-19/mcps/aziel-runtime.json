@@ -1,0 +1,23 @@
+{
+  "id": "aziel-runtime",
+  "name": "aziel-runtime",
+  "repository": "https://github.com/AzielEliab/aziel-runtime",
+  "description": "Aziel Runtime by Aziel Eliab \u2014 FragGate MCP Softwares door. https://aziel-runtime.vibelock.workers.dev/ \u00b7 OpenAPI+MCP \u00b7 Glama \u00b7 hubs azieleliab.com \u00b7 corpus \u00b7 godlock.uk \u00b7 HDJ.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y aziel-runtime",
+  "stars": 2,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "aziel-runtime": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "aziel-runtime"
+      ]
+    }
+  }
+}

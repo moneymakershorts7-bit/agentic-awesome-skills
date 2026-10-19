@@ -1,0 +1,23 @@
+{
+  "id": "lotus-wisdom",
+  "name": "lotus-wisdom-mcp",
+  "repository": "https://github.com/linxule/lotus-wisdom-mcp",
+  "description": "Contemplative reasoning MCP server \u2014 Lotus Sutra wisdom framework with interactive ext-apps journey visualization.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y lotus-wisdom-mcp",
+  "stars": 36,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "lotus-wisdom": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "lotus-wisdom-mcp"
+      ]
+    }
+  }
+}

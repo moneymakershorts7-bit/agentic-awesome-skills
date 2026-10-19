@@ -1,0 +1,22 @@
+{
+  "id": "chat-md",
+  "name": "chat.md",
+  "repository": "https://github.com/jeanwalker85/chat.md",
+  "description": "An md file as a chat interface and editable history in one.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx chat.md",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "chat-md": {
+      "command": "uvx",
+      "args": [
+        "chat.md"
+      ]
+    }
+  }
+}

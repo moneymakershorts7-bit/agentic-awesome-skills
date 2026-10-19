@@ -1,0 +1,23 @@
+{
+  "id": "ops-brain",
+  "name": "ops-brain",
+  "repository": "https://github.com/TheK3nsai/ops-brain",
+  "description": "MCP team bus for AI agents (Claude Code, Codex, Grok) across machines: durable handoffs, check-in, and a small cross-agent knowledge store. Rust + PostgreSQL/pgvector.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install ops-brain",
+  "stars": 1,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "ops-brain": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "ops-brain"
+      ]
+    }
+  }
+}

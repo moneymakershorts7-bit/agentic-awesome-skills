@@ -1,0 +1,23 @@
+{
+  "id": "sonovault",
+  "name": "sonovault-mcp",
+  "repository": "https://github.com/rekordcloud/sonovault-mcp",
+  "description": "MCP server for the SonoVault music metadata API. Search 90M+ tracks, artists, and releases from AI assistants.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y sonovault-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "sonovault": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sonovault-mcp"
+      ]
+    }
+  }
+}

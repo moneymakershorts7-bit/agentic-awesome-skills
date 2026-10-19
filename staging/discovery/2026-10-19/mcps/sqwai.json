@@ -1,0 +1,23 @@
+{
+  "id": "sqwai",
+  "name": "sqwai",
+  "repository": "https://github.com/hksae/sqwai",
+  "description": "AI coding agent",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install sqwai",
+  "stars": 4,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "sqwai": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "sqwai"
+      ]
+    }
+  }
+}

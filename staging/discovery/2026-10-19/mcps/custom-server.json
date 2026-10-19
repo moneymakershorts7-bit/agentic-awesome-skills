@@ -1,0 +1,23 @@
+{
+  "id": "custom-server",
+  "name": "custom-mcp-server",
+  "repository": "https://github.com/nikita-simform/custom-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y custom-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "custom-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "custom-mcp-server"
+      ]
+    }
+  }
+}

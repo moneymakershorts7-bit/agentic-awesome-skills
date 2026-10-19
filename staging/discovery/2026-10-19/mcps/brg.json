@@ -1,0 +1,22 @@
+{
+  "id": "brg",
+  "name": "mcp-server-brg",
+  "repository": "https://github.com/BRG-research/mcp-server-brg",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-server-brg",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "brg": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-brg"
+      ]
+    }
+  }
+}

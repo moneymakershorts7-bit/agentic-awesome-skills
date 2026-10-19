@@ -1,0 +1,22 @@
+{
+  "id": "ragflow-server",
+  "name": "ragflow-mcp-server",
+  "repository": "https://github.com/feci/ragflow-mcp-server",
+  "description": "MCP server for managing RAGFlow knowledge bases: datasets, document upload, parsing, chunks, metadata and retrieval",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx ragflow-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "ragflow-server": {
+      "command": "uvx",
+      "args": [
+        "ragflow-mcp-server"
+      ]
+    }
+  }
+}

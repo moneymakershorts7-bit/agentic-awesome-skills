@@ -1,0 +1,22 @@
+{
+  "id": "magg",
+  "name": "magg",
+  "repository": "https://github.com/louiseriksson239/magg",
+  "description": "Magg: The MCP Aggregator",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx magg",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "magg": {
+      "command": "uvx",
+      "args": [
+        "magg"
+      ]
+    }
+  }
+}

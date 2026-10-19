@@ -1,0 +1,23 @@
+{
+  "id": "discord",
+  "name": "mcp-server-discord",
+  "repository": "https://github.com/Wave-Engineering/mcp-server-discord",
+  "description": "MCP server for Discord integration in Claude Code agents",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-discord",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "discord": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-discord"
+      ]
+    }
+  }
+}

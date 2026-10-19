@@ -1,0 +1,23 @@
+{
+  "id": "slop-chop",
+  "name": "slop-chop",
+  "repository": "https://github.com/dcadolph/slop-chop",
+  "description": "Strip AI tells from text: em-dashes, slop words, and stock phrases, in one deterministic local pass. CLI, GitHub Action, Obsidian plugin, and MCP server.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/dcadolph/slop-chop@latest",
+  "stars": 4,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "slop-chop": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/dcadolph/slop-chop@latest"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "codeatlas-server",
+  "name": "codeatlas-mcp-server",
+  "repository": "https://github.com/giauphan/codeatlas-mcp-server",
+  "description": "Local-first MCP server for AI-powered codebase intelligence \u2014 AST analysis, dependency graphs, and semantic search. Your source code never leaves your machine.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y codeatlas-mcp-server",
+  "stars": 10,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "codeatlas-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "codeatlas-mcp-server"
+      ]
+    }
+  }
+}

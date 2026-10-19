@@ -1,0 +1,22 @@
+{
+  "id": "dify-server",
+  "name": "dify-mcp-server",
+  "repository": "https://github.com/MWXrookie/dify-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx dify-mcp-server",
+  "stars": 2,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-19",
+  "mcpConfigSnippet": {
+    "dify-server": {
+      "command": "uvx",
+      "args": [
+        "dify-mcp-server"
+      ]
+    }
+  }
+}
