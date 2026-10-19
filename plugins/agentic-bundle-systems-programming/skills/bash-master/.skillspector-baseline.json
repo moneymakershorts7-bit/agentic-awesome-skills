@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "scanner_version": "2.12.0",
+  "rules": [],
+  "fingerprints": [
+    {
+      "hash": "sha256:bae38e528170076625fb60051d8484dc96ce74ab83dd1cc3aadf1c4f87b6cb87",
+      "rule_id": "AST4",
+      "file": "scripts/bash_master_cli.py",
+      "reason": "Deterministic CLI companion execution wrapper"
+    },
+    {
+      "hash": "sha256:ea9d5f0c095a96922e88e9fefb2e9b8a59592f1ada24c4381da26d5d40accaa5",
+      "rule_id": "AST4",
+      "file": "scripts/bash_master_cli.py",
+      "reason": "Deterministic CLI companion execution wrapper"
+    },
+    {
+      "hash": "sha256:ebb3526e5e02d48914fb2d16ea0d79082984b132fe49d392d12a678a44a03138",
+      "rule_id": "AST4",
+      "file": "scripts/bash_master_cli.py",
+      "reason": "Deterministic CLI companion execution wrapper"
+    },
+    {
+      "hash": "sha256:1ce0734837f34a5ce9f2ae463291e246545a8805f560675799e2e632be25c909",
+      "rule_id": "AST4",
+      "file": "scripts/bash_master_cli.py",
+      "reason": "Deterministic CLI companion execution wrapper"
+    },
+    {
+      "hash": "sha256:be509c422e71db73adc076655eec86347d6443b76fe2f7f136addf2f6fcc39b0",
+      "rule_id": "AST4",
+      "file": "scripts/bash_master_cli.py",
+      "reason": "Deterministic CLI companion execution wrapper"
+    }
+  ]
+}
