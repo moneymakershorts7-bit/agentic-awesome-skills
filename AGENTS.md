@@ -32,6 +32,7 @@ Al interactuar con repositorios y código de skills, se aplicarán estrictamente
   - `refactor(<skill>):` para mejoras estructurales sin alterar la funcionalidad externa.
 - Los commits deben ser **atómicos y descriptivos**, explicando el motivo del cambio y no solo la acción.
 - Mantener la **higiene de Git**: no comitear archivos temporales, cachés (`__pycache__`, `.DS_Store`, `.tmp`), credenciales o claves privadas.
+- **Recuperación Autónoma de Lockfiles Huérfanos:** Ante errores de bloqueo (`Unable to create '.git/index.lock': File exists`), el agente debe verificar si existen procesos `git` activos (`ps aux | grep git`). Si no hay procesos activos y el lockfile es residual (0 bytes o huérfano de sesiones previas), debe eliminar de forma segura el archivo `index.lock` en lugar de abortar la ejecución.
 
 ### B. Protocolo de Auditoría y Verificación de Seguridad
 - **Escaneo previo obligatorio:** Antes de dar por finalizada la modificación o incorporación de un skill, se debe validar con `skillspector` o `skill-inspector`.
