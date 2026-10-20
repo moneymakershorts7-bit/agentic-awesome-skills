@@ -1,0 +1,23 @@
+{
+  "id": "aupm",
+  "name": "AuPM",
+  "repository": "https://github.com/TriplEight/AuPM",
+  "description": "npm-compatible registry that crowdfunds supply chain security: donors pay auditors and maintainers in USDC on Algorand via x402",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y AuPM",
+  "stars": 6,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "aupm": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "AuPM"
+      ]
+    }
+  }
+}

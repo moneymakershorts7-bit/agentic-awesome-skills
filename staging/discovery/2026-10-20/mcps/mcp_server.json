@@ -1,0 +1,22 @@
+{
+  "id": "mcp_server",
+  "name": "MCP_SERVER",
+  "repository": "https://github.com/YUSUF-ARSLAN-DEV/MCP_SERVER",
+  "description": "An Autonomous Agent that Relies on an LLM brain and an MCP server to autonomously browse any website , generate test cases - in the form of type script test scripts , Runs these Scripts then produces a word document that represents a repot of each of these test cases ",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx MCP_SERVER",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "mcp_server": {
+      "command": "uvx",
+      "args": [
+        "MCP_SERVER"
+      ]
+    }
+  }
+}

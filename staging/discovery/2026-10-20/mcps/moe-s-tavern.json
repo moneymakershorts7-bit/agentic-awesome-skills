@@ -1,0 +1,23 @@
+{
+  "id": "moe-s-tavern",
+  "name": "Moe-s-Tavern",
+  "repository": "https://github.com/yaront1111/Moe-s-Tavern",
+  "description": "AI agent task board for Claude Code, Codex, Gemini CLI and Grok Build: plan, approve, build and review inside JetBrains or VS Code, with state in .moe/ in your repo",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y Moe-s-Tavern",
+  "stars": 33,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "moe-s-tavern": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "Moe-s-Tavern"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "bauplan-server",
+  "name": "bauplan-mcp-server",
+  "repository": "https://github.com/BauplanLabs/bauplan-mcp-server",
+  "description": "Repository hosting the open source Bauplan MCP server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx bauplan-mcp-server",
+  "stars": 15,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "bauplan-server": {
+      "command": "uvx",
+      "args": [
+        "bauplan-mcp-server"
+      ]
+    }
+  }
+}

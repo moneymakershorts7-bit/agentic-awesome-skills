@@ -1,0 +1,23 @@
+{
+  "id": "caelo-cms",
+  "name": "caelo-cms",
+  "repository": "https://github.com/caelo-cms/caelo-cms",
+  "description": "Open-source, AI-first CMS: describe changes in chat or drive it from Claude Code over MCP \u2014 you review, you publish. Static public site, self-hosted, MPL 2.0.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y caelo-cms",
+  "stars": 2,
+  "license": "MPL-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "caelo-cms": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "caelo-cms"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "aws-access-bell",
+  "name": "aws-access-bell",
+  "repository": "https://github.com/duynguyendang/aws-access-bell",
+  "description": "Door-intelligence layer for accessibility: Ring events become Fire TV captions, grounded EN/VI explanations, Alexa+ MCP tools and consent-based escalation.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx aws-access-bell",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "aws-access-bell": {
+      "command": "uvx",
+      "args": [
+        "aws-access-bell"
+      ]
+    }
+  }
+}

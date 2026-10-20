@@ -1,0 +1,23 @@
+{
+  "id": "roadmap",
+  "name": "roadmap",
+  "repository": "https://github.com/DrBradStanfield/roadmap",
+  "description": "Health by Dr Brad: a free, local-first personal health record and preventive health plan. Your data stays in one JSON file in your own cloud. Hosted MCP server for Claude and ChatGPT, plus an offline CLI.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y roadmap",
+  "stars": 9,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "roadmap": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "roadmap"
+      ]
+    }
+  }
+}

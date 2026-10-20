@@ -1,0 +1,23 @@
+{
+  "id": "xerj",
+  "name": "xerj",
+  "repository": "https://github.com/xerj-org/xerj",
+  "description": "Local-first search engine and MCP server for AI agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install xerj",
+  "stars": 10849,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "xerj": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "xerj"
+      ]
+    }
+  }
+}

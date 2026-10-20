@@ -1,0 +1,22 @@
+{
+  "id": "mcp-memory-service",
+  "name": "mcp-memory-service",
+  "repository": "https://github.com/doobidoo/mcp-memory-service",
+  "description": "Open-source persistent memory for AI agent pipelines (LangGraph, CrewAI, AutoGen) and Claude. REST API + knowledge graph + autonomous consolidation.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-memory-service",
+  "stars": 2025,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "mcp-memory-service": {
+      "command": "uvx",
+      "args": [
+        "mcp-memory-service"
+      ]
+    }
+  }
+}

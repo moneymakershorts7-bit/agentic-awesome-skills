@@ -1,0 +1,23 @@
+{
+  "id": "studio",
+  "name": "mcp-server-studio",
+  "repository": "https://github.com/forbiddenlink/mcp-server-studio",
+  "description": "Visual studio for building, testing, and managing MCP servers",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-studio",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "studio": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-studio"
+      ]
+    }
+  }
+}

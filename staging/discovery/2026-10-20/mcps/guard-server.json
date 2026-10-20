@@ -1,0 +1,22 @@
+{
+  "id": "guard-server",
+  "name": "guard-mcp-server",
+  "repository": "https://github.com/elhio/guard-mcp-server",
+  "description": "An MCP server that enables AI agents to analyze media for moderation via the Guard API",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx guard-mcp-server",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "guard-server": {
+      "command": "uvx",
+      "args": [
+        "guard-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "equibles",
+  "name": "Equibles",
+  "repository": "https://github.com/daniel3303/Equibles",
+  "description": "Self-hosted, open-source financial data MCP server for AI agents \u2014 SEC filings, XBRL financials, 13F holdings, insider & congressional trades, short interest, FRED, CFTC/CBOE and daily prices across 64 MCP tools. Equibles Cloud adds earnings call transcripts, live quotes, options chains with Greeks, guidance and a screener.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/daniel3303/Equibles",
+  "stars": 236,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "equibles": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/daniel3303/Equibles"
+      ]
+    }
+  }
+}

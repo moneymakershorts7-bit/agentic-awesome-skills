@@ -1,0 +1,23 @@
+{
+  "id": "money-s3-server",
+  "name": "money-s3-mcp-server",
+  "repository": "https://github.com/INTEVIA/money-s3-mcp-server",
+  "description": "MCP server pro propojen\u00ed AI asistent\u016f (Claude, GPT, \u2026) s \u00fa\u010detn\u00edm syst\u00e9mem Money S3 p\u0159es GraphQL API. Umo\u017e\u0148uje \u010d\u00edst a zapisovat faktury, pokladn\u00ed doklady, bankovn\u00ed v\u00fdpisy, sklad, objedn\u00e1vky, \u00fa\u010detnictv\u00ed, mzdy a 15 \u010d\u00edseln\u00edk\u016f \u2014 celkem 129 n\u00e1stroj\u016f p\u0159es standardn\u00ed Model Context Protocol. Podporuje stdio i HTTP transport (Docker ready).",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y money-s3-mcp-server",
+  "stars": 1,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "money-s3-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "money-s3-mcp-server"
+      ]
+    }
+  }
+}

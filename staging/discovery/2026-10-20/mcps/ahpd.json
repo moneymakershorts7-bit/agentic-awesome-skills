@@ -1,0 +1,23 @@
+{
+  "id": "ahpd",
+  "name": "ahpd",
+  "repository": "https://github.com/softov/ahpd",
+  "description": "An Agent Host Protocol server for Claude, pi, ACP agents such as Codex, and any agent a plugin adds, on Node, Bun or Deno - and the parts to build your own with sessions, automations, resources, terminal, containers, vms and bots",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y ahpd",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "ahpd": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ahpd"
+      ]
+    }
+  }
+}

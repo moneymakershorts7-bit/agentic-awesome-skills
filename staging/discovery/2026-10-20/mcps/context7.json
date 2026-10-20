@@ -1,0 +1,23 @@
+{
+  "id": "context7",
+  "name": "context7",
+  "repository": "https://github.com/upstash/context7",
+  "description": "Context7 Platform -- Up-to-date docs for AI agents",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y context7",
+  "stars": 63348,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "context7"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "archestra",
+  "name": "archestra",
+  "repository": "https://github.com/archestra-ai/archestra",
+  "description": "Enterprise AI Platform with guardrails, MCP registry, gateway & orchestrator",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y archestra",
+  "stars": 4378,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "archestra": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "archestra"
+      ]
+    }
+  }
+}

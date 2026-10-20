@@ -1,0 +1,23 @@
+{
+  "id": "n8n",
+  "name": "n8n",
+  "repository": "https://github.com/n8n-io/n8n",
+  "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y n8n",
+  "stars": 208117,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "n8n": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "n8n"
+      ]
+    }
+  }
+}

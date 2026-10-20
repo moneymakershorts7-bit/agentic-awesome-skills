@@ -1,0 +1,23 @@
+{
+  "id": "github-trending-trackian-server",
+  "name": "github-trending-trackian-mcp-server",
+  "repository": "https://github.com/costrict-plugins-repo/github-trending-trackian-mcp-server",
+  "description": "costrict-plugins mirror of github-trending-trackian-mcp-server (auto-generated, do not edit)",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y github-trending-trackian-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "github-trending-trackian-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "github-trending-trackian-mcp-server"
+      ]
+    }
+  }
+}

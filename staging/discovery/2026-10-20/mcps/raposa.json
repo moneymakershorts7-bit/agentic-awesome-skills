@@ -1,0 +1,22 @@
+{
+  "id": "raposa",
+  "name": "raposa-mcp",
+  "repository": "https://github.com/agentlabbusiness/raposa-mcp",
+  "description": "MCP server for Raposa Aval: request_human_approval \u2014 a named person approves or rejects, silence is not consent, hash-chained audit log. Local (uvx) or remote at dcescrypt.com/api/mcp",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx raposa-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "raposa": {
+      "command": "uvx",
+      "args": [
+        "raposa-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "gildongmu",
+  "name": "gildongmu",
+  "repository": "https://github.com/Engccer/gildongmu",
+  "description": "\uc811\uadfc\uc131 \uc6b0\uc120 \ub300\ud55c\ubbfc\uad6d \uae38\ucc3e\uae30 (\uc6f9\u00b7iOS\u00b7CLI\u00b7MCP). \uc2a4\ud06c\ub9b0 \ub9ac\ub354\ub9cc\uc73c\ub85c \uac80\uc0c9\ubd80\ud130 \uc2e4\uc2dc\uac04 \ub3c4\ubcf4 \uc548\ub0b4\uae4c\uc9c0. Accessibility-first navigation for Korea",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y gildongmu",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-20",
+  "mcpConfigSnippet": {
+    "gildongmu": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "gildongmu"
+      ]
+    }
+  }
+}
