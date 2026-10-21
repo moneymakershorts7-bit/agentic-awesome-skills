@@ -1,0 +1,23 @@
+{
+  "id": "tiden-server",
+  "name": "tiden-mcp-server",
+  "repository": "https://github.com/qase-tms/tiden-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/qase-tms/tiden-mcp-server@latest",
+  "stars": 1,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "tiden-server": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/qase-tms/tiden-mcp-server@latest"
+      ]
+    }
+  }
+}

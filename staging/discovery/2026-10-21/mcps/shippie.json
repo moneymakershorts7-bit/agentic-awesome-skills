@@ -1,0 +1,23 @@
+{
+  "id": "shippie",
+  "name": "shippie",
+  "repository": "https://github.com/mattzcarey/shippie",
+  "description": "extendable code review and QA agent \ud83d\udea2",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y shippie",
+  "stars": 2511,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "shippie": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "shippie"
+      ]
+    }
+  }
+}

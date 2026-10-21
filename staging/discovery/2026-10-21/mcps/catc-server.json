@@ -1,0 +1,22 @@
+{
+  "id": "catc-server",
+  "name": "catc-mcp-server",
+  "repository": "https://github.com/dr-stutters/catc-mcp-server",
+  "description": "FastMCP server for Cisco Catalyst Center",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx catc-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "catc-server": {
+      "command": "uvx",
+      "args": [
+        "catc-mcp-server"
+      ]
+    }
+  }
+}

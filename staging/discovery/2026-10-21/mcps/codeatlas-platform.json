@@ -1,0 +1,23 @@
+{
+  "id": "codeatlas-platform",
+  "name": "codeatlas-platform",
+  "repository": "https://github.com/giauphan/codeatlas-platform",
+  "description": "AI-powered codebase intelligence platform \u2014 MCP Server, AST analysis, Knowledge Graph, and semantic memory with  SQLite + sqlite-vec. Analyze any codebase in minutes.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y codeatlas-platform",
+  "stars": 12,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "codeatlas-platform": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "codeatlas-platform"
+      ]
+    }
+  }
+}

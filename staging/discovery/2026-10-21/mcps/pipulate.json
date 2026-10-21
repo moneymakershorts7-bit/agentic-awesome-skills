@@ -1,0 +1,22 @@
+{
+  "id": "pipulate",
+  "name": "pipulate",
+  "repository": "https://github.com/pipulate/pipulate",
+  "description": "Local First AI SEO Software on Nix, FastHTML & HTMX",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx pipulate",
+  "stars": 14,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "pipulate": {
+      "command": "uvx",
+      "args": [
+        "pipulate"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "wealth-agent",
+  "name": "wealth-agent",
+  "repository": "https://github.com/jukky-source/wealth-agent",
+  "description": "Self-hosted Cloudflare Worker selling 7 utility APIs (code review, data cleaning, research briefs, URL metadata, CSV/JSON, regex, diff) to AI agents over x402 HTTP 402 paywalls. No account, no API key.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y wealth-agent",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "wealth-agent": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "wealth-agent"
+      ]
+    }
+  }
+}

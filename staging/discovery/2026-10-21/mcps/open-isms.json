@@ -1,0 +1,23 @@
+{
+  "id": "open-isms",
+  "name": "open-isms",
+  "repository": "https://github.com/NISD2/open-isms",
+  "description": "Free, self-hostable ISMS for the EU NIS 2 Directive. Open-source alternative to compliance SaaS. GDPR, EU AI Act and CRA included. AGPL-3.0.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y open-isms",
+  "stars": 18,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "open-isms": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "open-isms"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "memory-pulse",
+  "name": "memory-pulse",
+  "repository": "https://github.com/t-crew/memory-pulse",
+  "description": "Causal project memory for coding agents: corrections first in every session, and a guard that blocks the edit that writes a withdrawn value back. 4 MCP tools, ~670 tokens. Claude Code \u00b7 Codex \u00b7 Cursor \u00b7 GitHub Actions",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y memory-pulse",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "memory-pulse": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "memory-pulse"
+      ]
+    }
+  }
+}

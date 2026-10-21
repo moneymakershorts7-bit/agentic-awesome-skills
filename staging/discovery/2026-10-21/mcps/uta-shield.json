@@ -1,0 +1,23 @@
+{
+  "id": "uta-shield",
+  "name": "uta-shield",
+  "repository": "https://github.com/eddyflores100-lang/uta-shield",
+  "description": "UTA Shield \u2014 provider-side firewall for MCP servers + PhishGuard threat-intel. Zero dependencies. https://wall.utalabs.tech",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y uta-shield",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "uta-shield": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "uta-shield"
+      ]
+    }
+  }
+}

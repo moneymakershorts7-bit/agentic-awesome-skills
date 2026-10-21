@@ -1,0 +1,23 @@
+{
+  "id": "mcp-sdk-triage",
+  "name": "mcp-sdk-triage",
+  "repository": "https://github.com/mcpmark-eval-liuhezi/mcp-sdk-triage",
+  "description": "Triage digest for modelcontextprotocol/python-sdk adoption evaluation",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-sdk-triage",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "mcp-sdk-triage": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-sdk-triage"
+      ]
+    }
+  }
+}

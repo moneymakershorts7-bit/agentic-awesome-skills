@@ -1,0 +1,22 @@
+{
+  "id": "mcp-servers-playground",
+  "name": "mcp-servers-playground",
+  "repository": "https://github.com/PraneetSingh242/mcp-servers-playground",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-servers-playground",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "mcp-servers-playground": {
+      "command": "uvx",
+      "args": [
+        "mcp-servers-playground"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ascope",
+  "name": "ascope-mcp",
+  "repository": "https://github.com/sarisen/ascope-mcp",
+  "description": "MCP server for Ascope: App Store keyword rankings, popularity and difficulty scores from your Mac.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y ascope-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "ascope": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ascope-mcp"
+      ]
+    }
+  }
+}

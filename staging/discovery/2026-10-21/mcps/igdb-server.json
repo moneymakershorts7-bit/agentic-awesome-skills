@@ -1,0 +1,22 @@
+{
+  "id": "igdb-server",
+  "name": "igdb-mcp-server",
+  "repository": "https://github.com/bielacki/igdb-mcp-server",
+  "description": "MCP server providing seamless access to the IGDB (Internet Game Database) API for AI assistants. Search games, get detailed information, find trending titles, and execute custom queries through the Model Context Protocol.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx igdb-mcp-server",
+  "stars": 5,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "igdb-server": {
+      "command": "uvx",
+      "args": [
+        "igdb-mcp-server"
+      ]
+    }
+  }
+}

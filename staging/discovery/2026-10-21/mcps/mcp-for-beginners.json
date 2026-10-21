@@ -1,0 +1,23 @@
+{
+  "id": "mcp-for-beginners",
+  "name": "mcp-for-beginners",
+  "repository": "https://github.com/microsoft/mcp-for-beginners",
+  "description": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration.",
+  "language": "Jupyter Notebook",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/microsoft/mcp-for-beginners",
+  "stars": 17486,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "mcp-for-beginners": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/microsoft/mcp-for-beginners"
+      ]
+    }
+  }
+}

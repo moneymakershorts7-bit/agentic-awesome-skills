@@ -1,0 +1,23 @@
+{
+  "id": "retro-arg-engine",
+  "name": "retro-arg-engine",
+  "repository": "https://github.com/jdurey/retro-arg-engine",
+  "description": "15-Gate AI Agent & LLM Cryptography Benchmark, Stochastic Parrot Canary Trap (0x3543 vs 0xDEAD), 1983-1989 Rogue AI Dossier (CRE-7 / Nova Hart) & 300,000-Node 1995 GeoCities Time-Loop",
+  "language": "HTML",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/jdurey/retro-arg-engine",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "retro-arg-engine": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/jdurey/retro-arg-engine"
+      ]
+    }
+  }
+}

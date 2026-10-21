@@ -1,0 +1,22 @@
+{
+  "id": "architecture-intelligence-platform",
+  "name": "architecture-intelligence-platform",
+  "repository": "https://github.com/michaelegner/architecture-intelligence-platform",
+  "description": "Trusted architecture context for AI agents: an evidence-backed architecture graph from OpenAPI, AsyncAPI and OpenTelemetry, served over MCP.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx architecture-intelligence-platform",
+  "stars": 8,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "architecture-intelligence-platform": {
+      "command": "uvx",
+      "args": [
+        "architecture-intelligence-platform"
+      ]
+    }
+  }
+}

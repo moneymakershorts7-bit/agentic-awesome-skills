@@ -1,0 +1,22 @@
+{
+  "id": "openmachine",
+  "name": "openmachine",
+  "repository": "https://github.com/OpenMachineLabs/openmachine",
+  "description": "An open-source runtime that lets your existing AI agent operate your machines.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx openmachine",
+  "stars": 26,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "openmachine": {
+      "command": "uvx",
+      "args": [
+        "openmachine"
+      ]
+    }
+  }
+}

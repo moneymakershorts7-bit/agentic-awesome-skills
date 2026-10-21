@@ -1,0 +1,23 @@
+{
+  "id": "trigger-dev",
+  "name": "trigger.dev",
+  "repository": "https://github.com/triggerdotdev/trigger.dev",
+  "description": "Trigger.dev \u2013 build and deploy durable AI agents and workflows",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y trigger.dev",
+  "stars": 16591,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "trigger-dev": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "trigger.dev"
+      ]
+    }
+  }
+}

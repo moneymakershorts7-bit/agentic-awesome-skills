@@ -1,0 +1,23 @@
+{
+  "id": "guide",
+  "name": "mcp-server-guide",
+  "repository": "https://github.com/LambdaTest/mcp-server-guide",
+  "description": "MCP Server Guide to Connect Kane CLI",
+  "language": "PowerShell",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/LambdaTest/mcp-server-guide",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "guide": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/LambdaTest/mcp-server-guide"
+      ]
+    }
+  }
+}

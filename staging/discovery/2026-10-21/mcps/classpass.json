@@ -1,0 +1,23 @@
+{
+  "id": "classpass",
+  "name": "mcp-server-classpass",
+  "repository": "https://github.com/dvcrn/mcp-server-classpass",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-classpass",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "classpass": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-classpass"
+      ]
+    }
+  }
+}

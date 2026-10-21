@@ -1,0 +1,22 @@
+{
+  "id": "mcp",
+  "name": "mcp",
+  "repository": "https://github.com/awslabs/mcp",
+  "description": "Open source MCP Servers for AWS",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp",
+  "stars": 9803,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "mcp": {
+      "command": "uvx",
+      "args": [
+        "mcp"
+      ]
+    }
+  }
+}

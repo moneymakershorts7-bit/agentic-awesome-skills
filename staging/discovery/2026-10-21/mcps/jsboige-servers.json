@@ -1,0 +1,23 @@
+{
+  "id": "jsboige-servers",
+  "name": "jsboige-mcp-servers",
+  "repository": "https://github.com/jsboige/jsboige-mcp-servers",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y jsboige-mcp-servers",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "jsboige-servers": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "jsboige-mcp-servers"
+      ]
+    }
+  }
+}

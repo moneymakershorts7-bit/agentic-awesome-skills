@@ -1,0 +1,23 @@
+{
+  "id": "gitlab-server",
+  "name": "gitlab-mcp-server",
+  "repository": "https://github.com/jmrplens/gitlab-mcp-server",
+  "description": "Open source GitLab MCP server for AI assistants: 2-tool dynamic find/execute over 850+ GitLab actions (1,000+ Enterprise), stdio/HTTP/OAuth, safe/read-only modes.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/jmrplens/gitlab-mcp-server@latest",
+  "stars": 45,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "gitlab-server": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/jmrplens/gitlab-mcp-server@latest"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "agentic-system-core",
+  "name": "agentic-system-core",
+  "repository": "https://github.com/andreibesleaga/agentic-system-core",
+  "description": "AgenticSystemCore: an open specification and reference engine that publishes knowledge Bundles for people and agents \u2014 knowledge-linkset discovery, a JSON-LD graph, llms.txt, MCP & WebMCP tools",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y agentic-system-core",
+  "stars": 2,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "agentic-system-core": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "agentic-system-core"
+      ]
+    }
+  }
+}

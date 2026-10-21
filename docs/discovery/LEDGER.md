@@ -6,3 +6,4 @@ Cumulative log of all automated GitHub discoveries staged for monthly maintenanc
 | :--- | :---: | :---: | :--- | :--- |
 | 2026-10-05 | 15 | 11 | `staging/discovery/2026-10-05/` | [2026-10-05.md](2026-10-05.md) |
 | 2026-10-08 | 67 | 59 | `staging/discovery/2026-10-08/` | [2026-10-08.md](2026-10-08.md) |
+| 2026-10-21 | 65 | 59 | `staging/discovery/2026-10-21/` | [2026-10-21.md](2026-10-21.md) |

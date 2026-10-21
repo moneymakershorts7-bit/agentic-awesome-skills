@@ -1,0 +1,23 @@
+{
+  "id": "tweetfeed-github-io",
+  "name": "TweetFeed.github.io",
+  "repository": "https://github.com/TweetFeed/TweetFeed.github.io",
+  "description": "tweetfeed.live - IOCs shared by the infosec community on X/Twitter: CSV, JSON, RSS, MISP, STIX/TAXII, blocklists, REST API and MCP server. CC0 data.",
+  "language": "HTML",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/TweetFeed/TweetFeed.github.io",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "tweetfeed-github-io": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/TweetFeed/TweetFeed.github.io"
+      ]
+    }
+  }
+}

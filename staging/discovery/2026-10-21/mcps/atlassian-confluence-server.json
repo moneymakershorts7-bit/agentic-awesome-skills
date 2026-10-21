@@ -1,0 +1,23 @@
+{
+  "id": "atlassian-confluence-server",
+  "name": "atlassian-confluence-mcp-server",
+  "repository": "https://github.com/anuragagrawal0430/atlassian-confluence-mcp-server",
+  "description": "MCP server for Atlassian Confluence \u2014 search, read, create and update pages via Claude / Windsurf / any MCP-compatible AI client. Supports Cloud and on-premise (Server/Data Center).",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y atlassian-confluence-mcp-server",
+  "stars": 5,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-21",
+  "mcpConfigSnippet": {
+    "atlassian-confluence-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "atlassian-confluence-mcp-server"
+      ]
+    }
+  }
+}
