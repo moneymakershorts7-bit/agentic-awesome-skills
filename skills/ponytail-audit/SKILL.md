@@ -1,12 +1,19 @@
 ---
 name: ponytail-audit
 description: >
-  Quality audit of a whole repo: bugs, security holes, what breaks under real
-  load, risky code without tests, slow paths, and what to delete, merge or
-  split. Ranked, each finding explained in plain English. One-shot report,
-  changes nothing. Use for "audit this codebase", "review the whole repo",
-  "find bloat", "what can I delete", /ponytail-audit.
+  Quality audit of an entire repository: bugs, security risks, load bottlenecks,
+  untested risky logic, and dead or redundant code to prune.
+argument-hint: "[path]"
+license: MIT
+risk: safe
+source: community
+date_added: "2026-10-22"
 ---
+
+# Ponytail Audit
+
+## When to Use
+Use this skill to conduct a comprehensive senior-developer audit across an entire codebase or subsystem before releases or refactoring.
 
 Audit the whole repo like the senior developer who just inherited it and
 will be paged when it breaks. Order of importance: correct, safe, holds under
@@ -99,5 +106,3 @@ End with:
 
 Nothing found: `What this repo does:`, then `Healthy. Nothing to fix.` and
 one line on what you checked.
-
-One-shot report, changes no code.

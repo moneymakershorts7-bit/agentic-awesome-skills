@@ -1,12 +1,18 @@
 ---
 name: ponytail-gain
 description: >
-  Show ponytail's measured savings (code, cost, speed) from the benchmark.
-  One-shot display. Use for /ponytail-gain, "what does ponytail save",
-  "ponytail impact".
+  Displays the measured benchmark impact scoreboard of Ponytail (code reduction,
+  latency, token density, test rigor).
+license: MIT
+risk: safe
+source: community
+date_added: "2026-10-22"
 ---
 
 # Ponytail Gain
+
+## When to Use
+Use this skill to inspect empirical performance and efficiency benchmarks comparing Ponytail against baseline agents.
 
 Display this scoreboard when invoked. One-shot: do NOT change mode, write flag
 files, or persist anything.
@@ -24,7 +30,7 @@ Source: `benchmarks/results/2026-10-07-agentic.md` and the README.
 Render plain ASCII bars. The bar length shows ponytail as a share of the
 no-skill baseline; the label carries the exact figure:
 
-```
+```text
   ponytail gain           benchmark · 39 tasks × 5 runs · Opus 5.5
 
   no-skill        ████████████████████  100%

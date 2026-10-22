@@ -1,10 +1,19 @@
 ---
 name: ponytail-debt
 description: >
-  List every `shortcut:` comment (and older `ponytail:` ones) as a debt ledger. One-shot report,
-  changes nothing. Use for "ponytail debt", "what did ponytail defer", "list the
-  shortcuts", /ponytail-debt.
+  Harvest and inspect deliberate shortcut comments (shortcut: / ponytail:) across
+  the codebase into a structured technical debt ledger.
+argument-hint: "[marker]"
+license: MIT
+risk: safe
+source: community
+date_added: "2026-10-22"
 ---
+
+# Ponytail Debt
+
+## When to Use
+Use this skill to inspect temporary shortcuts, architectural trade-offs, and deferred work tagged in code comments.
 
 Every deliberate ponytail shortcut is marked with a `shortcut:` comment naming
 its ceiling and upgrade path (older code may say `ponytail:`). This collects them into one ledger so a deferral

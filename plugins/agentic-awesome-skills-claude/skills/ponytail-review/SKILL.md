@@ -1,12 +1,19 @@
 ---
 name: ponytail-review
 description: >
-  Quality review of a change: is the logic right, is it safe, does it hold
-  under real load, is risky code tested, is it fast enough, and is every line
-  needed. Reads the connected code, not only the diff. Each finding is
-  explained in plain English. Use for "review this", "code review", "review
-  the last commit", "review my PR", "is this over-engineered", /ponytail-review.
+  Quality review of a change: verifies logic correctness, safety under load,
+  test coverage for risky paths, performance, and lean implementation.
+argument-hint: "[diff|commit|PR]"
+license: MIT
+risk: safe
+source: community
+date_added: "2026-10-22"
 ---
+
+# Ponytail Review
+
+## When to Use
+Use this skill to review diffs, pull requests, or commits with a senior engineer perspective focused on correctness, safety, load resilience, and conciseness.
 
 Review a change like the senior developer who will be paged when it breaks.
 Order of importance: correct, safe, holds under load, tested, fast, lean.
