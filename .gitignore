@@ -44,7 +44,11 @@ html_*.json
 /SNYK_REMEDIATION_GOAL.md
 /SNYK_REMEDIATION_WORKLOG.md
 /TRADEMARK_REMEDIATION_GOAL.md
-
+# Ignore devsecops master skill files
+plugins/agentic-bundle-aas-security-engineer/skills/devsecops-master/**
+skills/devsecops-master/**
+# Ignore any skillspector baseline JSON files
+**/.skillspector-baseline.json
 # Temporary analysis scripts (tools/scripts/)
 tools/scripts/*voltagent*.py
 tools/scripts/*html*.py
