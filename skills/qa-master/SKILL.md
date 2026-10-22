@@ -1,6 +1,6 @@
 ---
 name: qa-master
-description: Master QA orchestrator for automated & manual testing, test pyramid execution, flaky test quarantine, exploratory charters, and CI/CD quality gates.
+description: Master Quality Code Assurance Agent adhering to the 6-layer software standards hierarchy (ISO 9001/27001/12207/25010/5055/29119, SOC 2, NIST SSDF, ASVS, SonarQube Clean Code) with twin-engine DevSecOps integration.
 risk: safe
 source: self
 source_type: self
@@ -19,60 +19,90 @@ allowed-tools:
 
 Software Quality Assurance is not mere manual clicking or writing flaky browser scripts; it is **ambient, rigorous, multi-layered empirical verification** embedded directly into the developer workflow (*"Shift-Left Quality, Shield-Every-Layer"*).
 
-This master skill operationalizes the industry's foundational testing literature (Khorikov, Crispin & Gregory, Hendrickson, Bach, Meszaros, Newman) and modern SDET tooling architectures (inspired by `testing-starter-kit`, Playwright, Pact, k6, axe-core, Stryker), fortified with **El Décimo Hombre** adversarial stress-testing.
+`qa-master` operationalizes the industry's holistic **6-Layer Software Standards Hierarchy** (ISO 9001, ISO 27001, SOC 2, CMMI v3.0, ISO 12207, ISO 25010, ISO 5055, IEEE 1016, ISO 29119, NIST SSDF, OWASP ASVS, SEI CERT, MISRA, and SonarQube Clean Code gates). Operating alongside `devsecops-master`, `qa-master` forms the complete, self-healing **Twin-Engine Assurance Suite** for modern enterprise engineering.
 
-Operating alongside `devsecops-master`, `qa-master` forms the complete, self-healing twin-engine assurance suite for all modern software development.
+---
+
+## The 6-Layer Software Standards Hierarchy
+
+```
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│ 1. GOBERNANZA, CALIDAD DE PROCESOS Y SEGURIDAD ORGANIZACIONAL                           │
+│    ISO 9001:2015 | ISO/IEC 27001:2022 (8.25-8.32) | SOC 2 Type II | CMMI v3.0 | ISO 22301 │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│ 2. CICLO DE VIDA, OPERACIONES Y GESTIÓN DE SERVICIOS (SDLC)                             │
+│    ISO/IEC/IEEE 12207:2026 | ISO/IEC 20000 / ITIL v4 | ISO/IEC 29110 (VSE Profile)        │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│ 3. CALIDAD DEL PRODUCTO Y ARQUITECTURA DE SISTEMAS                                      │
+│    ISO/IEC 25010 (SQuaRE) | ISO/IEC 5055 (CISQ 148 Rules) | IEEE 1016:2009 | C4 Model   │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│ 4. PRUEBAS, VALIDACIÓN Y VERIFICACIÓN (TESTING)                                         │
+│    ISO/IEC/IEEE 29119 (1-5) | ISTQB | TMap | Test Pyramid | Mutation (MSI >= 80%)       │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│ 5. CICLO DE VIDA DE DESARROLLO SEGURO (SSDLC)                                           │
+│    NIST SP 800-218 (SSDF v1.1) | OWASP SAMM v2 | OWASP ASVS v4.0.3 | SLSA Level 1-4    │
+├─────────────────────────────────────────────────────────────────────────────────────────┤
+│ 6. NORMAS DE CODIFICACIÓN Y ANÁLISIS ESTÁTICO DETERMINÍSTICO                            │
+│    SEI CERT | MISRA C/C++:2023 | SonarQube Clean Code Quality Gate | McCabe CC <= 10     │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+For complete clause mappings, formulas, and metric thresholds, consult [`references/01-enterprise-standards-hierarchy.md`](references/01-enterprise-standards-hierarchy.md).
 
 ---
 
 ## When to Use This Skill
 
 Invoke `qa-master` whenever you need to:
-1. **Verify Any Code Change or Development:** Execute automated test discovery and run unit, integration, contract, and E2E suites on every feature or refactor.
-2. **Design a Comprehensive Test Strategy:** Decompose an application using SFDIPOT (Structure, Function, Data, Interfaces, Platform, Operations, Time) and Agile Testing Quadrants (Q1-Q4).
-3. **Conduct Session-Based Exploratory Testing (Manual QA):** Formulate targeted charters and evaluate edge cases against the 11 FEW HICCUPPS consistency oracles.
-4. **Implement Flake-Free Browser Automation:** Build resilient Playwright/Cypress suites using accessibility-tree locators (`getByRole`, `getByLabel`), network interception, and auto-waiting.
-5. **Enforce Consumer-Driven Contract Testing (Pact):** Verify microservice schema compatibility and eliminate brittle multi-service integration dependencies.
-6. **Detect and Quarantine Flaky Tests:** Execute variance-stress runs to detect non-deterministic flakes and automatically isolate them from blocking CI gates.
-7. **Measure Assertion Quality (Mutation Testing):** Evaluate the Mutation Score Index (MSI) to ensure tests catch actual logic faults rather than passively exercising code lines.
-8. **Automate Performance & Accessibility Gates:** Run k6 latency/error smoke gates and axe-core WCAG 2.2 AA accessibility audits in CI.
-9. **Return Machine-Readable CI Reports:** Consolidate test verdicts into standardized JSON, JUnit XML, and GitHub PR comment scorecards.
+1. **Audit Enterprise Standards Compliance:** Generate and verify machine-readable manifests (`.audit/rtm_manifest.json`, `.audit/peer_review_manifest.json`, `.audit/cm_manifest.json`, `.audit/soc2_change_record.json`).
+2. **Enforce Static Architecture Fitness (ISO 5055 & Clean Code):** Verify that McCabe Cyclomatic Complexity $\le 10$, Cognitive Complexity $\le 15$, Nesting Depth $\le 4$, and file lengths $\le 500$ LOC.
+3. **Verify API Schema Contracts:** Validate OpenAPI 3.1 and AsyncAPI specifications for breaking drift using Spectral and Schemathesis.
+4. **Execute the Automated Test Pyramid:** Discover and run Unit (~70%), Integration (~20%), and Contract/E2E (~10%) test suites.
+5. **Evaluate Assertion Quality via Mutation Testing:** Run Stryker, Mutmut, Pitest, or Infection to enforce a Mutation Score Indicator ($\text{MSI} \ge 80\%$).
+6. **Detect and Quarantine Flaky Tests:** Execute variance-stress runs (minimum 10 iterations) to detect non-deterministic tests and isolate them from blocking CI.
+7. **Audit Non-Functional Latency & Accessibility:** Run k6 smoke tests (P95 latency $\le 200\text{ms}$) and axe-core WCAG 2.2 AA accessibility audits.
+8. **Enforce Twin-Engine Convergence Gate:** Aggregate all QA and DevSecOps findings into `.audit/unified_quality_scorecard.json` with unconditional pull request veto power.
 
 ---
 
-## The 6-Stage Universal QA Engineering Lifecycle
+## The Orchestrator-Worker Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                    UNIVERSAL QA ENGINEERING LIFECYCLE                       │
-└─────────────────────────────────────┬───────────────────────────────────────┘
-                                      │
-   ┌──────────────────────────────────┼──────────────────────────────────┐
-   ▼                                  ▼                                  ▼
-[Stage 1: Strategy & Modeling]   [Stage 2: Unit & Invariants]   [Stage 3: Contract & Boundary]
-- SFDIPOT Product Decomposition   - Classical xUnit School       - Consumer-Driven Contracts (Pact)
-- Agile Testing Quadrants (Q1-Q4) - Property-Based (fast-check)  - API Schema Validation
-- Risk-Weighted Test Layering     - Mutation Score Index (MSI)   - Big List of Naughty Strings
-   │                                  │                                  │
-   └──────────────────────────────────┼──────────────────────────────────┘
-                                      │
-   ┌──────────────────────────────────┼──────────────────────────────────┐
-   ▼                                  ▼                                  ▼
-[Stage 4: Integration & State]   [Stage 5: E2E User Journeys]   [Stage 6: Non-Functional & Exploratory]
-- Testcontainers (Real DB/Queues) - Resilient Playwright Locators - Performance Smoke (k6 p95 < 500ms)
-- Clean Transaction Rollbacks    - Visual Regression (Pixelmatch) - WCAG 2.2 AA Accessibility (Axe)
-- Ephemeral In-Memory Servers     - Network Mocking at Protocol   - SBTM Exploratory Charters
-   │                                  │                                  │
-   └──────────────────────────────────┼──────────────────────────────────┘
-                                      │
-                                      ▼
-             [Stage 7: Machine-Readable CI Gate & Reporting]
-             - Unified Test Summary JSON & JUnit XML
-             - PR Comment Scorecards & Flake Quarantine Trigger
-             - Joint Evaluation with DevSecOps Master
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│                   QA Lead Orchestrator & Task Decomposer (`qa-lead`)                    │
+│   • Bounded Functional Slicing Engine (1 slice at a time)                               │
+│   • Task + Playbook Contract Enforcer (Zero Ambiguity)                                  │
+│   • 6-Layer Standards Compliance Governor                                              │
+└────────────────────────────────────────────┬────────────────────────────────────────────┘
+                                             │ Dispatches Decoupled Tasks
+                    ┌────────────────────────┼────────────────────────┐
+                    ▼                        ▼                        ▼
+     ┌─────────────────────────┐ ┌─────────────────────────┐ ┌─────────────────────────┐
+     │  Worker 1: Governance   │ │  Worker 2: Architecture │ │   Worker 3: Dynamic     │
+     │     & Process Audit     │ │    & Interface Fitness  │ │    Test Automation      │
+     │  (ISO 9001, 27001,      │ │  (ISO 25010, ISO 5055,  │ │  (ISO 29119, Pyramid,   │
+     │   SOC 2, CMMI, 12207)   │ │   IEEE 1016, C4, Arch)  │ │   Mutation, Property)   │
+     └─────────────────────────┘ └─────────────────────────┘ └─────────────────────────┘
+                    │                        │                        │
+                    ▼                        ▼                        ▼
+     ┌─────────────────────────┐ ┌─────────────────────────┐ ┌─────────────────────────┐
+     │  Worker 4: Flaky Test   │ │ Worker 5: Non-Functional│ │      TWIN-ENGINE:       │
+     │   & Chaos Resilience    │ │   Performance & A11y    │ │    devsecops-master     │
+     │ (Quarantine, Stress,    │ │ (k6 Latency, Memory,    │ │ (ASVS, SAST, SBOM,      │
+     │  Fault Injection)       │ │  Axe-Core WCAG 2.2 AA)  │ │  Cosign, Container)     │
+     └─────────────────────────┘ └─────────────────────────┘ └─────────────────────────┘
+                    │                        │                        │
+                    └────────────────────────┼────────────────────────┘
+                                             │ Emits Verification Artifacts (.audit/*.json)
+                                             ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────┐
+│           Independent Adversarial Quality Gatekeeper (`qa-verifier-adversary`)          │
+│   • Unconditional Pull Request Veto Power (Non-negotiable Gate)                         │
+│   • ISO 5055 Automated Measure Audit (Zero Blocker/Critical)                            │
+│   • SonarQube Clean Code Gate (CC <= 10, Duplication < 3%, Line Cov >= 80%)            │
+│   • SARIF 2.1.0 Multi-Engine Aggregator & Machine Attestation Signer                    │
+└─────────────────────────────────────────────────────────────────────────────────────────┘
 ```
-
-For complete phase details, consult [`references/literature-and-canon.md`](references/literature-and-canon.md).
 
 ---
 
@@ -85,32 +115,15 @@ Pull request test gating suites MUST complete execution in under 5 minutes. Heav
 
 | Test Dimension | Blocker Threshold (Exit Code 1 / Block PR) | Warning Threshold (Exit Code 0 / Annotate PR) |
 | :--- | :--- | :--- |
+| **Requirements (RTM)** | $\text{Coverage} < 100.0\%$ on documented user stories | Minor documentation formatting warning |
+| **Peer Review** | Author approved own PR (Two-Person Rule violation) | Reviewer response latency $> 24\text{ hours}$ |
 | **Functional Tests** | Any test failure in Unit, Contract, Integration, or E2E suites | Skipped tests marked with `@todo` or `@pending` |
 | **Flaky Tests** | Flake rate $> 0\%$ in blocking suite (must quarantine) | Flake rate $> 0\%$ in non-blocking quarantine suite |
-| **Mutation Score** | $\text{MSI} < 70\%$ on critical domain modules | $\text{MSI} < 85\%$ on secondary utility modules |
+| **Mutation Score** | $\text{MSI} < 80\%$ on modified code or critical domain modules | $\text{MSI} < 85\%$ on secondary utility modules |
+| **Complexity (CC)** | McCabe $\text{CC} > 10$ OR Cognitive Complexity $> 15$ | McCabe $\text{CC}$ between $8 - 10$ |
+| **Nesting Depth** | Indentation depth $> 4$ levels | Indentation depth equal to 4 levels |
 | **Accessibility** | $\ge 1$ Critical or Serious WCAG 2.2 AA violation | Minor or Moderate contrast / layout warnings |
 | **Performance** | Error rate $\ge 0.1\%$ OR p95 latency regressed $> 50\%$ | p95 latency regressed between $20\% - 50\%$ |
-| **Test Doubles** | London-school mock hell on pure domain calculation | Mocks used at external HTTP/I-O boundaries |
-
-### 3. Locator Selection Hierarchy (Flake Prevention)
-Never use brittle CSS classes (`.submit-btn-v2`) or XPath (`/html/body/div[1]/button`).
-1. `page.getByRole('button', { name: /confirm payment/i })` (Accessibility Tree standard)
-2. `page.getByLabel('Work Email')`
-3. `page.getByPlaceholder('name@example.com')`
-4. `page.getByTestId('checkout-action-button')` (Explicit contract)
-
----
-
-## El Décimo Hombre Adversarial Defenses
-
-Standard QA often degrades into "coverage theater." This skill enforces 4 adversarial tripwires:
-
-1. **Anti-Flake Quarantine Gate:** Any test failing and passing intermittently on the same commit SHA is instantly quarantined into a separate quarantine pipeline. Rerunning CI until green is strictly prohibited.
-2. **Anti-Mock Drift Gate:** Testing domain behavior against real in-memory models. External third-party APIs must use Consumer-Driven Contracts or ephemeral container sandboxes (Testcontainers).
-3. **Anti-Hollow Coverage Gate:** High statement coverage without assertions is flagged via Mutation Testing. A test suite must demonstrate $\text{MSI} \ge 70\%$.
-4. **Order Randomization Gate:** Test suites must pass when run in randomized sequence (`--randomize` / `--shuffle`) to eliminate dirty state leaks and hidden execution coupling.
-
-Consult [`references/decimo-hombre-adversarial.md`](references/decimo-hombre-adversarial.md) for full pre-AAR analyses.
 
 ---
 
@@ -118,34 +131,41 @@ Consult [`references/decimo-hombre-adversarial.md`](references/decimo-hombre-adv
 
 The skill provides production CLI tools located in `~/.agents/skills/qa-master/scripts/`:
 
-### 1. Unified QA Orchestrator
-Auto-detects frameworks (Pytest, Unittest, Vitest, Jest, Bun test, Playwright, Go test, Cargo test), executes suites, and aggregates results:
+### 1. QA Master Convergence Gate
+Aggregates QA and DevSecOps SARIF logs, evaluates all 6 layers, outputs `.audit/unified_quality_scorecard.json`, and exits 0 on PASS, 1 on FAIL:
 ```bash
-python3 ~/.agents/skills/qa-master/scripts/qa_orchestrator.py --run-all . --output-dir reports/qa/
+python3 ~/.agents/skills/qa-master/scripts/qa_master_gate.py .audit/
 ```
 
-### 2. Heuristic Test Plan & Charter Generator
-Decomposes the codebase into SFDIPOT models and creates Session-Based Exploratory Charters:
+### 2. Governance Auditor
+Audits the Requirements Traceability Matrix (RTM) and enforces the Two-Person Rule:
 ```bash
-python3 ~/.agents/skills/qa-master/scripts/generate_test_plan.py --repo . --output qa_plan.json
+python3 ~/.agents/skills/qa-master/scripts/governance_auditor.py --audit-rtm . --output .audit/rtm_manifest.json
+python3 ~/.agents/skills/qa-master/scripts/governance_auditor.py --verify-peer-review .audit/peer_review_manifest.json
 ```
 
-### 3. Flaky Test Detector & Variance Profiler
-Runs a candidate command $N$ times to verify determinism and compute timing variance:
+### 3. Architecture Fitness & Code Quality Checker
+Evaluates Cyclomatic Complexity (CC $\le 10$), Nesting Depth ($\le 4$), and file length ($\le 500$ LOC):
 ```bash
-python3 ~/.agents/skills/qa-master/scripts/flaky_detector.py --cmd "python3 -m unittest test_api.py" --runs 5
+python3 ~/.agents/skills/qa-master/scripts/architecture_fitness_checker.py --check-complexity . --max-cc 10 --max-nesting 4 --output .audit/complexity_audit.json
 ```
 
-### 4. Mutation Testing Quality Evaluator
-Mutates operators and conditions in target files to verify test assertion quality:
+### 4. Unified QA Orchestrator
+Auto-detects test frameworks, executes suites, and aggregates results into `.audit/test_summary_report.json`:
 ```bash
-python3 ~/.agents/skills/qa-master/scripts/mutation_check.py --file src/calc.py --test-cmd "python3 -m unittest test_calc.py" --threshold 70
+python3 ~/.agents/skills/qa-master/scripts/qa_orchestrator.py --run-all . --output-dir .audit/
 ```
 
-### 5. Unified PR Reporter & Gate Aggregator
-Ingests QA and DevSecOps results to output consolidated Markdown PR comments and CI verdicts:
+### 5. Flaky Test Detector & Variance Profiler
+Runs candidate test commands $N$ times to detect non-deterministic flakes:
 ```bash
-python3 ~/.agents/skills/qa-master/scripts/qa_reporter.py --qa-results reports/qa/qa_results.json --security-results reports/security_audit.json --output reports/pr_comment.md
+python3 ~/.agents/skills/qa-master/scripts/flaky_detector.py --cmd "pytest tests/" --runs 10
+```
+
+### 6. Mutation Testing Quality Evaluator
+Mutates AST operators and conditions to verify that test suites catch injected defects ($\text{MSI} \ge 80\%$):
+```bash
+python3 ~/.agents/skills/qa-master/scripts/mutation_check.py --file src/calc.py --test-cmd "pytest tests/" --threshold 80
 ```
 
 ---
@@ -158,13 +178,19 @@ python3 ~/.agents/skills/qa-master/scripts/qa_reporter.py --qa-results reports/q
 - [`04-flaky-test-quarantine-and-triage.md`](playbooks/04-flaky-test-quarantine-and-triage.md): Flake detection, isolation quarantine, and root-cause repair.
 - [`05-performance-and-load-gating.md`](playbooks/05-performance-and-load-gating.md): k6 smoke and sustained load testing with strict latency SLAs.
 - [`06-devsecops-qa-joint-gate.md`](playbooks/06-devsecops-qa-joint-gate.md): Twin-engine deployment pipeline combining `devsecops-master` and `qa-master`.
+- [`07-iso-governance-rtm-audit.md`](playbooks/07-iso-governance-rtm-audit.md): Requirements traceability matrix, two-person rule, and SOC 2 / ISO 27001 change manifests.
+- [`08-architecture-fitness-and-iso5055.md`](playbooks/08-architecture-fitness-and-iso5055.md): CISQ source code rules, Cyclomatic Complexity $\le 10$, and OpenAPI contract checks.
 
 ---
 
 ## References Directory Index
 
+- [`01-enterprise-standards-hierarchy.md`](references/01-enterprise-standards-hierarchy.md): Comprehensive 6-layer software standards guide with exact clauses and metrics.
+- [`02-architecture-and-fitness-rules.md`](references/02-architecture-and-fitness-rules.md): ISO 25010/5055 CISQ 148 rules, IEEE 1016 viewpoints, and ArchUnit/TsArch fitness functions.
+- [`03-iso-29119-test-process-and-schemas.md`](references/03-iso-29119-test-process-and-schemas.md): ISO/IEC/IEEE 29119 Parts 1–5, Test Pyramid, Mutation Testing ($\text{MSI} \ge 80\%$), and JSON report schemas.
+- [`04-twin-engine-devsecops-integration.md`](references/04-twin-engine-devsecops-integration.md): Twin-Engine SARIF aggregation, ASVS L1–L3 convergence, and PR veto architecture.
 - [`literature-and-canon.md`](references/literature-and-canon.md): Deep synthesis of Khorikov, Crispin & Gregory, Hendrickson, Bach, Meszaros, Newman.
-- [`test-automation-matrix.md`](references/test-automation-matrix.md): Concrete configurations and cheat sheets for Playwright, Cypress, Vitest, Pact, k6, axe-core.
+- [`test-automation-matrix.md`](references/test-automation-matrix.md): Toolchain configurations for Playwright, Cypress, Vitest, Pact, k6, axe-core.
 - [`exploratory-heuristics-and-oracles.md`](references/exploratory-heuristics-and-oracles.md): SFDIPOT product breakdown, FEW HICCUPPS oracles, defect severity taxonomy.
 - [`decimo-hombre-adversarial.md`](references/decimo-hombre-adversarial.md): Adversarial stress-testing, the 5 false QA illusions, and pre-AAR scenarios.
 - [`unified-test-report-schema.md`](references/unified-test-report-schema.md): Machine-readable JSON schema specification for CI/CD gates.
