@@ -1,0 +1,23 @@
+{
+  "id": "ghcheck",
+  "name": "ghcheck",
+  "repository": "https://github.com/momomo12312hgfv/ghcheck",
+  "description": "One scan, one report: CI token blast radius, workflow holes, leaked secrets and agent configuration. Also an MCP server.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y ghcheck",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "ghcheck": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ghcheck"
+      ]
+    }
+  }
+}

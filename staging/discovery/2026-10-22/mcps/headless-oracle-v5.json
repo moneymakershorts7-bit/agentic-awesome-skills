@@ -1,0 +1,23 @@
+{
+  "id": "headless-oracle-v5",
+  "name": "headless-oracle-v5",
+  "repository": "https://github.com/LembaGang/headless-oracle-v5",
+  "description": "Ed25519-signed market status oracle for RWA liquidation bots. Prevents bad debt by cryptographically verifying if the NYSE is open before execution. Built on Cloudflare Workers",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y headless-oracle-v5",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "headless-oracle-v5": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "headless-oracle-v5"
+      ]
+    }
+  }
+}

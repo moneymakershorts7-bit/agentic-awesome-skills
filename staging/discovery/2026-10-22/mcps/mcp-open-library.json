@@ -1,0 +1,23 @@
+{
+  "id": "mcp-open-library",
+  "name": "mcp-open-library",
+  "repository": "https://github.com/8enSmith/mcp-open-library",
+  "description": "A Model Context Protocol (MCP) server for the Internet Archive's Open Library API that enables AI assistants to search for book and author information.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-open-library",
+  "stars": 96,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "mcp-open-library": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-open-library"
+      ]
+    }
+  }
+}

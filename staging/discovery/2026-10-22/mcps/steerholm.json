@@ -1,0 +1,22 @@
+{
+  "id": "steerholm",
+  "name": "steerholm",
+  "repository": "https://github.com/steerholm/steerholm",
+  "description": "An action plane for your agents, a control plane for you.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx steerholm",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "steerholm": {
+      "command": "uvx",
+      "args": [
+        "steerholm"
+      ]
+    }
+  }
+}

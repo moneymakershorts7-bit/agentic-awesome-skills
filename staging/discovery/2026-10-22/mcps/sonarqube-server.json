@@ -1,0 +1,23 @@
+{
+  "id": "sonarqube-server",
+  "name": "sonarqube-mcp-server",
+  "repository": "https://github.com/SonarSource/sonarqube-mcp-server",
+  "description": "Official SonarQube MCP Server for code quality and security in AI agents",
+  "language": "Java",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/SonarSource/sonarqube-mcp-server",
+  "stars": 668,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "sonarqube-server": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/SonarSource/sonarqube-mcp-server"
+      ]
+    }
+  }
+}

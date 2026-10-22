@@ -1,0 +1,23 @@
+{
+  "id": "mcp",
+  "name": "mcp",
+  "repository": "https://github.com/chinaready/mcp",
+  "description": "Remote MCP server for chinaready.co \u2014 search China market-entry guides, browse topics, read articles. Streamable HTTP, no auth.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp"
+      ]
+    }
+  }
+}

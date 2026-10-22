@@ -1,0 +1,23 @@
+{
+  "id": "dsh-plugin-cocos",
+  "name": "dsh-plugin-cocos-mcp",
+  "repository": "https://github.com/Ppppan9/dsh-plugin-cocos-mcp",
+  "description": "Drive a live Cocos Creator 3.8.x editor from AI agents via MCP. Reverse-engineered from Cocos Creator's own 3.8.8 editor contract: 111 verified editor messages, zero-dependency stdio server, editor bridge with undo-journal transactions, and an offline prefab/animation editor.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y dsh-plugin-cocos-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "dsh-plugin-cocos": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dsh-plugin-cocos-mcp"
+      ]
+    }
+  }
+}

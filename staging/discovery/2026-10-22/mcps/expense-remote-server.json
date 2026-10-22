@@ -1,0 +1,22 @@
+{
+  "id": "expense-remote-server",
+  "name": "expense-remote-mcp-server",
+  "repository": "https://github.com/DivyaAKumar/expense-remote-mcp-server",
+  "description": "A test mcp server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx expense-remote-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "expense-remote-server": {
+      "command": "uvx",
+      "args": [
+        "expense-remote-mcp-server"
+      ]
+    }
+  }
+}

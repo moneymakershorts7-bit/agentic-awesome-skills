@@ -1,0 +1,22 @@
+{
+  "id": "mindforge",
+  "name": "MindForge",
+  "repository": "https://github.com/ProjAnvil/MindForge",
+  "description": "A comprehensive AI toolkit for Claude Code featuring multi-language agents, reusable skills, and MCP services to supercharge your development workflow",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx MindForge",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "mindforge": {
+      "command": "uvx",
+      "args": [
+        "MindForge"
+      ]
+    }
+  }
+}

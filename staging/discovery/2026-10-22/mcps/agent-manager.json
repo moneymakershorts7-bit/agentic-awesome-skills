@@ -1,0 +1,23 @@
+{
+  "id": "agent-manager",
+  "name": "agent-manager",
+  "repository": "https://github.com/giantswarm/agent-manager",
+  "description": "Agent lifecycle service for the Agent Platform: create, update, delete and inspect kagent agents (Flux HelmReleases of the agent chart) via REST and MCP",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/giantswarm/agent-manager@latest",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "agent-manager": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/giantswarm/agent-manager@latest"
+      ]
+    }
+  }
+}

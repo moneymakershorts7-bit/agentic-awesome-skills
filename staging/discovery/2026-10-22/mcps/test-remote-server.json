@@ -1,0 +1,23 @@
+{
+  "id": "test-remote-server",
+  "name": "test-remote-mcp-server",
+  "repository": "https://github.com/peppywolf16/test-remote-mcp-server",
+  "description": "A test mcp server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y test-remote-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "test-remote-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "test-remote-mcp-server"
+      ]
+    }
+  }
+}

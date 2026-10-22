@@ -1,0 +1,23 @@
+{
+  "id": "claudexor",
+  "name": "claudexor",
+  "repository": "https://github.com/razzant/claudexor",
+  "description": "Multi-harness control plane for Claude Code, Codex, Cursor, and OpenCode: quota-aware rotation across multiple Claude/Codex subscriptions, shared thread context, and cross-model review.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y claudexor",
+  "stars": 516,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "claudexor": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "claudexor"
+      ]
+    }
+  }
+}

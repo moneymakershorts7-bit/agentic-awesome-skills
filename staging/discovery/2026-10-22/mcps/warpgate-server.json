@@ -1,0 +1,23 @@
+{
+  "id": "warpgate-server",
+  "name": "warpgate-mcp-server",
+  "repository": "https://github.com/CowDogMoo/warpgate-mcp-server",
+  "description": "The Warp Gate MCP Server provides seamless integration for building multi-architecture containers and golden images using modular Packer templates and Taskfile-driven workflows.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/CowDogMoo/warpgate-mcp-server@latest",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "warpgate-server": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/CowDogMoo/warpgate-mcp-server@latest"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "solon-ai",
+  "name": "solon-ai",
+  "repository": "https://github.com/opensolon/solon-ai",
+  "description": "Java AI application development framework (supports LLM-tool,skill; RAG; MCP; Agent-ReAct,Team-Agent). Compatible with java8 ~ java26. It can also be embedded in SpringBoot, jFinal, Vert.x, Quarkus, and other frameworks.",
+  "language": "Java",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/opensolon/solon-ai",
+  "stars": 467,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "solon-ai": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/opensolon/solon-ai"
+      ]
+    }
+  }
+}

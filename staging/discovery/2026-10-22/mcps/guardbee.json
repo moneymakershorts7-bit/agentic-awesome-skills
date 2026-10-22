@@ -1,0 +1,23 @@
+{
+  "id": "guardbee",
+  "name": "guardbee-mcp",
+  "repository": "https://github.com/GuardBee/guardbee-mcp",
+  "description": "Security for AI agents and MCP: a gateway that masks PII and secrets, blocks prompt injection and toxic flows, plus scanners for the OWASP MCP Top 10.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y guardbee-mcp",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "guardbee": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "guardbee-mcp"
+      ]
+    }
+  }
+}

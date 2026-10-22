@@ -1,0 +1,23 @@
+{
+  "id": "desktop-touch",
+  "name": "desktop-touch-mcp",
+  "repository": "https://github.com/Harusame64/desktop-touch-mcp",
+  "description": "Windows computer-use MCP server: drive any desktop app via semantic discover-then-act targeting (entities + leases, not pixel coordinates), with per-action perception guards, a native Rust UIA engine, Chrome CDP, and Key Locker credential autofill for ssh/sudo password prompts. Works with Claude, Cursor, and any MCP client.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y desktop-touch-mcp",
+  "stars": 22,
+  "license": "MIT",
+  "risk": "MEDIUM",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "desktop-touch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "desktop-touch-mcp"
+      ]
+    }
+  }
+}

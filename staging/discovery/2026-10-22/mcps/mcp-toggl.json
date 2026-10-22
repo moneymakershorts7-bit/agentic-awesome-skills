@@ -1,0 +1,23 @@
+{
+  "id": "mcp-toggl",
+  "name": "mcp-toggl",
+  "repository": "https://github.com/verygoodplugins/mcp-toggl",
+  "description": "MCP server for Toggl Track integration with intelligent caching and reporting tools",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-toggl",
+  "stars": 36,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "mcp-toggl": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-toggl"
+      ]
+    }
+  }
+}

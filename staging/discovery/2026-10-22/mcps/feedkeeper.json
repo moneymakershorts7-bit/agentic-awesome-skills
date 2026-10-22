@@ -1,0 +1,23 @@
+{
+  "id": "feedkeeper",
+  "name": "feedkeeper",
+  "repository": "https://github.com/visualfusion/feedkeeper",
+  "description": "Self-hosted, multi-user RSS/Atom feed manager with a remote-capable MCP server.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y feedkeeper",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "feedkeeper": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "feedkeeper"
+      ]
+    }
+  }
+}

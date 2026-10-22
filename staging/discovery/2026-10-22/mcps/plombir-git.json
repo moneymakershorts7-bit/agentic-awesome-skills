@@ -1,0 +1,23 @@
+{
+  "id": "plombir-git",
+  "name": "plombir-git",
+  "repository": "https://github.com/Nettechnologys/plombir-git",
+  "description": "Self-hosted Git forge with pull requests, CI, package registries, and MCP tools",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install plombir-git",
+  "stars": 15,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "plombir-git": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "plombir-git"
+      ]
+    }
+  }
+}

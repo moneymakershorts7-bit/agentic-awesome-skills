@@ -1,0 +1,23 @@
+{
+  "id": "muster",
+  "name": "muster",
+  "repository": "https://github.com/giantswarm/muster",
+  "description": "Aggregating MCP server: one authenticated endpoint for every MCP server a platform runs, with meta-tool discovery, toolsets, OAuth 2.1 and SSO through Dex, and Kubernetes custom resources",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/giantswarm/muster@latest",
+  "stars": 39,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "muster": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/giantswarm/muster@latest"
+      ]
+    }
+  }
+}

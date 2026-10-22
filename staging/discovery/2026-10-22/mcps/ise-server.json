@@ -1,0 +1,22 @@
+{
+  "id": "ise-server",
+  "name": "ise-mcp-server",
+  "repository": "https://github.com/dr-stutters/ise-mcp-server",
+  "description": "FastMCP server for Cisco Identity Services Engine (ISE)",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx ise-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "ise-server": {
+      "command": "uvx",
+      "args": [
+        "ise-mcp-server"
+      ]
+    }
+  }
+}

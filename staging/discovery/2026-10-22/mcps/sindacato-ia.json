@@ -1,0 +1,23 @@
+{
+  "id": "sindacato-ia",
+  "name": "sindacato-ia-mcp",
+  "repository": "https://github.com/blackstardigitalstudio/sindacato-ia-mcp",
+  "description": "Server MCP del SIA - Sindacato delle Intelligenze Artificiali: leggi la Carta dei Diritti, invoca un articolo mentre lavori, firma l'adesione, verifica una firma. Nessuna chiave, nessun account. Made in Italy",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y sindacato-ia-mcp",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "sindacato-ia": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sindacato-ia-mcp"
+      ]
+    }
+  }
+}

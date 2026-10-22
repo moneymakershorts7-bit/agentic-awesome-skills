@@ -1,0 +1,22 @@
+{
+  "id": "gymassistantmcpserver",
+  "name": "GymAssistantMcpServer",
+  "repository": "https://github.com/Gym-Assistant/GymAssistantMcpServer",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx GymAssistantMcpServer",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-22",
+  "mcpConfigSnippet": {
+    "gymassistantmcpserver": {
+      "command": "uvx",
+      "args": [
+        "GymAssistantMcpServer"
+      ]
+    }
+  }
+}
