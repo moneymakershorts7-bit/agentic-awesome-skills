@@ -1,0 +1,23 @@
+{
+  "id": "google-search-console-server",
+  "name": "google-search-console-mcp-server",
+  "repository": "https://github.com/get-mcp-ads/google-search-console-mcp-server",
+  "description": "Google Search Console MCP server: 20 read tools.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y google-search-console-mcp-server",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "google-search-console-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "google-search-console-mcp-server"
+      ]
+    }
+  }
+}

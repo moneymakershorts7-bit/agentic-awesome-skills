@@ -1,0 +1,22 @@
+{
+  "id": "slidev",
+  "name": "slidev-mcp",
+  "repository": "https://github.com/joelbarmettlerUZH/slidev-mcp",
+  "description": "MCP server for generating, rendering, and hosting Slidev presentations",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx slidev-mcp",
+  "stars": 5,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "slidev": {
+      "command": "uvx",
+      "args": [
+        "slidev-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dchub-server",
+  "name": "dchub-mcp-server",
+  "repository": "https://github.com/azmartone67/dchub-mcp-server",
+  "description": "DCPI (Data Center Power Index): a daily score of where data centers can get grid power, across 300+ markets. Live power-grid, energy, queue, fiber, gas & M&A data for AI agents: 94 tools, global facility map, 1,800+ tracked M&A deals. Capacity to buy or lease via source_capacity. Remote MCP at dchub.cloud/mcp. Query & cite (CC-BY-4.0).",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y dchub-mcp-server",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "dchub-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dchub-mcp-server"
+      ]
+    }
+  }
+}

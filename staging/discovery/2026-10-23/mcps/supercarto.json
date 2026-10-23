@@ -1,0 +1,23 @@
+{
+  "id": "supercarto",
+  "name": "supercarto",
+  "repository": "https://github.com/Unselfisheologism/supercarto",
+  "description": "LLM-native spatial middleware. Give an AI agent a map of any location on earth as a token-budgeted topological graph, with indoor floors, weather, and traffic.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y supercarto",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "supercarto": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "supercarto"
+      ]
+    }
+  }
+}

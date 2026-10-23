@@ -1,0 +1,23 @@
+{
+  "id": "perplexity-mcp",
+  "name": "Perplexity-MCP",
+  "repository": "https://github.com/shivasymbl/Perplexity-MCP",
+  "description": "Fork of perplexityai/modelcontextprotocol with Railway deployment + async polling pattern for sonar-deep-research",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y Perplexity-MCP",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "perplexity-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "Perplexity-MCP"
+      ]
+    }
+  }
+}

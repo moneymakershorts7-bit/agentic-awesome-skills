@@ -1,0 +1,23 @@
+{
+  "id": "linkedin",
+  "name": "linkedin-mcp",
+  "repository": "https://github.com/CoolSapiens/linkedin-mcp",
+  "description": "Safe LinkedIn MCP server for Claude, ChatGPT, Cursor & Codex. Your Agents read LinkedIn DMs, search your network, enrich profiles and draft messages you send.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y linkedin-mcp",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "linkedin": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "linkedin-mcp"
+      ]
+    }
+  }
+}

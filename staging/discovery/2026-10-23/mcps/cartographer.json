@@ -1,0 +1,23 @@
+{
+  "id": "cartographer",
+  "name": "cartographer",
+  "repository": "https://github.com/BeppeTemp/cartographer",
+  "description": "A shared, git-backed wiki your team's AI agents maintain but can't break \u2014 Claude Code, Codex, OpenCode and any MCP client.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/BeppeTemp/cartographer@latest",
+  "stars": 45,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "cartographer": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/BeppeTemp/cartographer@latest"
+      ]
+    }
+  }
+}

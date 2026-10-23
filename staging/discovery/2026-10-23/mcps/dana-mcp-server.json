@@ -1,0 +1,22 @@
+{
+  "id": "dana-mcp-server",
+  "name": "Dana-MCP-Server",
+  "repository": "https://github.com/seyed-ali-002/Dana-MCP-Server",
+  "description": "Dana | MCP Server with python and tailscale",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Dana-MCP-Server",
+  "stars": 24,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "dana-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "Dana-MCP-Server"
+      ]
+    }
+  }
+}

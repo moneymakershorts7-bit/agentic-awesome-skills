@@ -1,0 +1,22 @@
+{
+  "id": "langchain-tools-py",
+  "name": "langchain-mcp-tools-py",
+  "repository": "https://github.com/hideya/langchain-mcp-tools-py",
+  "description": "MCP to LangChain Tools Conversion Utility / Python",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx langchain-mcp-tools-py",
+  "stars": 29,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "langchain-tools-py": {
+      "command": "uvx",
+      "args": [
+        "langchain-mcp-tools-py"
+      ]
+    }
+  }
+}

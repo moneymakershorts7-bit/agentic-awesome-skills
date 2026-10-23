@@ -1,0 +1,23 @@
+{
+  "id": "mcp-meetup-planning",
+  "name": "mcp-meetup-planning",
+  "repository": "https://github.com/mcpmark-eval-liuhezi/mcp-meetup-planning",
+  "description": "Planning pack for the team's half-day, in-person MCP study-group session in San Francisco (Union Square area) \u2014 venue shortlist, featured project (modelcontextprotocol/servers), and MCP intro.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-meetup-planning",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "mcp-meetup-planning": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-meetup-planning"
+      ]
+    }
+  }
+}

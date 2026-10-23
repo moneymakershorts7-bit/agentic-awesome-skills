@@ -1,0 +1,23 @@
+{
+  "id": "huqan",
+  "name": "huqan",
+  "repository": "https://github.com/ali-ulu/huqan",
+  "description": "Local-first verification layer for AI agents: evidence, provenance, policy gates, human approval, and auditable Trust Receipts before a claim, memory write, or action is trusted.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y huqan",
+  "stars": 36,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "huqan": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "huqan"
+      ]
+    }
+  }
+}

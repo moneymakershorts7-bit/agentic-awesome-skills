@@ -1,0 +1,23 @@
+{
+  "id": "mcp-mbt",
+  "name": "mcp.mbt",
+  "repository": "https://github.com/colmugx/mcp.mbt",
+  "description": "Type-safe MCP server implementation in MoonBit with dual transport support (STDIO/HTTP)",
+  "language": "MoonBit",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/colmugx/mcp.mbt",
+  "stars": 5,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "mcp-mbt": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/colmugx/mcp.mbt"
+      ]
+    }
+  }
+}

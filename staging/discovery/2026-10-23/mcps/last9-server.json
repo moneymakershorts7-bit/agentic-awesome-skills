@@ -1,0 +1,23 @@
+{
+  "id": "last9-server",
+  "name": "last9-mcp-server",
+  "repository": "https://github.com/last9/last9-mcp-server",
+  "description": "Last9 MCP Server",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/last9/last9-mcp-server@latest",
+  "stars": 63,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "last9-server": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/last9/last9-mcp-server@latest"
+      ]
+    }
+  }
+}

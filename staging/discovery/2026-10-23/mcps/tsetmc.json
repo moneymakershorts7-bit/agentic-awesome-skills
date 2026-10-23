@@ -1,0 +1,22 @@
+{
+  "id": "tsetmc",
+  "name": "tsetmc-mcp",
+  "repository": "https://github.com/sepehr071/tsetmc-mcp",
+  "description": "Unofficial read-only MCP server for the Tehran Stock Exchange (TSETMC) and Iran Fara Bourse: stock quotes, top movers, order book, price history, indices, real vs legal trading. For Claude, Cursor and Copilot. \u0628\u0648\u0631\u0633 \u062a\u0647\u0631\u0627\u0646",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx tsetmc-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "tsetmc": {
+      "command": "uvx",
+      "args": [
+        "tsetmc-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "tgju",
+  "name": "tgju-mcp",
+  "repository": "https://github.com/sepehr071/tgju-mcp",
+  "description": "Unofficial read-only MCP server for TGJU (tgju.org): live Iranian dollar, euro, gold, coin, crypto and commodity prices, category tables and daily history for Claude, Cursor and Copilot. \u0642\u06cc\u0645\u062a \u062f\u0644\u0627\u0631 \u0637\u0644\u0627 \u0633\u06a9\u0647 \u0627\u0631\u0632",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx tgju-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "tgju": {
+      "command": "uvx",
+      "args": [
+        "tgju-mcp"
+      ]
+    }
+  }
+}

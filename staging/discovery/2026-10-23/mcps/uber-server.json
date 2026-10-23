@@ -1,0 +1,22 @@
+{
+  "id": "uber-server",
+  "name": "uber-mcp-server",
+  "repository": "https://github.com/benjamin-di/uber-mcp-server",
+  "description": "Unofficial MCP server for Uber rides: places, live fares, ride requests behind a confirm step, trip status and history",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx uber-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "uber-server": {
+      "command": "uvx",
+      "args": [
+        "uber-mcp-server"
+      ]
+    }
+  }
+}

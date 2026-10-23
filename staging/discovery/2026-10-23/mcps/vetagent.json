@@ -1,0 +1,22 @@
+{
+  "id": "vetagent",
+  "name": "vetagent",
+  "repository": "https://github.com/jakegu1/vetagent",
+  "description": "VetAgent \u2014 token risk intelligence MCP for AI agents. Cloudflare Worker deployment. Assess token risk (liquidity/honeypot/rug) and return actionable low/medium/high verdict. Remote MCP at https://vetagent.dev/mcp.",
+  "language": "Python",
+  "transport": "sse",
+  "install_cmd": "uvx vetagent",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "vetagent": {
+      "command": "uvx",
+      "args": [
+        "vetagent"
+      ]
+    }
+  }
+}

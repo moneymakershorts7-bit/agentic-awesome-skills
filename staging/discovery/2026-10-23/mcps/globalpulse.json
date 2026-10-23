@@ -1,0 +1,23 @@
+{
+  "id": "globalpulse",
+  "name": "GlobalPulse",
+  "repository": "https://github.com/chahakshahcs5/GlobalPulse",
+  "description": "AI-operable multimedia news publishing platform powered by Model Context Protocol (MCP), Next.js, Fastify, GraphQL Mercurius, and real-time SSE.",
+  "language": "TypeScript",
+  "transport": "sse",
+  "install_cmd": "npx -y GlobalPulse",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "globalpulse": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "GlobalPulse"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "axonmcpserver",
+  "name": "AxonMcpServer",
+  "repository": "https://github.com/Project-SandStar/AxonMcpServer",
+  "description": "Axon MCP Server for SkySpark Axon Scripting",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y AxonMcpServer",
+  "stars": 6,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "axonmcpserver": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "AxonMcpServer"
+      ]
+    }
+  }
+}

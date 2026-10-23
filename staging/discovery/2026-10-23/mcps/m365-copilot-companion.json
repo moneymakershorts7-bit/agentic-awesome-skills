@@ -1,0 +1,22 @@
+{
+  "id": "m365-copilot-companion",
+  "name": "m365-copilot-companion-mcp",
+  "repository": "https://github.com/MasayukiTa/m365-copilot-companion-mcp",
+  "description": "Personal-use MCP server that gives Microsoft 365 Copilot real hands on your own laptop: files, Python, Office, SQL, Web. 100+ tools, autonomous relay, easily extensible, no extra licences.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx m365-copilot-companion-mcp",
+  "stars": 9,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "m365-copilot-companion": {
+      "command": "uvx",
+      "args": [
+        "m365-copilot-companion-mcp"
+      ]
+    }
+  }
+}

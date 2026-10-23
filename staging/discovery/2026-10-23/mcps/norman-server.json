@@ -1,0 +1,22 @@
+{
+  "id": "norman-server",
+  "name": "norman-mcp-server",
+  "repository": "https://github.com/norman-finance/norman-mcp-server",
+  "description": "Invoicing, full accounting, year-end preparation and taxes for freelancers and small businesses in the EU, including Germany and Poland.",
+  "language": "Python",
+  "transport": "sse",
+  "install_cmd": "uvx norman-mcp-server",
+  "stars": 62,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "norman-server": {
+      "command": "uvx",
+      "args": [
+        "norman-mcp-server"
+      ]
+    }
+  }
+}

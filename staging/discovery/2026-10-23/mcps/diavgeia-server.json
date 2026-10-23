@@ -1,0 +1,23 @@
+{
+  "id": "diavgeia-server",
+  "name": "diavgeia-mcp-server",
+  "repository": "https://github.com/michalisKout/diavgeia-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y diavgeia-mcp-server",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-23",
+  "mcpConfigSnippet": {
+    "diavgeia-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "diavgeia-mcp-server"
+      ]
+    }
+  }
+}
