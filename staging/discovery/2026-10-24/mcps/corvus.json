@@ -1,0 +1,23 @@
+{
+  "id": "corvus",
+  "name": "Corvus",
+  "repository": "https://github.com/Albasha0x0/Corvus",
+  "description": "Reverse-engineering MCP server for AI agents: .NET and native PE/ELF/Mach-O analysis, decompilation, cross-references and patching. IDA and Ghidra optional.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/Albasha0x0/Corvus",
+  "stars": 8,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "corvus": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/Albasha0x0/Corvus"
+      ]
+    }
+  }
+}

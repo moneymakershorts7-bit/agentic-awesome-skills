@@ -1,0 +1,23 @@
+{
+  "id": "timemcp",
+  "name": "TimeMCP",
+  "repository": "https://github.com/chew-z/TimeMCP",
+  "description": "Golang MCP server to replace modelcontextprotocol/time MCP server",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/chew-z/TimeMCP@latest",
+  "stars": 1,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "timemcp": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/chew-z/TimeMCP@latest"
+      ]
+    }
+  }
+}

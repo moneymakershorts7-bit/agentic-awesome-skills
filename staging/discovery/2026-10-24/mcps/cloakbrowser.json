@@ -1,0 +1,23 @@
+{
+  "id": "cloakbrowser",
+  "name": "cloakbrowser-mcp",
+  "repository": "https://github.com/swimmwatch/cloakbrowser-mcp",
+  "description": "\u26a1 CloakBrowser MCP server for AI agents: Playwright-powered browsing, clean tool forwarding, Docker support, and multi-session HTTP transport.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y cloakbrowser-mcp",
+  "stars": 172,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "cloakbrowser": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "cloakbrowser-mcp"
+      ]
+    }
+  }
+}

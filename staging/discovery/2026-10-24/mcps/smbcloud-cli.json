@@ -1,0 +1,23 @@
+{
+  "id": "smbcloud-cli",
+  "name": "smbcloud-cli",
+  "repository": "https://github.com/smbcloudXYZ/smbcloud-cli",
+  "description": "CLI, SDK, and MCP server for smbCloud.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install smbcloud-cli",
+  "stars": 11,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "smbcloud-cli": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "smbcloud-cli"
+      ]
+    }
+  }
+}

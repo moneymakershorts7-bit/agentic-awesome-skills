@@ -1,0 +1,23 @@
+{
+  "id": "agentsql",
+  "name": "agentsql",
+  "repository": "https://github.com/cuipengdba/agentsql",
+  "description": "AI-Native Database Security Gateway  \u667a\u76fe",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/cuipengdba/agentsql@latest",
+  "stars": 13,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "agentsql": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/cuipengdba/agentsql@latest"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "wb-server",
+  "name": "wb-mcp-server",
+  "repository": "https://github.com/arturdzarmokov88-cell/wb-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx wb-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "wb-server": {
+      "command": "uvx",
+      "args": [
+        "wb-mcp-server"
+      ]
+    }
+  }
+}

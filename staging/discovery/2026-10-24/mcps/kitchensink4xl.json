@@ -1,0 +1,22 @@
+{
+  "id": "kitchensink4xl",
+  "name": "KitchenSink4XL",
+  "repository": "https://github.com/KitchenSink4AI/KitchenSink4XL",
+  "description": "Read and edit Excel workbooks with your AI assistant, and know which numbers are calculated, cached or missing.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx KitchenSink4XL",
+  "stars": 1,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "kitchensink4xl": {
+      "command": "uvx",
+      "args": [
+        "KitchenSink4XL"
+      ]
+    }
+  }
+}

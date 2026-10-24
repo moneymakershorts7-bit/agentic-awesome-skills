@@ -1,0 +1,23 @@
+{
+  "id": "comics-now",
+  "name": "comics-now",
+  "repository": "https://github.com/ComicsNow/comics-now",
+  "description": "The modern, self-hosted comic book library server, smart reader, and AI-augmented cataloging platform",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y comics-now",
+  "stars": 16,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "comics-now": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "comics-now"
+      ]
+    }
+  }
+}

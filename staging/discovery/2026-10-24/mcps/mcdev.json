@@ -1,0 +1,23 @@
+{
+  "id": "mcdev",
+  "name": "mcp-server-mcdev",
+  "repository": "https://github.com/JoernBerkefeld/mcp-server-mcdev",
+  "description": "MCP server for Accenture SFMC DevTools (mcdev): wiki search, config help, metadata checklists",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-mcdev",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "mcdev": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-mcdev"
+      ]
+    }
+  }
+}

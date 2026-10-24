@@ -1,0 +1,23 @@
+{
+  "id": "lilyco",
+  "name": "lilyco",
+  "repository": "https://github.com/lilyco-42/lilyco",
+  "description": "\u8ba9\u4eba\u7c7b\u8fdc\u79bb\u8ba1\u7b97\u673a\uff0cAI \u53ef\u505a\u4efb\u4f55\u4e8b \u2014\u2014 \u52a0\u901f Token 2 Anything \u5230\u6765\uff0c\u4fc3\u8fdb\u667a\u80fd\u5728\u73b0\u5b9e\u4e16\u754c\u7684\u6d41\u52a8\u6027\uff0c\u89e3\u653e\u4eba\u7c7b\uff0c\u52a0\u5feb\u8eba\u5e73\u672a\u6765\u3002\u4e00\u4e2a struct \u6d3e\u751f CLI/TUI/Web/MCP \u56db\u7aef\uff0c\u5929\u751f AI-callable\uff1aMCP \u670d\u52a1\u5668 + \u8fdb\u5ea6\u901a\u77e5 + \u91c7\u6837\u6865\uff08\u5de5\u5177\u53ef\u53cd\u5411\u8c03\u7528 Agent \u7684 LLM\uff09\u3002\u4e00\u5957\u4ee3\u7801\uff0cWindows/Linux/Android \u5168\u5e73\u53f0\u3002",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install lilyco",
+  "stars": 6,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 3,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "lilyco": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "lilyco"
+      ]
+    }
+  }
+}

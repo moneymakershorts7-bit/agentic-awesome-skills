@@ -1,0 +1,23 @@
+{
+  "id": "realm-memory",
+  "name": "realm-mcp-memory",
+  "repository": "https://github.com/embabel-worlds/realm-mcp-memory",
+  "description": "The MCP memory server's knowledge graph under the shared Memory label: the entities and observations the reference `@modelcontextprotocol/server-memory` keeps in its memory.jsonl, read live, one memory per entity, so \"what do you remember a",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y realm-mcp-memory",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "realm-memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "realm-mcp-memory"
+      ]
+    }
+  }
+}

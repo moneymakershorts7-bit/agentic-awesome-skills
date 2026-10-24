@@ -1,0 +1,22 @@
+{
+  "id": "hermes-indexing-server",
+  "name": "Hermes-indexing-mcp-server",
+  "repository": "https://github.com/georgeslane/Hermes-indexing-mcp-server",
+  "description": "A lightweight MCP server that allows my Hermes Agent to index files on my Mac using an embeddings model",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Hermes-indexing-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "hermes-indexing-server": {
+      "command": "uvx",
+      "args": [
+        "Hermes-indexing-mcp-server"
+      ]
+    }
+  }
+}

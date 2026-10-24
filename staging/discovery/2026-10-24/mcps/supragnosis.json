@@ -1,0 +1,23 @@
+{
+  "id": "supragnosis",
+  "name": "supragnosis",
+  "repository": "https://github.com/Ashon/supragnosis",
+  "description": "Shared project memory for coding agents, with receipts: every claim keeps who said it, on what basis, and how far to trust it. A local-first MCP server in Rust.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install supragnosis",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "supragnosis": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "supragnosis"
+      ]
+    }
+  }
+}

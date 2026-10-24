@@ -1,0 +1,23 @@
+{
+  "id": "peac",
+  "name": "peac",
+  "repository": "https://github.com/peacprotocol/peac",
+  "description": "Portable signed records for automated interactions.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y peac",
+  "stars": 14,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "peac": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "peac"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "nextcloud-server",
+  "name": "nextcloud-mcp-server",
+  "repository": "https://github.com/cbcoutinho/nextcloud-mcp-server",
+  "description": "Nextcloud MCP Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx nextcloud-mcp-server",
+  "stars": 392,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "nextcloud-server": {
+      "command": "uvx",
+      "args": [
+        "nextcloud-mcp-server"
+      ]
+    }
+  }
+}

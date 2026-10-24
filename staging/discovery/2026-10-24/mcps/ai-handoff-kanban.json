@@ -1,0 +1,22 @@
+{
+  "id": "ai-handoff-kanban",
+  "name": "ai-handoff-kanban",
+  "repository": "https://github.com/fengxingxuerong/ai-handoff-kanban",
+  "description": "Local-first Windows kanban for switching AI coding agents: per-project handoff packs, AGENTS.md projection to 9 entry files, 23-tool MCP server, LLM self-supervision. One-command release gate (tests + mutation probes + frozen smoke).",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx ai-handoff-kanban",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "ai-handoff-kanban": {
+      "command": "uvx",
+      "args": [
+        "ai-handoff-kanban"
+      ]
+    }
+  }
+}

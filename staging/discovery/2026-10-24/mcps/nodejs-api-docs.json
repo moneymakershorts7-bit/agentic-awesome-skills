@@ -1,0 +1,23 @@
+{
+  "id": "nodejs-api-docs",
+  "name": "mcp-server-nodejs-api-docs",
+  "repository": "https://github.com/lirantal/mcp-server-nodejs-api-docs",
+  "description": "MCP Server for Node.js API documentation",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-nodejs-api-docs",
+  "stars": 11,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "nodejs-api-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-nodejs-api-docs"
+      ]
+    }
+  }
+}

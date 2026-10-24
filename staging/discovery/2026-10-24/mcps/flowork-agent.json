@@ -1,0 +1,23 @@
+{
+  "id": "flowork-agent",
+  "name": "FLOWORK-AGENT",
+  "repository": "https://github.com/flowork-os/FLOWORK-AGENT",
+  "description": "Official Multi-OS Desktop Agent & Sovereign AI Canvas Host for Flowork OS. Clean partitioned distributions for Linux & Windows with Zero-Prompt-Bloat runtime.",
+  "language": "C",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/flowork-os/FLOWORK-AGENT",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "flowork-agent": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/flowork-os/FLOWORK-AGENT"
+      ]
+    }
+  }
+}

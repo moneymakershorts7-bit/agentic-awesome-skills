@@ -1,0 +1,23 @@
+{
+  "id": "hf-server",
+  "name": "hf-mcp-server",
+  "repository": "https://github.com/huggingface/hf-mcp-server",
+  "description": "Hugging Face MCP Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y hf-mcp-server",
+  "stars": 308,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "hf-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "hf-mcp-server"
+      ]
+    }
+  }
+}

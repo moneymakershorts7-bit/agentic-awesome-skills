@@ -1,0 +1,23 @@
+{
+  "id": "mcp-ecosystem-watch",
+  "name": "mcp-ecosystem-watch",
+  "repository": "https://github.com/mcpmark-eval-liuhezi/mcp-ecosystem-watch",
+  "description": "Tracking brief on the Model Context Protocol ecosystem: literature scan, upstream repo activity (modelcontextprotocol/servers), and follow-up actions.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-ecosystem-watch",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "mcp-ecosystem-watch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-ecosystem-watch"
+      ]
+    }
+  }
+}

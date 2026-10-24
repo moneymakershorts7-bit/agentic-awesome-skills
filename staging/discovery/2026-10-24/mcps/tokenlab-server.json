@@ -1,0 +1,23 @@
+{
+  "id": "tokenlab-server",
+  "name": "tokenlab-mcp-server",
+  "repository": "https://github.com/hedging8563/tokenlab-mcp-server",
+  "description": "OpenAPI-generated MCP server for TokenLab model discovery, pricing, chat, native System One decisions, media, files, embeddings, webhooks and async tasks.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y tokenlab-mcp-server",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "tokenlab-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tokenlab-mcp-server"
+      ]
+    }
+  }
+}

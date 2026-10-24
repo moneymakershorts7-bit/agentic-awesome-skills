@@ -1,0 +1,23 @@
+{
+  "id": "rotifer-server",
+  "name": "rotifer-mcp-server",
+  "repository": "https://github.com/rotifer-protocol/rotifer-mcp-server",
+  "description": "Rotifer Protocol MCP Server \u2014 Model Context Protocol integration for AI agents",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y rotifer-mcp-server",
+  "stars": 1,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "rotifer-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rotifer-mcp-server"
+      ]
+    }
+  }
+}

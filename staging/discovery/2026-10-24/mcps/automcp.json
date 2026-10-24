@@ -1,0 +1,23 @@
+{
+  "id": "automcp",
+  "name": "automcp",
+  "repository": "https://github.com/lirantal/automcp",
+  "description": "AutoMCP scaffolds your Model Context Protocol config from package.json deps",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y automcp",
+  "stars": 7,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "automcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "automcp"
+      ]
+    }
+  }
+}

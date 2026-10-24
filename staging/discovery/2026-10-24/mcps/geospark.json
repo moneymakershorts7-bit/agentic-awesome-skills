@@ -1,0 +1,22 @@
+{
+  "id": "geospark",
+  "name": "geospark",
+  "repository": "https://github.com/Maz2580/geospark",
+  "description": "Verifiable spatial reasoning for LLMs: geodesic distance, topology and CRS computed by a geometry engine, with sources and licences on every answer. MCP server, REST API, Python library.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx geospark",
+  "stars": 19,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "geospark": {
+      "command": "uvx",
+      "args": [
+        "geospark"
+      ]
+    }
+  }
+}

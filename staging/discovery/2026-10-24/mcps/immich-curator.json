@@ -1,0 +1,23 @@
+{
+  "id": "immich-curator",
+  "name": "immich-curator-mcp",
+  "repository": "https://github.com/gist-info/immich-curator-mcp",
+  "description": "Best Immich Photo Manager Alternative 2026 - AI Search & Geographic Albums",
+  "language": "HTML",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/gist-info/immich-curator-mcp",
+  "stars": 1,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "immich-curator": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/gist-info/immich-curator-mcp"
+      ]
+    }
+  }
+}

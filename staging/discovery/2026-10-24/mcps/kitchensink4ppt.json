@@ -1,0 +1,22 @@
+{
+  "id": "kitchensink4ppt",
+  "name": "KitchenSink4PPT",
+  "repository": "https://github.com/KitchenSink4AI/KitchenSink4PPT",
+  "description": "Build and revise PowerPoint decks with your AI assistant, with diagrams made of shapes you can still edit.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx KitchenSink4PPT",
+  "stars": 1,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "kitchensink4ppt": {
+      "command": "uvx",
+      "args": [
+        "KitchenSink4PPT"
+      ]
+    }
+  }
+}

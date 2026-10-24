@@ -1,0 +1,23 @@
+{
+  "id": "memora",
+  "name": "memora",
+  "repository": "https://github.com/Codrihub/memora",
+  "description": "Second brain for your AI: a self-hosted memory vault your AI agents read and write over MCP. Install with npm, Docker or one command.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y memora",
+  "stars": 7,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "memora": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "memora"
+      ]
+    }
+  }
+}

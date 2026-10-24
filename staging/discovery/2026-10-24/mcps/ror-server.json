@@ -1,0 +1,23 @@
+{
+  "id": "ror-server",
+  "name": "ror-mcp-server",
+  "repository": "https://github.com/frutik/ror-mcp-server",
+  "description": "port of django-mcp-server to ror",
+  "language": "Ruby",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/frutik/ror-mcp-server",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "ror-server": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/frutik/ror-mcp-server"
+      ]
+    }
+  }
+}

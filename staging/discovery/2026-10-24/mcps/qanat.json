@@ -1,0 +1,22 @@
+{
+  "id": "qanat",
+  "name": "qanat",
+  "repository": "https://github.com/fidetolabs/qanat",
+  "description": "A data platform for investment research. Ingests financial data sources and computes point-in-time financial metrics for valuation and screening. Delivered as an MCP server.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx qanat",
+  "stars": 322,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-24",
+  "mcpConfigSnippet": {
+    "qanat": {
+      "command": "uvx",
+      "args": [
+        "qanat"
+      ]
+    }
+  }
+}
