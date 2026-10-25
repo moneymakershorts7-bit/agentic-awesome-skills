@@ -1,0 +1,23 @@
+{
+  "id": "zendesk-server",
+  "name": "zendesk-mcp-server",
+  "repository": "https://github.com/fruggr/zendesk-mcp-server",
+  "description": "Bring Zendesk deep into your AI assistant: find answers and draft, update and translate Help Center articles, and manage Support tickets end to end: comments, triage and attachments. All in plain language.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y zendesk-mcp-server",
+  "stars": 14,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "zendesk-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "zendesk-mcp-server"
+      ]
+    }
+  }
+}

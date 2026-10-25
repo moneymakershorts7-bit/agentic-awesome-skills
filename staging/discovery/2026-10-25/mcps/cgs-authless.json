@@ -1,0 +1,23 @@
+{
+  "id": "cgs-authless",
+  "name": "cgs-mcp-server-authless",
+  "repository": "https://github.com/Basic-Geometry/cgs-mcp-server-authless",
+  "description": "Core Geometric System \u2122 MCP server ",
+  "language": "HTML",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/Basic-Geometry/cgs-mcp-server-authless",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "cgs-authless": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/Basic-Geometry/cgs-mcp-server-authless"
+      ]
+    }
+  }
+}

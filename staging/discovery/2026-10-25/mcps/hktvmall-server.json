@@ -1,0 +1,22 @@
+{
+  "id": "hktvmall-server",
+  "name": "hktvmall-mcp-server",
+  "repository": "https://github.com/benjamin-di/hktvmall-mcp-server",
+  "description": "MCP server for HKTVmall: search, product cards, order history and basket edits read back from HKTVmall; never pays",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx hktvmall-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "hktvmall-server": {
+      "command": "uvx",
+      "args": [
+        "hktvmall-mcp-server"
+      ]
+    }
+  }
+}

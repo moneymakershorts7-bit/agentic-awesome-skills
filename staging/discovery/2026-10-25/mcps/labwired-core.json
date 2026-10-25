@@ -1,0 +1,23 @@
+{
+  "id": "labwired-core",
+  "name": "labwired-core",
+  "repository": "https://github.com/w1ne/labwired-core",
+  "description": "Deterministic firmware simulator for microcontrollers with hardware-validated parity. Labwired.com",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install labwired-core",
+  "stars": 86,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "labwired-core": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "labwired-core"
+      ]
+    }
+  }
+}

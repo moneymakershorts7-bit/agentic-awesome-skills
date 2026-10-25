@@ -1,0 +1,23 @@
+{
+  "id": "redditapis",
+  "name": "redditapis-mcp",
+  "repository": "https://github.com/redditapis/redditapis-mcp",
+  "description": "Official MCP server for redditapis.com. Read-only Reddit tools for Claude, Cursor and any MCP client: search, subreddits, posts, comments, users, monitors, webhooks. It never posts, comments, votes or DMs.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y redditapis-mcp",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "redditapis": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "redditapis-mcp"
+      ]
+    }
+  }
+}

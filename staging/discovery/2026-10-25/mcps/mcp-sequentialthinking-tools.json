@@ -1,0 +1,23 @@
+{
+  "id": "mcp-sequentialthinking-tools",
+  "name": "mcp-sequentialthinking-tools",
+  "repository": "https://github.com/spences10/mcp-sequentialthinking-tools",
+  "description": "\ud83e\udde0 An adaptation of the MCP Sequential Thinking Server to guide tool usage. This server provides recommendations for which MCP tools would be most effective at each stage.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-sequentialthinking-tools",
+  "stars": 586,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "mcp-sequentialthinking-tools": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-sequentialthinking-tools"
+      ]
+    }
+  }
+}

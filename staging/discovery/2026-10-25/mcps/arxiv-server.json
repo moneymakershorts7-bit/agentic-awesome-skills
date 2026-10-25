@@ -1,0 +1,23 @@
+{
+  "id": "arxiv-server",
+  "name": "arxiv-mcp-server",
+  "repository": "https://github.com/cyanheads/arxiv-mcp-server",
+  "description": "Search arXiv, fetch paper metadata, and read full-text content via MCP. STDIO or Streamable HTTP.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y arxiv-mcp-server",
+  "stars": 7,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "arxiv-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "arxiv-mcp-server"
+      ]
+    }
+  }
+}

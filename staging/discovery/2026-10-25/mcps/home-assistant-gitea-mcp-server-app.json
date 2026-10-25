@@ -1,0 +1,23 @@
+{
+  "id": "home-assistant-gitea-mcp-server-app",
+  "name": "Home-Assistant-Gitea-MCP-Server-App",
+  "repository": "https://github.com/seb5594/Home-Assistant-Gitea-MCP-Server-App",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Shell",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/seb5594/Home-Assistant-Gitea-MCP-Server-App",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "home-assistant-gitea-mcp-server-app": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/seb5594/Home-Assistant-Gitea-MCP-Server-App"
+      ]
+    }
+  }
+}

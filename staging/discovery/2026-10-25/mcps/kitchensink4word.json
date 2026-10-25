@@ -1,0 +1,22 @@
+{
+  "id": "kitchensink4word",
+  "name": "KitchenSink4Word",
+  "repository": "https://github.com/KitchenSink4AI/KitchenSink4Word",
+  "description": "Edit Word documents with your AI assistant: tracked changes, citations, templates and live edits in Word.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx KitchenSink4Word",
+  "stars": 12,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "kitchensink4word": {
+      "command": "uvx",
+      "args": [
+        "KitchenSink4Word"
+      ]
+    }
+  }
+}

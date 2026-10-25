@@ -1,0 +1,23 @@
+{
+  "id": "docsy-plugin",
+  "name": "docsy-plugin",
+  "repository": "https://github.com/getremcp/docsy-plugin",
+  "description": "Docsy MCP for ChatGPT, Claude Code, Codex & Cursor \u2014 version-specific developer docs with source links. Public plugin releases.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y docsy-plugin",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "docsy-plugin": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "docsy-plugin"
+      ]
+    }
+  }
+}

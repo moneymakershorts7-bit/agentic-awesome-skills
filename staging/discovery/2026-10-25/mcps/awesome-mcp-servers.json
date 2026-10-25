@@ -1,0 +1,22 @@
+{
+  "id": "awesome-mcp-servers",
+  "name": "Awesome-MCP-Servers",
+  "repository": "https://github.com/AIAnytime/Awesome-MCP-Servers",
+  "description": "A curated directory of Model Context Protocol (MCP) servers, plus runnable reference implementations in Python.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Awesome-MCP-Servers",
+  "stars": 79,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "awesome-mcp-servers": {
+      "command": "uvx",
+      "args": [
+        "Awesome-MCP-Servers"
+      ]
+    }
+  }
+}

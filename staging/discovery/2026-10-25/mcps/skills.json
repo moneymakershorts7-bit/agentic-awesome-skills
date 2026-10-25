@@ -1,0 +1,23 @@
+{
+  "id": "skills",
+  "name": "skills",
+  "repository": "https://github.com/posteyai/skills",
+  "description": "Postey MCP server and agent skills. Draft, schedule and publish social posts to nine platforms from any AI agent.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y skills",
+  "stars": 6,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "skills": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "skills"
+      ]
+    }
+  }
+}

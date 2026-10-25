@@ -1,0 +1,22 @@
+{
+  "id": "trademcp",
+  "name": "TradeMCP",
+  "repository": "https://github.com/aswathas/TradeMCP",
+  "description": "Free Model Context Protocol server for Indian equities (NSE/BSE). 14 tools, 57 indicators, 54 fundamental ratios, a screener. No API keys.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx TradeMCP",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "trademcp": {
+      "command": "uvx",
+      "args": [
+        "TradeMCP"
+      ]
+    }
+  }
+}

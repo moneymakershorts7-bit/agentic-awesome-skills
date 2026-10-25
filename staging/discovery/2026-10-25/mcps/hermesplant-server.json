@@ -1,0 +1,23 @@
+{
+  "id": "hermesplant-server",
+  "name": "hermesplant-mcp-server",
+  "repository": "https://github.com/JesseGdotIO/hermesplant-mcp-server",
+  "description": "MCP bridge for Hermes Plant action safety, spend assurance, signed evidence, and deterministic x402 APIs.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y hermesplant-mcp-server",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "hermesplant-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "hermesplant-mcp-server"
+      ]
+    }
+  }
+}

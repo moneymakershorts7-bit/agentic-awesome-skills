@@ -1,0 +1,23 @@
+{
+  "id": "m1k3",
+  "name": "M1K3",
+  "repository": "https://github.com/Round-Tower/M1K3",
+  "description": "Local, offline AI for your Machine. Punk intelligence \u2014 no data centers required.",
+  "language": "Swift",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/Round-Tower/M1K3",
+  "stars": 5,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "m1k3": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/Round-Tower/M1K3"
+      ]
+    }
+  }
+}

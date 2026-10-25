@@ -1,0 +1,23 @@
+{
+  "id": "agentbreakwatch",
+  "name": "agentbreakwatch-mcp",
+  "repository": "https://github.com/joeyg6393/agentbreakwatch-mcp",
+  "description": "Official MCP Server for AgentBreakWatch: audit .mcp.json and package.json against 256 live AI Agent SDKs and MCP servers for breaking changes and schema drift",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y agentbreakwatch-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "agentbreakwatch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "agentbreakwatch-mcp"
+      ]
+    }
+  }
+}

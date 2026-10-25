@@ -1,0 +1,23 @@
+{
+  "id": "stocksentinel",
+  "name": "StockSentinel",
+  "repository": "https://github.com/SheldonZhuang/StockSentinel",
+  "description": "\u7f8e\u80a1\u8fdb\u653b/\u9632\u5b88\u56db\u6863\u4fe1\u53f7\u7cfb\u7edf\uff1aAI\u4f9b\u9700+\u8d27\u5e01/\u8d22\u653f/\u884c\u653f\u56db\u7ef4\u6570\u636e\u9a71\u52a8\uff0c\u516c\u5f00Track Record\uff0c\u5f00\u653eAPI/MCP \u00b7 US stock attack/defense signal system: 4 data-driven dimensions, public track record, open API & MCP",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y StockSentinel",
+  "stars": 1,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "stocksentinel": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "StockSentinel"
+      ]
+    }
+  }
+}

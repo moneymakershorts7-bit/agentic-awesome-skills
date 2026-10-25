@@ -1,0 +1,23 @@
+{
+  "id": "mainframe-server",
+  "name": "mainframe-mcp-server",
+  "repository": "https://github.com/NotHarshhaa/mainframe-mcp-server",
+  "description": "An enterprise-grade Model Context Protocol (MCP) server for IBM z/OS environments. Bridges MCP-compatible AI agents with mainframe resources jobs, datasets, USS, and operational diagnostics using IBM Zowe SDK as the connectivity layer.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mainframe-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "mainframe-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mainframe-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "github-app",
+  "name": "github-app",
+  "repository": "https://github.com/chrisleekr/github-app",
+  "description": "A GitHub App that listens for bot mention on PRs and issues, then autonomously responds using the Claude Agent SDK (@anthropic-ai/claude-agent-sdk) with MCP servers",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y github-app",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "github-app": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "github-app"
+      ]
+    }
+  }
+}

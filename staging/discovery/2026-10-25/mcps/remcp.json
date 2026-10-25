@@ -1,0 +1,23 @@
+{
+  "id": "remcp",
+  "name": "remcp",
+  "repository": "https://github.com/getremcp/remcp",
+  "description": "Remote MCP access to computers you explicitly pair \u2014 files, terminal, desktop UI, browser automation, diagnostics, and documents.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y remcp",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "remcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "remcp"
+      ]
+    }
+  }
+}

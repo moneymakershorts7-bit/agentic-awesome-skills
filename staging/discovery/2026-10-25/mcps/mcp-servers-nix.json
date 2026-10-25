@@ -1,0 +1,23 @@
+{
+  "id": "mcp-servers-nix",
+  "name": "mcp-servers-nix",
+  "repository": "https://github.com/natsukium/mcp-servers-nix",
+  "description": "A Nix-based configuration framework for Model Control Protocol (MCP) servers with ready-to-use packages.",
+  "language": "Nix",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/natsukium/mcp-servers-nix",
+  "stars": 308,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "mcp-servers-nix": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/natsukium/mcp-servers-nix"
+      ]
+    }
+  }
+}

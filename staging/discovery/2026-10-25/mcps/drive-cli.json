@@ -1,0 +1,23 @@
+{
+  "id": "drive-cli",
+  "name": "drive-cli",
+  "repository": "https://github.com/WireCatLabs/drive-cli",
+  "description": "Google Drive for your AI agents: Docs as local Markdown, search with sources",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y drive-cli",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "drive-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "drive-cli"
+      ]
+    }
+  }
+}

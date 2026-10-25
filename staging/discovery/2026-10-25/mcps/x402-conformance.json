@@ -1,0 +1,23 @@
+{
+  "id": "x402-conformance",
+  "name": "x402-conformance",
+  "repository": "https://github.com/atsp-protocol/x402-conformance",
+  "description": "Conformance and fault-injection safety tests for x402 payments: catch double-credit, early credit and broken-settle bugs in your facilitator or resource server, in one CI step. GitHub Action, PyPI and npm.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y x402-conformance",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "x402-conformance": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "x402-conformance"
+      ]
+    }
+  }
+}

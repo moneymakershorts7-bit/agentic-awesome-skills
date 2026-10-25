@@ -1,0 +1,22 @@
+{
+  "id": "vidlens",
+  "name": "vidlens",
+  "repository": "https://github.com/cctv2333/vidlens",
+  "description": "Local, no-upload video forensics toolkit and MCP server: metadata, chapters, frames, subtitle-first transcripts, 527-class sound tags and comment analysis. Never downloads the whole video.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx vidlens",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "vidlens": {
+      "command": "uvx",
+      "args": [
+        "vidlens"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "nano-termux",
+  "name": "nano-mcp-termux",
+  "repository": "https://github.com/Lmeng486/nano-mcp-termux",
+  "description": "Zero-dependency MCP server for AI agents, natively running on Termux (Android), Raspberry Pi, and Linux. Single-file, Docker-ready, protocol-tested.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx nano-mcp-termux",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-25",
+  "mcpConfigSnippet": {
+    "nano-termux": {
+      "command": "uvx",
+      "args": [
+        "nano-mcp-termux"
+      ]
+    }
+  }
+}
