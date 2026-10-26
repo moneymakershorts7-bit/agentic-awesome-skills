@@ -1,0 +1,23 @@
+{
+  "id": "twee",
+  "name": "twee-mcp",
+  "repository": "https://github.com/TwistedAndy/twee-mcp",
+  "description": "MCP server for WordPress and WooCommerce with OAuth 2.1, so Claude, ChatGPT, and other AI clients can manage content, media, ACF blocks, and products, plus AI-powered batch content generation.",
+  "language": "PHP",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/TwistedAndy/twee-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "twee": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/TwistedAndy/twee-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "bounded-filesystem",
+  "name": "bounded-filesystem-mcp",
+  "repository": "https://github.com/shivam-bit/bounded-filesystem-mcp",
+  "description": "MCP filesystem server with bounded tool results and paged reads, forked from @modelcontextprotocol/server-filesystem 2026.1.14",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y bounded-filesystem-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "bounded-filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "bounded-filesystem-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "lexware-server",
+  "name": "lexware-mcp-server",
+  "repository": "https://github.com/lazyants/lexware-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y lexware-mcp-server",
+  "stars": 8,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "lexware-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "lexware-mcp-server"
+      ]
+    }
+  }
+}

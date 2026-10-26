@@ -1,0 +1,23 @@
+{
+  "id": "dsh-server",
+  "name": "dsh-mcp-server",
+  "repository": "https://github.com/baitouwuya/dsh-mcp-server",
+  "description": "DeepSeek Harness (DSH) plugin that publishes the running Harness as a Model Context Protocol (MCP) server for other agent harnesses.",
+  "language": "JavaScript",
+  "transport": "sse",
+  "install_cmd": "npx -y dsh-mcp-server",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "dsh-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dsh-mcp-server"
+      ]
+    }
+  }
+}

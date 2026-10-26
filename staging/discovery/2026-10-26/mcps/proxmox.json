@@ -1,0 +1,23 @@
+{
+  "id": "proxmox",
+  "name": "mcp-server-proxmox",
+  "repository": "https://github.com/heybearc/mcp-server-proxmox",
+  "description": "Model Context Protocol (MCP) server for Proxmox Virtual Environment - manage VMs, containers, nodes, and resources through AI assistants",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-proxmox",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "proxmox": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-proxmox"
+      ]
+    }
+  }
+}

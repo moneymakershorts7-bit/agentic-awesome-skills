@@ -1,0 +1,23 @@
+{
+  "id": "obsidian-tc",
+  "name": "obsidian-tc",
+  "repository": "https://github.com/The-40-Thieves/obsidian-tc",
+  "description": "Obsidian Turbocharged \u2014 governed, agent-ready Obsidian MCP server. Multi-vault native, pluggable embeddings, OAuth-ready HTTP. TypeScript + Rust. AGPL-3.0-only.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y obsidian-tc",
+  "stars": 13,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "obsidian-tc": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "obsidian-tc"
+      ]
+    }
+  }
+}

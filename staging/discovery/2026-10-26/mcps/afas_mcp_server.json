@@ -1,0 +1,22 @@
+{
+  "id": "afas_mcp_server",
+  "name": "afas_mcp_server",
+  "repository": "https://github.com/schubergphilis/afas_mcp_server",
+  "description": "MCP server that exposes AFAS Profit GetConnectors, UpdateConnectors and metainfo to AI agents. Read-only by default.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx afas_mcp_server",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "afas_mcp_server": {
+      "command": "uvx",
+      "args": [
+        "afas_mcp_server"
+      ]
+    }
+  }
+}

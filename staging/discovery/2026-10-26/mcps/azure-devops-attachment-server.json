@@ -1,0 +1,23 @@
+{
+  "id": "azure-devops-attachment-server",
+  "name": "azure-devops-attachment-mcp-server",
+  "repository": "https://github.com/arslanmusta/azure-devops-attachment-mcp-server",
+  "description": "An MCP server (stdio) that lets AI assistants manage work item attachments on on-premise Azure DevOps Server (2019 / 2020 / 2022, formerly TFS) through the REST API, authenticated with a Personal Access Token.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y azure-devops-attachment-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "azure-devops-attachment-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "azure-devops-attachment-mcp-server"
+      ]
+    }
+  }
+}

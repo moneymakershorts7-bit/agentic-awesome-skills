@@ -1,0 +1,23 @@
+{
+  "id": "godot-server",
+  "name": "godot-mcp-server",
+  "repository": "https://github.com/NPGameDev/godot-mcp-server",
+  "description": "The npm bridge connecting AI coding assistants to the Godot 4.2+ editor over the Model Context Protocol. Runs locally as a stdio-to-WebSocket bridge. Its consolidated tools expose 150+ operations, and the toolkit's GDScript extension API lets any project add its own. Pairs with the godot-mcp-toolkit plugin.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y godot-mcp-server",
+  "stars": 16,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "godot-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "godot-mcp-server"
+      ]
+    }
+  }
+}

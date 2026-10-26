@@ -1,0 +1,22 @@
+{
+  "id": "leads-plaza-server",
+  "name": "leads-plaza-mcp-server",
+  "repository": "https://github.com/liangh2020/leads-plaza-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx leads-plaza-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "leads-plaza-server": {
+      "command": "uvx",
+      "args": [
+        "leads-plaza-mcp-server"
+      ]
+    }
+  }
+}

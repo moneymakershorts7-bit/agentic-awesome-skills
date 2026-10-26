@@ -1,0 +1,23 @@
+{
+  "id": "awesome-clips-kitty",
+  "name": "awesome-clips-kitty",
+  "repository": "https://github.com/ColinGPT9/awesome-clips-kitty",
+  "description": "Pipelines, plugins, integrations, apps and tools built with Clips Kitty. The list the Clips Kitty Marketplace reads.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y awesome-clips-kitty",
+  "stars": 2,
+  "license": "CC0-1.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "awesome-clips-kitty": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "awesome-clips-kitty"
+      ]
+    }
+  }
+}

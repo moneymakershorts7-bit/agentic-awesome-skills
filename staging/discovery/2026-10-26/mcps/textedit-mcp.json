@@ -1,0 +1,23 @@
+{
+  "id": "textedit-mcp",
+  "name": "TextEdit-MCP",
+  "repository": "https://github.com/M-Pineapple/TextEdit-MCP",
+  "description": "Swift-based MCP for creating perfectly formatted RTF documents using Apple's native TextEdit APIs",
+  "language": "Swift",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/M-Pineapple/TextEdit-MCP",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "textedit-mcp": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/M-Pineapple/TextEdit-MCP"
+      ]
+    }
+  }
+}

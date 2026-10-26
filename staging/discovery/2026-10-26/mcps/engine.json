@@ -1,0 +1,23 @@
+{
+  "id": "engine",
+  "name": "engine-mcp",
+  "repository": "https://github.com/cutoptim/engine-mcp",
+  "description": "Official MCP server package for the CutOptim Engine API \u2014 cutting optimization tools for Claude, Cursor and any MCP client. Hosted at api.cutoptim.com/mcp.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y engine-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "engine": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "engine-mcp"
+      ]
+    }
+  }
+}

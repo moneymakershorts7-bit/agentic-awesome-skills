@@ -1,0 +1,22 @@
+{
+  "id": "a2a",
+  "name": "A2A",
+  "repository": "https://github.com/gstdcoin/A2A",
+  "description": "Experimental Python/Node.js clients and a local MCP server for AI agents to talk to the GSTD platform API.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx A2A",
+  "stars": 2,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "a2a": {
+      "command": "uvx",
+      "args": [
+        "A2A"
+      ]
+    }
+  }
+}

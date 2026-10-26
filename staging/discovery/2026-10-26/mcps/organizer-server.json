@@ -1,0 +1,22 @@
+{
+  "id": "organizer-server",
+  "name": "organizer-mcp-server",
+  "repository": "https://github.com/Yocheved4427/organizer-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx organizer-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "organizer-server": {
+      "command": "uvx",
+      "args": [
+        "organizer-mcp-server"
+      ]
+    }
+  }
+}

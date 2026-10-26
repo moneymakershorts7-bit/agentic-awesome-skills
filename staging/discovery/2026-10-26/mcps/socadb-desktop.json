@@ -1,0 +1,23 @@
+{
+  "id": "socadb-desktop",
+  "name": "socadb-desktop",
+  "repository": "https://github.com/soca-projects/socadb-desktop",
+  "description": "A native editor for database schemas, with AI assistance. Built with Tauri. macOS, Windows, Linux.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y socadb-desktop",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "socadb-desktop": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "socadb-desktop"
+      ]
+    }
+  }
+}

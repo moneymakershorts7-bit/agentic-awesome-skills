@@ -1,0 +1,23 @@
+{
+  "id": "context-doctor",
+  "name": "context-doctor",
+  "repository": "https://github.com/KushalP1/context-doctor",
+  "description": "See where your AI agent's tokens go and stop paying for the ones that do nothing. Local CLI, MCP server, hook and proxy for Claude Code, Claude Desktop, Cursor, Codex, Gemini CLI and Anthropic/OpenAI/Gemini API apps. No API key, no telemetry.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y context-doctor",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "context-doctor": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "context-doctor"
+      ]
+    }
+  }
+}

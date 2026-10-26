@@ -1,0 +1,23 @@
+{
+  "id": "1ctx-markets",
+  "name": "1ctx-markets",
+  "repository": "https://github.com/stefanprodan/1ctx-markets",
+  "description": "A self-hosted market data server for AI agents",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y 1ctx-markets",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "1ctx-markets": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "1ctx-markets"
+      ]
+    }
+  }
+}

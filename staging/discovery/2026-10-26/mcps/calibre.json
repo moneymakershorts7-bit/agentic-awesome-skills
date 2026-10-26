@@ -1,0 +1,23 @@
+{
+  "id": "calibre",
+  "name": "calibre-mcp",
+  "repository": "https://github.com/caelum29/calibre-mcp",
+  "description": "The most capable Calibre MCP server \u2014 full read/write tools plus multilingual semantic search over your whole ebook library or a single book. For Claude & any MCP client.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y calibre-mcp",
+  "stars": 20,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "calibre": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "calibre-mcp"
+      ]
+    }
+  }
+}

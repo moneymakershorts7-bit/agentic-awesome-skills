@@ -1,0 +1,23 @@
+{
+  "id": "wikijs-server",
+  "name": "wikijs-mcp-server",
+  "repository": "https://github.com/sglogger/wikijs-mcp-server",
+  "description": "MCP Server for Wikijs, I used it for integration to mattermost chat",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y wikijs-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "wikijs-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "wikijs-mcp-server"
+      ]
+    }
+  }
+}

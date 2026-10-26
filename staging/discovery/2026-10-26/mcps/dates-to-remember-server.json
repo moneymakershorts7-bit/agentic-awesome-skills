@@ -1,0 +1,23 @@
+{
+  "id": "dates-to-remember-server",
+  "name": "dates-to-remember-mcp-server",
+  "repository": "https://github.com/OpenCode-Projects-AtlasRearden8/dates-to-remember-mcp-server",
+  "description": "A tiny [MCP](https://modelcontextprotocol.io) server (stdio, Python stdlib only \u2014 no pip installs) for dates that sneak up on you.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y dates-to-remember-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "dates-to-remember-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dates-to-remember-mcp-server"
+      ]
+    }
+  }
+}

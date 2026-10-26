@@ -1,0 +1,23 @@
+{
+  "id": "agenttrust",
+  "name": "agenttrust",
+  "repository": "https://github.com/agenttrust-ai/agenttrust",
+  "description": "Trust infrastructure for AI agents \u2014 reliability, reputation, endpoint verification, and pre-invocation trust checks via MCP.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y agenttrust",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-26",
+  "mcpConfigSnippet": {
+    "agenttrust": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "agenttrust"
+      ]
+    }
+  }
+}
