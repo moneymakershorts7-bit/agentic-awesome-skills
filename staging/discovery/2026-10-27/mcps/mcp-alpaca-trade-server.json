@@ -1,0 +1,23 @@
+{
+  "id": "mcp-alpaca-trade-server",
+  "name": "mcp-alpaca-trade-server",
+  "repository": "https://github.com/victorcastillojimenez/mcp-alpaca-trade-server",
+  "description": "Servidor MCP sobre la API de Alpaca Markets (paper trading). 6 herramientas: cuenta, posiciones, \u00f3rdenes, watchlists y datos de activos. Generado con Postman MCP Generator y adaptado para simulaci\u00f3n. Node.js, @modelcontextprotocol/sdk, Docker.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-alpaca-trade-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "mcp-alpaca-trade-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-alpaca-trade-server"
+      ]
+    }
+  }
+}

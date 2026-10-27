@@ -1,0 +1,23 @@
+{
+  "id": "agent-infrastructure-landscape",
+  "name": "agent-infrastructure-landscape",
+  "repository": "https://github.com/MrPeppersDev/agent-infrastructure-landscape",
+  "description": "AI agent memory & infrastructure landscape \u2014 comparative catalog of 912 systems \u00d7 68 columns covering memory layers, agent frameworks, runtimes, vector stores, knowledge graphs, MCP servers, benchmarks. Searchable with typed edges, lineages, citations.",
+  "language": "HTML",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/MrPeppersDev/agent-infrastructure-landscape",
+  "stars": 6,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "agent-infrastructure-landscape": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/MrPeppersDev/agent-infrastructure-landscape"
+      ]
+    }
+  }
+}

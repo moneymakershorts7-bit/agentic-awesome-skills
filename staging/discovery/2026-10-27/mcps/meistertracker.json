@@ -1,0 +1,23 @@
+{
+  "id": "meistertracker",
+  "name": "meistertracker",
+  "repository": "https://github.com/meisterpilze/meistertracker",
+  "description": "Self-hosted lab management for specialty mushroom cultivation \u2014 barcode scanning, batch / culture / harvest tracking, label printing, CalDAV sync, MCP integration. Built at meisterpilze.de.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y meistertracker",
+  "stars": 1,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "meistertracker": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "meistertracker"
+      ]
+    }
+  }
+}

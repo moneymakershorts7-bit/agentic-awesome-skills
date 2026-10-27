@@ -1,0 +1,22 @@
+{
+  "id": "arifos",
+  "name": "arifOS",
+  "repository": "https://github.com/ariffazil/arifOS",
+  "description": "Independent policy kernel for AI agents: judge before execute. F1\u2013F13 floors, VAULT999 receipts. Not a model. Not a chatbot.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx arifOS",
+  "stars": 54,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "arifos": {
+      "command": "uvx",
+      "args": [
+        "arifOS"
+      ]
+    }
+  }
+}

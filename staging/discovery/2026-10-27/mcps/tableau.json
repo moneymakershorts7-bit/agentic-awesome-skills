@@ -1,0 +1,23 @@
+{
+  "id": "tableau",
+  "name": "tableau-mcp",
+  "repository": "https://github.com/tableau/tableau-mcp",
+  "description": "Tableau's official MCP Server. Helping agents see and understand data.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y tableau-mcp",
+  "stars": 359,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "tableau": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tableau-mcp"
+      ]
+    }
+  }
+}

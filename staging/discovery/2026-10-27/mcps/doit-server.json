@@ -1,0 +1,23 @@
+{
+  "id": "doit-server",
+  "name": "doit-mcp-server",
+  "repository": "https://github.com/doitintl/doit-mcp-server",
+  "description": "DoiT official MCP Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y doit-mcp-server",
+  "stars": 14,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "doit-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "doit-mcp-server"
+      ]
+    }
+  }
+}

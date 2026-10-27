@@ -1,0 +1,23 @@
+{
+  "id": "olostep-server",
+  "name": "olostep-mcp-server",
+  "repository": "https://github.com/olostep/olostep-mcp-server",
+  "description": "MCP server for Olostep \u2014 the web scraping, crawling, and search infrastructure used by top AI companies. Gives any MCP-compatible AI agent the ability to scrape, crawl, batch-extract, and search the web in real time.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y olostep-mcp-server",
+  "stars": 25,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "olostep-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "olostep-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "csharp-sdk",
+  "name": "csharp-sdk",
+  "repository": "https://github.com/modelcontextprotocol/csharp-sdk",
+  "description": "The official C# SDK for Model Context Protocol servers and clients. Maintained in collaboration with Microsoft.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/modelcontextprotocol/csharp-sdk",
+  "stars": 4601,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "csharp-sdk": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/modelcontextprotocol/csharp-sdk"
+      ]
+    }
+  }
+}

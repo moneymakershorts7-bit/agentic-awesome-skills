@@ -1,0 +1,22 @@
+{
+  "id": "cubrid-server",
+  "name": "cubrid-mcp-server",
+  "repository": "https://github.com/cubrid-lab/cubrid-mcp-server",
+  "description": "A Model Context Protocol (MCP) server for CUBRID database \u2014 enabling LLMs to inspect schemas and execute read-only queries via pycubrid.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx cubrid-mcp-server",
+  "stars": 32,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "cubrid-server": {
+      "command": "uvx",
+      "args": [
+        "cubrid-mcp-server"
+      ]
+    }
+  }
+}

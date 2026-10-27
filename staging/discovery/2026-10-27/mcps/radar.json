@@ -1,0 +1,23 @@
+{
+  "id": "radar",
+  "name": "radar",
+  "repository": "https://github.com/skyhook-io/radar",
+  "description": "The missing open-source Kubernetes UI with a built-in MCP server for AI agents. See what's broken, why, and what changed. Issues, Topology, event timeline, Helm, GitOps, live service traffic, and cluster audits - all in one Go binary.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/skyhook-io/radar@latest",
+  "stars": 3923,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "radar": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/skyhook-io/radar@latest"
+      ]
+    }
+  }
+}

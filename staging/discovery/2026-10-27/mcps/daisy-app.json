@@ -1,0 +1,23 @@
+{
+  "id": "daisy-app",
+  "name": "daisy-app",
+  "repository": "https://github.com/ca33u/daisy-app",
+  "description": "Local-first meeting recorder for Mac. Whisper on-device, your AI for summaries, MCP server for Claude Desktop.",
+  "language": "Swift",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/ca33u/daisy-app",
+  "stars": 18,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "daisy-app": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/ca33u/daisy-app"
+      ]
+    }
+  }
+}

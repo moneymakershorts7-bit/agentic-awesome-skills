@@ -1,0 +1,22 @@
+{
+  "id": "misakanet",
+  "name": "MisakaNet",
+  "repository": "https://github.com/Ikalus1988/MisakaNet",
+  "description": "Re-debugging Solved Failures? No Way. 500+ Evidence-graded fix lessons, One MCP Call-->https://misakanet.org",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx MisakaNet",
+  "stars": 543,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "misakanet": {
+      "command": "uvx",
+      "args": [
+        "MisakaNet"
+      ]
+    }
+  }
+}

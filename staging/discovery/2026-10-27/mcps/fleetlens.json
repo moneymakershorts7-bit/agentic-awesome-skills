@@ -1,0 +1,22 @@
+{
+  "id": "fleetlens",
+  "name": "fleetlens",
+  "repository": "https://github.com/tata1mg/fleetlens",
+  "description": "The cross-repo context your coding agent can't grep for: a service graph for microservices, derived from source and served over MCP.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx fleetlens",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "fleetlens": {
+      "command": "uvx",
+      "args": [
+        "fleetlens"
+      ]
+    }
+  }
+}

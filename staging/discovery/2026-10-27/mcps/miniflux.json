@@ -1,0 +1,23 @@
+{
+  "id": "miniflux",
+  "name": "miniflux-mcp",
+  "repository": "https://github.com/tssujt/miniflux-mcp",
+  "description": "A Model Context Protocol (MCP) server for interacting with Miniflux RSS reader.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/tssujt/miniflux-mcp@latest",
+  "stars": 26,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "miniflux": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/tssujt/miniflux-mcp@latest"
+      ]
+    }
+  }
+}

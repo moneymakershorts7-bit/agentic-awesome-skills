@@ -1,0 +1,23 @@
+{
+  "id": "flconsole-upwork",
+  "name": "flconsole-upwork-mcp",
+  "repository": "https://github.com/droopboop/flconsole-upwork-mcp",
+  "description": "Free Upwork MCP server: new Upwork jobs for Claude Code, Codex, Cursor and the Claude app. Sign in with Telegram, no API key.",
+  "language": "Shell",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/droopboop/flconsole-upwork-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "flconsole-upwork": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/droopboop/flconsole-upwork-mcp"
+      ]
+    }
+  }
+}

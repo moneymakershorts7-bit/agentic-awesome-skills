@@ -1,0 +1,23 @@
+{
+  "id": "overleaf-claude",
+  "name": "overleaf-claude-mcp",
+  "repository": "https://github.com/MarvelCollin/overleaf-claude-mcp",
+  "description": "MCP server that connects Claude to Overleaf. Read, edit, compile and restore LaTeX projects on the free tier.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y overleaf-claude-mcp",
+  "stars": 4,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "overleaf-claude": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "overleaf-claude-mcp"
+      ]
+    }
+  }
+}

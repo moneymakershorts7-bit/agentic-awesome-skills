@@ -1,0 +1,22 @@
+{
+  "id": "test_remote_mcp_server",
+  "name": "test_remote_mcp_server",
+  "repository": "https://github.com/kanishksharma95/test_remote_mcp_server",
+  "description": "A test mcp server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx test_remote_mcp_server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "test_remote_mcp_server": {
+      "command": "uvx",
+      "args": [
+        "test_remote_mcp_server"
+      ]
+    }
+  }
+}

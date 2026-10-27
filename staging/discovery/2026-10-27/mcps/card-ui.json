@@ -1,0 +1,23 @@
+{
+  "id": "card-ui",
+  "name": "mcp-server-card-ui",
+  "repository": "https://github.com/open-resource-discovery/mcp-server-card-ui",
+  "description": "A UI component for visualizing and validating MCP Server Cards, and for testing MCP server capabilities using the server card definition.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-card-ui",
+  "stars": 3,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "card-ui": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-card-ui"
+      ]
+    }
+  }
+}

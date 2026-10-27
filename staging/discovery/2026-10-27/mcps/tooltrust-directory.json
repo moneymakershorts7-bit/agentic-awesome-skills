@@ -1,0 +1,23 @@
+{
+  "id": "tooltrust-directory",
+  "name": "tooltrust-directory",
+  "repository": "https://github.com/AgentSafe-AI/tooltrust-directory",
+  "description": "Trust layer for AI Agents. A curated registry of secure tools and MCP servers with A-F risk grading.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install tooltrust-directory",
+  "stars": 7,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "tooltrust-directory": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "tooltrust-directory"
+      ]
+    }
+  }
+}

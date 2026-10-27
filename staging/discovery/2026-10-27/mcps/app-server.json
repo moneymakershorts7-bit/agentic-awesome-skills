@@ -1,0 +1,22 @@
+{
+  "id": "app-server",
+  "name": "app-mcp-server",
+  "repository": "https://github.com/prefeitura-rio/app-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx app-mcp-server",
+  "stars": 3,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "app-server": {
+      "command": "uvx",
+      "args": [
+        "app-mcp-server"
+      ]
+    }
+  }
+}

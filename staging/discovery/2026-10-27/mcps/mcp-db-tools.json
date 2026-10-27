@@ -1,0 +1,23 @@
+{
+  "id": "mcp-db-tools",
+  "name": "MCP-DB-Tools",
+  "repository": "https://github.com/lzm04521/MCP-DB-Tools",
+  "description": "\u4e3a\u652f\u6301 MCP\uff08Model Context Protocol\uff09\u7684 Agent\uff08\u5982 Claude Code\u3001Codex\uff09\u63d0\u4f9b\u6570\u636e\u5e93\u53ea\u8bfb\u8bbf\u95ee\u80fd\u529b\u7684\u5de5\u5177\u3002\u57fa\u4e8e .NET 8 + \u5b98\u65b9 ModelContextProtocol SDK\uff0c\u652f\u6301 SQL Server\u3001MySQL\u3001Oracle\uff0c\u5185\u7f6e SQL \u5b89\u5168\u5b88\u536b\u3001\u591a\u73af\u5883\u914d\u7f6e\u3001\u914d\u7f6e\u70ed\u91cd\u8f7d\u3001\u6bcf\u73af\u5883\u5e76\u53d1\u9650\u6d41\u3001\u5ba1\u8ba1\u65e5\u5fd7\uff0c\u4ee5\u53ca\u672c\u673a Admin UI \u914d\u7f6e\u7ef4\u62a4\u9875\u9762\u3002",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/lzm04521/MCP-DB-Tools",
+  "stars": 8,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "mcp-db-tools": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/lzm04521/MCP-DB-Tools"
+      ]
+    }
+  }
+}

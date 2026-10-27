@@ -1,0 +1,23 @@
+{
+  "id": "loom",
+  "name": "loom",
+  "repository": "https://github.com/sleepunit-agents/loom",
+  "description": "System 3 MCP server \u2014 persistent identity, memory, and self-model for AI agents. Single-file sqlite-vec + fastembed; zero external services.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y loom",
+  "stars": 1,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "loom": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "loom"
+      ]
+    }
+  }
+}

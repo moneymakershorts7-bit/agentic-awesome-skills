@@ -1,0 +1,23 @@
+{
+  "id": "api-server",
+  "name": "api-mcp-server",
+  "repository": "https://github.com/hostinger/api-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y api-mcp-server",
+  "stars": 164,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "api-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "api-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "nullwire",
+  "name": "nullwire-mcp",
+  "repository": "https://github.com/VoxNode-ux/nullwire-mcp",
+  "description": "Zero-dependency, RAM-only HTTP debugging proxy + MCP server in Go. Your AI agent inspects live traffic, but sees salted correlation tags instead of tokens, cookies and IPs. 0 disk writes.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/VoxNode-ux/nullwire-mcp@latest",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "nullwire": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/VoxNode-ux/nullwire-mcp@latest"
+      ]
+    }
+  }
+}

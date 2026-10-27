@@ -1,0 +1,23 @@
+{
+  "id": "ext-apps",
+  "name": "ext-apps",
+  "repository": "https://github.com/modelcontextprotocol/ext-apps",
+  "description": "Official repo for spec & SDK of MCP Apps protocol - standard for UIs embedded AI chatbots, served by MCP servers",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y ext-apps",
+  "stars": 3011,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-27",
+  "mcpConfigSnippet": {
+    "ext-apps": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ext-apps"
+      ]
+    }
+  }
+}
