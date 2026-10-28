@@ -1,0 +1,3269 @@
+{
+  "date": "2026-10-28",
+  "total": 90,
+  "tools": [
+    {
+      "id": "awesome-claude-code",
+      "name": "awesome-claude-code",
+      "full_name": "hesreallyhim/awesome-claude-code",
+      "description": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affiliation). A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
+      "stars": 56724,
+      "forks": 4884,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/hesreallyhim/awesome-claude-code",
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "agentic-code",
+        "agentic-coding",
+        "ai-workflow-optimization",
+        "ai-workflows",
+        "anthropic"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "skill",
+            "tool",
+            "workflow"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "indie-hacker-tools-plus",
+      "name": "indie-hacker-tools-plus",
+      "full_name": "XiaomingX/indie-hacker-tools-plus",
+      "description": "\u4e3a\u72ec\u7acb\u5f00\u53d1\u8005\u51c6\u5907\u7684\u7cbe\u9009\u6280\u672f\u6808\u548c\u5de5\u5177\u4ed3\u5e93\u6765\u4e86\uff01\u8fd9\u91cc\u6709\u4f60\u6700\u9700\u8981\u7684\u5de5\u5177\uff0c\u5e2e\u4f60\u63d0\u5347\u5f00\u53d1\u6548\u7387\u3001\u8282\u7ea6\u6210\u672c\uff0c\u6700\u91cd\u8981\u7684\u662f\u2014\u2014\u8fd9\u4e9b\u5de5\u5177\u90fd\u662f\u5e02\u573a\u4e0a\u70ed\u95e8\u7684\uff0c\u7ecf\u8fc7\u9a8c\u8bc1\u7684\u3002\ud83d\ude80A curated collection of tech stacks and tools tailored for independent developers is here! these are proven, popular tools widely used in the industry. \ud83d\ude80",
+      "stars": 1908,
+      "forks": 183,
+      "license": "APACHE-2.0",
+      "url": "https://github.com/XiaomingX/indie-hacker-tools-plus",
+      "language": "Multi",
+      "topics": [
+        "agent",
+        "ai",
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "aws"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "tool"
+          ]
+        },
+        {
+          "project": "cloudflare-edge",
+          "relevance": 33,
+          "matched_keywords": [
+            "cloudflare"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-note-taking",
+      "name": "awesome-note-taking",
+      "full_name": "tehtbl/awesome-note-taking",
+      "description": "A curated list of 100+ awesome note-taking apps, PKM tools & knowledge management software \u2014 open source and proprietary. Updated regularly.",
+      "stars": 1014,
+      "forks": 164,
+      "license": "CC0-1.0",
+      "url": "https://github.com/tehtbl/awesome-note-taking",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "knowledge-base",
+        "markdown",
+        "note-taking"
+      ],
+      "project_matches": [
+        {
+          "project": "obsidian-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "markdown",
+            "knowledge",
+            "notes",
+            "pkm"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        },
+        {
+          "project": "cloudflare-edge",
+          "relevance": 33,
+          "matched_keywords": [
+            "edge"
+          ]
+        }
+      ],
+      "top_project": "obsidian-skills",
+      "relevance": 100
+    },
+    {
+      "id": "free-ai-resources-x",
+      "name": "free-ai-resources-x",
+      "full_name": "CelaDaniel/free-ai-resources-x",
+      "description": "\ud83c\udf1f A curated collection of free, high quality AI tools \ud83e\udd16, APIs \ud83d\udd17, datasets \ud83d\udcca, and learning resources \ud83d\udcda covering machine learning \ud83e\udde0, deep learning \ud83e\udde9, generative AI \ud83c\udfa8, NLP \ud83d\udcac, and data science \ud83d\udcc8. Designed to help developers \ud83d\udc69\u200d\ud83d\udcbb, researchers \ud83d\udd2c, and creators \u2728 explore and build with AI faster \u26a1.",
+      "stars": 948,
+      "forks": 137,
+      "license": "MIT",
+      "url": "https://github.com/CelaDaniel/free-ai-resources-x",
+      "language": "Multi",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-courses",
+        "ai-ethics",
+        "ai-tools",
+        "artificial-intelligence"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "tool",
+            "prompt"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "voiceai",
+      "name": "voiceai",
+      "full_name": "mahimairaja/voiceai",
+      "description": "Set of \ud83d\udcdd with \ud83d\udd17 to help those building Voice AI agents \ud83c\udf99\ufe0f\ud83e\udd16",
+      "stars": 337,
+      "forks": 44,
+      "license": "MIT",
+      "url": "https://github.com/mahimairaja/voiceai",
+      "language": "Astro",
+      "topics": [
+        "ai-agents",
+        "asr",
+        "awesome",
+        "awesome-list",
+        "beginners",
+        "conversational-ai"
+      ],
+      "project_matches": [
+        {
+          "project": "audiobook-tts",
+          "relevance": 100,
+          "matched_keywords": [
+            "tts",
+            "speech",
+            "voice"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "agent",
+            "llm"
+          ]
+        }
+      ],
+      "top_project": "audiobook-tts",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-dendron",
+      "name": "awesome-dendron",
+      "full_name": "dendronhq/awesome-dendron",
+      "description": "A big list of Dendron docs, talks, tools, examples, articles, extensions, vaults, showcases, and more that the internet has to offer.",
+      "stars": 245,
+      "forks": 12,
+      "license": "CC0-1.0",
+      "url": "https://github.com/dendronhq/awesome-dendron",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "dendron",
+        "markdown",
+        "note-taking",
+        "notes"
+      ],
+      "project_matches": [
+        {
+          "project": "obsidian-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "markdown",
+            "notes",
+            "pkm",
+            "vault"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "obsidian-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-skills",
+      "name": "awesome-skills",
+      "full_name": "gmh5225/awesome-skills",
+      "description": "A curated list of Agent Skills, resources, and tools for AI coding agents like Claude Code, Codex, Gemini CLI, GitHub Copilot, and more.",
+      "stars": 97,
+      "forks": 104,
+      "license": "MIT",
+      "url": "https://github.com/gmh5225/awesome-skills",
+      "language": "Multi",
+      "topics": [
+        "ai-agents",
+        "awesome",
+        "skills"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "skill",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-open-ai-developer-tools",
+      "name": "awesome-open-ai-developer-tools",
+      "full_name": "Sami-Uysal/awesome-open-ai-developer-tools",
+      "description": "A curated guide & directory for open-source AI devtools, local LLMs, autonomous agents, and SaaS alternatives. Built for modern AI developers.",
+      "stars": 88,
+      "forks": 55,
+      "license": "CC0-1.0",
+      "url": "https://github.com/Sami-Uysal/awesome-open-ai-developer-tools",
+      "language": "JavaScript",
+      "topics": [
+        "awesome",
+        "awesome-list"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-agentic-devops",
+      "name": "awesome-agentic-devops",
+      "full_name": "DevOpsAIguru123/awesome-agentic-devops",
+      "description": "Curated + scored map of official MCP servers and agents for DevOps, Cloud, SRE, and Platform Engineering \u2014 every entry rated on production access, approval gates, and audit evidence.",
+      "stars": 85,
+      "forks": 23,
+      "license": "MIT",
+      "url": "https://github.com/DevOpsAIguru123/awesome-agentic-devops",
+      "language": "Python",
+      "topics": [
+        "agent-skills",
+        "agentic-ai",
+        "agentic-devops",
+        "ai-agents",
+        "awesome",
+        "awesome-list"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "skill",
+            "mcp",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        },
+        {
+          "project": "database-systems",
+          "relevance": 33,
+          "matched_keywords": [
+            "orm"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "ai-megalist",
+      "name": "ai-megalist",
+      "full_name": "IrtezaAsadRizvi/ai-megalist",
+      "description": "Curated index of 200+ AI tools, one writeup per tool with hands-on takes. Covers coding, design, research, video, voice, agents, music, local LLMs. Compare alternatives, see real pricing, find the right tool for the job.",
+      "stars": 76,
+      "forks": 53,
+      "license": "MIT",
+      "url": "https://github.com/IrtezaAsadRizvi/ai-megalist",
+      "language": "Multi",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "ai-tools",
+        "ai-video",
+        "artificial-intelligence"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "tool",
+            "prompt"
+          ]
+        },
+        {
+          "project": "audiobook-tts",
+          "relevance": 33,
+          "matched_keywords": [
+            "voice"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-tts-colab",
+      "name": "awesome-TTS-Colab",
+      "full_name": "Troyanovsky/awesome-TTS-Colab",
+      "description": "Collection of awesome TTS and voice cloning models to run with Google Colab",
+      "stars": 70,
+      "forks": 3,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/Troyanovsky/awesome-TTS-Colab",
+      "language": "Jupyter Notebook",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "speech-synthesis",
+        "text-to-speech",
+        "tts",
+        "voice-conversion"
+      ],
+      "project_matches": [
+        {
+          "project": "audiobook-tts",
+          "relevance": 100,
+          "matched_keywords": [
+            "tts",
+            "speech",
+            "voice"
+          ]
+        }
+      ],
+      "top_project": "audiobook-tts",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-ai-cae",
+      "name": "awesome-ai-cae",
+      "full_name": "kimimgo/awesome-ai-cae",
+      "description": "A curated list of 100+ AI-ready tools for Computer-Aided Engineering, ranked by an AI-Readiness Score (agent-callability: MCP, Python API, CLI, pip). CFD, FEA, SPH, DEM, differentiable simulation, neural operators, PINNs, MCP servers.",
+      "stars": 63,
+      "forks": 11,
+      "license": "CC0-1.0",
+      "url": "https://github.com/kimimgo/awesome-ai-cae",
+      "language": "Python",
+      "topics": [
+        "ai",
+        "ai-for-science",
+        "artificial-intelligence",
+        "awesome",
+        "awesome-list",
+        "cae"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "mcp",
+            "tool"
+          ]
+        },
+        {
+          "project": "database-systems",
+          "relevance": 33,
+          "matched_keywords": [
+            "orm"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "context-awesome",
+      "name": "context-awesome",
+      "full_name": "bh-rat/context-awesome",
+      "description": "awesome-lists now available as CLI & MCP server for your agent.",
+      "stars": 61,
+      "forks": 10,
+      "license": "MIT",
+      "url": "https://github.com/bh-rat/context-awesome",
+      "language": "TypeScript",
+      "topics": [
+        "agents",
+        "awesome",
+        "awesome-list",
+        "llm",
+        "mcp",
+        "mcp-server"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "mcp"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-ai-agent-governance",
+      "name": "awesome-ai-agent-governance",
+      "full_name": "systempromptio/awesome-ai-agent-governance",
+      "description": "The curated list of tools, standards, and resources for governing AI agents in production: policy enforcement, audit trails, EU AI Act compliance, MCP and Claude Code security.",
+      "stars": 55,
+      "forks": 113,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/systempromptio/awesome-ai-agent-governance",
+      "language": "Multi",
+      "topics": [
+        "ai-agents",
+        "ai-governance",
+        "ai-security",
+        "audit",
+        "awesome",
+        "awesome-list"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "mcp",
+            "tool",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-korean-agent-skills",
+      "name": "awesome-korean-agent-skills",
+      "full_name": "J-nowcow/awesome-korean-agent-skills",
+      "description": "\ud83c\uddf0\ud83c\uddf7 400+ Korean AI Coding Agent Skills \u2014 Claude Code, Gemini CLI, Codex, Cursor \uc2a4\ud0ac\uc744 \uae30\ub2a5\ubcc4\ub85c \ubaa8\uc740 \ud050\ub808\uc774\uc158",
+      "stars": 52,
+      "forks": 13,
+      "license": "CC0-1.0",
+      "url": "https://github.com/J-nowcow/awesome-korean-agent-skills",
+      "language": "Multi",
+      "topics": [
+        "agent-skills",
+        "agents",
+        "ai-agents",
+        "ai-coding",
+        "automation",
+        "awesome"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "skill",
+            "tool",
+            "prompt",
+            "automation"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-ai-agent-tools",
+      "name": "awesome-ai-agent-tools",
+      "full_name": "michielhdoteth/awesome-ai-agent-tools",
+      "description": "AI agent tools for coding assistants: skills, MCP servers, agent loops, subagents, hooks, plugins, and CLI tools. Machine-readable catalogs. Works with Claude Code, Cursor, Codex, Gemini CLI, and 30+ agents.",
+      "stars": 50,
+      "forks": 128,
+      "license": "CC0-1.0",
+      "url": "https://github.com/michielhdoteth/awesome-ai-agent-tools",
+      "language": "JavaScript",
+      "topics": [
+        "agent-orchestration",
+        "agent-workflows",
+        "ai-agents",
+        "ai-coding",
+        "automation",
+        "awesome"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "skill",
+            "mcp",
+            "tool",
+            "prompt"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-opencode",
+      "name": "awesome-opencode",
+      "full_name": "weisser-dev/awesome-opencode",
+      "description": "108 agents, 15 skills, smart model config, and interactive CLI for OpenCode \u2014 npx @weisser-dev/awesome-opencode",
+      "stars": 43,
+      "forks": 9,
+      "license": "MIT",
+      "url": "https://github.com/weisser-dev/awesome-opencode",
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "awesome",
+        "cli",
+        "developer-tools",
+        "llm",
+        "mcp"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "skill",
+            "mcp",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-security-agent-harnesses",
+      "name": "awesome-security-agent-harnesses",
+      "full_name": "Ed-Marcavage/awesome-security-agent-harnesses",
+      "description": "AI agents for pentesting, code audit, fuzzing, vulnerability discovery, and reverse engineering: harnesses, sandboxes, security MCP servers, benchmarks, and evals.",
+      "stars": 38,
+      "forks": 9,
+      "license": "CC0-1.0",
+      "url": "https://github.com/Ed-Marcavage/awesome-security-agent-harnesses",
+      "language": "Multi",
+      "topics": [
+        "agentic-ai",
+        "ai-agents",
+        "ai-hacking",
+        "ai-pentesting",
+        "ai-security",
+        "awesome"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "mcp",
+            "eval",
+            "automation",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-engineering-ai",
+      "name": "awesome-engineering-ai",
+      "full_name": "Lancetnik/awesome-engineering-ai",
+      "description": "Tools you can actually install and use with your coding agent \u2014 skills, MCP servers, harnesses, CLIs. Curated from a weekly agent-tooling radar.",
+      "stars": 34,
+      "forks": 9,
+      "license": "CC0-1.0",
+      "url": "https://github.com/Lancetnik/awesome-engineering-ai",
+      "language": "Multi",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "awesome",
+        "awesome-list",
+        "claude-code",
+        "coding-agents"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "skill",
+            "mcp",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-dxt-mcp",
+      "name": "awesome-dxt-mcp",
+      "full_name": "MCPStar/awesome-dxt-mcp",
+      "description": "\ud83d\ude80 A curated list of awesome Desktop Extensions (DXT) and MCP servers for Claude Desktop. Discover, share, and contribute to the growing ecosystem of AI-powered local tools and automations.",
+      "stars": 23,
+      "forks": 3,
+      "license": "MIT",
+      "url": "https://github.com/MCPStar/awesome-dxt-mcp",
+      "language": "Multi",
+      "topics": [
+        "ai-extensions",
+        "ai-tools",
+        "anthropic",
+        "automation",
+        "awesome",
+        "awesome-list"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "mcp",
+            "tool",
+            "automation"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-agent-skills",
+      "name": "awesome-agent-skills",
+      "full_name": "khasky/awesome-agent-skills",
+      "description": " Skills for AI coding agents: code review, debugging, security audits, refactoring, cleaning up AI-written code and text, and more.",
+      "stars": 21,
+      "forks": 5,
+      "license": "MIT",
+      "url": "https://github.com/khasky/awesome-agent-skills",
+      "language": "Python",
+      "topics": [
+        "agent",
+        "agent-skills",
+        "ai",
+        "ai-coding",
+        "ai-skill",
+        "ai-slop"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "skill",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "tts",
+      "name": "tts",
+      "full_name": "mahimairaja/tts",
+      "description": "Set of \ud83d\udcdd with \ud83d\udd17 to improve the voice - natural and intelligible",
+      "stars": 19,
+      "forks": 0,
+      "license": "MIT",
+      "url": "https://github.com/mahimairaja/tts",
+      "language": "Astro",
+      "topics": [
+        "awesome",
+        "beginners",
+        "conversational-ai",
+        "linguistics",
+        "livekit",
+        "llms"
+      ],
+      "project_matches": [
+        {
+          "project": "audiobook-tts",
+          "relevance": 100,
+          "matched_keywords": [
+            "tts",
+            "speech",
+            "voice"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "agent",
+            "llm"
+          ]
+        }
+      ],
+      "top_project": "audiobook-tts",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-agent-skills",
+      "name": "awesome-agent-skills",
+      "full_name": "junminhong/awesome-agent-skills",
+      "description": "A curated list of agent skills, resources, and tools for building customizable AI workflows (Claude Code, Codex, Kiro-CLI)",
+      "stars": 18,
+      "forks": 89,
+      "license": "MIT",
+      "url": "https://github.com/junminhong/awesome-agent-skills",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "claude",
+        "claude-code",
+        "codex",
+        "kiro-cli",
+        "openai"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "skill",
+            "tool",
+            "workflow"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-magento-ai",
+      "name": "awesome-magento-ai",
+      "full_name": "MagePsycho/awesome-magento-ai",
+      "description": "Curated list of AI tools for Magento 2, Adobe Commerce & Mage-OS \u2014 agent skills, MCP servers, modules, CLIs, starter kits",
+      "stars": 15,
+      "forks": 5,
+      "license": "CC0-1.0",
+      "url": "https://github.com/MagePsycho/awesome-magento-ai",
+      "language": "Multi",
+      "topics": [
+        "adobe-commerce",
+        "agent-skills",
+        "ai",
+        "awesome",
+        "awesome-list",
+        "claude-code"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "skill",
+            "mcp",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-agent-clients",
+      "name": "awesome-agent-clients",
+      "full_name": "1shiharat/awesome-agent-clients",
+      "description": "A curated list of AI coding-agent clients & orchestrators \u2014 desktop, terminal, IDE, web, mobile & cloud apps that run, manage, or orchestrate Claude Code, Codex, Gemini CLI, OpenCode & more. Ranked by GitHub stars.",
+      "stars": 14,
+      "forks": 9,
+      "license": "CC0-1.0",
+      "url": "https://github.com/1shiharat/awesome-agent-clients",
+      "language": "Multi",
+      "topics": [
+        "agent-orchestration",
+        "ai-agents",
+        "awesome",
+        "awesome-list",
+        "claude-code",
+        "codex"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-ai-coding-tools",
+      "name": "awesome-ai-coding-tools",
+      "full_name": "mahmoudsajjadi/awesome-ai-coding-tools",
+      "description": "Awesome AI Coding Tools (2026): Curated 3-tier taxonomy of coding assistants, CLI agents, local LLMs, MCP servers, and benchmarks",
+      "stars": 14,
+      "forks": 6,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/mahmoudsajjadi/awesome-ai-coding-tools",
+      "language": "Python",
+      "topics": [
+        "agentic-ai",
+        "ai-coding",
+        "aider",
+        "autonomous-agents",
+        "awesome",
+        "awesome-list"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "mcp",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-open-ai-alternatives",
+      "name": "awesome-open-ai-alternatives",
+      "full_name": "JeevaVenkidu/awesome-open-ai-alternatives",
+      "description": "A curated list of open-source alternatives to proprietary AI tools \u2014 LLMs, agents, RAG, coding assistants, image/video/voice generation, and local deployment. Updated July 2026.",
+      "stars": 14,
+      "forks": 11,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/JeevaVenkidu/awesome-open-ai-alternatives",
+      "language": "Multi",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "anthropic-alternative",
+        "awesome",
+        "awesome-list",
+        "coding-assistant"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "mcp",
+            "tool",
+            "eval"
+          ]
+        },
+        {
+          "project": "audiobook-tts",
+          "relevance": 33,
+          "matched_keywords": [
+            "voice"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-api-skills",
+      "name": "awesome-api-skills",
+      "full_name": "ashish7802/awesome-api-skills",
+      "description": "Production-ready AI coding skills for APIs. Installable skills for Claude Code, Cursor, Codex CLI, Gemini CLI, and modern AI coding agents.",
+      "stars": 13,
+      "forks": 6,
+      "license": "MIT",
+      "url": "https://github.com/ashish7802/awesome-api-skills",
+      "language": "JavaScript",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "api",
+        "automation",
+        "awesome"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "skill",
+            "tool",
+            "prompt",
+            "automation"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-voice-ai",
+      "name": "awesome-voice-ai",
+      "full_name": "ALLBOTSIO/awesome-voice-ai",
+      "description": "A curated list of 150+ voice AI tools \u2014 agents, TTS, STT, cloning, telephony, frameworks. The definitive voice AI directory.",
+      "stars": 13,
+      "forks": 25,
+      "license": "MIT",
+      "url": "https://github.com/ALLBOTSIO/awesome-voice-ai",
+      "language": "Multi",
+      "topics": [
+        "ai-tools",
+        "awesome",
+        "awesome-list",
+        "conversational-ai",
+        "deepgram",
+        "elevenlabs"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "mcp",
+            "tool"
+          ]
+        },
+        {
+          "project": "audiobook-tts",
+          "relevance": 100,
+          "matched_keywords": [
+            "tts",
+            "speech",
+            "whisper",
+            "voice"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-local-voice-ai",
+      "name": "awesome-local-voice-ai",
+      "full_name": "alleyxd/awesome-local-voice-ai",
+      "description": "Curated open-source voice AI you can run locally: speech to text, text to speech, VAD, voice agent frameworks and speech-native models.",
+      "stars": 13,
+      "forks": 0,
+      "license": "CC0-1.0",
+      "url": "https://github.com/alleyxd/awesome-local-voice-ai",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "local-ai",
+        "speech-recognition",
+        "text-to-speech",
+        "voice-agents"
+      ],
+      "project_matches": [
+        {
+          "project": "audiobook-tts",
+          "relevance": 100,
+          "matched_keywords": [
+            "speech",
+            "whisper",
+            "voice"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "agent"
+          ]
+        }
+      ],
+      "top_project": "audiobook-tts",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-ai-coding-tools",
+      "name": "awesome-ai-coding-tools",
+      "full_name": "launchapp-dev/awesome-ai-coding-tools",
+      "description": "A curated list of AI-powered coding tools \u2014 editors, agents, code review, testing, CLI tools, and more.",
+      "stars": 10,
+      "forks": 66,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/launchapp-dev/awesome-ai-coding-tools",
+      "language": "Multi",
+      "topics": [
+        "agentic",
+        "ai",
+        "ai-agents",
+        "ai-coding",
+        "ai-tools",
+        "aider"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "mcp",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-postgresql",
+      "name": "awesome-postgresql",
+      "full_name": "brandonhimpfen/awesome-postgresql",
+      "description": "A curated list of awesome libraries, tools, frameworks, and resources for PostgreSQL, an advanced open-source relational database system known for its performance, extensibility, and SQL compliance.",
+      "stars": 10,
+      "forks": 10,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/brandonhimpfen/awesome-postgresql",
+      "language": "Python",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "postgres",
+        "postgresql",
+        "postgresql-database"
+      ],
+      "project_matches": [
+        {
+          "project": "database-systems",
+          "relevance": 100,
+          "matched_keywords": [
+            "postgres",
+            "database",
+            "sql",
+            "orm"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "database-systems",
+      "relevance": 100
+    },
+    {
+      "id": "comparison-serverless-cloud-sql-databases",
+      "name": "comparison-serverless-cloud-sql-databases",
+      "full_name": "hbmartin/comparison-serverless-cloud-sql-databases",
+      "description": "A detailed comparison of serverless cloud SQL database providers, including developer experience, pricing, runtime limits, and community support. Compare options that allow scaling to zero cost when not in use, with comprehensive tables comparing features like SQL dialect support, free tier offerings, and maximum database sizes.",
+      "stars": 8,
+      "forks": 0,
+      "license": "MIT",
+      "url": "https://github.com/hbmartin/comparison-serverless-cloud-sql-databases",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "backend",
+        "comparison",
+        "database",
+        "postgres",
+        "postgresql"
+      ],
+      "project_matches": [
+        {
+          "project": "database-systems",
+          "relevance": 100,
+          "matched_keywords": [
+            "postgres",
+            "sqlite",
+            "database",
+            "sql"
+          ]
+        },
+        {
+          "project": "cloudflare-edge",
+          "relevance": 33,
+          "matched_keywords": [
+            "serverless"
+          ]
+        }
+      ],
+      "top_project": "database-systems",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-brains",
+      "name": "awesome-brains",
+      "full_name": "lakshyabuilds/awesome-brains",
+      "description": "Everyone is building AI second-brains. Some are self-hostable, some are cloud-based. But, which one is actually worth your time & costs?",
+      "stars": 7,
+      "forks": 0,
+      "license": "CC0-1.0",
+      "url": "https://github.com/lakshyabuilds/awesome-brains",
+      "language": "Multi",
+      "topics": [
+        "agent",
+        "awesome",
+        "awesome-list",
+        "claude-code",
+        "karpathy-inspired",
+        "karpathy-llm-wiki"
+      ],
+      "project_matches": [
+        {
+          "project": "obsidian-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "obsidian",
+            "markdown",
+            "knowledge",
+            "notes",
+            "graph"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "agent",
+            "llm"
+          ]
+        },
+        {
+          "project": "cloudflare-edge",
+          "relevance": 33,
+          "matched_keywords": [
+            "edge"
+          ]
+        }
+      ],
+      "top_project": "obsidian-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-ai-workflows-that-works",
+      "name": "awesome-ai-workflows-that-works",
+      "full_name": "Raffo24/awesome-ai-workflows-that-works",
+      "description": "Practical AI & more workflows for coding, MCP, local AI, productivity, research, media, and ops.",
+      "stars": 6,
+      "forks": 1,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/Raffo24/awesome-ai-workflows-that-works",
+      "language": "JavaScript",
+      "topics": [
+        "ai-agents",
+        "ai-productivity",
+        "ai-workflows",
+        "automation",
+        "awesome",
+        "awesome-list"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "mcp",
+            "tool",
+            "prompt",
+            "workflow"
+          ]
+        },
+        {
+          "project": "obsidian-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "knowledge"
+          ]
+        },
+        {
+          "project": "cloudflare-edge",
+          "relevance": 33,
+          "matched_keywords": [
+            "edge"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-text-to-speech",
+      "name": "awesome-text-to-speech",
+      "full_name": "ai4s-research/awesome-text-to-speech",
+      "description": "A curated list of the best Text-to-Speech, speech synthesis, and voice-cloning research \u2014 models, papers, benchmarks, and toolkits, focused on 2025\u20132026.",
+      "stars": 5,
+      "forks": 5,
+      "license": "MIT",
+      "url": "https://github.com/ai4s-research/awesome-text-to-speech",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "deep-learning",
+        "neural-codec",
+        "papers",
+        "speech-ai"
+      ],
+      "project_matches": [
+        {
+          "project": "audiobook-tts",
+          "relevance": 100,
+          "matched_keywords": [
+            "tts",
+            "speech",
+            "voice"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "audiobook-tts",
+      "relevance": 100
+    },
+    {
+      "id": "local-llm",
+      "name": "Local-LLM",
+      "full_name": "Gauri-2704/Local-LLM",
+      "description": "\ud83d\udee0\ufe0f Enable offline NLP workflows with Local-LLM, a lightweight Python library for secure environments using the BERT model, ensuring reproducibility and reliability.",
+      "stars": 4,
+      "forks": 0,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/Gauri-2704/Local-LLM",
+      "language": "Python",
+      "topics": [
+        "ai",
+        "awesome",
+        "foundation-models",
+        "gemma",
+        "gpt-4o",
+        "langchain"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "llm",
+            "mcp",
+            "eval",
+            "workflow"
+          ]
+        },
+        {
+          "project": "audiobook-tts",
+          "relevance": 33,
+          "matched_keywords": [
+            "speech"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-speech-ai",
+      "name": "awesome-speech-ai",
+      "full_name": "YuChen-06/awesome-speech-ai",
+      "description": "A curated collection of awesome open-source Speech AI tools, frameworks, and models. It covers core technologies like TTS, ASR, Voice Cloning, Audio Enhancement, Speech LLMs, datasets, and research papers\u2014designed for speech tech enthusiasts, developers, and researchers.",
+      "stars": 2,
+      "forks": 4,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/YuChen-06/awesome-speech-ai",
+      "language": "JavaScript",
+      "topics": [
+        "asr",
+        "awesome",
+        "awesome-list",
+        "speech",
+        "tts"
+      ],
+      "project_matches": [
+        {
+          "project": "audiobook-tts",
+          "relevance": 100,
+          "matched_keywords": [
+            "tts",
+            "speech",
+            "audio",
+            "voice"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "llm",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "audiobook-tts",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-soc2",
+      "name": "awesome-soc2",
+      "full_name": "TrazTech-Inc/awesome-soc2",
+      "description": "A curated list of SOC 2 resources: readiness checklists, automation platforms, policy templates, audit firms, cloud security tools, and compliance guides for startups and enterprises",
+      "stars": 1,
+      "forks": 3,
+      "license": "CC0-1.0",
+      "url": "https://github.com/TrazTech-Inc/awesome-soc2",
+      "language": "Multi",
+      "topics": [
+        "audit",
+        "audit-readiness",
+        "awesome",
+        "awesome-list",
+        "cloud-security",
+        "compliance"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "tool",
+            "automation",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        },
+        {
+          "project": "database-systems",
+          "relevance": 33,
+          "matched_keywords": [
+            "orm"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "mcp-server-audit",
+      "name": "mcp-server-audit",
+      "full_name": "muhammadwaqar12/mcp-server-audit",
+      "description": "Security audit checklist for third-party MCP servers before you install them",
+      "stars": 1,
+      "forks": 0,
+      "license": "MIT",
+      "url": "https://github.com/muhammadwaqar12/mcp-server-audit",
+      "language": "Multi",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "appsec",
+        "audit",
+        "awesome"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "llm",
+            "mcp",
+            "prompt",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-db",
+      "name": "Awesome-db",
+      "full_name": "dakotac1994/Awesome-db",
+      "description": "Awesome list of databases: relational, distributed SQL, document, key-value, graph, time-series, vector, search and OLAP engines, with machine-readable data and honest license labels.",
+      "stars": 1,
+      "forks": 0,
+      "license": "MIT",
+      "url": "https://github.com/dakotac1994/Awesome-db",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "database",
+        "databases",
+        "graph-database",
+        "nosql"
+      ],
+      "project_matches": [
+        {
+          "project": "database-systems",
+          "relevance": 100,
+          "matched_keywords": [
+            "postgres",
+            "vector",
+            "database",
+            "sql"
+          ]
+        },
+        {
+          "project": "obsidian-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "graph"
+          ]
+        }
+      ],
+      "top_project": "database-systems",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-claude-code-skills-collections",
+      "name": "awesome-claude-code-skills-collections",
+      "full_name": "zhuyansen/awesome-claude-code-skills-collections",
+      "description": "Collections of Claude Code skills: 781 repos that hold many skills, plugins or subagents. General collections, single-domain packs, vendor directories. Security-graded, 39 audited. EN + \u4e2d\u6587.",
+      "stars": 0,
+      "forks": 0,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/zhuyansen/awesome-claude-code-skills-collections",
+      "language": "Multi",
+      "topics": [
+        "agent-skills",
+        "awesome",
+        "awesome-list",
+        "claude-code",
+        "claude-code-skills",
+        "claude-skills"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 100,
+          "matched_keywords": [
+            "agent",
+            "skill",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 100
+    },
+    {
+      "id": "5432-fr",
+      "name": "5432.fr",
+      "full_name": "5432-fr/5432.fr",
+      "description": "D\u00e9p\u00f4t du site 5432.fr",
+      "stars": 0,
+      "forks": 0,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/5432-fr/5432.fr",
+      "language": "Python",
+      "topics": [
+        "awesome",
+        "france",
+        "french",
+        "postgres",
+        "postgresql",
+        "postgresql-database"
+      ],
+      "project_matches": [
+        {
+          "project": "database-systems",
+          "relevance": 100,
+          "matched_keywords": [
+            "postgres",
+            "database",
+            "sql"
+          ]
+        }
+      ],
+      "top_project": "database-systems",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-voice-ai",
+      "name": "awesome-voice-ai",
+      "full_name": "Mirror-Corporation/awesome-voice-ai",
+      "description": "A curated list of voice AI tools, datasets, papers, and products. Maintained by Mirror Corporation.",
+      "stars": 0,
+      "forks": 5,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/Mirror-Corporation/awesome-voice-ai",
+      "language": "Multi",
+      "topics": [
+        "ai",
+        "asr",
+        "awesome",
+        "awesome-list",
+        "coqui",
+        "curated-list"
+      ],
+      "project_matches": [
+        {
+          "project": "audiobook-tts",
+          "relevance": 100,
+          "matched_keywords": [
+            "tts",
+            "speech",
+            "whisper",
+            "voice"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "agent",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "audiobook-tts",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-llm-tts",
+      "name": "Awesome-llm-tts",
+      "full_name": "Awesome-llms-labs/Awesome-llm-tts",
+      "description": "Awesome list of LLM-era text-to-speech: neural TTS models, commercial TTS APIs, voice cloning, open-source toolkits, streaming TTS, voice conversion, benchmarks and datasets, with machine-readable data.",
+      "stars": 0,
+      "forks": 0,
+      "license": "MIT",
+      "url": "https://github.com/Awesome-llms-labs/Awesome-llm-tts",
+      "language": "Multi",
+      "topics": [
+        "ai",
+        "audio",
+        "awesome",
+        "awesome-list",
+        "llm",
+        "speech-synthesis"
+      ],
+      "project_matches": [
+        {
+          "project": "audiobook-tts",
+          "relevance": 100,
+          "matched_keywords": [
+            "tts",
+            "speech",
+            "audio",
+            "voice"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "llm",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "audiobook-tts",
+      "relevance": 100
+    },
+    {
+      "id": "awesome-agent-skills",
+      "name": "awesome-agent-skills",
+      "full_name": "VoltAgent/awesome-agent-skills",
+      "description": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+      "stars": 36485,
+      "forks": 3992,
+      "license": "MIT",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "language": "Multi",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "awesome",
+        "awesome-list",
+        "claude-code",
+        "claude-code-skills"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "agent",
+            "skill"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "self-hosting-guide",
+      "name": "Self-Hosting-Guide",
+      "full_name": "mikeroyal/Self-Hosting-Guide",
+      "description": "Self-Hosting Guide. Learn all about  locally hosting (on premises & private web servers) and managing software applications by yourself or your organization. Including Cloud, LLMs, WireGuard, Automation, Home Assistant, and Networking.",
+      "stars": 23373,
+      "forks": 1173,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/mikeroyal/Self-Hosting-Guide",
+      "language": "Dockerfile",
+      "topics": [
+        "authentication",
+        "awesome",
+        "awesome-list",
+        "decentralized",
+        "docker-compose",
+        "home-assistant"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "llm",
+            "automation"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-local-llm",
+      "name": "awesome-local-llm",
+      "full_name": "rafska/awesome-local-llm",
+      "description": "A curated list of awesome platforms, tools, practices and resources that helps run LLMs locally",
+      "stars": 3012,
+      "forks": 496,
+      "license": "MIT",
+      "url": "https://github.com/rafska/awesome-local-llm",
+      "language": "Multi",
+      "topics": [
+        "ai",
+        "awesome",
+        "awesome-list",
+        "llm",
+        "local",
+        "local-ai"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "llm",
+            "tool"
+          ]
+        },
+        {
+          "project": "database-systems",
+          "relevance": 33,
+          "matched_keywords": [
+            "orm"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "alternative-frontends",
+      "name": "alternative-frontends",
+      "full_name": "digitalblossom/alternative-frontends",
+      "description": "\ud83d\udd10\ud83c\udf10 Privacy-respecting web frontends for popular services ",
+      "stars": 2331,
+      "forks": 44,
+      "license": "GPL-3.0",
+      "url": "https://github.com/digitalblossom/alternative-frontends",
+      "language": "Multi",
+      "topics": [
+        "adblock",
+        "ads",
+        "anonymity",
+        "awesome",
+        "awesome-list",
+        "decentralization"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "tool",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 33,
+          "matched_keywords": [
+            "security"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-cloudflare",
+      "name": "awesome-cloudflare",
+      "full_name": "irazasyed/awesome-cloudflare",
+      "description": "\u26c5\ufe0f Curated list of awesome Cloudflare worker recipes, open-source projects, guides, blogs and other resources.",
+      "stars": 1271,
+      "forks": 132,
+      "license": "CC0-1.0",
+      "url": "https://github.com/irazasyed/awesome-cloudflare",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-cloudflare",
+        "awesome-list",
+        "cloudflare",
+        "cloudflare-worker",
+        "serverless"
+      ],
+      "project_matches": [
+        {
+          "project": "cloudflare-edge",
+          "relevance": 66,
+          "matched_keywords": [
+            "cloudflare",
+            "serverless"
+          ]
+        }
+      ],
+      "top_project": "cloudflare-edge",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-cloudflare-selfhosted",
+      "name": "awesome-cloudflare-selfhosted",
+      "full_name": "theoephraim/awesome-cloudflare-selfhosted",
+      "description": "\ud83c\udf4a\u2601\ufe0f Open-source* apps that replace SaaS product + tools, running in your own Cloudflare account",
+      "stars": 1207,
+      "forks": 63,
+      "license": "MIT",
+      "url": "https://github.com/theoephraim/awesome-cloudflare-selfhosted",
+      "language": "JavaScript",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "cloudflare",
+        "cloudflare-workers",
+        "self-hosted"
+      ],
+      "project_matches": [
+        {
+          "project": "cloudflare-edge",
+          "relevance": 66,
+          "matched_keywords": [
+            "cloudflare",
+            "workers"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "cloudflare-edge",
+      "relevance": 66
+    },
+    {
+      "id": "smartcontracts-audit-checklist",
+      "name": "SmartContracts-audit-checklist",
+      "full_name": "tamjid0x01/SmartContracts-audit-checklist",
+      "description": "A checklist of things to look for when auditing Solidity smart contracts. ",
+      "stars": 802,
+      "forks": 129,
+      "license": "MIT",
+      "url": "https://github.com/tamjid0x01/SmartContracts-audit-checklist",
+      "language": "Multi",
+      "topics": [
+        "audit",
+        "awesome",
+        "awesome-list",
+        "ethereum",
+        "hacktoberfest",
+        "hacktoberfest-accepted"
+      ],
+      "project_matches": [
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "security"
+          ]
+        }
+      ],
+      "top_project": "security-compliance",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-security-audits",
+      "name": "awesome-security-audits",
+      "full_name": "pomerium/awesome-security-audits",
+      "description": "A collection of public security audits.",
+      "stars": 210,
+      "forks": 17,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/pomerium/awesome-security-audits",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "go",
+        "golang",
+        "security",
+        "security-audit"
+      ],
+      "project_matches": [
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "security"
+          ]
+        }
+      ],
+      "top_project": "security-compliance",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-saas-directory",
+      "name": "awesome-saas-directory",
+      "full_name": "open-saas-directory/awesome-saas-directory",
+      "description": "A curated directory of open-source SaaS alternatives and self-hosted software. Discover tools for AI, analytics, CRM, automation, and collaboration\u2014organized by category.",
+      "stars": 149,
+      "forks": 54,
+      "license": "MIT",
+      "url": "https://github.com/open-saas-directory/awesome-saas-directory",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-directories",
+        "awesome-list",
+        "directory",
+        "open-source",
+        "saas-alternatives"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "tool",
+            "automation"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-free-postgres",
+      "name": "awesome-free-postgres",
+      "full_name": "alexeyfv/awesome-free-postgres",
+      "description": "Curated list of free PostgreSQL hosting providers \u2013 ideal for hobby projects, learning, and prototyping.",
+      "stars": 138,
+      "forks": 12,
+      "license": "MIT",
+      "url": "https://github.com/alexeyfv/awesome-free-postgres",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "free",
+        "postgres"
+      ],
+      "project_matches": [
+        {
+          "project": "database-systems",
+          "relevance": 66,
+          "matched_keywords": [
+            "postgres",
+            "sql"
+          ]
+        }
+      ],
+      "top_project": "database-systems",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-physec",
+      "name": "awesome-physec",
+      "full_name": "LiveGray/awesome-physec",
+      "description": "Repository containing useful links for all things Physical Security. Please contribute!",
+      "stars": 97,
+      "forks": 7,
+      "license": "CC0-1.0",
+      "url": "https://github.com/LiveGray/awesome-physec",
+      "language": "Multi",
+      "topics": [
+        "audit",
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "hacking",
+        "hacking-tool"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "tool",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "solidity-audit-checklist",
+      "name": "solidity-audit-checklist",
+      "full_name": "miguelmota/solidity-audit-checklist",
+      "description": "A checklist of things to look for when auditing Solidity smart contracts.",
+      "stars": 76,
+      "forks": 20,
+      "license": "MIT",
+      "url": "https://github.com/miguelmota/solidity-audit-checklist",
+      "language": "Multi",
+      "topics": [
+        "audit",
+        "awesome",
+        "awesome-list",
+        "best-practices",
+        "blockchain",
+        "checklist"
+      ],
+      "project_matches": [
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "security"
+          ]
+        }
+      ],
+      "top_project": "security-compliance",
+      "relevance": 66
+    },
+    {
+      "id": "awesome",
+      "name": "awesome",
+      "full_name": "pghacking/awesome",
+      "description": "A curated list of awesome PostgreSQL hacking resources.",
+      "stars": 57,
+      "forks": 7,
+      "license": "CC0-1.0",
+      "url": "https://github.com/pghacking/awesome",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "hacking",
+        "postgres"
+      ],
+      "project_matches": [
+        {
+          "project": "database-systems",
+          "relevance": 66,
+          "matched_keywords": [
+            "postgres",
+            "sql"
+          ]
+        }
+      ],
+      "top_project": "database-systems",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-product-cli",
+      "name": "awesome-product-cli",
+      "full_name": "progrmoiz/awesome-product-cli",
+      "description": "A curated list of command-line interfaces for SaaS products \u2014 making every product accessible to AI agents and developers",
+      "stars": 39,
+      "forks": 6,
+      "license": "CC0-1.0",
+      "url": "https://github.com/progrmoiz/awesome-product-cli",
+      "language": "Multi",
+      "topics": [
+        "ai-agents",
+        "awesome",
+        "awesome-list",
+        "cli",
+        "developer-tools",
+        "saas"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "agent",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-neon",
+      "name": "awesome-neon",
+      "full_name": "tyaga001/awesome-neon",
+      "description": "Official awesome-list of Neon Postgres Database Starters & Resources \u26a1\ufe0f",
+      "stars": 30,
+      "forks": 3,
+      "license": "CC0-1.0",
+      "url": "https://github.com/tyaga001/awesome-neon",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "neon-postgres",
+        "postgres-database"
+      ],
+      "project_matches": [
+        {
+          "project": "database-systems",
+          "relevance": 66,
+          "matched_keywords": [
+            "postgres",
+            "database"
+          ]
+        }
+      ],
+      "top_project": "database-systems",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-smart-contract-security",
+      "name": "Awesome-Smart-Contract-Security",
+      "full_name": "moeinfatehi/Awesome-Smart-Contract-Security",
+      "description": "Curated list of smart contract security resources: Solidity vulnerabilities (SWC, OWASP), audit tools, papers, courses and best practices.",
+      "stars": 26,
+      "forks": 3,
+      "license": "MIT",
+      "url": "https://github.com/moeinfatehi/Awesome-Smart-Contract-Security",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "blockchain-security",
+        "defi-security",
+        "ethereum-contract",
+        "ethereum-security"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "tool",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-local-ai",
+      "name": "awesome-local-ai",
+      "full_name": "CastelDazur/awesome-local-ai",
+      "description": "A curated list of tools, frameworks, and resources for running AI locally \u2014 inference, RAG, orchestration, monitoring, and more.",
+      "stars": 25,
+      "forks": 25,
+      "license": "CC0-1.0",
+      "url": "https://github.com/CastelDazur/awesome-local-ai",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "cuda",
+        "gpu",
+        "inference",
+        "llama-cpp"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "llm",
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-local-ai-android",
+      "name": "awesome-local-ai-android",
+      "full_name": "aeewws/awesome-local-ai-android",
+      "description": "Curated list of Android-first local AI apps, runtimes, Termux tools, and mobile coding workflows.",
+      "stars": 17,
+      "forks": 3,
+      "license": "MIT",
+      "url": "https://github.com/aeewws/awesome-local-ai-android",
+      "language": "Multi",
+      "topics": [
+        "ai-tools",
+        "android",
+        "android-ai",
+        "awesome",
+        "awesome-list",
+        "local-ai"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "tool",
+            "workflow"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-smart-contracts",
+      "name": "awesome-smart-contracts",
+      "full_name": "brandonhimpfen/awesome-smart-contracts",
+      "description": "A curated list of awesome tools, frameworks, resources, and educational content for developing and auditing smart contracts. This list covers everything from the basics of smart contract development to advanced security practices.",
+      "stars": 8,
+      "forks": 1,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/brandonhimpfen/awesome-smart-contracts",
+      "language": "Python",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "awesome-lists",
+        "smart-contracts"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "tool",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "longbrain",
+      "name": "longbrain",
+      "full_name": "ngocthanh06/longbrain",
+      "description": "Local-first shared memory for AI agents: persistent AI memory across Claude Code, Codex, Hermes Desktop, and any MCP client. Automatic record, recall, consolidation, forgetting, and backup. Self-hosted on Qdrant + LlamaIndex; one-command install.",
+      "stars": 7,
+      "forks": 0,
+      "license": "MIT",
+      "url": "https://github.com/ngocthanh06/longbrain",
+      "language": "Python",
+      "topics": [
+        "agent-memory",
+        "ai-agents",
+        "ai-memory",
+        "awesome",
+        "awesome-list",
+        "claude-code"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "agent",
+            "mcp"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-cloudflare-workers",
+      "name": "awesome-cloudflare-workers",
+      "full_name": "angristan/awesome-cloudflare-workers",
+      "description": "Tools, frameworks, libraries, and open-source projects for Cloudflare Workers.",
+      "stars": 7,
+      "forks": 5,
+      "license": "CC0-1.0",
+      "url": "https://github.com/angristan/awesome-cloudflare-workers",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "cloudflare",
+        "cloudflare-workers",
+        "workers"
+      ],
+      "project_matches": [
+        {
+          "project": "cloudflare-edge",
+          "relevance": 66,
+          "matched_keywords": [
+            "cloudflare",
+            "workers"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "cloudflare-edge",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-baremetal-ai",
+      "name": "awesome-baremetal-ai",
+      "full_name": "eminsk/awesome-baremetal-ai",
+      "description": "Curated list and benchmark leaderboard of ultra-lightweight, zero-dependency C/C++/Rust/Assembly engines for local LLMs, edge inference, vector search, and AI agents (2026-2027)",
+      "stars": 4,
+      "forks": 0,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/eminsk/awesome-baremetal-ai",
+      "language": "Multi",
+      "topics": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "assembly",
+        "awesome",
+        "awesome-list"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "agent",
+            "llm"
+          ]
+        },
+        {
+          "project": "database-systems",
+          "relevance": 33,
+          "matched_keywords": [
+            "vector"
+          ]
+        },
+        {
+          "project": "cloudflare-edge",
+          "relevance": 33,
+          "matched_keywords": [
+            "edge"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "gh-issue-haku",
+      "name": "gh-issue-haku",
+      "full_name": "Karlbaey/gh-issue-haku",
+      "description": "A small and simple CLI based on Python3, and you can use this to write you notes easily. \u4e00\u4e2a\u57fa\u4e8e Python3 \u7684\u547d\u4ee4\u884c\u5de5\u5177\uff0c\u4f60\u53ef\u4ee5\u4f7f\u7528\u5b83\u65b9\u4fbf\u5730\u5199\u7b14\u8bb0\uff01",
+      "stars": 3,
+      "forks": 1,
+      "license": "MIT",
+      "url": "https://github.com/Karlbaey/gh-issue-haku",
+      "language": "Python",
+      "topics": [
+        "awesome",
+        "cli",
+        "cli-app",
+        "github-issues",
+        "markdown",
+        "python"
+      ],
+      "project_matches": [
+        {
+          "project": "obsidian-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "markdown",
+            "notes"
+          ]
+        }
+      ],
+      "top_project": "obsidian-skills",
+      "relevance": 66
+    },
+    {
+      "id": "ipsentinel",
+      "name": "ipSentinel",
+      "full_name": "ghjkldfdfg/ipSentinel",
+      "description": "\ud83c\udf0d Discover your IP details and test network connectivity with IP Sentinel, a lightweight tool built on Cloudflare Workers, featuring privacy checks and modern UI.",
+      "stars": 3,
+      "forks": 0,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/ghjkldfdfg/ipSentinel",
+      "language": "JavaScript",
+      "topics": [
+        "awesome",
+        "ip-address",
+        "ip-location",
+        "ip-lookup",
+        "iptv-api",
+        "iptv-free"
+      ],
+      "project_matches": [
+        {
+          "project": "cloudflare-edge",
+          "relevance": 66,
+          "matched_keywords": [
+            "cloudflare",
+            "workers"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "cloudflare-edge",
+      "relevance": 66
+    },
+    {
+      "id": "awesomemarkdown",
+      "name": "AwesomeMarkdown",
+      "full_name": "imwwjh25/AwesomeMarkdown",
+      "description": "Some summaries and extensions of the process of learning Markdown. Let's go!!       \u5b66\u4e60markdown\u8fc7\u7a0b\u4e2d\u7684\u4e00\u4e9b\u603b\u7ed3\u548c\u62d3\u5c55\u3002",
+      "stars": 1,
+      "forks": 0,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/imwwjh25/AwesomeMarkdown",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "markdown",
+        "notes"
+      ],
+      "project_matches": [
+        {
+          "project": "obsidian-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "markdown",
+            "notes"
+          ]
+        }
+      ],
+      "top_project": "obsidian-skills",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-postgresql",
+      "name": "awesome-postgresql",
+      "full_name": "niamtokik/awesome-postgresql",
+      "description": "Open source developer tool from GitHub Awesome",
+      "stars": 1,
+      "forks": 0,
+      "license": "MIT",
+      "url": "https://github.com/niamtokik/awesome-postgresql",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "books",
+        "postgresql",
+        "publications",
+        "references"
+      ],
+      "project_matches": [
+        {
+          "project": "database-systems",
+          "relevance": 66,
+          "matched_keywords": [
+            "postgres",
+            "sql"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "database-systems",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-hebrew-ai-voice",
+      "name": "awesome-hebrew-ai-voice",
+      "full_name": "linkaiil1234/awesome-hebrew-ai-voice",
+      "description": "A curated list of Hebrew voice AI tools, libraries, datasets, and research.",
+      "stars": 1,
+      "forks": 0,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/linkaiil1234/awesome-hebrew-ai-voice",
+      "language": "Multi",
+      "topics": [
+        "ai",
+        "asr",
+        "awesome",
+        "awesome-list",
+        "cold-email",
+        "hebrew"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "llm",
+            "tool"
+          ]
+        },
+        {
+          "project": "audiobook-tts",
+          "relevance": 66,
+          "matched_keywords": [
+            "tts",
+            "voice"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "vite-dynamic-workers-preview",
+      "name": "vite-dynamic-workers-preview",
+      "full_name": "blushindianhemp166/vite-dynamic-workers-preview",
+      "description": "Turn Vite dev changes into live Cloudflare preview URLs with a dynamic worker preview flow",
+      "stars": 1,
+      "forks": 0,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/blushindianhemp166/vite-dynamic-workers-preview",
+      "language": "TypeScript",
+      "topics": [
+        "awesome",
+        "build-tool",
+        "cloudflare-workers",
+        "cncf",
+        "database-cluster",
+        "docs-generator"
+      ],
+      "project_matches": [
+        {
+          "project": "database-systems",
+          "relevance": 66,
+          "matched_keywords": [
+            "database",
+            "sql"
+          ]
+        },
+        {
+          "project": "cloudflare-edge",
+          "relevance": 66,
+          "matched_keywords": [
+            "cloudflare",
+            "workers"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        },
+        {
+          "project": "obsidian-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "markdown"
+          ]
+        }
+      ],
+      "top_project": "database-systems",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-security-audit-logging",
+      "name": "Awesome-Security-Audit-Logging",
+      "full_name": "ishandutta2007/Awesome-Security-Audit-Logging",
+      "description": "Top Security Audit Logging (Opensource)  Star if you like it! ",
+      "stars": 0,
+      "forks": 0,
+      "license": "MIT",
+      "url": "https://github.com/ishandutta2007/Awesome-Security-Audit-Logging",
+      "language": "Multi",
+      "topics": [
+        "audit-logging",
+        "awesome",
+        "awesome-list",
+        "curated-list",
+        "log-management",
+        "security"
+      ],
+      "project_matches": [
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        },
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "security"
+          ]
+        }
+      ],
+      "top_project": "security-compliance",
+      "relevance": 66
+    },
+    {
+      "id": "zhengming-security-compliance",
+      "name": "zhengming-security-compliance",
+      "full_name": "chenhz01/zhengming-security-compliance",
+      "description": "Family index: defensive security & compliance checkers \u2014 token hygiene, info-leak scans, CORS/cron audits, vendor lock-in",
+      "stars": 0,
+      "forks": 0,
+      "license": "APACHE-2.0",
+      "url": "https://github.com/chenhz01/zhengming-security-compliance",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "compliance",
+        "developer-tools",
+        "python",
+        "security"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "tool",
+            "security"
+          ]
+        },
+        {
+          "project": "security-compliance",
+          "relevance": 66,
+          "matched_keywords": [
+            "security",
+            "audit"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 66
+    },
+    {
+      "id": "awesome-note-taking-software",
+      "name": "Awesome-Note-Taking-Software",
+      "full_name": "ishandutta2007/Awesome-Note-Taking-Software",
+      "description": "Top Note Taking Software (Opensource)  Star if you like it! ",
+      "stars": 0,
+      "forks": 0,
+      "license": "MIT",
+      "url": "https://github.com/ishandutta2007/Awesome-Note-Taking-Software",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "curated-list",
+        "markdown",
+        "note-taking",
+        "pkm"
+      ],
+      "project_matches": [
+        {
+          "project": "obsidian-skills",
+          "relevance": 66,
+          "matched_keywords": [
+            "markdown",
+            "pkm"
+          ]
+        }
+      ],
+      "top_project": "obsidian-skills",
+      "relevance": 66
+    },
+    {
+      "id": "defi-developer-road-map",
+      "name": "DeFi-Developer-Road-Map",
+      "full_name": "OffcierCia/DeFi-Developer-Road-Map",
+      "description": "DeFi Developer roadmap is a curated Developer handbook which includes a list of the best tools for DApps development, resources and references! ",
+      "stars": 10876,
+      "forks": 1327,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/OffcierCia/DeFi-Developer-Road-Map",
+      "language": "JavaScript",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "blockchain",
+        "curated-list",
+        "defi",
+        "ethereum"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        },
+        {
+          "project": "obsidian-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "knowledge"
+          ]
+        },
+        {
+          "project": "cloudflare-edge",
+          "relevance": 33,
+          "matched_keywords": [
+            "edge"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 33
+    },
+    {
+      "id": "awesome-data-engineering",
+      "name": "awesome-data-engineering",
+      "full_name": "igorbarinov/awesome-data-engineering",
+      "description": "A curated list of data engineering tools for software developers",
+      "stars": 9213,
+      "forks": 1661,
+      "license": "CC0-1.0",
+      "url": "https://github.com/igorbarinov/awesome-data-engineering",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 33
+    },
+    {
+      "id": "compose-examples",
+      "name": "Compose-Examples",
+      "full_name": "Haxxnet/Compose-Examples",
+      "description": "Various Docker Compose examples of selfhosted FOSS and proprietary projects.",
+      "stars": 7406,
+      "forks": 347,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/Haxxnet/Compose-Examples",
+      "language": "Multi",
+      "topics": [
+        "automation",
+        "awesome",
+        "awesome-docker",
+        "compose",
+        "compose-files",
+        "container"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "automation"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 33
+    },
+    {
+      "id": "awesome-gis",
+      "name": "awesome-gis",
+      "full_name": "sshuair/awesome-gis",
+      "description": "\ud83d\ude0eAwesome GIS is a collection of geospatial related sources, including cartographic tools, geoanalysis tools, developer tools, data, conference & communities, news, massive open online course, some amazing map sites, and more.",
+      "stars": 5599,
+      "forks": 905,
+      "license": "MIT",
+      "url": "https://github.com/sshuair/awesome-gis",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "geo",
+        "geospatial",
+        "geospatial-library",
+        "geotools",
+        "gis"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        },
+        {
+          "project": "obsidian-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "graph"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 33
+    },
+    {
+      "id": "awesome-independent-tools",
+      "name": "Awesome-independent-tools",
+      "full_name": "yaolifeng0629/Awesome-independent-tools",
+      "description": "\u6536\u5f55\u72ec\u7acb\u5f00\u53d1\u3001AI\u51fa\u6d77\u9886\u57df\u6700\u65b0\u3001\u6700\u5b9e\u7528\u7684\u5de5\u5177\u4e0e\u8d44\u6e90\uff08Build Faster with Better Tools\uff09",
+      "stars": 2475,
+      "forks": 309,
+      "license": "AGPL-3.0",
+      "url": "https://github.com/yaolifeng0629/Awesome-independent-tools",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "awesome-resources",
+        "dev",
+        "developer",
+        "developer-tools"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 33
+    },
+    {
+      "id": "awesome-developer-first",
+      "name": "awesome-developer-first",
+      "full_name": "agamm/awesome-developer-first",
+      "description": "A curated list of awesome developer-first tools products.",
+      "stars": 1866,
+      "forks": 369,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/agamm/awesome-developer-first",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "developer-first",
+        "developer-tools"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 33
+    },
+    {
+      "id": "ios-developer-tools",
+      "name": "ios-developer-tools",
+      "full_name": "LeoMobileDeveloper/ios-developer-tools",
+      "description": "Tools that every iOS developer should know.",
+      "stars": 1795,
+      "forks": 209,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/LeoMobileDeveloper/ios-developer-tools",
+      "language": "Swift",
+      "topics": [
+        "apple",
+        "awesome",
+        "ios",
+        "objective",
+        "objective-c",
+        "swift"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 33
+    },
+    {
+      "id": "dev-resources",
+      "name": "dev-resources",
+      "full_name": "marcelscruz/dev-resources",
+      "description": "A collaborative list of resources for developers",
+      "stars": 1356,
+      "forks": 943,
+      "license": "MIT",
+      "url": "https://github.com/marcelscruz/dev-resources",
+      "language": "TypeScript",
+      "topics": [
+        "assets",
+        "awesome",
+        "awesome-list",
+        "courses",
+        "design",
+        "dev-resources"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        },
+        {
+          "project": "database-systems",
+          "relevance": 33,
+          "matched_keywords": [
+            "orm"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 33
+    },
+    {
+      "id": "awesome-ai-tools-for-game-dev",
+      "name": "awesome-ai-tools-for-game-dev",
+      "full_name": "simoninithomas/awesome-ai-tools-for-game-dev",
+      "description": "A curated list of awesome AI tools for game developers",
+      "stars": 1062,
+      "forks": 114,
+      "license": "CC0-1.0",
+      "url": "https://github.com/simoninithomas/awesome-ai-tools-for-game-dev",
+      "language": "Multi",
+      "topics": [
+        "ai",
+        "awesome",
+        "awesome-list",
+        "game-dev",
+        "game-development",
+        "gamedev"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 33
+    },
+    {
+      "id": "awesome-devtools",
+      "name": "awesome-devtools",
+      "full_name": "devtoolsd/awesome-devtools",
+      "description": "A curated list of awesome developer tools and services \u2014 from cloud platforms and IDEs to AI-powered coding assistants and productivity utilities.",
+      "stars": 687,
+      "forks": 390,
+      "license": "UNLICENSE",
+      "url": "https://github.com/devtoolsd/awesome-devtools",
+      "language": "Multi",
+      "topics": [
+        "alternatives",
+        "antigravity",
+        "awesome",
+        "awesome-devtools",
+        "awesome-lists",
+        "cursor"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        },
+        {
+          "project": "database-systems",
+          "relevance": 33,
+          "matched_keywords": [
+            "orm"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 33
+    },
+    {
+      "id": "awwesome",
+      "name": "awwesome",
+      "full_name": "mkitzmann/awwesome",
+      "description": "Enhanced user interface for Awesome Selfhosted",
+      "stars": 383,
+      "forks": 14,
+      "license": "BSD-3-CLAUSE",
+      "url": "https://github.com/mkitzmann/awwesome",
+      "language": "TypeScript",
+      "topics": [
+        "awesome",
+        "graphql",
+        "selfhosted",
+        "svelte"
+      ],
+      "project_matches": [
+        {
+          "project": "obsidian-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "graph"
+          ]
+        }
+      ],
+      "top_project": "obsidian-skills",
+      "relevance": 33
+    },
+    {
+      "id": "fucking-awesome-selfhosted",
+      "name": "fucking-awesome-selfhosted",
+      "full_name": "Correia-jpv/fucking-awesome-selfhosted",
+      "description": "A list of Free Software network services and web applications which can be hosted on your own servers. With repository stars\u2b50 and forks\ud83c\udf74",
+      "stars": 152,
+      "forks": 6,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/Correia-jpv/fucking-awesome-selfhosted",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "cloud",
+        "deploy",
+        "deployment",
+        "free"
+      ],
+      "project_matches": [
+        {
+          "project": "cloudflare-edge",
+          "relevance": 33,
+          "matched_keywords": [
+            "serverless"
+          ]
+        }
+      ],
+      "top_project": "cloudflare-edge",
+      "relevance": 33
+    },
+    {
+      "id": "selfhost-directory",
+      "name": "selfhost.directory",
+      "full_name": "turhobr/selfhost.directory",
+      "description": "A searchable directory of 2,700+ self-hosted, open-source apps \u2014 with setup guides, alternatives & live version tracking.",
+      "stars": 90,
+      "forks": 3,
+      "license": "Open GitHub Repo (Community)",
+      "url": "https://github.com/turhobr/selfhost.directory",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "degoogle-your-life",
+        "directory",
+        "docker",
+        "docker-compose",
+        "foss"
+      ],
+      "project_matches": [
+        {
+          "project": "agentic-awesome-skills",
+          "relevance": 33,
+          "matched_keywords": [
+            "tool"
+          ]
+        }
+      ],
+      "top_project": "agentic-awesome-skills",
+      "relevance": 33
+    },
+    {
+      "id": "awesome",
+      "name": "awesome",
+      "full_name": "qbart/awesome",
+      "description": "List of awesome things",
+      "stars": 1,
+      "forks": 1,
+      "license": "MIT",
+      "url": "https://github.com/qbart/awesome",
+      "language": "Multi",
+      "topics": [
+        "awesome",
+        "awesome-lists",
+        "gltf",
+        "gltf2",
+        "go",
+        "opengl"
+      ],
+      "project_matches": [
+        {
+          "project": "database-systems",
+          "relevance": 33,
+          "matched_keywords": [
+            "postgres"
+          ]
+        },
+        {
+          "project": "cloudflare-edge",
+          "relevance": 33,
+          "matched_keywords": [
+            "wasm"
+          ]
+        }
+      ],
+      "top_project": "database-systems",
+      "relevance": 33
+    }
+  ]
+}
