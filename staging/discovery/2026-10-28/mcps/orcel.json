@@ -1,0 +1,23 @@
+{
+  "id": "orcel",
+  "name": "Orcel",
+  "repository": "https://github.com/TheHalfMoon/Orcel",
+  "description": "Local-first MCP authority layer for safe, bounded computer use and developer workflows.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install Orcel",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "orcel": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "Orcel"
+      ]
+    }
+  }
+}

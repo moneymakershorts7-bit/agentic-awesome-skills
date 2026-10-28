@@ -1,0 +1,22 @@
+{
+  "id": "template",
+  "name": "mcp-server-template",
+  "repository": "https://github.com/basitalisandhu/mcp-server-template",
+  "description": "Secure MCP server template in TypeScript and Python: stdio by default, optional streamable HTTP behind bearer auth, rate limit and body cap, bound to 127.0.0.1; bounded file and network access with allowlists and SSRF protection; redacting JSON logs; health tool; tests, non-root pinned Docker images, Semgrep, gitleaks, CodeQL, SBOMs.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-server-template",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "template": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-template"
+      ]
+    }
+  }
+}

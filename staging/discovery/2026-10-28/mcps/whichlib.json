@@ -1,0 +1,23 @@
+{
+  "id": "whichlib",
+  "name": "whichlib",
+  "repository": "https://github.com/josifb/whichlib",
+  "description": "The dependency picker for coding agents: an MCP server that recommends, compares and scores GitHub repos with a verdict. npx -y whichlib",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y whichlib",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "whichlib": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "whichlib"
+      ]
+    }
+  }
+}

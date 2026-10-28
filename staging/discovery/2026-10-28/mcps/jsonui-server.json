@@ -1,0 +1,23 @@
+{
+  "id": "jsonui-server",
+  "name": "jsonui-mcp-server",
+  "repository": "https://github.com/Tai-Kimura/jsonui-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y jsonui-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "jsonui-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "jsonui-mcp-server"
+      ]
+    }
+  }
+}

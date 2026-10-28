@@ -1,0 +1,23 @@
+{
+  "id": "killbottleneck",
+  "name": "killbottleneck",
+  "repository": "https://github.com/tengolabs/killbottleneck",
+  "description": "Free to self-host goal & process maps with an AI advisor, REST API and MCP server \u2014 for humans and AI agents. Your data never leaves your server. Fair-code.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y killbottleneck",
+  "stars": 10,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "killbottleneck": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "killbottleneck"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "uppaal-mcp",
+  "name": "UPPAAL-MCP",
+  "repository": "https://github.com/Mixed-Fleet-WP2/UPPAAL-MCP",
+  "description": "An [MCP](https://modelcontextprotocol.io) server that lets an AI agent (Claude Code, Claude Desktop or any MCP client) model-check [UPPAAL](https://uppaal.org) timed-automata models with `verifyta`.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx UPPAAL-MCP",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "uppaal-mcp": {
+      "command": "uvx",
+      "args": [
+        "UPPAAL-MCP"
+      ]
+    }
+  }
+}

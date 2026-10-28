@@ -1,0 +1,23 @@
+{
+  "id": "aws-lambda-server",
+  "name": "aws-mcp-lambda-server",
+  "repository": "https://github.com/poad/aws-mcp-lambda-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y aws-mcp-lambda-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "aws-lambda-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "aws-mcp-lambda-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ambit",
+  "name": "ambit",
+  "repository": "https://github.com/zz-plant/ambit",
+  "description": "See what you and your AI agents can do, and what one more step would unlock. Ambit maps Claude Code, Cursor, OpenCode and nine more agent configs into one local graph: what works, what to set up next, and what breaks if a piece goes.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y ambit",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "ambit": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ambit"
+      ]
+    }
+  }
+}

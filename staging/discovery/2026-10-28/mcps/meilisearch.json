@@ -1,0 +1,22 @@
+{
+  "id": "meilisearch",
+  "name": "meilisearch-mcp",
+  "repository": "https://github.com/meilisearch/meilisearch-mcp",
+  "description": "A Model Context Protocol (MCP) server for interacting with Meilisearch through LLM interfaces.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx meilisearch-mcp",
+  "stars": 198,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "meilisearch": {
+      "command": "uvx",
+      "args": [
+        "meilisearch-mcp"
+      ]
+    }
+  }
+}

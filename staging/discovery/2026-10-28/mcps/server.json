@@ -1,0 +1,23 @@
+{
+  "id": "server",
+  "name": "server",
+  "repository": "https://github.com/aidemd-mcp/server",
+  "description": "MCP server that teaches any AI agent the AIDE spec methodology \u2014 progressive   disclosure specs alongside code",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y server",
+  "stars": 4,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "server"
+      ]
+    }
+  }
+}

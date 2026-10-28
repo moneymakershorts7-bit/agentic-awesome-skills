@@ -1,0 +1,22 @@
+{
+  "id": "financial-reports-server",
+  "name": "financial-reports-mcp-server",
+  "repository": "https://github.com/financial-reports/financial-reports-mcp-server",
+  "description": "Official remote MCP server for FinancialFilings: regulatory filings, XBRL/ESEF financials and company data from securities regulators worldwide, inside Claude, ChatGPT, Cursor & co.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx financial-reports-mcp-server",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "financial-reports-server": {
+      "command": "uvx",
+      "args": [
+        "financial-reports-mcp-server"
+      ]
+    }
+  }
+}

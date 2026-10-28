@@ -1,0 +1,23 @@
+{
+  "id": "mcpsvr",
+  "name": "mcpsvr",
+  "repository": "https://github.com/nanbingxyz/mcpsvr",
+  "description": "Discover Exceptional MCP Servers",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcpsvr",
+  "stars": 314,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "mcpsvr": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcpsvr"
+      ]
+    }
+  }
+}

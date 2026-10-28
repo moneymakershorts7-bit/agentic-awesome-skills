@@ -1,0 +1,23 @@
+{
+  "id": "pixelbolt",
+  "name": "Pixelbolt",
+  "repository": "https://github.com/skulitom/Pixelbolt",
+  "description": "Agent-first pixel art and animation toolkit. JSON recipes to PNG, APNG and sprite atlases via CLI, MCP server and local studio. Zero dependencies. MIT.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y Pixelbolt",
+  "stars": 12,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "pixelbolt": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "Pixelbolt"
+      ]
+    }
+  }
+}

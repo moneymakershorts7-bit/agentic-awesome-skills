@@ -1,0 +1,23 @@
+{
+  "id": "livi-agent",
+  "name": "livi-agent",
+  "repository": "https://github.com/0xArx/livi-agent",
+  "description": "Agent kit for Livi: SKILL.md, MCP setup, HTTP API and examples. Put your AI agent on your iPhone Home Screen.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y livi-agent",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "livi-agent": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "livi-agent"
+      ]
+    }
+  }
+}

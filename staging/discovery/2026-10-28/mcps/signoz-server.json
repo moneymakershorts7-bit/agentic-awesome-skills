@@ -1,0 +1,23 @@
+{
+  "id": "signoz-server",
+  "name": "signoz-mcp-server",
+  "repository": "https://github.com/SigNoz/signoz-mcp-server",
+  "description": "MCP Server for SigNoz",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/SigNoz/signoz-mcp-server@latest",
+  "stars": 128,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "signoz-server": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/SigNoz/signoz-mcp-server@latest"
+      ]
+    }
+  }
+}

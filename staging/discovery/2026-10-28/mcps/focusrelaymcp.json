@@ -1,0 +1,23 @@
+{
+  "id": "focusrelaymcp",
+  "name": "FocusRelayMCP",
+  "repository": "https://github.com/deverman/FocusRelayMCP",
+  "description": "Fast native Swift OmniFocus MCP server and CLI for macOS. Let AI assistants safely read, update, complete, and organize tasks and projects through documented Omni Automation APIs.",
+  "language": "Swift",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/deverman/FocusRelayMCP",
+  "stars": 58,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "focusrelaymcp": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/deverman/FocusRelayMCP"
+      ]
+    }
+  }
+}

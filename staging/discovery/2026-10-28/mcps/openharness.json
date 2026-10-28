@@ -1,0 +1,23 @@
+{
+  "id": "openharness",
+  "name": "openharness",
+  "repository": "https://github.com/autonomous-ai/openharness",
+  "description": "The ultimate harness for coding agents and beyond. All your agents. All your machines. One command center. Start with code, then follow your curiosity and build across disciplines: CAD, circuits, robots, games and music.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y openharness",
+  "stars": 1381,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "openharness": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "openharness"
+      ]
+    }
+  }
+}

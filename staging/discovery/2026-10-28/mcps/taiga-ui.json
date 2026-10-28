@@ -1,0 +1,23 @@
+{
+  "id": "taiga-ui",
+  "name": "taiga-ui-mcp",
+  "repository": "https://github.com/taiga-family/taiga-ui-mcp",
+  "description": "Taiga UI MCP server providing documentation search and scaffolding tools.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y taiga-ui-mcp",
+  "stars": 15,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "taiga-ui": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "taiga-ui-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ext",
+  "name": "ext-mcp",
+  "repository": "https://github.com/espocrm/ext-mcp",
+  "description": "MCP server for EspoCRM as installable extension",
+  "language": "PHP",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/espocrm/ext-mcp",
+  "stars": 10,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "ext": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/espocrm/ext-mcp"
+      ]
+    }
+  }
+}

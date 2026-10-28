@@ -1,0 +1,22 @@
+{
+  "id": "corpusiq-docs",
+  "name": "corpusiq-docs",
+  "repository": "https://github.com/CorpusIQ/corpusiq-docs",
+  "description": "Hermes Agent Production Knowledge Repository \u2014 406+ repos, AI Agent Marketplace, MCP servers, autonomous AI agent patterns. Production-tested from 1,200+ hours of ops. Updated daily.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx corpusiq-docs",
+  "stars": 26,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "corpusiq-docs": {
+      "command": "uvx",
+      "args": [
+        "corpusiq-docs"
+      ]
+    }
+  }
+}

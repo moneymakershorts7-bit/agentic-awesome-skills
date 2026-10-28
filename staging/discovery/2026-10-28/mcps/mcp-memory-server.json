@@ -1,0 +1,23 @@
+{
+  "id": "mcp-memory-server",
+  "name": "mcp-memory-server",
+  "repository": "https://github.com/Amio242/mcp-memory-server",
+  "description": "Persistent Shared Memory Server for AI Agents via MCP",
+  "language": "HTML",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/Amio242/mcp-memory-server",
+  "stars": 58,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-28",
+  "mcpConfigSnippet": {
+    "mcp-memory-server": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/Amio242/mcp-memory-server"
+      ]
+    }
+  }
+}
