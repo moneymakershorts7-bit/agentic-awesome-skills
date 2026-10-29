@@ -1,0 +1,22 @@
+{
+  "id": "golem",
+  "name": "Golem",
+  "repository": "https://github.com/seadonggyun4/Golem",
+  "description": "\"Awaken the worker\"",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Golem",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "golem": {
+      "command": "uvx",
+      "args": [
+        "Golem"
+      ]
+    }
+  }
+}

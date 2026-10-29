@@ -1,0 +1,23 @@
+{
+  "id": "mcp",
+  "name": "mcp",
+  "repository": "https://github.com/BrowserMCP/mcp",
+  "description": "Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp",
+  "stars": 7248,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp"
+      ]
+    }
+  }
+}

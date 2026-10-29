@@ -1,0 +1,22 @@
+{
+  "id": "fhir-server",
+  "name": "fhir-mcp-server",
+  "repository": "https://github.com/wso2/fhir-mcp-server",
+  "description": "FHIR MCP Server \u2013 helping you expose any FHIR Server or API as a MCP Server.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx fhir-mcp-server",
+  "stars": 137,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "fhir-server": {
+      "command": "uvx",
+      "args": [
+        "fhir-mcp-server"
+      ]
+    }
+  }
+}

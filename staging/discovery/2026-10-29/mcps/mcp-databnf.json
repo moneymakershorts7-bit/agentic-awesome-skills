@@ -1,0 +1,23 @@
+{
+  "id": "mcp-databnf",
+  "name": "mcp-databnf",
+  "repository": "https://github.com/smeet666/mcp-databnf",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-databnf",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "mcp-databnf": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-databnf"
+      ]
+    }
+  }
+}

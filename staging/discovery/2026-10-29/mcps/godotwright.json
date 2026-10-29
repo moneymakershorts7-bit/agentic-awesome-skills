@@ -1,0 +1,23 @@
+{
+  "id": "godotwright",
+  "name": "Godotwright",
+  "repository": "https://github.com/laaielichter/Godotwright",
+  "description": "MCP server and CLI that makes Claude Code, Codex and any coding agent better at Godot 4: offline API, project map, headless checks, AAA GDScript review.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y Godotwright",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "godotwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "Godotwright"
+      ]
+    }
+  }
+}

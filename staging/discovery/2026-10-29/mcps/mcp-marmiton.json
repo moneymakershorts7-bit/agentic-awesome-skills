@@ -1,0 +1,23 @@
+{
+  "id": "mcp-marmiton",
+  "name": "mcp-marmiton",
+  "repository": "https://github.com/smeet666/mcp-marmiton",
+  "description": "MCP server for Marmiton: search French recipes and scale ingredient quantities to any number of servings. No API key.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-marmiton",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "mcp-marmiton": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-marmiton"
+      ]
+    }
+  }
+}

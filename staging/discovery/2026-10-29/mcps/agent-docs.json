@@ -1,0 +1,22 @@
+{
+  "id": "agent-docs",
+  "name": "agent-docs",
+  "repository": "https://github.com/KonstantinStarovoytov/agent-docs",
+  "description": "Hybrid RAG MCP server: fresh official docs of Claude Code, Cursor, Codex and MCP for any AI agent, with an eval gate",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx agent-docs",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "agent-docs": {
+      "command": "uvx",
+      "args": [
+        "agent-docs"
+      ]
+    }
+  }
+}

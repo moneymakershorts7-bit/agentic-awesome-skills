@@ -1,0 +1,23 @@
+{
+  "id": "jobs-server",
+  "name": "jobs-mcp-server",
+  "repository": "https://github.com/rezearcher/jobs-mcp-server",
+  "description": "Zero-dependency MCP server: live, normalized job postings across 8 ATS platforms (Greenhouse, Lever, Ashby, SmartRecruiters, Workday, Recruitee, Workable, BambooHR) with company auto-detection. No API key, no account \u2014 for Claude Desktop, Cursor & AI agents.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y jobs-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "jobs-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "jobs-mcp-server"
+      ]
+    }
+  }
+}

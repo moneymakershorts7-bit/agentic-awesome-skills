@@ -1,0 +1,23 @@
+{
+  "id": "inspector",
+  "name": "inspector",
+  "repository": "https://github.com/mcp-use/inspector",
+  "description": "Modern MCP Inspector for remote mcp servers with support for Apps SDK",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y inspector",
+  "stars": 28,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "inspector": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "inspector"
+      ]
+    }
+  }
+}

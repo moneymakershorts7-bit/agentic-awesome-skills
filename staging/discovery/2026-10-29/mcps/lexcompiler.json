@@ -1,0 +1,23 @@
+{
+  "id": "lexcompiler",
+  "name": "LexCompiler",
+  "repository": "https://github.com/shahriar-ahmed-seam/LexCompiler",
+  "description": "Neuro-Symbolic Law-to-AST Compiler, Microsoft Z3 Formal Verifier, 12-MCP Suite, Contextual+Graph RAG, and Autonomous PR Enforcer (JusticeSphere AI / ComplianceOS)",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y LexCompiler",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "lexcompiler": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "LexCompiler"
+      ]
+    }
+  }
+}

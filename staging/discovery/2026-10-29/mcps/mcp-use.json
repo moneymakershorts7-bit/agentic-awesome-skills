@@ -1,0 +1,23 @@
+{
+  "id": "mcp-use",
+  "name": "mcp-use",
+  "repository": "https://github.com/mcp-use/mcp-use",
+  "description": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-use",
+  "stars": 10827,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "mcp-use": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-use"
+      ]
+    }
+  }
+}

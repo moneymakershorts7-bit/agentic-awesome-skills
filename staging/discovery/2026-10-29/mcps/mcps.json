@@ -1,0 +1,23 @@
+{
+  "id": "mcps",
+  "name": "mcps",
+  "repository": "https://github.com/foreverworks/mcps",
+  "description": "MCP servers for Google Workspace, Notion, Romanian e-invoicing and company registers, open banking, invoicing, domains, Expo and more, on one shared toolkit",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcps",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "mcps": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcps"
+      ]
+    }
+  }
+}

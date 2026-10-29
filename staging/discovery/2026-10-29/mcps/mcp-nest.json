@@ -1,0 +1,23 @@
+{
+  "id": "mcp-nest",
+  "name": "MCP-Nest",
+  "repository": "https://github.com/rekog-labs/MCP-Nest",
+  "description": "A NestJS module to effortlessly create Model Context Protocol (MCP) servers for exposing AI tools, resources, and prompts.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y MCP-Nest",
+  "stars": 725,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "mcp-nest": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "MCP-Nest"
+      ]
+    }
+  }
+}

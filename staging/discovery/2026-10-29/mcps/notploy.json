@@ -1,0 +1,23 @@
+{
+  "id": "notploy",
+  "name": "notploy",
+  "repository": "https://github.com/skygenesisenterprise/notploy",
+  "description": "An open-source self-hosted infrastructure platform for managing applications and infrastructure across your own servers.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y notploy",
+  "stars": 1,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "notploy": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "notploy"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ymcp",
+  "name": "ymcp",
+  "repository": "https://github.com/xlsft/ymcp",
+  "description": "YouTrack MCP server and coding-agent pipelines. Every built-in YouTrack MCP tool plus deletes, sprints, attachments, history and reports, signed in with your login and password. Pipelines hand YouTrack issues to Claude Code, Kimi or any ACP agent and open the pull requests. One-command install into Claude, Cursor, VS Code, Zed, Codex and more.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/xlsft/ymcp@latest",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "ymcp": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/xlsft/ymcp@latest"
+      ]
+    }
+  }
+}

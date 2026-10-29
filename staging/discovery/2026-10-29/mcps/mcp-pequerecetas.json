@@ -1,0 +1,23 @@
+{
+  "id": "mcp-pequerecetas",
+  "name": "mcp-pequerecetas",
+  "repository": "https://github.com/smeet666/mcp-pequerecetas",
+  "description": "MCP server for Pequerecetas. Read Spanish family recipes, rescale them, and browse by diet, ingredient, technique or age. No API key.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-pequerecetas",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "mcp-pequerecetas": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-pequerecetas"
+      ]
+    }
+  }
+}

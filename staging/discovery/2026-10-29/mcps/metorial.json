@@ -1,0 +1,23 @@
+{
+  "id": "metorial",
+  "name": "metorial",
+  "repository": "https://github.com/metorial/metorial",
+  "description": "Connect any AI model to 1200+ integrations (MCP, CLI, API)",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y metorial",
+  "stars": 3371,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-29",
+  "mcpConfigSnippet": {
+    "metorial": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "metorial"
+      ]
+    }
+  }
+}
