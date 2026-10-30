@@ -1,0 +1,23 @@
+{
+  "id": "pr17r26-npm-inspector",
+  "name": "pr17r26-npm-inspector",
+  "repository": "https://github.com/dovel-pr17-validation/pr17r26-npm-inspector",
+  "description": "Dovel r26 test mirror of modelcontextprotocol/inspector (temporary)",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y pr17r26-npm-inspector",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "pr17r26-npm-inspector": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "pr17r26-npm-inspector"
+      ]
+    }
+  }
+}

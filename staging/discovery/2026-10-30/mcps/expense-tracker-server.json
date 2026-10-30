@@ -1,0 +1,23 @@
+{
+  "id": "expense-tracker-server",
+  "name": "expense-tracker-mcp-server",
+  "repository": "https://github.com/AbbojuRaviTeja/expense-tracker-mcp-server",
+  "description": "Fix security and money bugs, add split modes, balances, budgets, recurring expenses",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y expense-tracker-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "expense-tracker-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "expense-tracker-mcp-server"
+      ]
+    }
+  }
+}

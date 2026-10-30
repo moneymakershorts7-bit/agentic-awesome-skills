@@ -1,0 +1,23 @@
+{
+  "id": "memorycard",
+  "name": "memorycard",
+  "repository": "https://github.com/labdrian-ai/memorycard",
+  "description": "Local-first persistent memory for coding agents: one Go binary, SQLite, MCP, dense retrieval",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/labdrian-ai/memorycard@latest",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "memorycard": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/labdrian-ai/memorycard@latest"
+      ]
+    }
+  }
+}

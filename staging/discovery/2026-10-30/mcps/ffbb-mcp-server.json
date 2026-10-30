@@ -1,0 +1,22 @@
+{
+  "id": "ffbb-mcp-server",
+  "name": "FFBB-MCP-Server",
+  "repository": "https://github.com/nickdesi/FFBB-MCP-Server",
+  "description": "\ud83c\udfc0 Serveur MCP FFBB \u2014 Acc\u00e9dez aux donn\u00e9es officielles de l'API FFBB (clubs, classements, calendriers, scores live) depuis Claude, Cursor, Copilot et ChatGPT.",
+  "language": "Python",
+  "transport": "sse",
+  "install_cmd": "uvx FFBB-MCP-Server",
+  "stars": 4,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "ffbb-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "FFBB-MCP-Server"
+      ]
+    }
+  }
+}

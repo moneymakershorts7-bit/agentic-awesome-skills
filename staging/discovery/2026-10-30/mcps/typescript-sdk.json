@@ -1,0 +1,23 @@
+{
+  "id": "typescript-sdk",
+  "name": "typescript-sdk",
+  "repository": "https://github.com/modelauthenticationprotocol/typescript-sdk",
+  "description": "The official Typescript SDK for Model Authentication Protocol",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y typescript-sdk",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "typescript-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "typescript-sdk"
+      ]
+    }
+  }
+}

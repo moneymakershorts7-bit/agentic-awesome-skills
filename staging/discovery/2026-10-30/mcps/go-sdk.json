@@ -1,0 +1,23 @@
+{
+  "id": "go-sdk",
+  "name": "go-sdk",
+  "repository": "https://github.com/modelauthenticationprotocol/go-sdk",
+  "description": "The official GO SDK for Model Authentication Protocol",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y go-sdk",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "go-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "go-sdk"
+      ]
+    }
+  }
+}

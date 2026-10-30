@@ -1,0 +1,22 @@
+{
+  "id": "iqa",
+  "name": "iqa-mcp",
+  "repository": "https://github.com/Aicent-Stack/iqa-mcp",
+  "description": "IQA attestation primitives (derived intent addressing + AE-128 envelope verification) as MCP tools. Offline, fail-closed, stateless.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx iqa-mcp",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "iqa": {
+      "command": "uvx",
+      "args": [
+        "iqa-mcp"
+      ]
+    }
+  }
+}

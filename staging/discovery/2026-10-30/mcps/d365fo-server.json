@@ -1,0 +1,23 @@
+{
+  "id": "d365fo-server",
+  "name": "d365fo-mcp-server",
+  "repository": "https://github.com/dynamics365ninja/d365fo-mcp-server",
+  "description": "Exposes MCP tools that prove every method, field, label and form pattern against your real metadata before the AI writes code.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y d365fo-mcp-server",
+  "stars": 166,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "d365fo-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "d365fo-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "converse",
+  "name": "converse",
+  "repository": "https://github.com/FallDownTheSystem/converse",
+  "description": "Converse MCP Server",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y converse",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "converse": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "converse"
+      ]
+    }
+  }
+}

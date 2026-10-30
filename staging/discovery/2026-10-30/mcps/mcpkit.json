@@ -1,0 +1,23 @@
+{
+  "id": "mcpkit",
+  "name": "mcpkit",
+  "repository": "https://github.com/AcidSailor/mcpkit",
+  "description": "Go library of shared primitives for building MCP servers on the official modelcontextprotocol/go-sdk",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/AcidSailor/mcpkit@latest",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "mcpkit": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/AcidSailor/mcpkit@latest"
+      ]
+    }
+  }
+}

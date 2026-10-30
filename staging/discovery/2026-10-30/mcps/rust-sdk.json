@@ -1,0 +1,23 @@
+{
+  "id": "rust-sdk",
+  "name": "rust-sdk",
+  "repository": "https://github.com/modelauthenticationprotocol/rust-sdk",
+  "description": "The official Rust SDK for Model Authentication Protocol",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y rust-sdk",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "rust-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rust-sdk"
+      ]
+    }
+  }
+}

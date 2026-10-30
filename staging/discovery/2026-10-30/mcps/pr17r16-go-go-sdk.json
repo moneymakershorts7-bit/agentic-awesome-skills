@@ -1,0 +1,23 @@
+{
+  "id": "pr17r16-go-go-sdk",
+  "name": "pr17r16-go-go-sdk",
+  "repository": "https://github.com/dovel-pr17-validation/pr17r16-go-go-sdk",
+  "description": "Dovel r16 test mirror of modelcontextprotocol/go-sdk (temporary)",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/dovel-pr17-validation/pr17r16-go-go-sdk@latest",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "pr17r16-go-go-sdk": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/dovel-pr17-validation/pr17r16-go-go-sdk@latest"
+      ]
+    }
+  }
+}

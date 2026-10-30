@@ -1,0 +1,23 @@
+{
+  "id": "tastyscanner-mcp-server",
+  "name": "TastyScanner-MCP-Server",
+  "repository": "https://github.com/technet365/TastyScanner-MCP-Server",
+  "description": "MCP Server for TastyTrade - Let Claude/GPT trade options for you. Iron Condor strategy builder, market scanner, position tracking.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y TastyScanner-MCP-Server",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "tastyscanner-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "TastyScanner-MCP-Server"
+      ]
+    }
+  }
+}

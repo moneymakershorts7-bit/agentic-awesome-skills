@@ -1,0 +1,23 @@
+{
+  "id": "lilo",
+  "name": "Lilo",
+  "repository": "https://github.com/Alexays/Lilo",
+  "description": "A Mac browser on WebKit, not another Chromium, that still runs Chrome extensions. Arc-style Spaces, terminal tabs, and a built-in MCP server so your AI agents browse beside you. MIT, no account.",
+  "language": "Swift",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/Alexays/Lilo",
+  "stars": 29,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "lilo": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/Alexays/Lilo"
+      ]
+    }
+  }
+}

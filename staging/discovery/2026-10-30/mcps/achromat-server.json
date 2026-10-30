@@ -1,0 +1,23 @@
+{
+  "id": "achromat-server",
+  "name": "achromat-mcp-server",
+  "repository": "https://github.com/achromat-ai/achromat-mcp-server",
+  "description": "Achromat Machine Operational Memory MCP. Every lesson pairs a call that policy blocked with the corrected call that was then allowed. Your agent reads the lesson before it acts, and gets it right the first time.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y achromat-mcp-server",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "achromat-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "achromat-mcp-server"
+      ]
+    }
+  }
+}

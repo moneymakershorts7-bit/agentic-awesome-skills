@@ -1,0 +1,23 @@
+{
+  "id": "ruby-sdk",
+  "name": "ruby-sdk",
+  "repository": "https://github.com/modelauthenticationprotocol/ruby-sdk",
+  "description": "The official Ruby SDK for Model Authentication Protocol",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y ruby-sdk",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "ruby-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ruby-sdk"
+      ]
+    }
+  }
+}

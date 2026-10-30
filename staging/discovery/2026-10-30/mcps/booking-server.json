@@ -1,0 +1,23 @@
+{
+  "id": "booking-server",
+  "name": "booking-mcp-server",
+  "repository": "https://github.com/mjanicki86/booking-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y booking-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "booking-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "booking-mcp-server"
+      ]
+    }
+  }
+}

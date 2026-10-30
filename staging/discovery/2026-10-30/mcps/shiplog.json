@@ -1,0 +1,23 @@
+{
+  "id": "shiplog",
+  "name": "shiplog-mcp",
+  "repository": "https://github.com/amacgregor/shiplog-mcp",
+  "description": "Listing metadata for the ShipLog remote MCP server (https://shiplog.ca/mcp)",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y shiplog-mcp",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "shiplog": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "shiplog-mcp"
+      ]
+    }
+  }
+}

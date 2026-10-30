@@ -1,0 +1,23 @@
+{
+  "id": "csharp-sdk",
+  "name": "csharp-sdk",
+  "repository": "https://github.com/modelauthenticationprotocol/csharp-sdk",
+  "description": "The official C# SDK for Model Authentication Protocol",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y csharp-sdk",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "csharp-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "csharp-sdk"
+      ]
+    }
+  }
+}

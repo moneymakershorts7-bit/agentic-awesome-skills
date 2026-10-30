@@ -1,0 +1,23 @@
+{
+  "id": "orangescrum-server",
+  "name": "orangescrum-mcp-server",
+  "repository": "https://github.com/Orangescrum/orangescrum-mcp-server",
+  "description": "Official Orangescrum MCP Server: manage projects, tasks, users, sprints, test cases, releases, and risks from AI tools.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y orangescrum-mcp-server",
+  "stars": 3,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "orangescrum-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "orangescrum-mcp-server"
+      ]
+    }
+  }
+}

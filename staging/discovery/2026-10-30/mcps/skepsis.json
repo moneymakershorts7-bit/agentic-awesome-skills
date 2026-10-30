@@ -1,0 +1,23 @@
+{
+  "id": "skepsis",
+  "name": "skepsis",
+  "repository": "https://github.com/ionpetro/skepsis",
+  "description": "Learn the Greek hiding in everyday English, in 3-minute lessons. Web app + MCP server so your AI agent can tutor you.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y skepsis",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "skepsis": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "skepsis"
+      ]
+    }
+  }
+}

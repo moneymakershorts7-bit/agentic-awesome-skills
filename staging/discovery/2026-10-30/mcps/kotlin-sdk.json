@@ -1,0 +1,23 @@
+{
+  "id": "kotlin-sdk",
+  "name": "kotlin-sdk",
+  "repository": "https://github.com/modelauthenticationprotocol/kotlin-sdk",
+  "description": "The official Kotlin SDK for Model Authentication Protocol",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y kotlin-sdk",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "kotlin-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "kotlin-sdk"
+      ]
+    }
+  }
+}

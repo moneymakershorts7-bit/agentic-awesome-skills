@@ -1,0 +1,23 @@
+{
+  "id": "instant-file-search-mcp-server",
+  "name": "instant-file-search-MCP-server",
+  "repository": "https://github.com/clayleopardlabs/instant-file-search-MCP-server",
+  "description": "Search all 3 million of your files in milliseconds",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install instant-file-search-MCP-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "instant-file-search-mcp-server": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "instant-file-search-MCP-server"
+      ]
+    }
+  }
+}

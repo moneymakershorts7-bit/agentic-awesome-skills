@@ -1,0 +1,23 @@
+{
+  "id": "mcp-server",
+  "name": "mcp-server",
+  "repository": "https://github.com/contextstream/mcp-server",
+  "description": "The context platform for AI agents. Code search, team decisions, and shared project context with traceable sources and scoped access, carried across sessions and tools.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install mcp-server",
+  "stars": 44,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "mcp-server": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "agent-work-stack-deals",
+  "name": "agent-work-stack-deals",
+  "repository": "https://github.com/connormatthewdouglas/agent-work-stack-deals",
+  "description": "Agent work-stack deals page + query helpers (smoke test)",
+  "language": "HTML",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/connormatthewdouglas/agent-work-stack-deals",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "agent-work-stack-deals": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/connormatthewdouglas/agent-work-stack-deals"
+      ]
+    }
+  }
+}

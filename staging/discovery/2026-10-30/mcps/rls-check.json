@@ -1,0 +1,23 @@
+{
+  "id": "rls-check",
+  "name": "rls-check",
+  "repository": "https://github.com/Muhandis-online/rls-check",
+  "description": "Read-only Supabase RLS check that explains, in plain Arabic, which tables anyone can read or change. CLI + MCP server; no keys, no connection.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y rls-check",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "rls-check": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "rls-check"
+      ]
+    }
+  }
+}

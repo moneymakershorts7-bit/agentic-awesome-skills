@@ -1,0 +1,23 @@
+{
+  "id": "python-sdk",
+  "name": "python-sdk",
+  "repository": "https://github.com/modelauthenticationprotocol/python-sdk",
+  "description": "The official Python SDK for Model Authentication Protocol",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y python-sdk",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "python-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "python-sdk"
+      ]
+    }
+  }
+}

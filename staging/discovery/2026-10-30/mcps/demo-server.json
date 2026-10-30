@@ -1,0 +1,22 @@
+{
+  "id": "demo-server",
+  "name": "demo-mcp-server",
+  "repository": "https://github.com/eshitakundu/demo-mcp-server",
+  "description": "Minimal FastMCP server with two typed tools; my template for larger MCP servers, with MCP Inspector and Claude Desktop setup",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx demo-mcp-server",
+  "stars": 1,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "demo-server": {
+      "command": "uvx",
+      "args": [
+        "demo-mcp-server"
+      ]
+    }
+  }
+}

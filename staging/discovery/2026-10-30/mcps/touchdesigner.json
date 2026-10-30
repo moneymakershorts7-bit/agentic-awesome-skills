@@ -1,0 +1,23 @@
+{
+  "id": "touchdesigner",
+  "name": "touchdesigner-mcp",
+  "repository": "https://github.com/8beeeaaat/touchdesigner-mcp",
+  "description": "MCP server for TouchDesigner",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y touchdesigner-mcp",
+  "stars": 606,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "touchdesigner": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "touchdesigner-mcp"
+      ]
+    }
+  }
+}

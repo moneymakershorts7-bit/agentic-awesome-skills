@@ -1,0 +1,23 @@
+{
+  "id": "swift-sdk",
+  "name": "swift-sdk",
+  "repository": "https://github.com/modelauthenticationprotocol/swift-sdk",
+  "description": "The official Swift SDK for Model Authentication Protocol",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y swift-sdk",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-30",
+  "mcpConfigSnippet": {
+    "swift-sdk": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "swift-sdk"
+      ]
+    }
+  }
+}
