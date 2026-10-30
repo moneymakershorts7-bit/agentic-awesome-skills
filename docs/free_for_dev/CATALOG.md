@@ -1,7 +1,7 @@
 # Free-for-Dev Master Index & Catalog
 
-> **Total Indexed Tools:** 1321  
-> **Last Synchronized:** 2026-10-07  
+> **Total Indexed Tools:** 1365  
+> **Last Synchronized:** 2026-10-30  
 > **Source Reference:** [ripienaar/free-for-dev](https://github.com/ripienaar/free-for-dev)
 
 An autonomous, curated, and indexed knowledge base of SaaS, PaaS, IaaS, APIs, AI, and developer tools offering free tiers. Maintained automatically by the autonomous Jules Coding Assistant and Agent Maintainer.
@@ -10,63 +10,63 @@ An autonomous, curated, and indexed knowledge base of SaaS, PaaS, IaaS, APIs, AI
 
 ## Categories Navigation
 
-- [APIs, Data, and ML](#apis-data-and-ml) (139 tools)
+- [APIs, Data, and ML](#apis-data-and-ml) (146 tools)
 - [Analytics, Events and Statistics](#analytics-events-and-statistics) (37 tools)
 - [Artifact Repos](#artifact-repos) (6 tools)
-- [Authentication, Authorization, and User Management](#authentication-authorization-and-user-management) (28 tools)
+- [Authentication, Authorization, and User Management](#authentication-authorization-and-user-management) (29 tools)
 - [BaaS](#baas) (21 tools)
 - [CDN and Protection](#cdn-and-protection) (17 tools)
 - [CI and CD](#ci-and-cd) (20 tools)
 - [CMS](#cms) (12 tools)
 - [Cloud management solutions](#cloud-management-solutions) (7 tools)
-- [Code Generation](#code-generation) (6 tools)
-- [Code Quality](#code-quality) (25 tools)
+- [Code Generation](#code-generation) (5 tools)
+- [Code Quality](#code-quality) (26 tools)
 - [Code Search and Browsing](#code-search-and-browsing) (4 tools)
 - [Commenting Platforms](#commenting-platforms) (4 tools)
 - [Crash and Exception Handling](#crash-and-exception-handling) (17 tools)
 - [DNS](#dns) (22 tools)
-- [Data Visualization on Maps](#data-visualization-on-maps) (22 tools)
-- [Design and UI](#design-and-ui) (33 tools)
+- [Data Visualization on Maps](#data-visualization-on-maps) (24 tools)
+- [Design and UI](#design-and-ui) (34 tools)
 - [Dev Blogging Sites](#dev-blogging-sites) (6 tools)
 - [Docker Related](#docker-related) (5 tools)
 - [Domain](#domain) (4 tools)
-- [Education and Career Development](#education-and-career-development) (21 tools)
-- [Email](#email) (77 tools)
-- [Feature Toggles Management Platforms](#feature-toggles-management-platforms) (8 tools)
+- [Education and Career Development](#education-and-career-development) (22 tools)
+- [Email](#email) (84 tools)
+- [Feature Toggles Management Platforms](#feature-toggles-management-platforms) (10 tools)
 - [Flutter Related and Building IOS Apps without Mac](#flutter-related-and-building-ios-apps-without-mac) (3 tools)
 - [Font](#font) (11 tools)
-- [Forms](#forms) (36 tools)
+- [Forms](#forms) (39 tools)
 - [Generative AI](#generative-ai) (22 tools)
 - [IDE and Code Editing](#ide-and-code-editing) (40 tools)
 - [IaaS](#iaas) (4 tools)
 - [International Mobile Number Verification API and SDK](#international-mobile-number-verification-api-and-sdk) (2 tools)
-- [Issue Tracking and Project Management](#issue-tracking-and-project-management) (60 tools)
+- [Issue Tracking and Project Management](#issue-tracking-and-project-management) (61 tools)
 - [Log Management](#log-management) (8 tools)
 - [Low-code Platform](#low-code-platform) (10 tools)
 - [Major Cloud Providers](#major-cloud-providers) (70 tools)
 - [Managed Data Services](#managed-data-services) (26 tools)
 - [Management System](#management-system) (8 tools)
-- [Messaging and Streaming](#messaging-and-streaming) (19 tools)
-- [Miscellaneous](#miscellaneous) (26 tools)
-- [Mobile App Distribution and Feedback](#mobile-app-distribution-and-feedback) (6 tools)
-- [Monitoring](#monitoring) (61 tools)
+- [Messaging and Streaming](#messaging-and-streaming) (20 tools)
+- [Miscellaneous](#miscellaneous) (27 tools)
+- [Mobile App Distribution and Feedback](#mobile-app-distribution-and-feedback) (7 tools)
+- [Monitoring](#monitoring) (64 tools)
 - [Other Free Resources](#other-free-resources) (12 tools)
-- [PaaS](#paas) (26 tools)
+- [PaaS](#paas) (28 tools)
 - [Package Build System](#package-build-system) (3 tools)
 - [Payment and Billing Integration](#payment-and-billing-integration) (16 tools)
 - [Privacy Management](#privacy-management) (5 tools)
-- [Remote Desktop Tools](#remote-desktop-tools) (5 tools)
-- [Screenshot APIs](#screenshot-apis) (11 tools)
+- [Remote Desktop Tools](#remote-desktop-tools) (6 tools)
+- [Screenshot APIs](#screenshot-apis) (12 tools)
 - [Search](#search) (4 tools)
-- [Security and PKI](#security-and-pki) (38 tools)
+- [Security and PKI](#security-and-pki) (40 tools)
 - [Source Code Repos](#source-code-repos) (12 tools)
-- [Storage and Media Processing](#storage-and-media-processing) (50 tools)
-- [Testing](#testing) (36 tools)
-- [Tools for Teams and Collaboration](#tools-for-teams-and-collaboration) (82 tools)
+- [Storage and Media Processing](#storage-and-media-processing) (51 tools)
+- [Testing](#testing) (37 tools)
+- [Tools for Teams and Collaboration](#tools-for-teams-and-collaboration) (86 tools)
 - [Translation Management](#translation-management) (15 tools)
 - [Tunneling, WebRTC, Web Socket Servers and Other Routers](#tunneling-webrtc-web-socket-servers-and-other-routers) (17 tools)
 - [Visitor Session Recording](#visitor-session-recording) (10 tools)
-- [Web Hosting](#web-hosting) (26 tools)
+- [Web Hosting](#web-hosting) (27 tools)
 
 ---
 
@@ -95,6 +95,10 @@ Auto-generate images and PDF documents with a simple API or automation tools lik
 ### [APIVerve](https://apiverve.com) `API`
 Get instant access to over 120+ APIs for free, built with quality, consistency, and reliability in mind. The free plan covers up to 50 API Tokens per month. (Possibly taken down, 2025-06-25)
 - **Recommended For:** General Developer Productivity & Web Tools
+
+### [App AI Gateway](https://appaigateway.com/)
+Gateway/proxy for calling AI providers from iOS applications without shipping provider keys or building your own backend. Only allows requests from your real app via App Attest, with rate limits and budgets per user and per app. The free plan includes 1,000 requests per month, no card required.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines
 
 ### [Beeceptor](https://beeceptor.com) `API`
 No-code, cloud-based platform for mocking and debugging multi-protocol APIs (REST, SOAP, gRPC & GraphQL), providing instant servers with rules-based logic, CRUD & stateful mocking, proxying, and CORS management for faster integration and testing. The free plan includes 50 requests per day and provides a public dashboard/endpoint where anyone with the dashboard URL can view submitted requests and responses.
@@ -150,6 +154,10 @@ Integration platform for AI Agents and LLMs. Integrate over 200+ tools across th
 
 ### [Conversion Tools](https://conversiontools.io/) `API`
 Online File Converter for documents, images, video, audio, and eBooks. REST API is available. Libraries for Node.js, PHP, Python. Support files up to 50 GB (for paid plans). The free tier is limited by file size (20MB) and number of conversions (30/Day, 300/Month).
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [cors.dev](https://cors.dev/) `API`
+CORS proxy for calling third-party APIs from frontend code: prefix any HTTPS URL with `https://proxy.cors.dev/`. Free without signup or an API key for GET and HEAD requests, 600 requests per minute per IP, responses up to 1 MiB, no monthly quota.
 - **Recommended For:** General Developer Productivity & Web Tools
 
 ### [Country-State-City Microservice API](https://country-state-city.rebuscando.info/) `API`
@@ -212,10 +220,6 @@ A new data science notebook. Jupyter is compatible with real-time collaboration 
 A free API providing accurate data for building the Covid-19 related useful Apps.
 - **Recommended For:** General Developer Productivity & Web Tools
 
-### [DocPenny](https://docpenny.com) `No Credit Card`
-HTML to PDF document generation with templates, webhook delivery, and credit-based pricing. Free plan with 50 monthly credits, no credit card required.
-- **Recommended For:** General Developer Productivity & Web Tools
-
 ### [Doczilla](https://www.doczilla.app/) `API`
 SaaS API empowering the generation of screenshots or PDFs directly from HTML/CSS/JS code. The free plan allows 250 documents month.
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -226,6 +230,10 @@ Managed API to generate and privately store PDFs and Screenshots using top rende
 
 ### [Doqlo](https://doqlo.com/) `API`
 Bulk fill and mail merge PDF forms from CSV using the web app or Public API. The free plan includes 100 output PDFs/month.
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [Dynamic Document API](https://dynamicdocumentapi.com/) `API`
+Turn data into pixel-perfect PDFs and images. The free plan includes 50 renders per month and access to 2 templates from the template gallery or your own.
 - **Recommended For:** General Developer Productivity & Web Tools
 
 ### [DynamicDocs](https://advicement.io) `API`
@@ -340,6 +348,10 @@ IP geolocation API to convert IP addresses into location data including city, co
 Freemium, fast, and reliable IP geolocation API. Get data like city, coordinates, ISP, ASN, AS data and more. The free plan includes 50k credits per month. IP2Location.io also offers 500 free WHOIS and hosted domain lookups per month. See domain registration details and find domains hosted on a specific IP. Upgrade to a paid plan for more features.
 - **Recommended For:** General Developer Productivity & Web Tools
 
+### [IP99](https://ip99.com/) `API`
+IP risk and geolocation API with passive DNS and certificate transparency. Free without a key: 500 IP lookups/day; 10 domain/cert trial lookups/day.
+- **Recommended For:** General Developer Productivity & Web Tools
+
 ### [ipaddress.sh](https://ipaddress.sh)
 Simple service to get a public IP address in different [formats](https://about.ipaddress.sh/).
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -382,6 +394,10 @@ A video editing API to automate video marketing and social media videos, program
 
 ### [JSONing](https://jsoning.com/api/) `API`
 Create a fake REST API from a JSON object, and customize HTTP status codes, headers, and response bodies.
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [Jsonpage](https://jsonpage.com/en/) `No Credit Card` `API`
+Company data API for France and 13 other countries (SIREN, SIRET, VAT check). Free plan: 1,000 requests per day, no credit card.
 - **Recommended For:** General Developer Productivity & Web Tools
 
 ### [Labelixa](https://labelixa.com) `API`
@@ -440,6 +456,10 @@ A free and simple tool to check your exit IP address across multiple nodes and u
 Free, no-key, CORS-enabled API for NAS HDD/SSD specifications, per-model CMR/SMR classification, and annualized failure rates derived from Backblaze Drive Stats. Returns JSON or CSV, CC BY 4.0, no signup.
 - **Recommended For:** General Developer Productivity & Web Tools
 
+### [Network Data Labs](https://www.networkdatalabs.com) `API`
+An IP geolocation API with accuracy radius and confidence level, ASN, and Tor, known VPN, privacy relay and hosting signals. The free plan includes 1,000 requests per day.
+- **Recommended For:** General Developer Productivity & Web Tools
+
 ### [News API](https://newsapi.org) `API`
 Search news on the web with code, and get JSON results. Developers get 100 queries free each day. Articles have a 24 hour delay.
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -475,6 +495,10 @@ Semantic image search API across 9 free photo sources (Unsplash, Pexels, Pixabay
 ### [Pixela](https://pixe.la/) `API`
 Free daystream database service. All operations are performed by API. Visualization with heat maps and line graphs is also possible.
 - **Recommended For:** Cloud Databases & Vector Store Persistence
+
+### [PolyDoc](https://polydoc.tech) `API`
+REST API for HTML to PDF and screenshot generation. Including templates, PDF/A and PDF/UA output, privacy-focused, and more features. The free plan includes 150 conversions/month.
+- **Recommended For:** General Developer Productivity & Web Tools
 
 ### [Posthook](https://posthook.io)
 Schedule webhooks to fire at a future time with automatic retries, delivery tracking, and failure alerting. Free plan includes 1,000 webhooks per month.
@@ -515,6 +539,10 @@ FFmpeg API - A REST API for FFmpeg, run FFmpeg online without handling the infra
 ### [RequestBin.com](https://requestbin.com)
 Create a free endpoint to which you can send HTTP requests. Any HTTP requests sent to that endpoint will be recorded with the associated payload and headers so you can observe recommendations from webhooks and other services.
 - **Recommended For:** General Developer Productivity & Web Tools
+
+### [ROIC.ai](https://www.roic.ai/) `No Credit Card` `API`
+Financial Data API: income statements, balance sheets and cash flows, and earnings call transcripts (with audio and slides) for 68k+ companies. Free tier: 5 requests/minute, 2 years of history, no credit card.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines
 
 ### [Simplescraper](https://simplescraper.io)
 Trigger your webhook after each operation. The free plan includes 100 cloud scrape credits.
@@ -858,6 +886,10 @@ Highly customizable AuthN flows, has both a no-code and API/SDK approach, Free 7
 
 ### [duo.com](https://duo.com/)
 Two-factor authentication (2FA) for website or app. Free for ten users, all authentication methods, unlimited, integrations, hardware tokens.
+- **Recommended For:** Zero Trust Authentication, WAF & Secrets Management
+
+### [Frontegg](https://frontegg.com)
+Customer identity for B2B SaaS: authentication, SSO/SCIM, MFA, RBAC and multi-tenant user management. The free plan includes 7,500 MAUs
 - **Recommended For:** Zero Trust Authentication, WAF & Secrets Management
 
 ### [Kinde](https://kinde.com/)
@@ -1264,10 +1296,6 @@ A free no-code app builder. It provides complete access to the automatically gen
 Converts Figma designs into dynamic Flutter and React applications. Its code generation technology is designed to optimize workflows for building production-ready mobile and web experiences.
 - **Recommended For:** General Developer Productivity & Web Tools
 
-### [Karbon Sites](https://www.karbonsites.space) `API`
-An AI-powered site builder and editor that generates production-ready frontend code from text prompts, sketches, or resumes. Features include native Android (APK) export and a free tier with 5 generations per month (unlimited via custom Gemini API key).
-- **Recommended For:** AI Coding Agents & Autonomous Pipelines
-
 ### [Metalama](https://www.postsharp.net/metalama)
 A C#-specific tool that generates boilerplate code on the fly during compilation to keep source code clean. It is free for open-source projects; its commercial-friendly free tier includes up to three aspects.
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -1343,6 +1371,10 @@ Code Quality for Go projects, free for Open Source
 ### [gtmetrix.com](https://gtmetrix.com/)
 Reports and thorough recommendations to optimize websites
 - **Recommended For:** General Developer Productivity & Web Tools
+
+### [HeyDeer](https://heydeer.ai/) `No Credit Card`
+AI code review for GitHub pull requests. Free plan includes 1,000 credits in the first month and 300 credits monthly after that, including private repositories. Public repository reviews are free within fair-use limits. No credit card required.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines
 
 ### [holistic.dev](https://holistic.dev/)
 The #1 static code analyzer for Postgresql optimization. Performance, security, and architect database issues automatic detection service
@@ -1664,6 +1696,10 @@ OpenStreetMap's free geocoding service, providing global address search function
 Geocoding API aggregating OpenStreetMap and other open geo sources. Two thousand five hundred free queries/day.
 - **Recommended For:** General Developer Productivity & Web Tools
 
+### [opengeocoding.com](https://opengeocoding.com) `API`
+Source-available geocoder in Rust: address search, autocomplete and reverse geocoding on open data. Self-host it or use the hosted API. Fifty thousand free queries/month.
+- **Recommended For:** General Developer Productivity & Web Tools
+
 ### [osmnames](https://osmnames.org/)
 Geocoding, search results ranked by the popularity of related Wikipedia page.
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -1676,9 +1712,13 @@ Free geocoding for global places and coordinates. 25,000 Requests per month for 
 In-browser SQL workspace with free tools including a JOIN visualizer, SQL formatter, CSV/JSON to SQL converters, and practice questions with no account or credit card required.
 - **Recommended For:** Cloud Databases & Vector Store Persistence
 
-### [stadiamaps.com](https://stadiamaps.com/) `API`
-Map tiles, routing, navigation, and other geospatial APIs. Two thousand five hundred free map views and API requests/day for non-commercial usage and testing.
+### [stadiamaps.com](https://stadiamaps.com/)
+Map tiles, routing, navigation, and other geospatial APIs. 200,000 free credits/month for non-commercial usage and testing.
 - **Recommended For:** General Developer Productivity & Web Tools
+
+### [waymorphic.com](https://waymorphic.com/) `API`
+Vector map tiles (OpenMapTiles schema), MapLibre styles, geocoding and reverse geocoding APIs. No API key, no request limit, fair use policy.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines, Cloud Databases & Vector Store Persistence
 
 ---
 
@@ -1738,6 +1778,10 @@ Free cloud image hosting.
 
 ### [Logo.dev](https://www.logo.dev) `API`
 Company logo API with 44M+ brands that's as easy as calling a URL. First 10,000 API calls are free.
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [logoapi.sh](https://logoapi.sh/) `API`
+Company logo API with no key or signup, the ideal Clearbit logo API alternative with SVG logos for any domain. 1M free requests a month per site.
 - **Recommended For:** General Developer Productivity & Web Tools
 
 ### [marvelapp.com](https://marvelapp.com/)
@@ -1892,6 +1936,10 @@ Free pp.ua subdomains.
 
 ## Education and Career Development
 
+### [BylineCV](https://bylinecv.com/)
+Form-based CV and cover letter builder to pass ATS filters and organize all your versions in one place. Free forever for core CV building, exports, and storage, with daily AI limits.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines, Cloud Databases & Vector Store Persistence
+
 ### [Cisco Networking Academy, Skills for All](https://skillsforall.com/)
 Offers free certification-aligned courses in topics like cybersecurity, networking, and Python.
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -1988,6 +2036,10 @@ Free, temporary email for testing.
 Transactional email service, free for 1000 emails per month, with unlimited domains, team members, webhooks and message routes in the free plan.
 - **Recommended For:** General Developer Productivity & Web Tools
 
+### [AliasMail](https://aliasmail.space/) `No Credit Card`
+Privacy-preserving email forwarding and alias service with HMAC-SHA256 signed webhooks and custom alias handles. Free tier includes permanent email forwarding, custom aliases, and webhook integrations with no credit card required.
+- **Recommended For:** General Developer Productivity & Web Tools
+
 ### [anon.li Alias](https://anon.li/alias) `API`
 Open source, anonymous email alias/forwarding solution with PGP encryption, reply capability, 10 random & 1 custom alias on the free plan with developer API & CLI.
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -2040,9 +2092,17 @@ Contact form in a link (bitly for contact forms)
 Easy to use testing mail server for developers
 - **Recommended For:** General Developer Productivity & Web Tools
 
+### [disban.io](https://disban.io/) `No Credit Card`
+Protect user signups from disposable emails, or just validate an email against disposable service. Free 2000 check credits per month, No Credit Card required.
+- **Recommended For:** General Developer Productivity & Web Tools
+
 ### [dkimvalidator.com](https://dkimvalidator.com/)
 Test if the email's DNS/SPF/DKIM/DMARC settings are correct, free service by roundsphere.com
 - **Recommended For:** CI/CD Automation, Testing & Build Workflows
+
+### [DMARCmetric](https://dmarcmetric.com/) `No Credit Card`
+DMARC report monitoring with named sending sources, SPF/DKIM alignment and plain-English summaries. Free for 1 domain: 10,000 messages/month, 30-day history, email alerts, no credit card.
+- **Recommended For:** Production Observability, APM & Uptime Alerts
 
 ### [DNSExit](https://dnsexit.com/)
 Up to 2 Email addresses under your domain for free with 100MB of storage space. IMAP, POP3, SMTP, SPF/DKIM support.
@@ -2050,6 +2110,10 @@ Up to 2 Email addresses under your domain for free with 100MB of storage space. 
 
 ### [DomainCanary](https://domaincanary.com)
 DMARC enforcement service that protects your domain from email spoofing. First domain is free with 90 days of report detail and step-by-step policies you publish yourself.
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [eForward](https://eforward.com) `No Credit Card`
+Email forwarding for custom domains. Free plan includes 1 domain, 1 mailbox, 10 aliases (catch-all ones count too), catch-all, and reply/send from your aliases (up to 5 new recipients a day). No credit card required.
 - **Recommended For:** General Developer Productivity & Web Tools
 
 ### [Email Spam Tester](https://email-spam-tester.com/) `API`
@@ -2090,6 +2154,10 @@ Ethereal is a fake SMTP service, mainly aimed at Nodemailer and EmailEngine user
 
 ### [forwardemail.net](https://forwardemail.net) `API`
 Free email forwarding for custom domains. Create and forward an unlimited amount of email addresses with your domain name (**note**: You must pay if you use .casa, .cf, .click, .email, .fit, .ga, .gdn, .gq, .lat, .loan, .london, .men, .ml, .pl, .rest, .ru, .tk, .top, .work TLDs due to spam)
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [FrostyVerify](https://frostyverify.com) `API`
+Email verification, usable through a web app, a REST API and an MCP server + 1,000 Free Email verifications a month, no card
 - **Recommended For:** General Developer Productivity & Web Tools
 
 ### [Imitate Email](https://imitate.email)
@@ -2224,6 +2292,10 @@ SendRaven provides an email API for transactional email and agent-driven convers
 Email framework as a service, that adds templates, automations, history, etc to your own SMTP server (E.g. AWS, Maileroo, Gmail). Free up to 100 emails/day, no time limit.
 - **Recommended For:** General Developer Productivity & Web Tools
 
+### [SignupVet](https://www.signupvet.com) `No Credit Card` `API`
+An API that checks email, phone and IP of new signups. 250 free checks per month, no credit card.
+- **Recommended For:** General Developer Productivity & Web Tools
+
 ### [SimpleLogin](https://simplelogin.io/)
 Open source, self-hostable email alias/forwarding solution. Free 10 Aliases, unlimited bandwidth, unlimited reply/send. Free for educational staff (student, researcher, etc.).
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -2268,6 +2340,10 @@ Free secure email account service provider with built-in end-to-end encryption, 
 AI-First Transactional & Marketing Email Service. Free tier: 5,000 emails/mo, 200 emails/day, 10,000 contacts, 5 domains. No credit card required. SDKs, MCP and REST API available.
 - **Recommended For:** AI Coding Agents & Autonomous Pipelines
 
+### [VaelMail](https://vaelmail.com) `No Credit Card`
+Privacy-first webmail with deterministic 16-digit account keys and zero phone verification. Free tier includes 50 MB receive-only mailbox storage, unlimited subaddressing, and persistent @vael.pw aliases with no credit card required.
+- **Recommended For:** Cloud Databases & Vector Store Persistence
+
 ### [Verifalia](https://verifalia.com/email-verification-api) `API`
 Real-time email verification API with mailbox confirmation and disposable email address detector; 25 free email verifications/day.
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -2298,6 +2374,14 @@ Open-Source feature flags & A/B testing. Configuration as Code & Fully Typed Typ
 
 ### [ConfigCat](https://configcat.com)
 ConfigCat is a developer-centric feature flag service with unlimited team size, excellent support, and a reasonable price tag. Free plan up to 10 flags, two environments, 1 product, and 5 Million requests per month.
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [Featureflip](https://featureflip.io/)
+Featureflip is a full featured feature flag platform that removes its own dead flags by submitting its own pull requests. Free plan includes 10 flags, 2 environments, 1 project, 3 users, and no usage caps.
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [Flagpool](https://www.flagpool.io/en/)
+Feature flag management platform with a focus on simplicity and ease of use. Free plan includes creating up to 10 new flags per month, unlimited requests and targeting rules.
 - **Recommended For:** General Developer Productivity & Web Tools
 
 ### [Flagsmith](https://flagsmith.com) `API`
@@ -2392,6 +2476,10 @@ Many free fonts are easy and quick to install on a website via a download or a l
 
 ## Forms
 
+### [BootForm](https://bootform.com/)
+Form backend for builders. Free plan: 250 submissions a month with unlimited forms. Email and Discord notifications, honeypot/CAPTCHA, and an MCP server so AI coding agents can create and configure forms and manage submissions.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines
+
 ### [FabForm](https://fabform.io/)
 Form backend platform for intelligent developers. The free plan allows 250 form submissions per month. Friendly modern GUI. Integrates with Google Sheets, Airtable, Slack, Email, and others.
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -2439,6 +2527,10 @@ Headless form backend for developers. The free plan allows 100 form submissions 
 ### [FormKeep.com](https://www.formkeep.com/)
 Unlimited forms with 50 monthly submissions, spam protection, email notification, and a drag-and-drop designer that can export HTML. Additional features include custom field rules, teams, and integrations to Google Sheets, Slack, ActiveCampaign, and Zapier.
 - **Recommended For:** General Developer Productivity & Web Tools
+
+### [Formlane](https://smallwerk.com/formlane)
+Formlane is a form backend for static websites, site builders or AI-built apps. One endpoint gets email notifications with reply-to, spam-filtering without captcha and a CSV export. All submissions are stored in Frankfurt. Free Plan: 250 submissions/mo, no trial.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines
 
 ### [formlets.com](https://formlets.com/)
 Online forms, unlimited single page forms/month, 100 submissions/month, email notifications.
@@ -2491,6 +2583,10 @@ Form endpoint for websites. Add working contact forms to any HTML, JS framework,
 ### [Makeform](https://www.makeform.ai/)
 Chat-based form builder. The free form builder with unlimited forms and submissions. 99% of the features are free, includes adding logos, conditional logic, file uploads, payments, integrations, and webhooks. Pro Plan ($19/month) enables remove the Makeform Branding, custom domains and team features. Business plan ($59/month) enables RBAC, email verification and single sign on (SSO).
 - **Recommended For:** Zero Trust Authentication, WAF & Secrets Management
+
+### [Nisuform](https://nisuform.com)
+Simple, Easy and Secure form backend for any websites with beautiful form template and intuitive form builder. AI ready with MCP. Free plan includes 100 free submissions, spam protection and turnstile.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines
 
 ### [Pageclip](https://pageclip.co/)
 The free plan allows one site, one form, and 1,000 monthly submissions.
@@ -2830,6 +2926,10 @@ Global phone number verification in a free, fast, reliable JSON API. 1000 reques
 
 ### [acunote.com](https://www.acunote.com/)
 Free project management and SCRUM software for up to 5 team members
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [AgileHero](https://agilehero.io/) `API`
+All-in-one project management tool. Free plan includes kanban board, backlog, epics, estimation poker, MCP server, REST API and webhooks for 2 users.
 - **Recommended For:** General Developer Productivity & Web Tools
 
 ### [asana.com](https://asana.com/)
@@ -3497,8 +3597,8 @@ Managed Postgres, 0.5 GB of storage per project, 100 projects, 10 branches per p
 A Postgres platform for B2B apps. Unlimited databases, Always available with no shutdown, 1GB of storage (total), 50 million query tokens, autoscaling, unlimited vector embeddings
 - **Recommended For:** AI Coding Agents & Autonomous Pipelines, Cloud Databases & Vector Store Persistence
 
-### [Prisma Postgres](https://prisma.io/postgres)
-Super fast hosted Postgres built on unikernels and running on bare metal, 500MB total storage, 5 databases, integrated with Prisma ORM.
+### [Prisma Postgres](https://prisma.io/postgres) `No Credit Card`
+Super fast hosted Postgres (PostgreSQL 17) built on unikernels and running on bare metal, with zero cold starts. Free plan includes 1.01 GB storage, 200k operations per month and 50 databases, no credit card required. Works with any Postgres client or ORM.
 - **Recommended For:** Cloud Databases & Vector Store Persistence
 
 ### [Qdrant](https://qdrant.tech/)
@@ -3613,6 +3713,10 @@ Notifications infrastructure for developers. Send to multiple channels like in-a
 The open-source notification infrastructure for developers. Simple components and APIs for managing all communication channels in one place: Email, SMS, Direct, In-App and Push. The free plan includes 30,000 notifications/month with 90 days of retention.
 - **Recommended For:** General Developer Productivity & Web Tools
 
+### [ntail.io](https://ntail.io/)
+Serverless Apache Kafka streaming service. The free plan includes 200 KiB/s in, 400 KiB/s out, 1-day retention and up to 10 topics. No card required and no time limit.
+- **Recommended For:** Edge Serverless & High-Performance Microservices
+
 ### [Pingram.io](https://www.pingram.io/)
 Communication infrastructure in 5 minutes. Free tier includes: 100 SMS and calls, 3000 Emails, Push, Slack, MS Teams, WhatsApp, and more.
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -3688,6 +3792,10 @@ Add webhook support to your app without the hassles: done-for-you queueing, retr
 ### [Hosting Checker](https://hostingchecker.co)
 Check hosting information such as ASN, ISP, location and more for any domain, website or IP address. Also includes multiple hosting and DNS-related tools.
 - **Recommended For:** General Developer Productivity & Web Tools
+
+### [Keeper.sh](https://www.keeper.sh)
+A calendar syncing tool that keeps your work, personal, business or student calendars in sync. Free for up to 2 calendars, 3 connections, and give your agent or scripts access to read and modify your calendars with up to 25 calls per day.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines
 
 ### [newreleases.io](https://newreleases.io/)
 Receive notifications on email, Slack, Telegram, Discord, and custom webhooks for new releases from GitHub, GitLab, Bitbucket, Python PyPI, Java Maven, Node.js NPM, Node.js Yarn, Ruby Gems, PHP Packagist, .NET NuGet, Rust Cargo and Docker Hub.
@@ -3787,6 +3895,10 @@ Distribute iOS & Android apps over the air. Free plan: unlimited uploads, privat
 
 ### [Loadly](https://loadly.io)
 iOS & Android beta apps distribution service offers completely free services with unlimited downloads, high-speed downloads, and unlimited uploads.
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [WishKit](https://www.wishkit.io) `API`
+In-app feature request and feedback board for iOS and web apps where users submit and vote on features. Free forever plan with no card: 1 project, iOS and web SDKs, unlimited users, shows the first 5 feature requests.
 - **Recommended For:** General Developer Productivity & Web Tools
 
 ---
@@ -3905,6 +4017,10 @@ Server monitoring, public status pages, and service uptime monitoring.
 Middleware observability platform provides complete visibility into your apps & stack, so you can monitor & diagnose issues at scale. They have a free forever plan for Dev community use that allows Log monitoring for up to 1M log events, Infrastructure monitoring & APM for up to 2 hosts.
 - **Recommended For:** Production Observability, APM & Uptime Alerts
 
+### [Monitorable](https://monitorable.io)
+Server health monitoring for Linux (bare metal, VMs, LXC): host and Docker metrics, systemd services and SMART disk health, with alerting, OpenTelemetry Collector agent. Free for 3 servers, no card required.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines, Production Observability, APM & Uptime Alerts, CI/CD Automation, Testing & Build Workflows
+
 ### [MonitorMonk](https://monitormonk.com) `API`
 Minimalist uptime monitoring with beautiful status pages. The Forever Free plan offers HTTPS, Keyword, SSL and Response-time monitorming for 10 websites or api-endpoints, and provides 2 dashboards/status pages.
 - **Recommended For:** Production Observability, APM & Uptime Alerts, Zero Trust Authentication, WAF & Secrets Management
@@ -3924,6 +4040,10 @@ OnlineOrNot provides uptime monitoring for websites and APIs, monitoring for cro
 ### [OntarioNet.ca CN Test](https://cntest.ontarionet.ca)
 Check if a website is blocked in China by the Great Firewall. It identifies DNS pollution by comparing DNS results and ASN information detected by servers in China versus servers in the United States.
 - **Recommended For:** Production Observability, APM & Uptime Alerts, CI/CD Automation, Testing & Build Workflows, Zero Trust Authentication, WAF & Secrets Management
+
+### [OpenUptime](https://openuptime.app)
+Hosted uptime monitoring and status pages. Free tier includes 3 active monitors with 5-minute check intervals, 26,000 checks and 100 emails per month, and 30 days of check history.
+- **Recommended For:** Production Observability, APM & Uptime Alerts
 
 ### [pagecrawl.io](https://pagecrawl.io/)
 Monitor website changes, free for up to 6 monitors with daily checks.
@@ -3960,6 +4080,10 @@ Free REST API (GET /api/v1/statuses) returning real-time operational status for 
 ### [Pulsetic](https://pulsetic.com)
 10 monitors, 6 Months of historical Uptime/Logs, unlimited status pages, and custom domains included! For infinite time and unlimited email alerts for free. You don't need a credit card.
 - **Recommended For:** Production Observability, APM & Uptime Alerts
+
+### [Relvato](https://www.relvato.com)
+Continuous website monitoring - Relvato rechecks all your site vitals (performance, critical user journeys, visual design, security, SEO, legal compliance, accessibility etc) after every code update. Free for one site, no card needed. MCP also available.
+- **Recommended For:** Production Observability, APM & Uptime Alerts, Zero Trust Authentication, WAF & Secrets Management
 
 ### [robusta.dev](https://home.robusta.dev/)
 Powerful Kubernetes monitoring based on Prometheus. Bring your own Prometheus or install the all-in-one bundle. The free tier includes up to 20 Kubernetes nodes. Alerts via Slack, Microsoft Teams, Discord, and more. Integrations with PagerDuty, OpsGenie, VictorOps, DataDog, and many other tools.
@@ -4161,9 +4285,9 @@ Gigalixir provides one free instance that never sleeps and a free-tier PostgreSQ
 Build and deploy microservices, jobs, and managed databases with a powerful UI, API & CLI. Seamlessly scale containers from version control and external Docker registries. The free tier includes two services, two cron jobs and 1 database.
 - **Recommended For:** Cloud Databases & Vector Store Persistence, CI/CD Automation, Testing & Build Workflows
 
-### [Ownkube](https://ownkube.io)
-Free single-node k3s in your own AWS account, run apps, databases, workers with a git push. Use your AWS credits at peak efficiency.
-- **Recommended For:** CI/CD Automation, Testing & Build Workflows
+### [Ownkube](https://ownkube.io) `No Credit Card`
+A cloud for personal software. Deploy apps, workers, jobs and managed databases with your coding agent, on prepaid credit from $5 that never expires. Free tier: the Starter plan runs everything on one instance in your own AWS account, no credit card needed (you pay AWS for the instance).
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines, CI/CD Automation, Testing & Build Workflows
 
 ### [pipedream.com](https://pipedream.com)
 An integration platform built for developers. Develop any workflow based on any trigger. Workflows are code you can run [for free](https://docs.pipedream.com/pricing/). No server or cloud resources to manage.
@@ -4180,6 +4304,14 @@ European PaaS with automated deployments from GitHub for web services or static 
 ### [SnapDeploy](https://snapdeploy.dev/) `No Credit Card`
 Docker containers or GitHub repos, hosted on AWS. Free tier: up to 4 containers, 100 running hours a month, 10 deploys a day. Sleeps after 15 minutes idle and wakes on the next request. No credit card.
 - **Recommended For:** CI/CD Automation, Testing & Build Workflows
+
+### [Staxa](https://staxa.dev/) `API`
+Multi-tenant app hosting: each tenant gets its own app, database, subdomain and TLS in an isolated Kubernetes namespace through either a web app or API integration. Free tier includes 2 tenants with up to 2 services each (0.5 vCPU, 512 MB), free apps sleep after 24 hours of being idle.
+- **Recommended For:** Cloud Databases & Vector Store Persistence, CI/CD Automation, Testing & Build Workflows, Zero Trust Authentication, WAF & Secrets Management
+
+### [The Vibe Hosting](https://thevibehosting.com/) `No Credit Card`
+Frictionless vibe hosting for coding agents. One curl gets your agent a root Linux box on an HTTPS subdomain within seconds. Free tier: 2-core, 512 MB server 24/7 with a verified phone, no credit card.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines
 
 ### [Val Town](https://www.val.town)
 Collaborative TypeScript/JavaScript serverless platform for scripts, HTTP endpoints, and cron jobs. Free plan includes unlimited public vals, 15-minute cron intervals, 1-minute wall-clock time per run, and 3-day log retention. No custom domains on free.
@@ -4329,6 +4461,10 @@ On-demand support and permanent access to devices (2 sessions/day for free)
 Open source virtual/remote desktop infrastructure for everyone!
 - **Recommended For:** General Developer Productivity & Web Tools
 
+### [StarDesk](https://www.stardesk.net)
+Free remote desktop for work and gaming with 4K HDR/144fps streaming across Windows, macOS, iOS, and Android.
+- **Recommended For:** General Developer Productivity & Web Tools
+
 ---
 
 ## Screenshot APIs
@@ -4340,6 +4476,10 @@ A screenshot API based on Aws Lambda and Chrome. Handles full page, captures tim
 ### [Ironfang Render](https://ironfang.com/render) `API`
 UK-based screenshot, PDF, image, QR code and clip rendering API with reusable templates and signed URLs. 250 free renders a month with no payment details needed to get started.
 - **Recommended For:** General Developer Productivity & Web Tools
+
+### [localscreenshot](https://localscreenshot.com) `API`
+Screenshot API that turns any public page into an image or a PDF, from 227 countries, with cookie banners, ads and chat widgets hidden. Also runs as an MCP server, so AI agents take screenshots on their own. Free plan includes 50 screenshots every month, no card required.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines
 
 ### [microlink.io](https://microlink.io/)
 It turns any website into data such as metatags normalization, beauty link previews, scraping capabilities, or screenshots as a service. 50 requests/day every day free.
@@ -4501,6 +4641,10 @@ Find and fix security vulnerabilities in your site.
 Daily SSL/TLS certificate monitoring: expiry alerts (30/7/1 day), chain and OCSP revocation checks, and certificate transparency issuance history. Free forever for 5 domains, no credit card.
 - **Recommended For:** Production Observability, APM & Uptime Alerts, Zero Trust Authentication, WAF & Secrets Management
 
+### [pkgscan.dev](https://pkgscan.dev)
+Multi-engine supply chain scanner for npm, PyPI, VS Code extensions, Cargo, Maven, NuGet, RubyGems, Go and AI agent skills. Checks for malware and known vulnerabilities, including hash lookups that need no upload. Free tier: 5 scans per month with full findings.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines, Zero Trust Authentication, WAF & Secrets Management
+
 ### [Protectumus](https://protectumus.com)
 Free website security check, site antivirus, and server firewall (WAF) for PHP. Email notifications for registered users in the free tier.
 - **Recommended For:** Zero Trust Authentication, WAF & Secrets Management
@@ -4540,6 +4684,10 @@ Free supply chain security for individual developers, small teams, and open sour
 ### [ssllabs.com](https://www.ssllabs.com/ssltest/)
 Intense analysis of the configuration of any SSL web server
 - **Recommended For:** Zero Trust Authentication, WAF & Secrets Management
+
+### [SubdomainWatch](https://www.subdomainwatch.com/)
+Attack surface monitoring and CI/CD takeover guard. Free standalone DNS scanner, GitHub Action with SARIF export, and continuous asset monitoring tier.
+- **Recommended For:** Production Observability, APM & Uptime Alerts, CI/CD Automation, Testing & Build Workflows, Zero Trust Authentication, WAF & Secrets Management
 
 ### [Sucuri SiteCheck](https://sitecheck.sucuri.net)
 Free website security check and malware scanner
@@ -4695,6 +4843,10 @@ ImgBB is an unlimited image hosting service. Drag and drop your image anywhere o
 
 ### [Imgbot](https://github.com/marketplace/imgbot)
 Imgbot is a friendly robot that optimizes your images and saves you time. Optimized images mean smaller file sizes without sacrificing quality. It's free for open source.
+- **Recommended For:** Cloud Databases & Vector Store Persistence
+
+### [imgduck.com](https://imgduck.com/) `API`
+Minimalist and fast image hosting service with direct link and API support. Free tier offers 1GB storage and unlimited requests per month
 - **Recommended For:** Cloud Databases & Vector Store Persistence
 
 ### [imgen](https://www.jitbit.com/imgen/) `API`
@@ -4934,8 +5086,12 @@ A Dashboard for publishing automated test results and a Framework for implementi
 - **Recommended For:** CI/CD Automation, Testing & Build Workflows
 
 ### [tesults.com](https://www.tesults.com)
-Test results reporting and test case management. Integrates with popular test frameworks. Open Source software developers, individuals, educators, and small teams getting started can request discounted and free offerings beyond basic free projects.
-- **Recommended For:** CI/CD Automation, Testing & Build Workflows
+Test results reporting, release records and test case management, with an MCP server for AI agents. Free plan with unlimited users, 5 targets, up to 100 test cases per run and 30 days of results history. Free Standard plan for open source projects.
+- **Recommended For:** AI Coding Agents & Autonomous Pipelines, CI/CD Automation, Testing & Build Workflows
+
+### [UI Verify](https://uiverify.ai) `No Credit Card`
+Visual regression testing for Storybook, Playwright and Vitest, built for coding agents. 10,000 snapshots per month free, no credit card. 50,000 per month for open-source projects.
+- **Recommended For:** General Developer Productivity & Web Tools
 
 ### [UseWebhook.com](https://usewebhook.com)
 Capture and inspect webhooks from your browser. Forward to localhost, or replay from history. Free to use.
@@ -5011,6 +5167,10 @@ Talk and collaborate in real time with your team. Pair programming with IDE, ter
 
 ### [element.io](https://element.io/)
 A decentralized and open-source communication tool built on Matrix. Group chats, direct messaging, encrypted file transfers, voice and video chats, and easy integration with other services.
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [Enchant](https://www.enchant.com)
+Omnichannel customer communication platform. Free tier includes chat widgets, email newsletters, link-in-bio hub & more.
 - **Recommended For:** General Developer Productivity & Web Tools
 
 ### [evernote.com](https://evernote.com/)
@@ -5093,6 +5253,10 @@ One-click video conversations, and screen sharing, for free
 Free HD virtual backgrounds for video calls on Zoom, Microsoft Teams, and Google Meet. 1,000+ studio-designed environments with no signup required.
 - **Recommended For:** General Developer Productivity & Web Tools
 
+### [MergeMe](https://mergeme.dev/)
+MergeMe brings GitHub/GitLab PRs/MRs directly into Slack as 1 constantly updating card. It adds CI status, mirrored comments, @mentions, reminders & more. Free for teams up to 5 developers & 1 channel mapping.
+- **Recommended For:** CI/CD Automation, Testing & Build Workflows
+
 ### [Miro](https://miro.com/)
 Scalable, secure, cross-device, and enterprise-ready collaboration whiteboard for distributed teams. With a freemium plan.
 - **Recommended For:** General Developer Productivity & Web Tools
@@ -5120,6 +5284,10 @@ Beautiful and simple Pastebin with optional Client-Encryption, Multitab-Pastes, 
 ### [Pendulums](https://pendulums.io/)
 Pendulums is a free time tracking tool that helps you manage your time in a better manner with an easy-to-use interface and valuable statistics.
 - **Recommended For:** General Developer Productivity & Web Tools
+
+### [Pin Feed](https://pinfeed.io/)
+Pin Feed is a website feedback tool to comment on live client website. Free for up to 3 projects with 500 MB storage. Clients can leave feedback without an account.
+- **Recommended For:** Cloud Databases & Vector Store Persistence
 
 ### [Proton Pass](https://proton.me/pass)
 Password manager with built-in email aliases, 2FA authenticator, sharing and passkeys. Available on web, browser extension, and mobile app and desktop.
@@ -5243,6 +5411,10 @@ An asynchronous-friendly team communication app where conversations stay organiz
 
 ### [userforge.com](https://userforge.com/)
 Interconnected online personas, user stories and context mapping.  Helps keep design and dev in sync free for up to 3 personas and two collaborators.
+- **Recommended For:** General Developer Productivity & Web Tools
+
+### [UserNote](https://getusernote.com/)
+A user feedback tool to capture most wanted features, free supports up to 50 feature ideas and unlimited votes.
 - **Recommended For:** General Developer Productivity & Web Tools
 
 ### [Visual Debug](https://visualdebug.com)
@@ -5524,6 +5696,10 @@ Static, 1 GB free storage with 200 GB Bandwidth.
 ### [Netlify](https://www.netlify.com/)
 Builds, deploys and hosts static site/app free for 300 credits/month (equals 30 GB bandwidth).
 - **Recommended For:** Edge Serverless & High-Performance Microservices
+
+### [Pagehaus](https://pagehaus.app)
+Hosting for plain HTML sites, uploaded over SFTP or in the browser. Free plan: 1 site, 250 MB storage, 20 GB transfer/month, HTTPS on a pagehaus.site subdomain, contact forms, Server Side Includes and cookie-free analytics. No expiry, no card.
+- **Recommended For:** Cloud Databases & Vector Store Persistence
 
 ### [PandaStack](https://www.pandastack.io/)
 An eco-system for developers includes web hosting in different formats (static web hosting, container based web hosting, wordpress and so many other managed apps available in couple of clicks ). One free web hosting (static or containered) and one free database with 100GB Bandwidth and 300 Build mins/month.
