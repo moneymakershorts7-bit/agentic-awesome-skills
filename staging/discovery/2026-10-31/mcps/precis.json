@@ -1,0 +1,22 @@
+{
+  "id": "precis",
+  "name": "precis-mcp",
+  "repository": "https://github.com/retospect/precis-mcp",
+  "description": "Untiring, token-efficient research collaborator: reads papers and patents, cites the paragraph, writes the paper, designs and simulates what it proposes.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx precis-mcp",
+  "stars": 8,
+  "license": "GPL-3.0",
+  "risk": "LOW",
+  "score": 3,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "precis": {
+      "command": "uvx",
+      "args": [
+        "precis-mcp"
+      ]
+    }
+  }
+}

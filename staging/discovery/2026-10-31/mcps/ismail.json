@@ -1,0 +1,22 @@
+{
+  "id": "ismail",
+  "name": "ismail",
+  "repository": "https://github.com/newsbubbles/ismail",
+  "description": "Ismail: A high bandwidth agentic interface. Includes Agentic DAW and Agentic VR stage with Evolvable Phone Interface. Have Claude or Codex produce and DJ music, jam with you, make sound effects and interactive soundscapes, movie scores, etc. A Recursive Modifiable Interface for coding measured instruments. It runs from within your harness.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx ismail",
+  "stars": 17,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "ismail": {
+      "command": "uvx",
+      "args": [
+        "ismail"
+      ]
+    }
+  }
+}

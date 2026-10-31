@@ -1,0 +1,22 @@
+{
+  "id": "moltrust-server",
+  "name": "moltrust-mcp-server",
+  "repository": "https://github.com/MoltyCel/moltrust-mcp-server",
+  "description": "MCP server for MolTrust \u2014 Trust Infrastructure for AI Agents",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx moltrust-mcp-server",
+  "stars": 5,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "moltrust-server": {
+      "command": "uvx",
+      "args": [
+        "moltrust-mcp-server"
+      ]
+    }
+  }
+}

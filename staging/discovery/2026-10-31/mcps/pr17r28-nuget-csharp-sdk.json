@@ -1,0 +1,23 @@
+{
+  "id": "pr17r28-nuget-csharp-sdk",
+  "name": "pr17r28-nuget-csharp-sdk",
+  "repository": "https://github.com/dovel-pr17-validation/pr17r28-nuget-csharp-sdk",
+  "description": "Dovel r28 test mirror of modelcontextprotocol/csharp-sdk (temporary)",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/dovel-pr17-validation/pr17r28-nuget-csharp-sdk",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "pr17r28-nuget-csharp-sdk": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/dovel-pr17-validation/pr17r28-nuget-csharp-sdk"
+      ]
+    }
+  }
+}

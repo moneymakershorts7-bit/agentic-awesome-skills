@@ -1,0 +1,23 @@
+{
+  "id": "zero",
+  "name": "zero-mcp",
+  "repository": "https://github.com/SNIKO/zero-mcp",
+  "description": "Zero-boilerplate, lightweight and fast MCP server toolkit. Skip the weight of `@modelcontextprotocol/sdk` and start shipping MCP servers in minutes with minimal code.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y zero-mcp",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "zero": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "zero-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "alphabridge-free",
+  "name": "alphabridge-mcp-free",
+  "repository": "https://github.com/CultureClub-dev/alphabridge-mcp-free",
+  "description": "AlphaBridge MCP \u2014 the free WordPress plugin: a native MCP server with 58 tools. Source of the version published on WordPress.org.",
+  "language": "PHP",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/CultureClub-dev/alphabridge-mcp-free",
+  "stars": 0,
+  "license": "GPL-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "alphabridge-free": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/CultureClub-dev/alphabridge-mcp-free"
+      ]
+    }
+  }
+}

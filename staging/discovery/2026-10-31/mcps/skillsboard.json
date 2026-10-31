@@ -1,0 +1,23 @@
+{
+  "id": "skillsboard",
+  "name": "skillsboard",
+  "repository": "https://github.com/TommyBez/skillsboard",
+  "description": "Skills Board, the agent-native skills registry for teams. Free forever.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y skillsboard",
+  "stars": 10,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "skillsboard": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "skillsboard"
+      ]
+    }
+  }
+}

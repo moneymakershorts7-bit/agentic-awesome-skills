@@ -1,0 +1,22 @@
+{
+  "id": "tiny-kanban-v2",
+  "name": "tiny-kanban-v2",
+  "repository": "https://github.com/elthommy/tiny-kanban-v2",
+  "description": "Tiny dark-themed kanban board: React UI, FastAPI + SQLite backend, and an MCP server so LLMs can read and update your board.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx tiny-kanban-v2",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "tiny-kanban-v2": {
+      "command": "uvx",
+      "args": [
+        "tiny-kanban-v2"
+      ]
+    }
+  }
+}

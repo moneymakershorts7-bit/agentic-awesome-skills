@@ -1,0 +1,23 @@
+{
+  "id": "figranium",
+  "name": "figranium-mcp",
+  "repository": "https://github.com/figranium/figranium-mcp",
+  "description": "Official Model Context Protocol (MCP) server for Figranium.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y figranium-mcp",
+  "stars": 6,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "figranium": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "figranium-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "prestashop-mcp-server",
+  "name": "Prestashop-MCP-Server",
+  "repository": "https://github.com/novalo-dev/Prestashop-MCP-Server",
+  "description": "Lets AI assistants such as Claude, ChatGPT or Cursor connect to Prestashop, with each employee approving what they may do.",
+  "language": "PHP",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/novalo-dev/Prestashop-MCP-Server",
+  "stars": 2,
+  "license": "AFL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "prestashop-mcp-server": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/novalo-dev/Prestashop-MCP-Server"
+      ]
+    }
+  }
+}

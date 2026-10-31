@@ -1,0 +1,22 @@
+{
+  "id": "span",
+  "name": "span",
+  "repository": "https://github.com/pontivus-com/span",
+  "description": "Local MCP server that stores codebase understanding with its evidence, and tells your coding agent whether it is still current \u2014 CURRENT, STALE, or UNVERIFIABLE.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx span",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "span": {
+      "command": "uvx",
+      "args": [
+        "span"
+      ]
+    }
+  }
+}

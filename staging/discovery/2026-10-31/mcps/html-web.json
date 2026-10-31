@@ -1,0 +1,22 @@
+{
+  "id": "html-web",
+  "name": "html-mcp-web",
+  "repository": "https://github.com/MiiKiyoshi/html-mcp-web",
+  "description": "Review agent-made slides in the browser and export them to PowerPoint.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx html-mcp-web",
+  "stars": 7,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "html-web": {
+      "command": "uvx",
+      "args": [
+        "html-mcp-web"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "whiteboxxai",
+  "name": "whiteboxxai-mcp",
+  "repository": "https://github.com/AgentaFlow/whiteboxxai-mcp",
+  "description": "PyPi package for WhiteBox XAI MCP server https://registry.modelcontextprotocol.io/?q=Whitebox  /  https://whiteboxxai.com",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx whiteboxxai-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "whiteboxxai": {
+      "command": "uvx",
+      "args": [
+        "whiteboxxai-mcp"
+      ]
+    }
+  }
+}

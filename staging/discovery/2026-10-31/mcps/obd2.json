@@ -1,0 +1,23 @@
+{
+  "id": "obd2",
+  "name": "obd2-mcp",
+  "repository": "https://github.com/shoka-jp/obd2-mcp",
+  "description": "MCP server: let AI assistants read your car via ELM327 - DTCs, live data, freeze frame, VIN. Mock vehicle included, no hardware needed.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y obd2-mcp",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "obd2": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "obd2-mcp"
+      ]
+    }
+  }
+}

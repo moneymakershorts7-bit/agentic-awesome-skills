@@ -1,0 +1,22 @@
+{
+  "id": "llm-pricing-server",
+  "name": "llm-pricing-mcp-server",
+  "repository": "https://github.com/skakumanu/llm-pricing-mcp-server",
+  "description": "MCP servers to compare LLM models using latest data",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx llm-pricing-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "llm-pricing-server": {
+      "command": "uvx",
+      "args": [
+        "llm-pricing-mcp-server"
+      ]
+    }
+  }
+}

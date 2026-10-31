@@ -1,0 +1,23 @@
+{
+  "id": "pad",
+  "name": "pad",
+  "repository": "https://github.com/PerpetualSoftware/pad",
+  "description": "Project Management for the agent era",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/PerpetualSoftware/pad@latest",
+  "stars": 198,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "pad": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/PerpetualSoftware/pad@latest"
+      ]
+    }
+  }
+}

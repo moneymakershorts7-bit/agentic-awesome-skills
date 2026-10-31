@@ -1,0 +1,23 @@
+{
+  "id": "homie5-server",
+  "name": "homie5-mcp-server",
+  "repository": "https://github.com/electrification-bus/homie5-mcp-server",
+  "description": "[mirror] https://github.com/Tieske/homie5-mcp-server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y homie5-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "homie5-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "homie5-mcp-server"
+      ]
+    }
+  }
+}

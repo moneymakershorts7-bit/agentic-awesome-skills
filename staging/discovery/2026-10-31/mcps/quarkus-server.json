@@ -1,0 +1,23 @@
+{
+  "id": "quarkus-server",
+  "name": "quarkus-mcp-server",
+  "repository": "https://github.com/quarkiverse/quarkus-mcp-server",
+  "description": "This extension enables developers to implement the MCP server features easily.",
+  "language": "Java",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/quarkiverse/quarkus-mcp-server",
+  "stars": 203,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "quarkus-server": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/quarkiverse/quarkus-mcp-server"
+      ]
+    }
+  }
+}

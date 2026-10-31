@@ -1,0 +1,23 @@
+{
+  "id": "invoice-management-system-mcp-server",
+  "name": "Invoice-Management-System-MCP-Server",
+  "repository": "https://github.com/arulkg17/Invoice-Management-System-MCP-Server",
+  "description": "Invoice-Management-System-MCP-Server using Invoice Core API for Copilot agent ",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y Invoice-Management-System-MCP-Server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "invoice-management-system-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "Invoice-Management-System-MCP-Server"
+      ]
+    }
+  }
+}

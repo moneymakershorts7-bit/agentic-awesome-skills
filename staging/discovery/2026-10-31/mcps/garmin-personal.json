@@ -1,0 +1,23 @@
+{
+  "id": "garmin-personal",
+  "name": "garmin-personal-mcp",
+  "repository": "https://github.com/indaco/garmin-personal-mcp",
+  "description": "MCP server for the official Garmin Connect Personal API. Ask Claude, Codex or any stdio MCP client about your runs, strength sets, sleep and HRV. Read-only, runs with npx. A training dashboard in under a minute, as a page file or inside the chat in Claude Desktop. The server writes the page: about 100\u00d7 fewer output tokens.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y garmin-personal-mcp",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "garmin-personal": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "garmin-personal-mcp"
+      ]
+    }
+  }
+}

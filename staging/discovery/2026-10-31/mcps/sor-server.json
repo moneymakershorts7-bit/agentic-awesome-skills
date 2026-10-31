@@ -1,0 +1,22 @@
+{
+  "id": "sor-server",
+  "name": "sor-mcp-server",
+  "repository": "https://github.com/kosburn0408/sor-mcp-server",
+  "description": "Production-grade Science of Reading MCP server & Material Design 3 Web App for K-5 literacy analysis, 50-state Standards Satchel alignment, decodability checking, and FERPA-compliant PII anonymization.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx sor-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "sor-server": {
+      "command": "uvx",
+      "args": [
+        "sor-mcp-server"
+      ]
+    }
+  }
+}

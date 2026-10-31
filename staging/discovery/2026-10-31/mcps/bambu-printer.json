@@ -1,0 +1,23 @@
+{
+  "id": "bambu-printer",
+  "name": "bambu-printer-mcp",
+  "repository": "https://github.com/DMontgomery40/bambu-printer-mcp",
+  "description": "MCP server for Bambu Lab 3D printers \u2014 STL manipulation, BambuStudio  or FULU/orca slicing, Blender MCP integration, and direct printer control",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y bambu-printer-mcp",
+  "stars": 256,
+  "license": "GPL-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "bambu-printer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "bambu-printer-mcp"
+      ]
+    }
+  }
+}

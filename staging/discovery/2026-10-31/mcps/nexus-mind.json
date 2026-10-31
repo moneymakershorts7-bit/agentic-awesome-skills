@@ -1,0 +1,23 @@
+{
+  "id": "nexus-mind",
+  "name": "nexus-mind",
+  "repository": "https://github.com/smart-coder-labs/nexus-mind",
+  "description": "Open-source, self-hosted team memory for AI coding agents. Share, search, and audit project context through MCP.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install nexus-mind",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "nexus-mind": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "nexus-mind"
+      ]
+    }
+  }
+}

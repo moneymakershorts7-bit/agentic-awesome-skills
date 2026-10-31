@@ -1,0 +1,23 @@
+{
+  "id": "unfragile-server",
+  "name": "unfragile-mcp-server",
+  "repository": "https://github.com/Savirinc/unfragile-mcp-server",
+  "description": "Unfragile MCP server: search for tools used by humans, agents and robots \u2014 the right product, its official doors and cited proof. Verify before you invoke.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y unfragile-mcp-server",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "unfragile-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "unfragile-mcp-server"
+      ]
+    }
+  }
+}

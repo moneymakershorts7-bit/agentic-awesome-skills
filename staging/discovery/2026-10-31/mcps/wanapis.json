@@ -1,0 +1,23 @@
+{
+  "id": "wanapis",
+  "name": "wanapis-mcp",
+  "repository": "https://github.com/ZXYZZP/wanapis-mcp",
+  "description": "MCP server for WanAPIs image and video generation \u2014 one key, every model, with cost estimates before you run.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y wanapis-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "wanapis": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "wanapis-mcp"
+      ]
+    }
+  }
+}

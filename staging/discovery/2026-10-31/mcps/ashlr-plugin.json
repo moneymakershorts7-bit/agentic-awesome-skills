@@ -1,0 +1,23 @@
+{
+  "id": "ashlr-plugin",
+  "name": "ashlr-plugin",
+  "repository": "https://github.com/ashlrai/ashlr-plugin",
+  "description": "Token-efficiency plugin for Claude Code and Codex: MCP tools and hooks that replace high-volume Read/Grep/Edit/Bash calls with compact equivalents, powered by @ashlr/core-efficiency.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y ashlr-plugin",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "ashlr-plugin": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ashlr-plugin"
+      ]
+    }
+  }
+}

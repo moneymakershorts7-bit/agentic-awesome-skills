@@ -1,0 +1,23 @@
+{
+  "id": "ai",
+  "name": "mcp-server-ai",
+  "repository": "https://github.com/arjunwebdeveloper123-cloud/mcp-server-ai",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-ai",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "ai": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-ai"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "appstore-data",
+  "name": "appstore-data-mcp",
+  "repository": "https://github.com/TheValkDokk/appstore-data-mcp",
+  "description": "MCP server for live App Store + Google Play data: app details, reviews, search, top charts.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y appstore-data-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "appstore-data": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "appstore-data-mcp"
+      ]
+    }
+  }
+}

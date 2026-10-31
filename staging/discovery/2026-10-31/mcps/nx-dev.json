@@ -1,0 +1,23 @@
+{
+  "id": "nx-dev",
+  "name": "nx-dev",
+  "repository": "https://github.com/api-evangelist/nx-dev",
+  "description": "Nx \u2014 independent third-party profile of a public API surface, by API Evangelist. Nx is a smart, fast, extensible monorepo build system and integrated CI platform created and maintained by Nrwl. The Nx CLI (Rust core, TypeScript plugins) provides task orchestration, dependency-graph analysis, affected-only execution, local caching, and code generati",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y nx-dev",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-10-31",
+  "mcpConfigSnippet": {
+    "nx-dev": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "nx-dev"
+      ]
+    }
+  }
+}
