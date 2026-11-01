@@ -1,0 +1,22 @@
+{
+  "id": "telebrief",
+  "name": "Telebrief",
+  "repository": "https://github.com/belaytzev/Telebrief",
+  "description": "Personal digests from Telegram channels and chats: summarizes threads, extracts key points, and delivers a clean daily/weekly brief with links and context.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Telebrief",
+  "stars": 25,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "telebrief": {
+      "command": "uvx",
+      "args": [
+        "Telebrief"
+      ]
+    }
+  }
+}

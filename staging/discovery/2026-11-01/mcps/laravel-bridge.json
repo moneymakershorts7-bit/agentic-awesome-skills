@@ -1,0 +1,23 @@
+{
+  "id": "laravel-bridge",
+  "name": "laravel-mcp-bridge",
+  "repository": "https://github.com/kayedspace/laravel-mcp-bridge",
+  "description": "Turn your Laravel app into an MCP server for AI agents. Routes, Artisan commands, jobs, actions and models become MCP tools on top of laravel/mcp, while your authentication, gates and policies still decide.",
+  "language": "PHP",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/kayedspace/laravel-mcp-bridge",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "laravel-bridge": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/kayedspace/laravel-mcp-bridge"
+      ]
+    }
+  }
+}

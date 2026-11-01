@@ -1,0 +1,23 @@
+{
+  "id": "postgres-safe",
+  "name": "postgres-mcp-safe",
+  "repository": "https://github.com/Poudel0/postgres-mcp-safe",
+  "description": "Drop-in replacement for @modelcontextprotocol/server-postgres that is actually read-only.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/Poudel0/postgres-mcp-safe@latest",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "postgres-safe": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/Poudel0/postgres-mcp-safe@latest"
+      ]
+    }
+  }
+}

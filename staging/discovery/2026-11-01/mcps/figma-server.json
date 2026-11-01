@@ -1,0 +1,23 @@
+{
+  "id": "figma-server",
+  "name": "figma-mcp-server",
+  "repository": "https://github.com/planetabhi/figma-mcp-server",
+  "description": "A local Figma MCP server with full Figma REST API coverage",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y figma-mcp-server",
+  "stars": 10,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "figma-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "figma-mcp-server"
+      ]
+    }
+  }
+}

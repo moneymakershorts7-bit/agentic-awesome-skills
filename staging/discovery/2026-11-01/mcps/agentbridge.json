@@ -1,0 +1,23 @@
+{
+  "id": "agentbridge",
+  "name": "AgentBridge",
+  "repository": "https://github.com/Graphene-Lab/AgentBridge",
+  "description": "Autonomous Personal AI Assistant for office work, exposed as a Model Context Protocol (MCP) server and listed on the Official MCP Registry as io.github.Graphene-Lab/agentbridge. Local-first: drives tools, mail, documents and voice on your machine.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/Graphene-Lab/AgentBridge",
+  "stars": 20,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "agentbridge": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/Graphene-Lab/AgentBridge"
+      ]
+    }
+  }
+}

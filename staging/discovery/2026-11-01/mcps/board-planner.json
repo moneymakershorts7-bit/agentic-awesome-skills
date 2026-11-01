@@ -1,0 +1,23 @@
+{
+  "id": "board-planner",
+  "name": "board-planner",
+  "repository": "https://github.com/rafalpodles/board-planner",
+  "description": "One board. Your team works it. So do your agents. Kanban, sprints, REST API and MCP server \u2014 self-hosted, AGPL, with a PM agent and execution workers that run your tasks under your gates.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y board-planner",
+  "stars": 4,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "board-planner": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "board-planner"
+      ]
+    }
+  }
+}

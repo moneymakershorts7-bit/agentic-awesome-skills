@@ -1,0 +1,23 @@
+{
+  "id": "awesome-servers",
+  "name": "awesome-mcp-servers",
+  "repository": "https://github.com/lllray/awesome-mcp-servers",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y awesome-mcp-servers",
+  "stars": 1,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "awesome-servers": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "awesome-mcp-servers"
+      ]
+    }
+  }
+}

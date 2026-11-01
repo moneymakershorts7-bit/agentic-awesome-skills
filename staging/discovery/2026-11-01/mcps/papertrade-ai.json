@@ -1,0 +1,23 @@
+{
+  "id": "papertrade-ai",
+  "name": "papertrade-ai",
+  "repository": "https://github.com/nirholas/papertrade-ai",
+  "description": "Trade Papertrade BTC and ETH perps from Claude, ChatGPT, Codex, Cursor, Gemini CLI and VS Code. MCP server with OAuth, non-custodial session keys and guardrails.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y papertrade-ai",
+  "stars": 4,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "papertrade-ai": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "papertrade-ai"
+      ]
+    }
+  }
+}

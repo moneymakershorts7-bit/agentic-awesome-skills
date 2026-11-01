@@ -1,0 +1,23 @@
+{
+  "id": "hot",
+  "name": "hot",
+  "repository": "https://github.com/hot-dev/hot",
+  "description": "Hot Dev: Hot Language and AI Workflow/Agents Platform",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install hot",
+  "stars": 7,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "hot": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "hot"
+      ]
+    }
+  }
+}

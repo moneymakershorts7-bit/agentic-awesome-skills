@@ -1,0 +1,23 @@
+{
+  "id": "wisprs-ai-connectors",
+  "name": "wisprs-ai-connectors",
+  "repository": "https://github.com/Wisprs/wisprs-ai-connectors",
+  "description": "Wisprs remote MCP server: transcribe audio, video and YouTube links, then search, summarize and export transcripts. ChatGPT, Claude, Codex and MCP client configs.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y wisprs-ai-connectors",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "wisprs-ai-connectors": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "wisprs-ai-connectors"
+      ]
+    }
+  }
+}

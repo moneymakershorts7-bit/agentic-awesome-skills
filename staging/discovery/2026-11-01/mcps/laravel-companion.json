@@ -1,0 +1,22 @@
+{
+  "id": "laravel-companion",
+  "name": "laravel-mcp-companion",
+  "repository": "https://github.com/brianirish/laravel-mcp-companion",
+  "description": "A Laravel developer's MCP companion. Get the absolute best advice, recommendations, and up-to-date documentation for the entire Laravel ecosystem.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx laravel-mcp-companion",
+  "stars": 38,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "laravel-companion": {
+      "command": "uvx",
+      "args": [
+        "laravel-mcp-companion"
+      ]
+    }
+  }
+}

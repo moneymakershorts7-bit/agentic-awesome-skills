@@ -1,0 +1,23 @@
+{
+  "id": "magic",
+  "name": "magic",
+  "repository": "https://github.com/polterguy/magic",
+  "description": "Instant SECURE Full Stack Apps and AI Agents",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/polterguy/magic",
+  "stars": 1207,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "magic": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/polterguy/magic"
+      ]
+    }
+  }
+}

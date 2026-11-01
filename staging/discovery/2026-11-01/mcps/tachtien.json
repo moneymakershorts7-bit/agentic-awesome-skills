@@ -1,0 +1,23 @@
+{
+  "id": "tachtien",
+  "name": "tachtien-mcp",
+  "repository": "https://github.com/simonvreeman/tachtien-mcp",
+  "description": "MCP server for the word tachtien (ontelbaar veel), at mcp.tachtien.nl",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y tachtien-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "tachtien": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tachtien-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "clickup-server",
+  "name": "clickup-mcp-server",
+  "repository": "https://github.com/taazkareem/clickup-mcp-server",
+  "description": "ClickUp MCP Server - Integrate ClickUp project management with AI through Model Context Protocol",
+  "language": "Dockerfile",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/taazkareem/clickup-mcp-server",
+  "stars": 53,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "clickup-server": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/taazkareem/clickup-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dev-remote",
+  "name": "dev-mcp-server-remote",
+  "repository": "https://github.com/drokade981/dev-mcp-server-remote",
+  "description": "It is remote mcp server with. it use static data for now.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y dev-mcp-server-remote",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "dev-remote": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dev-mcp-server-remote"
+      ]
+    }
+  }
+}

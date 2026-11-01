@@ -1,0 +1,22 @@
+{
+  "id": "ssh-server",
+  "name": "ssh-mcp-server",
+  "repository": "https://github.com/beijing10000-boop/ssh-mcp-server",
+  "description": "\u57fa\u4e8e SSH \u4e0e MCP \u534f\u8bae\u7684 Linux \u667a\u80fd\u8fd0\u7ef4\u8bca\u65ad\u670d\u52a1\u5668\uff0c\u652f\u6301\u4e3b\u673a\u7ba1\u7406\u3001\u6279\u91cf\u91c7\u96c6\u3001\u5b89\u5168\u8bca\u65ad\u3001AI \u96c6\u6210\u4e0e\u64cd\u4f5c\u5ba1\u8ba1\u3002",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx ssh-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "ssh-server": {
+      "command": "uvx",
+      "args": [
+        "ssh-mcp-server"
+      ]
+    }
+  }
+}

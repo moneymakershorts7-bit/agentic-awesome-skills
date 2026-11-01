@@ -1,0 +1,23 @@
+{
+  "id": "runs-on-dev",
+  "name": "runs-on.dev",
+  "repository": "https://github.com/zordhalo/runs-on.dev",
+  "description": "Grab your own cool 'runs-on.dev' subdomain to use for free forever.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y runs-on.dev",
+  "stars": 509,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "runs-on-dev": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "runs-on.dev"
+      ]
+    }
+  }
+}

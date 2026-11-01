@@ -1,0 +1,22 @@
+{
+  "id": "javis-os",
+  "name": "javis-os",
+  "repository": "https://github.com/blogminhquy/javis-os",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx javis-os",
+  "stars": 505,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "javis-os": {
+      "command": "uvx",
+      "args": [
+        "javis-os"
+      ]
+    }
+  }
+}

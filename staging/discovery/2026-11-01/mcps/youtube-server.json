@@ -1,0 +1,23 @@
+{
+  "id": "youtube-server",
+  "name": "youtube-mcp-server",
+  "repository": "https://github.com/narsinh-patharkar/youtube-mcp-server",
+  "description": "Production-grade MCP server for YouTube transcript extraction and AI-powered video summarization. ",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y youtube-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-01",
+  "mcpConfigSnippet": {
+    "youtube-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "youtube-mcp-server"
+      ]
+    }
+  }
+}
