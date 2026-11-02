@@ -1,0 +1,23 @@
+{
+  "id": "no-terminal",
+  "name": "No-terminal",
+  "repository": "https://github.com/offshorevictorvc-ops/No-terminal",
+  "description": "mkdir locadora-mcp cd locadora-mcp npm init -y npm install express @modelcontextprotocol/server @modelcontextprotocol/node @modelcontextprotocol/express zod npm install -D typescript tsx @types/node @types/express",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y No-terminal",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "no-terminal": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "No-terminal"
+      ]
+    }
+  }
+}

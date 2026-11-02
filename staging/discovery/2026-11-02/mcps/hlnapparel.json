@@ -1,0 +1,23 @@
+{
+  "id": "hlnapparel",
+  "name": "hlnapparel-mcp",
+  "repository": "https://github.com/apoi15/hlnapparel-mcp",
+  "description": "Remote MCP server for HLN Apparel, a China clothing manufacturer: categories, MOQ, lead times, US HS duty, GSM conversion, quote requests",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y hlnapparel-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "hlnapparel": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "hlnapparel-mcp"
+      ]
+    }
+  }
+}

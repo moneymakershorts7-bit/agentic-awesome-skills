@@ -1,0 +1,23 @@
+{
+  "id": "wmux",
+  "name": "wmux",
+  "repository": "https://github.com/openwong2kim/wmux",
+  "description": "The ADE for AI agents. Automate everything else. Do your true work.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y wmux",
+  "stars": 444,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "wmux": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "wmux"
+      ]
+    }
+  }
+}

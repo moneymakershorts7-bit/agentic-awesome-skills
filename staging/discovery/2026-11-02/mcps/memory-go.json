@@ -1,0 +1,23 @@
+{
+  "id": "memory-go",
+  "name": "memory-mcp-server-go",
+  "repository": "https://github.com/okooo5km/memory-mcp-server-go",
+  "description": "A Model Context Protocol server that provides knowledge graph management capabilities.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/okooo5km/memory-mcp-server-go@latest",
+  "stars": 94,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "memory-go": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/okooo5km/memory-mcp-server-go@latest"
+      ]
+    }
+  }
+}

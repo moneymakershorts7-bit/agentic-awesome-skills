@@ -1,0 +1,22 @@
+{
+  "id": "custom-mcp-server",
+  "name": "Custom-MCP-Server",
+  "repository": "https://github.com/sugatalaha/Custom-MCP-Server",
+  "description": "A custom MCP server for understanding Legacy Codebase",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Custom-MCP-Server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "custom-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "Custom-MCP-Server"
+      ]
+    }
+  }
+}

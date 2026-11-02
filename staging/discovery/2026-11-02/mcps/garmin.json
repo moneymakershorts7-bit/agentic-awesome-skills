@@ -1,0 +1,23 @@
+{
+  "id": "garmin",
+  "name": "garmin-mcp",
+  "repository": "https://github.com/davidmosiah/garmin-mcp",
+  "description": "Local-first MCP server for Garmin Body Battery, HRV, sleep & training data \u2014 Claude/Cursor ready",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y garmin-mcp",
+  "stars": 13,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "garmin": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "garmin-mcp"
+      ]
+    }
+  }
+}

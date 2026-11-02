@@ -1,0 +1,22 @@
+{
+  "id": "mcp-types",
+  "name": "mcp-types",
+  "repository": "https://github.com/Vitexus/mcp-types",
+  "description": "Debian packaging of mcp-types, split out of modelcontextprotocol/python-sdk v2 line",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-types",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "mcp-types": {
+      "command": "uvx",
+      "args": [
+        "mcp-types"
+      ]
+    }
+  }
+}

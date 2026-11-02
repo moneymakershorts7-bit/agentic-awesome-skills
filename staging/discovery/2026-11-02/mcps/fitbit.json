@@ -1,0 +1,23 @@
+{
+  "id": "fitbit",
+  "name": "fitbit-mcp",
+  "repository": "https://github.com/davidmosiah/fitbit-mcp",
+  "description": "MCP server for Fitbit \u2014 query daily activity, heart rate, sleep, and body data from your Fitbit account in any MCP-compatible AI client (Claude, Cursor, etc.).",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y fitbit-mcp",
+  "stars": 5,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "fitbit": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "fitbit-mcp"
+      ]
+    }
+  }
+}

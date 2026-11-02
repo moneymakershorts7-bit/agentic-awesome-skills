@@ -1,0 +1,22 @@
+{
+  "id": "omniverse",
+  "name": "omniverse-mcp",
+  "repository": "https://github.com/serionist/omniverse-mcp",
+  "description": "MCP server + Kit extension that lets AI assistants drive NVIDIA Omniverse apps (Isaac Sim, USD Composer): inspect and edit USD scenes, capture viewports with segmentation, control robots, physics and recordings.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx omniverse-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "omniverse": {
+      "command": "uvx",
+      "args": [
+        "omniverse-mcp"
+      ]
+    }
+  }
+}

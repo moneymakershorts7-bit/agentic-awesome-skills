@@ -1,0 +1,23 @@
+{
+  "id": "lunar",
+  "name": "lunar",
+  "repository": "https://github.com/TheLunarCompany/lunar",
+  "description": "lunar.dev: Agent native MCP Gateway for governance and security",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y lunar",
+  "stars": 506,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "lunar": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "lunar"
+      ]
+    }
+  }
+}

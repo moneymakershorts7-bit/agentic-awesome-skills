@@ -1,0 +1,22 @@
+{
+  "id": "docker-server",
+  "name": "docker-mcp-server",
+  "repository": "https://github.com/johnsonhk88/docker-mcp-server",
+  "description": "Setup Docker MCP Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx docker-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "docker-server": {
+      "command": "uvx",
+      "args": [
+        "docker-mcp-server"
+      ]
+    }
+  }
+}

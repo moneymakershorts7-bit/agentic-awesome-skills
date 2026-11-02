@@ -1,0 +1,23 @@
+{
+  "id": "kuro-agentic-web",
+  "name": "kuro-agentic-web",
+  "repository": "https://github.com/QuentinMerle/kuro-agentic-web",
+  "description": "The Front-End is the API: An architectural test bench benchmarking in-DOM tool exposition (WebMCP) against /agent-feed.json cold syndication and sandboxed chat Micro-UIs.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y kuro-agentic-web",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "kuro-agentic-web": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "kuro-agentic-web"
+      ]
+    }
+  }
+}

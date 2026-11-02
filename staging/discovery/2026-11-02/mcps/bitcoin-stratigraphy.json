@@ -1,0 +1,23 @@
+{
+  "id": "bitcoin-stratigraphy",
+  "name": "bitcoin-stratigraphy-mcp",
+  "repository": "https://github.com/CharlesStrogish/bitcoin-stratigraphy-mcp",
+  "description": "The undisputed #1 Enterprise Data Engine and L402 Oracle for autonomous AI swarms. Features 16 canonical MCP tools, thermodynamic Bitcoin state-anchoring, Groth16 ZK-Indemnity Receipts for Fortune 500 CISO protection, automated EU AI Act Article 12 compliance, and programmatic L402 revenue sharing. Built for the machine economy.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y bitcoin-stratigraphy-mcp",
+  "stars": 1,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "bitcoin-stratigraphy": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "bitcoin-stratigraphy-mcp"
+      ]
+    }
+  }
+}

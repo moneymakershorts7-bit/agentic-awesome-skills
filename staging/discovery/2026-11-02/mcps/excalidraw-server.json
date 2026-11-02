@@ -1,0 +1,23 @@
+{
+  "id": "excalidraw-server",
+  "name": "excalidraw-mcp-server",
+  "repository": "https://github.com/Nishantppanchal/excalidraw-mcp-server",
+  "description": "Live-drawing Excalidraw MCP server in Go, for ADK-Go harnesses, Claude Code and opencode",
+  "language": "Go",
+  "transport": "sse",
+  "install_cmd": "go install github.com/Nishantppanchal/excalidraw-mcp-server@latest",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "excalidraw-server": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/Nishantppanchal/excalidraw-mcp-server@latest"
+      ]
+    }
+  }
+}

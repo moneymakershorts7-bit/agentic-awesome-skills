@@ -1,0 +1,23 @@
+{
+  "id": "whoop",
+  "name": "whoop-mcp",
+  "repository": "https://github.com/davidmosiah/whoop-mcp",
+  "description": "Local-first MCP server for WHOOP recovery, HRV & sleep \u2014 Claude, Cursor, ChatGPT ready",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y whoop-mcp",
+  "stars": 14,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "whoop": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "whoop-mcp"
+      ]
+    }
+  }
+}

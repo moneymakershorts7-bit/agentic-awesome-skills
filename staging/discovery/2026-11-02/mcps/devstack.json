@@ -1,0 +1,23 @@
+{
+  "id": "devstack",
+  "name": "devstack",
+  "repository": "https://github.com/nuetzliches/devstack",
+  "description": "Your whole stack, always running the code you saved, never a broken build. Every git worktree a lane, lanes on the team's servers, one CLI, dashboard and MCP server for your coding agents. Windows and Linux, native.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install devstack",
+  "stars": 5,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "devstack": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "devstack"
+      ]
+    }
+  }
+}

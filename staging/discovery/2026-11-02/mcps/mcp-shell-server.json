@@ -1,0 +1,22 @@
+{
+  "id": "mcp-shell-server",
+  "name": "mcp-shell-server",
+  "repository": "https://github.com/CristianValverde/mcp-shell-server",
+  "description": "Run Claude as a remote dev agent on your local machine via Docker + ngrok MCP",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-shell-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "mcp-shell-server": {
+      "command": "uvx",
+      "args": [
+        "mcp-shell-server"
+      ]
+    }
+  }
+}

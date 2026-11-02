@@ -1,0 +1,22 @@
+{
+  "id": "agentnave",
+  "name": "agentnave",
+  "repository": "https://github.com/TimWongUp/agentnave",
+  "description": "\u672c\u5730 MCP \u670d\u52a1\uff1a\u8ba9\u4f60\u7684 Agent \u5f53\u8001\u677f\uff0c\u628a\u6d3b\u6d3e\u7ed9 Claude Code\u3001Codex\u3001Grok\u3001DeepSeek \u7b49 CLI \u5c0f\u4f19\u4f34\uff0c\u5e76\u8054\u6216\u4e32\u8054\u534f\u4f5c\uff0c\u9644\u6258\u76d8\u5c0f\u529e\u516c\u5ba4 App\u3002Local MCP server: your Agent becomes the boss and hands work to Claude Code, Codex, Grok, DeepSeek and other CLI teammates, in parallel or serial rounds, with a cozy tray office App.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx agentnave",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "agentnave": {
+      "command": "uvx",
+      "args": [
+        "agentnave"
+      ]
+    }
+  }
+}

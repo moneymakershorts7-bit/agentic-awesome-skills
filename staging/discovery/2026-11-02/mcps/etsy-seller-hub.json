@@ -1,0 +1,23 @@
+{
+  "id": "etsy-seller-hub",
+  "name": "etsy-seller-mcp-hub",
+  "repository": "https://github.com/Bl0ck154/etsy-seller-mcp-hub",
+  "description": "Self-hosted MCP server for Etsy sellers: 79 tools, safe local setup, OAuth and inventory/order reports",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y etsy-seller-mcp-hub",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "etsy-seller-hub": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "etsy-seller-mcp-hub"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "protonmail-ai",
+  "name": "protonmail-ai",
+  "repository": "https://github.com/albertovillaosorno/protonmail-ai",
+  "description": "Security-first Proton Mail automation for AI agents \u2014 direct QR session-fork auth, local-first Rust CLI + MCP, least-privilege tools, and auditable sessions.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install protonmail-ai",
+  "stars": 1,
+  "license": "GPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "protonmail-ai": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "protonmail-ai"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "remote-mcp-server1",
+  "name": "Remote-MCP-Server1",
+  "repository": "https://github.com/dimriutkarsh/Remote-MCP-Server1",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y Remote-MCP-Server1",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "remote-mcp-server1": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "Remote-MCP-Server1"
+      ]
+    }
+  }
+}

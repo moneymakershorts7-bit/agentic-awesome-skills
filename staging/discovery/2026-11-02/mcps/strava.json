@@ -1,0 +1,23 @@
+{
+  "id": "strava",
+  "name": "strava-mcp",
+  "repository": "https://github.com/davidmosiah/strava-mcp",
+  "description": "MCP server for Strava \u2014 bring your activities, segments, athlete data, and training history into AI agents via Model Context Protocol.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y strava-mcp",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "strava": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "strava-mcp"
+      ]
+    }
+  }
+}

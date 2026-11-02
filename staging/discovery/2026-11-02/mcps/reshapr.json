@@ -1,0 +1,23 @@
+{
+  "id": "reshapr",
+  "name": "reshapr",
+  "repository": "https://github.com/reshaprio/reshapr",
+  "description": "The open source runtime that turns your APIs AI-Native, without rebuilding them",
+  "language": "Java",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/reshaprio/reshapr",
+  "stars": 172,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-02",
+  "mcpConfigSnippet": {
+    "reshapr": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/reshaprio/reshapr"
+      ]
+    }
+  }
+}
