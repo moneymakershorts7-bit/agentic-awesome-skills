@@ -1,0 +1,23 @@
+{
+  "id": "jisujeolmi-template",
+  "name": "jisujeolmi-mcp-template",
+  "repository": "https://github.com/jisujeolmi/jisujeolmi-mcp-template",
+  "description": "MCP server template \u2014 Express + @modelcontextprotocol/sdk with streamable HTTP transport, Zod validation, test harness",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y jisujeolmi-mcp-template",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "jisujeolmi-template": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "jisujeolmi-mcp-template"
+      ]
+    }
+  }
+}

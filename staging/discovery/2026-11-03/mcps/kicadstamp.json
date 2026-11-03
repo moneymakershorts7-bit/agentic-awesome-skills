@@ -1,0 +1,22 @@
+{
+  "id": "kicadstamp",
+  "name": "KiCadStamp",
+  "repository": "https://github.com/GrandFatherPikhto/KiCadStamp",
+  "description": "Clone PCB layout of schematic blocks and whole sheets in KiCad 10 over the IPC API \u2014 GUI, CLI and MCP server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx KiCadStamp",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "kicadstamp": {
+      "command": "uvx",
+      "args": [
+        "KiCadStamp"
+      ]
+    }
+  }
+}

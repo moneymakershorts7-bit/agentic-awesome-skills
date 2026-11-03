@@ -1,0 +1,22 @@
+{
+  "id": "bee-public",
+  "name": "bee-public",
+  "repository": "https://github.com/heossihq/bee-public",
+  "description": "Public developer surface for Bee: Quantum Intelligence \u2014 Apache-2.0 SDKs, MCP server, API contracts and trust material.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx bee-public",
+  "stars": 2,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "bee-public": {
+      "command": "uvx",
+      "args": [
+        "bee-public"
+      ]
+    }
+  }
+}

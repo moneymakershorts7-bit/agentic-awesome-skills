@@ -1,0 +1,22 @@
+{
+  "id": "check",
+  "name": "mcp-server-check",
+  "repository": "https://github.com/check-technologies/mcp-server-check",
+  "description": "MCP server for the Check Payroll API",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-server-check",
+  "stars": 18,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "check": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-check"
+      ]
+    }
+  }
+}

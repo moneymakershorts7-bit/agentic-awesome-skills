@@ -1,0 +1,23 @@
+{
+  "id": "maidan",
+  "name": "maidan",
+  "repository": "https://github.com/david-engelmann/maidan",
+  "description": "The coordination layer for AI agent swarms: one task queue with leased claims and footprints, reviews and approval gates, and results delivered to GitHub, Slack and Linear. MCP, A2A and REST.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install maidan",
+  "stars": 7,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "maidan": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "maidan"
+      ]
+    }
+  }
+}

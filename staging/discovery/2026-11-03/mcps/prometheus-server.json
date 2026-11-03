@@ -1,0 +1,22 @@
+{
+  "id": "prometheus-server",
+  "name": "prometheus-mcp-server",
+  "repository": "https://github.com/pab1it0/prometheus-mcp-server",
+  "description": "A Model Context Protocol (MCP) server that enables AI agents and LLMs to query and analyze Prometheus metrics through standardized interfaces.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx prometheus-mcp-server",
+  "stars": 522,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "prometheus-server": {
+      "command": "uvx",
+      "args": [
+        "prometheus-mcp-server"
+      ]
+    }
+  }
+}

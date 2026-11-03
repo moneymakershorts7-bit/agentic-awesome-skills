@@ -1,0 +1,22 @@
+{
+  "id": "itential",
+  "name": "itential-mcp",
+  "repository": "https://github.com/itential/itential-mcp",
+  "description": "\ud83d\udd0c Itential Platform MCP Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx itential-mcp",
+  "stars": 36,
+  "license": "GPL-3.0",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "itential": {
+      "command": "uvx",
+      "args": [
+        "itential-mcp"
+      ]
+    }
+  }
+}

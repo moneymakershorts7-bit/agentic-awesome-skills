@@ -1,0 +1,22 @@
+{
+  "id": "ibm-odm-management-server",
+  "name": "ibm-odm-management-mcp-server",
+  "repository": "https://github.com/DecisionsDev/ibm-odm-management-mcp-server",
+  "description": "The MCP Server for ODM Management",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx ibm-odm-management-mcp-server",
+  "stars": 4,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "ibm-odm-management-server": {
+      "command": "uvx",
+      "args": [
+        "ibm-odm-management-mcp-server"
+      ]
+    }
+  }
+}

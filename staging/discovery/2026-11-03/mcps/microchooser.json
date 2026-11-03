@@ -1,0 +1,23 @@
+{
+  "id": "microchooser",
+  "name": "microchooser",
+  "repository": "https://github.com/aPR0T0/microchooser",
+  "description": "Microcontroller chooser / MCU selector: pick the cheapest, easiest MCU or dev board for your peripherals (UART, I2C, SPI, CAN-FD, USB, SD, Wi-Fi, BLE, LoRa\u2026) with buy links and KiCad symbols + footprints. Web app, JSON API, CLI, MCP server.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y microchooser",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "microchooser": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "microchooser"
+      ]
+    }
+  }
+}

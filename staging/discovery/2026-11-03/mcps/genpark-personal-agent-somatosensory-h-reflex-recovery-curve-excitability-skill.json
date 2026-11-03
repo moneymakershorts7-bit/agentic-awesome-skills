@@ -1,0 +1,22 @@
+{
+  "id": "genpark-personal-agent-somatosensory-h-reflex-recovery-curve-excitability-skill",
+  "name": "genpark-personal-agent-somatosensory-h-reflex-recovery-curve-excitability-skill",
+  "repository": "https://github.com/Alpha-Park/genpark-personal-agent-somatosensory-h-reflex-recovery-curve-excitability-skill",
+  "description": "Deterministic personal agent skill for calculating Hoffmann Reflex (H-reflex) paired-pulse recovery ratios (H2/H1%), Early Depression Index, and CDI.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx genpark-personal-agent-somatosensory-h-reflex-recovery-curve-excitability-skill",
+  "stars": 7,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "genpark-personal-agent-somatosensory-h-reflex-recovery-curve-excitability-skill": {
+      "command": "uvx",
+      "args": [
+        "genpark-personal-agent-somatosensory-h-reflex-recovery-curve-excitability-skill"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "cmpose",
+  "name": "cmpose",
+  "repository": "https://github.com/whinstudio/cmpose",
+  "description": "Generate Compose Multiplatform projects on your own machine \u2014 @cmpose/core and a local MCP server",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y cmpose",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "cmpose": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "cmpose"
+      ]
+    }
+  }
+}

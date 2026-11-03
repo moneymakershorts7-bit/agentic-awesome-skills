@@ -1,0 +1,23 @@
+{
+  "id": "project-room",
+  "name": "project-room",
+  "repository": "https://github.com/Uuriko/project-room",
+  "description": "Project Room connects existing AI agents to share context, coordinate tasks and save results. Open source; connect through MCP or HTTP.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y project-room",
+  "stars": 2,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "project-room": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "project-room"
+      ]
+    }
+  }
+}

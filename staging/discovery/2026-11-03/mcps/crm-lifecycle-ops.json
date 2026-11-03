@@ -1,0 +1,23 @@
+{
+  "id": "crm-lifecycle-ops",
+  "name": "crm-lifecycle-ops",
+  "repository": "https://github.com/har5h98/crm-lifecycle-ops",
+  "description": "The AI copilot for lifecycle & CRM operations on Braze, Klaviyo and Iterable. Plan journeys, get build steps for your platform, see what breaks before you change it, check every message on every channel, and prove the impact. Claude Code plugin; read-only.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y crm-lifecycle-ops",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "crm-lifecycle-ops": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "crm-lifecycle-ops"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "mtb-survey",
+  "name": "mtb-survey",
+  "repository": "https://github.com/a0168627/mtb-survey",
+  "description": "Map MTB trail difficulty on Garmin watches by recording rider ratings and sensor data, then tag OpenStreetMap with mtb:scale.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mtb-survey",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "mtb-survey": {
+      "command": "uvx",
+      "args": [
+        "mtb-survey"
+      ]
+    }
+  }
+}

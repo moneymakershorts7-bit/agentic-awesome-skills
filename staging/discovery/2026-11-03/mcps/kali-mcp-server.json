@@ -1,0 +1,22 @@
+{
+  "id": "kali-mcp-server",
+  "name": "Kali-MCP-Server",
+  "repository": "https://github.com/sudohakan/Kali-MCP-Server",
+  "description": "Docker-based Kali Linux MCP server with 36 penetration testing tools",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Kali-MCP-Server",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "kali-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "Kali-MCP-Server"
+      ]
+    }
+  }
+}

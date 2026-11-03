@@ -1,0 +1,23 @@
+{
+  "id": "server-google-news",
+  "name": "server-google-news",
+  "repository": "https://github.com/ChanMeng666/server-google-news",
+  "description": "\u3010Star-crossed coders unite!\u2b50\ufe0f\u3011Model Context Protocol (MCP) server implementation providing Google News search capabilities via SerpAPI, with automatic news categorization and multi-language support.",
+  "language": "TypeScript",
+  "transport": "sse",
+  "install_cmd": "npx -y server-google-news",
+  "stars": 130,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "server-google-news": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "server-google-news"
+      ]
+    }
+  }
+}

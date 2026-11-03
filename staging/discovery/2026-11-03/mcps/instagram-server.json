@@ -1,0 +1,23 @@
+{
+  "id": "instagram-server",
+  "name": "instagram-mcp-server",
+  "repository": "https://github.com/Ammar-daham/instagram-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y instagram-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "instagram-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "instagram-mcp-server"
+      ]
+    }
+  }
+}

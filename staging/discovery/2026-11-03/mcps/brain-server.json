@@ -1,0 +1,23 @@
+{
+  "id": "brain-server",
+  "name": "brain-mcp-server",
+  "repository": "https://github.com/JEM-Fizbit/brain-mcp-server",
+  "description": "Generic MCP server for Markdown-based AI Brain context systems",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y brain-mcp-server",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "brain-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "brain-mcp-server"
+      ]
+    }
+  }
+}

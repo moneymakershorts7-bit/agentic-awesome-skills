@@ -1,0 +1,22 @@
+{
+  "id": "mcp-gantt-lob-server",
+  "name": "mcp-gantt-lob-server",
+  "repository": "https://github.com/ragomes102030-cpu/mcp-gantt-lob-server",
+  "description": "MCP de Gantt e Linha de Balanco (LOB), metodologia Aldo Dorea Mattos - Gantt via xlsx-gantt, LOB do zero (ritmo, balanceamento, dimensionamento), referenciando atividades do mcp-cronograma-server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-gantt-lob-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "mcp-gantt-lob-server": {
+      "command": "uvx",
+      "args": [
+        "mcp-gantt-lob-server"
+      ]
+    }
+  }
+}

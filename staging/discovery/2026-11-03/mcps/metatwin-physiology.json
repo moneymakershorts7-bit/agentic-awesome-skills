@@ -1,0 +1,23 @@
+{
+  "id": "metatwin-physiology",
+  "name": "metatwin-physiology-mcp",
+  "repository": "https://github.com/zeyang01/metatwin-physiology-mcp",
+  "description": "A read-only [Model Context Protocol](https://modelcontextprotocol.io) server for personal physiology and health data: **blood glucose, blood ketones, device heart rate, weight, image-based body-fat percentage and BMI**.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y metatwin-physiology-mcp",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "metatwin-physiology": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "metatwin-physiology-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "nestjs-apcore",
+  "name": "nestjs-apcore",
+  "repository": "https://github.com/aiperceivable/nestjs-apcore",
+  "description": "NestJS adapter for the apcore AI-Perceivable module ecosystem. Turn your existing NestJS services into AI-callable [MCP](https://modelcontextprotocol.io/) tools and OpenAI-compatible function definitions \u2014 with zero changes to your business logic.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y nestjs-apcore",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "nestjs-apcore": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "nestjs-apcore"
+      ]
+    }
+  }
+}

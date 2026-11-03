@@ -1,0 +1,22 @@
+{
+  "id": "zendesk-kon",
+  "name": "zendesk-mcp-server-kon",
+  "repository": "https://github.com/nicekon/zendesk-mcp-server-kon",
+  "description": "\uc774 \ud504\ub85c\uc81d\ud2b8\ub294 reminia/zendesk-mcp-server(https://github.com/reminia/zendesk-mcp-server) \ub97c \ud3ec\ud06c\ud558\uc5ec \ucd94\uac00 \uae30\ub2a5\uacfc \uac1c\uc120\uc0ac\ud56d\uc744 \ucd94\uac00\ud55c \ubc84\uc804\uc785\ub2c8\ub2e4.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx zendesk-mcp-server-kon",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "zendesk-kon": {
+      "command": "uvx",
+      "args": [
+        "zendesk-mcp-server-kon"
+      ]
+    }
+  }
+}

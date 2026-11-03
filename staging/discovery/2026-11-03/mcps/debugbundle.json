@@ -1,0 +1,23 @@
+{
+  "id": "debugbundle",
+  "name": "debugbundle",
+  "repository": "https://github.com/debugbundle/debugbundle",
+  "description": "DebugBundle product source and runtime code.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y debugbundle",
+  "stars": 7,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "debugbundle": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "debugbundle"
+      ]
+    }
+  }
+}

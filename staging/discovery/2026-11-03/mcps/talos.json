@@ -1,0 +1,23 @@
+{
+  "id": "talos",
+  "name": "talos-mcp",
+  "repository": "https://github.com/sergelogvinov/talos-mcp",
+  "description": "Talos  is an opinionated MCP server for Talos Linux",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/sergelogvinov/talos-mcp@latest",
+  "stars": 1,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-03",
+  "mcpConfigSnippet": {
+    "talos": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/sergelogvinov/talos-mcp@latest"
+      ]
+    }
+  }
+}
