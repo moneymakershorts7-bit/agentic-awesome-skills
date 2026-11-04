@@ -15,3 +15,6 @@ Continuous audit trail of free tools and services discovered by the autonomous s
 | 2026-10-07 | **Pharos email** | `2ae7382` | Merge pull request #4945 from pharos-email/patch-1 |
 | 2026-10-07 | **Cabin** | `47f386d` | Merge pull request #4946 from mulhoon/patch-1 |
 | 2026-10-07 | **Everframe** | `5d6da81` | Merge pull request #4936 from Robk4/patch-2 |
+| 2026-11-04 | **evalship** | `f8992d3` | Merge pull request #5104 from gglucass/patch-1 |
+| 2026-11-04 | **hypermonitors.com** | `5183b81` | Merge pull request #5102 from codemonkei/patch-2 |
+| 2026-11-04 | **CyberShield Studio** | `8dc7f51` | Merge pull request #5096 from cybershield-studio/add-cybershield-studio |
