@@ -1,0 +1,22 @@
+{
+  "id": "mcp_server",
+  "name": "mcp_server",
+  "repository": "https://github.com/upendargavvala/mcp_server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp_server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "mcp_server": {
+      "command": "uvx",
+      "args": [
+        "mcp_server"
+      ]
+    }
+  }
+}

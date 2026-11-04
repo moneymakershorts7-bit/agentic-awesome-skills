@@ -1,0 +1,23 @@
+{
+  "id": "toolport",
+  "name": "toolport",
+  "repository": "https://github.com/btsouth/toolport",
+  "description": "Local-first MCP gateway. Set up MCP servers once and use them in every AI client, with secrets in the OS keychain, tool integrity checks and quarantine, and on-demand tool search for clients that load every tool.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install toolport",
+  "stars": 233,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "toolport": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "toolport"
+      ]
+    }
+  }
+}

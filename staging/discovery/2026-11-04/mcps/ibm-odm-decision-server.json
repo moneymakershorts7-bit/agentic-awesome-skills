@@ -1,0 +1,22 @@
+{
+  "id": "ibm-odm-decision-server",
+  "name": "ibm-odm-decision-mcp-server",
+  "repository": "https://github.com/DecisionsDev/ibm-odm-decision-mcp-server",
+  "description": "An MCP Server enabling integration with IBM Decision Server Runtime to retrieve and invoke decision services.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx ibm-odm-decision-mcp-server",
+  "stars": 9,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "ibm-odm-decision-server": {
+      "command": "uvx",
+      "args": [
+        "ibm-odm-decision-mcp-server"
+      ]
+    }
+  }
+}

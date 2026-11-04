@@ -1,0 +1,22 @@
+{
+  "id": "kube-noob",
+  "name": "kube-noob",
+  "repository": "https://github.com/kube-noob/kube-noob",
+  "description": "Kubernetes, OpenShift, ROSA HCP, Helm and RHACS rulebook your AI calls as tools. No AI inside.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx kube-noob",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "kube-noob": {
+      "command": "uvx",
+      "args": [
+        "kube-noob"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "colab-studio",
+  "name": "colab-studio",
+  "repository": "https://github.com/berkeduruu/colab-studio",
+  "description": "Self-hosted AI media studio on a Google Colab L4 GPU: text-to-image, image editing, text-to-video with sound, music, text-to-speech, voice cloning, image-to-3D and Whisper transcription. ComfyUI + web UI + MCP server.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y colab-studio",
+  "stars": 0,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "colab-studio": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "colab-studio"
+      ]
+    }
+  }
+}

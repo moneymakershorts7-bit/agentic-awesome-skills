@@ -1,0 +1,23 @@
+{
+  "id": "smartsheet-server",
+  "name": "smartsheet-mcp-server",
+  "repository": "https://github.com/prmbr42-bot/smartsheet-mcp-server",
+  "description": "Smartsheet MCP",
+  "language": "HTML",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/prmbr42-bot/smartsheet-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "smartsheet-server": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/prmbr42-bot/smartsheet-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "meshive",
+  "name": "meshive-mcp",
+  "repository": "https://github.com/meshive/meshive-mcp",
+  "description": "Remote MCP server that lets AI agents use the Meshive GPU Cloud",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx meshive-mcp",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "meshive": {
+      "command": "uvx",
+      "args": [
+        "meshive-mcp"
+      ]
+    }
+  }
+}

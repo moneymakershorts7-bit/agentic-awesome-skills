@@ -1,0 +1,23 @@
+{
+  "id": "local-file-steward",
+  "name": "local-file-steward",
+  "repository": "https://github.com/LogicVale/local-file-steward",
+  "description": "\u4e00\u4e2a\u7528 Go \u7f16\u5199\u7684\u547d\u4ee4\u884c\u667a\u80fd\u4f53\uff08Agent\uff09\uff0c\u57fa\u4e8e [openai-go](https://github.com/openai/openai-go) \u7684 Responses API \u5bf9\u63a5 DeepSeek \u5927\u6a21\u578b\u3002\u5185\u7f6e\u672c\u5730\u6587\u4ef6\u7ba1\u7406\u5de5\u5177\uff0c\u5e76\u652f\u6301\u901a\u8fc7 [MCP\uff08Model Context Protocol\uff09](https://modelcontextprotocol.io) \u52a8\u6001\u63a5\u5165\u5916\u90e8\u5de5\u5177\u670d\u52a1\u5668\u3002",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/LogicVale/local-file-steward@latest",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "local-file-steward": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/LogicVale/local-file-steward@latest"
+      ]
+    }
+  }
+}

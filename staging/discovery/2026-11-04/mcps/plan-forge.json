@@ -1,0 +1,23 @@
+{
+  "id": "plan-forge",
+  "name": "plan-forge",
+  "repository": "https://github.com/srnichols/plan-forge",
+  "description": "Forge rough ideas into drift-proof execution contracts for AI coding agents. 6-step pipeline, 16 agents, 8 skills, lifecycle hooks, 5 tech presets.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y plan-forge",
+  "stars": 6,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "plan-forge": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "plan-forge"
+      ]
+    }
+  }
+}

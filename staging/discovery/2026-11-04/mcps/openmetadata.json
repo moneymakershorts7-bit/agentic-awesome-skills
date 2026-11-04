@@ -1,0 +1,23 @@
+{
+  "id": "openmetadata",
+  "name": "OpenMetadata",
+  "repository": "https://github.com/open-metadata/OpenMetadata",
+  "description": "The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for building trusted data context and business semantics for humans, AI assistants, and agents.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y OpenMetadata",
+  "stars": 15677,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "openmetadata": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "OpenMetadata"
+      ]
+    }
+  }
+}

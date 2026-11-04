@@ -1,0 +1,23 @@
+{
+  "id": "deliberation",
+  "name": "deliberation",
+  "repository": "https://github.com/antonbabenko/deliberation",
+  "description": "Ask Codex, Gemini, Grok, and 400+ OpenRouter models (Qwen, Kimi, DeepSeek) for second opinions or arbiter-mediated consensus. One MCP server for Claude Code, Codex, Cursor, Kiro, OpenCode. Measures the models' usefulness, too.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y deliberation",
+  "stars": 181,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "deliberation": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "deliberation"
+      ]
+    }
+  }
+}

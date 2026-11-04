@@ -1,0 +1,23 @@
+{
+  "id": "mcp-edge-gateway",
+  "name": "mcp-edge-gateway",
+  "repository": "https://github.com/ZanzyTHEbar/mcp-edge-gateway",
+  "description": "Public Go runtime for MCP edge, MCP control plane, and Coolify deployment artifacts",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/ZanzyTHEbar/mcp-edge-gateway@latest",
+  "stars": 1,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "mcp-edge-gateway": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/ZanzyTHEbar/mcp-edge-gateway@latest"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "lev-padel-server",
+  "name": "lev-padel-mcp-server",
+  "repository": "https://github.com/julsupercom-commits/lev-padel-mcp-server",
+  "description": "MCP server for Lev Padel bot",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y lev-padel-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "lev-padel-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "lev-padel-mcp-server"
+      ]
+    }
+  }
+}

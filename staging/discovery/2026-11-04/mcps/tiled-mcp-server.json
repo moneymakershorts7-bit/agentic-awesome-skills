@@ -1,0 +1,23 @@
+{
+  "id": "tiled-mcp-server",
+  "name": "Tiled-MCP-Server",
+  "repository": "https://github.com/4math2379/Tiled-MCP-Server",
+  "description": "An Mcp server for generate maps in Tiled ",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y Tiled-MCP-Server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "tiled-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "Tiled-MCP-Server"
+      ]
+    }
+  }
+}

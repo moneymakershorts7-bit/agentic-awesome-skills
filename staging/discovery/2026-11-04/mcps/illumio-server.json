@@ -1,0 +1,22 @@
+{
+  "id": "illumio-server",
+  "name": "illumio-mcp-server",
+  "repository": "https://github.com/alexgoller/illumio-mcp-server",
+  "description": "The first MCP server for cybersecurity",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx illumio-mcp-server",
+  "stars": 12,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "illumio-server": {
+      "command": "uvx",
+      "args": [
+        "illumio-mcp-server"
+      ]
+    }
+  }
+}

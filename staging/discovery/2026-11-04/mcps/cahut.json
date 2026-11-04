@@ -1,0 +1,23 @@
+{
+  "id": "cahut",
+  "name": "cahut",
+  "repository": "https://github.com/cahutcloud/cahut",
+  "description": "Your home to publish and share what your AIs make. Documents, decks, dashboards and small apps become pages at your address, on your own server, over MCP.",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/cahutcloud/cahut@latest",
+  "stars": 2,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "cahut": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/cahutcloud/cahut@latest"
+      ]
+    }
+  }
+}

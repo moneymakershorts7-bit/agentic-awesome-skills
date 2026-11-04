@@ -1,0 +1,23 @@
+{
+  "id": "thoric",
+  "name": "thoric",
+  "repository": "https://github.com/co3moz/thoric",
+  "description": "GPU-accelerated Linux desktops in Docker/WSL2 for AI agents and humans, featuring a built-in 60-tool MCP server and browser access.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install thoric",
+  "stars": 2,
+  "license": "GPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "thoric": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "thoric"
+      ]
+    }
+  }
+}

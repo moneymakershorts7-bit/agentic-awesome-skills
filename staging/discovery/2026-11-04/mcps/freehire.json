@@ -1,0 +1,23 @@
+{
+  "id": "freehire",
+  "name": "freehire-mcp",
+  "repository": "https://github.com/strelov1/freehire-mcp",
+  "description": "MCP server over the freehire job API \u2014 search, filter, and apply to IT jobs from any MCP host.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y freehire-mcp",
+  "stars": 17,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "freehire": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "freehire-mcp"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "raspberrypi-server",
+  "name": "raspberrypi-mcp-server",
+  "repository": "https://github.com/TokyoHunter/raspberrypi-mcp-server",
+  "description": "Control your Raspberry Pi from Claude Desktop over SSH. Check health, read logs, manage services, edit files and flip GPIO pins using plain English. Nothing to install on the Pi.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx raspberrypi-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "raspberrypi-server": {
+      "command": "uvx",
+      "args": [
+        "raspberrypi-mcp-server"
+      ]
+    }
+  }
+}

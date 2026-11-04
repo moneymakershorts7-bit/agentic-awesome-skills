@@ -1,0 +1,23 @@
+{
+  "id": "omni-graph-server",
+  "name": "omni-graph-mcp-server",
+  "repository": "https://github.com/jp9dotcom/omni-graph-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y omni-graph-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "omni-graph-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "omni-graph-mcp-server"
+      ]
+    }
+  }
+}

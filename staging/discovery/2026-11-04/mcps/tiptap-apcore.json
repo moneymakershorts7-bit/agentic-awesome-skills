@@ -1,0 +1,23 @@
+{
+  "id": "tiptap-apcore",
+  "name": "tiptap-apcore",
+  "repository": "https://github.com/aiperceivable/tiptap-apcore",
+  "description": "Let AI safely control your TipTap editor via the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) and OpenAI Function Calling.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y tiptap-apcore",
+  "stars": 3,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "tiptap-apcore": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tiptap-apcore"
+      ]
+    }
+  }
+}

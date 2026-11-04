@@ -1,0 +1,22 @@
+{
+  "id": "psd401-prr",
+  "name": "psd401-prr",
+  "repository": "https://github.com/psd401/psd401-prr",
+  "description": "PSD401 Public Records Act request management: RCW 42.56 + FERPA compliance engine (Django/DRF + React), replacing NextRequest",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx psd401-prr",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "psd401-prr": {
+      "command": "uvx",
+      "args": [
+        "psd401-prr"
+      ]
+    }
+  }
+}

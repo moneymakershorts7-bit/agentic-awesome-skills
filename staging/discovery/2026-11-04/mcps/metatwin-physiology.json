@@ -1,0 +1,22 @@
+{
+  "id": "metatwin-physiology",
+  "name": "metatwin-physiology-mcp",
+  "repository": "https://github.com/zeyang01/metatwin-physiology-mcp",
+  "description": "A read-only [Model Context Protocol](https://modelcontextprotocol.io) server for personal physiology and health data: **blood glucose, blood ketones, device heart rate, weight, image-based body-fat percentage and BMI**.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx metatwin-physiology-mcp",
+  "stars": 0,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-04",
+  "mcpConfigSnippet": {
+    "metatwin-physiology": {
+      "command": "uvx",
+      "args": [
+        "metatwin-physiology-mcp"
+      ]
+    }
+  }
+}
