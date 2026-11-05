@@ -1,0 +1,22 @@
+{
+  "id": "euipo-server",
+  "name": "euipo-mcp-server",
+  "repository": "https://github.com/UlrichBergmeier/euipo-mcp-server",
+  "description": "MCP server for EUIPO trademark searches",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx euipo-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "euipo-server": {
+      "command": "uvx",
+      "args": [
+        "euipo-mcp-server"
+      ]
+    }
+  }
+}

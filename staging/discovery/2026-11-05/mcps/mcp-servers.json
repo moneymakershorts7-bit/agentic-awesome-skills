@@ -1,0 +1,22 @@
+{
+  "id": "mcp-servers",
+  "name": "mcp-servers",
+  "repository": "https://github.com/eclipse-score/mcp-servers",
+  "description": "Repository for MCP servers",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-servers",
+  "stars": 2,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "mcp-servers": {
+      "command": "uvx",
+      "args": [
+        "mcp-servers"
+      ]
+    }
+  }
+}

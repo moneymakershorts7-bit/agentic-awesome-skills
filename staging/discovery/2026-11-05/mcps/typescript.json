@@ -1,0 +1,23 @@
+{
+  "id": "typescript",
+  "name": "mcp-server-typescript",
+  "repository": "https://github.com/dataforseo/mcp-server-typescript",
+  "description": "DataForSEO API modelcontextprotocol server ",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-typescript",
+  "stars": 260,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "typescript": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-typescript"
+      ]
+    }
+  }
+}

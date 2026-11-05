@@ -1,0 +1,23 @@
+{
+  "id": "tedix",
+  "name": "tedix",
+  "repository": "https://github.com/tedix-hq/tedix",
+  "description": "A platform for agents, apps, and work. Coordinate people and AI agents with shared tasks, project knowledge, apps, and approvals.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y tedix",
+  "stars": 32,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "tedix": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tedix"
+      ]
+    }
+  }
+}

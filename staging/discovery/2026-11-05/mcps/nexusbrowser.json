@@ -1,0 +1,23 @@
+{
+  "id": "nexusbrowser",
+  "name": "NexusBrowser",
+  "repository": "https://github.com/pironjulien/NexusBrowser",
+  "description": "NexusBrowser: your real Chrome driven by AI agents (Antigravity, Claude, Codex) in background tabs, through a local bridge and an MCP server.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y NexusBrowser",
+  "stars": 4,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "nexusbrowser": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "NexusBrowser"
+      ]
+    }
+  }
+}

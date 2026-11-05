@@ -1,0 +1,23 @@
+{
+  "id": "openstatus",
+  "name": "openstatus",
+  "repository": "https://github.com/openstatusHQ/openstatus",
+  "description": "Open-source status page, incident response and uptime monitoring",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y openstatus",
+  "stars": 9247,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "openstatus": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "openstatus"
+      ]
+    }
+  }
+}

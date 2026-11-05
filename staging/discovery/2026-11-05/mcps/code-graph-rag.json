@@ -1,0 +1,22 @@
+{
+  "id": "code-graph-rag",
+  "name": "code-graph-rag",
+  "repository": "https://github.com/vitali87/code-graph-rag",
+  "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx code-graph-rag",
+  "stars": 5314,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "code-graph-rag": {
+      "command": "uvx",
+      "args": [
+        "code-graph-rag"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "wow-addons",
+  "name": "wow-addons",
+  "repository": "https://github.com/justadakaje/wow-addons",
+  "description": "Free, open-source WoW: Forever addons \u2014 GoldFinder, an auction house deal finder with net profit, price trends and tooltip pricing \u2014 plus a wow-api MCP server. MIT, built live on stream.",
+  "language": "Lua",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/justadakaje/wow-addons",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "wow-addons": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/justadakaje/wow-addons"
+      ]
+    }
+  }
+}

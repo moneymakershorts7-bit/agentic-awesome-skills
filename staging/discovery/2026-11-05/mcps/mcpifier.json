@@ -1,0 +1,23 @@
+{
+  "id": "mcpifier",
+  "name": "mcpifier",
+  "repository": "https://github.com/summerdawn-ai/mcpifier",
+  "description": "Mcpifier is a zero-code MCP (Model Context Protocol) gateway that exposes an existing REST API as an MCP server",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/summerdawn-ai/mcpifier",
+  "stars": 2,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "mcpifier": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/summerdawn-ai/mcpifier"
+      ]
+    }
+  }
+}

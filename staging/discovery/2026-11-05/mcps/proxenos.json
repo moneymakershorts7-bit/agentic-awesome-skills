@@ -1,0 +1,22 @@
+{
+  "id": "proxenos",
+  "name": "proxenos",
+  "repository": "https://github.com/mindemory/proxenos",
+  "description": "A free, open-source agent that keeps your own records private on your computer and drafts the next step for you. Built first for people getting through the health care system.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx proxenos",
+  "stars": 4,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "proxenos": {
+      "command": "uvx",
+      "args": [
+        "proxenos"
+      ]
+    }
+  }
+}

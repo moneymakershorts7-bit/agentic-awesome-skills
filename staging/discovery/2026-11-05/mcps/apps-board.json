@@ -1,0 +1,22 @@
+{
+  "id": "apps-board",
+  "name": "apps-board-mcp",
+  "repository": "https://github.com/mehul82099/apps-board-mcp",
+  "description": "Zero-dependency Python MCP server implementing the server side of MCP Apps (SEP-1865, io.modelcontextprotocol/ui) with a working interactive kanban board demo - ui:// resources, app-only tools, structuredContent, no framework.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx apps-board-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "apps-board": {
+      "command": "uvx",
+      "args": [
+        "apps-board-mcp"
+      ]
+    }
+  }
+}

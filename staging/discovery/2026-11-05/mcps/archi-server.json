@@ -1,0 +1,23 @@
+{
+  "id": "archi-server",
+  "name": "archi-mcp-server",
+  "repository": "https://github.com/fanievh/archi-mcp-server",
+  "description": "Eclipse PDE plugin for Archi that exposes ArchiMate models via MCP protocol, enabling LLMs to query, analyse, and modify Enterprise Architecture models",
+  "language": "Java",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/fanievh/archi-mcp-server",
+  "stars": 40,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "archi-server": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/fanievh/archi-mcp-server"
+      ]
+    }
+  }
+}

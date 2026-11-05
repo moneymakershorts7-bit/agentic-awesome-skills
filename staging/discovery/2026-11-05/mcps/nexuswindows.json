@@ -1,0 +1,23 @@
+{
+  "id": "nexuswindows",
+  "name": "NexusWindows",
+  "repository": "https://github.com/pironjulien/NexusWindows",
+  "description": "NexusWindows: Windows computer use in the background for Claude, Codex and Antigravity. One common C# engine, three profiles, every action read back.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/pironjulien/NexusWindows",
+  "stars": 4,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "nexuswindows": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/pironjulien/NexusWindows"
+      ]
+    }
+  }
+}

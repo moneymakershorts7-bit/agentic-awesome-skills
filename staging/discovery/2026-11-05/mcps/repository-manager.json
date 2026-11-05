@@ -1,0 +1,22 @@
+{
+  "id": "repository-manager",
+  "name": "repository-manager",
+  "repository": "https://github.com/Knuckles-Team/repository-manager",
+  "description": "Manage your git repositories. Now supports Agentic AI MCP Server Integration!",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx repository-manager",
+  "stars": 3,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "repository-manager": {
+      "command": "uvx",
+      "args": [
+        "repository-manager"
+      ]
+    }
+  }
+}

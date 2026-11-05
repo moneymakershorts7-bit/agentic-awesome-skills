@@ -1,0 +1,22 @@
+{
+  "id": "mcp-server",
+  "name": "mcp-server",
+  "repository": "https://github.com/keboola/mcp-server",
+  "description": "Model Context Protocol (MCP) Server for the Keboola Platform",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-server",
+  "stars": 85,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "mcp-server": {
+      "command": "uvx",
+      "args": [
+        "mcp-server"
+      ]
+    }
+  }
+}

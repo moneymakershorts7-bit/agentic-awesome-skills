@@ -1,0 +1,23 @@
+{
+  "id": "trace",
+  "name": "trace-mcp",
+  "repository": "https://github.com/nikolai-vysotskyi/trace-mcp",
+  "description": "Framework-aware code intelligence MCP server \u2014 91 framework integrations, 81 languages, 72.7% fewer input tokens to review a pull request, comprehension at parity",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y trace-mcp",
+  "stars": 202,
+  "license": "MIT",
+  "risk": "LOW",
+  "score": 5,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "trace": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "trace-mcp"
+      ]
+    }
+  }
+}

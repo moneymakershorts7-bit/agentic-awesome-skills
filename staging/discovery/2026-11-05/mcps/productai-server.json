@@ -1,0 +1,23 @@
+{
+  "id": "productai-server",
+  "name": "productai-mcp-server",
+  "repository": "https://github.com/ShapeStudio/productai-mcp-server",
+  "description": "Remote MCP server for ProductAI with Auth0 OAuth, deployable to DigitalOcean App Platform",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y productai-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "productai-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "productai-mcp-server"
+      ]
+    }
+  }
+}

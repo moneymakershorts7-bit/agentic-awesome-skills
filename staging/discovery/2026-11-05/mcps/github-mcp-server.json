@@ -1,0 +1,22 @@
+{
+  "id": "github-mcp-server",
+  "name": "Github-MCP-Server",
+  "repository": "https://github.com/Yash-R09/Github-MCP-Server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Github-MCP-Server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "github-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "Github-MCP-Server"
+      ]
+    }
+  }
+}

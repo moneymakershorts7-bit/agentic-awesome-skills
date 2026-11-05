@@ -1,0 +1,23 @@
+{
+  "id": "neo-agent-brain",
+  "name": "neo-agent-brain",
+  "repository": "https://github.com/neomjs/neo-agent-brain",
+  "description": "Point a cross-model AI engineering team at your own codebases. The Agent OS keeps named AI maintainers' identity, memory and review across labs alive between sessions \u2014 the Brain Neo.mjs runs on itself. Multi-tenant: onboarding a codebase is a config entry, not a fork.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y neo-agent-brain",
+  "stars": 12,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "neo-agent-brain": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "neo-agent-brain"
+      ]
+    }
+  }
+}

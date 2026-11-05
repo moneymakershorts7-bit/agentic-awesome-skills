@@ -1,0 +1,23 @@
+{
+  "id": "chalet-server",
+  "name": "chalet-mcp-server",
+  "repository": "https://github.com/chalet-do/chalet-mcp-server",
+  "description": "Chalet's hosted MCP server: the chalet-cli tools over HTTP, signed in with OAuth",
+  "language": "Go",
+  "transport": "stdio",
+  "install_cmd": "go install github.com/chalet-do/chalet-mcp-server@latest",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "chalet-server": {
+      "command": "go",
+      "args": [
+        "install",
+        "github.com/chalet-do/chalet-mcp-server@latest"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "drucker-server",
+  "name": "drucker-mcp-server",
+  "repository": "https://github.com/Schimmilab/drucker-mcp-server",
+  "description": "MCP-Server f\u00fcr CUPS-Drucker: Etiketten passend zur eingelegten Rolle (Brother QL, per IPP gelesen) und Dokumente (PDF, Markdown, HTML)",
+  "language": "Python",
+  "transport": "sse",
+  "install_cmd": "uvx drucker-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "drucker-server": {
+      "command": "uvx",
+      "args": [
+        "drucker-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "kaggle-mcp",
+  "name": "kaggle-MCP",
+  "repository": "https://github.com/Dishant27/kaggle-MCP",
+  "description": "MCP server for interacting with Kaggle competitions",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y kaggle-MCP",
+  "stars": 10,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-05",
+  "mcpConfigSnippet": {
+    "kaggle-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "kaggle-MCP"
+      ]
+    }
+  }
+}
