@@ -1,0 +1,23 @@
+{
+  "id": "yfinance",
+  "name": "yfinance-mcp",
+  "repository": "https://github.com/ejgonzalez90/yfinance-mcp",
+  "description": "A [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server that gives AI agents access to Yahoo Finance market data: real-time quotes, price history, options chains, company fundamentals, financial statements, analyst recommendations, ESG scores, news and predefined stock screeners. No API key is required.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y yfinance-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "yfinance": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "yfinance-mcp"
+      ]
+    }
+  }
+}

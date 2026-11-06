@@ -1,0 +1,23 @@
+{
+  "id": "iol",
+  "name": "iol-mcp",
+  "repository": "https://github.com/ejgonzalez90/iol-mcp",
+  "description": "An unofficial [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server for the [InvertirOnline (IOL)](https://www.invertironline.com/) REST API, the Argentine retail broker.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y iol-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "iol": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "iol-mcp"
+      ]
+    }
+  }
+}

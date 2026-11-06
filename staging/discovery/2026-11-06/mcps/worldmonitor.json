@@ -1,0 +1,23 @@
+{
+  "id": "worldmonitor",
+  "name": "worldmonitor",
+  "repository": "https://github.com/koala73/worldmonitor",
+  "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y worldmonitor",
+  "stars": 90259,
+  "license": "AGPL-3.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "worldmonitor": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "worldmonitor"
+      ]
+    }
+  }
+}

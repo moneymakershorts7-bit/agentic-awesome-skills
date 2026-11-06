@@ -1,0 +1,23 @@
+{
+  "id": "8dx-server",
+  "name": "8dx-mcp-server",
+  "repository": "https://github.com/8DX-io/8dx-mcp-server",
+  "description": "Model Context Protocol (MCP) Server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y 8dx-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "8dx-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "8dx-mcp-server"
+      ]
+    }
+  }
+}

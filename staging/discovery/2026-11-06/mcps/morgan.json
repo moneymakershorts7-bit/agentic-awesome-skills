@@ -1,0 +1,22 @@
+{
+  "id": "morgan",
+  "name": "Morgan",
+  "repository": "https://github.com/lazarevtill/Morgan",
+  "description": "Self-hosted, self-learning, provider-agnostic personal agent kernel. Local-first memory in one SQLite database, project-scoped, reachable from any tool over MCP or a CLI.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx Morgan",
+  "stars": 6,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "morgan": {
+      "command": "uvx",
+      "args": [
+        "Morgan"
+      ]
+    }
+  }
+}

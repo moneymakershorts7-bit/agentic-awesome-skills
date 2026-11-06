@@ -1,0 +1,23 @@
+{
+  "id": "zerocracy-server",
+  "name": "zerocracy-mcp-server",
+  "repository": "https://github.com/zerocracy/zerocracy-mcp-server",
+  "description": "MCP Server for Zerocracy: add it to Claude Desktop and enjoy vibe-management",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y zerocracy-mcp-server",
+  "stars": 9,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 3,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "zerocracy-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "zerocracy-mcp-server"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "mcp-b1-lost-response-repro",
+  "name": "mcp-b1-lost-response-repro",
+  "repository": "https://github.com/arjun2075/mcp-b1-lost-response-repro",
+  "description": "Minimal reproduction for modelcontextprotocol/modelcontextprotocol#3394: lost-response retry on a mutating tools/call re-executes external effects (mcp Python SDK 2.2.0).",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx mcp-b1-lost-response-repro",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "mcp-b1-lost-response-repro": {
+      "command": "uvx",
+      "args": [
+        "mcp-b1-lost-response-repro"
+      ]
+    }
+  }
+}

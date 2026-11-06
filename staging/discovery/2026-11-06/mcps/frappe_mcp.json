@@ -1,0 +1,22 @@
+{
+  "id": "frappe_mcp",
+  "name": "frappe_mcp",
+  "repository": "https://github.com/Excel-Technologies-Ltd/frappe_mcp",
+  "description": "Universal [Model Context Protocol](https://modelcontextprotocol.io) server for any Frappe site. Each user creates a connector, points any MCP client at it (Claude, Cursor, ChatGPT, or another OpenAI-compatible agent), and the tools answer as that user.",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx frappe_mcp",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "frappe_mcp": {
+      "command": "uvx",
+      "args": [
+        "frappe_mcp"
+      ]
+    }
+  }
+}

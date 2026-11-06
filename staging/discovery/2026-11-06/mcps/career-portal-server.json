@@ -1,0 +1,23 @@
+{
+  "id": "career-portal-server",
+  "name": "career-portal-mcp-server",
+  "repository": "https://github.com/prithviraj2609/career-portal-mcp-server",
+  "description": "LinkedIn and Naukri MCP server for job discovery and confirmation-gated account management",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y career-portal-mcp-server",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "career-portal-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "career-portal-mcp-server"
+      ]
+    }
+  }
+}

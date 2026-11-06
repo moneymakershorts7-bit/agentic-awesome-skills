@@ -1,0 +1,23 @@
+{
+  "id": "editmax",
+  "name": "editmax",
+  "repository": "https://github.com/SkidGod4444/editmax",
+  "description": "A native macOS video editor your coding agent can drive: cut, grade, caption and deliver by hand, by chat, or from Claude Code, Codex and Cursor over MCP.",
+  "language": "Swift",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/SkidGod4444/editmax",
+  "stars": 1,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "editmax": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/SkidGod4444/editmax"
+      ]
+    }
+  }
+}

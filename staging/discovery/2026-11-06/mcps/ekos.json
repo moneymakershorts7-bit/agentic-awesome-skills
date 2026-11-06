@@ -1,0 +1,23 @@
+{
+  "id": "ekos",
+  "name": "EKOS",
+  "repository": "https://github.com/alexeyban/EKOS",
+  "description": "EKOS is an AI-native platform that continuously reconstructs, compiles, stores and serves enterprise knowledge.",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install EKOS",
+  "stars": 26,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "ekos": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "EKOS"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "nvd-server",
+  "name": "nvd-mcp-server",
+  "repository": "https://github.com/neetcodeprogress-lang/nvd-mcp-server",
+  "description": "MCP Server to allow claude to look up Common Vulnerabilities and Exposures (CVEs) in NIST's National Vulnerability Database",
+  "language": "Python",
+  "transport": "stdio",
+  "install_cmd": "uvx nvd-mcp-server",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "nvd-server": {
+      "command": "uvx",
+      "args": [
+        "nvd-mcp-server"
+      ]
+    }
+  }
+}

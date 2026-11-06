@@ -1,0 +1,23 @@
+{
+  "id": "hoi4-live-tools",
+  "name": "HOI4-Live-Tools",
+  "repository": "https://github.com/klimPaskov/HOI4-Live-Tools",
+  "description": "MCP server that lets coding agents test mods and play Hearts of Iron IV: stable Windows release, plus a fast native Rust runtime in Linux preview",
+  "language": "Rust",
+  "transport": "stdio",
+  "install_cmd": "cargo install HOI4-Live-Tools",
+  "stars": 3,
+  "license": "Apache-2.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "hoi4-live-tools": {
+      "command": "cargo",
+      "args": [
+        "install",
+        "HOI4-Live-Tools"
+      ]
+    }
+  }
+}

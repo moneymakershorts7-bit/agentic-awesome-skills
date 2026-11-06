@@ -1,0 +1,23 @@
+{
+  "id": "sola",
+  "name": "sola",
+  "repository": "https://github.com/zukilover/sola",
+  "description": "Sola is an [MCP](https://modelcontextprotocol.io/) gateway. A client connects to one Streamable HTTP endpoint. The model sees four tools: `discover_servers`, `discover_tools`, `get_tool_schema`, and `invoke_tool`.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y sola",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "sola": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sola"
+      ]
+    }
+  }
+}

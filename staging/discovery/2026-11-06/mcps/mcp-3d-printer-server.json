@@ -1,0 +1,23 @@
+{
+  "id": "mcp-3d-printer-server",
+  "name": "mcp-3D-printer-server",
+  "repository": "https://github.com/DMontgomery40/mcp-3D-printer-server",
+  "description": "Connects MCP to major 3D printer APIs (Orca, FULU's Orca/Bambu, OctoPrint, Klipper, Duet, Repetier, Prusa, Creality). Control prints, monitor status, and perform advanced STL operations like scaling, rotation, sectional editing, and base extension. Includes slicing and visualization.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-3D-printer-server",
+  "stars": 260,
+  "license": "GPL-2.0",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "mcp-3d-printer-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-3D-printer-server"
+      ]
+    }
+  }
+}

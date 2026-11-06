@@ -1,0 +1,23 @@
+{
+  "id": "mcp-servers",
+  "name": "mcp-servers",
+  "repository": "https://github.com/dabalroman/mcp-servers",
+  "description": "Claude mcp servers collection",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-servers",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "mcp-servers": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-servers"
+      ]
+    }
+  }
+}

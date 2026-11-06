@@ -1,0 +1,23 @@
+{
+  "id": "tinyprobe",
+  "name": "tinyprobe",
+  "repository": "https://github.com/kikutano/tinyprobe",
+  "description": "API tests your AI writes and your CI runs: YAML files in your repository, one native binary, no account. A Postman alternative with a VS Code extension, a browser app and an MCP server for coding agents.",
+  "language": "C#",
+  "transport": "stdio",
+  "install_cmd": "git clone https://github.com/kikutano/tinyprobe",
+  "stars": 3,
+  "license": "GPL-3.0",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "tinyprobe": {
+      "command": "git",
+      "args": [
+        "clone",
+        "https://github.com/kikutano/tinyprobe"
+      ]
+    }
+  }
+}

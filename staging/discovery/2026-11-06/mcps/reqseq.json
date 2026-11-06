@@ -1,0 +1,23 @@
+{
+  "id": "reqseq",
+  "name": "ReqSeq",
+  "repository": "https://github.com/ThomasBirkmaier/ReqSeq",
+  "description": "Spec-driven development for humans and coding agents. Requirements as plain files in Git, traceable from need to test, editable via desktop app, CLI, MCP and API. ReqIF import/export, baselines, variants.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y ReqSeq",
+  "stars": 0,
+  "license": "NOASSERTION",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "reqseq": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ReqSeq"
+      ]
+    }
+  }
+}

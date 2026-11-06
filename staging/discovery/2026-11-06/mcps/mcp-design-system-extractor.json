@@ -1,0 +1,23 @@
+{
+  "id": "mcp-design-system-extractor",
+  "name": "mcp-design-system-extractor",
+  "repository": "https://github.com/freema/mcp-design-system-extractor",
+  "description": "MCP (Model Context Protocol) server that enables AI assistants to interact with Storybook design systems. Extract component HTML, analyze styles, and help with design system adoption and refactoring.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-design-system-extractor",
+  "stars": 72,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 4,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "mcp-design-system-extractor": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-design-system-extractor"
+      ]
+    }
+  }
+}

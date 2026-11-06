@@ -1,0 +1,23 @@
+{
+  "id": "infranodus",
+  "name": "mcp-server-infranodus",
+  "repository": "https://github.com/infranodus/mcp-server-infranodus",
+  "description": "The official InfraNodus MCP server",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mcp-server-infranodus",
+  "stars": 104,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 5,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "infranodus": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-server-infranodus"
+      ]
+    }
+  }
+}

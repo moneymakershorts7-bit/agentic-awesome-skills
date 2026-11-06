@@ -1,0 +1,23 @@
+{
+  "id": "ppi",
+  "name": "ppi-mcp",
+  "repository": "https://github.com/ejgonzalez90/ppi-mcp",
+  "description": "An unofficial [Model Context Protocol](https://modelcontextprotocol.io) (MCP) server for the [Portfolio Personal Inversiones (PPI)](https://www.portfoliopersonal.com/) REST API, so AI agents such as Claude Code can read your portfolio, quotes and order history and, if you opt in, place orders.",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y ppi-mcp",
+  "stars": 0,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "ppi": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "ppi-mcp"
+      ]
+    }
+  }
+}

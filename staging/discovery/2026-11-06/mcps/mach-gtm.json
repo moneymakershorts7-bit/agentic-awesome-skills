@@ -1,0 +1,23 @@
+{
+  "id": "mach-gtm",
+  "name": "mach-gtm-mcp",
+  "repository": "https://github.com/verma6uc/mach-gtm-mcp",
+  "description": "Free starter-kit MCP server with five outbound sales helpers: ICP, outreach draft, research checklist, lead score, sequence. Uses only what you give it; does not search the web or call Mach.",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y mach-gtm-mcp",
+  "stars": 1,
+  "license": "MIT",
+  "risk": "SAFE",
+  "score": 2,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "mach-gtm": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mach-gtm-mcp"
+      ]
+    }
+  }
+}

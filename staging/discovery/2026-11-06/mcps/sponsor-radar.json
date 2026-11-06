@@ -1,0 +1,23 @@
+{
+  "id": "sponsor-radar",
+  "name": "sponsor-radar",
+  "repository": "https://github.com/mulak1/sponsor-radar",
+  "description": "SponsorRadar \u2014 Verified Podcast & Newsletter Ad Spend. Free interactive benchmark, live SVG badges, OpenAPI 3.1 & MCP Server: https://www.sponsorradar.io",
+  "language": "JavaScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y sponsor-radar",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "sponsor-radar": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "sponsor-radar"
+      ]
+    }
+  }
+}

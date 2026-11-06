@@ -1,0 +1,23 @@
+{
+  "id": "cloobe",
+  "name": "cloobe-mcp",
+  "repository": "https://github.com/givaldos/cloobe-mcp",
+  "description": "Servidor MCP de ofertas do Brasil: Shopee, Mercado Livre, AliExpress, Amazon, Magalu e Shein com pre\u00e7o verificado",
+  "language": "TypeScript",
+  "transport": "stdio",
+  "install_cmd": "npx -y cloobe-mcp",
+  "stars": 0,
+  "license": "UNLICENSED",
+  "risk": "SAFE",
+  "score": 1,
+  "discovered_at": "2026-11-06",
+  "mcpConfigSnippet": {
+    "cloobe": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "cloobe-mcp"
+      ]
+    }
+  }
+}
